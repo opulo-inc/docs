@@ -157,15 +157,10 @@ jobs:
 
       - name: Install necessary dependencies from NPM
         run: npm ci
-        working-directory: doc
         
       - name: Clean the working directory
         shell: bash
-        run: rm -rf doc/public
-
-      - name: Append Tag Details To config.toml
-        run: ./scripts/create-tag.py ${{ env.base_url }}
-        working-directory: doc       
+        run: rm -rf public    
 
       - name: Set Version For Main Branch & Generate The Site
         run: |
