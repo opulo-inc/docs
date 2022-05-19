@@ -164,9 +164,7 @@ jobs:
 
       - name: Set Version For Main Branch & Generate The Site
         run: |
-          rm -rf ./doc/public/
-          sed -i "s/version = \"0.0\"/version = \"main\"/" doc/config.toml
-          sed -i "s/# github_branch= \"main\"/github_branch= \"${{ env.main_branch }}\"/" doc/config.toml          
+          rm -rf ./public/         
           hugo -s doc --gc --minify --baseURL ${{env.base_url}}
 
       - name: Deploy
