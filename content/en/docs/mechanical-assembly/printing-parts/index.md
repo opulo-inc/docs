@@ -11,9 +11,9 @@ description: >
 
 ## Getting The Part Models
 
-Alright, time to get the parts we need to print! Read the information about picking your Build Number on the "LumenPnP Assembly" page to find out what version of parts to print. You can find the parts you need on the [Releases Page](https://github.com/index-machines/index/releases), and look at the attached Assets at the bottom of the release. Click and download both `3d-prints.zip` and `index_bom.md` to get the STL files and BOM for your machine. If you are building your kit, **make sure you know your Hardware Version before printing parts**.
+Alright, time to get the parts we need to print! You can find the parts you need on the [Releases Page](https://github.com/index-machines/index/releases), and look at the attached Assets at the bottom of the release. Click and download both `LumenPnP-STLs` and `LumenPnP-BOM` to get the STL files and BOM for your machine.
 
-## Printer requirements
+## Printer Requirements
 
 These parts are designed to fit onto a printer with a build volume of at least 18 x 18 x 18 cm, such as the Prusa MINI. Although not recommended, it's possible to print the parts on a smaller printer with some creative placements.
 
@@ -25,9 +25,9 @@ These parts are designed for PLA, however, some folks have printed the parts suc
 
 There are three situations where you'll need specific filament colors:
 
-- White or transparent filament for the light mounts, `FDM-0015` and `FDM-0019`. These parts act as light diffusers for the ring lights.
-- White or light colored filament for the nozzle holder, `FDM-0024`. This helps with setting up the automatic tool changer.
-- A darker filament for the Z gantries, `FDM-0017` and `FDM-0039`. This helps the bottom camera distinguish the nozzle tip from the rest of the gantry. If you print in a lighter color anyway you can use a bit of blue painter's table on the bottom side of the gantry.
+- White or transparent filament for the light mounts, `top-light-mount` and `bottom-light-mount`. These parts act as light diffusers for the ring lights.
+- White or light colored filament for the `nozzle-rack`. This helps with setting up the automatic tool changer.
+- A darker filament for the Z gantries, `z-gantry-left` and `z-gantry-right`. This helps the bottom camera distinguish the nozzle tip from the rest of the gantry. If you print in a lighter color anyway you can use a bit of blue painter's table on the bottom side of the gantry.
 
 ## Print settings
 
@@ -55,14 +55,14 @@ These settings are used for parts that require more strength:
 
 Use gantry settings for the following parts:
 
-- `FDM-0005` (Y-gantry)
-- `FDM-0008` (Y-gantry Support)
-- `FDM-0009` (Roller-Spacer)
-- `FDM-0011` (X-gantry Front)
-- `FDM-0012` (X-gantry Back)
-- `FDM-0013` (X-Idler Mount)
-- `FDM-0017` (Z-gantry Left)
-- `FDM-0039` (Z-gantry Right)
+- y-gantry
+- y-gantry-support
+- roller-spacer
+- x-gantry-front
+- x-gantry-back
+- x-idler-mount
+- z-gantry-left
+- z-gantry-right
 
 ## Calibration Print
 
@@ -70,7 +70,7 @@ Use gantry settings for the following parts:
 
 {{< container-image path="images/corndog.jpg" alt="Corndog" >}}
 
-This is [FDM-8000](https://github.com/index-machines/index/releases/latest/download/FDM-8000_corndog.stl), colloquially referred to as ["the corndog."](https://github.com/index-machines/index/releases/latest/download/FDM-8000_corndog.stl). This part isn't included in the `3d_prints.zip` archive, so grab it from the link above.
+This is the [calibration print](https://github.com/index-machines/index/releases/latest/download/FDM-8000_corndog.stl), colloquially referred to as ["the corndog."](https://github.com/index-machines/index/releases/latest/download/FDM-8000_corndog.stl). This part isn't currently included in the exported STLs, so grab it from the link above.
 
 After printing, you can check fit of various fasteners and one of the aluminum extrusions to ensure the parts you print will all fit as expected:
 
@@ -85,12 +85,12 @@ Once you're happy with the fit you can start printing the parts.
 
 {{< container-image path="images/IMG_0637.JPG" alt="All 3D printed parts" >}}
 
-You can find out how many of each part to print in the `index_bom.md` file you downloaded in the first step. You can view this file using an online Markdown viewer [like this one](https://dillinger.io/). Select "Import From" -> "Markdown File" and select `index_bom.md`.
+You can find out how many of each part to print in the `LumenPnP-BOM` zip file you downloaded in the first step. After unzipping, open the HTML file in your browser to see the machine's Bill of Materials.
 
-The "Filename" column will tell you which part to print and the "Quantity" column will tell you how many to print. Only pay attention to filenames that start with `FDM-`, since these are the ones in the zip file you downloaded earlier. The other items in this table are a list of all the other fasteners, hardware, and off the shelf parts used in the machine's mechanical build- all of these have been provided in the kit.
+The "Part Name" column will tell you which part to print and the "Quantity" column will tell you how many to print. There's a rendered image of each 3D printed part as well to help identify them. Just print the parts that have the "Part Type" of "FDM". The other items in this table are a list of all the other fasteners, hardware, and off the shelf parts used in the machine's mechanical build- all of these have been provided in the kit.
 
 The 3d models are already in the preferred orientation for printing, so you only need to make sure they're placed within the build volume when slicing.
 
-## 9000 Series Parts?
+## Optional Parts
 
-There are some parts in the project that have a part number in the 9000s. These prints are totally optional- feel free to print them if you think they'll be useful for you, but they aren't required for building the machine.
+There are some parts in the Bill of Materials page that are highlighted and flagged as optional. These prints are not necessary to print - feel free to print them if you think they'll be useful for you, but they aren't required for building the machine. There are notes in the BOM about what extra parts and steps are necessary to use them.
