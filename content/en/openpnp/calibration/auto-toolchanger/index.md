@@ -23,8 +23,6 @@ Throughout the course of a job, you will find that you need multiple different s
 
 7. You can now play through the positions by clicking on the "move nozzle to position" buttons in order. Tune any values in the fields as necessary to ensure you get a clean and straight insertion.
 
-8. Now that your positions are set, you can enable automatic tool changing in OpenPnP. You can find this checkbox as shown in the image below.
-
-{{< container-image path="images/enable-toolchanger.png" alt="" >}}
+8. Now that your positions are set, you can enable automatic tool changing in OpenPnP.
 
 9. If you'd like to clone these positions for every nozzle tip in the rack, you can use the ["Cloning Settings" section in the OpenPnP docs](https://github.com/openpnp/openpnp/wiki/Nozzle-Tip-Changer#cloning-settings) to help you.
