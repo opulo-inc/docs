@@ -1,4 +1,4 @@
-baseURL = "https://index-machines.github.io/docs/"
+baseURL = "https://docs.opulo.io/"
 title = "Opulo"
 
 enableRobotsTXT = true
