@@ -94,3 +94,7 @@ The 3d models are already in the preferred orientation for printing, so you only
 ## Optional Parts
 
 There are some parts in the Bill of Materials page that are highlighted and flagged as optional. These prints are not necessary to print - feel free to print them if you think they'll be useful for you, but they aren't required for building the machine. There are notes in the BOM about what extra parts and steps are necessary to use them.
+
+## Next steps
+
+Start by assembling the [left side]({{< relref "left-side" >}}).

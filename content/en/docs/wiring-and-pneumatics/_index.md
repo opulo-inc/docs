@@ -6,7 +6,7 @@ resources:
 - src: "**.png"
 - src: "**.jpg"
 description: >
-  Wire your mobo, etc.
+  Wiring up motors, sensors, and cameras and installing pneumatic tubing.
 ---
 
 ## Summary
