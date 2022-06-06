@@ -19,3 +19,6 @@ The following links are OpenPnP documentation pages that will help you confirm t
 
 * [Job Setup](https://github.com/openpnp/openpnp/wiki/User-Manual#job-setup)
   * This is an incredibly useful document, illustrating the difference between parts, packages, and placements, and how to import information about your parts into the software. It shows the UI and explains what lots of things do, along with walking you through setting up a job. There's also information about setting up feeders. We recommend using the ReferenceTrayFeeder and ReferenceStripFeeder. Soon we'll have our own powered feeder for the LumenPnP, which will have a selectable feeder type in OpenPnP, but that's still to come.
+
+* [Mods](https://mods.opulo.io/)
+  * Many folks in the community have developed mods and upgrades to the machine that are all organized here.
