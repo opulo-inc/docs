@@ -1,7 +1,10 @@
-+++
-title = "LumenPnP"
-linkTitle = "LumenPnP"
-+++
+---
+title: LumenPnP
+linkTitle: LumenPnP
+cascade:
+  _build:
+    publishResources: false
+---
 
 {{< blocks/cover title="LumenPnP Documentation" image_anchor="top" height="full" color="orange" >}}
 <div class="mx-auto">
