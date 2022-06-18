@@ -11,7 +11,7 @@ description: >
 
 ## Getting The Part Models
 
-Alright, time to get the parts we need to print! You can find the parts you need on the [Releases Page](https://github.com/index-machines/index/releases), and look at the attached Assets at the bottom of the release. Click and download both `LumenPnP-STLs` and `LumenPnP-BOM` to get the STL files and BOM for your machine.
+Alright, time to get the parts we need to print! You can find the parts you need on the [Releases Page](https://github.com/opulo-inc/lumenpnp/releases), and look at the attached Assets at the bottom of the release. Click and download both `LumenPnP-STLs` and `LumenPnP-BOM` to get the STL files and BOM for your machine.
 
 ## Printer Requirements
 
@@ -70,7 +70,7 @@ Use gantry settings for the following parts:
 
 {{< container-image path="images/corndog.jpg" alt="Corndog" >}}
 
-This is the [calibration print](https://github.com/index-machines/index/releases/latest/download/FDM-8000_corndog.stl), colloquially referred to as ["the corndog."](https://github.com/index-machines/index/releases/latest/download/FDM-8000_corndog.stl). This part isn't currently included in the exported STLs, so grab it from the link above.
+This is the **calibration print**, colloquially referred to as ["the corndog."](https://github.com/opulo-inc/lumenpnp-archive/releases/download/v2.1.3/FDM-8000_corndog.stl). This part isn't currently included in the exported STLs, so grab it from the link above.
 
 After printing, you can check fit of various fasteners and one of the aluminum extrusions to ensure the parts you print will all fit as expected:
 
