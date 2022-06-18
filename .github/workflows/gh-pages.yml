@@ -24,7 +24,7 @@ env:
     v1.4.0
     ds_test_1
     ds_test_2
-    
+
 jobs:
   deploy:
     name: Deploy
@@ -36,7 +36,7 @@ jobs:
           submodules: recursive  # Fetch the Docsy theme
           fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
           lfs: true
-          
+
             #      - name: Download 3d Print Details
             #        uses: actions/download-artifact@v2
             #        with:
@@ -66,14 +66,14 @@ jobs:
         run: npm ci
 
       - name: Build Hugo
-        run: |      
+        run: |
           hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}            
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           allow_empty_commit: true
-          #cname: docs.opulo.io
+          cname: docs.opulo.io
 
