@@ -1,2 +1,23 @@
-.DS_Store
-resources/**
+### Hugo ###
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Temporary lock file while building
+/.hugo_build.lock
+
+### Node ###
+logs
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+node_modules/
+*.tsbuildinfo
+.npm
+.eslintcache
+.stylelintcache
