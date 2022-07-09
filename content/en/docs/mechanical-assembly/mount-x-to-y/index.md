@@ -55,12 +55,13 @@ Now that we have both gantries assembled, it's time to put them together.
 |   1 | Top Ring Light PCB          |
 |   4 | M2.5x20 machine screw       |
 |   2 | M3x14 machine screw         |
+|   1 | Super Lube                  |
 
 {{< alert color="info" title="Note" >}}
 There's a piece of black electrical tape on the back of the camera PCB. Don't remove it; it is there to help isolate the camera sensor from light shining through vias in the PCB.
 {{< /alert >}}
 
-8. Before we mount the camera, we need to loosen the screw holding the lens in place. Unscrew it just enough such that you can turn the lens in and out. You might need a light grip with pliers to get it to make a full turn. (We'll need to adjust the focal length after the camera is mounted)
+8. Before mounting the camera, you'll need to make sure you can rotate the lens and adjust the camera's focus. First carefully remove the set screw on the side of the lens assembly that is holding the lens in place. Next, unscrew the lens from the camera. You might need a light grip with pliers (preferably with soft grips) to get it to turn. With the lens removed, apply a **very small** amount of Super Lube to the lens threads. Be careful not to get any of the lubricant inside or on the lens. Screw the lens back into the camera and work the lubricant into the threads. Save the lubricant as you'll use it again later. Finally, add the set screw back to the side of the lens assembly. Tighten the set screw just enough to keep the lens in place but not so much that it prevents you from adjusting the lens with a little force, as you'll need to adjust the lens after the camera is mounted.
 
 9. Place the ring light facing downwards into the {{<tooltip "Top Light Mount" "FDM-0015">}}. The LEDs will shine down, and the white plastic wire connector will face upwards.
   {{< container-image path="images/IMG_0771.JPG" alt="Installing the Top Light into the Top Light Mount" >}}
