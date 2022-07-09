@@ -3,7 +3,7 @@ title: "Populating the Staging Plate"
 linkTitle: "Populating the Staging Plate"
 weight: 90
 description: >
-  Mounting components to the staging plate 
+  Mounting components to the staging plate
 ---
 
 We now have the main structure of the machine assembled! Now we'll mount some components to the bottom of the staging plate.
@@ -114,6 +114,7 @@ Now we'll attach the {{<tooltip "Valve Mount" "FDM-0042">}} to the staging plate
 |   4 | M3x30 machine screw        |
 |   4 | M3 Hex Nut                 |
 |   4 | M2.5x8 machine screw       |
+|   1 | Super Lube                 |
 
 9. Stack the {{<tooltip "Up Light Mount" "FDM-0019">}}, the Up Ring Light, and the {{<tooltip "Up Camera Mount" "FDM-0020">}} together. (Note: the Up Ring Light is not pictured here)
   {{< container-image path="images/Populating-The-Staging-Plate-Step-9.png" alt="Assembling the Up Camera stack" >}}
@@ -121,7 +122,7 @@ Now we'll attach the {{<tooltip "Valve Mount" "FDM-0042">}} to the staging plate
 10. Use four M3x30mm screws and four M3 nuts to attach the stack to the staging plate. The cable connector for the Up Ring Light should be facing down and to the left, away from the valve.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-10.png" alt="Up Camera Stack attached to the staging plate with the Up Ring Light's connector facing down and to the left" >}}
 
-11. Loosen the screw on the camera so that we can adjust the camera's focus later. Even after doing so, it still might be difficult to rotate the lens. A light grip with some pliers and a gentle twist can help break the lens free and make it easier to rotate by hand. **Make sure your lens is loose before mounting it.**
+11. Just as with the top camera, you need to make sure you can rotate the camera's lens to adjust its focus. First carefully remove the set screw on the side of the lens assembly that is holding the lens in place. Next, unscrew the lens from the camera. You might need a light grip with pliers (preferably with soft grips) to get it to turn. With the lens removed, use a cotton swab to apply a **very small** amount of Super Lube to the lens threads. Be careful not to get any of the lubricant inside or on the lens. Wipe off any excess with a cotton swab or microfiber cloth. If necessary, you can clean the lens itself using a microfiber cloth. Screw the lens back into the camera and work the lubricant into the threads. Save the lubricant as you'll use it again later. Finally, add the set screw back to the side of the lens assembly. Tighten the set screw just enough to keep the lens in place but not so much that it prevents you from adjusting the lens with a little force, as you'll need to adjust the lens after the camera is mounted.
 
 12. Use four M2.5x8mm screws to mount the camera into the {{<tooltip "Up Camera Mount" "FDM-0020">}} by using the inner set of four holes and tapping directly into the plastic. Match the orientation to the image below.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-12-ALT.png" alt="Up Camera Location on the staging plate" >}}
