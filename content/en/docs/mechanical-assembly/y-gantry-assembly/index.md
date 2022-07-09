@@ -8,46 +8,6 @@ description: >
 
 It's time to get going on the Y gantry. This is what moves the toolhead forward and back, and also carries the X gantry as well. We've got a few sub-assemblies in this one, so let's dive in!
 
-## X Idler Sub-Assembly
-
-| Qty | Part                        |
-|----:|-----------------------------|
-|   1 | FDM-0037 (Belt Tension Arm) |
-|   1 | FDM-0013 (X Idler Mount)    |
-|   1 | M3x16 machine screw         |
-|   1 | M3 Hex Nut                  |
-|   1 | M3 Cap Nut                  |
-|   1 | M5x25 machine screw         |
-|   1 | GT2 Pulley Idler            |
-|   1 | M5 Nyloc Hex Nut            |
-|   1 | M5 Hex Nut                  |
-|   1 | M5x40 machine screw         |
-
-1. Insert the M3 Hex Nut into the slot for the hex nut on the back of the third and final {{<tooltip "Belt Tension Arm" "FDM-0037">}}.
-  {{< container-image path="images/IMG_20210826_150533-web.jpg" alt="Inserted M3 Hex Nut" >}}
-
-2. Insert the M3x16mm Machine Screw through the front hole in the {{<tooltip "Belt Tension Arm" "FDM-0037">}} and then tighten.
-  {{< container-image path="images/Left-Side-Step-2.png" alt="M3 Screw and M3 Hex Nut installed" >}}
-
-3. Thread an M3 Cap Nut on the end of the M3x16mm machine screw.
-  {{< container-image path="images/IMG_20210826_135436-web.jpg" alt="M3 Screw, M3 Nut, and M3 Cap Nut installed" >}}
-
-4. Insert the M5x25mm Machine Screw through the hole in the top of the {{<tooltip "Belt Tension Arm" "FDM-0037">}} so that it passes through a GT2 Pulley Idler.
-  {{< container-image path="images/Left-Side-Step-4.png" alt="M5 screw and GT2 Pulley Idler positioned" >}}
-
-5. Add an M5 Nyloc Hex Nut on the bottom of the {{<tooltip "Belt Tension Arm" "FDM-0037">}} and tighten.
-  {{< container-image path="images/IMG_20210826_135540-web.jpg" alt="M5 Screw, GT2 Idler Pulley, and M5 Nut installed" >}}
-
-6. Insert the M5 Nyloc hex nut into the recess on the bottom of the {{<tooltip "X Idler Mount" "FDM-0013">}}.
-  {{< container-image path="images/Y-Gantry-Assembly-Step-6.png" alt="Nyloc hex nut installed on the X Idler Mount" >}}
-
-7. Insert the completed {{<tooltip "Belt Tension Arm" "FDM-0037">}} into its slot in the {{<tooltip "X Idler Mount" "FDM-0013">}}.
-  {{< container-image path="images/IMG_20210826_135707-web.jpg" alt="Belt Tension Arm inserted into Idler Mount" >}}
-
-8. Insert the M5x40mm machine screw through the hole in the top of the {{<tooltip "X Idler Mount" "FDM-0013">}} so that it passes through the {{<tooltip "Belt Tension Arm" "FDM-0037">}} and tightens into the Nyloc Hex Nut.  Do not over-tighten, and ensure you can still pivot the {{<tooltip "Belt Tension Arm" "FDM-0037">}}.
-  {{< container-image path="images/IMG_20210826_135751-web.jpg" alt="Completed Belt Tension Arm installed in Idler Mount" >}}
-  {{< container-image path="images/IMG_20210826_135757-web.jpg" alt="Completed Belt Tension Arm installed in Idler Mount" >}}
-
 ## X Motor Mount Sub-Assembly
 
 | Qty | Part                          |
@@ -67,6 +27,7 @@ It's time to get going on the Y gantry. This is what moves the toolhead forward 
   {{< container-image path="images/Y-Gantry-Assembly-Step-11-2.png" alt="Screw in the motor and double-check its orientation" >}}
 
 ## Y Gantry Sub-Assemblies
+
 Note: You will need to build two identical Y Gantry Sub-Assemblies. You can build them one at a time, or in parallel, step by step.
 
 | Qty | Parts                       |
@@ -110,15 +71,16 @@ Note: You will need to build two identical Y Gantry Sub-Assemblies. You can buil
 
 ## Final Assembly
 
-| Qty | Part                                |
-|----:|-------------------------------------|
-|   1 | Aluminum extrusion                  |
-|   2 | M5 T-slot nut                       |
-|   2 | M5x10 machine screw                 |
-|   8 | M5x25 machine screw                 |
-|   1 | FDM-0010 (Y Gantry Umbilical Mount) |
-|   1 | Limit switch PCB                    |
-|   2 | M3x8 machine screw                  |
+| Qty | Part                                         |
+|----:|----------------------------------------------|
+|   1 | Aluminum extrusion                           |
+|   2 | M5 T-slot nut                                |
+|   2 | M5x10 machine screw                          |
+|   8 | M5x25 machine screw                          |
+|   1 | FDM-0010 (Y Gantry Umbilical Mount)          |
+|   1 | Limit switch PCB                             |
+|   2 | M3x8 machine screw                           |
+|   1 | FDM-0013 (X Idler Mount) with belt tensioner |
 
 22. Place a Y gantry assembly on each end of a v-slot extrusion. Don't worry about pushing it all the way into the print; we'll be adjusting it in a later step.
   {{< container-image path="images/Y-Gantry-Assembly-Step-22-2.png" alt="Inserting the v-slot extrusion into the Y Gantry" >}}

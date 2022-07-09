@@ -97,4 +97,4 @@ There are some parts in the Bill of Materials page that are highlighted and flag
 
 ## Next steps
 
-Start by assembling the [left side]({{< relref "left-side" >}}).
+Start by assembling the [belt tensioners]({{< relref "belt-tensioners" >}}).

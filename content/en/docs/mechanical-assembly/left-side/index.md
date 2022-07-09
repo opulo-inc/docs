@@ -9,50 +9,9 @@ description: >
   Assembling the left side of the machine
 ---
 
-Alright, time to get into the build! First, we're going to build up the left side of the machine.
+Now that the belt tensioner arms are assembled and attached, it's time to start working on the frame. You'll start by assembling the left side of the machine as seen from the front:
 
-## Belt Tension Arm
-
-| Qty | Part                        |
-|----:|-----------------------------|
-| 1   | M3 Hex Nut                  |
-| 1   | M3x16 machine screw         |
-| 1   | M3 Cap Nut                  |
-| 1   | M5x25 machine screw         |
-| 1   | M5 Nyloc Hex Nut            |
-| 1   | M5x40 machine screw         |
-| 1   | M5 Hex Nut                  |
-| 1   | GT2 Pulley Idler            |
-| 1   | FDM-0037 (Belt Tension Arm) |
-
-
-
-{{< container-image path="images/IMG_20210826_150501-web.jpg" alt="Belt Tension Arm Parts" >}}
-
-1. Insert an M3 Hex Nut into its slot on the back of a {{<tooltip "Belt Tension Arm" "FDM-0037">}}.
-  {{< container-image path="images/IMG_20210826_150533-web.jpg" alt="Inserted M3 Hex Nut" >}}
-
-2. Insert the M3x16mm Machine Screw through the front hole in the {{<tooltip "Belt Tension Arm" "FDM-0037">}} and then tighten.
-  {{< container-image path="images/Left-Side-Step-2.png" alt="M3 Screw and M3 Hex Nut installed" >}}
-
-3. Thread an M3 Cap Nut on the end of the M3x16mm Machine Screw.
-  {{< container-image path="images/IMG_20210826_150638-web.jpg" alt="M3 Screw, M3 Nut, and M3 Cap Nut installed" >}}
-
-4. Insert the M5x25mm Machine Screw through the hole in the top of the {{<tooltip "Belt Tension Arm" "FDM-0037">}} so that it passes through a GT2 Pulley Idler.
-  {{< container-image path="images/Left-Side-Step-4.png" alt="M5 screw and GT2 Pulley Idler positioned" >}}
-
-5. Add an M5 Nyloc Hex Nut on the bottom of the {{<tooltip "Belt Tension Arm" "FDM-0037">}} and tighten. Make sure the idler can still spin freely.
-  {{< container-image path="images/IMG_20210826_150728-webreverse.jpg" alt="M5 Screw, GT2 Idler Pulley, and M5 Nut installed" >}}
-
-6. Insert the M5 Nyloc Hex Nut into the recess for a hex nut on the bottom of one of the idler mount arms on the {{<tooltip "Front Left Leg" "FDM-0001">}}.
-  {{< container-image path="images/Left-Side-Step-6.png" alt="M5 Nyloc Hed Nut positioned in Front Left Leg" >}}
-
-7. Insert completed {{<tooltip "Belt Tension Arm "FDM-0037>}} assembly between the arms on the {{<tooltip "Front Left Leg" "FDM-0001">}}, with the screw head of the M5x25mm facing up.
-  {{< container-image path="images/Left-Side-Step-7.png" alt="Belt Tensioner Arm" >}}
-
-8. Insert the M5x40mm Machine Screw through the hole in the top so that it passes through the {{<tooltip "Belt Tension Arm" "FDM-0037">}} and tightens into the M5 Nyloc Hex Nut. Do not over-tighten, and ensure you can still pivot the tension arm.
-  {{< container-image path="images/Left-Side-Step-8.png" alt="M5x40mm screw inserted into Idler and Belt Tensioner Arm" >}}
-  {{< container-image path="images/IMG_20210826_151445-web.jpg" alt="Idler and Belt Tension Arm installed on Leg" >}}
+{{< container-image path="images/hero-alpha-min.png" alt="The machine shown from the front" >}}
 
 ## Assembly
 
