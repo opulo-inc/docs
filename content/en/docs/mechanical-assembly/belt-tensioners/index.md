@@ -91,4 +91,4 @@ The third and final tensioner is attached to the {{< tooltip "X Idler Mount" "FD
 
 ## Next steps
 
-Now that all the tensioners are in teh right place, continue with [assembling the left side]({{< relref "left-side" >}}).
+Now that all the tensioners are in the right place, continue with [assembling the left side]({{< relref "left-side" >}}).
