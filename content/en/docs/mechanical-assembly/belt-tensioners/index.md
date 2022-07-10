@@ -80,7 +80,7 @@ Next, attach the second tensioner the the {{< tooltip "Front Right Leg" "FDM-000
 The third and final tensioner is attached to the {{< tooltip "X Idler Mount" "FDM-0013" >}}. This is only slightly different from the previous two:
 
 13. Insert the M5 Nyloc hex nut into the recess on the bottom of the {{< tooltip "X Idler Mount" "FDM-0013" >}}.
-  {{< container-image path="images/16-x-arm.jpg" alt="Nyloc hex nut installed on the X Idler Mount" >}}
+  {{< container-image path="images/15-x-nut.png" alt="Nyloc hex nut installed on the X Idler Mount" >}}
 
 14. Insert the completed {{< tooltip "Belt Tension Arm" "FDM-0037" >}} into its slot in the {{< tooltip "X Idler Mount" "FDM-0013" >}}.
   {{< container-image path="images/16-x-arm.jpg" alt="Belt Tension Arm inserted into Idler Mount" >}}
