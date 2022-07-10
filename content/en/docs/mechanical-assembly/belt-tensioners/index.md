@@ -26,7 +26,7 @@ Alright, time to get into the build! First, we're going to build the belt tensio
 | 1                | FDM-0002 (Front Right Leg)    |
 | 1                | FDM-0013 (X Idler Mount)      |
 
-## Assembling the tensioner arms
+## Assembling the Belt Tensioner Arms
 
 {{< container-image path="images/1-belt-tension-arm-parts.jpg" alt="Belt Tension Arm Parts" >}}
 
