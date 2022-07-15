@@ -44,7 +44,7 @@ If you'd like to change the brightness that your ring lights actuate to during a
 {{< container-image path="images/edit-ringlight-brightness.png" alt="" >}}
 
 ## Vacuum Sensors
-Now we can check the vacuum sensors.  First, check the value from the first vacuum sensor before and after a vacuum is pulled to check that it's working correctly.
+Now we can check the vacuum sensors.  First, check the value from the first vacuum sensor before and after a vacuum is pulled to check that it's working correctly. You should see that the values are different by about 200.
 
 ```gcode
 M3426 G4 C1 I1 A110   ;read vac 1 value
@@ -56,7 +56,23 @@ M107                  ;turn off the pump
 M107 P1               ;turn off the valve
 ```
 
-You should find that the two values returned are different.
+
+
+{{< alert color="warning" title="Interposer Board" >}}
+
+Some LumenPnP kits shipped with a less than optimal vacuum sensor wiring. Some people's sensors can detect a swing of about 200, but in some cases there isn't enough of a difference for a useful signal because of some part tolerances. We're sorry about this! When the community discovered this issue, we stopped shipping immediately and designed a board that sits in between the vacuum sensor and the motherboard that makes the signal much stronger. Once we confirmed this board fixes the issue, we installed them on all machines we shipped moving forward.
+
+No Interposers Installed
+{{< container-image path="images/IMG_1293.JPG" alt="No Interposer Installed" >}}
+
+Interposer Boards Installed
+{{< container-image path="images/IMG_1325.JPG" alt="Interposer Board Installed" >}}
+
+If you bought a LumenPnP kit that did not come with interposer boards installed and would like to upgrade them, please [reach out to our support team](https://opulo.io/pages/contact-support) and we'll get some sent out to you as soon as possible. We have an [installation guide](https://docs.opulo.io/service/rev03-vac-interposer/) to guide you through the process.
+
+If you have the interposer boards installed for your vacuum sensors, change the `G4` to a `G2` in your "sensor read" GCode command. This changes the gain of the sensor to a more usable value. The difference in value should now be about 2000.
+{{< /alert >}}
+
 
 It's also worth noting the command for reading the second vacuum sensor. Until pneumatics for a second nozzle are plumbed in, the second one will only ever read ambient pressure.
 
