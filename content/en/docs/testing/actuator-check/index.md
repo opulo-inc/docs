@@ -68,7 +68,7 @@ No Interposers Installed
 Interposer Boards Installed
 {{< container-image path="images/IMG_1325.JPG" alt="Interposer Board Installed" >}}
 
-If you bought a LumenPnP kit that did not come with interposer boards installed and would like to upgrade them, please [reach out to our support team](https://opulo.io/pages/contact-support) and we'll get some sent out to you as soon as possible. We have an [installation guide](https://docs.opulo.io/service/rev03-vac-interposer/) to guide you through the process.
+If you bought a LumenPnP kit that did not come with interposer boards installed and would like to upgrade them, please [reach out to our support team](https://opulo.io/pages/contact-support) and we'll get some sent out to you as soon as possible. We have an [installation guide](https://docs.opulo.io/maintenance-upgrades/rev3-vac-interposer/) to guide you through the process.
 
 If you have the interposer boards installed for your vacuum sensors, change the `G4` to a `G2` in your "sensor read" GCode command. This changes the gain of the sensor to a more usable value. The difference in value should now be about 2000.
 {{< /alert >}}
