@@ -50,7 +50,7 @@ This process should take about 60 minutes.
 Be careful not to tug too hard on the sensor. It's being held down onto the PCB with just a few copper pads, and pulling too hard might result in lifting those pads off the PCB. Make sure the solder is completely molten, and the sensor should come away easily.
 {{% /alert %}}
    
-1. Remove any remaining solder on the vacuum sensor pads. We need these clean and flat for the interposer installation, so use some solder wick to remove any solder from the six pads that make up each vacuum sensor footprint.
+2. Remove any remaining solder on the vacuum sensor pads. We need these clean and flat for the interposer installation, so use some solder wick to remove any solder from the six pads that make up each vacuum sensor footprint.
 
 {{< container-image path="IMG_1303.JPG" alt="" >}}
    
@@ -82,14 +82,14 @@ Ensure the six pads of the footprint on the motherboard align with the six plate
 {{< container-image path="IMG_1322.JPG" alt="" >}}
 {{< container-image path="IMG_1327.JPG" alt="" >}}
 
-7. Check to make sure that the sensor is working properly. We'll do this by connecting to the motherboard with your computer and try sending some GCode commands to it.
+7. Check to make sure that the sensor is working properly. We'll do this by connecting to the motherboard with your computer and try sending some GCode commands to it with a GCode sender. We recommend using CNCjs.
    - First sensor command: `M3426 G2 C1 I1 A110`
    - Second sensor command: `M3426 G2 C2 I1 A110`
 
     When at ambient pressure, the response from each sensor should look something like this:
 
     ```
-    V: 
+    V:29800 C:1 G:2 I:1
     ```
 
     Make sure the `V` value is about 29800. Don't worry if it's not exact. As long as it's within 500 of 29800, it's an acceptable value.
