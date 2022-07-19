@@ -15,7 +15,7 @@ description: >-
 
 Now that we've got all the THT components soldered in, it's time to mount the motherboard to the staging plate. It's important to make sure we're mounting the motherboard in the correct place on the staging plate so that all the cables fit and reach their respective ports correctly.
 
-1. Put your Lumen up on its haunches and take a look at the left side of the staging plate. Reference the picture below for which holes you should mount the 25mm standoffs.
+1. Put your Lumen up on its haunches and take a look at the left side of the staging plate. We will be working with the following holes on the staging plate: A3, G3, A9, G9.
   {{< container-image path="images/Mounting-The-Motherboard-Step-1.png" alt="Standoff location on the staging plate" >}}
 
 2. Pass four M3x10mm screws through the top side of the staging plate, and tighten them into the standoffs.
