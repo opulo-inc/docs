@@ -41,11 +41,11 @@ Now the whole XY gantry assembly gets dropped onto the frame!
   {{< container-image path="images/Mounting-Y-To-Frame-Step-7.png" alt="Loosen the screws holding on the back rail" >}}
   {{< container-image path="images/Mounting-Y-To-Frame-Step-7-2.png" alt="Re-tighten the screws holding on the back rail after checking that the spacing is correct for the rollers" >}}
 
-8. Use four Slot Nuts and four M5x8mm screws to loosely secure the Staging Plate to the frame.
+8. Use four Slot Nuts and four M5x8mm screws to loosely secure the Staging Plate to the frame. If you have the fiberglass PCB staging plate, the coordinate A1 is in the front left of the machine.
   {{< container-image path="images/Mounting-Y-To-Frame-Step-8.png" alt="Loosely attach the Staging Plate" >}}
 
-9. If you have the newer fiberglass PCB staging plate, punch out the center piece to leave a space for the bottom camera.
-  {{< container-image path="images/Mounting-Y-To-Frame-Step-8.png" alt="Loosely attach the Staging Plate" >}} <!-- TODO: change this photo -->
+9. If you purchased additional staging plates, loosely secure them next to your first staging plate with four Slot Nuts and four M5x8mm screws.
+  {{< container-image path="images/IMG_9499.jpg" alt="Loosely attach the additional Staging Plate(s)" >}}
 
 10. Adjust the Staging Plate so that it is exactly 95mm away from the {{< tooltip "Front Left Leg" "FDM-0001" >}} and {{< tooltip "Front Right Leg" "FDM-0002" >}}, then tighten it into place. This will be important for using the OpenPnP configuration provided for the machine. See below for how to measure the distance properly.
   {{< container-image path="images/IMG_0823.JPG" alt="Measuring the distance between the Staging Plate and the front legs" >}}
