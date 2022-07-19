@@ -15,11 +15,11 @@
     transition: opacity 0.3s;
 }
 
-.term {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
+// .term {
+//     position: relative;
+//     display: inline-block;
+//     border-bottom: 1px dotted black;
+// }
 
 .term:hover .definition {
     visibility: visible;
