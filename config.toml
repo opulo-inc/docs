@@ -219,3 +219,8 @@ enable = false
 #    identifier = "openpnp"
 #    url = "openpnp"
 #    weight = 20
+
+[module]
+[[module.mounts]]
+        source = 'assets'
+        target = 'assets'

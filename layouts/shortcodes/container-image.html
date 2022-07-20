@@ -1,5 +1,9 @@
 {{ $image := $.Page.Resources.GetMatch (.Get "path") }}
 
+{{ if eq $image nil }}
+    {{ $image = resources.GetMatch (.Get "path") }}
+{{ end }}
+
 {{ $options := .Get "options"}}
 {{ $method := .Get "method" }}
 
@@ -14,5 +18,5 @@
 {{ end }}
 
 <figure>
-<img src='{{ (.Scratch.Get "modified-image").Permalink }}' alt='{{ .Get "alt" }}'>
+    <img src='{{ (.Scratch.Get "modified-image").Permalink }}' alt='{{ .Get "alt" }}'>
 </figure>
