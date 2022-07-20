@@ -138,10 +138,10 @@ Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging pla
   {{< container-image path="images/Populating The Staging Plate 16.png" alt="Assembling the Up Camera stack 7" >}}
 
 16. Use four M3x30mm screws and four M3 nuts mount the whole assembly to the staging plate: D18, B20, D20, F22 (if you have the fiberglass staging plate, these will be the nuts you installed in the previous step). The cable connector for the Up Ring Light should be facing down and to the left, away from the valve.
-  {{< container-image path="images/Populating The Staging Plate 19.png" alt="Assembling the Up Camera stack finished with metal staging plate" >}}
+  {{< container-image path="images/Populating The Staging Plate 19.png" alt="Assembling the Up Camera stack finished with metal staging plate" >}} 
   {{< container-image path="images/Populating The Staging Plate 17.png" alt="Assembling the Up Camera stack 8" >}}
 
-17. Use four M2.5x8mm screws to mount the camera into the {{< tooltip "Up Camera Mount" "FDM-0020" >}} by using the inner set of four holes and tapping directly into the plastic. Match the orientation to the image below.
+17. Ensure that your bottom camera matches the orientation to the image below.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-12-ALT.png" alt="Up Camera Location on the staging plate" >}}
   {{< container-image path="images/IMG_0837.JPG" alt="Final assembly of the Up Camera and Up Ring Light, with proper cable orientation" >}}
 
