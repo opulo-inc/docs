@@ -9,7 +9,7 @@ description: >
 
 Now that we've done the fisheye calibration, we can mount the datum board to the staging plate. The datum board is a reference point for everything else you'll do with the machine.
 
-1. Using the datum board, four M3x16mm screws, four M3 nuts, and one datum board mount (FDM-0055), mount the datum board on the staging plate as shown in the image below, with the fisheye calibration pattern facing down. You should see a gold grid of lines and a fiducial in the center of the Opulo logo facing upwards. Tighten this down very well; this will define the center point for the entire machine. 
+1. Using the datum board, four M3x16mm screws, four M3 nuts, and one datum board mount (FDM-0055), mount the datum board on the staging plate with screws through: B18, A19, A21, B22. The the fisheye calibration pattern should be facing down, and the  gold grid of lines and fiducial in the center of the Opulo logo facing upwards. Tighten this down very well; this will define the center point for the entire machine.
 
 {{< container-image path="images/Screen Shot 2022-01-11 at 12.51.47 PM.png" alt="" >}}
 
