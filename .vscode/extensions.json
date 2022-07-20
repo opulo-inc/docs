@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "rusnasonov.vscode-hugo",
+        "budparr.language-hugo-vscode",
+        "fivethree.vscode-hugo-snippets",
+        "kaellarkin.hugo-shortcode-syntax",
+        "yzhang.markdown-all-in-one",
+        "DavidAnson.vscode-markdownlint"
+    ]
+}
