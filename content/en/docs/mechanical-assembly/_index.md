@@ -11,4 +11,4 @@ description: >
 
 This section is about building the mechanical frame of the machine. Bolting prints and extrusion together, getting motion systems set up, and adjusting roller and belt tension.
 
-Make sure you have all your tools at the ready, and let's get going!
+Make sure you have all your tools at the ready, and [let's get going]({{< relref "printing-parts" >}}).
