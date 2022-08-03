@@ -10,11 +10,10 @@ description: >
 
 ## Using the Auto Build Marlin VSCode Extension
 
-1. Download the [latest Marlin firmware](https://github.com/MarlinFirmware/Marlin/archive/refs/heads/bugfix-2.0.x.zip) and unzip it.
+1. Download the [latest Marlin firmware](https://github.com/MarlinFirmware/Marlin/archive/refs/heads/bugfix-2.1.x.zip) and unzip it.
 2. Install [VSCode](https://code.visualstudio.com/) and its [PlatformIO extension](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide).
 3. Open Marlin firmware's folder on VSCode.
-4. Grab Marlin configuration files ([Configuration.h](https://github.com/MarlinFirmware/Configurations/raw/bugfix-2.0.x/config/examples/Index/REV_03/Configuration.h) and [Configuration_adv.h](https://github.com/MarlinFirmware/Configurations/raw/bugfix-2.0.x/config/examples/Index/REV_03/Configuration_adv.h)) and replace the files in the Marlin/Marlin folder with those new ones.
-5. Install the Auto Build Marlin plugin using this [Marlin Documentation page](https://marlinfw.org/docs/basics/auto_build_marlin.html).
+4. Grab Marlin configuration files ([Configuration.h](https://raw.githubusercontent.com/MarlinFirmware/Configurations/bugfix-2.1.x/config/examples/Opulo/Lumen_REV3/Configuration.h) and [Configuration_adv.h](https://raw.githubusercontent.com/MarlinFirmware/Configurations/bugfix-2.1.x/config/examples/Opulo/Lumen_REV3/Configuration_adv.h)) and replace the files in the Marlin/Marlin folder with those new ones.
 6. Try to build Marlin using the build button with the hammer icon as shown below:
 
 {{< container-image path="images/marlin-auto-build-ui.PNG" alt="Marlin auto-build UI" >}}
