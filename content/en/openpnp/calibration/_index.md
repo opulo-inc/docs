@@ -1,7 +1,7 @@
 ---
-title: "Calibration"
-linkTitle: "Calibration"
-weight: 1
+title: "Calibration Without FTP"
+linkTitle: "Calibration Without FTP"
+weight: 2
 type: docs
 resources:
 - src: "**.png"
