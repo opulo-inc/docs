@@ -10,16 +10,21 @@ description: >
 
 ## Using the Auto Build Marlin VSCode Extension
 
-1. Download the [latest Marlin firmware](https://github.com/MarlinFirmware/Marlin/archive/refs/heads/bugfix-2.0.x.zip) and unzip it.
+> Note that the currently linked-to Marlin version is `bugfix-2.1.x`. Building an older version of Marlin with the recommended config files won't work. If you are unsure whether a previously-downloaded local version of Marlin is the newest one, redownloading it is the safest choice.
+
+1. Download the [latest Marlin firmware](https://github.com/MarlinFirmware/Marlin/archive/refs/heads/bugfix-2.1.x.zip) and unzip it.
 2. Install [VSCode](https://code.visualstudio.com/) and its [PlatformIO extension](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide).
 3. Open Marlin firmware's folder on VSCode.
-4. Grab Marlin configuration files ([Configuration.h](https://github.com/MarlinFirmware/Configurations/raw/bugfix-2.0.x/config/examples/Index/REV_03/Configuration.h) and [Configuration_adv.h](https://github.com/MarlinFirmware/Configurations/raw/bugfix-2.0.x/config/examples/Index/REV_03/Configuration_adv.h)) and replace the files in the Marlin/Marlin folder with those new ones.
-5. Install the Auto Build Marlin plugin using this [Marlin Documentation page](https://marlinfw.org/docs/basics/auto_build_marlin.html).
+4. Grab Marlin configuration files ([Configuration.h](https://raw.githubusercontent.com/MarlinFirmware/Configurations/bugfix-2.1.x/config/examples/Opulo/Lumen_REV3/Configuration.h) and [Configuration_adv.h](https://raw.githubusercontent.com/MarlinFirmware/Configurations/bugfix-2.1.x/config/examples/Opulo/Lumen_REV3/Configuration_adv.h)) and replace the files in the Marlin/Marlin folder with those new ones.
+5. Install the Auto Build Marlin plugin using this [Marlin Documentation page](https://marlinfw.org/docs/basics/auto_build_marlin.html), or download it directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MarlinFirmware.auto-build).
 6. Try to build Marlin using the build button with the hammer icon as shown below:
 
 {{< container-image path="images/marlin-auto-build-ui.PNG" alt="Marlin auto-build UI" >}}
 
-7. If this is successful, attach the LumenPnP Mobo to your computer with the USB cable.
+7. If this is successful, attach the LumenPnP Mobo to your computer with the USB cable. If it isn't, this might help:
+    * Check the error messages for configuration errors and fix them, or replace it with the default config
+    * If this fails, check that your config file version is the same as your Marlin version (e.g. a bugfix-2.0.x config file won't work in a bugfix-2.1.x)
+    * When in doubt, re-downlaod Marlin and the configuration files from the links above
 
 8. Boot your motherboard into DFU Mode
     1. Press and hold the `BOOT` button
@@ -28,20 +33,45 @@ description: >
     4. Release the `BOOT` button
   {{< container-image path="images/IMG_0749.JPG" alt="BOOT and RESET buttons" >}}
 
-  If you have a hard time getting your board to enter DFU mode, instead try powering off the machine entirely, holding the 'BOOT' button, plugging in power, waiting 10 seconds, then release the `BOOT` button.
+> If you have a hard time getting your board to enter DFU mode, instead try powering off the machine entirely, holding the 'BOOT' button, plugging in power, waiting 10 seconds, then release the `BOOT` button.
 
-9. Now, press the upload button as shown below.
-{{< container-image path="images/marlin-auto-build-ui.PNG" alt="Marlin auto-build UI" >}}
+9. Flash the Motherboard using `dfu-util` by running the command `dfu-util -d 0x0483:0xdf11 -s 0x08000000:leave -a 0 -D ./.pio/build/Opulo_Lumen_REV3/firmware.bin` in the integrated terminal in the root of the repository.  {{< container-image path="images/vscode-dfu-util-integrated-terminal.png" alt="integrated terminal in VSCode with DFU-Util command" >}}
 
-10. Wait for the process to finish:
-  {{< container-image path="images/PIO_upload_done.png" alt="PIO firmware upload done" >}}
+> explanation: `dfu-util` is a flash tool available on all platforms.
+>
+> * `-d 0x0483:0x0df11` tells the tool to flash the STM32 chip on the motherboard. This is optional if you only have one dfu device connected.
+> * `-s 0x8000000:leave` is the target memory address that the firmware is flashed to. The `:leave` part will cause the chip to reset on its own, making the machine accessible in OpenPNP without rebooting it.
+> * `-a 0` makes the tool use the altsetting required for flashing the ESP32.
+> * `-D ./.pio/build/Opulo_Lumen_REV3/firmware.bin` is the path to the to-be-flashed firmware. If you want to flash another file, change this.
 
-11. Press Reset on the board. Now it should show up as a COM/Serial Port on your PC:
+10. Wait for the process to finish.
 
-- Windows:
-  {{< container-image path="images/STM32_COM_port_connected.png" alt="STM32 shows up as a COM/Serial Port" >}}
-- Mac/Linux:
-  {{< container-image path="images/linux_lsusb.png" alt="STM32 shows up on lsusb" >}}
+11. The machine should show up as a COM/Serial Port on your PC now, and you should be able to access it via OpenPNP. If it doesn't, press the Reset button on the board, or power-cycle the machine *after the flashing is completed*.
+
+> This is how you can check whether your machine is connected properly:
+>
+> * Windows:
+>   {{< container-image path="images/STM32_COM_port_connected.png" alt="STM32 shows up as a COM/Serial Port" >}}
+> * Mac/Linux:
+>   {{< container-image path="images/linux_lsusb.png" alt="STM32 shows up on lsusb" >}}
+
+
+> Note that flashing the firmware using the Auto Build Marlin Plugin might work, but seems error-prone for most people. Therefore, if you want to try it, you can, but using `dfu-util` is generally a better idea.
+> If you're absolutely sure that ABM is the way to go, do this:
+>
+> 1. Boot your motherboard into DFU Mode
+>    1. Press and hold the `BOOT` button
+>    2. Press the Reset button and hold for 10 seconds
+>    3. Release the Reset button and wait for 10 seconds
+>    4. Release the `BOOT` button
+>  {{< container-image path="images/IMG_0749.JPG" alt="BOOT and RESET buttons" >}}
+> 2. Now, press the upload button in ABM as shown below:
+> {{< container-image path="images/marlin-auto-build-ui.PNG" alt="Marlin auto-build UI" >}}
+> 3. Wait for the process to finish
+> 4. Continue with step 11
+
+ 
+
 
 ## Manually Configuring PlatformIO
 
@@ -50,8 +80,6 @@ description: >
 3. Open Marlin firmware's folder on VSCode
 4. Grab Marlin configuration files ([Configuration.h](https://github.com/MarlinFirmware/Configurations/raw/bugfix-2.0.x/config/examples/Index/REV_03/Configuration.h) and [Configuration_adv.h](https://github.com/MarlinFirmware/Configurations/raw/bugfix-2.0.x/config/examples/Index/REV_03/Configuration_adv.h)) and replace the files in the Marlin/Marlin folder with those new ones.
 
-5. Edit the platformio.ini file to indicate which board you're uploading to. Update `default_envs` to read `Index_Mobo_Rev03`.
-  {{< container-image path="images/Screen Shot 2022-02-04 at 7.27.25 PM.PNG" alt="BOOT and RESET buttons" >}}
 
 6. Attach the LumenPnP Mobo to your computer with the USB cable.
 
@@ -62,20 +90,22 @@ description: >
     4. Release the `BOOT` button
   {{< container-image path="images/IMG_0749.JPG" alt="BOOT and RESET buttons" >}}
 
-  If you have a hard time getting your board to enter DFU mode, instead try powering off the machine entirely, holding the 'BOOT' button, plugging in power, waiting 10 seconds, then release the `BOOT` button.
+> If you have a hard time getting your board to enter DFU mode, instead try powering off the machine entirely, holding the 'BOOT' button, plugging in power, waiting 10 seconds, then release the `BOOT` button.
 
-8. Upload firmware to the board:
+8. Upload firmware to the board via PlatformIO:
   {{< container-image path="images/vscode_marlin_env.png" alt="Upload firmware via PIO" >}}
 
 9. Wait for the process to finish:
   {{< container-image path="images/PIO_upload_done.png" alt="PIO firmware upload done" >}}
 
-10. Press Reset on the board. Now it should show up as a COM/Serial Port on your PC:
+11.  Press Reset on the board, or power-cycle the machine *after the flashing is completed*. Now it should show up as a COM/Serial Port on your PC:
 
 - Windows:
   {{< container-image path="images/STM32_COM_port_connected.png" alt="STM32 shows up as a COM/Serial Port" >}}
 - Mac/Linux:
   {{< container-image path="images/linux_lsusb.png" alt="STM32 shows up on lsusb" >}}
+
+
 
 ## Flashing Factory Firmware
 
