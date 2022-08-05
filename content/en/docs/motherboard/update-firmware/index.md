@@ -35,16 +35,25 @@ description: >
 
 > If you have a hard time getting your board to enter DFU mode, instead try powering off the machine entirely, holding the 'BOOT' button, plugging in power, waiting 10 seconds, then release the `BOOT` button.
 
-9. Flash the Motherboard using `dfu-util` by running the command `dfu-util -D ./.pio/build/Opulo_Lumen_REV3/firmware.bin -s 0x08000000 -a 0` in the integrated terminal in the root of the repository.  {{< container-image path="images/vscode-dfu-util-integrated-terminal.png" alt="integrated terminal in VSCode with DFU-Util command" >}}
+9. Flash the Motherboard using `dfu-util` by running the command `dfu-util -d 0x0483:0xdf11 -s 0x08000000:leave -a 0 -D ./.pio/build/Opulo_Lumen_REV3/firmware.bin` in the integrated terminal in the root of the repository.  {{< container-image path="images/vscode-dfu-util-integrated-terminal.png" alt="integrated terminal in VSCode with DFU-Util command" >}}
+
+> explanation: `dfu-util` is a flash tool available on all platforms.
+>
+> * `-d 0x0483:0x0df11` tells the tool to flash the STM32 chip on the motherboard. This is optional if you only have one dfu device connected.
+> * `-s 0x8000000:leave` is the target memory address that the firmware is flashed to. The `:leave` part will cause the chip to reset on its own, making the machine accessible in OpenPNP without rebooting it.
+> * `-a 0` makes the tool use the altsetting required for flashing the ESP32.
+> * `-D ./.pio/build/Opulo_Lumen_REV3/firmware.bin` is the path to the to-be-flashed firmware. If you want to flash another file, change this.
 
 10. Wait for the process to finish.
 
-11. Press Reset on the board, or power-cycle the machine *after the flashing is completed*. Now it should show up as a COM/Serial Port on your PC:
+11. The machine should show up as a COM/Serial Port on your PC now, and you should be able to access it via OpenPNP. If it doesn't, press the Reset button on the board, or power-cycle the machine *after the flashing is completed*.
 
-- Windows:
-  {{< container-image path="images/STM32_COM_port_connected.png" alt="STM32 shows up as a COM/Serial Port" >}}
-- Mac/Linux:
-  {{< container-image path="images/linux_lsusb.png" alt="STM32 shows up on lsusb" >}}
+> This is how you can check whether your machine is connected properly:
+>
+> * Windows:
+>   {{< container-image path="images/STM32_COM_port_connected.png" alt="STM32 shows up as a COM/Serial Port" >}}
+> * Mac/Linux:
+>   {{< container-image path="images/linux_lsusb.png" alt="STM32 shows up on lsusb" >}}
 
 
 > Note that flashing the firmware using the Auto Build Marlin Plugin might work, but seems error-prone for most people. Therefore, if you want to try it, you can, but using `dfu-util` is generally a better idea.
