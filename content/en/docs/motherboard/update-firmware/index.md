@@ -5,6 +5,10 @@ weight: 30
 description: >
   Flash Marlin onto the motherboard.
 ---
+[//]: # (Links that are used in multiple places are here. Change if necessary:)
+[latest_marlin]: https://github.com/MarlinFirmware/Marlin/archive/refs/heads/bugfix-2.1.x.zip
+[latest_marlin_config]: https://raw.githubusercontent.com/MarlinFirmware/Configurations/bugfix-2.1.x/config/examples/Opulo/Lumen_REV3/Configuration.h
+[latest_marlin_adv_config]: https://raw.githubusercontent.com/MarlinFirmware/Configurations/bugfix-2.1.x/config/examples/Opulo/Lumen_REV3/Configuration_adv.h
 
 **This step is optional.** Your motherboard comes with a correct build of Marlin pre-installed, but if you'd like to update the firmware or change settings, this will help you do so!
 
@@ -12,10 +16,10 @@ description: >
 
 > Note that the currently linked-to Marlin version is `bugfix-2.1.x`. Building an older version of Marlin with the recommended config files won't work. If you are unsure whether a previously-downloaded local version of Marlin is the newest one, redownloading it is the safest choice.
 
-1. Download the [latest Marlin firmware](https://github.com/MarlinFirmware/Marlin/archive/refs/heads/bugfix-2.1.x.zip) and unzip it.
+1. Download the [latest Marlin firmware][latest_marlin] and unzip it.
 2. Install [VSCode](https://code.visualstudio.com/) and its [PlatformIO extension](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide).
 3. Open Marlin firmware's folder on VSCode.
-4. Grab Marlin configuration files ([Configuration.h](https://raw.githubusercontent.com/MarlinFirmware/Configurations/bugfix-2.1.x/config/examples/Opulo/Lumen_REV3/Configuration.h) and [Configuration_adv.h](https://raw.githubusercontent.com/MarlinFirmware/Configurations/bugfix-2.1.x/config/examples/Opulo/Lumen_REV3/Configuration_adv.h)) and replace the files in the Marlin/Marlin folder with those new ones.
+4. Grab Marlin configuration files ([Configuration.h][latest_marlin_config] and [Configuration_adv.h][latest_marlin_adv_config]) and replace the files in the Marlin/Marlin folder with those new ones.
 5. Install the Auto Build Marlin plugin using this [Marlin Documentation page](https://marlinfw.org/docs/basics/auto_build_marlin.html), or download it directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MarlinFirmware.auto-build).
 6. Try to build Marlin using the build button with the hammer icon as shown below:
 
@@ -75,10 +79,10 @@ description: >
 
 ## Manually Configuring PlatformIO
 
-1. Download the [latest Marlin firmware](https://github.com/MarlinFirmware/Marlin/archive/refs/heads/bugfix-2.0.x.zip) and unzip it.
+1. Download the [latest Marlin firmware][latest_marlin] and unzip it.
 2. Install [VSCode](https://code.visualstudio.com/) and its [PlatformIO extension](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
 3. Open Marlin firmware's folder on VSCode
-4. Grab Marlin configuration files ([Configuration.h](https://github.com/MarlinFirmware/Configurations/raw/bugfix-2.0.x/config/examples/Index/REV_03/Configuration.h) and [Configuration_adv.h](https://github.com/MarlinFirmware/Configurations/raw/bugfix-2.0.x/config/examples/Index/REV_03/Configuration_adv.h)) and replace the files in the Marlin/Marlin folder with those new ones.
+4. Grab Marlin configuration files ([Configuration.h][latest_marlin_config] and [Configuration_adv.h][latest_marlin_adv_config]) and replace the files in the Marlin/Marlin folder with those new ones.
 
 
 6. Attach the LumenPnP Mobo to your computer with the USB cable.
@@ -125,7 +129,7 @@ If you aren't able to upload, you can check to see if your motherboard is bootin
 - Mac/Linux:
   {{< container-image path="images/linux_lsusb_bootloader.png" alt="STM32 in DFU mode in lsusb" >}}
 
-Also, reference [the Marlin instructions for uploading](https://marlinfw.org/docs/basics/install_platformio.html). Be sure to use `bugfix-2.0.x` if uploading using these instructions.
+Also, reference [the Marlin instructions for uploading](https://marlinfw.org/docs/basics/install_platformio.html). Be sure to use `bugfix-2.1.x` if uploading using these instructions.
 
 ### Alternative Method (Not Recommended)
 
