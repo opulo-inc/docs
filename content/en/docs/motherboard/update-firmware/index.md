@@ -77,13 +77,15 @@ description: >
  
 
 
-## Manually Configuring PlatformIO
+## Manually Configuring PlatformIO (for flashing via PIO)
 
 1. Download the [latest Marlin firmware][latest_marlin] and unzip it.
 2. Install [VSCode](https://code.visualstudio.com/) and its [PlatformIO extension](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
 3. Open Marlin firmware's folder on VSCode
 4. Grab Marlin configuration files ([Configuration.h][latest_marlin_config] and [Configuration_adv.h][latest_marlin_adv_config]) and replace the files in the Marlin/Marlin folder with those new ones.
 
+5. Edit the platformio.ini file to indicate which board you're uploading to. Update `default_envs` to read `Index_Mobo_Rev03`.
+  {{< container-image path="images/Screen Shot 2022-02-04 at 7.27.25 PM.PNG" alt="BOOT and RESET buttons" >}}
 
 6. Attach the LumenPnP Mobo to your computer with the USB cable.
 
@@ -102,7 +104,7 @@ description: >
 9. Wait for the process to finish:
   {{< container-image path="images/PIO_upload_done.png" alt="PIO firmware upload done" >}}
 
-11.  Press Reset on the board, or power-cycle the machine *after the flashing is completed*. Now it should show up as a COM/Serial Port on your PC:
+10. Press Reset on the board, or power-cycle the machine *after the flashing is completed*. Now it should show up as a COM/Serial Port on your PC:
 
 - Windows:
   {{< container-image path="images/STM32_COM_port_connected.png" alt="STM32 shows up as a COM/Serial Port" >}}
