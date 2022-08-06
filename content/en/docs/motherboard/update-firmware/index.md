@@ -4,18 +4,20 @@ linkTitle: "Update the Firmware"
 weight: 30
 description: >
   Flash Marlin onto the motherboard.
+marlin-version: bugfix-2.1.x
 ---
+[//]: # (To change the targeted Marlin version, change it in the YAML above. That'll change the links too.)
 [//]: # (Links that are used in multiple places are here. Change if necessary:)
-[latest_marlin]: https://github.com/MarlinFirmware/Marlin/archive/refs/heads/bugfix-2.1.x.zip
-[latest_marlin_config]: https://raw.githubusercontent.com/MarlinFirmware/Configurations/bugfix-2.1.x/config/examples/Opulo/Lumen_REV3/Configuration.h
-[latest_marlin_adv_config]: https://raw.githubusercontent.com/MarlinFirmware/Configurations/bugfix-2.1.x/config/examples/Opulo/Lumen_REV3/Configuration_adv.h
+[latest_marlin]: https://github.com/MarlinFirmware/Marlin/archive/refs/heads/{{< param marlin-version >}}.zip
+[latest_marlin_config]: https://raw.githubusercontent.com/MarlinFirmware/Configurations/{{< param marlin-version >}}/config/examples/Opulo/Lumen_REV3/Configuration.h
+[latest_marlin_adv_config]: https://raw.githubusercontent.com/MarlinFirmware/Configurations/{{< param marlin-version >}}/config/examples/Opulo/Lumen_REV3/Configuration_adv.h
 
 **This step is optional.** Your motherboard comes with a correct build of Marlin pre-installed, but if you'd like to update the firmware or change settings, this will help you do so!
 
 ## Using the Auto Build Marlin VSCode Extension
 
  {{% alert color="info" title="MARLIN VERSON" %}}
- The currently linked-to Marlin version is `bugfix-2.1.x`. Building an older version of Marlin with the recommended config files won't work. If you are unsure whether a previously-downloaded local version of Marlin is the newest one, redownloading it is the safest choice.
+ The currently linked-to Marlin version is `{{< param marlin-version >}}`. Building an older version of Marlin with the recommended config files won't work. If you are unsure whether a previously-downloaded local version of Marlin is the newest one, redownloading it is the safest choice.
  {{% /alert %}}
 
 1. Download the [latest Marlin firmware][latest_marlin] and unzip it.
@@ -136,7 +138,7 @@ If you aren't able to upload, you can check to see if your motherboard is bootin
 * Mac/Linux:
   {{< container-image path="images/linux_lsusb_bootloader.png" alt="STM32 in DFU mode in lsusb" >}}
 
-Also, reference [the Marlin instructions for uploading](https://marlinfw.org/docs/basics/install_platformio.html). Be sure to use `bugfix-2.1.x` if uploading using these instructions.
+Also, reference [the Marlin instructions for uploading](https://marlinfw.org/docs/basics/install_platformio.html). Be sure to use `{{< param marlin-version >}}` if uploading using these instructions.
 
 ### Alternative Method (Not Recommended)
 
