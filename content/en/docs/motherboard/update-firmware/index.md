@@ -14,7 +14,9 @@ description: >
 
 ## Using the Auto Build Marlin VSCode Extension
 
-> Note that the currently linked-to Marlin version is `bugfix-2.1.x`. Building an older version of Marlin with the recommended config files won't work. If you are unsure whether a previously-downloaded local version of Marlin is the newest one, redownloading it is the safest choice.
+ {{% alert color="info" title="MARLIN VERSON" %}}
+ The currently linked-to Marlin version is `bugfix-2.1.x`. Building an older version of Marlin with the recommended config files won't work. If you are unsure whether a previously-downloaded local version of Marlin is the newest one, redownloading it is the safest choice.
+ {{% /alert %}}
 
 1. Download the [latest Marlin firmware][latest_marlin] and unzip it.
 2. Install [VSCode](https://code.visualstudio.com/) and its [PlatformIO extension](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide).
@@ -36,16 +38,20 @@ description: >
     4. Release the `BOOT` button
   {{< container-image path="images/IMG_0749.JPG" alt="BOOT and RESET buttons" >}}
 
-> If you have a hard time getting your board to enter DFU mode, instead try powering off the machine entirely, holding the 'BOOT' button, plugging in power, waiting 10 seconds, then release the `BOOT` button.
+{{% alert color="info" title="NOTE" %}}
+If you have a hard time getting your board to enter DFU mode, instead try powering off the machine entirely, holding the 'BOOT' button, plugging in power, waiting 10 seconds, then release the `BOOT` button.
+{{% /alert %}}
 
 9. Flash the Motherboard using `dfu-util` by running the command `dfu-util -d 0x0483:0xdf11 -s 0x08000000:leave -a 0 -D ./.pio/build/Opulo_Lumen_REV3/firmware.bin` in the integrated terminal in the root of the repository.  {{< container-image path="images/vscode-dfu-util-integrated-terminal.png" alt="integrated terminal in VSCode with DFU-Util command" >}}
 
-> explanation: `dfu-util` is a flash tool available on all platforms.
->
-> * `-d 0x0483:0x0df11` tells the tool to flash the STM32 chip on the motherboard. This is optional if you only have one dfu device connected.
-> * `-s 0x8000000:leave` is the target memory address that the firmware is flashed to. The `:leave` part will cause the chip to reset on its own, making the machine accessible in OpenPNP without rebooting it.
-> * `-a 0` makes the tool use the altsetting required for flashing the ESP32.
-> * `-D ./.pio/build/Opulo_Lumen_REV3/firmware.bin` is the path to the to-be-flashed firmware. If you want to flash another file, change this.
+{{% alert color="info" title="COMMAND EXPLANATION" %}}
+`dfu-util` is a flash tool available on all platforms.
+
+* `-d 0x0483:0x0df11` tells the tool to flash the STM32 chip on the motherboard. This is optional if you only have one dfu device connected.
+* `-s 0x8000000:leave` is the target memory address that the firmware is flashed to. The `:leave` part will cause the chip to reset on its own, making the machine accessible in OpenPNP without rebooting it.
+* `-a 0` makes the tool use the altsetting required for flashing the ESP32.
+* `-D ./.pio/build/Opulo_Lumen_REV3/firmware.bin` is the path to the to-be-flashed firmware. If you want to flash another file, change this.
+{{% /alert %}}
 
 10. Wait for the process to finish.
 
@@ -58,20 +64,21 @@ description: >
 > * Mac/Linux:
 >   {{< container-image path="images/linux_lsusb.png" alt="STM32 shows up on lsusb" >}}
 
+{{% alert color="info" title="FLASHING VIA PLATFORMIO" %}}
+Note that flashing the firmware using the Auto Build Marlin Plugin might work, but seems error-prone for most people. Therefore, if you want to try it, you can, but using `dfu-util` is generally a better idea.
+If you're absolutely sure that ABM is the way to go, do this:
 
-> Note that flashing the firmware using the Auto Build Marlin Plugin might work, but seems error-prone for most people. Therefore, if you want to try it, you can, but using `dfu-util` is generally a better idea.
-> If you're absolutely sure that ABM is the way to go, do this:
->
-> 1. Boot your motherboard into DFU Mode
->    1. Press and hold the `BOOT` button
->    2. Press the Reset button and hold for 10 seconds
->    3. Release the Reset button and wait for 10 seconds
->    4. Release the `BOOT` button
->  {{< container-image path="images/IMG_0749.JPG" alt="BOOT and RESET buttons" >}}
-> 2. Now, press the upload button in ABM as shown below:
-> {{< container-image path="images/marlin-auto-build-ui.PNG" alt="Marlin auto-build UI" >}}
-> 3. Wait for the process to finish
-> 4. Continue with step 11
+1. Boot your motherboard into DFU Mode
+   1. Press and hold the `BOOT` button
+   2. Press the Reset button and hold for 10 seconds
+   3. Release the Reset button and wait for 10 seconds
+   4. Release the `BOOT` button
+ {{< container-image path="images/IMG_0749.JPG" alt="BOOT and RESET buttons" >}}
+2. Now, press the upload button in ABM as shown below:
+{{< container-image path="images/marlin-auto-build-ui.PNG" alt="Marlin auto-build UI" >}}
+3. Wait for the process to finish
+4. Continue with step 11
+{{% /alert %}}
 
 ## Manually Configuring PlatformIO (for flashing via PIO)
 
@@ -92,7 +99,9 @@ description: >
     4. Release the `BOOT` button
   {{< container-image path="images/IMG_0749.JPG" alt="BOOT and RESET buttons" >}}
 
-> If you have a hard time getting your board to enter DFU mode, instead try powering off the machine entirely, holding the 'BOOT' button, plugging in power, waiting 10 seconds, then release the `BOOT` button.
+{{% alert color="info" title="NOTE" %}}
+If you have a hard time getting your board to enter DFU mode, instead try powering off the machine entirely, holding the 'BOOT' button, plugging in power, waiting 10 seconds, then release the `BOOT` button.
+{{% /alert %}}
 
 8. Upload firmware to the board via PlatformIO:
   {{< container-image path="images/vscode_marlin_env.png" alt="Upload firmware via PIO" >}}
