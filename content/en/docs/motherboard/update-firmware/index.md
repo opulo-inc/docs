@@ -22,7 +22,6 @@ description: >
 4. Grab Marlin configuration files ([Configuration.h][latest_marlin_config] and [Configuration_adv.h][latest_marlin_adv_config]) and replace the files in the Marlin/Marlin folder with those new ones.
 5. Install the Auto Build Marlin plugin using this [Marlin Documentation page](https://marlinfw.org/docs/basics/auto_build_marlin.html), or download it directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MarlinFirmware.auto-build).
 6. Try to build Marlin using the build button with the hammer icon as shown below:
-
 {{< container-image path="images/marlin-auto-build-ui.PNG" alt="Marlin auto-build UI" >}}
 
 7. If this is successful, attach the LumenPnP Mobo to your computer with the USB cable. If it isn't, this might help:
@@ -74,9 +73,6 @@ description: >
 > 3. Wait for the process to finish
 > 4. Continue with step 11
 
- 
-
-
 ## Manually Configuring PlatformIO (for flashing via PIO)
 
 1. Download the [latest Marlin firmware][latest_marlin] and unzip it.
@@ -106,12 +102,10 @@ description: >
 
 10. Press Reset on the board, or power-cycle the machine *after the flashing is completed*. Now it should show up as a COM/Serial Port on your PC:
 
-- Windows:
+* Windows:
   {{< container-image path="images/STM32_COM_port_connected.png" alt="STM32 shows up as a COM/Serial Port" >}}
-- Mac/Linux:
+* Mac/Linux:
   {{< container-image path="images/linux_lsusb.png" alt="STM32 shows up on lsusb" >}}
-
-
 
 ## Flashing Factory Firmware
 
@@ -122,14 +116,15 @@ If you've put new firmware on your motherboard, but just want to get back to the
 ```
 
 Once flashing is completed, the machine should automatically exit DFU mode, and be accessible to OpenPNP again. For more information see [Step 9 of the update firmware guide](#using-the-auto-build-marlin-vscode-extension).
+
 ## Troubleshooting
 
 If you aren't able to upload, you can check to see if your motherboard is booting into DFU mode correctly:
 
-- Windows:
+* Windows:
   {{< container-image path="images/dfu_mode_device_manager.png" alt="STM32 in DFU mode in Device Manager" >}}
 
-- Mac/Linux:
+* Mac/Linux:
   {{< container-image path="images/linux_lsusb_bootloader.png" alt="STM32 in DFU mode in lsusb" >}}
 
 Also, reference [the Marlin instructions for uploading](https://marlinfw.org/docs/basics/install_platformio.html). Be sure to use `bugfix-2.1.x` if uploading using these instructions.
