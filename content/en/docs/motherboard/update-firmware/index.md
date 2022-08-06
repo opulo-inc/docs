@@ -118,9 +118,10 @@ description: >
 If you've put new firmware on your motherboard, but just want to get back to the firmware that your machine was flashed with, check the release for your build number and download the .bin firmware file attached to it. Put your board into DFU mode as described above, connect to your computer, and flash the binary to the board using the following command:
 
 ```shell
-dfu-util -D ~/path/to/firmware.bin -s 0x08000000 -a 0
+`dfu-util -d 0x0483:0xdf11 -s 0x08000000:leave -a 0 -D ~/path/to/firmware.bin`
 ```
 
+Once flashing is completed, the machine should automatically exit DFU mode, and be accessible to OpenPNP again. For more information see [Step 9 of the update firmware guide](#using-the-auto-build-marlin-vscode-extension).
 ## Troubleshooting
 
 If you aren't able to upload, you can check to see if your motherboard is booting into DFU mode correctly:
