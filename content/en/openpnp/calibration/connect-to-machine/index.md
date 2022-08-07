@@ -77,12 +77,18 @@ While the LumenPnP motherboard does have a built in USB hub and USB ports for yo
 19. Click the "Apply" button in the bottom right
   {{< container-image path="images/Top Camera Apply.png" alt="Saving changes to the Top Camera Config" >}}
 
+20. To check that both cameras are working now, select your preferred view option in the top left `Cameras` section. The Camera feeds should update automatically with a very slight delay.
+  {{< container-image path="images/Both-cameras-working.png" alt="Both cameras showing live outputs." >}}
+
 ## Connecting to the LumenPnP
 
-20. Click the green power button in the Machine Controls section of the UI to connect to your machine.
+21. Click the green power button in the Machine Controls section of the UI to connect to your machine.
   {{< container-image path="images/Screen Shot 2022-05-17 at 4.14.47 PM.png" alt="" >}}
 
-21. The power button should turn red, and OpenPnP has connected to your machine. You should also see both webcam feeds as shown below. (If you don't see any, or just one, under the `Cameras` section, select the `Show All Horizontal` option from the dropdown.)
+22. The power button should turn red, and OpenPnP has connected to your machine. You should also see both webcam feeds as shown below. (If you don't see any, or just one, under the `Cameras` section, select the `Show All Horizontal` option from the dropdown.)
   {{< container-image path="images/Screen Shot 2022-05-17 at 4.16.20 PM.png" alt="" >}}
 
-7. Save your OpenPnP settings with File -> Save Configuration.
+23. While homing won't work properly until we finish calibrating the fiducial locations, you should now be able to manually "jog" your LumenPnP. Select 1mm or 10mm on the Distance slider, and then press the arrow buttons to move each axis of your machine. Again, since the machine isn't properly homed it may not move all the way to its boundaries. This is simply a test to make sure we can send it Gcode successfully.
+  {{< container-image path="images/Jogging the LumenPnP.png" alt="Jog commands for the LumenPnP" >}}
+
+24. Save your OpenPnP settings with `File > Save Configuration`.
