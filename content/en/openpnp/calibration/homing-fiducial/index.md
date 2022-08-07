@@ -125,11 +125,11 @@ With a higher value in the "param2" field, we only detect a single circle.
 
 {{< container-image path="images/Screen Shot 2022-05-18 at 2.27.08 PM.png" alt="" >}}
 
-12.  Lastly, we can confirm that our edits result in accurate fiducial detection. Once again click on the row with "DrawCircles" in the Stage column. The image will show you every circle detected from the pipeline. Confirm there is only one, and it is perfectly hugging the fiducial as shown below.
+12. Lastly, we can confirm that our edits result in accurate fiducial detection. Once again click on the row with "DrawCircles" in the Stage column. The image will show you every circle detected from the pipeline. Confirm there is only one, and it is perfectly hugging the fiducial as shown below.
 
 {{< container-image path="images/Screen Shot 2022-05-18 at 2.41.29 PM.png" alt="" >}}
 
-13. Exit out of the pipeline editing UI, save your changes, and try to home again. With your vision pipeline tuned, the machine should find the homing fiducial on your machine and center the crosshairs of the top camera on it. 
+13. Exit out of the pipeline editing UI, save your changes, and try to home again. With your vision pipeline tuned, the machine should find the homing fiducial on your machine and center the crosshairs of the top camera on it.
 
 4. It is likely that the machine will move to the wrong place and not be able to identify the homing fiducial. If this happens, OpenPnP will give an error popup that says `FIDUCIAL-HOME no matches found`. This means we'll need to fine-tune the location that OpenPnP moves the LumenPnP to in order to find the homing fiducial. (this is normal). You'll also note that the home icon will turn yellow, as the LumenPnP has homed to it's end stops, but hasn't completed its full homing routine.
    {{< container-image path="images/Cant-find-homing-fiducial.png" alt="A first attempt at homing the LumenPnP" >}}
