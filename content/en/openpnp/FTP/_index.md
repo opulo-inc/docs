@@ -13,7 +13,7 @@ description: >
 
 ## **What you'll learn**
 
-This guide is focused on performing basic calibration for your LumenPnP with the "Getting Started Kit," which is also included in the LumenPnP v3. These docs will walk you through the calibrating and setting up your first job for your LumenPnP. If you don't have an FTP PCB you can still follow along with your own PCB, or follow the more general [Calibration]({{< relref "calibration-without-ftp" >}}) steps instead.
+This guide is focused on performing basic calibration for your LumenPnP with the "Getting Started Kit," which is also included in the LumenPnP v3. These docs will walk you through the calibrating and setting up your first job for your LumenPnP. If you don't have an FTP PCB you can still follow along with your own PCB, or follow the more general [Calibration]({{< relref "calibration" >}}) steps instead.
 
 ## **What you'll need**
 

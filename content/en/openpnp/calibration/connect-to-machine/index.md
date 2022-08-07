@@ -26,7 +26,6 @@ Before we can connect to the machine, we need to tell OpenPnP which USB ports to
 4. Under `Drivers` click on `GcodeDriver GcodeDriver`
   {{< container-image path="images/SelectGcodeDriver.png" alt="Reviewing the GcodeDriver options" >}}
   
-Check COM Port and Baud Rate.png
 5. Below the list of machine settings you'll find the details of the GcodeDriver. In the `Configuration` tab, check the `Baud` and `Port` settings.
 
    1. The `Baud` should be `115200`
@@ -41,7 +40,7 @@ Check COM Port and Baud Rate.png
 Now we'll set up the cameras. The big red "X" in the camera views means that OpenPnP doesn't know where to find the webcam feed. OpenPnP needs to know which webcam is which.
 
 {{% alert color="warning" title="Camera Connection Issues" %}}
-while the LumenPnP motherboard does have a built in USB hub and USB ports for you to plug the two webcams into, this arrangement may not be compatible with your computer. Some computers use higher quality USB hubs, which can handle the bandwidth required to stream video from both webcams at once over a single USB port. From reports we've gotten from users, it seems that *many* computer manufactures do **not** include good enough USB hubs. In these cases, one or both of the USB webcams will fail to show up in the configuration list below. If this is the case, you will need to plug at least one of the webcams directly into your computer via a separate USB port. Occasionally this can cause the webcam's name to be incorrect, but you'll still be able to select it from the drop-down list with trial and error.
+While the LumenPnP motherboard does have a built in USB hub and USB ports for you to plug the two webcams into, this arrangement may not be compatible with your computer. Some computers use higher quality USB hubs, which can handle the bandwidth required to stream video from both webcams at once over a single USB port. From reports we've gotten from users, it seems that *many* computer manufactures do **not** include good enough USB hubs. In these cases, one or both of the USB webcams will fail to show up in the configuration list below. If this is the case, you will need to plug at least one of the webcams directly into your computer via a separate USB port. Occasionally this can cause the webcam's name to be incorrect, but you'll still be able to select it from the drop-down list with trial and error.
 {{% /alert %}}
 
 6. Again, navigate to the `Machine Setup` tab
