@@ -83,23 +83,23 @@ The FTP PCB has two components that we'll be placing: Resistors and LEDs. Each w
 28. Go to the `Packages` tab in the top-right pane.
 29. Select `LED_0603_1608Metric` from the list.
 30. In the lower-right pane, you'll be in the `Nozzle Tips` tab. Click the `Compatible` on the `N045` row.
-29. Similarly, select `R_0603_1608Metric` from the Package list.
-30. And click the `Compatible` on the `N045` row.
-31. Under the bottom-left `Machine Controls` pane, select `Nozzle: N1 - N045 (Head:H1)` to enable the left toolhead.
+31. Similarly, select `R_0603_1608Metric` from the Package list.
+32. And click the `Compatible` checkbox on the `N045` row.
+33. Under the bottom-left `Machine Controls` pane, select `Nozzle: N1 - N045 (Head:H1)` to enable the left toolhead.
 
 ## Fine-tuning feeder height
 
-31. Click on the "Position Nozzle" icon button to bring the nozzle over the feeder.
-32. Use the Jog controls to lower the Z axis until the nozzle is touching the surface of the plastic tape cover.
-33. Click on the "Capture Nozzle" icon button to save the new Z height of the feeder.
-34. Jog the XY gantry away from the feeder.
-35. Remove the tape cover from the feeder.
-36. Pick the component from the feeder. If the component is picked up properly, your Z-height is correct. If not, you should
+34. Click on the "Position Nozzle" icon button to bring the nozzle over the feeder.
+35. Use the Jog controls to lower the Z axis until the nozzle is touching the surface of the plastic tape cover.
+36. Click on the "Capture Nozzle" icon button to save the new Z height of the feeder.
+37. Jog the XY gantry away from the feeder.
+38. Remove the tape cover from the feeder.
+39. Pick the component from the feeder. If the component is picked up properly, your Z-height is correct. If not, you should
     1. Lower the Z height of the feeder by `0.1mm`
     2. Press Apply to save the change
     3. Home the machine
     4. Try picking a component from the feeder again.
-37. Recycle the component you've successfully picked up
-38. Copy the final Z height to the other feeder
-39. Test picking a component from the other feeder
-40. Save the new Z height for both feeders.
+40. Recycle the component you've successfully picked up
+41. Copy the final Z height to the other feeder
+42. Test picking a component from the other feeder
+43. Save the new Z height for both feeders.

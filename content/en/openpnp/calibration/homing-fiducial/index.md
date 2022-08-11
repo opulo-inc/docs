@@ -47,7 +47,7 @@ Now that we've done the fisheye calibration, we can mount the datum board to the
 
 {{< alert color="info" title="Tip" >}}
 Right click on the camera feed to change the Reticle style to see the center of the camera image. You can also use the scroll wheel to zoom in on the feed for more precision.
-{{< container-image path="images/Switch-reticle-type" alt="Change the reticle that appears on the camera feed" >}}
+{{< container-image path="images/Switch-reticle-type.png" alt="Change the reticle that appears on the camera feed" >}}
 {{< /alert >}}
 
 13. Go back to the `Jog` tab in the "Machine Controls" pane.
