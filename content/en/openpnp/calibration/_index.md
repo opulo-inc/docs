@@ -13,7 +13,7 @@ description: >
 
 ## **What you'll learn**
 
-This guide is focused on performing basic calibration for your LumenPnP.
+This guide is focused on performing basic calibration for your LumenPnP. Specifically it will test the motion system, and calibrate the cameras so that they can identify objects and apply offsets to the toolhead for precise part picking and placing. These steps are usually only necessary when first setting up a LumenPnP for the first time.
 
 ## **What you'll need**
 

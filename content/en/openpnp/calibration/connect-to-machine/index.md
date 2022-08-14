@@ -18,7 +18,7 @@ Awesome! Now we've got OpenPnP installed on your computer, and we've got the def
 Before we can connect to the machine, we need to tell OpenPnP which USB ports to use for communication with your LumenPnP.
 
 1. Click on the `Machine Setup` tab
-  {{< container-image path="images/Machine Setup Tab.png" alt="Selecting the Machine setup tab from the main screen" >}}
+  {{< container-image path="images-shared/Machine-setup-tab.png" alt="Selecting the Machine setup tab from the main screen" >}}
 
 3. Click on the "Expand" checkbox to open all of the features about your machine.
   {{< container-image path="images/Expand-Checkbox.png" alt="Expanding the Machine Config options" >}}
