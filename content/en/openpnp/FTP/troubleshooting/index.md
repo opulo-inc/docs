@@ -33,21 +33,27 @@ There's two ways to use this troubleshooting guide. Hopefully, you'll see a patt
 ### Components not sticking to FTP board
 
 1. Check your board Z-axis position
-2. Maybe replace your double-sided tape
+2. Replace your double-sided tape
 
 ### Components are always placed with a consistent offset from where they should be
 
-1. Crashing toolhead
-2. Toolhead offset is wrong
-3. Your board location is incorrect (unlikely)
+1. Check that your tool head isn't crashing into something. You can set soft limits in the `Machine Setup > Axes` menus.
+2. Check your Toolhead offset
+3. Your board location is incorrect
 
 ### Some placements are consistently better than others
 
-If parts are placed consistently from run to run, but some placements are better than others:
+If parts are placed consistently from run to run, but some placements are better than others, your board is probably slightly rotated and the rotation is not being properly accounted for in your board fiducial scans.
 
-1. Check your board location and rotation
-2. You might need to manually define your board location and rotation with the pad identification tool
-3. You might need to adjust your vision pipeline for the board fiducials
+1. Re-run the board fiducials
+2. Check various placement locations by moving the camera over them to make sure they're set correctly.
+3. If the placement locations are NOT lining up with the reticle in the camera feed:
+   1. Adjust your board fiducial pipeline,
+   2. Or manually set your board's location and position with "set board location with multiple placements" icon button.
+4. If the placement locations DO line up with the reticle in the camera feed:
+   1. Check your nozzle offset
+   2. Check your part identification vision pipeline
+   3. (unlikely) Check for backlash and other mechanical issues with your motion system.
 
 ### Inconsistent tool head positioning moving between fixed locations
 
