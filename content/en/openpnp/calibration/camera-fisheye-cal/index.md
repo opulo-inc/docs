@@ -14,7 +14,7 @@ The first step, is to correct for the fisheye effect of our webcams to help make
 ## Bottom Camera Calibration
 
 1. Click on the `Machine Setup` tab.
-  {{< container-image path="images-shared/Machine-setup-tab.png" alt="Selecting the Machine setup tab from the main screen" >}}
+  {{< container-image path="images/openPnP-shared/Machine-setup-tab.png" alt="Selecting the Machine setup tab from the main screen" >}}
 
 3. Click on the "Expand" checkbox to open all of the features about your machine.
   {{< container-image path="images/Expand-Checkbox.png" alt="Expanding the Machine Config options" >}}
