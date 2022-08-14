@@ -10,7 +10,7 @@ description: >
 The FTP PCB has two components that we'll be placing: Resistors and LEDs. Each will need its own feeder so that the LumenPnP can pick each type of component. We'll be using the printed tray feeders.
 
 ## Attach Feeders
-
+<!-- TODO: Get locations and photos -->
 1. Use four M3x10 screws and four M3 nuts to secure the printed tray feeder through onto the staging plate using holes: XX YY ZZ CC.
 
 2. For each component, cut a strip of component tape off the reel about 125mm long.
@@ -18,7 +18,7 @@ The FTP PCB has two components that we'll be placing: Resistors and LEDs. Each w
 3. Slide the Resistors into the left-most tray feeder, and the LEDs the adjacent tray.
 
 4. In OpenPnP, connect to your LumenPnP and home it.
-  {{< container-image path="images-shared/Connect-and-home.png" alt="Connect to your LumenPnP and home it" >}}
+  {{< container-image path="images/openPnP-shared/Connect-and-home.png" alt="Connect to your LumenPnP and home it" >}}
 
 ## Import Board
 <!-- TODO: Download link to Getting Started Board files -->
@@ -27,7 +27,7 @@ The FTP PCB has two components that we'll be placing: Resistors and LEDs. Each w
   {{< container-image path="images/Save-job-as.png" alt="Save Job As" >}}
 
 7. Navigate to the `Job` tab in the top right.
-  {{< container-image path="images/Job-tab.png" alt="Job Tab" >}}
+  {{< container-image path="images/openPnP-shared/Job-tab.png" alt="Job Tab" >}}
 
 7. Click that "Add" Icon button to add a new board and select `New Board`. Save the board wherever you'd like near the job file.
   {{< container-image path="images/Add-new-board.png" alt="Add a new board to the job" >}}
@@ -47,7 +47,7 @@ The FTP PCB has two components that we'll be placing: Resistors and LEDs. Each w
 ## Add Feeders
 
 11. Navigate to the `Feeders` tab in the top-right pane.
-  {{< container-image path="images/Feeders-tab.png" alt="Switch to the feeders list" >}}
+  {{< container-image path="images/openPnP-shared/Feeders-tab.png" alt="Switch to the feeders list" >}}
 
 12. Click on the "Add Feeder" icon button.
   {{< container-image path="images/Add-feeder-button.png" alt="Start adding a new feeder" >}}
@@ -91,7 +91,7 @@ The FTP PCB has two components that we'll be placing: Resistors and LEDs. Each w
 <!-- TODO: Image of installing N045 nozzle -->
 23. Install a N045 nozzle on your toolhead.
 24. Go to the `Machine Setup` tab in OpenPnP.
-  {{< container-image path="images-shared/Machine-setup-tap.png" alt="Switch to the Machine Setup Tab" >}}
+  {{< container-image path="images/openPnP-shared/Machine-setup-tab.png" alt="Switch to the Machine Setup Tab" >}}
 
 25. Navigate to `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`.
   {{< container-image path="images/Reference-nozzle-n1.png" alt="Select Nozzle N1" >}}
@@ -103,7 +103,7 @@ The FTP PCB has two components that we'll be placing: Resistors and LEDs. Each w
   {{< container-image path="images/Load-nozzle-n045.png" alt="Load Nozzle N045" >}}
 
 28. Go to the `Packages` tab in the top-right pane.
-  {{< container-image path="images-shared/Packages-tab.png" alt="Switch to the Packages Tab" >}}
+  {{< container-image path="images/openPnP-shared/Packages-tab.png" alt="Switch to the Packages Tab" >}}
 
 29. Select `LED_0603_1608Metric` from the list.
   {{< container-image path="images/Select-led-package.png" alt="Select the LED package" >}}
@@ -120,19 +120,19 @@ The FTP PCB has two components that we'll be placing: Resistors and LEDs. Each w
 ## Fine-tuning feeder height
 
 34. Navigate to the `Feeders` tab in the top-right pane.
-  {{< container-image path="images-shared/Feeders-tab.png" alt="Switch to the feeders list" >}}
+  {{< container-image path="images/openPnP-shared/Feeders-tab.png" alt="Switch to the feeders list" >}}
 
 35. Click on the "Position Nozzle" icon button to bring the nozzle over the feeder.
   {{< container-image path="images/Position-nozzle-over-feeder.png" alt="Position the nozzle over the feeder" >}}
 <!-- TODO: Get image of this -->
 36. Use the Jog controls to lower the Z axis until the nozzle is touching the surface of the plastic tape cover.
-  {{< container-image path="images-shared/Z-jog-controls.jpeg" alt="Use the jog controls to position the nozzle over the feeder" >}}
-  {{< container-image path="images/Nozzle-position-far.jpeg" alt="Position the nozzle over the feeder" >}}
-  {{< container-image path="images/Nozzle-position-close.jpeg" alt="Position the nozzle over the feeder" >}}
+  {{< container-image path="images/openPnP-shared/Z-jog-controls.png" alt="Use the jog controls to position the nozzle over the feeder" >}}
+  {{< container-image path="images/Nozzle-position-far.jpg" alt="Position the nozzle over the feeder" >}}
+  {{< container-image path="images/Nozzle-position-close.jpg" alt="Position the nozzle over the feeder" >}}
 37. Click on the "Capture Nozzle" icon button to save the new Z height of the feeder.
   {{< container-image path="images/Capture-nozzle-position-feeder.png" alt="Save the nozzle position" >}}
 38. Jog the XY gantry away from the feeder.
-  {{< container-image path="images-shared/XY-jog-controls.png" alt="Move the Tool Head away from the feeder" >}}
+  {{< container-image path="images/openPnP-shared/XY-jog-controls.png" alt="Move the Tool Head away from the feeder" >}}
   <!-- TODO: Get image of below -->
 39. Remove the tape cover from the feeder.
 40. Pick the component from the feeder. If the component is picked up properly, your Z-height is correct. If not, you should:
@@ -141,8 +141,8 @@ The FTP PCB has two components that we'll be placing: Resistors and LEDs. Each w
     2. Press Apply to save the change
     3. Home the machine
     4. Try picking a component from the feeder again.
-41. In the machine `Machine Controls` pane, switch to the `Special` Tab.
-  {{< container-image path="images-shared/Special-tab.png" alt="Switch to the special tab" >}}
+41. After you've successfully picked a component, in the machine `Machine Controls` pane, switch to the `Special` Tab.
+  {{< container-image path="images/openPnP-shared/Special-tab.png" alt="Switch to the special tab" >}}
 42. Recycle the component you've successfully picked up
   {{< container-image path="images/Recycle-component.png" alt="Recycle the component you've picked up" >}}
 43. Copy the final Z height, select the other feeder, paste it for the other feeder, and press `Apply`
