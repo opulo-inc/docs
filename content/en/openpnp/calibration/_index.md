@@ -1,6 +1,6 @@
 ---
-title: "Calibration Without FTP"
-linkTitle: "Calibration Without FTP"
+title: "Calibration"
+linkTitle: "Calibration"
 weight: 2
 type: docs
 resources:
@@ -19,4 +19,3 @@ This guide is focused on performing basic calibration for your LumenPnP. Specifi
 
 - A LumenPnP with the mechanical and electrical build completed.
 - Read through the [OpenPnP Wiki](https://github.com/openpnp/openpnp/wiki/User-Manual). It'll be super important to getting going with your machine. **These docs are meant to augment the OpenPnP docs, not replace them.**
-
