@@ -29,7 +29,7 @@ The FTP PCB has two different types of components that need to be placed: resist
 7. Navigate to the `Job` tab in the top right.
   {{< container-image path="images/openPnP-shared/Job-tab.png" alt="Job Tab" >}}
 
-7. Click that "Add" Icon button to add a new board and select `New Board`. Save the board wherever you'd like near the job file.
+7. Click that "Add" Icon button to add a new board and select `New Board`. Save the board in the same directory as the job.
   {{< container-image path="images/Add-new-board.png" alt="Add a new board to the job" >}}
 
 8. Click on the newly-created board in the list to select it.
