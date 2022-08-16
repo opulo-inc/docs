@@ -125,7 +125,7 @@ With a higher value in the "param2" field, we only detect a single circle.
 
 {{< container-image path="images/Screen Shot 2022-05-18 at 2.27.08 PM.png" alt="" >}}
 
-12. Lastly, we can confirm that our edits result in accurate fiducial detection. Once again click on the row with "DrawCircles" in the Stage column. The image will show you every circle detected from the pipeline. Confirm there is only one, and it is perfectly hugging the fiducial as shown below.
+12. Lastly, you can confirm that the changes result in accurate fiducial detection. Once again click on the row with "DrawCircles" in the Stage column. The image will show you every circle detected from the pipeline. Confirm there is only one, and it is perfectly hugging the fiducial as shown below.
 
 {{< container-image path="images/Screen Shot 2022-05-18 at 2.41.29 PM.png" alt="" >}}
 
