@@ -25,4 +25,5 @@ It might be useful to refer to this guide again after you finish it the first ti
   - 0603 Resistors and LEDs in tape reels
   - Universal Mounting Kit pieces
   - Printed tray feeders
-- Read through the [OpenPnP Wiki](https://github.com/openpnp/openpnp/wiki/User-Manual). It'll be super important to getting going with your machine. **These docs are meant to augment the OpenPnP docs, not replace them.**
+
+It's highly recommend to take some time to read through the [OpenPnP Wiki](https://github.com/openpnp/openpnp/wiki/User-Manual). The OpenPnP documentation is much more in depth that this guide, as this guide is meant to get you up and running quickly with a known board and configuration. As you set up your own jobs, the OpenPnP documentation will be your primary reference.
