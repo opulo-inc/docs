@@ -7,7 +7,7 @@ description: >
  Getting the feeders ready for automatic picking
 ---
 
-The FTP PCB has two components that we'll be placing: Resistors and LEDs. Each will need its own feeder so that the LumenPnP can pick each type of component. We'll be using the printed tray feeders.
+The FTP PCB has two different types of components that need to be placed: resistors and LEDs. Each will need its own feeder so that the LumenPnP can pick each type of component. For this guide, you'll use printed tray feeders.
 
 ## Attach Feeders
 <!-- TODO: Get locations and photos -->
