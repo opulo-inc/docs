@@ -131,7 +131,7 @@ With a higher value in the "param2" field, we only detect a single circle.
 
 13. Exit out of the pipeline editing UI, save your changes, and try to home again. With your vision pipeline tuned, the machine should find the homing fiducial on your machine and center the crosshairs of the top camera on it.
 
-4. It is likely that the machine will move to the wrong place and not be able to identify the homing fiducial. If this happens, OpenPnP will give an error popup that says `FIDUCIAL-HOME no matches found`. This means we'll need to fine-tune the location that OpenPnP moves the LumenPnP to in order to find the homing fiducial. (this is normal). You'll also note that the home icon will turn yellow, as the LumenPnP has homed to it's end stops, but hasn't completed its full homing routine.
+4. It is likely that the machine will move to the wrong place and not be able to identify the homing fiducial. If this happens, OpenPnP will give an error popup that says `FIDUCIAL-HOME no matches found`. This is normal, as it means you'll need to fine-tune the location that OpenPnP moves the LumenPnP to in order to find the homing fiducial. You'll also note that the home icon will turn yellow, as the LumenPnP has homed to the end stops, but hasn't completed the full homing routine.
    {{< container-image path="images/Cant-find-homing-fiducial.png" alt="A first attempt at homing the LumenPnP" >}}
 
 {{< alert color="info" title="Note" >}}
