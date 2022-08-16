@@ -23,7 +23,7 @@ To use OpenPnP with the LumenPnP, you will need to tell the software about your 
 
 6. Navigate to the `openPnP` folder inside and find the three configuration files you need: `machine.xml`, `packages.xml`, and `parts.xml`.
 
-7. To install these files in OpenPnP, we'll need to find it's configuration folder. First, follow [these instructions](https://support.microsoft.com/en-us/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2) to show hidden folders in Windows Explorer.
+7. To install these files in OpenPnP, you'll need to find its configuration folder. First, follow [these instructions](https://support.microsoft.com/en-us/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2) to show hidden folders in Windows Explorer.
 
 8. Next, navigate to:
    1. On Windows Vista and above: `C:\Users\[username]\.openpnp2`.
