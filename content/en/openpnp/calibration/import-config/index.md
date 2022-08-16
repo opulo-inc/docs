@@ -7,7 +7,7 @@ description: >
   Install OpenPNP and import default config
 ---
 
-To use OpenPnP with the LumenPnP, you will need to tell the software about your machine's capabilities, such as it's size, how many cameras it has, etc. We've done the basic work for you and put together a starting set of configuration files that will describe your Lumen. The first thing we'll do is to place them where OpenPnP can use them. This is different depending on what type of computer you're going to be using to run OpenPnP.
+To use OpenPnP with the LumenPnP, you will need to tell the software about your machine's capabilities, such as it's size, how many cameras it has, etc. We've done the basic work for you and put together a starting set of configuration files that will describe your Lumen. The first thing you'll do is to place them where OpenPnP can use them. This is different depending on what type of computer you're going to be using to run OpenPnP.
 
 ## Windows
 
