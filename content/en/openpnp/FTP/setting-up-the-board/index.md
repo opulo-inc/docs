@@ -4,7 +4,7 @@ linkTitle: "Setting up the FTP Board"
 weight: 3
 type: docs
 description: >
-  Setting up the FTP Board
+  Configuring and running the job
 ---
 
 Note: it is not required that you mount your FTP board in the exact same location as described below. If you follow these steps you will have a slightly easier time setting the location of the board in OpenPnP, but if you need to set up a board somewhere else on the staging plates, that is totally fine, too.
@@ -16,7 +16,7 @@ Note: it is not required that you mount your FTP board in the exact same locatio
    2. A flat holder diagonally in $$
    3. A flat holder horizontally in $$
 
-2. Cut strips of double-sided tape and apply them to the top of the FTP board. Do not cover the fiducial markers, but make sure that each of the pads are covered by tape. This will let us mock placing components without using messy solder paste.
+2. Cut strips of double-sided tape and apply them to the top of the FTP board. Do not cover the fiducial markers, but make sure that each of the pads are covered by tape. The double-sided tape lets the components stick to the board so that you can do a "mock" run of a placement job without dealing with solder paste.
 
 3. Place the FTP board in the holders and push them so that they're snug against the sides of the board.
 
@@ -26,7 +26,7 @@ Note: it is not required that you mount your FTP board in the exact same locatio
 
 ## Finding the FTP Board Location
 
-We need to tell OpenPnP where the FTP board is in the LumenPnP. First we'll give it an approximate location, then we'll fine tune it, and then it'll be time to pick and place components. It will probably need a few rounds of placements to dial in each offset and setting.
+The next step is to set the physical location of the FTP board in OpenPNP. You'll start by setting an approximate location and then fine tune the location using vision. Once the location is set, you can run the job to pick and place components. You'll likely need to go through these steps a few times to tune the settings.
 
 6. Navigate to the `Job` tab in the  top-right pane.
   {{< container-image path="images/openPnP-shared/Job-tab.png" alt="Switch to the Job Tab" >}}
@@ -40,7 +40,7 @@ We need to tell OpenPnP where the FTP board is in the LumenPnP. First we'll give
 9. Back in the top-right pane, double-click on the `X` and `Y` values of `0.000` and change them to `XXXX` and `YYYY` respectively. This will be the rough location of the bottom-left corner of the FTP board.
   {{< container-image path="images/Set-board-location-xy.png" alt="Set the XY coordinates of your board" >}}
 
-10. Get the Z axis coordinate you used for your feeders, subtract `0.10` from it, and enter the result into the `Z` coordinate. Note that the nozzle holder on your tool head is spring-loaded, so we will be gently pressing components into the board to make them stick.
+10. Get the Z axis coordinate used when setting up the feeders, subtract `0.10` from it, and enter the result into the `Z` coordinate for the board. Setting the `Z` slightly lower than the actual board height allows the spring-loaded nozzle holder to lightly press components into the board to make them stick.
   {{< container-image path="images/Set-board-location-z.png" alt="Set the Z coordinates of your board" >}}
 
 11. Click the "Position Camera on Board" icon button and check that the center of the camera feed is very roughly lined up with the bottom-left corner of the FTP board.
@@ -58,7 +58,7 @@ We need to tell OpenPnP where the FTP board is in the LumenPnP. First we'll give
 15. Then, move the tool head with the Jog buttons until the fiducial is centered in the reticle.
   {{< container-image path="images/Manually-jog-to-fiducial.png" alt="Use the Jog buttons to position the camera directly above the fiducial" >}}
 
-16. Read the relative XY position you've moved your tool head, and add those values to the board's X and Y positions. Note: do NOT change the position of the fiducial itself in the lower-right pane list. That will throw off the rest of your placements. We only want to adjust the location of the board itself, not the components relative to each other.
+16. Read the relative XY position you've moved your tool head, and add those values to the board's X and Y positions. Do **not** change the position of the fiducial itself in the lower-right pane list as that will throw off the rest of the placements. Only adjust the location of the board itself, not the components relative to each other.
   {{< container-image path="images/Apply-dro-offsets.png" alt="Get the reading on the digital readout and apply it to the board position" >}}
 
 17. In the lower-right panel, select the other fiducial points in turn, and check their location with the "position camera" icon button.

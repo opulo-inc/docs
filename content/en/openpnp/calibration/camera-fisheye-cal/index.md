@@ -7,9 +7,9 @@ description: >
   Applying fisheye calibration to the cameras
 ---
 
-Now we're connected to the LumenPnP, we need to set up the cameras so that they can accurately fine tune the machine's position. The LumenPnP is a robust machine, but it needs both cameras to make sure it can pick and place components reliably every time. Note that these are very important calibration steps, but OpenPnP makes them relatively easy. Certain steps will probably need you to tune them more than once to get them perfect, others should stay mostly constant.
+Now that you're connected to the LumenPnP, you'll need to set up the cameras so that they can accurately fine tune the machine's position. The LumenPnP is a robust machine, but it needs both cameras to make sure it can pick and place components reliably every time. Note that these are very important calibration steps, but OpenPnP makes them relatively easy. Certain steps will probably need you to tune them more than once to get them perfect, others should stay mostly constant.
 
-The first step, is to correct for the fisheye effect of our webcams to help make sure they can identify distances accurately. This is not a step you will need to re-run unless you were to replace your webcams. [Original OpenPnP documentation for reference.](https://github.com/openpnp/openpnp/wiki/Camera-Lens-Calibration).
+The first step, is to correct for the fisheye effect of the webcams to help make sure they can identify distances accurately. This is not a step you will need to re-run unless you replace your webcams. [Original OpenPnP documentation for reference.](https://github.com/openpnp/openpnp/wiki/Camera-Lens-Calibration).
 
 ## Bottom Camera Calibration
 
@@ -36,7 +36,7 @@ To see both camera views at the same time, click on the dropdown in the top left
 
 8. OpenPnP is now looking for the pattern of dots printed on the underside of the datum board. (Depending on how they're displaced in the image, OpenPnP will correct for lens distortion while the LumenPnP is running.)
 
-9. Hold your datum board under the top camera as shown below. Check the camera view in OpenPnP to move the pattern into focus.If the focal distance is too close such that you can't get the whole pattern in focus and in the field of view, screw in the lens a few turns and test again. If you're having trouble adjusting the focus, try using the community-created [lens adjustment tool](https://www.printables.com/model/208453-lumen-pnp-lens-adjustment-tool).
+9. Hold your datum board under the top camera as shown below. Check the camera view in OpenPnP to move the pattern into focus. If the focal distance is too close such that you can't get the whole pattern in focus and in the field of view, screw in the lens a few turns and test again. If you're having trouble adjusting the focus, try using the community-created [lens adjustment tool](https://www.printables.com/model/208453-lumen-pnp-lens-adjustment-tool).
 
 10. OpenPnP will flash when it takes an image of the pattern, and will require you to take a few for an accurate calibration. Slowly move the calibration pattern around the camera's field of view until OpenPnP tells you that it's gathered enough photos.
 

@@ -7,13 +7,13 @@ description: >
   Mounting datum board and testing the homing fiducial
 ---
 
-Now that we've done the fisheye calibration, we can mount the datum board to the staging plate. The datum board is a reference point for everything else you'll do with the machine. The center dot of the datum board will be the most important calibration point for the machine. It'll be used to fine-tune the LumenPnP's XY position after homing to account for any errors in the limit switches.
+Now that fisheye calibration is complete, you can mount the datum board to the staging plate. The datum board is a reference point for everything else you'll do with the machine. The center dot of the datum board will be the most important calibration point for the machine. It'll be used to fine-tune the LumenPnP's XY position after homing to account for any errors in the limit switches.
 
 1. Use four M3x16mm screws and four M3 nuts to secure the datum board and datum board mount to the staging plate on the rear of the bottom camera, through holes: B18, A19, A21, B22. The the fisheye calibration pattern should be facing down, and the gold grid of lines and fiducial in the center of the Opulo logo facing upwards. Tighten this down securely.
    {{< container-image path="images/Screen Shot 2022-01-11 at 12.51.47 PM.png" alt="the mounting location for the datum board and holder" >}}
 
 2. In the "Machine Controls" pane in the lower left, connect to the LumenPnP if you haven't already by pressing the power button.
-3. Run a rough home routine by pressing the Home button (shaped like a house). The machine will move eto the X and Y axis limit switches. The default machine configuration files are set so that OpenPnP will *not* try to use the homing fiducial yet. Note that the home icon will turn yellow, as the LumenPnP has homed to it's end stops, but hasn't completed its full homing routine.
+3. Run a rough home routine by pressing the Home button (shaped like a house). The machine will move to the X and Y axis limit switches. The default machine configuration files are set so that OpenPnP will *not* try to use the homing fiducial yet. Note that the home icon will turn yellow, as the LumenPnP has homed to it's end stops, but hasn't completed its full homing routine.
    {{< container-image path="images/Connect-and-home.png" alt="Connect to the LumenPnP and attempt to home it" >}}
 
 ## Tuning the Homing Fiducial

@@ -15,7 +15,7 @@ Awesome! Now we've got OpenPnP installed on your computer, and we've got the def
 
 ## Com Port and Baud Rate
 
-Before we can connect to the machine, we need to tell OpenPnP which USB ports to use for communication with your LumenPnP.
+Before connecting to the machine, you need to set which USB ports to use for communication in OpenPnP.
 
 1. Click on the `Machine Setup` tab
   {{< container-image path="images/openPnP-shared/Machine-setup-tab.png" alt="Selecting the Machine setup tab from the main screen" >}}
@@ -88,7 +88,7 @@ While the LumenPnP motherboard does have a built in USB hub and USB ports for yo
 22. The power button should turn red, and OpenPnP has connected to your machine. You should also see both webcam feeds as shown below. (If you don't see any, or just one, under the `Cameras` section, select the `Show All Horizontal` option from the dropdown.)
   {{< container-image path="images/Screen Shot 2022-05-17 at 4.16.20 PM.png" alt="" >}}
 
-23. While homing won't work properly until we finish calibrating the fiducial locations, you should now be able to manually "jog" your LumenPnP. Select 1mm or 10mm on the Distance slider, and then press the arrow buttons to move each axis of your machine. Again, since the machine isn't properly homed it may not move all the way to its boundaries. This is simply a test to make sure we can send it Gcode successfully.
+23. While homing won't work properly until you finish calibrating the fiducial locations, you should now be able to manually "jog" your LumenPnP. Select 1mm or 10mm on the Distance slider, and then press the arrow buttons to move each axis of your machine. Again, since the machine isn't properly homed it may not move all the way to its boundaries. This is simply a test to make sure that OpenPnP can send it Gcode successfully.
   {{< container-image path="images/Jogging the LumenPnP.png" alt="Jog commands for the LumenPnP" >}}
 
 24. Save your OpenPnP settings with `File > Save Configuration`.
