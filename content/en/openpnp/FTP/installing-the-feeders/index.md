@@ -125,7 +125,6 @@ The FTP PCB has two different types of components that need to be placed: resist
 
 35. Click on the "Position Nozzle" icon button to bring the nozzle over the feeder.
   {{< container-image path="images/Position-nozzle-over-feeder.png" alt="Position the nozzle over the feeder" >}}
-<!-- TODO: Get image of this -->
 36. Use the Jog controls to lower the Z axis until the nozzle is touching the surface of the plastic tape cover.
   {{< container-image path="images/openPnP-shared/Z-jog-controls.png" alt="Use the jog controls to position the nozzle over the feeder" >}}
   {{< container-image path="images/Nozzle-position-far.jpg" alt="Position the nozzle over the feeder" >}}
@@ -134,7 +133,6 @@ The FTP PCB has two different types of components that need to be placed: resist
   {{< container-image path="images/Capture-nozzle-position-feeder.png" alt="Save the nozzle position" >}}
 38. Jog the XY gantry away from the feeder.
   {{< container-image path="images/openPnP-shared/XY-jog-controls.png" alt="Move the Tool Head away from the feeder" >}}
-  <!-- TODO: Get image of below -->
 39. Remove the tape cover from the feeder.
 40. Click the "Pick" icon button to pick a component from the feeder. If the component is picked up properly, your Z-height is correct. If not, you should:
   {{< container-image path="images/Pick-from-feeder.png" alt="Pick from the feeder" >}}
