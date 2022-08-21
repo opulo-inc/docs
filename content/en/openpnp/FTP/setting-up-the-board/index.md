@@ -6,10 +6,10 @@ type: docs
 description: >
   Configuring and running the job
 ---
+## Securing the FTP Board
 
 Note: it is not required that you mount your FTP board in the exact same location as described below. If you follow these steps you will have a slightly easier time setting the location of the board in OpenPnP, but if you need to set up a board somewhere else on the staging plates, that is totally fine, too.
 
-## Securing the FTP Board
 <!-- TODO: Needs real life images -->
 1. Loosely screw in the universal mounting components in the following locations:
    1. A tabbed holder in $$

@@ -58,7 +58,7 @@ The FTP PCB has two different types of components that need to be placed: resist
 14. In the lower-right panel, you'll be in the `Configuration` tab. Change the `Part` to be `R_0603_1608Metric-R_Small`.
   {{< container-image path="images/Change-feeder-part.png" alt="Assign the resistor to the tray feeder" >}}
 
-15. Set the `Y` `Offset` to `-4`. This is the space between components on the feeder.
+15. Set the `Y` `Offset` to `-4`. This is the space between components on the tape.
   {{< container-image path="images/Set-feeder-offset.png" alt="Set feeder offset" >}}
 
 16. Set the `Y` `Tray Count` to `30`. This is the number of components available on the feeder before it needs to be manually moved forward.
@@ -135,7 +135,7 @@ The FTP PCB has two different types of components that need to be placed: resist
   {{< container-image path="images/openPnP-shared/XY-jog-controls.png" alt="Move the Tool Head away from the feeder" >}}
   <!-- TODO: Get image of below -->
 39. Remove the tape cover from the feeder.
-40. Pick the component from the feeder. If the component is picked up properly, your Z-height is correct. If not, you should:
+40. Click the "Pick" icon button to pick a component from the feeder. If the component is picked up properly, your Z-height is correct. If not, you should:
   {{< container-image path="images/Pick-from-feeder.png" alt="Pick from the feeder" >}}
     1. Lower the Z height of the feeder by `0.1mm`
     2. Press Apply to save the change
