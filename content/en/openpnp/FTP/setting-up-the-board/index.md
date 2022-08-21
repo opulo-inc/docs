@@ -10,19 +10,22 @@ description: >
 
 Note: it is not required that you mount your FTP board in the exact same location as described below. If you follow these steps you will have a slightly easier time setting the location of the board in OpenPnP, but if you need to set up a board somewhere else on the staging plates, that is totally fine, too.
 
-<!-- TODO: Needs real life images -->
 1. Loosely screw in the universal mounting components in the following locations:
-   1. A tabbed holder in $$
-   2. A flat holder diagonally in $$
-   3. A flat holder horizontally in $$
+   1. Static Board Mount positioned diagonally, screwed into B28
+   2. Dynamic Board Mount positioned vertically, screwed into D28
+   3. Dynamic Board Mount positioned horizontally, screwed into B30
+   4. Board Support placed in E31
+  {{< container-image path="images/Install-board-mounting.jpg" alt="Install the board mounting hardware" >}}
 
 2. Cut strips of double-sided tape and apply them to the top of the FTP board. Do not cover the fiducial markers, but make sure that each of the pads are covered by tape. The double-sided tape lets the components stick to the board so that you can do a "mock" run of a placement job without dealing with solder paste.
+  {{< container-image path="images/Apply-tape-to-board.jpg" alt="Apply double-sided tape to the board" >}}
 
 3. Place the FTP board in the holders and push them so that they're snug against the sides of the board.
+  {{< container-image path="images/FTP-pcb-mounted.jpg" alt="Insert the FTP board" >}}
 
 4. Tighten down the holders. You shouldn't be able to move the board except by pressing on the tab holding it in place.
 
-5. If you installed your holders in this location, the bottom left corner of your FTP board should be located around XXXX YYYY.
+5. If you installed your holders in this location, the bottom left corner of your FTP board should be located around X328, Y94.
 
 ## Finding the FTP Board Location
 
@@ -71,7 +74,7 @@ The next step is to set the physical location of the FTP board in OpenPNP. You'l
 
 20. If the fiducial check fails, here are some options for moving forward:
     1. You might need to rotate the FTP board to be more square to the LumenPnP motion system.
-    2. You may need to adjust your vision pipeline.
+    2. You may need to adjust your [vision pipeline]({{< relref "homing-fiducial#troubleshooting-vision-pipeline-adjustment" >}}).
     3. If you'd prefer, you can also fall back on manually defining the board's location using the "Multiple Placements" icon button.
       {{< container-image path="images/Board-location-from-multiple-placements-button.png" alt="Use the board location from multiple placements button to manually set the board location and rotation" >}}
 
@@ -80,11 +83,11 @@ The next step is to set the physical location of the FTP board in OpenPNP. You'l
 ## Placing Components
 
 22. Make sure you've pulled back the protective tape cover on your feeders and that you have the correct nozzle installed.
-23. It's time to place your first component. Press the "Single Job step" icon button repeatedly until OpenPnP moves to pick up an LED, check it's orientation over the bottom camera, and then places it on the board.
+23. It's time to place your first component. Press the "Single job step" icon button repeatedly until OpenPnP moves to pick up an LED, check it's orientation over the bottom camera, and then places it on the board.
   {{< container-image path="images/openPnP-shared/One-step-placement.png" alt="Start placing components" >}}
 
-24. If the component was not picked up correctly, you will need to adjust your feeder location or height.
-25. If the component was not identified by the bottom camera correctly, you will likely need to adjust its vision pipeline.
+24. If the component was not picked up correctly, you will need to adjust your [feeder location or height]({{< relref "solutions#incorrect-feeder-z-position" >}}).
+25. If the component was not identified by the bottom camera correctly, you will likely need to adjust its [vision pipeline]({{< relref "homing-fiducial#troubleshooting-vision-pipeline-adjustment" >}}).
 26. If the component did not stick to the FTP board, you should lower the FTP board's Z axis location (`0.10mm` increments are a good starting place).
 27. If the component stuck to the FTP board but was not centered on placement location (on the metal pads), you will need to do some fine tuning. It is useful to place five or so components before attempting to diagnose exactly what's wrong with your placements.
 28. Continue to click the "Single Job Step" to place the additional components (or click the "Play" icon button and pause the operation when you're ready.)
