@@ -17,13 +17,13 @@ description: >
 The information below about how to find the config files directory on your computer is pulled from [the OpenPnP Wiki](https://github.com/openpnp/openpnp/wiki/User-Manual#configuration-files).
 
 
->Configuration files are located in your home directory, under a subdirectory called .openpnp2.
+>Configuration files are located in your home directory, under a subdirectory called `.openpnp2`.
 >
->On Mac this will typically be /Users/[username]/.openpnp2.
+>On Mac this will typically be `/Users/[username]/.openpnp2`.
 >
->On Windows 2000, XP and 2003 it will be C:\Documents and Settings\[username]\.openpnp2.
+>On Windows 2000, XP and 2003 it will be `C:\Documents and Settings\[username]\.openpnp2`.
 >
->On Windows Vista and above it's C:\Users\[username]\.openpnp2.
+>On Windows Vista and above it's `C:\Users\[username]\.openpnp2`.
 >
 >Configuration files are in XML format and can be edited by hand in a text editor. You should shutdown OpenPnP before editing files by hand as OpenPnP will rewrite the configuration files on exit.
 >
