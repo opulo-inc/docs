@@ -40,7 +40,7 @@ The next step is to set the physical location of the FTP board in OpenPNP. You'l
 8. For each of the three elements, go to the `Type` column, select where it says `Placement` and switch it to `Fiducial`. This tells OpenPnP that these three elements on the board are not components to be picked and placed, but fiducials to be scanned.
   {{< container-image path="images/Switch-to-fiducial-type.png" alt="Switch each fiducial component to fiducial type" >}}
 
-9. Back in the top-right pane, double-click on the `X` and `Y` values of `0.000` and change them to `XXXX` and `YYYY` respectively. This will be the rough location of the bottom-left corner of the FTP board.
+9. Back in the top-right pane, double-click on the `X` and `Y` values of `0.000` and change them to `X328` and `Y94` respectively. This will be the rough location of the bottom-left corner of the FTP board.
   {{< container-image path="images/Set-board-location-xy.png" alt="Set the XY coordinates of your board" >}}
 
 10. Get the Z axis coordinate used when setting up the feeders, subtract `0.10` from it, and enter the result into the `Z` coordinate for the board. Setting the `Z` slightly lower than the actual board height allows the spring-loaded nozzle holder to lightly press components into the board to make them stick.

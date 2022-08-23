@@ -22,9 +22,9 @@ The FTP PCB has two different types of components that need to be placed: resist
   {{< container-image path="images/openPnP-shared/Connect-and-home.png" alt="Connect to your LumenPnP and home it" >}}
 
 ## Import Board
-<!-- TODO: Download link to Getting Started Board files -->
-5. Download the FTP board design here.
-6. Go to `File > Save Job As` and save your FTP job.
+
+1. Download the FTP board design. It's in the `LumenPnP_PCBs.zip` artifact on the [latest release.](https://github.com/opulo-inc/lumenpnp/releases/)
+2. Go to `File > Save Job As` and save your FTP job.
   {{< container-image path="images/Save-job-as.png" alt="Save Job As" >}}
 
 7. Navigate to the `Job` tab in the top right.
@@ -89,62 +89,67 @@ The FTP PCB has two different types of components that need to be placed: resist
 22. Do the same procedure again for the LED feeder. You'll assign the part `LED_0603_1608Metric-LED_Small` to the new feeder.
 
 ## Installing the N045 Nozzle
-<!-- TODO: Image of installing N045 nozzle -->
-23. Install a N045 nozzle on your toolhead.
-24. Go to the `Machine Setup` tab in OpenPnP.
+
+23. Grease the nozzle holder before installing the N045 nozzle.
+  {{< container-image path="images/Install-nozzle-grease.jpg" alt="Grease the nozzle holder before installing the N045 nozzle" >}}
+24. Install your N045 nozzle onto the nozzle holder.
+  {{< container-image path="images/Install-nozzle-nozzle.jpg" alt="Install the N045 nozzle" >}}
+25. Wipe off any excess grease.
+  {{< container-image path="images/Install-nozzle-wipe.jpg" alt="Wipe excess grease from the nozzle holder" >}}
+26. Go to the `Machine Setup` tab in OpenPnP.
   {{< container-image path="images/openPnP-shared/Machine-setup-tab.png" alt="Switch to the Machine Setup Tab" >}}
 
-25. Navigate to `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`.
+27. Navigate to `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`.
   {{< container-image path="images/Reference-nozzle-n1.png" alt="Select Nozzle N1" >}}
 
-26. In the lower-right pane, switch to the `Nozzle Tips` tab.
+28. In the lower-right pane, switch to the `Nozzle Tips` tab.
   {{< container-image path="images/Nozzle-tips-tab.png" alt="Switch to the nozzle tips tab" >}}
 
-27. For row `N045`, check both the `Compatible` and `Loaded` checkboxes. If you haven't set up automatic nozzle changing, you will receive a popup saying that you're required to manually load the nozzle on the toolhead.
+29. For row `N045`, check both the `Compatible` and `Loaded` checkboxes. If you haven't set up automatic nozzle changing, you will receive a popup saying that you're required to manually load the nozzle on the toolhead.
   {{< container-image path="images/Load-nozzle-n045.png" alt="Load Nozzle N045" >}}
 
-28. Go to the `Packages` tab in the top-right pane.
+30. Go to the `Packages` tab in the top-right pane.
   {{< container-image path="images/openPnP-shared/Packages-tab.png" alt="Switch to the Packages Tab" >}}
 
-29. Select `LED_0603_1608Metric` from the list.
+31. Select `LED_0603_1608Metric` from the list.
   {{< container-image path="images/Select-led-package.png" alt="Select the LED package" >}}
 
-30. In the lower-right pane, you'll be in the `Nozzle Tips` tab. Click the `Compatible` on the `N045` row.
+32. In the lower-right pane, you'll be in the `Nozzle Tips` tab. Click the `Compatible` on the `N045` row.
   {{< container-image path="images/Select-led-nozzle-tips.png" alt="Mark compatible with N045 nozzle" >}}
-31. Similarly, select `R_0603_1608Metric` from the Package list.
+33. Similarly, select `R_0603_1608Metric` from the Package list.
   {{< container-image path="images/Select-resistor-package.png" alt="Select the resistor package" >}}
-32. And click the `Compatible` checkbox on the `N045` row.
+34. And click the `Compatible` checkbox on the `N045` row.
   {{< container-image path="images/Select-resistor-nozzle-tips.png" alt="Mark compatible with N045 nozzle" >}}
-33. Under the bottom-left `Machine Controls` pane, select `Nozzle: N1 - N045 (Head:H1)` to enable the left toolhead.
+35. Under the bottom-left `Machine Controls` pane, select `Nozzle: N1 - N045 (Head:H1)` to enable the left toolhead.
   {{< container-image path="images/Enable-nozzle-n1.png" alt="Select Nozzle N1" >}}
 
 ## Fine-tuning feeder height
 
-34. Navigate to the `Feeders` tab in the top-right pane.
+36. Navigate to the `Feeders` tab in the top-right pane.
   {{< container-image path="images/openPnP-shared/Feeders-tab.png" alt="Switch to the feeders list" >}}
 
-35. Click on the "Position Nozzle" icon button to bring the nozzle over the feeder.
+37. Click on the "Position Nozzle" icon button to bring the nozzle over the feeder.
   {{< container-image path="images/Position-nozzle-over-feeder.png" alt="Position the nozzle over the feeder" >}}
-36. Use the Jog controls to lower the Z axis until the nozzle is touching the surface of the plastic tape cover.
+38. Use the Jog controls to lower the Z axis until the nozzle is touching the surface of the plastic tape cover.
   {{< container-image path="images/openPnP-shared/Z-jog-controls.png" alt="Use the jog controls to position the nozzle over the feeder" >}}
   {{< container-image path="images/Nozzle-position-far.jpg" alt="Position the nozzle over the feeder" >}}
   {{< container-image path="images/Nozzle-position-close.jpg" alt="Position the nozzle over the feeder" >}}
-37. Click on the "Capture Nozzle" icon button to save the new Z height of the feeder.
+39. Click on the "Capture Nozzle" icon button to save the new Z height of the feeder.
   {{< container-image path="images/Capture-nozzle-position-feeder.png" alt="Save the nozzle position" >}}
-38. Jog the XY gantry away from the feeder.
+40. Jog the XY gantry away from the feeder.
   {{< container-image path="images/openPnP-shared/XY-jog-controls.png" alt="Move the Tool Head away from the feeder" >}}
-39. Remove the tape cover from the feeder.
-40. Click the "Pick" icon button to pick a component from the feeder. If the component is picked up properly, your Z-height is correct. If not, you should:
+41. Remove the tape cover from the feeder.
+42. Click the "Pick" icon button to pick a component from the feeder. If the component is picked up properly, your Z-height is correct. If not, you should:
   {{< container-image path="images/Pick-from-feeder.png" alt="Pick from the feeder" >}}
     1. Lower the Z height of the feeder by `0.1mm`
     2. Press Apply to save the change
     3. Home the machine
     4. Try picking a component from the feeder again.
-41. After you've successfully picked a component, in the machine `Machine Controls` pane, switch to the `Special` Tab.
+43. After you've successfully picked a component, in the machine `Machine Controls` pane, switch to the `Special` Tab.
   {{< container-image path="images/openPnP-shared/Special-tab.png" alt="Switch to the special tab" >}}
-42. Recycle the component you've successfully picked up
+44. Recycle the component you've successfully picked up
   {{< container-image path="images/Recycle-component.png" alt="Recycle the component you've picked up" >}}
-43. Copy the final Z height, select the other feeder, paste it for the other feeder, and press `Apply`
+45. Copy the final Z height, select the other feeder, paste it for the other feeder, and press `Apply`
   {{< container-image path="images/Copy-and-paste-z-height.png" alt="Apply the z height from the first feeder to the second one" >}}
-45. Test picking a component from the other feeder
+46. Test picking a component from the other feeder
   {{< container-image path="images/Pick-from-feeder.png" alt="Pick from the feeder" >}}
