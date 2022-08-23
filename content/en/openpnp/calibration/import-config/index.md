@@ -7,32 +7,54 @@ description: >
   Install OpenPNP and import default config
 ---
 
+To use OpenPnP with the LumenPnP, you will need to tell the software about your machine's capabilities, such as it's size, how many cameras it has, etc. We've done the basic work for you and put together a starting set of configuration files that will describe your Lumen. The first thing you'll do is to place them where OpenPnP can use them. This is different depending on what type of computer you're going to be using to run OpenPnP.
 
-1. First off, you need OpenPnP installed on your machine! Make sure to download OpenPnP 2.0 for your machine. [OpenPNP 2.0](https://openpnp.org/downloads/)
+## Windows
 
-2. From here, you could set up your machine from scratch using the [OpenPnP Wiki](https://github.com/openpnp/openpnp/wiki/User-Manual), but we've done a lot of the hard work for you and made a configuration file that has all of the transferrable configuration already set to go. Among the assets included in your Build Number's Release, download `Source Code (zip)`, unzip it, and then open the `openpnp` folder to find the premade configuration files.
+1. Download OpenPnP 2.0 for Windows [here](https://openpnp.org/downloads/) (probably the 64 bit installer).
 
-3. Now it's time to import the default configuration for your LumenPnP. OpenPnP saves configuration files in different places depending on your operating system. This folder has a period in front of its name, meaning it's hidden! The folder is still there, it just won't show up in your file explorer. You might need to do something with your settings to get it to show up. If you're on Windows, click [here](https://support.microsoft.com/en-us/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2) for instructions, and [here](https://www.macworld.co.uk/how-to/show-hidden-files-mac-3520878/) if you're on Mac.
+2. Go to the [LumenPnP Releases Page](https://github.com/opulo-inc/lumenpnp/releases).
 
-The information below about how to find the config files directory on your computer is pulled from [the OpenPnP Wiki](https://github.com/openpnp/openpnp/wiki/User-Manual#configuration-files).
+3. Find the latest release that is compatible with your hardware. Any release starting with Version `2` is compatible with both the "Print your own parts kit" and the upcoming V3 kit.
 
+4. Download the `Source Code (zip)` for that release.
 
->Configuration files are located in your home directory, under a subdirectory called .openpnp2.
->
->On Mac this will typically be /Users/[username]/.openpnp2.
->
->On Windows 2000, XP and 2003 it will be C:\Documents and Settings\[username]\.openpnp2.
->
->On Windows Vista and above it's C:\Users\[username]\.openpnp2.
->
->Configuration files are in XML format and can be edited by hand in a text editor. You should shutdown OpenPnP before editing files by hand as OpenPnP will rewrite the configuration files on exit.
->
->There are three primary configuration files. They are:
->
->machine.xml: Contains the primary configuration for the entire system, including information about the machine, cameras, feeders, nozzles, etc.
->
->parts.xml: A portable parts database. As you define parts (components) in OpenPnP they are stored here.
->
->packages.xml: A portable packages database. Component package information including shape and dimensions are stored here.
+5. Unzip the source code.
 
-Once you've found your .openpnp2 folder, drop the machine.xml, parts.xml, and packages.xml files into it. If you already have parts and packages configured from previous usage of OpenPnP, you can just drop in the machine.xml file.
+6. Navigate to the `openPnP` folder inside and find the three configuration files you need: `machine.xml`, `packages.xml`, and `parts.xml`.
+
+7. To install these files in OpenPnP, you'll need to find its configuration folder. First, follow [these instructions](https://support.microsoft.com/en-us/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2) to show hidden folders in Windows Explorer.
+
+8. Next, navigate to:
+   1. On Windows Vista and above: `C:\Users\[username]\.openpnp2`.
+   2. On Windows 2000, XP and 2003: `C:\Documents and Settings\[username]\.openpnp2`.
+  
+9. Double-check that OpenPnP is closed
+
+10. In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, and `parts.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
+
+11. Copy the configuration files from the LumenPnP source files into `.openpnp2` and overwrite the old configuration files. Note that if you've already been using OpenPnP, you may want to only replace your `machine.xml` file, as the other files will overwrite your existing components library.
+
+## MacOS
+
+1. Download OpenPnP 2.0 for Mac [here](https://openpnp.org/downloads/).
+
+2. Go to the [LumenPnP Releases Page](https://github.com/opulo-inc/lumenpnp/releases).
+
+3. Find the latest release that is compatible with your hardware. Any release starting with Version `2` is compatible with both the "Print your own parts kit" and the upcoming V3 kit.
+
+4. Download the `Source Code (zip)` for that release.
+
+5. Unzip the source code.
+
+6. Navigate to the `openPnP` folder inside and find the three configuration files you need: `machine.xml`, `packages.xml`, and `parts.xml`.
+
+7. To install these files in OpenPnP, you'll need to find its configuration folder. Note you may need to follow [these instructions](https://www.macworld.com/article/671158/how-to-show-hidden-files-on-a-mac.html) to show hidden folders in Finder.
+
+8. Next, navigate to: `/Users/[username]/.openpnp2`.
+  
+9. Double-check that OpenPnP is closed
+
+10. In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, and `parts.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
+
+11. Copy the configuration files from the LumenPnP source files into `.openpnp2` and overwrite the old configuration files. Note that if you've already been using OpenPnP, you may want to only replace your `machine.xml` file, as the other files will overwrite your existing components library.
