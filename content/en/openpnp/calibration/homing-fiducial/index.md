@@ -19,7 +19,7 @@ Now that fisheye calibration is complete, you can mount the datum board to the s
 ## Tuning the Homing Fiducial
 
 4. Click on the `Machine Setup` tab in the top right pane.
-  {{< container-image path="images/openPnP-shared/Machine-setup-tab.png" alt="Selecting the Machine setup tab from the main screen" >}}
+  {{< container-image path="images/openPnP-shared/Machine-Setup-Tab.png" alt="Selecting the Machine setup tab from the main screen" >}}
 
 5. Click on the "Expand" checkbox to open all of the features about your machine.
   {{< container-image path="images/Expand-Checkbox.png" alt="Expanding the Machine Config options" >}}
