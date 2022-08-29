@@ -1,6 +1,6 @@
 ---
-title: "LumenPnP Assembly"
-linkTitle: "LumenPnP Assembly"
+title: "LumenPnP Kit Assembly"
+linkTitle: "LumenPnP Kit Assembly"
 weight: 20
 resources:
 - src: "**.png"
