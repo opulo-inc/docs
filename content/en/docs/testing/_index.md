@@ -2,6 +2,7 @@
 title: "Testing"
 linkTitle: "Testing"
 weight: 90
+type: docs
 description: >-
      How to test your LumenPnP after building
 ---
