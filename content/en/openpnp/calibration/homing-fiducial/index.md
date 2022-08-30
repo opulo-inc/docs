@@ -62,7 +62,7 @@ Right click on the camera feed to change the Reticle style to see the center of 
 Double-check your camera's exposure. If it needs adjustment follow the steps in this section:
 
 16. Navigate to the `Machine Setup` tab
-  {{< container-image path="images/openPnP-shared/Machine-setup-tab.png" alt="Selecting the Machine setup tab from the main screen" >}}
+  {{< container-image path="images/Machine-Setup-Tab.png" alt="Selecting the Machine setup tab from the main screen" >}}
 
 17. Click the "Expand" checkbox if necessary
   {{< container-image path="images/Expand-Checkbox.png" alt="Expanding the Machine Config options" >}}
