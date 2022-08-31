@@ -32,7 +32,7 @@ Note: it is not required that you mount your FTP board in the exact same locatio
 The next step is to set the physical location of the FTP board in OpenPNP. You'll start by setting an approximate location and then fine tune the location using vision. Once the location is set, you can run the job to pick and place components. You'll likely need to go through these steps a few times to tune the settings.
 
 6. Navigate to the `Job` tab in the  top-right pane.
-  {{< container-image path="images/openPnP-shared/Job-tab.png" alt="Switch to the Job Tab" >}}
+  {{< container-image path="images/Job-tab.png" alt="Switch to the Job Tab" >}}
 
 7. In the bottom-right pane, you'll see the `Placements` panel. Find the three elements with the IDs: `FID1`, `FID2`, and `FID3`. You can sort the list by `Part` to find them easily.
   {{< container-image path="images/Select-board-fiducials.png" alt="Find each of the board fiducial markers" >}}
@@ -56,7 +56,7 @@ The next step is to set the physical location of the FTP board in OpenPNP. You'l
   {{< container-image path="images/Position-camera-to-fiducial.png" alt="Move the top camera to one fiducial to check its location" >}}
 
 14. The alignment will probably not be perfect. To fix this, click on the digital readout in the bottom right corner to zero your current position.
-  {{< container-image path="images/openPnP-shared/Clear-digital-readout.png" alt="Switch the digital readout to relative mode" >}}
+  {{< container-image path="images/openpnp-shared/Clear-digital-readout.png" alt="Switch the digital readout to relative mode" >}}
 
 15. Then, move the tool head with the Jog buttons until the fiducial is centered in the reticle.
   {{< container-image path="images/Manually-jog-to-fiducial.png" alt="Use the Jog buttons to position the camera directly above the fiducial" >}}
@@ -84,7 +84,7 @@ The next step is to set the physical location of the FTP board in OpenPNP. You'l
 
 22. Make sure you've pulled back the protective tape cover on your feeders and that you have the correct nozzle installed.
 23. It's time to place your first component. Press the "Single job step" icon button repeatedly until OpenPnP moves to pick up an LED, check it's orientation over the bottom camera, and then places it on the board.
-  {{< container-image path="images/openPnP-shared/One-step-placement.png" alt="Start placing components" >}}
+  {{< container-image path="images/openpnp-shared/One-step-placement.png" alt="Start placing components" >}}
 
 24. If the component was not picked up correctly, you will need to adjust your [feeder location or height]({{< relref "solutions#incorrect-feeder-z-position" >}}).
 25. If the component was not identified by the bottom camera correctly, you will likely need to adjust its [vision pipeline]({{< relref "homing-fiducial#troubleshooting-vision-pipeline-adjustment" >}}).
