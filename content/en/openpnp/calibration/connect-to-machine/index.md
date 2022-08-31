@@ -18,9 +18,9 @@ Awesome! Now we've got OpenPnP installed on your computer, and we've got the def
 Before connecting to the machine, you need to set which USB ports to use for communication in OpenPnP.
 
 1. Click on the `Machine Setup` tab
-  {{< container-image path="images/openPnP-shared/Machine-setup-tab.png" alt="Selecting the Machine setup tab from the main screen" >}}
+  {{< container-image path="images/Machine-Setup-Tab.png" alt="Selecting the Machine setup tab from the main screen" >}}
 
-3. Click on the "Expand" checkbox to open all of the features about your machine.
+2. Click on the "Expand" checkbox to open all of the features about your machine.
   {{< container-image path="images/Expand-Checkbox.png" alt="Expanding the Machine Config options" >}}
 
 4. Under `Drivers` click on `GcodeDriver GcodeDriver`
