@@ -19,7 +19,7 @@ The FTP PCB has two different types of components that need to be placed: resist
 3. Slide the Resistors into the left-most tray feeder, and the LEDs the adjacent tray.
 
 4. In OpenPnP, connect to your LumenPnP and home it.
-  {{< container-image path="images/openpnp-shared/Connect-and-home.png" alt="Connect to your LumenPnP and home it" >}}
+  {{< container-image path="images/Connect-and-home.png" alt="Connect to your LumenPnP and home it" >}}
 
 ## Import Board
 
@@ -28,7 +28,7 @@ The FTP PCB has two different types of components that need to be placed: resist
   {{< container-image path="images/Save-job-as.png" alt="Save Job As" >}}
 
 7. Navigate to the `Job` tab in the top right.
-  {{< container-image path="images/openpnp-shared/Job-tab.png" alt="Job Tab" >}}
+  {{< container-image path="images/Job-tab.png" alt="Job Tab" >}}
 
 7. Click that "Add" Icon button to add a new board and select `New Board`. Save the board in the same directory as the job.
   {{< container-image path="images/Add-new-board.png" alt="Add a new board to the job" >}}
@@ -48,7 +48,7 @@ The FTP PCB has two different types of components that need to be placed: resist
 ## Add Feeders
 
 11. Navigate to the `Feeders` tab in the top-right pane.
-  {{< container-image path="images/openpnp-shared/Feeders-tab.png" alt="Switch to the feeders list" >}}
+  {{< container-image path="images/Feeders-tab.png" alt="Switch to the feeders list" >}}
 
 12. Click on the "Add Feeder" icon button.
   {{< container-image path="images/Add-feeder-button.png" alt="Start adding a new feeder" >}}
@@ -97,7 +97,7 @@ The FTP PCB has two different types of components that need to be placed: resist
 25. Wipe off any excess grease.
   {{< container-image path="images/Install-nozzle-wipe.jpg" alt="Wipe excess grease from the nozzle holder" >}}
 26. Go to the `Machine Setup` tab in OpenPnP.
-  {{< container-image path="images/openpnp-shared/Machine-setup-tab.png" alt="Switch to the Machine Setup Tab" >}}
+  {{< container-image path="images/Machine-setup-tab.png" alt="Switch to the Machine Setup Tab" >}}
 
 27. Navigate to `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`.
   {{< container-image path="images/Reference-nozzle-n1.png" alt="Select Nozzle N1" >}}
@@ -109,7 +109,7 @@ The FTP PCB has two different types of components that need to be placed: resist
   {{< container-image path="images/Load-nozzle-n045.png" alt="Load Nozzle N045" >}}
 
 30. Go to the `Packages` tab in the top-right pane.
-  {{< container-image path="images/openpnp-shared/Packages-tab.png" alt="Switch to the Packages Tab" >}}
+  {{< container-image path="images/Packages-tab.png" alt="Switch to the Packages Tab" >}}
 
 31. Select `LED_0603_1608Metric` from the list.
   {{< container-image path="images/Select-led-package.png" alt="Select the LED package" >}}
@@ -126,18 +126,18 @@ The FTP PCB has two different types of components that need to be placed: resist
 ## Fine-tuning feeder height
 
 36. Navigate to the `Feeders` tab in the top-right pane.
-  {{< container-image path="images/openpnp-shared/Feeders-tab.png" alt="Switch to the feeders list" >}}
+  {{< container-image path="images/Feeders-tab.png" alt="Switch to the feeders list" >}}
 
 37. Click on the "Position Nozzle" icon button to bring the nozzle over the feeder.
   {{< container-image path="images/Position-nozzle-over-feeder.png" alt="Position the nozzle over the feeder" >}}
 38. Use the Jog controls to lower the Z axis until the nozzle is touching the surface of the plastic tape cover.
-  {{< container-image path="images/openpnp-shared/Z-jog-controls.png" alt="Use the jog controls to position the nozzle over the feeder" >}}
+  {{< container-image path="images/Z-jog-controls.png" alt="Use the jog controls to position the nozzle over the feeder" >}}
   {{< container-image path="images/Nozzle-position-far.jpg" alt="Position the nozzle over the feeder" >}}
   {{< container-image path="images/Nozzle-position-close.jpg" alt="Position the nozzle over the feeder" >}}
 39. Click on the "Capture Nozzle" icon button to save the new Z height of the feeder.
   {{< container-image path="images/Capture-nozzle-position-feeder.png" alt="Save the nozzle position" >}}
 40. Jog the XY gantry away from the feeder.
-  {{< container-image path="images/openpnp-shared/XY-jog-controls.png" alt="Move the Tool Head away from the feeder" >}}
+  {{< container-image path="images/XY-jog-controls.png" alt="Move the Tool Head away from the feeder" >}}
 41. Remove the tape cover from the feeder.
 42. Click the "Pick" icon button to pick a component from the feeder. If the component is picked up properly, your Z-height is correct. If not, you should:
   {{< container-image path="images/Pick-from-feeder.png" alt="Pick from the feeder" >}}
@@ -146,7 +146,7 @@ The FTP PCB has two different types of components that need to be placed: resist
     3. Home the machine
     4. Try picking a component from the feeder again.
 43. After you've successfully picked a component, in the machine `Machine Controls` pane, switch to the `Special` Tab.
-  {{< container-image path="images/openpnp-shared/Special-tab.png" alt="Switch to the special tab" >}}
+  {{< container-image path="images/Special-tab.png" alt="Switch to the special tab" >}}
 44. Recycle the component you've successfully picked up
   {{< container-image path="images/Recycle-component.png" alt="Recycle the component you've picked up" >}}
 45. Copy the final Z height, select the other feeder, paste it for the other feeder, and press `Apply`
