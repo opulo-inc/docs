@@ -22,3 +22,6 @@ The following links are OpenPnP documentation pages that will help you confirm t
 
 * [Mods](https://mods.opulo.io/)
   * Many folks in the community have developed mods and upgrades to the machine that are all organized here.
+
+* [Qwertymodo Full Calibration Video](https://www.youtube.com/watch?v=vuFalyzcCZA)
+  * Community member Qwertymodo has put together a video of doing his calibration from scratch, instead of using the OpenPnP config files in the repository as a starting point. Many folks in the community have found it very useful, especially for understanding all the menus and features OpenPnP has to offer.

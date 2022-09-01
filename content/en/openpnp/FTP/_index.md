@@ -7,7 +7,7 @@ resources:
 - src: "**.png"
 - src: "**.jpg"
 description: >
-  Using the FTP to set up your LumenPnP
+  Use the Functional Test Placement PCB to learn how to run a job
 ---
 
 
@@ -15,7 +15,7 @@ description: >
 
 This guide walks you through setting up and completing your first placement job using the "Getting Started Kit", included with the LumenPnP v3. Before going through this guide, make sure you've completed the [Calibration]({{< relref "calibration" >}}) guide to get your machine up and running.
 
-It might be useful to refer to this guide again after you finish it the first time, since many of these steps will need to be performed for every new board and job you start. Take your time going through this the first time around and keep in mind that this process gets faster with experience .
+It might be useful to refer to this guide again after you finish it the first time, since many of these steps will need to be performed for every new board and job you start. Take your time going through this the first time around and keep in mind that this process gets faster with experience.
 
 ## What you'll need
 
