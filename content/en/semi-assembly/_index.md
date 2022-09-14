@@ -24,7 +24,7 @@ The LumenPnP is capable of placing parts as small as 0402, with support for down
 It is completely open source and hackable. The main controller has three AUX ports, allowing anyone to add on peripherals or communicate with other machines.
 
 {{% alert color="danger" title="WARNING" %}}
-This documentation corresponds with a specific machine **Build Number**. The Build Number represents what hardware and 3D printed parts your machine has. If you're building a Semi-Assembled LumenPnP, **you have a v3 machine, and these docs are for you!** You should see "v3" on the pamphlet that was included in your kit. If you see "v2" on your pamphlet, click on "LumenPnP Kit Assembly" in the menu bar above for instructions for your machine.
+This documentation corresponds with a specific machine **Version Number**. The Version Number represents what version of hardware your machine has. If you're building a Semi-Assembled LumenPnP, **you have a v3 machine, and these docs are for you!** You should see "v3.X.X" on the pamphlet that was included in your kit. If you see "v2" on your pamphlet, click on "LumenPnP Kit Assembly" in the menu bar above for instructions for your machine.
 
 {{% /alert %}}
 
@@ -42,20 +42,28 @@ We'll also refer to putting the machine "back on its haunches." This refers to a
 
 If you find that there's something unclear in this documentation, please [submit a ticket on Github](https://github.com/opulo-inc/docs) about it! You can also file an issue using the link in the upper right of any page on this site. We're trying to make this as clear and understandable as possible, so every issue you tag helps us make it better for everyone else. You can also check out the [Discord server](https://discordapp.com/invite/TCwy6De) and ask questions to the community.
 
+### Differences
+
+Dont worry if something in the video doesnt look exactly like what you have in the box. We’re constantly tuning and tweaking things to make them better and easier to use, so you might find things look slightly different.
+
+### Assembly Video
+
+We have an instructional video that walks you through the process of assembling your LumenPnP. You can find the video embedded below:
+
+## TODO VIDEO LINK
+
 ### Timing
 
 Expect assembly to take about **one hour**.
 
-### Tools Needed
+### You'll Need
 
-* M2 Allen Wrench (Long, ball-end)
-* M2.5 Allen Wrench (Long, ball-end)
-* M3 Allen Wrench (Long, ball-end)
-* M4 Allen Wrench (Long, ball-end)
-* Small Phillips Screwdriver
-* Small Flathead Screwdriver
-* Flush Cutters
+* Your packaged Semi-Assembled LumenPnP
+* A clear tabletop for assembly
+* A computer
+* The ability to plug in three high-bandwidth USB-A ports
+  * Your computer will need to communicate with both the data stream that controls the machine, along with two webcam feeds. It might be possible to handle all of this data through one USB port on your computer with an external USB hub, but you might find you need to plug into a few different ports on your computer, depending on the hardware you have.
 
 ## Next steps
 
-Let's dive in! The first step is [unpacking your machine]({{< relref "unpacking" >}}).
+Let's dive in! The first step is [unboxing your machine]({{< relref "unboxing" >}}).
