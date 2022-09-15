@@ -16,9 +16,13 @@ description: >
 {{< container-image path="getting-started-card.png" alt="" >}}
 
 2. Remove the top protective layer of foam revealing the first tray of components. This tray contains:
-   - fdsafs
-   - fdsaf
-   - fdasf
+   - Staging plate
+   - Build plate
+   - Cable chain assembly
+   - Cable chain frame mount
+   - IEC power cable
+   - Front rail
+   - Back rail
   
 {{< container-image path="first-tray.png" alt="" >}}
 
@@ -29,16 +33,27 @@ description: >
 {{< container-image path="first-tray-removal.png" alt="" >}}
 
 4. The second tray contains the following parts:
-   - dfsaf
-   - fdafs
-   - fdafsa
+   - Left and right leg assemblies
+   - X gantry assembly
+   - Feet for the build and staging plates
+   - Power supply
+   - Getting started kit
+   - Tool bag
 
 {{< container-image path="second-tray.png" alt="" >}}
 
 5. Open up the tool bag. Inside, you'll find the following items:
-   - fdasfas
-   - fdsafs
-   - fdas
+   - Hobby knife
+   - Flush snips
+   - 135 degree tweezers
+   - Allen wrench set
+   - Small Phillips screwdriver
+   - Alignment bracket
+   - Bottom camera cable
+   - ESD wrist strap
+   - USB-A to USB-B cable
+   - Hardware bag
+   - Zip ties
 
 {{< container-image path="tool-bag.png" alt="" >}}
 
