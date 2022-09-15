@@ -32,10 +32,10 @@ In this step, we'll assemble the main frame of the machine.
 {{< container-image path="left-legs-cable-harness.JPG" alt="" >}}
 {{< container-image path="right-legs-cable-harness.JPG" alt="" >}}
 
-4. Remove two M5x8mm buttonhead screws and two t-slot nuts from your hardware bag.
-{{< container-image path="two-m5x8-two-tslot.JPG" alt="" >}}
+4. Remove two M5x10mm socket head screws and two t-slot nuts from your hardware bag.
+{{< container-image path="two-m5x10-two-tslot.JPG" alt="" >}}
 
-5. Insert one of the M5x8mm screws into the front left leg as shown.
+5. Insert one of the M5x10mm screws into the front left leg as shown.
 
 {{< container-image path="left-leg-screw-1.JPG" alt="" >}}
 {{< container-image path="left-leg-screw-2.JPG" alt="" >}}
@@ -69,7 +69,7 @@ In this step, we'll assemble the main frame of the machine.
 {{< container-image path="front-rail-tighten-1.JPG" alt="" >}}
 {{< container-image path="front-rail-tighten-2.JPG" alt="" >}}
 
-11. Attach the remaining M5x8mm screw and t-slot nut into the front right leg in the same way as you did for the front left leg.
+11. Attach the remaining M5x10mm socket head and t-slot nut into the front right leg in the same way as you did for the front left leg.
 
 {{< container-image path="front-rail-right-leg-1.JPG" alt="" >}}
 {{< container-image path="front-rail-right-leg-2.JPG" alt="" >}}
@@ -104,14 +104,25 @@ In this step, we'll assemble the main frame of the machine.
 {{< container-image path="left-back-rail-fit-2.JPG" alt="" >}}
 {{< container-image path="left-back-rail-fit-3.JPG" alt="" >}}
 
-17. Make sure that the right side of the back rail has fit into the right leg extrusion. You might find that the back legs need to be pulled together or apart a little in order to get them to fit; **this is ok**. The back rail should be flush with the extrusion.
+1.  Make sure that the right side of the back rail has fit into the right leg extrusion. You might find that the back legs need to be pulled together or apart a little in order to get them to fit; **this is ok**. The back rail should be flush with the extrusion if the t-slot nuts have been inserted into the extrusion correctly.
 
 {{< container-image path="back-rail-offset.JPG" alt="" >}}
 {{< container-image path="back-rail-no-offset.JPG" alt="" >}}
 
-18. Slide the back rail up and let the left side of it rest on the spacing bracket included in your tool kit. Make sure it's resting on the short side (50mm). Lightly tighten the top screw on the left side, making sure to keep the end of the extrusion and right angle brackets perfectly flush with the side of the extrusion. Then use the bracket to set the spacing on the right side, and tighten both screws into place. Make sure the right angle brackets are perfectly flush with the right side extrusion as well. Go back to the left side and tighten the bottom screw.
+18. Slide the back rail up and let the left side of it rest on the spacing bracket included in your tool kit. Make sure it's resting on the short side (50mm). Lightly tighten the top screw on the left side, making sure to keep the end of the extrusion and right angle brackets perfectly flush with the side of the extrusion. 
 
-19. Bring your machine back down onto four legs and get the X gantry assembly (shown below).
+{{< container-image path="alignment-bracket.JPG" alt="" >}}
+{{< container-image path="left-bracket-rest.JPG" alt="" >}}
+{{< container-image path="left-bracket-top-screw.JPG" alt="" >}}
+{{< container-image path="bracket-flush-left.JPG" alt="" >}}
+
+19. Use the bracket to set the spacing on the right side, and tighten both screws into place. Make sure the right angle brackets are perfectly flush with the right side extrusion as well. Go back to the left side and tighten the bottom screw.
+
+{{< container-image path="right-bracket-tighten.JPG" alt="" >}}
+{{< container-image path="bracket-flush-right.JPG" alt="" >}}
+{{< container-image path="left-bracket-bottom-screw.JPG" alt="" >}}
+
+1.  Bring your machine back down onto four legs and get the X gantry assembly (shown below).
 {{< container-image path="lower-machine-1.JPG" alt="" >}}
 {{< container-image path="lower-machine-2.JPG" alt="" >}}
 {{< container-image path="x-gantry.JPG" alt="" >}}
