@@ -63,8 +63,7 @@ Expect assembly to take about **one hour**.
 * Your packaged Semi-Assembled LumenPnP
 * A clear tabletop for assembly
 * A computer
-* The ability to plug in three high-bandwidth USB-A ports
-  * Your computer will need to communicate with both the data stream that controls the machine, along with two webcam feeds. It might be possible to handle all of this data through one USB port on your computer with an external USB hub, but you might find you need to plug into a few different ports on your computer, depending on the hardware you have.
+* The ability to plug in three high-bandwidth USB-A ports - Your computer will need to communicate with both the data stream that controls the machine, along with two webcam feeds. It might be possible to handle all of this data through one USB port on your computer with an external USB hub, but you might find you need to plug into a few different ports on your computer, depending on the hardware you have.
 
 ## Next steps
 
