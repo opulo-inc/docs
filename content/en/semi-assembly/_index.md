@@ -11,7 +11,7 @@ menu:
     weight: 5
 ---
 
-These are assembly instructions for the **Semi-Assembled** LumenPnP. If you're looking for the instructions for the Kit, you can find them by clicking "LumenPnP Kit Assembly" above.
+These are assembly instructions for the **Semi-Assembled** LumenPnP. If you're looking for the instructions for the "BYOP" bring-your-own-printer kit, you can find them by clicking "LumenPnP Kit Assembly" above.
 
 ## What is the LumenPnP?
 
