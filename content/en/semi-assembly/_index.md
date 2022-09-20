@@ -19,7 +19,9 @@ The LumenPnP is an open source Pick and Place project led by [Opulo](https://www
 
 {{< container-image path="semi-hero.png" alt="hero image of LumenPnP" >}}
 
-The LumenPnP is capable of placing parts as small as 0402, with support for down to 0603. It is currently set up to use strip feeders, but development around active, powered feeders is ongoing.
+The LumenPnP is an ongoing project. The current version, V3, uses strip feeders and can reliably place components as small as 0603. Opulo is working on active, powered feeders and reliable placement of 0402 components.
+
+The LumenPnP is completely open source and has an active community with ongoing mechanical, electrical, and software modifications.
 
 It is completely open source and hackable. The main controller has three AUX ports, allowing anyone to add on peripherals or communicate with other machines.
 
