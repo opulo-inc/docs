@@ -30,7 +30,7 @@ This documentation corresponds with a specific machine **Version Number**. The V
 
 {{% /alert %}}
 
-## READ BEFORE STARTING
+## Before you begin
 
 ### Machine Orientation and Terminology
 
