@@ -10,7 +10,7 @@ description: >
   Assembling the Frame
 ---
 
-In this step, we'll assemble the main frame of the machine.
+In this step, you will assemble the main frame of the machine.
 
 1. Remove the left and right leg assemblies from the second tray.
 {{< container-image path="remove-left-legs.JPG" alt="" >}}

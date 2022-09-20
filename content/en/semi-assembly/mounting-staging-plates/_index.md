@@ -10,7 +10,7 @@ description: >
   Mounting the Staging and Build Plates to the Frame
 ---
 
-In this step, we'll mount the Staging Plate and Build Plate to the machine's frame.
+In this step, you will mount the Staging Plate and Build Plate to the machine's frame.
 
 1. Remove the staging plate and build plate from the first tray. The staging plate has the motherboard, camera, pumps, valves, wiring, and tubing mounted on it. The build plate is bare.
 

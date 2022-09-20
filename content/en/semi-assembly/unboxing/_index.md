@@ -10,7 +10,7 @@ description: >
   Unboxing your LumenPnP
 ---
 
-1. First, let's take a look at what's in the box! The first thing you'll see when you open the package is the getting started card. This card has your machine's version number on it. Make sure your version number begins with `v3`.
+1. First, take a look at what's in the box! The first thing you'll see when you open the package is the getting started card. This card has your machine's version number on it. Make sure your version number begins with `v3`.
 
 {{< container-image path="opened-box.png" alt="" >}}
 {{< container-image path="getting-started-card.png" alt="" >}}
