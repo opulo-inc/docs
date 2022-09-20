@@ -10,7 +10,7 @@ description: >
   Wiring the machine
 ---
 
-In this step, we'll mount and connect all the wiring and pneumatic tubing.
+In this step, you will mount and connect all the wiring and pneumatic tubing.
 
 1. Find the `front-drag-chain-mount` print in the first tray, and grab an M5x25mm and M5x16mm socket head screw from the hardware bag.
 
