@@ -4,21 +4,25 @@ linkTitle: "Homing Fiducial"
 weight: 20
 type: docs
 description: >
-  Mounting datum board and testing the homing fiducial
+  Setting up the datum board and testing the homing fiducial
 ---
 
-Now that fisheye calibration is complete, you can mount the datum board to the staging plate. The datum board is a reference point for everything else you'll do with the machine. The center dot of the datum board will be the most important calibration point for the machine. It'll be used to fine-tune the LumenPnP's XY position after homing to account for any errors in the limit switches.
+Now that fisheye calibration is complete, we can set up the datum board. The datum board is a reference point for everything else you'll do with the machine. The center dot of the datum board will be the most important calibration point for the machine. It'll be used to fine-tune the LumenPnP's XY position after homing to account for any errors in the limit switches.
 
-1. Use four M3x16mm screws and four M3 nuts to secure the datum board and datum board mount to the staging plate on the rear of the bottom camera, through holes: B18, A19, A21, B22. The the fisheye calibration pattern should be facing down, and the gold grid of lines and fiducial in the center of the Opulo logo facing upwards. Tighten this down securely.
+{{< alert color="warning" title="If Your Machine Is v2" >}}
+If you are setting up a `v2` machine, your datum board is not yet mounted to the Staging Plate.
+
+Use four M3x16mm screws and four M3 nuts to secure the datum board and datum board mount to the staging plate on the rear of the bottom camera, through holes: B18, A19, A21, B22. The the fisheye calibration pattern should be facing down, and the gold grid of lines and fiducial in the center of the Opulo logo facing upwards. Tighten this down securely.
    {{< container-image path="images/Screen Shot 2022-01-11 at 12.51.47 PM.png" alt="the mounting location for the datum board and holder" >}}
+{{< /alert >}}
 
-2. In the "Machine Controls" pane in the lower left, connect to the LumenPnP if you haven't already by pressing the power button.
-3. Run a rough home routine by pressing the Home button (shaped like a house). The machine will move to the X and Y axis limit switches. The default machine configuration files are set so that OpenPnP will *not* try to use the homing fiducial yet. Note that the home icon will turn yellow, as the LumenPnP has homed to it's end stops, but hasn't completed its full homing routine.
+1. In the "Machine Controls" pane in the lower left, connect to the LumenPnP if you haven't already by pressing the power button.
+2. Run a rough home routine by pressing the Home button (shaped like a house). The machine will move to the X, Y, and Z zero positions. The default machine configuration files are set so that OpenPnP will *not* try to use the homing fiducial yet. Note that the home icon will turn yellow, as the LumenPnP has homed to it's end stops, but hasn't completed its full homing routine.
    {{< container-image path="images/Connect-and-home.png" alt="Connect to the LumenPnP and attempt to home it" >}}
 
 ## Tuning the Homing Fiducial
 
-4. Click on the `Machine Setup` tab in the top right pane.
+3. Click on the `Machine Setup` tab in the top right pane.
   {{< container-image path="images/Machine-Setup-Tab.png" alt="Selecting the Machine setup tab from the main screen" >}}
 
 5. Click on the "Expand" checkbox to open all of the features about your machine.
@@ -59,7 +63,7 @@ Right click on the camera feed to change the Reticle style to see the center of 
 
 ## Check Camera Exposure
 
-Double-check your camera's exposure. If it needs adjustment follow the steps in this section:
+Set the exposure for the top camera so that we're seeing the homing fiducial clearly and sharply.
 
 16. Navigate to the `Machine Setup` tab
   {{< container-image path="images/Machine-Setup-Tab.png" alt="Selecting the Machine setup tab from the main screen" >}}
@@ -76,7 +80,7 @@ Double-check your camera's exposure. If it needs adjustment follow the steps in 
 17. Scroll down if necessary to the `Properties` list of adjustments for the camera image.
   {{< container-image path="images/Top-camera-properties.png" alt="Top camera properties" >}}
 
-18. In most cases you can simply check the `Auto` checkbox for `Exposure`, then uncheck it to save the automatically set value. Note that this may not work in all situations, so you may need to manually adjust the image settings to get a clear image, where the Homing Fiducial is clearly distinguished against the background o the datum board.
+18. The goal here is to make the center fiducial look bright and sharp, and have the surrounding soldermask look dark. In most cases you can simply check the `Auto` checkbox for `Exposure`, then uncheck it to save the automatically set value, and this does a good job of making the image look how you want. Note that this may not work in all situations, so you may need to manually adjust the image settings to get a clear image, where the Homing Fiducial is clearly distinguished against the background of the datum board.
   {{< container-image path="images/Auto-exposure-on.png" alt="Top camera properly exposed with the auto-exposure turned on" >}}
 
 {{% alert color="danger" title="For Mac Users" %}}
@@ -135,5 +139,5 @@ With a higher value in the "param2" field, we only detect a single circle.
    {{< container-image path="images/Cant-find-homing-fiducial.png" alt="A first attempt at homing the LumenPnP" >}}
 
 {{< alert color="info" title="Note" >}}
-If you're lucky, your machine may succeed at finding the homing fiducial on the very first try. In that case, the homing procedure will continue, and will try to detect a nozzle on your toolhead. This will fail, and you will receive the error: `Nozzle tip calibration: too many vision misdetects. Check pipeline and threshold.` This is normal, and you can skip the rest of this page and go onto [MM/Pixel calibration]({{< relref "mm-per-pixel" >}}).
+Once your machine succeeds in finding the homing fiducial, the homing procedure will continue, and will try to detect a nozzle on your toolhead. This will fail, and you will receive the error: `Nozzle tip calibration: too many vision misdetects. Check pipeline and threshold.` This is expected, and if you see this you can move onto [MM/Pixel calibration]({{< relref "mm-per-pixel" >}}).
 {{< /alert >}}

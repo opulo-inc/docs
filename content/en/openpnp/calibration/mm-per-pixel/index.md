@@ -14,7 +14,6 @@ Nicely done so far! You've got your homing fiducial all set up, and have played 
 
 
 2. Select your top camera in the device tree. Under the `General Configuration` tab, scroll down to `Units Per Pixel`. Under the X and Y Object Dimensions, type in the number 5. 
-
 {{< container-image path="images/Screen Shot 2022-05-19 at 12.25.50 PM.png" alt="" >}}
 
 3. Now, zoom out on the camera and jog to one of the golden squares on the datum board. Make sure the entire square is visible in the camera's field of view like the image below.

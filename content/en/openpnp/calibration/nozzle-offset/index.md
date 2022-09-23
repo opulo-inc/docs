@@ -7,11 +7,11 @@ description: >
   Calibrating the offset of the nozzle from the top camera
 ---
 
-Now we need to tell OpenPnP how far the nozzle is away from the center point of the top camera. OpenPnP has a built in "wizard" to help set this offset, so we'll use that to help us do it. You can read the OpenPnP docs about this step [here](https://github.com/openpnp/openpnp/wiki/Setup-and-Calibration%3A-Nozzle-Setup#head-offsets).
+Now we need to tell OpenPnP how far the nozzle(s) is/are away from the center point of the top camera. OpenPnP has a built in "wizard" to help set this offset, so we'll use that to help us do it. You can read the OpenPnP docs about this step [here](https://github.com/openpnp/openpnp/wiki/Setup-and-Calibration%3A-Nozzle-Setup#head-offsets).
 
 **NOTE:** OpenPnP has some new methods of calibration using a secondary fiducial at a different Z height, and a small piece of paper. If you'd like to explore this method of calibration, you can find the OpenPnP docs about this process [here](https://github.com/openpnp/openpnp/wiki/Calibration-Solutions#calibrating-precision-camera-to-nozzle-offsets). This process requires [making and installing a calibration rig](https://github.com/openpnp/openpnp/wiki/Vision-Solutions#calibration-rig), [3D Units per Pixel calibration](https://github.com/openpnp/openpnp/wiki/3D-Units-per-Pixel), and [Advanced Camera Calibration](https://github.com/openpnp/openpnp/wiki/Advanced-Camera-Calibration).
 
-1. Select your nozzle in the device tree, and click on the `Offset Wizard` menu option. Leave the `Include Z?` box unchecked. Read the instructions that OpenPnP provides in this window.
+1. Select your left nozzle (N1) in the device tree, and click on the `Offset Wizard` menu option. Leave the `Include Z?` box unchecked. Read the instructions that OpenPnP provides in this window.
 
 {{< container-image path="images/Screen Shot 2022-05-19 at 2.17.07 PM.png" alt="" >}}
 
@@ -30,5 +30,4 @@ Now we need to tell OpenPnP how far the nozzle is away from the center point of 
 
 {{< container-image path="images/Screen Shot 2022-05-19 at 2.22.08 PM.png" alt="" >}}
 
-
-
+6. If you have a `v3` machine, you have a second nozzle as well (N2). Perform the same steps above but for the second nozzle instead.
