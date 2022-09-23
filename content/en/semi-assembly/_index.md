@@ -11,7 +11,7 @@ menu:
     weight: 5
 ---
 
-These are assembly instructions for the **Semi-Assembled** LumenPnP. If you're looking for the instructions for the "BYOP" bring-your-own-printer kit, you can find them by clicking "LumenPnP Kit Assembly" above.
+These are assembly instructions for the **Semi-Assembled** LumenPnP. If you're looking for the instructions for the "BYOP" bring-your-own-printer kit, you can find them [here](https://docs.opulo.io/docs/).
 
 ## What is the LumenPnP?
 
@@ -50,13 +50,13 @@ Dont worry if something in the video doesnt look exactly like what you have in t
 
 ### Assembly Video
 
-We have an instructional video that walks you through the process of assembling your LumenPnP. You can find the video embedded below:
+We have an instructional video that walks you through the process of assembling your LumenPnP. This video is just to help visualize how parts go together; you'll still need this guide to complete your build. You can find the video embedded below:
 
-## TODO VIDEO LINK
+{{< youtube VvtisHKmmWc >}}
 
 ### Timing
 
-Expect assembly to take about **one hour**.
+Expect assembly to take about **50 minutes**.
 
 ### You'll Need
 

@@ -200,3 +200,12 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 
 {{< container-image path="usb-under-mobo.JPG" alt="" >}}
 {{< container-image path="final-wiring.JPG" alt="" >}}
+
+39. Plug the power supply into a wall outlet, and plug the barrel jack into the port in the upper-right corner of the motherboard. You should see a light come on underneath the cover.
+40. Plug the USB-B cable located in your toolbag into the USB port on the bottom-left corner of the motherboard. 
+41. Lower your machine down onto all four legs.
+42. Plug the three USB cables coming from your machine into your computer. Depending on your computer's hardware, you might need to plug these all into separate USB ports on your computer and not use an external hub. We'll cover more about this later during calibration.
+
+43. You're done with your build! Time to head over to the OpenPnP section of the docs for calibration and running your first job:
+
+## [OpenPnP Docs Page](https://docs.opulo.io/openpnp/)

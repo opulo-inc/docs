@@ -17,7 +17,7 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 
 2. Go to the [LumenPnP Releases Page](https://github.com/opulo-inc/lumenpnp/releases).
 
-3. Find the latest release that is compatible with your hardware. Any release starting with Version `2` is compatible with both the "Print your own parts kit" and the upcoming V3 kit.
+3. Find the latest release that is compatible with your hardware. If your machine's version begins with `v2`, pick the most recent release starting with `v2`. If your machine's version begins with `v3`, pick the most recent release starting with `v3`.
 
 4. Download the `Source Code (zip)` for that release.
 
@@ -43,7 +43,7 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 
 2. Go to the [LumenPnP Releases Page](https://github.com/opulo-inc/lumenpnp/releases).
 
-3. Find the latest release that is compatible with your hardware. Any release starting with Version `2` is compatible with both the "Print your own parts kit" and the upcoming V3 kit.
+3. Find the latest release that is compatible with your hardware. If your machine's version begins with `v2`, pick the most recent release starting with `v2`. If your machine's version begins with `v3`, pick the most recent release starting with `v3`.
 
 4. Download the `Source Code (zip)` for that release.
 
@@ -55,7 +55,7 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 
 8. Next, navigate to: `/Users/[username]/.openpnp2`.
   
-9. Double-check that OpenPnP is closed
+9. Double check that OpenPnP is closed.
 
 10. In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, and `parts.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
 
