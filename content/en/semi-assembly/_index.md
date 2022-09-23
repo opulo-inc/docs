@@ -52,7 +52,7 @@ Dont worry if something in the video doesnt look exactly like what you have in t
 
 We have an instructional video that walks you through the process of assembling your LumenPnP. This video is just to help visualize how parts go together; you'll still need this guide to complete your build. You can find the video embedded below:
 
-{{< youtube VvtisHKmmWc >}}
+{{< youtube Ugixh3Ngr5E >}}
 
 ### Timing
 
