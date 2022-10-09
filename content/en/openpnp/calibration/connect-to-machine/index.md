@@ -49,44 +49,52 @@ Now we'll set up the cameras. The big red "X" in the camera views means that Ope
 The LumenPnP motherboard in `v2` machines have a built in USB hub and USB ports for you to plug the two webcams into. This arrangement may not be compatible with your computer. Some computers use higher quality USB hubs, which can handle the bandwidth required to stream video from both webcams at once over a single USB port. From reports we've gotten from users, it seems that *many* computer manufactures do **not** include good enough USB hubs. In these cases, one or both of the USB webcams will fail to show up in the configuration list below. If this is the case, you will need to plug at least one of the webcams directly into your computer via a separate USB port. Occasionally this can cause the webcam's name to be incorrect, but you'll still be able to select it from the drop-down list with a little trial and error.
 {{% /alert %}}
 
-7. Again, navigate to the `Machine Setup` tab
-8. Again, click the "Expand" checkbox if necessary
-9. Under `Cameras` click on `OpenPnpCaptureCamera Bottom`
+7. In the top-left corner, change the camera view to one of the "Show All" options. You should then see two camera feeds that are black, and have red `x` on them.
+  {{< container-image path="images/switch-camera-display.png" alt="show both camera feeds" >}}
+
+8. Again, navigate to the `Machine Setup` tab.
+9. Again, click the "Expand" checkbox if necessary.
+10. Under `Cameras` click on `OpenPnpCaptureCamera Bottom`
   {{< container-image path="images/Bottom Camera Config.png" alt="Finding the Bottom Camera Settings" >}}
 
-10. In the lower detail pane, switch to the `Device Settings` tab
+10. In the lower detail pane, switch to the `Device Settings` tab.
   {{< container-image path="images/Bottom-camera-device-settings.png" alt="Switching to the camera device settings" >}}
 
 11. In the `Device` drop-down, choose `PnP Bottom Camera (PnP Bottom Camera)`
   {{< container-image path="images/Bottom-camera-select-device.png" alt="Selecting the correct device for the Bottom Camera" >}}
 
-12. In the `Format` drop-down, choose the `1280x720 10fps` setting
+12. In the `Format` drop-down, choose the `1280x720 10fps` setting.
   {{< container-image path="images/Bottom resolution.png" alt="setting bottom camera resolution" >}}
 
-13. Click the "Apply" button in the bottom right
+13. Click the "Apply" button in the bottom right. You should then see the camera display start showing the feed from the camera, or at least see the red `x` disappear. We'll fix the exposure next.
   {{< container-image path="images/Bottom Camera Apply.png" alt="Saving changes to the Bottom Camera Config" >}}
+  {{< container-image path="images/Bottom-camera-on.png" alt="Bottom camera is now on" >}}
+
+14. Adjust the exposure to make the camera feed more reasonable. On some computers, you can toggle Automatic Exposure on, and then back off again to set it correctly. Do not keep auto exposure turned on. And remember you can adjust the exposure later when you're actually using the camera.
+  {{< container-image path="images/adjust-exposure.png" alt="Adjust exposure" >}}
 
 ## Top Camera Config
 
-14. Again, navigate to the `Machine Setup` tab
-15. Again, click the "Expand" checkbox if necessary
+14. Again, navigate to the `Machine Setup` tab.
+15. Again, click the "Expand" checkbox if necessary.
 16. Navigate to `Heads > ReferenceHead H1 > Cameras > OpenPnPCaptureCamera Top`
   {{< container-image path="images/Top-camera-settings.png" alt="Finding the Top Camera Settings" >}}
 
-17. In the lower detail pane, switch to the `Device Settings` tab
+17. In the lower detail pane, switch to the `Device Settings` tab.
   {{< container-image path="images/Top-camera-device-settings.png" alt="Switching to the camera device settings" >}}
 
-18. In the `Device` drop-down, choose `PnP Bottom Camera (PnP Top Camera)`
+18. In the `Device` drop-down, choose `PnP Bottom Camera (PnP Top Camera)`.
   {{< container-image path="images/Top-camera-select-device.png" alt="Selecting the correct device for the Bottom Camera" >}}
 
-19. In the `Format` drop-down, choose the `1280x720 10fps` setting
+19. In the `Format` drop-down, choose the `1280x720 10fps` setting.
   {{< container-image path="images/Top resolution.png" alt="setting top camera resolution" >}}
 
-20. Click the "Apply" button in the bottom right
+20. Click the "Apply" button in the bottom right. You should then see the camera display start showing the feed from the camera, or at least see the red `x` disappear. We'll fix the exposure next.
   {{< container-image path="images/Top Camera Apply.png" alt="Saving changes to the Top Camera Config" >}}
+  {{< container-image path="images/top-camera-on.png" alt="Top camera is now on" >}}
 
-21. To check that both cameras are working now, select your preferred view option in the top left `Cameras` section. The Camera feeds should update automatically. If you only see a black image but the red `X` has disappeared, it's likely that your camera is connected properly, but just has its exposure set too low. We'll address this in a later step. Remember to remove the plastic lens covers from each camera, too.
-  {{< container-image path="images/Both-cameras-working.png" alt="Both cameras showing live outputs." >}}
+21. Adjust the exposure to make the camera feed more reasonable. On some computers, you can toggle Automatic Exposure on, and then back off again to set it correctly. Do not keep auto exposure turned on. And remember you can adjust the exposure later when you're actually using the camera.
+  {{< container-image path="images/adjust-exposure-2.png" alt="Adjust exposure" >}}
 
 ## Connecting to the LumenPnP
 
