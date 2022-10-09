@@ -23,7 +23,7 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 
 5. Unzip the source code.
 
-6. Navigate to the `openPnP` folder inside and find the three configuration files you need: `machine.xml`, `packages.xml`, and `parts.xml`.
+6. Navigate to the `openPnP` folder inside and find the three configuration files you need: `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`.
 
 7. To install these files in OpenPnP, you'll need to find its configuration folder. First, follow [these instructions](https://support.microsoft.com/en-us/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2) to show hidden folders in Windows Explorer.
 
