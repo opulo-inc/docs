@@ -7,7 +7,7 @@ description: >
   Getting set up and connected to your LumenPnP using OpenPnP
 ---
 
-Awesome! Now we've got OpenPnP installed on your computer, and we've got the default configuration loaded up, our next step is getting connected to the machine using OpenPnP and getting familiar with the UI.
+Awesome! Now we've got OpenPnP installed on your computer, and we've got the default configuration loaded up. Our next step is getting connected to the machine and getting familiar with OpenPnP's UI.
 
 1. Connect your machine to your computer using the included USB cable, and open OpenPnP on your computer. You should now see the OpenPnP UI:
 
@@ -15,12 +15,12 @@ Awesome! Now we've got OpenPnP installed on your computer, and we've got the def
 
 ## Com Port and Baud Rate
 
-Before connecting to the machine, you need to set which USB ports to use for communication in OpenPnP.
+Before connecting to the machine, you need to set which USB port to use for communication in OpenPnP.
 
 1. Click on the `Machine Setup` tab
   {{< container-image path="images/Machine-Setup-Tab.png" alt="Selecting the Machine setup tab from the main screen" >}}
 
-2. Click on the "Expand" checkbox to open all of the features about your machine.
+2. Click on the "Expand" checkbox to open all of the features.
   {{< container-image path="images/Expand-Checkbox.png" alt="Expanding the Machine Config options" >}}
 
 4. Under `Drivers` click on `GcodeDriver GcodeDriver`
@@ -35,7 +35,7 @@ Before connecting to the machine, you need to set which USB ports to use for com
   {{< container-image path="images/Check COM Port and Baud Rate.png" alt="Changing the Port and Baud Rate" >}}
 
 {{% alert color="info" title="Port Not Found" %}}
-If your machine's port does not show up in the drop down, check that it is plugged in to both your computer and the LumenPnP, and that the motherboard is powered on. If you still cannot find the port, try pressing the reset button on the motherboard and closing and reopening OpenPnP.
+If your machine's port does not show up in the drop down, check that your USB cable is plugged in to both your computer and the LumenPnP. Also check that the motherboard is powered on. If you still cannot find the port, try pressing the reset button on the motherboard and closing and reopening OpenPnP.
 {{% /alert %}}
 
 ## Bottom Camera Config
@@ -43,12 +43,12 @@ If your machine's port does not show up in the drop down, check that it is plugg
 Now we'll set up the cameras. The big red "X" in the camera views means that OpenPnP doesn't know where to find the webcam feed. OpenPnP needs to know which webcam is which.
 
 {{% alert color="warning" title="Camera Connection Issues (v2 Hardware)" %}}
-The LumenPnP motherboard in `v2` machines have a built in USB hub and USB ports for you to plug the two webcams into. This arrangement may not be compatible with your computer. Some computers use higher quality USB hubs, which can handle the bandwidth required to stream video from both webcams at once over a single USB port. From reports we've gotten from users, it seems that *many* computer manufactures do **not** include good enough USB hubs. In these cases, one or both of the USB webcams will fail to show up in the configuration list below. If this is the case, you will need to plug at least one of the webcams directly into your computer via a separate USB port. Occasionally this can cause the webcam's name to be incorrect, but you'll still be able to select it from the drop-down list by connecting and reconnecting the camera.
+The LumenPnP motherboard in `v2` machines have a built in USB hub and USB ports for you to plug the two webcams into. This arrangement may not be compatible with your computer. Some computers use higher quality USB hubs, which can handle the bandwidth required to stream video from both webcams at once over a single USB port. From reports we've gotten from users, it seems that *many* computer manufactures do **not** include good enough USB hubs. In these cases, one or both of the USB webcams will fail to show up in the configuration list below. If this is the case, you will need to plug at least one of the webcams directly into your computer via a separate USB port. Occasionally this can cause the webcam's name to be incorrect, but you'll still be able to select it from the drop-down list with a little trial and error.
 {{% /alert %}}
 
-1. Again, navigate to the `Machine Setup` tab
-2. Again, click the "Expand" checkbox if necessary
-3. Under `Cameras` click on `OpenPnpCaptureCamera Bottom`
+6. Again, navigate to the `Machine Setup` tab
+7. Again, click the "Expand" checkbox if necessary
+8. Under `Cameras` click on `OpenPnpCaptureCamera Bottom`
   {{< container-image path="images/Bottom Camera Config.png" alt="Finding the Bottom Camera Settings" >}}
 
 9. In the lower detail pane, switch to the `Device Settings` tab
@@ -80,14 +80,14 @@ The LumenPnP motherboard in `v2` machines have a built in USB hub and USB ports 
 19. Click the "Apply" button in the bottom right
   {{< container-image path="images/Top Camera Apply.png" alt="Saving changes to the Top Camera Config" >}}
 
-20. To check that both cameras are working now, select your preferred view option in the top left `Cameras` section. The Camera feeds should update automatically. If you only see a black image but the red `X` has disappeared, it's likely that your camera is connected properly, but just has its exposure set too low. We'll address this in a later step.
+20. To check that both cameras are working now, select your preferred view option in the top left `Cameras` section. The Camera feeds should update automatically. If you only see a black image but the red `X` has disappeared, it's likely that your camera is connected properly, but just has its exposure set too low. We'll address this in a later step. Remember to remove the plastic lens covers from each camera, too.
   {{< container-image path="images/Both-cameras-working.png" alt="Both cameras showing live outputs." >}}
 
 ## Connecting to the LumenPnP
-
+<!-- TODO: Better screenshot -->
 21. Click the green power button in the Machine Controls section of the UI to connect to your machine.
   {{< container-image path="images/Screen Shot 2022-05-17 at 4.14.47 PM.png" alt="" >}}
-
+  <!-- TODO: do you need to hit the power button for your cameras to show up, or should they show up like what we explained in step 20?? -->
 22. The power button should turn red, and OpenPnP has connected to your machine. You should also see both webcam feeds as shown below. (If you don't see any, or just one, under the `Cameras` section, select the `Show All Horizontal` option from the dropdown.)
   {{< container-image path="images/Screen Shot 2022-05-17 at 4.16.20 PM.png" alt="" >}}
 

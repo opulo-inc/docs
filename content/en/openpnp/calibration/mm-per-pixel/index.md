@@ -12,12 +12,11 @@ Nicely done so far! You've got your homing fiducial all set up, and have played 
 1. First, let's calibrate the top camera. Jog the camera over to your datum board. Select your machine's head in the `Machine Setup` tab, and click the icon highlighted below to move there. There are some markers on the datum board that will help us do this exact calibration.
 {{< container-image path="images/Screen Shot 2022-05-17 at 4.27.00 PM.png" alt="" >}}
 
-
-2. Select your top camera in the device tree. Under the `General Configuration` tab, scroll down to `Units Per Pixel`. Under the X and Y Object Dimensions, type in the number 5. 
+2. Select your top camera in the device tree. Under the `General Configuration` tab, scroll down to `Units Per Pixel`. Under the X and Y Object Dimensions, type in the number 5.
 {{< container-image path="images/Screen Shot 2022-05-19 at 12.25.50 PM.png" alt="" >}}
 
 3. Now, zoom out on the camera and jog to one of the golden squares on the datum board. Make sure the entire square is visible in the camera's field of view like the image below.
-   
+
 {{< container-image path="images/Screen Shot 2022-05-19 at 12.28.42 PM.png" alt="" >}}
 
 4. Then click the `Measure` button. A box with drag handles will appear in the camera viewfinder. Drag the box so that it lines up with the golden box on the datum board; they are exactly 5mm x 5mm. Make sure that you are aligning the bounding box with the **center** of the golden lines as shown in the image below. Once you have it perfectly outlined, click `Confirm`. New numbers should populate the Units per Pixel fields, but they should be relatively close to what you found in there to begin with. Then hit `Apply`.
