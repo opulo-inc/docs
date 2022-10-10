@@ -17,11 +17,11 @@ Refer to the images below for referencing where to mount parts on the staging pl
 
 ## Soldering Pump
 
-| Qty | Part               |
-|----:|--------------------|
-|   1 | Vacuum Pump        |
-|   1 | Vacuum Pump Wire (Labeled "P1")  |
-|   2 | Heatshrink (small) |
+|  Qty | Part                            |
+| ---: | ------------------------------- |
+|    1 | Vacuum Pump                     |
+|    1 | Vacuum Pump Wire (Labeled "P1") |
+|    2 | Heatshrink (small)              |
 
 Some LumenPnP kits shipped with a pump that had its connector pre-soldered to it. If your pump is not pre-soldered, follow along here to prepare your pump.
 
@@ -43,13 +43,13 @@ Some LumenPnP kits shipped with a pump that had its connector pre-soldered to it
 
 ## Pump mount
 
-| Qty | Part                  |
-|----:|-----------------------|
-|   1 | FDM-0025 (Pump Mount) |
-|   4 | M3 Hex Nuts           |
-|   2 | Rubber Band           |
-|   1 | Vacuum Pump           |
-|   2 | M3x10 machine screw   |
+|  Qty | Part                  |
+| ---: | --------------------- |
+|    1 | FDM-0025 (Pump Mount) |
+|    4 | M3 Hex Nuts           |
+|    2 | Rubber Band           |
+|    1 | Vacuum Pump           |
+|    2 | M3x10 machine screw   |
 
 The first thing we'll mount to the staging plate is the {{< tooltip "Pump Mount" "FDM-0025" >}}. This print suspends the pump using two rubber bands to ensure none of the vibration of the pump is transferred into the frame.
 
@@ -72,12 +72,12 @@ The first thing we'll mount to the staging plate is the {{< tooltip "Pump Mount"
 
 ## Valve mount
 
-| Qty | Part                   |
-|----:|------------------------|
-|   1 | FDM-0042 (Valve Mount) |
-|   1 | Blowoff Valve          |
-|   4 | M3 Hex Nut             |
-|   6 | M3x8 machine screw     |
+|  Qty | Part                   |
+| ---: | ---------------------- |
+|    1 | FDM-0042 (Valve Mount) |
+|    1 | Blowoff Valve          |
+|    4 | M3 Hex Nut             |
+|    6 | M3x8 machine screw     |
 
 Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging plate.
 
@@ -93,11 +93,11 @@ Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging pla
 
 ## Pneumatic Y splitter mount
 
-| Qty | Part                |
-|----:|---------------------|
-|   1 | M3x30 machine screw |
-|   1 | M3 Hex nut          |
-|   1 | Y Splitter          |
+|  Qty | Part                |
+| ---: | ------------------- |
+|    1 | M3x30 machine screw |
+|    1 | M3 Hex nut          |
+|    1 | Y Splitter          |
 
 1. Use an M3x30mm screw and an M3 nut to mount the pneumatic Y splitter to the staging plate as shown: B12.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-8-ALT.png" alt="Attaching the Y Splitter to the Staging Plate" >}}
@@ -105,16 +105,16 @@ Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging pla
 
 ## Bottom camera mount
 
-| Qty | Part                       |
-|----:|----------------------------|
-|   1 | FDM-0019 (Up Light Mount)  |
-|   1 | FDM-0020 (Up Camera Mount) |
-|   1 | Up Ring Light PCB          |
-|   1 | USB Camera (Bottom)        |
-|   4 | M3x30 machine screw        |
-|   4 | M3 Hex Nut                 |
-|   4 | M2.5x8 machine screw       |
-|   1 | Super Lube                 |
+|  Qty | Part                       |
+| ---: | -------------------------- |
+|    1 | FDM-0019 (Up Light Mount)  |
+|    1 | FDM-0020 (Up Camera Mount) |
+|    1 | Up Ring Light PCB          |
+|    1 | USB Camera (Bottom)        |
+|    4 | M3x30 machine screw        |
+|    4 | M3 Hex Nut                 |
+|    4 | M2.5x8 machine screw       |
+|    1 | Super Lube                 |
 
 1. Slide the Up Ring Light into the {{< tooltip "Up Light Mount" "FDM-0019" >}}. The cable connector and LEDs should be facing the printed part, away from the camera in this photo.
   {{< container-image path="images/Populating The Staging Plate 10.png" alt="Assembling the Up Ring Light stack 1" >}}
@@ -139,7 +139,7 @@ Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging pla
   {{< container-image path="images/Populating The Staging Plate 16.png" alt="Assembling the Up Camera stack 7" >}}
 
 16. Use four M3x30mm screws and four M3 nuts mount the whole assembly to the staging plate: D18, B20, D20, F22 (if you have the fiberglass staging plate, these will be the nuts you installed in the previous step). The cable connector for the Up Ring Light should be facing down and to the left, away from the valve.
-  {{< container-image path="images/Populating The Staging Plate 19.png" alt="Assembling the Up Camera stack finished with metal staging plate" >}} 
+  {{< container-image path="images/Populating The Staging Plate 19.png" alt="Assembling the Up Camera stack finished with metal staging plate" >}}
   {{< container-image path="images/Populating The Staging Plate 17.png" alt="Assembling the Up Camera stack 8" >}}
 
 17. Ensure that your bottom camera matches the orientation to the image below.
@@ -151,16 +151,16 @@ Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging pla
 
 ## Nozzle Holder
 
-| Qty | Part                     |
-|----:|--------------------------|
-|   1 | FDM-0024 (Nozzle Holder) |
-|   3 | M3 Hex Nut               |
-|   3 | M3x8 machine screw       |
+|  Qty | Part                     |
+| ---: | ------------------------ |
+|    1 | FDM-0024 (Nozzle Holder) |
+|    3 | M3 Hex Nut               |
+|    3 | M3x8 machine screw       |
 
 13. Slide three M3 nuts into the slots in the back of the {{< tooltip "Nozzle Holder" "FDM-0024" >}}.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-13.png" alt="Nuts inserted into the nozzle holder" >}}
 
-14. Using three M3x10mm machine screws, tighten the {{< tooltip "Nozzle Holder" "FDM-0024" >}} on top of the staging plate as shown: B8, D8, F8. Note: we will install the datum board later, ignore it in the photo below.
+14. Using three M3x8mm machine screws, tighten the {{< tooltip "Nozzle Holder" "FDM-0024" >}} on top of the staging plate as shown: B8, D8, F8. Note: we will install the datum board later, ignore it in the photo below.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-14-ALT.png" alt="Nozzle Holder location on the staging plate" >}}
   {{< container-image path="images/PXL_20220206_182121691.MP.jpg" alt="" >}}
   {{< container-image path="images/PXL_20220206_182234874.MP.jpg" alt="" >}}
