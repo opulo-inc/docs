@@ -54,6 +54,8 @@ The last connectors that need to be soldered into the board are the 1x8 Dupont 0
 
 The LumenPnP motherboard will have the USB-C connector already soldered when you receive it. Double-check the soldering of the feet, as there was an early batch of motherboards that had issues with an in-house assembly error here. If you see an issue, take photos of it before attempting to repair the problem. That way, if you're unable to fix the issue, Opulo can still replace your motherboard for you. If you don't feel confident fixing an issue yourself or if you aren't sure if there's a problem with your motherboard, get in touch with support@opulo.io so that we can send you a replacement motherboard if necessary.
 
+{{< container-image path="images/usb-c-feet.png" alt="check the USB-C feet for incorrect soldering or damage" >}}
+
 ## Next steps
 
 Continue to [mounting the motherboard]({{< relref "mounting" >}}).
