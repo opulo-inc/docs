@@ -46,7 +46,7 @@ Some LumenPnP kits shipped with a pump that had its connector pre-soldered to it
 |  Qty | Part                  |
 | ---: | --------------------- |
 |    1 | FDM-0025 (Pump Mount) |
-|    4 | M3 Hex Nuts           |
+|    2 | M3 Hex Nuts           |
 |    2 | Rubber Band           |
 |    1 | Vacuum Pump           |
 |    2 | M3x10 machine screw   |
