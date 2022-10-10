@@ -56,3 +56,5 @@ If you're having a hard time getting the camera to pick up on the pattern on the
   {{< container-image path="images/top-camera-config.png" alt="Finding the Top Camera Settings" >}}
 
 13. Continue with the same steps starting from number 4 above for the bottom camera.
+
+Next, we'll work on homing your machine with the [Homing Fiducials.]({{< relref "homing-fiducials" >}})

@@ -60,3 +60,5 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 10. In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, and `parts.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
 
 11. Copy the configuration files from the LumenPnP source files into `.openpnp2` and overwrite the old configuration files. Note that if you've already been using OpenPnP, you may want to only replace your `machine.xml` file, as the other files will overwrite your existing components library.
+
+Our next step is to [Connect To The Machine.]({{< relref "connect-to-machine" >}}).
