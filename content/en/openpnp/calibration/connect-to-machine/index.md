@@ -105,3 +105,5 @@ The LumenPnP motherboard in `v2` machines have a built in USB hub and USB ports 
   {{< container-image path="images/connected-to-machine.png" alt="having successfully connected to the LumenPnP and cameras" >}}
 
 24. Save your OpenPnP settings with `File > Save Configuration`.
+
+Next, we'll work on the the camera's [Fisheye Calibration.]({{< relref "camera-fisheye-cal" >}})
