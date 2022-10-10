@@ -91,7 +91,6 @@ The LumenPnP motherboard in `v2` machines have a built in USB hub and USB ports 
 
 20. Click the "Apply" button in the bottom right. You should then see the camera display start showing the feed from the camera, or at least see the red `x` disappear. We'll fix the exposure next.
   {{< container-image path="images/Top Camera Apply.png" alt="Saving changes to the Top Camera Config" >}}
-  {{< container-image path="images/top-camera-on.png" alt="Top camera is now on" >}}
 
 21. Adjust the exposure to make the camera feed more reasonable. On some computers, you can toggle Automatic Exposure on, and then back off again to set it correctly. Do not keep auto exposure turned on. And remember you can adjust the exposure later when you're actually using the camera.
   {{< container-image path="images/adjust-exposure-2.png" alt="Adjust exposure" >}}

@@ -84,6 +84,7 @@ As before, we're going to double-check our camera exposure.
 Right click on the camera feed to enable the image info card. This will give you the brightness histogram of the image. In the next step, you'll want to tune your exposure and other camera settings so the image isn't too bright or too dark. The histogram can help: make sure the graph isn't going all the way to the edges of the X-axis in the histogram, and that will make sure all of the image's details are available for the computer to use when it is looking for the homing fiducial.
 {{< container-image path="images/show-image-info.png" alt="enable the image histogram" >}}
 {{< container-image path="images/good-histogram.png" alt="a good histogram" >}}
+<!-- TODO: retake the good photo because there's an extra arrow and it is confusing -->
 {{< container-image path="images/bad-histogram.png" alt="a bad histogram" >}}
 {{< /alert >}}
 
@@ -111,5 +112,8 @@ Due to an issue with the camera driver in OpenPnP, some Mac users might notice t
    {{< container-image path="images/Homing-fiducial-apply-2.png" alt="Save homing fiducial location" >}}
 
 22. Click on the "Home" button in the `Machine Controls Pane > Jog Tab` and watch your machine home using the limit switches, then move the top camera over the homing fiducial and find its exact location. You may still get an error about `nozzle tip calibration`, which is normal. We'll be working on that next.
+<!-- TODO: Get photo of the error -->
+<!-- TODO: Get photo of clicking the home button -->
 
 23. If your machine positions correctly over the homing fiducial but you receive the error: `FIDUCIAL-HOME no matches found.`, you should double-check your camera settings. If they seem alright, you may need to adjust your [vision pipeline]({{< relref "vision-pipeline-adjustment#top-camera-vision-pipeline" >}}).
+  {{< container-image path="images/Cant-find-homing-fiducial.png" alt="A first attempt at homing the LumenPnP" >}}
