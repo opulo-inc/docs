@@ -117,3 +117,7 @@ Due to an issue with the camera driver in OpenPnP, some Mac users might notice t
 
 23. If your machine positions correctly over the homing fiducial but you receive the error: `FIDUCIAL-HOME no matches found.`, you should double-check your camera settings. If they seem alright, you may need to adjust your [vision pipeline]({{< relref "vision-pipeline-adjustment#top-camera-vision-pipeline" >}}).
   {{< container-image path="images/Cant-find-homing-fiducial.png" alt="A first attempt at homing the LumenPnP" >}}
+
+## Next Steps
+
+Next is the [MM/Pixel Calibration.]({{< relref "mm-per-pixel" >}})

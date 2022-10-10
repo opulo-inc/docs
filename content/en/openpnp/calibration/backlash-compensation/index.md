@@ -18,3 +18,7 @@ Now we can have OpenPnP run its automatic backlash compensation routine to make 
   {{< container-image path="images/Screen Shot 2022-05-18 at 3.32.55 PM.png" alt="" >}}
 
 4. Perform steps 1 - 3 but with the Y axis instead.
+
+## Next Steps
+
+Next is [Nozzle Offset Calibration.]({{< relref "nozzle-offset" >}})
