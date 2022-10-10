@@ -57,4 +57,6 @@ If you're having a hard time getting the camera to pick up on the pattern on the
 
 13. Continue with the same steps starting from number 4 above for the bottom camera.
 
+## Next Steps
+
 Next, we'll work on homing your machine with the [Homing Fiducials.]({{< relref "homing-fiducial" >}})

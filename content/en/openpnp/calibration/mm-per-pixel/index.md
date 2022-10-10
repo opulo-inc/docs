@@ -32,3 +32,7 @@ Nicely done so far! You've got your homing fiducial all set up, and have played 
 7. Now, do the same calibration that you did for the top camera, but instead of inputting 5 in the X and Y fields, input 4. Drag your bounding box around the nozzle tip so that it's perfectly tangent to the edges, and press `Confirm`. Your pixels per millimeter are now calibrated! Try clicking around the bottom viewfinder and check to see if the reticle is moving where you click.
 
 {{< container-image path="images/Screen Shot 2022-05-19 at 12.41.42 PM.png" alt="" >}}
+
+## Next Steps
+
+Next is [Backlash Calibration.]({{< relref "backlash-compensation" >}})
