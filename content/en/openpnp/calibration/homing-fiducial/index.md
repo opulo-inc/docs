@@ -17,7 +17,9 @@ Use four M3x16mm screws and four M3 nuts to secure the datum board and datum boa
 {{< /alert >}}
 
 1. In the "Machine Controls" pane in the lower left, connect to the LumenPnP by pressing the power button. (If you haven't already)
-2. Run a rough home routine by pressing the Home button (shaped like a house). The machine will move to the X, Y, and Z zero positions. The default machine configuration files are set so that OpenPnP will *not* try to use the homing fiducial yet. Note that the home icon will turn yellow, as the LumenPnP has homed to it's end stops, but hasn't completed its full homing routine. You will may still get an error message about nozzle tip detection or homing fiducial errors. This is normal; ignore that for now.
+  {{< container-image path="images/connect-to-machine-power-button.png" alt="Connect to the LumenPnP" >}}
+
+2. Run a rough home routine by pressing the Home button (shaped like a house). The machine will move to the X, Y, and Z zero positions. Note that the home icon will turn yellow, as the LumenPnP has homed to it's end stops, but hasn't completed its full homing routine. You will may still get one of two error messages: `FIDUCIAL-HOME no matches found.` or `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` This is normal; ignore the errors for now.
    {{< container-image path="images/Connect-and-home.png" alt="Connect to the LumenPnP and attempt to home it" >}}
 
 ## Tuning the Homing Fiducial
