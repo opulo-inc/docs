@@ -76,7 +76,7 @@ If you find that the machine is having a hard time finding the homing fiducial, 
 7. Click on the "Expand" checkbox to open all of the features about your machine.
   {{< container-image path="images/Expand-Checkbox-3.png" alt="Expanding the Machine Config options" >}}
 
-8. Under `Heads`, click on `ReferenceHead H1`
+8. Click on `Heads > ReferenceHead H1`
   {{< container-image path="images/Select-reference-head-H1.png" alt="Reviewing the ReferenceHead options" >}}
 
 9. Click on the "Position Camera over location" icon button show below. This will move the top camera to where your datum board is mounted.
