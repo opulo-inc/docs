@@ -1,7 +1,7 @@
 ---
 title: "Automatic Toolchanger Calibration"
 linkTitle: "Automatic Toolchanger Calibration"
-weight: 80
+weight: 90
 type: docs
 description: >
   Calibrating automatic toolchanger movements

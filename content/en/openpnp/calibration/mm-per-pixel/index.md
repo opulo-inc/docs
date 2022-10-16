@@ -105,4 +105,4 @@ Nicely done so far! You've got your homing fiducial all set up. This next step c
 
 ## Next Steps
 
-Next is [Backlash Calibration.]({{< relref "backlash-compensation" >}})
+Next is [Nozzle Offset Calibration.]({{< relref "nozzle-offset" >}})
