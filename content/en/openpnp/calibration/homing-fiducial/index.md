@@ -79,7 +79,7 @@ As before, we're going to double-check our camera exposure.
 18. Navigate to `Heads > ReferenceHead H1 > Cameras > OpenPnPCaptureCamera Top`
   {{< container-image path="images/Top-camera-settings-4.png" alt="Finding the Top Camera Settings" >}}
 
-16. In the lower detail pane, switch to the `Device Settings` tab
+19. In the lower detail pane, switch to the `Device Settings` tab
   {{< container-image path="images/Top-camera-device-settings-4.png" alt="Switching to the camera device settings" >}}
 
 {{< alert color="info" title="Tip" >}}
@@ -90,7 +90,7 @@ Right click on the camera feed to enable the image info card. This will give you
 {{< container-image path="images/bad-histogram.png" alt="a bad histogram" >}}
 {{< /alert >}}
 
-17. Adjust the exposure and other camera settings. The goal is to make the image clear and have a lot of contrast, without being too bright or too dark overall. In most cases you can simply check the `Auto` checkbox for `Exposure`, then uncheck it to save the automatically set value, and this does a good job of making the image look how you want. Note that this may not work in all situations, so you may need to manually adjust the image settings to get a clear image, where the Homing Fiducial is clearly distinguished against the background of the datum board.
+20. Adjust the exposure and other camera settings. The goal is to make the image clear and have a lot of contrast, without being too bright or too dark overall. In most cases you can simply check the `Auto` checkbox for `Exposure`, then uncheck it to save the automatically set value, and this does a good job of making the image look how you want. Note that this may not work in all situations, so you may need to manually adjust the image settings to get a clear image, where the Homing Fiducial is clearly distinguished against the background of the datum board.
   {{< container-image path="images/Auto-exposure-on.png" alt="Top camera properly exposed with the auto-exposure turned on" >}}
 
 {{% alert color="danger" title="For Mac Users" %}}
@@ -99,25 +99,25 @@ Due to an issue with the camera driver in OpenPnP, some Mac users might notice t
 
 ## Apply Homing Fiducial Changes
 
-18. Double-check that:
+21. Double-check that:
     1. The Homing Fiducial is in the center of the reticle in the camera feed
     2. The camera image is in sharp focus
     3. The camera image is properly exposed
 
-19. Go back to Machine Setup and select `Heads > ReferenceHead H1`.
+22. Go back to Machine Setup and select `Heads > ReferenceHead H1`.
   {{< container-image path="images/Select-Reference-Head-H1-5.png" alt="Return to the homing fiducial location settings" >}}
 
-20. Click on the "Capture Location" icon button to save the location where OpenPnP will start searching for the Homing Fiducial.
+23. Click on the "Capture Location" icon button to save the location where OpenPnP will start searching for the Homing Fiducial.
    {{< container-image path="images/Capture-homing-fiducial-location.png" alt="Capture the location of the homing fiducial" >}}
 
-21. Click `Apply` to save your changes.
+24. Click `Apply` to save your changes.
    {{< container-image path="images/Homing-fiducial-apply-2.png" alt="Save homing fiducial location" >}}
 
-22. Click on the "Home" button in the `Machine Controls Pane > Jog Tab` and watch your machine home using the limit switches, then move the top camera over the homing fiducial and find its exact location. You may still get an error about `nozzle tip calibration`, which is normal. We'll be working on that next.
+25. Click on the "Home" button in the `Machine Controls Pane > Jog Tab` and watch your machine home using the limit switches, then move the top camera over the homing fiducial and find its exact location. You may still get an error about `nozzle tip calibration`, which is normal. We'll be working on that next.
 <!-- TODO: Get photo of the error -->
 <!-- TODO: Get photo of clicking the home button -->
 
-23. If your machine positions correctly over the homing fiducial but you receive the error: `FIDUCIAL-HOME no matches found.`, you should double-check your camera settings. If they seem alright, you may need to adjust your [vision pipeline]({{< relref "vision-pipeline-adjustment#top-camera-vision-pipeline" >}}).
+26. If your machine positions correctly over the homing fiducial but you receive the error: `FIDUCIAL-HOME no matches found.`, you should double-check your camera settings. If they seem alright, you may need to adjust your [vision pipeline]({{< relref "vision-pipeline-adjustment#top-camera-vision-pipeline" >}}).
   {{< container-image path="images/Cant-find-homing-fiducial.png" alt="A first attempt at homing the LumenPnP" >}}
 
 ## Next Steps
