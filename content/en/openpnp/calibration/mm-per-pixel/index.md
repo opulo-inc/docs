@@ -7,7 +7,7 @@ description: >
   Setting the millimeters per pixel value in OpenPnP
 ---
 
-Nicely done so far! You've got your homing fiducial all set up, and have played around with tweaking a vision pipeline. This next step calibrates the relationship between pixels and millimeters to make our cameras more accurate.
+Nicely done so far! You've got your homing fiducial all set up. This next step calibrates the relationship between pixels and millimeters to make our cameras more accurate. You might have found that if you drag the reticle on the camera view around, the LumenPnP will move to the highlighted location. But you have probably also found that the movement is not very precise. We'll be fixing that in this calibration.
 
 ## Top Camera Calibration
 
@@ -41,13 +41,13 @@ Nicely done so far! You've got your homing fiducial all set up, and have played 
 10. Then click the `Measure` button.
   {{< container-image path="images/click-measure-button.png" alt="Click the measure button" >}}
 
-11. A box with drag handles will appear in the camera viewfinder. Drag the box so that it lines up with the golden box on the datum board; they are exactly 5mm x 5mm. Make sure that you are aligning the bounding box with the **center** of the golden lines as shown in the image below.
+11. A box with drag handles will appear in the camera viewfinder. Drag the box so that it lines up with the lines on the datum board; they are exactly 5mm x 5mm. Make sure that you are aligning the bounding box with the **center** of the lines as shown in the image below.
   {{< container-image path="images/Screen Shot 2022-05-19 at 12.30.48 PM.png" alt="Drag the box to the center of the outline square on the datumn board." >}}
 
-12. Once you have it perfectly outlined, click `Confirm`. New numbers should populate the Units per Pixel fields, but they should be relatively close to what you found in there to begin with.
+12. Once you have it perfectly outlined, click `Confirm`. The new calibration numbers will populate the Units per Pixel fields. They should be relatively close to the default values.
   {{< container-image path="images/confirm-pixel-per-mm.png" alt="Confirm the test" >}}
 
-13. Then click `Apply` to save the changes to your calibration.
+13. Click `Apply` to save the changes to your calibration.
   {{< container-image path="images/apply-pixel-per-mm-settings.png" alt="Apply the new settings" >}}
 
 14. To confirm, drag the reticle on the top camera view to move the machine. The camera center should move exactly where you tell it to. If it's inaccurate, try doing the calibration again or tweaking the values in the fields.
@@ -72,10 +72,11 @@ Nicely done so far! You've got your homing fiducial all set up, and have played 
 20. Click on the "Position nozzle over location" button
    {{< container-image path="images/position-nozzle-over-camera.png" alt="Position nozzle over camera" >}}
 
-21. Use the jog controls to move the nozzle directly over the center of the bottom camera.
+21. Use the jog controls to move the nozzle directly over the center of the bottom camera. Do not adjust the Z-axis.
    {{< container-image path="images/jog-controls-bottom.png" alt="Jog the nozzle over the camera" >}}
    {{< container-image path="images/jogging-finished.png" alt="Jog the nozzle over the camera" >}}
 
+<!-- TODO: we could move the helpful tips about how to rotate camera lenses for focusing into a troubleshooting doc, and link to it here. -->
 22. Twist the lens of the bottom camera until the tip of the nozzle is in focus.
    {{< container-image path="images/in-focus-nozzle.png" alt="Jog the nozzle over the camera" >}}
 
@@ -94,13 +95,13 @@ Nicely done so far! You've got your homing fiducial all set up, and have played 
 27. A box with drag handles will appear in the camera viewfinder. Drag the bounding box around the nozzle tip so that it's perfectly tangent to the edges; they are exactly 4mm x 4mm.
   {{< container-image path="images/measure-nozzle-mm-per-px.png" alt="Drag the box to the edges of the nozzle." >}}
 
-28. Once you have it perfectly outlined, click `Confirm`. New numbers should populate the Units per Pixel fields, but they should be relatively close to what you found in there to begin with.
+28. Once you have it perfectly outlined, click `Confirm`. New numbers should populate the Units per Pixel fields. They should be relatively close to the default values.
   {{< container-image path="images/confirm-pixel-per-mm-bottom.png" alt="Confirm the test" >}}
 
 29. Then click `Apply` to save the changes to your calibration.
   {{< container-image path="images/apply-pixel-per-mm-settings-bottom.png" alt="Apply the new settings" >}}
 
-30. To confirm, drag the reticle on the bottom camera view to move the machine. The camera center should move exactly where you tell it to. If it's inaccurate, try doing the calibration again or tweaking the values in the fields.
+30. To confirm, drag the reticle on the bottom camera view to move the machine. The **nozzle tip** should move exactly where you tell it to. If it's inaccurate, try doing the calibration again or tweaking the values in the fields.
 
 ## Next Steps
 
