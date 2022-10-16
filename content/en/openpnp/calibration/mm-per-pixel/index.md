@@ -9,29 +9,98 @@ description: >
 
 Nicely done so far! You've got your homing fiducial all set up, and have played around with tweaking a vision pipeline. This next step calibrates the relationship between pixels and millimeters to make our cameras more accurate.
 
-1. First, let's calibrate the top camera. Jog the camera over to your datum board. Select your machine's head in the `Machine Setup` tab, and click the icon highlighted below to move there. There are some markers on the datum board that will help us do this exact calibration.
-{{< container-image path="images/Screen Shot 2022-05-17 at 4.27.00 PM.png" alt="" >}}
+## Top Camera Calibration
 
-2. Select your top camera in the device tree. Under the `General Configuration` tab, scroll down to `Units Per Pixel`. Under the X and Y Object Dimensions, type in the number 5.
-{{< container-image path="images/Screen Shot 2022-05-19 at 12.25.50 PM.png" alt="" >}}
+1. Click on the `Machine Setup` tab in the top right pane.
+  {{< container-image path="images/Machine-Setup-Tab-3.png" alt="Selecting the Machine setup tab from the main screen" >}}
 
-3. Now, zoom out on the camera and jog to one of the golden squares on the datum board. Make sure the entire square is visible in the camera's field of view like the image below.
+2. Click on the "Expand" checkbox to open all of the features about your machine.
+  {{< container-image path="images/Expand-Checkbox-3.png" alt="Expanding the Machine Config options" >}}
 
-{{< container-image path="images/Screen Shot 2022-05-19 at 12.28.42 PM.png" alt="" >}}
+3. Click on `Heads > ReferenceHead H1`
+  {{< container-image path="images/Select-reference-head-H1.png" alt="Reviewing the ReferenceHead options" >}}
 
-4. Then click the `Measure` button. A box with drag handles will appear in the camera viewfinder. Drag the box so that it lines up with the golden box on the datum board; they are exactly 5mm x 5mm. Make sure that you are aligning the bounding box with the **center** of the golden lines as shown in the image below. Once you have it perfectly outlined, click `Confirm`. New numbers should populate the Units per Pixel fields, but they should be relatively close to what you found in there to begin with. Then hit `Apply`.
+4. Click on the "Position Camera over location" icon button show below. This will move the top camera to where your datum board is mounted.
+   {{< container-image path="images/Position-camera-over-homing-fiducial.png" alt="Position top camera over homing fiducial" >}}
 
-{{< container-image path="images/Screen Shot 2022-05-19 at 12.30.48 PM.png" alt="" >}}
+5. Click on `Heads > ReferenceHeadH1 > Cameras > OpenPnPCaptureCamera Top`.
+   {{< container-image path="images/select-top-camera.png" alt="Select the top camera" >}}
 
-5. To confirm, jog around by clicking on various locations on your datum board in the top camera viewfinder and see how accurate the centerpoint of the camera view gets to where you clicked. If it's inaccurate, try doing the calibration again or tweaking the values in the fields.
+6. Go to the `General Configuration` tab.
+   {{< container-image path="images/general-configuration-tab.png" alt="Go to the general configuration tab" >}}
 
-6. Now we'll calibrate the bottom camera. For this, we'll use a nozzle tip! Put an N24 nozzle on the CP40 Holder, and under your bottom camera's settings in the device tree, under the `Position` tab, click the icon with the red nozzle in the blue circle (Hover text says "Position the tool over the center of the location"). This should move your nozzle over the camera. Don't worry if it's not exactly centered; we'll fix this in a later step. It's important you don't try to fix this now. Manually jog it over the center of your bottom camera by clicking on the bottom camera viewfinder. If your lens is not focused on the nozzle tip, you should rotate the lens so that the nozzle tip is sharp and clear.
+7. Scroll down to `Units Per Pixel`.
+   {{< container-image path="images/units-per-pixel-section.png" alt="The top camera's units per pixel section" >}}
 
-{{< container-image path="images/Screen Shot 2022-05-19 at 12.38.59 PM.png" alt="" >}}
+8. Set the X and Y Object Dimensions to `5`.
+{{< container-image path="images/set-object-dimensions.png" alt="Set the object dimensions for automatic calibration" >}}
 
-7. Now, do the same calibration that you did for the top camera, but instead of inputting 5 in the X and Y fields, input 4. Drag your bounding box around the nozzle tip so that it's perfectly tangent to the edges, and press `Confirm`. Your pixels per millimeter are now calibrated! Try clicking around the bottom viewfinder and check to see if the reticle is moving where you click.
+9. Jog the machine so that one of the golden guideline squares on the datum board are visible in the top camera's view. The whole square must be visible. Zoom out of the camera feed with the scroll wheel if necessary.
+  {{< container-image path="images/units-per-pixel-square-on-datum.png" alt="The square guideline on the datum board" >}}
 
-{{< container-image path="images/Screen Shot 2022-05-19 at 12.41.42 PM.png" alt="" >}}
+10. Then click the `Measure` button.
+  {{< container-image path="images/click-measure-button.png" alt="Click the measure button" >}}
+
+11. A box with drag handles will appear in the camera viewfinder. Drag the box so that it lines up with the golden box on the datum board; they are exactly 5mm x 5mm. Make sure that you are aligning the bounding box with the **center** of the golden lines as shown in the image below.
+  {{< container-image path="images/Screen Shot 2022-05-19 at 12.30.48 PM.png" alt="Drag the box to the center of the outline square on the datumn board." >}}
+
+12. Once you have it perfectly outlined, click `Confirm`. New numbers should populate the Units per Pixel fields, but they should be relatively close to what you found in there to begin with.
+  {{< container-image path="images/confirm-pixel-per-mm.png" alt="Confirm the test" >}}
+
+13. Then click `Apply` to save the changes to your calibration.
+  {{< container-image path="images/apply-pixel-per-mm-settings.png" alt="Apply the new settings" >}}
+
+14. To confirm, drag the reticle on the top camera view to move the machine. The camera center should move exactly where you tell it to. If it's inaccurate, try doing the calibration again or tweaking the values in the fields.
+
+## Bottom Camera Calibration
+
+15. Put an N24 nozzle on the CP40 Holder.
+  {{< container-image path="images/n24-nozzle-attached.png" alt="Install a N24 nozzle" >}}
+
+16. Click on the `Machine Setup` tab in the top right pane.
+  {{< container-image path="images/Machine-Setup-Tab-3.png" alt="Selecting the Machine setup tab from the main screen" >}}
+
+17. Click on the "Expand" checkbox to open all of the features about your machine.
+  {{< container-image path="images/Expand-Checkbox-3.png" alt="Expanding the Machine Config options" >}}
+
+18. Click on `Cameras > OpenPnPCaptureCamera Bottom`.
+   {{< container-image path="images/select-bottom-camera.png" alt="Select the bottom camera" >}}
+
+19. Go to the `Position` tab.
+   {{< container-image path="images/bottom-position-tab.png" alt="Go to the Position tab" >}}
+
+20. Click on the "Position nozzle over location" button
+   {{< container-image path="images/position-nozzle-over-camera.png" alt="Position nozzle over camera" >}}
+
+21. Use the jog controls to move the nozzle directly over the center of the bottom camera.
+   {{< container-image path="images/jog-controls-bottom.png" alt="Jog the nozzle over the camera" >}}
+   {{< container-image path="images/jogging-finished.png" alt="Jog the nozzle over the camera" >}}
+
+22. Twist the lens of the bottom camera until the tip of the nozzle is in focus.
+   {{< container-image path="images/in-focus-nozzle.png" alt="Jog the nozzle over the camera" >}}
+
+23. Go to the `General Configuration` tab.
+   {{< container-image path="images/general-configuration-bottom-tab.png" alt="Go to the general configuration tab" >}}
+
+24. Scroll down to `Units Per Pixel`.
+   {{< container-image path="images/units-per-pixel-section-bottom.png" alt="The bottom camera's units per pixel section" >}}
+
+25. Set the X and Y Object Dimensions to `4`.
+{{< container-image path="images/set-object-dimensions-bottom.png" alt="Set the object dimensions for calibration" >}}
+
+26. Then click the `Measure` button.
+  {{< container-image path="images/click-measure-bottom.png" alt="Click the measure button" >}}
+
+27. A box with drag handles will appear in the camera viewfinder. Drag the bounding box around the nozzle tip so that it's perfectly tangent to the edges; they are exactly 4mm x 4mm.
+  {{< container-image path="images/measure-nozzle-mm-per-px.png" alt="Drag the box to the edges of the nozzle." >}}
+
+28. Once you have it perfectly outlined, click `Confirm`. New numbers should populate the Units per Pixel fields, but they should be relatively close to what you found in there to begin with.
+  {{< container-image path="images/confirm-pixel-per-mm-bottom.png" alt="Confirm the test" >}}
+
+29. Then click `Apply` to save the changes to your calibration.
+  {{< container-image path="images/apply-pixel-per-mm-settings-bottom.png" alt="Apply the new settings" >}}
+
+30. To confirm, drag the reticle on the bottom camera view to move the machine. The camera center should move exactly where you tell it to. If it's inaccurate, try doing the calibration again or tweaking the values in the fields.
 
 ## Next Steps
 
