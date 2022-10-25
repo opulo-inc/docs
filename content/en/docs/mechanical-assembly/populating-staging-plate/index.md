@@ -66,7 +66,7 @@ The first thing we'll mount to the staging plate is the {{< tooltip "Pump Mount"
   {{< container-image path="images/IMG_0743.JPG" alt="" >}}
   {{< container-image path="images/IMG_0744.JPG" alt="" >}}
 
-9. Mount the {{< tooltip "Pump Mount" "FDM-0025" >}} to the staging plate using two M3 x 10mm screws in the location shown below, F31 and F33.
+9. Mount the {{< tooltip "Pump Mount" "FDM-0025" >}} to the staging plate using two M3 x 10mm screws in the location shown below, G31 and G33.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-4-ALT.png" alt="Mounting position for the Pump" >}}
   {{< container-image path="images/IMG_0741.JPG" alt="The Pump assembly mounted on the staging plate" >}}
 
