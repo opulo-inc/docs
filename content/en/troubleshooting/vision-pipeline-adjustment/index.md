@@ -22,17 +22,19 @@ We've included good settings in the [default machine configuration]({{< relref "
 
 Computer vision used in OpenPnP takes photos from your top or bottom camera, and then passes it through a "Pipeline" of steps to identify what is in the image. Steps fall into a few categories:
 
-1. Manipulating the photo to make it easier for the computer to identify parts of the photo. For example: xxx
-2. Identifying certain elements of the photo. For example: xxx
-3. Showing you more information on the screen so that you can build, debug, and tweak the pipeline. For example xxx
+1. Manipulating the photo to make it easier for the computer to identify parts of the photo. For example: `Threshold`.
+2. Identifying certain elements of the photo. For example: `DetectCirclesHough`.
+3. Showing you more information on the screen so that you can build, debug, and tweak the pipeline. For example: `DrawCircles`.
 
-Because each of these kinds of steps live together in the pipeline, it can be a little confusing at first figuring out what each step does and why they're included in the pipeline.
+Because each of these kinds of steps live together in the pipeline, it can be a little confusing trying to decode how each stepworks and what they're for.
 
-Each step of the pipeline has "parameters" that control its function. For example, the XXXXexportdebug step will ask you for a file path on your computer to use when saving a debug image. Another more typical example is the Threshold step, which will use a Threshold parameter to pick which parts of your image will become white, and which will become black. For normal use we expect that you should be able to just tune the parameters for the steps in the default pipeline, rather than add new steps.
+Each step of the pipeline has "parameters" that control its function. For example, the `ImageWriteDebug` step will ask you for a parts of a file name to use when saving a debug image. Another more typical example is the `Threshold` step, which will use a `threshold` parameter to pick which parts of your image will become white, and which will become black.
+
+When editing your vision pipeline, you should be able to start with simply tuning the parameters for the steps in the default pipeline. As you get more experienced, and if you're setting up more complicated placement jobs, you may need to add more steps to the pipeline to fine tune it for your needs.
 
 ### Pipeline Organization
 
-As of the OCTOBERORWHATEVER update, OpenPnP added the "Vision" tab in the Machine Configuration section. This lets you define multiple pipelines for different kinds of computer vision operations. This lets you handle identification of different PCB components differently if you're not able to build a single pipeline to accomidate them all. This adds more functionality, but can be confusing when getting started. In general we recommend having four main pipelines to get started (when doing the FTP and beyond):
+As of the `2022-08-01_18-07-09.2a36a8d` update, OpenPnP added the "Vision" tab in the Machine Configuration section, which lets you create more specific pipelines for unique scenarios.  This lets you define multiple pipelines for different kinds of computer vision operations. This lets you handle identification of different PCB components differently if you're not able to build a single pipeline to accommodate them all. This adds more functionality, but can be confusing when getting started. In general we recommend having four main pipelines to get started (when doing the FTP and beyond):
 
 1. Finding your homing fiducial (Top Camera)
 2. Finding the fiducial marks on your PCBs (Top Camera)
@@ -52,9 +54,6 @@ The pipeline editing view has several sections and features you should know abou
 3. Step output. This shows error messages if there's a problem with your step or pipeline.
 4. Step settings. This lets you change the settings for the highlighted step.
 5. Pin Image. This lets you keep the results of the currently selected step on on main view, even if you highlight another step. Use this to pin a debugging step so that you can quickly see the results of changes to a step you're editing.
-
-### Default Pipeline Strategy
-<!-- TODO: colorcode the steps to mark them as manipulation, debug, or identification. Probably have a screenshot and have it in text below, as text in a screenshot is bad man-->
 
 ## Top Camera Vision Pipeline
 
@@ -90,7 +89,7 @@ If you find that the machine is having a hard time finding the homing fiducial, 
 12. Go to the `Vision` tab.
    {{< container-image path="images/vision-tab.png" alt="Switch to the vision tab" >}}
 
-13. Select on FiducialVision from the type dropdown.
+13. Select on `FiducialVision` from the type dropdown.
    {{< container-image path="images/fiducial-vision-dropdown.png" alt="Select fiducial vision" >}}
 
 14. Select `- Default Machine Fiducial Locator -` from the pipeline list.
@@ -134,7 +133,7 @@ If you find that the machine is having a hard time finding the homing fiducial, 
     1. If there are no circles, lower the param2 setting.
     2. If there are too many circles, raise the param2 setting.
    <!-- {{< container-image path="images/detect-circles-stage.png" alt="XXX" >}} -->
-<!-- Photo shop image -->
+<!-- TODO: Photo shop image -->
 #### Review Pipeline Output
 
 24. When the fiducial is correctly identified, close the pipeline editor.
@@ -147,25 +146,48 @@ If you find that the machine is having a hard time finding the homing fiducial, 
    {{< container-image path="images/home-machine-from-vision.png" alt="Home the machine" >}}
 
 ### PCB Fiducials
-<!-- TODO: Link -->
-See the Homing fiducial section above for guidance.
+<!-- TODO: images are wrong here -->
+1. Go to the `Vision` tab.
+   {{< container-image path="images/vision-tab.png" alt="Switch to the vision tab" >}}
+
+2. Select on `FiducialVision` from the type dropdown.
+   {{< container-image path="images/fiducial-vision-dropdown.png" alt="Select fiducial vision" >}}
+
+3. Select `FIDUCIAL-1X2` from the pipeline list.
+   {{< container-image path="images/select-default-fiducial-vision.png" alt="Select the default pipeline" >}}
+
+4. Click on Pipeline `Edit`.
+   {{< container-image path="images/edit-pipeline.png" alt="Edit the pipeline" >}}
+
+5. Continue with the same procedure as the [Homing fiducial](#check-the-debug-results) section above.
 
 ## Bottom Camera Vision Pipeline
 
 ### Nozzles
+<!-- TODO: Images are copied and are not good, need new screenshots -->
+1. Go to the `Vision` tab.
+   {{< container-image path="images/vision-tab.png" alt="Switch to the vision tab" >}}
 
-1. Go to the `Machine Setup` tab
-2. Click on the Expand button if necessary
-3. Click on `Toolhead 1`
-4. Click on "Position on homing fiducial"
-5. Adjust the exposure of your camera image as mentioned in other steps...
+2. Select on `BottomVision` from the type dropdown.
+   {{< container-image path="images/fiducial-vision-dropdown.png" alt="Select fiducial vision" >}}
+
+3. Select `- Default Machine Bottom Vision -` from the pipeline list.
+   {{< container-image path="images/select-default-fiducial-vision.png" alt="Select the default pipeline" >}}
+
+4. Click on Pipeline `Edit`.
+   {{< container-image path="images/edit-pipeline.png" alt="Edit the pipeline" >}}
 
 ### Part Recognition
 
-These steps are for basic components like EEEE-type resistors and LEDs. More complicated components may need different settings.
+<!-- TODO: Images are copied and are not good, need new screenshots -->
+1. Go to the `Vision` tab.
+   {{< container-image path="images/vision-tab.png" alt="Switch to the vision tab" >}}
 
-1. Go to the `Machine Setup` tab
-2. Click on the Expand button if necessary
-3. Click on `Toolhead 1`
-4. Click on "Position on homing fiducial"
-5. Adjust the exposure of your camera image as mentioned in other steps...
+2. Select on `BottomVision` from the type dropdown.
+   {{< container-image path="images/fiducial-vision-dropdown.png" alt="Select fiducial vision" >}}
+
+3. Select `- Default Machine Bottom Vision -` from the pipeline list.
+   {{< container-image path="images/select-default-fiducial-vision.png" alt="Select the default pipeline" >}}
+
+4. Click on Pipeline `Edit`.
+   {{< container-image path="images/edit-pipeline.png" alt="Edit the pipeline" >}}
