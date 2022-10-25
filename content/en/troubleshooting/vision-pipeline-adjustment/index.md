@@ -26,7 +26,7 @@ Computer vision used in OpenPnP takes photos from your top or bottom camera, and
 2. Identifying certain elements of the photo. For example: `DetectCirclesHough`.
 3. Showing you more information on the screen so that you can build, debug, and tweak the pipeline. For example: `DrawCircles`.
 
-Because each of these kinds of steps live together in the pipeline, it can be a little confusing trying to decode how each stepworks and what they're for.
+Because each of these kinds of steps live together in the pipeline, it can be a little confusing trying to decode how each step works and what they're for.
 
 Each step of the pipeline has "parameters" that control its function. For example, the `ImageWriteDebug` step will ask you for a parts of a file name to use when saving a debug image. Another more typical example is the `Threshold` step, which will use a `threshold` parameter to pick which parts of your image will become white, and which will become black.
 
