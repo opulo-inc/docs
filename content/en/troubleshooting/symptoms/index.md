@@ -76,4 +76,4 @@ description: >
 
 ## Components not recognized by bottom camera
 
-1. [Bottom Vision Error]({{< relref "solutions#bottom-vision-error" >}})
+1. [Bottom Vision Error]({{< relref "vision-pipeline-adjustment#bottom-camera-vision-pipeline:part-recognition" >}})
