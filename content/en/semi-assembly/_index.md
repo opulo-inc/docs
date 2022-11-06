@@ -46,7 +46,7 @@ If you find that there's something unclear in this documentation, please [submit
 
 ### Differences
 
-Dont worry if something in the video doesnt look exactly like what you have in the box. We’re constantly tuning and tweaking things to make them better and easier to use, so you might find things look slightly different.
+Don't worry if something in the video doesn't look exactly like what you have in the box. We’re constantly tuning and tweaking things to make them better and easier to use, so you might find things look slightly different.
 
 ### Assembly Video
 
