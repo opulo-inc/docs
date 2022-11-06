@@ -17,13 +17,13 @@ If the offset of the nozzle tip to the top camera is set incorrectly, the machin
 
 ## Bad Fiducial Scan
 
-It's possible that when OpenPnP scans for the fiducials on your PCB, it actually found a bright section of silkscreen or another pad, and that shifted all the placements on your board. Rerun your fiducial scan and check to see if OpenPnP is correctly finding the fiducial. Instructions for tuning a vision pipeline for fiducials can be found [here]({{< relref "homing-fiducial" >}}).
+It's possible that when OpenPnP scans for the fiducials on your PCB, it actually found a bright section of silkscreen or another pad, and that shifted all the placements on your board. Rerun your fiducial scan and check to see if OpenPnP is correctly finding the fiducial. Instructions for tuning a vision pipeline for fiducials can be found [here]({{< relref "vision-pipeline-adjustment#top-camera-vision-pipeline" >}}).
 
 ## Incorrect Feeder Z Position
 
 Picking can sometimes fail if the nozzle is either too far away from the part, or too close. Jog your nozzle tip about 1mm above a part in your feeder, and turn on the PV actuator to activate the vacuum. Now, slowly jog the Z axis down 0.1mm until you see the part jump onto the tip, and hear the pump strain against the vacuum. Jog one final 0.1mm down after this, and set your feeder Z position to your current Z position.
 
-## Paste In Nozzle Tip
+## Paste Inside Nozzle Tip
 
 Sometimes the nozzle tip may dip into a bit of solder paste on your PCB. This can cause a blockage and prevent a part from being picked correctly. If you're finding that parts refuse to stick to your nozzle, try checking the nozzle tip for a blockage and clear it out with some small gauge wire, or some pressurized air.
 
@@ -72,7 +72,7 @@ If you're finding that trying to manually jog the Z axis of your machine does no
 
 ## Bottom Vision Error
 
-If the bottom vision pipeline for your part is not set up correctly, it might find the outline of the part to be larger, smaller, or offset from what it actually is, causing an incorrect placement. The [homing fiducial vision calibration]({{< relref "homing-fiducial" >}}) is helpful for seeing how to tune a vision pipeline, but also check out OpenPnP's [bottom vision wiki page](https://github.com/openpnp/openpnp/wiki/Bottom-Vision) to help tune your pipeline.
+See [bottom vision pipeline adjustment.]({{< relref "vision-pipeline-adjustment#bottom-camera-vision-pipeline:nozzles" >}})
 
 ## Check Vacuum Pump
 

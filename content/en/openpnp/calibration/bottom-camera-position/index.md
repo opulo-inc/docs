@@ -9,26 +9,63 @@ description: >
 
 Now that we know the offset from the top camera to the nozzle, we can use the nozzle to set our bottom camera position.
 
-1. Make sure that you have the N1 nozzle selected from the drop down beneath the camera view in OpenPnP.
-   
-{{< alert color="warning" title="Bottom Camera Z Position: v2 and v3 Differences" >}}
-For `v2` machines with only one nozzle, we have the bottom camera Z height that we lift the nozzle to for vision operations set to 61mm. This is very high up and lets us see very large parts, but if a second nozzle is installed, it can cause collisions.
+{{< alert color="warning" title="Bottom Camera Z Position: v2 and v3 LumenPnP Differences" >}}
+  When inspecting the tip of the nozzle and parts that have been picked up, OpenPnP uses a saved Z height to bring the nozzle tip to so that it is in focus.
 
-For `v3` machines (that come with two nozzles), we've dropped the camera a bit lower beneath the Staging Plate, and the height for bottom camera vision operations is 31.5mm. This ensures we can see large parts while preventing collisions with a second nozzle.
+  Make sure your bottom camera Z position is set correctly based on your machine type and number of nozzles.
 
-Make sure your bottom camera Z position is set correctly based on your version number.
+  v2 LumenPnP kits only have one tool head. The default Z-height is `61mm`. This is relatively high, and allows the bottom camera to see very large parts. But it is high enough that, if you have a second nozzle installed, the inactive nozzle can collide and cause damage.
+
+  v3 semi-assembled LumenPnP machines come with two tool heads. To more safely accommodate this, the Z height is only `31.5mm`, and the bottom camera is mounted deeper below the Staging Plate. This ensures we can see large parts while preventing collisions with a second nozzle.
+
+* If you're using one nozzle, set the bottom camera Z Location to `61mm` (Standard for v2 LumenPnP kits).
+* If you're using two nozzles, set the bottom camera Z Location to `31.5mm` (Standard for v3 semi-assembled LumenPnP kits).
 {{< /alert >}}
 
-2. Select the bottom camera in the device tree. Click on the `Position` menu tab. Click on the icon with the red nozzle in blue circle (shown below) to jog the nozzle to the bottom camera position. 
-{{< container-image path="images/Screen Shot 2022-05-19 at 2.53.57 PM.png" alt="" >}} 
+1. Click on the `Machine Setup` tab in the top right pane.
+  {{< container-image path="images/Machine-Setup-Tab-3.png" alt="Selecting the Machine setup tab from the main screen" >}}
 
-2. The left nozzle will now move to be pretty close to the bottom camera inspection location, but it likely won't be exact. It's also possible that the tip of the nozzle is not in focus from the fisheye calibration step; adjust the bottom camera focus by turning the lens until the nozzle tip is sharp and in focus. 
-{{< container-image path="images/Screen Shot 2022-05-19 at 3.04.16 PM.png" alt="" >}}
+2. Click on the "Expand" checkbox to open all of the features about your machine.
+  {{< container-image path="images/Expand-Checkbox-3.png" alt="Expanding the Machine Config options" >}}
 
+3. Click on `Cameras > OpenPnpCaptureCamera Bottom`.
+  {{< container-image path="images/select-bottom-camera-2.png" alt="Select the bottom camera" >}}
 
-1. Jog the nozzle to be perfectly centered over the bottom camera, and click on the blue nozzle icon to capture the position (see image below). Your bottom camera position is now saved!
+4. Click on the `Position` tab.
+  {{< container-image path="images/bottom-camera-position.png" alt="Select the position tab" >}}
 
-{{< container-image path="images/Screen Shot 2022-05-19 at 3.02.58 PM.png" alt="" >}}
-{{< container-image path="images/capture.png" alt="" >}}
+5. Set the camera's Z-axis location:
+   1. If you have a v2 LumenPnP **kit** with only one nozzle, set the Z axis value to `31.5mm`.
+   2. If you have a v3 **semi-assembled** LumenPnP with two nozzles, set the Z axis value to `61mm`.
+  {{< container-image path="images/bottom-camera-z-pos.png" alt="Set the z position" >}}
 
+6. Home your LumenPnP to make sure your toolhead's location is accurate. As before, ignore the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error if it appears.
+  {{< container-image path="images/home-during-bottom-cam-pos.png" alt="Home the machine" >}}
 
+7. Jog the toolhead off to the side so that it isn't aligned with any calibration points. This will make it easier to see if the nozzle is lined up with the bottom camera.
+  {{< container-image path="images/bottom-cam-jog-random.png" alt="Jog the toolhead" >}}
+
+8. Select the `Nozzle: N1 - N045 (Head:H1)` from the machine controls dropdown.
+  {{< container-image path="images/select-n1-machine-control-bottom.png" alt="Select nozzle from machine control dropdown" >}}
+
+9. Click the "Position tool over location" button to bring the left nozzle very roughly above the bottom camera.
+  {{< container-image path="images/position-over-bottom-cam.png" alt="Position the toolhead over the bottom camera" >}}
+
+10. Jog the toolhead until the left nozzle is directly in the center of the bottom camera's vision.
+  {{< container-image path="images/position-over-bottom-cam-precise.png" alt="Position the toolhead over the bottom camera precisely" >}}
+
+11. If the tip of the nozzle isn't in focus, rotate the bottom camera lens to set it in focus. Re-center the nozzle in the camera view if necessary.
+  {{< container-image path="images/focus-nozzle-from-bottom-cam.png" alt="Focus on the tip of the nozzle" >}}
+
+12. Click the "Capture Toolhead Location" button to calculate the correct position for the bottom camera.
+  {{< container-image path="images/store-nozzle-location-bottom.png" alt="Store the camera location" >}}
+
+13. Click the `Apply` button to save the new camera position.
+  {{< container-image path="images/apply-bottom-cam-pos.png" alt="Save the camera location" >}}
+
+14. Try homing your machine again. If you get the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error, you will need to tune your [Bottom Camera Vision Pipeline]({{< relref "vision-pipeline-adjustment#nozzles" >}}).
+  {{< container-image path="images/home-during-bottom-cam-pos.png" alt="Home the machine" >}}
+
+## Next Steps
+
+Next is [Backlash Calibration.]({{< relref "backlash-compensation" >}})

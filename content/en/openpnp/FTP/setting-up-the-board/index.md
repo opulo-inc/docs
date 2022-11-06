@@ -83,7 +83,7 @@ The next step is to set the physical location of the FTP board in OpenPNP. You'l
 ## Placing Components
 
 22. Make sure you've pulled back the protective tape cover on your feeders and that you have the correct nozzle installed.
-23. It's time to place your first component. Press the "Single job step" icon button repeatedly until OpenPnP moves to pick up an LED, check it's orientation over the bottom camera, and then places it on the board.
+23. It's time to place your first component. Press the "Single job step" icon button repeatedly until OpenPnP moves to pick up an LED, check it's orientation over the bottom camera, and then place it on the board.
   {{< container-image path="images/One-step-placement.png" alt="Start placing components" >}}
 
 24. If the component was not picked up correctly, you will need to adjust your [feeder location or height]({{< relref "solutions#incorrect-feeder-z-position" >}}).
