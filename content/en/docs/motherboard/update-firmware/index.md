@@ -6,8 +6,9 @@ description: >
   Flash Marlin onto the motherboard.
 marlin-version: bugfix-2.1.x
 ---
-[//]: # (To change the targeted Marlin version, change it in the YAML above. That'll change the links too.)
-[//]: # (Links that are used in multiple places are here. Change if necessary:)
+<!-- markdownlint-disable MD034 -->
+<!-- (To change the targeted Marlin version, change it in the YAML above. That'll change the links too.) -->
+<!-- (Links that are used in multiple places are here. Change if necessary:) -->
 [latest_marlin]: https://github.com/MarlinFirmware/Marlin/archive/refs/heads/{{< param marlin-version >}}.zip
 [latest_marlin_config]: https://raw.githubusercontent.com/MarlinFirmware/Configurations/{{< param marlin-version >}}/config/examples/Opulo/Lumen_REV3/Configuration.h
 [latest_marlin_adv_config]: https://raw.githubusercontent.com/MarlinFirmware/Configurations/{{< param marlin-version >}}/config/examples/Opulo/Lumen_REV3/Configuration_adv.h
@@ -16,8 +17,8 @@ marlin-version: bugfix-2.1.x
 
 ## Using the Auto Build Marlin VSCode Extension
 
- {{% alert color="info" title="MARLIN VERSON" %}}
- The currently linked-to Marlin version is `{{< param marlin-version >}}`. Building an older version of Marlin with the recommended config files won't work. If you are unsure whether a previously-downloaded local version of Marlin is the newest one, redownloading it is the safest choice.
+ {{% alert color="info" title="MARLIN VERSION" %}}
+ The currently linked-to Marlin version is `{{< param marlin-version >}}`. Building an older version of Marlin with the recommended config files won't work. If you are unsure whether a previously-downloaded local version of Marlin is the newest one, re-downloading it is the safest choice.
  {{% /alert %}}
 
 1. Download the [latest Marlin firmware][latest_marlin] and unzip it.
@@ -31,7 +32,7 @@ marlin-version: bugfix-2.1.x
 7. If this is successful, attach the LumenPnP Mobo to your computer with the USB cable. If it isn't, this might help:
     * Check the error messages for configuration errors and fix them, or replace it with the default config
     * If this fails, check that your config file version is the same as your Marlin version (e.g. a bugfix-2.0.x config file won't work in a bugfix-2.1.x)
-    * When in doubt, re-downlaod Marlin and the configuration files from the links above
+    * When in doubt, re-download Marlin and the configuration files from the links above
 
 8. Boot your motherboard into DFU Mode
     1. Press and hold the `BOOT` button
@@ -51,7 +52,7 @@ If you have a hard time getting your board to enter DFU mode, instead try poweri
 
 * `-d 0x0483:0x0df11` tells the tool to flash the STM32 chip on the motherboard. This is optional if you only have one dfu device connected.
 * `-s 0x8000000:leave` is the target memory address that the firmware is flashed to. The `:leave` part will cause the chip to reset on its own, making the machine accessible in OpenPNP without rebooting it.
-* `-a 0` makes the tool use the altsetting required for flashing the ESP32.
+* `-a 0` makes the tool use the alt setting required for flashing the ESP32.
 * `-D ./.pio/build/Opulo_Lumen_REV3/firmware.bin` is the path to the to-be-flashed firmware. If you want to flash another file, change this.
 {{% /alert %}}
 
@@ -89,7 +90,7 @@ If you're absolutely sure that ABM is the way to go, do this:
 3. Open Marlin firmware's folder on VSCode
 4. Grab Marlin configuration files ([Configuration.h][latest_marlin_config] and [Configuration_adv.h][latest_marlin_adv_config]) and replace the files in the Marlin/Marlin folder with those new ones.
 
-5. Edit the platformio.ini file to indicate which board you're uploading to. Update `default_envs` to read `Index_Mobo_Rev03`.
+5. Edit the platformio.ini file to indicate which board you're uploading to. Update `default_envs` to read `Opulo_Lumen_REV3` or `Opulo_Lumen_REV4` depending on your motherboard.
   {{< container-image path="images/Screen Shot 2022-02-04 at 7.27.25 PM.PNG" alt="BOOT and RESET buttons" >}}
 
 6. Attach the LumenPnP Mobo to your computer with the USB cable.
