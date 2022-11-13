@@ -29,7 +29,7 @@ See the LumenPnP BOM for specifications and links to purchase hardware for the u
 4. Attach the wire to your umbilical with zip ties, or thread it into your wiring sheath.
 5. Plug the motor cable into the `R` connector.
 
-## Installing the Vacuum Pump 
+## Installing the Vacuum Pump
 
 ## Pump mount
 
@@ -95,6 +95,8 @@ Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging pla
 
 ## Configuring OpenPnP
 
+### Add Z-axis
+
 1. Select the `Machine Setup` tab
 2. Click the `Expand` checkbox if necessary
 3. Click on `Axes`
@@ -108,7 +110,10 @@ Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging pla
    5. Map Point A: Output: `63`
    6. Map Point B: Input: `63`
    7. Map Point B: Output: `0`
-7. Click apply to save the changes
+7. Click `Apply` to save the changes
+
+### Add Rotation Axis
+
 8. Click on the Add button
 9. Select `ReferenceControllerAxis` and click `Accept`
 10. Configure the new axis with the following settings:
@@ -118,7 +123,7 @@ Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging pla
     4. Axis Letter: `B`
     5. Switch Linear <> Rotational: Checked
     6. Home Coordinate: `0`
-    7. Resolution [Millimeters]: `0.0001`
+    7. Resolution \[Millimeters\]: `0.0001`
     8. Steps / Millimeter: `10000`
     9. Limit to Range: Checked
     10. Wrap Around: Unchecked
@@ -126,10 +131,13 @@ Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging pla
     12. Soft Limit Low Enabled: Unchecked
     13. Soft Limit High: `180`
     14. Soft Limit High Enabled: Unchecked
-    15. Feed Rate [/s]: `50000`
-    16. Acceleration [/s2]: `500`
-    17. Jerk [/s3]: `2000`
-11. Click apply to save the changes
+    15. Feed Rate \[/s\]: `50000`
+    16. Acceleration \[/s2\]: `500`
+    17. Jerk \[/s3\]: `2000`
+11. Click `Apply` to save the changes
+
+### Add 2nd Vacuum
+
 17. Click on `Heads > ReferenceHead H1 > Actuators`
 18. Click on the Add button
 19. Select `ReferenceActuator` and click `Accept`
@@ -154,7 +162,10 @@ Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging pla
     17. Actuation Homed: `LeaveAsIs`
     18. Actuation Disabled: `LeaveAsIs`
     19. Index: `0`
-21. Click apply to save the changes
+21. Click `Apply` to save the changes
+
+### Add 2nd Nozzle
+
 22. Click on `Nozzles`
 23. Click on the Add button
 24. Select `ReferenceNozzle` and click `Accept`
@@ -179,9 +190,10 @@ Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging pla
 29. Set the Vacuum Actuator to `VAC2`
 30. Leave the Blow Off Actuator blank
 31. Set the Sensing Actuator to `VAC2`
+32. Click `Apply` to save the changes
 
 ## Fine Tuning
-TSwi
+
 32. Attach a nozzle to your new second tool head
 33. Set your new nozzle's offset
 34. Set Vision pipeline
