@@ -114,7 +114,7 @@ In this step, you will assemble the main frame of the machine.
   {{< container-image path="images/y-gantries-back.JPG" alt="" >}}
   {{< container-image path="images/x-gantry-mounted.JPG" alt="" >}}
 
-23. Attach the X gantry to the Y gantries by tightening four M5x40 socket head screws found in your hardware bag into the two holes on each side of the X gantry assembly.
+23. Attach the X gantry to the Y gantries by tightening four M5x25 socket head screws found in your hardware bag into the two holes on each side of the X gantry assembly.
   {{< container-image path="images/mount-x-gantry-1.JPG" alt="" >}}
   {{< container-image path="images/mount-x-gantry-2.JPG" alt="" >}}
   {{< container-image path="images/mount-x-gantry-3.JPG" alt="" >}}
