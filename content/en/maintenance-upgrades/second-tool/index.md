@@ -18,20 +18,18 @@ See the LumenPnP BOM for specifications and links to purchase hardware for the u
 
 ## Installing the Tool Head
 
-1. Use four MXXX screws to install the motor onto the right tool holder. Make sure that the wiring connector is facing out towards the front of the machine.
-28. Now that our Z gantries are all tightened and moving freely, we can mount our final axis: rotation! Take your NEMA11 hollow shaft stepper motor and place it in the left Z gantry. Secure it in place with four M2.5x8mm screws. Make sure the wire port is facing outwards as shown below.
+1. Attach the the prepared NEMA11 hollow shaft stepper motor (with the attached CP40 nozzle holder) to the right Z gantry with four M2.5x8mm screws. Make sure the wire port is facing outwards as shown below.
   {{< container-image path="images/Screen Shot 2021-12-29 at 6.20.02 PM.png" alt="" >}}
 
-29. Now we'll mount a few bits of hardware to the hollow shaft motor. Screw the CP40 nozzle holder into the bottom side of the motor, and screw the press-fit pneumatic coupler into the top side.
-  {{< container-image path="images/Screen Shot 2021-12-29 at 6.22.45 PM.png" alt="" >}}
+2. Plug the cable into the new tool motor
+  {{< container-image path="images/IMG_0812.JPG" alt="plugging in the new tool motor">}}
+3. Attach the wire to your umbilical with zip ties, or thread it into your wiring sheath. Make sure it has enough slack so that it isn't strained if the tool is raised or lowered.
+4. Plug the new cable (labeled `RM`) into the first port in the second row, labeled `R`. (Note this image shows a Rev 4 motherboard, but the connector is in the same place on the Rev 3 motherboard.)
+  {{< container-image path="images/plug-rm.JPG" alt="" >}}
 
-3. Plug the cable into the tool motor
-4. Attach the wire to your umbilical with zip ties, or thread it into your wiring sheath.
-5. Plug the motor cable into the `R` connector.
+## Installing the Pneumatics
 
-## Installing the Vacuum Pump
-
-## Pump mount
+### Pump mount
 
 |  Qty | Part                  |
 | ---: | --------------------- |
@@ -41,26 +39,26 @@ See the LumenPnP BOM for specifications and links to purchase hardware for the u
 |    1 | Vacuum Pump           |
 |    2 | M3x10 machine screw   |
 
-The first thing we'll mount to the staging plate is the {{< tooltip "Pump Mount" "FDM-0025" >}}. This print suspends the pump using two rubber bands to ensure none of the vibration of the pump is transferred into the frame.
+The new tool will need a new vacuum pump and valve. This will be mostly the same assembly as the components for the first toolhead. The only differences will be that we will mount the electronics at different places on the staging plate, and and plug them into different connections on the motherboard.
 
-6. Start by press-fitting M3 nuts into the side recesses in the {{< tooltip "Pump Mount" "FDM-0025" >}}.
+1. Start by press-fitting M3 nuts into the side recesses in the Pump Mount.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-1-2.png" alt="Two Nut locations on the Pump Mount" >}}
 
-7. Now we'll mount the pump in the {{< tooltip "Pump Mount" "FDM-0025" >}} using a couple rubber bands. Start by grabbing the rubber band with both hands, giving it a half twist, and folding it over on itself, making two loops.
+2. Now we'll mount the pump in the Pump Mount using a couple rubber bands. Start by grabbing the rubber band with both hands, giving it a half twist, and folding it over on itself, making two loops.
   {{< container-image path="images/IMG_0737.JPG" alt="" >}}
   {{< container-image path="images/IMG_0738.JPG" alt="" >}}
   {{< container-image path="images/IMG_0740.JPG" alt="" >}}
 
-8. Now stretch each rubber band over each pair of pegs on the {{< tooltip "Pump Mount" "FDM-0025" >}}. Guide the pump between each pair of bands so that it's suspended in the {{< tooltip "Pump Mount" "FDM-0025" >}}.
+3. Stretch each rubber band over each pair of pegs on the Pump Mount. Guide the pump between each pair of bands so that it's suspended in the Pump Mount.
   {{< container-image path="images/IMG_0742.JPG" alt="" >}}
   {{< container-image path="images/IMG_0743.JPG" alt="" >}}
   {{< container-image path="images/IMG_0744.JPG" alt="" >}}
-
-9. Mount the {{< tooltip "Pump Mount" "FDM-0025" >}} to the staging plate using two M3 x 10mm screws in the location shown below, G31 and G33.
+<!-- TODO: Get new coordinates for the vacuum pump on the staging plate -->
+4. Mount the Pump Mount to the staging plate using two M3 x 10mm screws in the location shown below, G31 and G33.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-4-ALT.png" alt="Mounting position for the Pump" >}}
   {{< container-image path="images/IMG_0741.JPG" alt="The Pump assembly mounted on the staging plate" >}}
 
-## Valve mount
+### Valve mount
 
 |  Qty | Part                   |
 | ---: | ---------------------- |
@@ -69,34 +67,67 @@ The first thing we'll mount to the staging plate is the {{< tooltip "Pump Mount"
 |    4 | M3 Hex Nut             |
 |    6 | M3x8 machine screw     |
 
-Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging plate.
+Now we'll attach the second Valve Mount to the staging plate.
 
-10. Press fit four M3 nuts into the recesses in the {{< tooltip "Valve Mount" "FDM-0042" >}}.
+5. Press fit four M3 nuts into the recesses in the Valve Mount.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-5.png" alt="four nut locations in the Valve Mount" >}}
 
-11. Use two M3x8mm screws to attach the valve to the {{< tooltip "Valve Mount" "FDM-0042" >}} as shown below.
+6. Use two M3x8mm screws to attach the valve to the Valve Mount as shown below.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-6.png" alt="attaching the valve to the valve mount with two screws" >}}
-
-12. Use four M3x8mm screws to mount the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging plate in the location shown: E23, E25, G23, G25.
+<!-- TODO: Get new coordinates for the valve on the staging plate -->
+7. Use four M3x8mm screws to mount the Valve Mount to the staging plate in the location shown: E23, E25, G23, G25.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-7-ALT.png" alt="attaching the valve to the staging plate" >}}
   {{< container-image path="images/IMG_0745.jpg" alt="" >}}
 
-## Pneumatic Y splitter mount
+### Pneumatic Y splitter mount
 
 |  Qty | Part                |
 | ---: | ------------------- |
 |    1 | M3x30 machine screw |
 |    1 | M3 Hex nut          |
 |    1 | Y Splitter          |
-
-13. Use an M3x30mm screw and an M3 nut to mount the pneumatic Y splitter to the staging plate as shown: B12.
+<!-- TODO: Get new Y splitter coordinates on the staging plate -->
+8. Use an M3x30mm screw and an M3 nut to mount the pneumatic Y splitter to the staging plate as shown: B12.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-8-ALT.png" alt="Attaching the Y Splitter to the Staging Plate" >}}
   {{< container-image path="images/PXL_20220204_061125932.MP.jpg" alt="" >}}
 
+### Connecting the Pneumatics
+
+Time to connect the pneumatics to the new toolhead.
+
+|       Qty | Part                |
+|----------:|---------------------|
+|     65 mm | 6mm Tubing (Clear)  |
+|    230 mm | 6mm Tubing (Clear)  |
+|    235 mm | 4mm Tubing (Black)  |
+| Remaining | 4mm Tubing (Black)  |
+
+9. The origin of vacuum in the machine is our vacuum pump. The off-center port is the one that provides vacuum. Start by cutting a 65mm section of the 6mm clear tubing and pushing it onto the off-center port on the vacuum pump. Push the other end onto the inline plastic port of the valve as shown below.
+  {{< container-image path="images/IMG_0728.JPG" alt="" >}}
+  {{< container-image path="images/IMG_0729.JPG" alt="" >}}
+
+10. Cut a 230mm section of the 6mm clear tubing and push it onto the right-angle plastic port of the valve, and push the other side into the single, larger port of the Y splitter.
+  {{< container-image path="images/IMG_0745.JPG" alt="" >}}
+  {{< container-image path="images/IMG_0731.JPG" alt="" >}}
+<!-- TODO: Get an image of pressing the tubing on the VAC2 sensor, the photo we have is only on the VAC1 sensor -->
+11. Switch to using the smaller, 4mm black tubing. Cut a 235mm length of 4mm OD tubing and push one side into a fork of the Y splitter, and route the other end underneath the motherboard and onto the `VAC2` sensor port. Gently press the tube onto the vacuum sensor.
+  {{< container-image path="images/IMG_0733.JPG" alt="" >}}
+  {{< container-image path="images/IMG_0736.JPG" alt="" >}}
+
+12. Now take the remaining length of 4mm black tubing and push it into the other fork of the Y splitter. Take the loose end, and route it underneath the motherboard, then up along the X umbilical. Attach it with new zip ties, or slip it inside your existing ones, alongside the first tool head's tubing.
+  {{< container-image path="images/IMG_0824.JPG" alt="" >}}
+
+13. With the pneumatic tubing dangling loose past the end of the swivel arm, cut any excess tubing (still allowing some slack for motor rotation). Push the other end into the pneumatic coupling on the back side of the rotation stepper motor. Extra slack will allow the motor to rotate freely 180 degrees in each direction, so err on the side of leaving more than less. If the tubing falls away from the umbilical, use one or two small zip ties to secure them together.
+  {{< container-image path="images/IMG_0825.JPG" alt="" >}}
+  The bottom of the staging plate should look like the image below:
+  {{< container-image path="images/IMG_0746.JPG" alt="" >}}
+<!-- TODO: Get images of the final staging plate -->
 ## Configuring OpenPnP
 
-### Add Z-axis
+With the hardware set up, we need to tell OpenPnP about the newly installed toolhead.
 
+### Add Z-axis
+<!-- TODO: Screenshot on big computer -->
 1. Select the `Machine Setup` tab
 2. Click the `Expand` checkbox if necessary
 3. Click on `Axes`
@@ -113,7 +144,7 @@ Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging pla
 7. Click `Apply` to save the changes
 
 ### Add Rotation Axis
-
+<!-- TODO: Screenshot on big computer -->
 8. Click on the Add button
 9. Select `ReferenceControllerAxis` and click `Accept`
 10. Configure the new axis with the following settings:
@@ -137,11 +168,11 @@ Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging pla
 11. Click `Apply` to save the changes
 
 ### Add 2nd Vacuum
-
-17. Click on `Heads > ReferenceHead H1 > Actuators`
-18. Click on the Add button
-19. Select `ReferenceActuator` and click `Accept`
-20. Configure the new Actuator with the following settings:
+<!-- TODO: Screenshot on big computer -->
+12. Click on `Heads > ReferenceHead H1 > Actuators`
+13. Click on the Add button
+14. Select `ReferenceActuator` and click `Accept`
+15. Configure the new Actuator with the following settings:
     1. Driver: `GcodeDriver`
     2. Name: `VAC2`
     3. Axis X: `x`
@@ -162,14 +193,14 @@ Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging pla
     17. Actuation Homed: `LeaveAsIs`
     18. Actuation Disabled: `LeaveAsIs`
     19. Index: `0`
-21. Click `Apply` to save the changes
+16. Click `Apply` to save the changes
 
 ### Add 2nd Nozzle
-
-22. Click on `Nozzles`
-23. Click on the Add button
-24. Select `ReferenceNozzle` and click `Accept`
-25. Configure the new Nozzle with the following settings:
+<!-- TODO: Screenshot on big computer -->
+17. Click on `Nozzles`
+18. Click on the Add button
+19. Select `ReferenceNozzle` and click `Accept`
+20. Configure the new Nozzle with the following settings:
     1. Name: `N2`
     2. Axis X: `x`
     3. Axis Y: `y`
@@ -184,17 +215,17 @@ Now we'll attach the {{< tooltip "Valve Mount" "FDM-0042" >}} to the staging pla
     12. Dynamic Safe Z: Checked
     13. Pick Dwell Time (ms) `0`
     14. Place Dwell Time (ms) `0`
-26. Switch to the `Nozzle Tips` tab
-27. Mark all the nozzle tips as Compatible
-28. Switch to the `Vacuum` tab
-29. Set the Vacuum Actuator to `VAC2`
-30. Leave the Blow Off Actuator blank
-31. Set the Sensing Actuator to `VAC2`
-32. Click `Apply` to save the changes
+21. Switch to the `Nozzle Tips` tab
+22. Mark all the nozzle tips as Compatible
+23. Switch to the `Vacuum` tab
+24. Set the Vacuum Actuator to `VAC2`
+25. Leave the Blow Off Actuator blank
+26. Set the Sensing Actuator to `VAC2`
+27. Click `Apply` to save the changes
 
 ## Fine Tuning
 
-32. Attach a nozzle to your new second tool head
-33. Set your new nozzle's offset
-34. Set Vision pipeline
-35. Test picking up components
+28. Attach a nozzle to your new second tool head
+29. Set [your new nozzle's offset]({{< relref "nozzle-offset" >}})
+30. Try homing your machine again. If you get the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error, you will need to tune your [Bottom Camera Vision Pipeline]({{< relref "vision-pipeline-adjustment#nozzles" >}}).
+31. Test picking components out of your feeders. Follow the instructions in the [FTP]({{< relref "installing-the-feeders#installing-the-n045-nozzle" >}}) guide. Make sure to activate your newly created tool head, and assign a nozzle tip to it.
