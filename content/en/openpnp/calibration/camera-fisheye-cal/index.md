@@ -38,7 +38,7 @@ This calibration uses a specific pattern of dots to correct for any fisheye effe
 5. Click `Start Lens Calibration`.
   {{< container-image path="images/Bottom-camera-click-lens-calibration.png" alt="Starting bottom camera lens calibration" >}}
 
-6. Hold the pattern under the top camera as shown below. Use the camera view in OpenPnP to move the pattern into focus. If you can't get the whole pattern in focus and in the field of view, screw in the lens a few turns to adjust the camera's focal distance and try again.
+6. Hold the pattern under the bottom camera as shown below. Use the camera view in OpenPnP to move the pattern into focus. If you can't get the whole pattern in focus and in the field of view, screw in the lens a few turns to adjust the camera's focal distance and try again. (The image shows calibrating the top camera, but it is the same process.)
   {{< alert color="info" title="Tip" >}}
   If you're having trouble adjusting the focus, try using the community-created [lens adjustment tool](https://www.printables.com/model/208453-lumen-pnp-lens-adjustment-tool).
   {{< /alert >}}
