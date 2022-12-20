@@ -35,8 +35,8 @@ Now that we know the offset from the top camera to the nozzle, we can use the no
   {{< container-image path="images/bottom-camera-position.png" alt="Select the position tab" >}}
 
 5. Set the camera's Z-axis location:
-   1. If you have a v2 LumenPnP **kit** with only one nozzle, set the Z axis value to `31.5mm`.
-   2. If you have a v3 **semi-assembled** LumenPnP with two nozzles, set the Z axis value to `61mm`.
+   1. If you have a v2 LumenPnP **kit** with only one nozzle, set the Z axis value to `61mm`.
+   2. If you have a v3 **semi-assembled** LumenPnP with two nozzles, set the Z axis value to `31.5mm`.
   {{< container-image path="images/bottom-camera-z-pos.png" alt="Set the z position" >}}
 
 6. Home your LumenPnP to make sure your toolhead's location is accurate. As before, ignore the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error if it appears.
