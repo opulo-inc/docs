@@ -11,7 +11,7 @@ The FTP PCB has two different types of components that need to be placed: resist
 
 ## Attach Feeders
 
-1. Use two M3x10 button head screws and two M3 wingnuts to secure the printed tray feeder through onto the staging plate using holes: C11 and E11.
+1. Use two M3x10 button head screws and two M3 wingnuts to secure the printed tray feeder through onto the staging plate using holes: C15 and E15.
   {{< container-image path="images/Feeder-installed-with-screws.jpg" alt="Install the feeder to the staging plate" >}}
 
 2. For each component, cut a strip of component tape off the reel about 125mm long.
