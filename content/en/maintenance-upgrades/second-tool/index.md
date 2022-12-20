@@ -14,7 +14,35 @@ If you built a V2 LumenPnP with only one tool head, follow this guide to install
 
 ## Required Materials
 
-See the LumenPnP BOM for specifications and links to purchase hardware for the upgrade.
+See the LumenPnP BOM for specifications and links to purchase hardware for the upgrade:
+
+|  Qty | Pneumatics Part              |
+| ---: | ---------------------------- |
+|    1 | [Pump-Mount][pmount]         |
+|    1 | [Pneumatic-Y-Adapter][yLink] |
+|    1 | Vacuum Pump                  |
+|    1 | Solenoid Valve               |
+|    3 | M3 Hex Nuts                  |
+|    2 | M3x8 machine screw           |
+|    2 | M3x10 machine screw          |
+|    1 | M3x30 machine screw          |
+|    2 | [Rubber Band][rubLink]       |
+
+|  Qty | Tool Head Part                         |
+| ---: | -------------------------------------- |
+|    1 | [Pneumatic Adapter MS4M-M5][adaptor]   |
+|    1 | [Pneumatic-Y-Adapter][yLink]           |
+|    3 | CP40 Holder (Link [1][cp1], [2][cp2])  |
+|    2 | [Rubber Band][rubLink]                 |
+|    1 | [NEMA11 Hollow Shaft Stepper][hollowL] |
+|    4 | M2.5x8 machine screw                   |
+
+|    Qty | Wires and Tubing Part                |
+| -----: | ------------------------------------ |
+| 2025mm | [Pneumatic Tubing 4mm OD][smalltube] |
+|  325mm | [Pneumatic Tubing 6mm OD][bigTube]   |
+|      1 | [R Motor Cable Harness][wireL]       |
+|      1 | [Pump Wire Harness][pumpWire]        |
 
 ## Installing the Tool Head
 
@@ -23,21 +51,9 @@ See the LumenPnP BOM for specifications and links to purchase hardware for the u
 
 ## Installing the Pneumatics
 
-|  Qty | Part                  |
-| ---: | --------------------- |
-|    1 | Pump Mount            |
-|    1 | Valve                 |
-|    1 | Y Splitter            |
-|    3 | M3 Hex Nuts           |
-|    2 | Rubber Band           |
-|    1 | Vacuum Pump           |
-|    2 | M3x8 machine screw    |
-|    2 | M3x10 machine screw   |
-|    1 | M3x30 machine screw   |
-
 The new tool will need a new vacuum pump and valve. This will be mostly the same assembly as the components for the first toolhead. The main differences will be that we will mount the electronics at different places on the staging plate, and and plug them into different connections on the motherboard.
 
-1. Start by press-fitting M3 nuts into the side recesses in the Pump Mount.
+1. Start by press-fitting two M3 nuts into the side recesses in the Pump Mount.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-1-2.png" alt="Two Nut locations on the Pump Mount" >}}
 
 2. Mount the pump in the Pump Mount using a couple rubber bands. Start by grabbing the rubber band with both hands, giving it a half twist, and folding it over on itself, making two loops.
@@ -62,13 +78,6 @@ The new tool will need a new vacuum pump and valve. This will be mostly the same
 ### Connecting the Pneumatics and wires
 
 Time to connect the pneumatics to the new toolhead.
-
-|       Qty | Part                |
-|----------:|---------------------|
-|     95 mm | 6mm Tubing (Clear)  |
-|    230 mm | 6mm Tubing (Clear)  |
-|    225 mm | 4mm Tubing (Black)  |
-|   1800 mm | 4mm Tubing (Black)  |
 
 7. The origin of vacuum in the machine is our vacuum pump. The off-center port is the one that provides vacuum. Use about 95mm of the 6mm clear tubing and push it onto the off-center port on the vacuum pump. Push the other end onto the inline plastic port of the valve as shown below.
   {{< container-image path="images/IMG_0728.JPG" alt="" >}}
@@ -214,3 +223,15 @@ With the hardware set up, we need to tell OpenPnP about the newly installed tool
 29. Set [your new nozzle's offset]({{< relref "nozzle-offset" >}})
 30. Try homing your machine again. If you get the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error, you will need to tune your [Bottom Camera Vision Pipeline]({{< relref "vision-pipeline-adjustment#nozzles" >}}).
 31. Test picking components out of your feeders. Follow the instructions in the [FTP]({{< relref "installing-the-feeders#installing-the-n045-nozzle" >}}) guide. Make sure to activate your newly created tool head, and assign a nozzle tip to it.
+
+[yLink]: https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/push-to-connect_union_pneumatic_fittings_(thermoplastic)/union_y_reducer/ury6m-4m
+[rubLink]: https://www.uline.com/Product/Detail/S-15809/Desk-Supplies/33-Latex-Free-Rubber-Bands-3-1-2-x-1-8
+[pmount]: https://github.com/opulo-inc/lumenpnp/blob/main/pnp/cad/FDM/pump-mount.FCStd
+[adaptor]: https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/push-to-connect_r-thread_pneumatic_fittings_(thermoplastic)/male_straight_(hex_body)/ms4m-m5
+[smalltube]: https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/5-z-32_inch_(4_mm)/pu532blk100
+[bigTube]: https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/6_mm/pu6mblk100
+[cp1]: https://www.robotdigg.com/product/799/OpenPnP-CP40-Holder
+[cp2]: https://www.alibaba.com/product-detail/SMT-SPARE-PARTS-SAMSUNG-CP40-NOZZLE_60863912898.html?spm=a2700.galleryofferlist.normal_offer.d_title.795d3049d6w6hc
+[hollowL]: https://www.robotdigg.com/product/798/NEMA11-hollow-shaft-stepper-for-Pick-and-Place-Machine
+[wireL]: https://github.com/opulo-inc/lumenpnp/blob/main/pnp/cad/CHA/toolhead-motor.yml
+[pumpWire]: https://github.com/opulo-inc/lumenpnp/blob/main/pnp/cad/CHA/pump.yml
