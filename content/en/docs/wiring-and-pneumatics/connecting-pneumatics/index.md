@@ -18,10 +18,8 @@ Now that we've got everything wired up, it's time to get all the tubing plumbed.
 ## Plumbing the staging plate
 
 1. The origin of vacuum in the machine is our vacuum pump. The off-center port is the one that provides vacuum. Start by cutting a 65mm section of the 6mm clear tubing and pushing it onto the off-center port on the vacuum pump. Push the other end onto the inline plastic port of the valve as shown below.
-
   {{< container-image path="images/IMG_0728.JPG" alt="" >}}
   {{< container-image path="images/IMG_0729.JPG" alt="" >}}
-
 
 2. Cut a 230mm section of the 6mm clear tubing and push it onto the right-angle plastic port of the valve, and push the other side into the single, larger port of the Y splitter.
   {{< container-image path="images/IMG_0745.JPG" alt="" >}}
@@ -43,7 +41,7 @@ Now that we've got everything wired up, it's time to get all the tubing plumbed.
 
 6. Bring your LumenPnP down onto its four legs, and tighten the zip ties, ensuring to keep a bit of slack between sections. You can move up the umbilical swivel and tighten all the zip ties along the whole thing.
 
-7. With the pneumatic tubing dangling loose past the end of the swivel arm, cut any excess tubing (still allowing some slack for motor rotation) push the other end into the pneumatic coupling on the back side of the rotation stepper motor. Extra slack will allow the motor to rotate freely 180 degrees in each direction, so err on the side of leaving more than less. If the tubing falls away from the umbilical, use one or two small zip ties to secure them together.
+7. With the pneumatic tubing dangling loose past the end of the swivel arm, cut any excess tubing (still allowing some slack for motor rotation). Push the other end into the pneumatic coupling on the back side of the rotation stepper motor. Extra slack will allow the motor to rotate freely 180 degrees in each direction, so err on the side of leaving more than less. If the tubing falls away from the umbilical, use one or two small zip ties to secure them together.
   {{< container-image path="images/IMG_0825.JPG" alt="" >}}
   The bottom of the staging plate should look like the image below:
   {{< container-image path="images/IMG_0746.JPG" alt="" >}}
