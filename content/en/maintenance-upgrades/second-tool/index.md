@@ -53,59 +53,57 @@ See the LumenPnP BOM for specifications and links to purchase hardware for the u
 
 The new tool will need a new vacuum pump and valve. This will be mostly the same assembly as the components for the first toolhead. The main differences will be that we will mount the electronics at different places on the staging plate, and and plug them into different connections on the motherboard.
 
-1. Start by press-fitting two M3 nuts into the side recesses in the Pump Mount.
+2. Start by press-fitting two M3 nuts into the side recesses in the Pump Mount.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-1-2.png" alt="Two Nut locations on the Pump Mount" >}}
 
-2. Mount the pump in the Pump Mount using a couple rubber bands. Start by grabbing the rubber band with both hands, giving it a half twist, and folding it over on itself, making two loops.
+3. Mount the pump in the Pump Mount using a couple rubber bands. Start by grabbing the rubber band with both hands, giving it a half twist, and folding it over on itself, making two loops.
   {{< container-image path="images/IMG_0737.JPG" alt="" >}}
   {{< container-image path="images/IMG_0738.JPG" alt="" >}}
   {{< container-image path="images/IMG_0740.JPG" alt="" >}}
 
-3. Stretch each rubber band over each pair of pegs on the Pump Mount. Guide the pump between each pair of bands so that it's suspended in the Pump Mount.
+4. Stretch each rubber band over each pair of pegs on the Pump Mount. Guide the pump between each pair of bands so that it's suspended in the Pump Mount.
   {{< container-image path="images/IMG_0742.JPG" alt="" >}}
   {{< container-image path="images/IMG_0743.JPG" alt="" >}}
-<!-- TODO: Get new coordinates for the vacuum pump on the staging plate -->
-4. Mount the Pump Mount to the staging plate using two M3 x 10mm screws in the location shown below, G31 and G33.
-  {{< container-image path="images/second pump mounting location v2.png" alt="Mounting position for the Pump" >}}
 
-5. Use two M3x8mm screws to attach the valve to the Valve Mount as shown below.
+5. Mount the Pump Mount to the staging plate using two M3 x 10mm screws. For example: G31 and G33 for the first tool head vacuum pump, and C31 and C33 for the new vacuum pump. (Note, the second photo below shows the newer, v3 LumenPnP pump mount, but you can opt to use the older v2 mount instead.)
+  {{< container-image path="images/second pump mounting location v2.png" alt="Mounting position for the Pump" >}}
+  {{< container-image path="images/v3-pump.jpg" alt="V3 pump mount" >}}
+
+6. Use two M3x8mm screws to attach the valve to the Valve Mount as shown below. (Note, the third photo below shows the newer, v3 LumenPnP valve mount, but you can opt to use the older v2 mount instead.)
   {{< container-image path="images/mounting the valve to mount.png" alt="attaching the valve to the valve mount with two screws" >}}
   {{< container-image path="images/valve mounting location.png" alt="attaching the valve to the valve mount with two screws" >}}
-<!-- TODO: Get new Y splitter coordinates on the staging plate -->
-6. Use an M3x30mm screw and an M3 nut to mount the pneumatic Y splitter to the staging plate as shown: B12.
+  {{< container-image path="images/v3-valve.jpg" alt="dual valve mount" >}}
+
+7. Use an M3x30mm screw and an M3 nut to mount the pneumatic Y splitter to the staging plate as shown below. Example locations are B12 and D12 for the two splitters. (Note, the second photo below shows the newer, v3 LumenPnP valve mount, but you can opt to use the older v2 mount as well.)
   {{< container-image path="images/y splitter mount 2.png" alt="Attaching the Y Splitter to the Staging Plate" >}}
+  {{< container-image path="images/v3-y-mount.jpg" alt="V3 Y splitter mount" >}}
 
-### Connecting the Pneumatics and wires
+## Connecting the Pneumatics and wires
 
-Time to connect the pneumatics to the new toolhead.
-
-7. The origin of vacuum in the machine is our vacuum pump. The off-center port is the one that provides vacuum. Use about 95mm of the 6mm clear tubing and push it onto the off-center port on the vacuum pump. Push the other end onto the inline plastic port of the valve as shown below.
+8. The origin of vacuum in the machine is our vacuum pump. The off-center port is the one that provides vacuum. Use about 95mm of the 6mm clear tubing and push it onto the off-center port on the vacuum pump. Push the other end onto the inline plastic port of the valve as shown below.
   {{< container-image path="images/IMG_0728.JPG" alt="" >}}
   {{< container-image path="images/IMG_0729.JPG" alt="" >}}
 
-<!-- TODO: Do we want another photo of the 2nd Valve? -->
-8. Use a 230mm section of the 6mm clear tubing and push it onto the right-angle plastic port of the valve, and push the other side into the single, larger port of the Y splitter.
-  {{< container-image path="images/IMG_0745.JPG" alt="" >}}
-  {{< container-image path="images/IMG_0731.JPG" alt="" >}}
-<!-- TODO: Get an image of pressing the tubing on the VAC2 sensor, the photo we have is only on the VAC1 sensor -->
-<!-- TODO: Do we want another photo of the 2nd Y splitter? -->
+9. Use a 230mm section of the 6mm clear tubing and push it onto the right-angle plastic port of the valve, and push the other side into the single, larger port of the Y splitter.
+  {{< container-image path="images/IMG_0745.JPG" alt="Single valve mount" >}}
+  {{< container-image path="images/IMG_0731.JPG" alt="tubing inserted into the y splitter" >}}
 
-9. Switch to using the smaller, 4mm black tubing. Cut a 225mm length of 4mm OD tubing and push one side into a fork of the Y splitter, and route the other end underneath the motherboard and onto the `VAC2` sensor port. Gently press the tube onto the vacuum sensor.
-  {{< container-image path="images/IMG_0733.JPG" alt="" >}}
-  {{< container-image path="images/IMG_0736.JPG" alt="" >}}
+10. Switch to using the smaller, 4mm black tubing. Cut a 225mm length of 4mm OD tubing and push one side into a fork of the Y splitter, and route the other end underneath the motherboard and onto the `VAC2` sensor port. Gently press the tube onto the vacuum sensor.
+  {{< container-image path="images/IMG_0733.JPG" alt="Pushing tubing into the Y splitter" >}}
+  {{< container-image path="images/vac2-tubing.jpg" alt="the VAC 2 sensor on the motherboard" >}}
 
-10. Now take 1.8 meters of 4mm black tubing and push it into the other fork of the Y splitter. Take the loose end, and route it underneath the motherboard.
+11. Now take 1.8 meters of 4mm black tubing and push it into the other fork of the Y splitter. Take the loose end, and route it underneath the motherboard.
 
-11. Route both the black tubing and the wire for the new toolhead up along the X umbilical. Attach them with new zip ties, or slip it inside your existing ones, alongside the first tool head's tubing and wires.
+12. Route both the black tubing and the wire for the new toolhead up along the X umbilical. Attach them with new zip ties, or slip it inside your existing ones, alongside the first tool head's tubing and wires.
   {{< container-image path="images/IMG_0824.JPG" alt="" >}}
 
-12. With the pneumatic tubing dangling loose past the end of the swivel arm, cut any excess tubing (still allowing some slack for motor rotation). Push the other end into the pneumatic coupling on the back side of the rotation stepper motor. Extra slack will allow the motor to rotate freely 180 degrees in each direction, so err on the side of leaving more than less. If the tubing falls away from the umbilical, use one or two small zip ties to secure them together.
+13. With the pneumatic tubing dangling loose past the end of the swivel arm, cut any excess tubing (still allowing some slack for motor rotation). Push the other end into the pneumatic coupling on the back side of the rotation stepper motor. Extra slack will allow the motor to rotate freely 180 degrees in each direction, so err on the side of leaving more than less. If the tubing falls away from the umbilical, use one or two small zip ties to secure them together.
   {{< container-image path="images/IMG_0825.JPG" alt="" >}}
 
-13. Plug the cable into the new tool motor. Make sure it has enough slack so that it isn't strained if the tool is raised or lowered.
+14. Plug the cable into the new tool motor. Make sure it has enough slack so that it isn't strained if the tool is raised or lowered.
   {{< container-image path="images/plug in toolhead.png" alt="plugging in the new tool motor">}}
 
-14. Plug the new cable (labeled `RM`) into the first port in the second row, labeled `R`. (Note this image shows a Rev 4 motherboard, but the connector is in the same place on the Rev 3 motherboard.)
+15. Plug the new cable (labeled `RM`) into the first port in the second row, labeled `R`. (Note this image shows a Rev 4 motherboard, but the connector is in the same place on the Rev 3 motherboard.)
   {{< container-image path="images/plug-rm.JPG" alt="" >}}
 
 ## Configuring OpenPnP
