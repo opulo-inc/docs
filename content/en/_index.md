@@ -8,7 +8,7 @@ cascade:
 
 {{< blocks/cover title="LumenPnP Documentation" image_anchor="top" height="full" color="orange" >}}
 <div class="mx-auto">
-	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
+	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/semi-assembly" >}}">
 		Docs <i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
 	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://www.youtube.com/playlist?list=PLIeJXmcg1baLBz3x0nCDqkYpKs2IWGHk4">
@@ -24,16 +24,12 @@ cascade:
 LumenPnP development is led by Stephen Hawes on his YouTube channel.
 {{% /blocks/feature %}}
 
-
 {{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/index-machines/index" %}}
 We do a [Pull Request](https://github.com/index-machines/index/pulls) contributions workflow on **GitHub**. New users are always welcome!
 {{% /blocks/feature %}}
-
 
 {{% blocks/feature icon="fab fa-discord" title="Join us on Discord!" url="https://discordapp.com/invite/TCwy6De" %}}
 For discussion of latest features etc.
 {{% /blocks/feature %}}
 
-
 {{< /blocks/section >}}
-
