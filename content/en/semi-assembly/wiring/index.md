@@ -128,7 +128,7 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
   {{< container-image path="images/plug-zm.JPG" alt="" >}}
   {{< container-image path="images/plug-lm.JPG" alt="" >}}
 
-31. Take the two tubes left and stick them back under the motherboard, out the right side, and plug them into the pneumatic fitting that matches the label on the tubing.
+31. Take the two tubes left and stick them back under the motherboard, out the right side, and plug them into the pneumatic fitting that matches the label on the tubing. (Older machines have `LH` on top and `RH` on the bottom, but newer machines have `RH` on top and `LH` on the bottom for easier cable management.)
   {{< container-image path="images/guide-tubing-1.JPG" alt="" >}}
   {{< container-image path="images/guide-tubing-2.JPG" alt="" >}}
   {{< container-image path="images/plug-tubing.JPG" alt="" >}}
