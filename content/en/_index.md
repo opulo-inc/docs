@@ -24,8 +24,8 @@ cascade:
 LumenPnP development is led by Stephen Hawes on his YouTube channel.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/index-machines/index" %}}
-We do a [Pull Request](https://github.com/index-machines/index/pulls) contributions workflow on **GitHub**. New users are always welcome!
+{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/opulo-inc/lumenpnp" %}}
+We do a [Pull Request](https://github.com/opulo-inc/lumenpnp/pulls) contributions workflow on **GitHub**. New users are always welcome!
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fab fa-discord" title="Join us on Discord!" url="https://discordapp.com/invite/TCwy6De" %}}
