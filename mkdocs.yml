@@ -1,0 +1,85 @@
+site_name: Opulo Documentation
+site_url: https://docs.opulo.io/
+repo_url: https://github.com/opulo-inc/documentation/
+
+extra_css: [stylesheets/extra.css]
+
+markdown_extensions:
+  - admonition
+  - def_list
+
+theme:
+  name: material
+  logo: img/opulo.png
+  favicon: img/favicon.ico
+  font:
+    text: Roboto
+  features:
+    - navigation.footer
+
+nav:
+  - Home: index.md
+  - Semi Assembly (v3): 
+        - Introduction: semi-assembly/index.md
+        - Unboxing: semi-assembly/unboxing/index.md
+        - Assembling the Frame: semi-assembly/assembling-frame/index.md
+        - Mounting Staging Plates: semi-assembly/mounting-staging-plates/index.md
+        - Wiring: semi-assembly/wiring/index.md
+  - Kit Assembly (v2): 
+        - Introduction: byop/index.md
+        - Mechanical Assembly:
+            - Printing Parts: byop/mechanical-assembly/printing-parts/index.md
+            - Belt Tensioners: byop/mechanical-assembly/belt-tensioners/index.md
+            - Left Side: byop/mechanical-assembly/left-side/index.md
+            - Right Side: byop/mechanical-assembly/right-side/index.md
+            - Connecting the Sides: byop/mechanical-assembly/connecting-sides/index.md
+            - Y Gantry Assembly: byop/mechanical-assembly/y-gantry-assembly/index.md
+            - X Gantry Assembly: byop/mechanical-assembly/x-gantry-assembly/index.md
+            - Mounting X Gantry to Y: byop/mechanical-assembly/mount-x-to-y/index.md
+            - Mount Y Gantry to Frame: byop/mechanical-assembly/mount-y-to-frame/index.md
+            - Attaching Belts: byop/mechanical-assembly/attaching-belts/index.md
+            - Populating the Staging Plate: byop/mechanical-assembly/populating-staging-plate/index.md
+        - Motherboard Installation:
+            - Install THT: byop/motherboard/installing-tht/index.md
+            - Mounting the Motherboard: byop/motherboard/mounting/index.md
+            - Updating Firmware: byop/motherboard/update-firmware/index.md
+        - Wiring and Pneumatics:
+            - Wiring the Y Motors: byop/wiring-and-pneumatics/wiring-y-motors/index.md
+            - Sheathing the Umbilicals: byop/wiring-and-pneumatics/sheathing-umbilicals/index.md
+            - Routing Y Gantry Umbilical: byop/wiring-and-pneumatics/routing-y-umbilical/index.md
+            - Routing X Gantry Umbilical: byop/wiring-and-pneumatics/routing-x-umbilical/index.md
+            - Connecting to the Motherboard: byop/wiring-and-pneumatics/connecting-to-mobo/index.md
+            - Connecting Pneumatics: byop/wiring-and-pneumatics/connecting-pneumatics/index.md
+        - Testing:
+            - Connect to the Computer: byop/testing/connect-computer/index.md
+            - Motor Check: byop/testing/motor-check/index.md
+            - Actuator Check: byop/testing/actuator-check/index.md
+            - Feedback: byop/testing/feedback/index.md
+  - OpenPnP:
+        - Introduction: openpnp/index.md
+        - Calibration:
+              - Getting Started: openpnp/calibration/index.md
+              - Importing Configuration: openpnp/calibration/import-config/index.md
+              - Connecting to Your Machine: openpnp/calibration/connect-to-machine/index.md
+              - Camera Fisheye: openpnp/calibration/camera-fisheye-cal/index.md
+              - Homing Fiducial: openpnp/calibration/homing-fiducial/index.md
+              - MM/Pixel: openpnp/calibration/mm-per-pixel/index.md
+              - Nozzle Offset: openpnp/calibration/nozzle-offset/index.md
+              - Bottom Camera Position: openpnp/calibration/bottom-camera-position/index.md
+              - Backlash Compensation: openpnp/calibration/backlash-compensation/index.md
+              - Automatic Toolchanger: openpnp/calibration/auto-toolchanger/index.md
+        - Running Your First Job: 
+              - Introduction: openpnp/ftp/index.md
+              - Installing Feeders: openpnp/ftp/installing-the-feeders/index.md
+              - Setting Up the Board: openpnp/ftp/setting-up-the-board/index.md
+        - Next Steps: openpnp/next-steps/index.md
+  - Misc:
+        - Troubleshooting: 
+              - Symptoms: misc/troubleshooting/symptoms/index.md
+              - Solutions: misc/troubleshooting/solutions/index.md
+              - Diagnostic Routines: misc/troubleshooting/diagnostic-routines/index.md
+              - Vision Pipeline Adjustment: misc/troubleshooting/vision-pipeline-adjustment/index.md
+        - Maintentance and Upgrades: 
+              - REV03 Mobo Interposer Guide: misc/maintenance-upgrades/rev3-vac-interposer/index.md
+              - Second Nozzle Upgrade Guide: misc/maintenance-upgrades/second-tool/index.md
+
