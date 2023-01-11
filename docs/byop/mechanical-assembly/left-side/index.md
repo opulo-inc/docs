@@ -56,10 +56,10 @@ Now that the belt tensioner arms are assembled and attached, it's time to start 
     ![](images/Left-Side-Step-16.png)
 
 9. Next, we'll mount the `Frame Umbilical Mount` as shown, threading directly into the part.
-  ![](images/Screen Shot 2022-02-04 at 2.43.16 PM.PNG)
+  ![](images/Screen Shot 2022-02-04 at 2.43.16 PM.png)
 
 10. Lastly, we'll assemble the umbilical swivel. `Swivel Part 1 and Swivel Part 2` fit together as shown below, and are secured in place with a M5x40mm screw and an M5 nut. Tighten so there's no play in the fit, but the two parts can swivel easily. This part helps keep the X gantry umbilical suspended over the build area. Set it aside for now.
-  ![](images/Screen Shot 2022-02-04 at 2.45.39 PM.PNG)
+  ![](images/Screen Shot 2022-02-04 at 2.45.39 PM.png)
 
 ## Next steps
 

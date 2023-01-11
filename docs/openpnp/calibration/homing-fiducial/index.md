@@ -24,24 +24,24 @@ Now that fisheye calibration is complete, we can set up the datum board. The dat
   ![Expanding the Machine Config options](images/Expand-Checkbox-3.png)
 
 5. Click on `Heads > ReferenceHead H1`.
-  ![Reviewing the ReferenceHead options](images/Select-reference-head-H1.png)
+  ![Reviewing the ReferenceHead options](images/Select-Reference-Head-H1.png)
   
-6. In the bottom right details pane, change the `Homing Method` to `ResetToFiducialLocation`. This will set OpenPnP to use the top camera to look for the homing fiducial to more precisely home the XY gantry, instead of only using the limit switches.
+1. In the bottom right details pane, change the `Homing Method` to `ResetToFiducialLocation`. This will set OpenPnP to use the top camera to look for the homing fiducial to more precisely home the XY gantry, instead of only using the limit switches.
   ![Switch to using the homing fiducial](images/Select-ResetToFiducialLocation.png)
 
-7. Click `Apply` to save this change.
+1. Click `Apply` to save this change.
   ![Save the homing technique](images/Homing-fiducial-apply.png)
 
-8. Click on the "Position Camera over location" icon button show below. This will move the top camera to approximately where your datum board is mounted.
+1. Click on the "Position Camera over location" icon button show below. This will move the top camera to approximately where your datum board is mounted.
   ![Position top camera over homing fiducial](images/Position-camera-over-homing-fiducial.png)
 
-9. In the bottom left Machine Controls pane, Select the `Actuators` tab.
+1. In the bottom left Machine Controls pane, Select the `Actuators` tab.
   ![Switch to the Actuators Tab](images/Actuators-tab.png)
 
-10. Turn on the LED ring lights by pressing the `LED` button (if they're not already on).
+1.  Turn on the LED ring lights by pressing the `LED` button (if they're not already on).
   ![Turn on the LEDs](images/Turn-on-LEDs.png)
 
-11. Rotate the Top Camera lens until the board is sharply in focus. If you're having trouble, try using the community-created [lens adjustment tool](https://www.printables.com/model/208453-lumen-pnp-lens-adjustment-tool).
+1.  Rotate the Top Camera lens until the board is sharply in focus. If you're having trouble, try using the community-created [lens adjustment tool](https://www.printables.com/model/208453-lumen-pnp-lens-adjustment-tool).
   ![the homing fiducial in focus](images/In-focus-homing-fiducial.png)
 
     !!! info "Tip"
