@@ -1,13 +1,13 @@
-# docs.opulo.io
+# Opulo Documentation
 
-The source for the Opulo Docs found at [docs.opulo.io](https://docs.opulo.io)
+This repository is the source for the Opulo Documentation site found at [docs.opulo.io](https://docs.opulo.io)
 
 ## Local Development
 
 ### Getting Started
 
 1. Install Git if necessary: [git-scm.com](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-2. Install the **extended version** of Hugo: [gohugo.io/installation](https://gohugo.io/installation). See also the [quickstart guide](https://gohugo.io/getting-started/quick-start/).
+2. Install Mkdocs.
 3. Open Terminal, Command Prompt, or Powershell.
 4. Pick a location to store the docs, and use [cd](https://linuxhint.com/cd-command-in-terminal/) to navigate there.
 5. Clone this repository:
@@ -23,11 +23,11 @@ The source for the Opulo Docs found at [docs.opulo.io](https://docs.opulo.io)
 In the project directory, you can run:
 
 ```bash
-hugo server -D --disableFastRender
+mkdocs serve
 ```
 
 This runs the site in the development mode.
-Open [http://localhost:1313](http://localhost:1313) to view it in your browser.
+Open [http://localhost:8000](http://localhost:8000) to view it in your browser.
 
 The page will reload when you make changes.
 

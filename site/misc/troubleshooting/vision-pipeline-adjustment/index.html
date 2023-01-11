@@ -1,0 +1,1509 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Vision Pipeline Adjustment
+">
+      
+      
+      
+        <link rel="canonical" href="https://docs.opulo.io/misc/troubleshooting/vision-pipeline-adjustment/">
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Vision Pipeline Adjustment - Opulo Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#intro-to-vision-tuning" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Opulo Documentation" class="md-header__button md-logo" aria-label="Opulo Documentation" data-md-component="logo">
+      
+  <img src="../../../img/opulo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Opulo Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Vision Pipeline Adjustment
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/opulo-inc/documentation/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Opulo Documentation" class="md-nav__button md-logo" aria-label="Opulo Documentation" data-md-component="logo">
+      
+  <img src="../../../img/opulo.png" alt="logo">
+
+    </a>
+    Opulo Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/opulo-inc/documentation/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Semi Assembly
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Semi Assembly" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Semi Assembly
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../semi-assembly/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../semi-assembly/unboxing/" class="md-nav__link">
+        Unboxing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../semi-assembly/assembling-frame/" class="md-nav__link">
+        Assembling the Frame
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../semi-assembly/mounting-staging-plates/" class="md-nav__link">
+        Mounting Staging Plates
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../semi-assembly/wiring/" class="md-nav__link">
+        Wiring
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Kit Assembly
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Kit Assembly" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Kit Assembly
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../byop/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../byop/mechanical-assembly/printing-parts/" class="md-nav__link">
+        Printing Parts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../byop/mechanical-assembly/belt-tensioners/" class="md-nav__link">
+        Belt Tensioners
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../byop/mechanical-assembly/left-side/" class="md-nav__link">
+        Left Side
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../byop/mechanical-assembly/right-side/" class="md-nav__link">
+        Right Side
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../byop/mechanical-assembly/connecting-sides/" class="md-nav__link">
+        Connecting the Sides
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../byop/mechanical-assembly/y-gantry-assembly/" class="md-nav__link">
+        Y Gantry Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../byop/mechanical-assembly/x-gantry-assembly/" class="md-nav__link">
+        X Gantry Assembly
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          OpenPnP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="OpenPnP" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          OpenPnP
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openpnp/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2">
+          Calibration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Calibration" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Calibration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openpnp/calibration/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openpnp/calibration/import-config/" class="md-nav__link">
+        Importing Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openpnp/calibration/connect-to-machine/" class="md-nav__link">
+        Connecting to Your Machine
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openpnp/calibration/camera-fisheye-cal/" class="md-nav__link">
+        Camera Fisheye
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openpnp/calibration/homing-fiducial/" class="md-nav__link">
+        Homing Fiducial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openpnp/calibration/mm-per-pixel/" class="md-nav__link">
+        MM/Pixel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openpnp/calibration/nozzle-offset/" class="md-nav__link">
+        Nozzle Offset
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openpnp/calibration/bottom-camera-position/" class="md-nav__link">
+        Bottom Camera Position
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openpnp/calibration/backlash-compensation/" class="md-nav__link">
+        Backlash Compensation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openpnp/calibration/auto-toolchanger/" class="md-nav__link">
+        Automatic Toolchanger
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_3">
+          Running Your First Job
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Running Your First Job" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Running Your First Job
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openpnp/ftp/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openpnp/ftp/installing-the-feeders/" class="md-nav__link">
+        Installing Feeders
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openpnp/ftp/setting-up-the-board/" class="md-nav__link">
+        Setting Up the Board
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../openpnp/next-steps/" class="md-nav__link">
+        Next Steps
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Misc
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Misc" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Misc
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1" type="checkbox" id="__nav_5_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_1">
+          Troubleshooting
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Troubleshooting" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_1">
+          <span class="md-nav__icon md-icon"></span>
+          Troubleshooting
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../symptoms/" class="md-nav__link">
+        Symptoms
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solutions/" class="md-nav__link">
+        Solutions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diagnostic-routines/" class="md-nav__link">
+        Diagnostic Routines
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Vision Pipeline Adjustment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Vision Pipeline Adjustment
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#intro-to-vision-tuning" class="md-nav__link">
+    Intro to Vision Tuning
+  </a>
+  
+    <nav class="md-nav" aria-label="Intro to Vision Tuning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#computer-vision-basics" class="md-nav__link">
+    Computer Vision Basics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-organization" class="md-nav__link">
+    Pipeline Organization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-editing-view" class="md-nav__link">
+    Pipeline Editing View
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-camera-vision-pipeline" class="md-nav__link">
+    Top Camera Vision Pipeline
+  </a>
+  
+    <nav class="md-nav" aria-label="Top Camera Vision Pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homing-fiducials" class="md-nav__link">
+    Homing Fiducials
+  </a>
+  
+    <nav class="md-nav" aria-label="Homing Fiducials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-the-pipeline" class="md-nav__link">
+    Open the Pipeline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-the-debug-results" class="md-nav__link">
+    Check the debug results
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjust-pipeline" class="md-nav__link">
+    Adjust Pipeline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#review-pipeline-output" class="md-nav__link">
+    Review Pipeline Output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb-fiducials" class="md-nav__link">
+    PCB Fiducials
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2">
+          Maintentance and Upgrades
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Maintentance and Upgrades" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Maintentance and Upgrades
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintenance-upgrades/rev3-vac-interposer/" class="md-nav__link">
+        REV03 Mobo Interposer Guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#intro-to-vision-tuning" class="md-nav__link">
+    Intro to Vision Tuning
+  </a>
+  
+    <nav class="md-nav" aria-label="Intro to Vision Tuning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#computer-vision-basics" class="md-nav__link">
+    Computer Vision Basics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-organization" class="md-nav__link">
+    Pipeline Organization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-editing-view" class="md-nav__link">
+    Pipeline Editing View
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-camera-vision-pipeline" class="md-nav__link">
+    Top Camera Vision Pipeline
+  </a>
+  
+    <nav class="md-nav" aria-label="Top Camera Vision Pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homing-fiducials" class="md-nav__link">
+    Homing Fiducials
+  </a>
+  
+    <nav class="md-nav" aria-label="Homing Fiducials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-the-pipeline" class="md-nav__link">
+    Open the Pipeline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-the-debug-results" class="md-nav__link">
+    Check the debug results
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjust-pipeline" class="md-nav__link">
+    Adjust Pipeline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#review-pipeline-output" class="md-nav__link">
+    Review Pipeline Output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb-fiducials" class="md-nav__link">
+    PCB Fiducials
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/opulo-inc/documentation/edit/master/docs/misc/troubleshooting/vision-pipeline-adjustment/index.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+  <h1>Vision Pipeline Adjustment</h1>
+
+<p>Computer vision is one of the most important and complicated elements of a pick and place machine, and the LumenPnP is no different. Vision is used in four main places:</p>
+<ol>
+<li>Finding your homing fiducial</li>
+<li>Finding the fiducial marks on your PCBs</li>
+<li>Finding the tips of your nozzles, and</li>
+<li>Confirming and orienting the parts the machine has picked up.</li>
+</ol>
+<p>We've included good settings in the <a href="../../../openpnp/calibration/import-config/">default machine configuration</a> to get you started, but you will likely need to tune the settings for your exact needs depending on the ambient light in your room, the settings you used when <a href="../../../openpnp/calibration/connect-to-machine/#bottom-camera-config">configuring your cameras</a>, and the kinds of components you're placing. This page is to get you set up to place components for your <a href="../../../openpnp/ftp/">FTP</a>, and learn the basics of how adjusting computer vision works. For more information, we highly recommend reading the <a href="https://github.com/openpnp/openpnp/wiki/Bottom-Vision">OpenPnP documentation</a>.</p>
+<h2 id="intro-to-vision-tuning">Intro to Vision Tuning</h2>
+<h3 id="computer-vision-basics">Computer Vision Basics</h3>
+<p>Computer vision used in OpenPnP takes photos from your top or bottom camera and passes them through a "Pipeline" of stages to identify what is in the image. Stages fall into a few categories:</p>
+<ol>
+<li>Manipulating the photo to make it easier for the computer to identify parts of the photo. For example: <code>Threshold</code>.</li>
+<li>Identifying certain elements of the photo. For example: <code>DetectCirclesHough</code>.</li>
+<li>Showing you more information on the screen so that you can build, debug, and tweak the pipeline. For example: <code>DrawCircles</code>.</li>
+</ol>
+<p>Because each of these kinds of stages live together in the pipeline, it can be a little confusing trying to decode how each stage works and what they're for.</p>
+<p>Each stage of the pipeline has "parameters" that control its function. For example, the <code>ImageWriteDebug</code> step will ask you for parts of a file name to use when saving a debug image. Another more typical example is the <code>Threshold</code> stage, which will use a <code>threshold</code> parameter to pick which parts of your image will become white, and which will become black.</p>
+<p>When editing your vision pipeline, you should be able to start with simply tuning the parameters for the stages in the default pipeline. As you get more experienced, and if you're setting up more complicated placement jobs, you may need to add more stages to the pipeline to fine tune it for your needs.</p>
+<h3 id="pipeline-organization">Pipeline Organization</h3>
+<p>As of the <code>2022-08-01_18-07-09.2a36a8d</code> update, OpenPnP added the "Vision" tab in the Machine Configuration section, which lets you create more specific pipelines for unique scenarios.  Now you can define multiple specific pipelines to handle identification of different PCB components differently if you're not able to build a single pipeline to accommodate them all. This adds more functionality, but can be confusing when getting started. In general we recommend having four main pipelines to get started (when doing the FTP and beyond):</p>
+<ol>
+<li>Finding your homing fiducial (Top Camera)</li>
+<li>Finding the fiducial marks on your PCBs (Top Camera)</li>
+<li>Finding the tips of your nozzles (Bottom Camera)</li>
+<li>Confirming and orienting the parts the machine has picked up. (Bottom Camera)</li>
+</ol>
+<p>Number 4 above is the one that you might expand when you move on to placing more complicated components. Note also that this "Vision" tab is brand new in OpenPnP, and so guidance here is subject to change as the new feature gets refined in future OpenPnP releases.</p>
+<h3 id="pipeline-editing-view">Pipeline Editing View</h3>
+<p>The pipeline editing view has several sections and features you should know about to make your tuning go more smoothly.</p>
+<ol>
+<li>The list of stages. Click on a stage to show it's results in the main view, and show its parameters in the stage settings.</li>
+<li>The main view. This shows the result of the currently selected stage unless a particular stage is pinned (see #5).</li>
+<li>Stage output. This shows error messages if there's a problem with your stage or pipeline.</li>
+<li>Stage settings. This lets you change the settings for the selected stage.</li>
+<li>Pin Image. This lets you keep the results of the currently selected stage on on main view, even if you select another stage. Use this to pin a debugging stage so that you can quickly see the results of changes to a stage you're editing.</li>
+</ol>
+<h2 id="top-camera-vision-pipeline">Top Camera Vision Pipeline</h2>
+<h3 id="homing-fiducials">Homing Fiducials</h3>
+<p>If you find that the machine is having a hard time finding the homing fiducial, you might need to edit the Vision Pipeline. The iterative strategy here is:</p>
+<ol>
+<li>Open the Pipeline.</li>
+<li>Check the current output and identify the problem that is causing homing to fail.</li>
+<li>Adjust the stage settings to change the pipeline output.</li>
+<li>Review the new pipeline output.</li>
+<li>Return to step 2 as necessary.</li>
+</ol>
+<h4 id="open-the-pipeline">Open the Pipeline</h4>
+<ol>
+<li>
+<p>Click on the <code>Machine Setup</code> tab in the top right pane.
+  <img alt="" src="images/Machine-Setup-Tab-3.png" /></p>
+</li>
+<li>
+<p>Click on the "Expand" checkbox if necessary.
+  <img alt="Expanding the Machine Config options" src="images/Expand-Checkbox-3.png" /></p>
+</li>
+<li>
+<p>Click on <code>Heads &gt; ReferenceHead H1</code>.
+  <img alt="Reviewing the ReferenceHead options" src="images/Select-reference-head-H1.png" /></p>
+</li>
+<li>
+<p>Click on the "Position Camera over location" icon button show below. This will move the top camera to where your datum board is mounted.
+  <img alt="Position top camera over homing fiducial" src="images/Position-camera-over-homing-fiducial.png" /></p>
+</li>
+<li>
+<p>Confirm that your top camera is positioned exactly over the homing fiducial.
+  <img alt="Center the homing fiducial in the camera view" src="images/Homing-fiducial-centered.png" /></p>
+</li>
+<li>
+<p>Adjust the exposure of your camera image as mentioned in the <a href="../../../openpnp/calibration/homing-fiducial/#double-check-camera-exposure">Homing Fiducial Section</a>.</p>
+</li>
+<li>
+<p>Go to the <code>Vision</code> tab.
+  <img alt="Switch to the vision tab" src="images/vision-tab.png" /></p>
+</li>
+<li>
+<p>Select on <code>FiducialVision</code> from the type dropdown.
+  <img alt="Select fiducial vision" src="images/fiducial-vision-dropdown.png" /></p>
+</li>
+<li>
+<p>Select <code>- Default Machine Fiducial Locator -</code> from the pipeline list.
+  <img alt="Select the default pipeline" src="images/select-default-fiducial-vision.png" /></p>
+</li>
+<li>
+<p>Click on Pipeline <code>Edit</code>.
+  <img alt="Edit the pipeline" src="images/edit-pipeline.png" /></p>
+</li>
+</ol>
+<h4 id="check-the-debug-results">Check the debug results</h4>
+<ol>
+<li>
+<p>Click on the <code>DrawCircles</code> stage.
+  <img alt="Click on the DrawCircles stage" src="images/draw-circles-stage.png" /></p>
+</li>
+<li>
+<p>The main view will show a circle if OpenPnP was able to identify what it thinks is the homing fiducial.</p>
+<ol>
+<li>If there are more than one circle, then we need to more clearly distinguish the real homing fiducial.</li>
+<li>If there is one circle, but it is not correctly drawn around the homing fiducial, then we need to more clearly distinguish the homing fiducial.</li>
+<li>If there are no circles, we need to loosen the filtering to make the real homing fiducial easier to identify.</li>
+<li>If the image looks like the good one above, your pipeline is properly tuned. If you've still been getting failures when homing, you may need to slightly loosen the filtering.</li>
+</ol>
+</li>
+</ol>
+<h4 id="adjust-pipeline">Adjust Pipeline</h4>
+<ol>
+<li>
+<p>Click on the <code>Threshold</code> stage
+  <img alt="Select the threshold stage" src="images/threshold-stage.png" /></p>
+</li>
+<li>
+<p>Raise or lower the <code>threshold</code> parameter as necessary until the image is precise.</p>
+<ol>
+<li>If the image is too black, raise the <code>threshold</code> setting.</li>
+<li>If the image is too bright, lower the <code>threshold</code> setting.
+   <!-- ![](images/detect-circles-stage.png) -->
+</li>
+</ol>
+</li>
+<li>
+<p>Click on the <code>DrawCircles</code> stage and check if the fiducial has been correctly identified.
+  <img alt="Click on the DrawCircles stage" src="images/draw-circles-stage.png" /></p>
+</li>
+<li>
+<p>If not, pin the view of the <code>DrawCircles</code> stage.
+  <img alt="Pin the DrawCircles view" src="images/pin-draw-circles.png" /></p>
+</li>
+<li>
+<p>Click on the <code>DetectCirclesHough</code> stage.
+  <img alt="Select the detect circles stage" src="images/detect-circles-stage.png" /></p>
+</li>
+<li>
+<p>Raise or lower the <code>param2</code> parameter as necessary until the correct number of circles are identified.</p>
+<ol>
+<li>If there are no circles, lower the <code>param2</code> setting.</li>
+<li>If there are too many circles, raise the <code>param2</code> setting.</li>
+</ol>
+</li>
+</ol>
+<!-- TODO: Photo shop image -->
+<h4 id="review-pipeline-output">Review Pipeline Output</h4>
+<ol>
+<li>
+<p>When the fiducial is correctly identified, close the pipeline editor.
+  <img alt="Close the pipeline editor" src="images/close-pipeline-editor.png" /></p>
+</li>
+<li>
+<p>When prompted, save the edits you've made.
+  <img alt="Save the changes to the pipeline" src="images/save-pipeline-changes.png" /></p>
+</li>
+<li>
+<p>Try homing the machine to see if it can identify the homing fiducial.
+  <img alt="Home the machine" src="images/home-machine-from-vision.png" /></p>
+</li>
+</ol>
+<h3 id="pcb-fiducials">PCB Fiducials</h3>
+<ol>
+<li>
+<p>Go to the <code>Vision</code> tab.
+   <img alt="Switch to the vision tab" src="images/vision-tab.png" /></p>
+</li>
+<li>
+<p>Select on <code>FiducialVision</code> from the type dropdown.
+   <img alt="Select fiducial vision" src="images/fiducial-vision-dropdown.png" /></p>
+</li>
+<li>
+<p>Select <code>FIDUCIAL-1X2</code> from the pipeline list. <!-- TODO: images are wrong here -->
+   <img alt="Select the default pipeline" src="images/select-default-fiducial-vision.png" /></p>
+</li>
+<li>
+<p>Click on Pipeline <code>Edit</code>.
+   <img alt="Edit the pipeline" src="images/edit-pipeline.png" /></p>
+</li>
+<li>
+<p>Continue with the same procedure as the <a href="#check-the-debug-results">Homing fiducial</a> section above.</p>
+</li>
+</ol>
+<!-- needs photos and more
+## Bottom Camera Vision Pipeline
+
+### Nozzles
+
+1. Go to the `Vision` tab.
+   ![](images/vision-tab.png)
+
+2. Select on `BottomVision` from the type dropdown.
+   ![](images/fiducial-vision-dropdown.png)
+
+3. Select `- Default Machine Bottom Vision -` from the pipeline list.
+   ![](images/select-default-fiducial-vision.png)
+
+4. Click on Pipeline `Edit`.
+   ![](images/edit-pipeline.png)
+
+### Part Recognition
+
+1. Go to the `Vision` tab.
+   ![](images/vision-tab.png)
+
+2. Select on `BottomVision` from the type dropdown.
+   ![](images/fiducial-vision-dropdown.png)
+
+3. Select `- Default Machine Bottom Vision -` from the pipeline list.
+   ![](images/select-default-fiducial-vision.png)
+
+4. Click on Pipeline `Edit`.
+   ![](images/edit-pipeline.png) -->
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../diagnostic-routines/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Diagnostic Routines" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Diagnostic Routines
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../maintenance-upgrades/rev3-vac-interposer/" class="md-footer__link md-footer__link--next" aria-label="Next: REV03 Mobo Interposer Guide" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              REV03 Mobo Interposer Guide
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>
