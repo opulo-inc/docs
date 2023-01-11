@@ -60,7 +60,7 @@ In this step, you will assemble the main frame of the machine.
   ![](images/front-rail-right-leg-4.JPG)
 
 1.  Place the front and right leg subassemblies upright as shown in the image below.
-  ![](legs-and-front-rail.JPG)
+  ![](images/legs-and-front-rail.JPG)
 
 1.  Ensure the t-slot nut on right side of the front rail is oriented as shown below. Lift the front rail up into the bottom extrusion of the right leg subassembly, and slide it towards you into the front right leg as shown. Tighten the front screw in place.
   ![](images/front-rail-mount-1.JPG)

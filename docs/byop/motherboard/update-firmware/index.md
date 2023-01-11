@@ -13,7 +13,7 @@
 4. Grab Marlin configuration files [here](https://github.com/MarlinFirmware/Configurations/tree/import-2.1.x/config/examples/Opulo/Lumen_REV4) and replace the files in the Marlin/Marlin folder with those new ones.
 5. Install the Auto Build Marlin plugin using this [Marlin Documentation page](https://marlinfw.org/docs/basics/auto_build_marlin.html), or download it directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MarlinFirmware.auto-build).
 6. Try to build Marlin using the build button with the hammer icon as shown below:
-![](images/marlin-auto-build-ui.PNG)
+![](images/marlin-auto-build-ui.png)
 
 1. If this is successful, attach the LumenPnP Mobo to your computer with the USB cable. If it isn't, this might help:
     * Check the error messages for configuration errors and fix them, or replace it with the default config
@@ -64,7 +64,7 @@ If you're absolutely sure that ABM is the way to go, do this:
    4. Release the `BOOT` button
  ![](images/IMG_0749.JPG)
 1. Now, press the upload button in ABM as shown below:
-![](images/marlin-auto-build-ui.PNG)
+![](images/marlin-auto-build-ui.png)
 1. Wait for the process to finish
 2. Continue with step 11
 {{% /alert %}}
@@ -77,7 +77,7 @@ If you're absolutely sure that ABM is the way to go, do this:
 4. Grab Marlin [configuration files](https://github.com/MarlinFirmware/Configurations/tree/import-2.1.x/config/examples/Opulo/Lumen_REV4) and replace the files in the Marlin/Marlin folder with those new ones.
 
 5. Edit the platformio.ini file to indicate which board you're uploading to. Update `default_envs` to read `Opulo_Lumen_REV3` or `Opulo_Lumen_REV4` depending on your motherboard.
-  ![](images/Screen Shot 2022-02-04 at 7.27.25 PM.PNG)
+  ![](images/Screen Shot 2022-02-04 at 7.27.25 PM.png)
 
 1. Attach the LumenPnP Mobo to your computer with the USB cable.
 

@@ -20,7 +20,7 @@ Refer to the images below for referencing where to mount parts on the staging pl
 Some LumenPnP kits shipped with a pump that had its connector pre-soldered to it. If your pump is not pre-soldered, follow along here to prepare your pump.
 
 1. Gather your Pump, the pump wire (labeled "P1"), and two lengths of heatshrink.
-  ![](images/Soldering Pump overview.jpg)
+  ![](images/Soldering Pump overview.JPG)
 
 2. Slip the heatshrink over the two exposed leads of the wire.
   ![](images/Heatshrink slipped on leads.JPG)
@@ -32,7 +32,7 @@ Some LumenPnP kits shipped with a pump that had its connector pre-soldered to it
   ![](images/wire soldered.JPG)
 
 5. Slip the heat shrink over the solder joints and motor lead. Use a hot air gun, lighter, or other heat source to shrink the heatshrink.
-  ![](images/hot air gun.png)
+  ![](images/Hot Air Gun.png)
   ![](images/finished pump.JPG)
 
 ## Pump mount
@@ -83,7 +83,7 @@ Now we'll attach the `Valve Mount` to the staging plate.
 
 12. Use four M3x8mm screws to mount the `Valve Mount` to the staging plate in the location shown: E23, E25, G23, G25.
   ![](images/Populating-The-Staging-Plate-Step-7-ALT.png)
-  ![](images/IMG_0745.jpg)
+  ![](images/IMG_0745.JPG)
 
 ## Pneumatic Y splitter mount
 

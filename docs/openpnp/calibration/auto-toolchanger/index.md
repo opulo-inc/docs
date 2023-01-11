@@ -13,7 +13,7 @@ Throughout the course of a job, you will find that you need multiple different s
   ![](images/inserted-nozzles.png)
 
 2. Apply some lubricant to the end of your nozzle holder with the lubrication packet included with your nozzles. This is important for repeatably fully attaching the nozzles without damaging the rubber O-rings around the holder.
-  ![](images/apply-super-lube.png")
+  ![](images/apply-super-lube.png)
 
 3. Click on the `Machine Setup` tab in the top right pane.
   ![](images/Machine-Setup-Tab-3.png)

@@ -9,8 +9,8 @@ With a complete frame assembled, we can now route the GT2 timing belt that makes
 |    8 | M5x10 machine screw   |
 
 1. We'll start with the Y axis. If you'd like to precut your belt instead of routing the entirety of it through the machine, you can cut two 1400mm lengths for the Y axis motors. To help guide the belt through the openings in the prints, bend it backwards as shown below so that the belt has a curve to it.
-  ![](images/PXL_20220222_213242808.JPG)
-  ![](images/PXL_20220222_213247038.JPG)
+  ![](images/PXL_20220222_213242808.jpg)
+  ![](images/PXL_20220222_213247038.jpg)
 
 1. Take your length of GT2 belt and stick it inside the extrusion (smooth side facing outward), behind the `Y Gantry` as shown below. Getting the belt to come out of the slot in the Y axis gantry can be difficult. Here's some strategies:
    1. Try using a small allen wrench with a ball tip to guide the belt out of the hole. (Photos below)

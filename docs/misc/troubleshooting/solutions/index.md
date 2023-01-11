@@ -6,7 +6,7 @@ If the toolhead has crashed and one of the axis has skipped steps, it's likely t
 
 ## Incorrect Toolhead Offset
 
-If the offset of the nozzle tip to the top camera is set incorrectly, the machine will place parts slightly offset from where they should be and may not pick them up correctly. Redo the [Nozzle Offset Calibration](../../../openpnp/calibration/nozzle-offset/index.md" >}}) to solve this issue. You may also tweak the values manually in OpenPnP under `Machine Setup -> Heads -> ReferenceHead H1 -> Nozzles -> ReferenceNozzle N1 -> Offset Wizard -> Nozzle head offsets`.
+If the offset of the nozzle tip to the top camera is set incorrectly, the machine will place parts slightly offset from where they should be and may not pick them up correctly. Redo the [Nozzle Offset Calibration](../../../openpnp/calibration/nozzle-offset/index.md) to solve this issue. You may also tweak the values manually in OpenPnP under `Machine Setup -> Heads -> ReferenceHead H1 -> Nozzles -> ReferenceNozzle N1 -> Offset Wizard -> Nozzle head offsets`.
 
 ## Bad Fiducial Scan
 
