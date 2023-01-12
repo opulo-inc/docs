@@ -1,6 +1,6 @@
 site_name: Opulo Documentation
 site_url: https://docs.opulo.io/
-repo_url: https://github.com/opulo-inc/documentation/
+repo_url: https://github.com/opulo-inc/lumenpnp/
 
 extra_css: [stylesheets/extra.css]
 
