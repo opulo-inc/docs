@@ -14,7 +14,7 @@ Computer vision is one of the most important and complicated elements of a pick 
 3. Finding the tips of your nozzles, and
 4. Confirming and orienting the parts the machine has picked up.
 
-We've included good settings in the [default machine configuration](../../../openpnp/calibration/import-config/index.md) to get you started, but you will likely need to tune the settings for your exact needs depending on the ambient light in your room, the settings you used when [configuring your cameras](../../../openpnp/calibration/connect-to-machine/index.md#bottom-camera-config), and the kinds of components you're placing. This page is to get you set up to place components for your [FTP](../../../openpnp/ftp/index.md), and learn the basics of how adjusting computer vision works. For more information, we highly recommend reading the [OpenPnP documentation](https://github.com/openpnp/openpnp/wiki/Bottom-Vision).
+We've included good settings in the [default machine configuration](../../../openpnp/calibration/1-import-config/index.md) to get you started, but you will likely need to tune the settings for your exact needs depending on the ambient light in your room, the settings you used when [configuring your cameras](../../../openpnp/calibration/2-connect-to-machine/index.md#bottom-camera-config), and the kinds of components you're placing. This page is to get you set up to place components for your [FTP](../../../openpnp/ftp/index.md), and learn the basics of how adjusting computer vision works. For more information, we highly recommend reading the [OpenPnP documentation](https://github.com/openpnp/openpnp/wiki/Bottom-Vision).
 
 ## Intro to Vision Tuning
 
@@ -68,7 +68,7 @@ If you find that the machine is having a hard time finding the homing fiducial, 
 #### Open the Pipeline
 
 1. Click on the `Machine Setup` tab in the top right pane.
-  ![](images/Machine-Setup-Tab-3.png)
+  ![Machine Setup Tab](images/Machine-Setup-Tab-3.png)
 
 2. Click on the "Expand" checkbox if necessary.
   ![Expanding the Machine Config options](images/Expand-Checkbox-3.png)
@@ -82,26 +82,26 @@ If you find that the machine is having a hard time finding the homing fiducial, 
 5. Confirm that your top camera is positioned exactly over the homing fiducial.
   ![Center the homing fiducial in the camera view](images/Homing-fiducial-centered.png)
 
-1. Adjust the exposure of your camera image as mentioned in the [Homing Fiducial Section](../../../openpnp/calibration/homing-fiducial/index.md#double-check-camera-exposure).
+6. Adjust the exposure of your camera image as mentioned in the [Homing Fiducial Section](../../../openpnp/calibration/4-homing-fiducial/index.md#double-check-camera-exposure).
 
-2. Go to the `Vision` tab.
+7. Go to the `Vision` tab.
   ![Switch to the vision tab](images/vision-tab.png)
 
-1. Select on `FiducialVision` from the type dropdown.
+8. Select on `FiducialVision` from the type dropdown.
   ![Select fiducial vision](images/fiducial-vision-dropdown.png)
 
-1. Select `- Default Machine Fiducial Locator -` from the pipeline list.
+9. Select `- Default Machine Fiducial Locator -` from the pipeline list.
   ![Select the default pipeline](images/select-default-fiducial-vision.png)
 
-1.  Click on Pipeline `Edit`.
+10. Click on Pipeline `Edit`.
   ![Edit the pipeline](images/edit-pipeline.png)
 
 #### Check the debug results
 
-11. Click on the `DrawCircles` stage.
+1. Click on the `DrawCircles` stage.
   ![Click on the DrawCircles stage](images/draw-circles-stage.png)
 
-12. The main view will show a circle if OpenPnP was able to identify what it thinks is the homing fiducial.
+2. The main view will show a circle if OpenPnP was able to identify what it thinks is the homing fiducial.
     1. If there are more than one circle, then we need to more clearly distinguish the real homing fiducial.
     2. If there is one circle, but it is not correctly drawn around the homing fiducial, then we need to more clearly distinguish the homing fiducial.
     3. If there are no circles, we need to loosen the filtering to make the real homing fiducial easier to identify.
@@ -109,36 +109,36 @@ If you find that the machine is having a hard time finding the homing fiducial, 
 
 #### Adjust Pipeline
 
-13. Click on the `Threshold` stage
+1. Click on the `Threshold` stage
   ![Select the threshold stage](images/threshold-stage.png)
 
-14. Raise or lower the `threshold` parameter as necessary until the image is precise.
+2. Raise or lower the `threshold` parameter as necessary until the image is precise.
     1. If the image is too black, raise the `threshold` setting.
     2. If the image is too bright, lower the `threshold` setting.
    <!-- ![](images/detect-circles-stage.png) -->
 
-15. Click on the `DrawCircles` stage and check if the fiducial has been correctly identified.
+3. Click on the `DrawCircles` stage and check if the fiducial has been correctly identified.
   ![Click on the DrawCircles stage](images/draw-circles-stage.png)
 
-1.  If not, pin the view of the `DrawCircles` stage.
+4. If not, pin the view of the `DrawCircles` stage.
   ![Pin the DrawCircles view](images/pin-draw-circles.png)
 
-1.  Click on the `DetectCirclesHough` stage.
+5. Click on the `DetectCirclesHough` stage.
   ![Select the detect circles stage](images/detect-circles-stage.png)
 
-1.  Raise or lower the `param2` parameter as necessary until the correct number of circles are identified.
+6. Raise or lower the `param2` parameter as necessary until the correct number of circles are identified.
     1. If there are no circles, lower the `param2` setting.
     2. If there are too many circles, raise the `param2` setting.
 <!-- TODO: Photo shop image -->
 #### Review Pipeline Output
 
-1.  When the fiducial is correctly identified, close the pipeline editor.
+1. When the fiducial is correctly identified, close the pipeline editor.
   ![Close the pipeline editor](images/close-pipeline-editor.png)
 
-1.  When prompted, save the edits you've made.
+2. When prompted, save the edits you've made.
   ![Save the changes to the pipeline](images/save-pipeline-changes.png)
 
-1.  Try homing the machine to see if it can identify the homing fiducial.
+3. Try homing the machine to see if it can identify the homing fiducial.
   ![Home the machine](images/home-machine-from-vision.png)
 
 ### PCB Fiducials
