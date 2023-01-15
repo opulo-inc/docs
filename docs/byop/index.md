@@ -73,4 +73,4 @@ Expect assembly to take about **eight hours** provided all parts are printed and
 
 ## Next steps
 
-Let's dive in! The first step is the mechanical assembly, and [printing all the parts](mechanical-assembly/printing-parts/index.md).
+Let's dive in! The first step is the mechanical assembly, and [printing all the parts](mechanical-assembly/1-printing-parts/index.md).
