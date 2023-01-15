@@ -28,17 +28,17 @@ nav:
   - Kit Assembly (v2): 
         - Introduction: byop/index.md
         - Mechanical Assembly:
-            - Printing Parts: byop/mechanical-assembly/printing-parts/index.md
-            - Belt Tensioners: byop/mechanical-assembly/belt-tensioners/index.md
-            - Left Side: byop/mechanical-assembly/left-side/index.md
-            - Right Side: byop/mechanical-assembly/right-side/index.md
-            - Connecting the Sides: byop/mechanical-assembly/connecting-sides/index.md
-            - Y Gantry Assembly: byop/mechanical-assembly/y-gantry-assembly/index.md
-            - X Gantry Assembly: byop/mechanical-assembly/x-gantry-assembly/index.md
-            - Mounting X Gantry to Y: byop/mechanical-assembly/mount-x-to-y/index.md
-            - Mount Y Gantry to Frame: byop/mechanical-assembly/mount-y-to-frame/index.md
-            - Attaching Belts: byop/mechanical-assembly/attaching-belts/index.md
-            - Populating the Staging Plate: byop/mechanical-assembly/populating-staging-plate/index.md
+            - Printing Parts: byop/mechanical-assembly/1-printing-parts/index.md
+            - Belt Tensioners: byop/mechanical-assembly/2-belt-tensioners/index.md
+            - Left Side: byop/mechanical-assembly/3-left-side/index.md
+            - Right Side: byop/mechanical-assembly/4-right-side/index.md
+            - Connecting the Sides: byop/mechanical-assembly/5-connecting-sides/index.md
+            - Y Gantry Assembly: byop/mechanical-assembly/6-y-gantry-assembly/index.md
+            - X Gantry Assembly: byop/mechanical-assembly/7-x-gantry-assembly/index.md
+            - Mounting X Gantry to Y: byop/mechanical-assembly/8-mount-x-to-y/index.md
+            - Mount Y Gantry to Frame: byop/mechanical-assembly/9-mount-y-to-frame/index.md
+            - Attaching Belts: byop/mechanical-assembly/10-attaching-belts/index.md
+            - Populating the Staging Plate: byop/mechanical-assembly/11-populating-staging-plate/index.md
         - Motherboard Installation:
             - Install THT: byop/motherboard/installing-tht/index.md
             - Mounting the Motherboard: byop/motherboard/mounting/index.md
@@ -59,19 +59,19 @@ nav:
         - Introduction: openpnp/index.md
         - Calibration:
               - Getting Started: openpnp/calibration/index.md
-              - Importing Configuration: openpnp/calibration/import-config/index.md
-              - Connecting to Your Machine: openpnp/calibration/connect-to-machine/index.md
-              - Camera Fisheye: openpnp/calibration/camera-fisheye-cal/index.md
-              - Homing Fiducial: openpnp/calibration/homing-fiducial/index.md
-              - MM/Pixel: openpnp/calibration/mm-per-pixel/index.md
-              - Nozzle Offset: openpnp/calibration/nozzle-offset/index.md
-              - Bottom Camera Position: openpnp/calibration/bottom-camera-position/index.md
-              - Backlash Compensation: openpnp/calibration/backlash-compensation/index.md
-              - Automatic Toolchanger: openpnp/calibration/auto-toolchanger/index.md
+              - Importing Configuration: openpnp/calibration/1-import-config/index.md
+              - Connecting to Your Machine: openpnp/calibration/2-connect-to-machine/index.md
+              - Camera Fisheye: openpnp/calibration/3-camera-fisheye-cal/index.md
+              - Homing Fiducial: openpnp/calibration/4-homing-fiducial/index.md
+              - MM/Pixel: openpnp/calibration/5-mm-per-pixel/index.md
+              - Nozzle Offset: openpnp/calibration/6-nozzle-offset/index.md
+              - Bottom Camera Position: openpnp/calibration/7-bottom-camera-position/index.md
+              - Backlash Compensation: openpnp/calibration/8-backlash-compensation/index.md
+              - Automatic Toolchanger: openpnp/calibration/9-auto-toolchanger/index.md
         - Running Your First Job: 
               - Introduction: openpnp/ftp/index.md
-              - Installing Feeders: openpnp/ftp/installing-the-feeders/index.md
-              - Setting Up the Board: openpnp/ftp/setting-up-the-board/index.md
+              - Installing Feeders: openpnp/ftp/1-installing-the-feeders/index.md
+              - Setting Up the Board: openpnp/ftp/2-setting-up-the-board/index.md
         - Next Steps: openpnp/next-steps/index.md
   - Misc:
         - Troubleshooting: 
@@ -79,7 +79,7 @@ nav:
               - Solutions: misc/troubleshooting/solutions/index.md
               - Diagnostic Routines: misc/troubleshooting/diagnostic-routines/index.md
               - Vision Pipeline Adjustment: misc/troubleshooting/vision-pipeline-adjustment/index.md
-        - Maintentance and Upgrades: 
+        - Maintenance and Upgrades: 
               - REV03 Mobo Interposer Guide: misc/maintenance-upgrades/rev3-vac-interposer/index.md
               - Second Nozzle Upgrade Guide: misc/maintenance-upgrades/second-tool/index.md
 
