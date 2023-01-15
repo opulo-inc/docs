@@ -7,25 +7,25 @@ If you built a V2 LumenPnP with only one nozzle, follow this guide to install a 
 
 [Download the LumenPnP BOM from the most recent release](https://github.com/opulo-inc/lumenpnp/releases) for specifications and links to purchase hardware for the upgrade:
 
-|  Qty | Off The Shelf Parts          |
-| ---: | ---------------------------- |
-|    1 | pump-mount (3D Printed)      |
-|    2 | rubber-band                  |
-|    1 | Vacuum Pump                  |
-|    1 | Pump Wire Harness            |
-|    1 | Solenoid Valve               |
-|    1 | pneumatic-y-adapter          |
-|    1 | Pneumatic Adapter MS4M-M5    |
-|    1 | NEMA11 Hollow Shaft Stepper  |
-|    1 | CP40 Holder                  |
-|    1 | R Motor Cable Harness        |
-|  325mm | Pneumatic Tubing 6mm OD    |
-| 2025mm | Pneumatic Tubing 4mm OD    |
-|    2 | M3x8 machine screw           |
-|    2 | M3x10 machine screw          |
-|    1 | M3x30 machine screw          |
-|    4 | M2.5x8 machine screw         |
-|    3 | M3 Hex Nuts                  |
+|    Qty | Off The Shelf Parts         |
+| -----: | --------------------------- |
+|      1 | pump-mount (3D Printed)     |
+|      2 | rubber-band                 |
+|      1 | Vacuum Pump                 |
+|      1 | Pump Wire Harness           |
+|      1 | Solenoid Valve              |
+|      1 | pneumatic-y-adapter         |
+|      1 | Pneumatic Adapter MS4M-M5   |
+|      1 | NEMA11 Hollow Shaft Stepper |
+|      1 | CP40 Holder                 |
+|      1 | R Motor Cable Harness       |
+|  325mm | Pneumatic Tubing 6mm OD     |
+| 2025mm | Pneumatic Tubing 4mm OD     |
+|      2 | M3x8 machine screw          |
+|      2 | M3x10 machine screw         |
+|      1 | M3x30 machine screw         |
+|      4 | M2.5x8 machine screw        |
+|      3 | M3 Hex Nuts                 |
 
 ## Installing the Tool Head
 
