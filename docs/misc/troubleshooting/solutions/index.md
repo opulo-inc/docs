@@ -2,11 +2,11 @@
 
 ## Crashed Toolhead
 
-If the toolhead has crashed and one of the axis has skipped steps, it's likely there will be a placement offset. Try jogging to your homing fiducial and see if the camera is centered on it (Found under `Machine Setup -> Heads -> ReferenceHead H1` and clicking on the "Jog camera to position" button next to the Homing Fiducal coordinates). If not, it's likely that the machine has skipped steps. Rehome the machine to solve this issue. You can set soft limits in the `Machine Setup > Axes` menus.
+If the toolhead has crashed and one of the axis has skipped steps, it's likely there will be a placement offset. Try jogging to your homing fiducial and see if the camera is centered on it (Found under `Machine Setup -> Heads -> ReferenceHead H1` and clicking on the "Jog camera to position" button next to the Homing Fiducial coordinates). If not, it's likely that the machine has skipped steps. Re-home the machine to solve this issue. You can set soft limits in the `Machine Setup > Axes` menus.
 
 ## Incorrect Toolhead Offset
 
-If the offset of the nozzle tip to the top camera is set incorrectly, the machine will place parts slightly offset from where they should be and may not pick them up correctly. Redo the [Nozzle Offset Calibration](../../../openpnp/calibration/nozzle-offset/index.md) to solve this issue. You may also tweak the values manually in OpenPnP under `Machine Setup -> Heads -> ReferenceHead H1 -> Nozzles -> ReferenceNozzle N1 -> Offset Wizard -> Nozzle head offsets`.
+If the offset of the nozzle tip to the top camera is set incorrectly, the machine will place parts slightly offset from where they should be and may not pick them up correctly. Redo the [Nozzle Offset Calibration](../../../openpnp/calibration/6-nozzle-offset/index.md) to solve this issue. You may also tweak the values manually in OpenPnP under `Machine Setup -> Heads -> ReferenceHead H1 -> Nozzles -> ReferenceNozzle N1 -> Offset Wizard -> Nozzle head offsets`.
 
 ## Bad Fiducial Scan
 
@@ -57,7 +57,7 @@ If the nozzle or camera is failing to repeatably move to the same position, it's
 
 ## USB Hub Overload
 
-Some computers' internal USB controllers are unable to process a webcam feed from both webcams through the same USB port. If you are unable to get both webcams to appear in OpenPnP, try unplugging one from the motherboard and plugging it directly into your computer. For more information about this, check out the [camera testing section](../../../openpnp/calibration/connect-to-machine/index.md) of the assembly instructions.
+Some computers' internal USB controllers are unable to process a webcam feed from both webcams through the same USB port. If you are unable to get both webcams to appear in OpenPnP, try unplugging one from the motherboard and plugging it directly into your computer. For more information about this, check out the [camera testing section](../../../openpnp/calibration/2-connect-to-machine/index.md) of the assembly instructions.
 
 ## Camera Drop-Down Selected
 
@@ -106,12 +106,12 @@ If your staging plate comes loose, all of your locations defined in OpenPnP will
 
 ## Check mm to Pixel Calibration
 
-Redo the steps in [mm/pixel Calibration](../../../openpnp/calibration/mm-per-pixel/index.md)
+Redo the steps in [mm/pixel Calibration](../../../openpnp/calibration/5-mm-per-pixel/index.md)
 
 ## Check fisheye calibration
 
-Redo the steps in [Camera Fisheye Calibration](../../../openpnp/calibration/camera-fisheye-cal/index.md)
+Redo the steps in [Camera Fisheye Calibration](../../../openpnp/calibration/3-camera-fisheye-cal/index.md)
 
 ## Check Board Location
 
-Go to the list of placements and position the top camera over a few of them. If they're all offset a little bit, your board location is probably incorrect. Redo [Finding the FTP Board Location](../../../openpnp/ftp/setting-up-the-board/index.md#finding-the-ftp-location).
+Go to the list of placements and position the top camera over a few of them. If they're all offset a little bit, your board location is probably incorrect. Redo [Finding the FTP Board Location](../../../openpnp/ftp/2-setting-up-the-board/index.md#finding-the-ftp-location).
