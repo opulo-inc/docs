@@ -46,4 +46,4 @@ Now we're going to combine the left and right side together using two aluminum e
 
 ## Next steps
 
-Continue to assembling the [Y Gantry](../y-gantry-assembly/index.md).
+Continue to assembling the [Y Gantry](../6-y-gantry-assembly/index.md).

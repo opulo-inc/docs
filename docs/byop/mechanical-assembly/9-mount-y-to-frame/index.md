@@ -51,4 +51,4 @@ Now the whole XY gantry assembly gets dropped onto the frame!
 
 ## Next steps
 
-Continue to [attaching the belts](../attaching-belts/index.md).
+Continue to [attaching the belts](../10-attaching-belts/index.md).

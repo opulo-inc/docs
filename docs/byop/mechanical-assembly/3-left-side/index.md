@@ -63,4 +63,4 @@ Now that the belt tensioner arms are assembled and attached, it's time to start 
 
 ## Next steps
 
-Continue to [assembling the right side](../right-side/index.md).
+Continue to [assembling the right side](../4-right-side/index.md).

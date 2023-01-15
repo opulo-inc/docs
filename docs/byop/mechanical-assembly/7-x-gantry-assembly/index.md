@@ -148,4 +148,4 @@ Now it's time to mount the Z gantries. Each gantry comes in two parts. The first
 
 ## Next steps
 
-Continue to [mounting the X Gantry to the Y Gantry](../mount-x-to-y/index.md).
+Continue to [mounting the X Gantry to the Y Gantry](../8-mount-x-to-y/index.md).

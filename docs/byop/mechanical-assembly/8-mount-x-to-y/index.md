@@ -75,4 +75,4 @@ Now that we have both gantries assembled, it's time to put them together.
 
 ## Next steps
 
-Continue to [mounting the Y Gantry to the Frame](../mount-y-to-frame/index.md).
+Continue to [mounting the Y Gantry to the Frame](../9-mount-y-to-frame/index.md).

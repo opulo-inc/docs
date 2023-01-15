@@ -82,4 +82,4 @@ The third and final tensioner is attached to the `X Idler Mount`. This is only s
 
 ## Next steps
 
-Now that all the tensioners are in the right place, continue with [assembling the left side](../left-side/index.md).
+Now that all the tensioners are in the right place, continue with [assembling the left side](../3-left-side/index.md).

@@ -88,4 +88,4 @@ There are some parts in the Bill of Materials page that are highlighted and flag
 
 ## Next steps
 
-Start by assembling the [belt tensioners](../belt-tensioners/index.md).
+Start by assembling the [belt tensioners](../2-belt-tensioners/index.md).

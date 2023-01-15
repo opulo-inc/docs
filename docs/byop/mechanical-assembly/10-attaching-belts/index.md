@@ -46,4 +46,4 @@ With a complete frame assembled, we can now route the GT2 timing belt that makes
 
 ## Next steps
 
-Continue to [populating the staging plate](../populating-staging-plate/index.md).
+Continue to [populating the staging plate](../11-populating-staging-plate/index.md).

@@ -47,4 +47,4 @@ Great! Now lets make the right side. Very similar to the left, just a couple sma
 
 ## Next steps
 
-Continue to [connecting the two sides together](../connecting-sides/index.md).
+Continue to [connecting the two sides together](../5-connecting-sides/index.md).

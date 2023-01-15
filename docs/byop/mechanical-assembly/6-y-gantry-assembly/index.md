@@ -96,4 +96,4 @@ Note: You will need to build two identical Y Gantry Sub-Assemblies. You can buil
 
 ## Next steps
 
-Continue to [assembling the X Gantry](../x-gantry-assembly/index.md).
+Continue to [assembling the X Gantry](../7-x-gantry-assembly/index.md).
