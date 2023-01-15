@@ -59,19 +59,19 @@ nav:
         - Introduction: openpnp/index.md
         - Calibration:
               - Getting Started: openpnp/calibration/index.md
-              - Importing Configuration: openpnp/calibration/import-config/index.md
-              - Connecting to Your Machine: openpnp/calibration/connect-to-machine/index.md
-              - Camera Fisheye: openpnp/calibration/camera-fisheye-cal/index.md
-              - Homing Fiducial: openpnp/calibration/homing-fiducial/index.md
-              - MM/Pixel: openpnp/calibration/mm-per-pixel/index.md
-              - Nozzle Offset: openpnp/calibration/nozzle-offset/index.md
-              - Bottom Camera Position: openpnp/calibration/bottom-camera-position/index.md
-              - Backlash Compensation: openpnp/calibration/backlash-compensation/index.md
-              - Automatic Toolchanger: openpnp/calibration/auto-toolchanger/index.md
+              - Importing Configuration: openpnp/calibration/1-import-config/index.md
+              - Connecting to Your Machine: openpnp/calibration/2-connect-to-machine/index.md
+              - Camera Fisheye: openpnp/calibration/3-camera-fisheye-cal/index.md
+              - Homing Fiducial: openpnp/calibration/4-homing-fiducial/index.md
+              - MM/Pixel: openpnp/calibration/5-mm-per-pixel/index.md
+              - Nozzle Offset: openpnp/calibration/6-nozzle-offset/index.md
+              - Bottom Camera Position: openpnp/calibration/7-bottom-camera-position/index.md
+              - Backlash Compensation: openpnp/calibration/8-backlash-compensation/index.md
+              - Automatic Toolchanger: openpnp/calibration/9-auto-toolchanger/index.md
         - Running Your First Job: 
               - Introduction: openpnp/ftp/index.md
-              - Installing Feeders: openpnp/ftp/installing-the-feeders/index.md
-              - Setting Up the Board: openpnp/ftp/setting-up-the-board/index.md
+              - Installing Feeders: openpnp/ftp/1-installing-the-feeders/index.md
+              - Setting Up the Board: openpnp/ftp/2-setting-up-the-board/index.md
         - Next Steps: openpnp/next-steps/index.md
   - Misc:
         - Troubleshooting: 
@@ -79,7 +79,7 @@ nav:
               - Solutions: misc/troubleshooting/solutions/index.md
               - Diagnostic Routines: misc/troubleshooting/diagnostic-routines/index.md
               - Vision Pipeline Adjustment: misc/troubleshooting/vision-pipeline-adjustment/index.md
-        - Maintentance and Upgrades: 
+        - Maintenance and Upgrades: 
               - REV03 Mobo Interposer Guide: misc/maintenance-upgrades/rev3-vac-interposer/index.md
               - Second Nozzle Upgrade Guide: misc/maintenance-upgrades/second-tool/index.md
 
