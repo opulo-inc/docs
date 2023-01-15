@@ -7,9 +7,16 @@ This repository is the source for the Opulo Documentation site found at [docs.op
 ### Getting Started
 
 1. Install Git if necessary: [git-scm.com](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-2. Install Mkdocs.
-3. Open Terminal, Command Prompt, or Powershell.
-4. Pick a location to store the docs, and use [cd](https://linuxhint.com/cd-command-in-terminal/) to navigate there.
+2. Open Terminal, Command Prompt, or Powershell.
+3. Pick a location to store the docs, and use [cd](https://linuxhint.com/cd-command-in-terminal/) to navigate there.
+
+4. Install Mkdocs and MKdocs Material
+
+    ```bash
+    pip install mkdocs
+    pip install mkdocs-material
+    ```
+
 5. Clone this repository:
 
     ```bash
