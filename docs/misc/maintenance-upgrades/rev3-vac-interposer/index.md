@@ -69,33 +69,36 @@ This process should take about 60 minutes.
     ![A photo with a full view of the motherboard with the modifications completed](images/18-completed-motherboard.jpg)
 
 8. Check to make sure that the sensor is working properly. Connect to the motherboard with your computer and try sending some GCode commands to it with a GCode sender. We recommend using [CNCjs](https://cnc.js.org/).
-
-        M3426 G2 C1 I1 A110     ;First sensor command
-        M3426 G2 C2 I1 A110     ;Second sensor command
-
+    ```gcode
+    M3426 G2 C1 I1 A110     ;First sensor command
+    M3426 G2 C2 I1 A110     ;Second sensor command
+    ```
     When at ambient pressure, the response from each sensor should look something like this:
-
-        V:29800 C:1 G:2 I:1
-
+    ```gcode
+    V:29800 C:1 G:2 I:1
+    ```
     Make sure the `V` value is about `29800`. Don't worry if it's not exact. As long as it's within `500` of `29800`, it's an acceptable value. If both sensors return an acceptable value, proceed to the next step.
 
 9. Next, check the sensor readings when connected to the pneumatic system. Push the vacuum line onto the `VAC1` sensor.
 10. Install the N045 nozzle tip onto the nozzle.
 11. Next, turn on the pump for nozzle 1 and its valve using these commands:
-
-        M106                  ;turn on pump 1
-        M106 P1 S255          ;turn on valve 1
+    ```gcode
+    M106                  ;turn on pump 1
+    M106 P1 S255          ;turn on valve 1
+    ```
 
 12. With the pump and valve on, read the pressure from the first vacuum sensor:
-
+    ```gcode
         M3426 G2 C1 I1 A110
+    ```
 
     You should read a value of about `15500`. Don't worry if it's not exact. As long as it's within `13000` - `18000`, it's an acceptable value. Record this number.
 
 13. Now, cover the tip of the nozzle with your finger and re-run the command. *Make sure the pump and valve are still running.* Record this number. Turn off the pump and valve using the following commands:
-
+    ```gcode
         M107                  ;turn off the pump
         M107 P1               ;turn off the valve
+    ```
 
     You should read a value that is around `2000` less than the uncovered value. Record this number.
 

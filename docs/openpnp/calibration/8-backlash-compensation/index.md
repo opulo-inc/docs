@@ -21,9 +21,10 @@ Semi-assembled (v3) LumenPnP machines should have only a limited amount of backl
   ![Select the move_to_command option](images/move-to-command.png)
 
 6. Paste the following into the large text box:
-
-        {Acceleration:M204 S%.2f}
-        G1 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {A:A%.4f} {B:B%.4f} {FeedRate:F%.2f} ; move to target
+  ```gcode
+  {Acceleration:M204 S%.2f}
+  G1 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {A:A%.4f} {B:B%.4f} {FeedRate:F%.2f} ; move to target
+  ```
   ![Replace the move-to command](images/new-move-to-command.png)
 
 7. Click `Apply` to save your changes.
