@@ -10,9 +10,9 @@ a {
   color: #daa520;
 }
 
-a:hover {
+/* a:hover {
   color: white;
-}
+} */
 
 h1 {
   color: #daa520;
@@ -22,14 +22,26 @@ h1 {
   --md-typeset-a-color: #31a1f0;
 }
 
-a.md-nav__link {
+/* a.md-nav__link {
   color: black;
+} */
+
+a.md-nav__link--active {
+  --md-typeset-a-color: #DAA520;
+}
+
+.md-nav__link {
+  color: var(--md-typeset-color);
+}
+
+.md-nav__link--passed {
+  color: var(--md-default-fg-color--light);
 }
 
 a.md-nav__link:hover {
   color: #daa520;
 }
 
-label.md-nav__title {
+/* label.md-nav__title {
   color: #daa520;
-}
+} */

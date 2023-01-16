@@ -5,17 +5,24 @@ repo_url: https://github.com/opulo-inc/lumenpnp/
 extra_css: [stylesheets/extra.css]
 
 markdown_extensions:
-  - admonition
-  - def_list
+    - admonition
+    - def_list
+    - pymdownx.superfences
 
 theme:
-  name: material
-  logo: img/opulo.png
-  favicon: img/favicon.ico
-  font:
-    text: Roboto
-  features:
-    - navigation.footer
+    name: material
+    logo: img/opulo.png
+    favicon: img/favicon.ico
+    font:
+        text: Roboto
+    features:
+        - navigation.footer
+        - navigation.tracking
+
+plugins:
+   - glightbox:
+        draggable: false
+   
 
 nav:
   - Home: index.md
