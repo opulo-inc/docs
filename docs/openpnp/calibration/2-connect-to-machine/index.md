@@ -1,11 +1,4 @@
----
-title: "Connecting to Your Machine"
-linkTitle: "Connecting to Your Machine"
-weight: 9
-type: docs
-description: >
-  Getting set up and connected to your LumenPnP using OpenPnP
----
+# Connecting to Your Machine
 
 Awesome! Now we've got OpenPnP installed on your computer, and we've got the default configuration loaded up. Our next step is getting connected to the machine and getting familiar with OpenPnP's UI.
 
