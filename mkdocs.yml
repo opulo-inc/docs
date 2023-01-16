@@ -18,6 +18,12 @@ theme:
         text: Roboto
     features:
         - navigation.footer
+        - navigation.tracking
+
+plugins:
+   - glightbox:
+        draggable: false
+   
 
 plugins:
    - glightbox:

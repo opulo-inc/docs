@@ -76,7 +76,6 @@ This process should take about 60 minutes.
     M3426 G2 C1 I1 A110     ;First sensor command
     M3426 G2 C2 I1 A110     ;Second sensor command
     ```
-
     When at ambient pressure, the response from each sensor should look something like this:
 
     ```gcode
