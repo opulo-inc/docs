@@ -25,11 +25,6 @@ plugins:
         draggable: false
    
 
-plugins:
-   - glightbox:
-        draggable: false
-   
-
 nav:
   - Home: index.md
   - Semi Assembly (v3): 
