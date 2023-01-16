@@ -58,6 +58,9 @@ Now we'll set up the cameras. The big red "X" in the camera views means that Ope
 6. In the `Device` drop-down, choose `PnP Bottom Camera`.
   ![Selecting the correct device for the Bottom Camera](images/Bottom-camera-select-device.png)
 
+    !!! info "Duplicate Camera Names"
+        There have been a few reports of users on Windows seeing two of the same camera name in their Open PnP drop down menu. If this happens to you, use trial and error to identify which camera is which in the list. Sorry for any inconvenience.
+
 7. In the `Format` drop-down, choose the `1280x720 10fps` setting.
   ![setting bottom camera resolution](images/Bottom resolution.png)
 
