@@ -64,9 +64,9 @@ This process should take about 60 minutes.
 
 7. Repeat steps 4 and 5 with the second interposer board and the second vacuum footprint on the motherboard.
 
-    ![A photo of the second interposer board soldered in place on the motherboard](16-second-interposer-soldered.jpg)
-    ![A photo showing both interposer boards soldered to the motherboard](17-both-interposers-soldered.jpg)
-    ![A photo with a full view of the motherboard with the modifications completed](18-completed-motherboard.jpg)
+    ![A photo of the second interposer board soldered in place on the motherboard](images/16-second-interposer-soldered.jpg)
+    ![A photo showing both interposer boards soldered to the motherboard](images/17-both-interposers-soldered.jpg)
+    ![A photo with a full view of the motherboard with the modifications completed](images/18-completed-motherboard.jpg)
 
 8. Check to make sure that the sensor is working properly. Connect to the motherboard with your computer and try sending some GCode commands to it with a GCode sender. We recommend using [CNCjs](https://cnc.js.org/).
     ```gcode
