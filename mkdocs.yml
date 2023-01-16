@@ -8,6 +8,7 @@ markdown_extensions:
     - admonition
     - def_list
     - pymdownx.superfences
+    - footnotes
 
 theme:
     name: material

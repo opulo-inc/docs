@@ -6,7 +6,7 @@ This guide is for installing the *Vacuum Sensor Interposer Boards*. Some early u
 We're sorry about this! In our internal testing of this feature, we found that the swing was large enough to detect a missed pick accurately, but we didn't test comprehensively enough to ensure it was always the case for every board. We've changed the way we test features before boards leave our facility to catch these types of issues.
 
 !!! danger "Help"
-        If you at any time run into trouble or are unsure of how to proceed with this guide, please reach out to our [customer support line](https://opulo.io/pages/contact-support) and we'll get you up and running.
+    If you at any time run into trouble or are unsure of how to proceed with this guide, please reach out to our [customer support line](https://opulo.io/pages/contact-support) and we'll get you up and running.
 
 ## Timing
 
@@ -37,7 +37,7 @@ This process should take about 60 minutes.
     ![A photo of hot air being applied to the second sensor](images/6-applying-heat-second-sensor.jpg)
 
     !!! danger "Warning"
-            Be careful not to tug too hard on the sensor. It's held down to the PCB with just a few copper pads, and pulling too hard might result in lifting those pads off the PCB. Make sure the solder is completely molten and the sensor should come away easily.
+        Be careful not to tug too hard on the sensor. It's held down to the PCB with just a few copper pads, and pulling too hard might result in lifting those pads off the PCB. Make sure the solder is completely molten and the sensor should come away easily.
 
 3. Remove any remaining solder on the vacuum sensor pads. The pads need to be cleaned and flat for the interposer installation. Use solder wick (and flux if necessary) to remove any solder from the six pads that make up each vacuum sensor footprint. Clean up any excess flux or solder residue.
     ![A photo of solder wick being used to clean the pads](images/7-cleaning-pads.jpg)
@@ -68,41 +68,54 @@ This process should take about 60 minutes.
     ![A photo showing both interposer boards soldered to the motherboard](images/17-both-interposers-soldered.jpg)
     ![A photo with a full view of the motherboard with the modifications completed](images/18-completed-motherboard.jpg)
 
-8. Check to make sure that the sensor is working properly. Connect to the motherboard with your computer and try sending some GCode commands to it with a GCode sender. We recommend using [CNCjs](https://cnc.js.org/).
+## Checking Readings
+
+1. Check to make sure that the sensor is working properly. Connect to the motherboard with your computer and try sending some GCode commands to it with a GCode sender. We recommend using [CNCjs](https://cnc.js.org/).
+
     ```gcode
     M3426 G2 C1 I1 A110     ;First sensor command
     M3426 G2 C2 I1 A110     ;Second sensor command
     ```
     When at ambient pressure, the response from each sensor should look something like this:
+
     ```gcode
     V:29800 C:1 G:2 I:1
     ```
+
     Make sure the `V` value is about `29800`. Don't worry if it's not exact. As long as it's within `500` of `29800`, it's an acceptable value. If both sensors return an acceptable value, proceed to the next step.
 
-9. Next, check the sensor readings when connected to the pneumatic system. Push the vacuum line onto the `VAC1` sensor.
-10. Install the N045 nozzle tip onto the nozzle.
-11. Next, turn on the pump for nozzle 1 and its valve using these commands:
+    !!! note "Sensor Address"
+        Note that in the above code snippet, the line `M3426 G4 C1 I1 A110` uses `A110` to specify which sensor to read from. Due to the way the sensors are programmed by their manufacturer, the address of the sensor can vary. If `A110` doesn't work for you, try testing each value from `0` to `7` to see which address is correct for your sensors.[^1]
+
+2. Next, check the sensor readings when connected to the pneumatic system. Push the vacuum line onto the `VAC1` sensor.
+3. Install the N045 nozzle tip onto the nozzle.
+4. Next, turn on the pump for nozzle 1 and its valve using these commands:
+
     ```gcode
     M106                  ;turn on pump 1
     M106 P1 S255          ;turn on valve 1
     ```
 
-12. With the pump and valve on, read the pressure from the first vacuum sensor:
+5. With the pump and valve on, read the pressure from the first vacuum sensor:
+
     ```gcode
-        M3426 G2 C1 I1 A110
+    M3426 G2 C1 I1 A110
     ```
 
     You should read a value of about `15500`. Don't worry if it's not exact. As long as it's within `13000` - `18000`, it's an acceptable value. Record this number.
 
-13. Now, cover the tip of the nozzle with your finger and re-run the command. *Make sure the pump and valve are still running.* Record this number. Turn off the pump and valve using the following commands:
+6. Now, cover the tip of the nozzle with your finger and re-run the command. *Make sure the pump and valve are still running.* Record this number. Turn off the pump and valve using the following commands:
+
     ```gcode
-        M107                  ;turn off the pump
-        M107 P1               ;turn off the valve
+    M107                  ;turn off the pump
+    M107 P1               ;turn off the valve
     ```
 
     You should read a value that is around `2000` less than the uncovered value. Record this number.
 
-14. Remove the vacuum tube from `VAC1` and install it onto `VAC2`.
-15. Repeat steps 9, 10, and 11 again to check the second sensor. You'll need to use `M3426 G2 C2 I1 A110` to read the pressure from the second sensor instead of the first.
-16. Remove the vacuum tube from `VAC2` and install it back onto `VAC1`.
-17. If any of the sensor values were not in the acceptable range, re-assess the soldering joints of the interposer board onto the motherboard and make sure they're all connected with a solid joint. If you are still unable to get a good reading, please reach out to our [support line](https://opulo.io/pages/contact-support) and we'll make sure you get up and running.
+7. Remove the vacuum tube from `VAC1` and install it onto `VAC2`.
+8. Repeat steps 9, 10, and 11 again to check the second sensor. You'll need to use `M3426 G2 C2 I1 A110` to read the pressure from the second sensor instead of the first.
+9. Remove the vacuum tube from `VAC2` and install it back onto `VAC1`.
+10. If any of the sensor values were not in the acceptable range, re-assess the soldering joints of the interposer board onto the motherboard and make sure they're all connected with a solid joint. If you are still unable to get a good reading, please reach out to our [support line](https://opulo.io/pages/contact-support) and we'll make sure you get up and running.
+
+[^1]: See [this](https://github.com/MarlinFirmware/Marlin/pull/24130) change to Marlin and the manufacturer's [data sheet](http://ww1.microchip.com/downloads/en/DeviceDoc/22226a.pdf) for more details.
