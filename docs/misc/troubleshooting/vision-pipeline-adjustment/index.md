@@ -175,77 +175,97 @@ If you find that the machine is having a hard time finding the homing fiducial, 
 4. Click on `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`
   ![Open the Nozzle N1 settings](images/select-nozzle-N1.png)
 
-<!-- TODO: Screenshot -->
 5. Click on the `Nozzle Tips` tab.
-<!-- TODO: DO YOU NEED to select the active tip, or will it auto pick it up when you said to edit the pipeline? -->
+![Nozzle Tip Tab](images/nozzle-tip-tab.png)
+
 6. Click the `Loaded?` checkbox for the nozzle you're tuning.
+![Loaded Checkbox](images/loaded-checkbox.png)
 
-6. Click on `Nozzle Tips > ReferenceNozzleTip N045` (or whichever nozzle you're tuning).
-  ![Select the bottom camera](images/select-bottom-camera-2.png)
+7. Click on `Nozzle Tips > ReferenceNozzleTip N045` (or whichever nozzle you're tuning).
+![Nozzle Tips Section](images/nozzle-tips-section.png)
 
-<!-- TODO: Screenshot -->
-1. Click on the `Calibration` tab.
-  ![Select the position tab](images/bottom-camera-position.png)
+8. Click on the `Calibration` tab.
+![Calibration Tab](images/nozzle-tip-calibration.png)
 
-1. Home your LumenPnP to make sure your toolhead's location is accurate. Ignore the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error if it appears.
+9. Home your LumenPnP to make sure your toolhead's location is accurate. Ignore the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error if it appears.
   ![Home the machine](images/home-during-bottom-cam-pos.png)
 
-1. Select the `Nozzle: N1 - N045 (Head:H1)` from the machine controls dropdown. (Or whichever tip you're tuning)
+10. Select the `Nozzle: N1 - N045 (Head:H1)` from the machine controls dropdown. (Or whichever tip you're tuning)
   ![Select nozzle from machine control dropdown](images/select-n1-machine-control-bottom.png)
 
-<!-- TODO: SCREENSHOT -->
-1. Click the "Position tool over location" button to bring the left nozzle above the bottom camera.
-  ![Position the toolhead over the bottom camera](images/position-over-bottom-cam.png)
+11. Click the "Position tool over location" button to bring the left nozzle above the bottom camera.
+  ![Position over Bottom Camera](images/position-over-bottom-camera.png)
 
-#### Check the Debug Results
+12. Click on Pipeline `Edit`.
+![Edit Pipeline Button](images/edit-tip-pipeline.png)
 
-Unlike the homing fiducial tuning, nozzle tip tuning needs to be able to identify the nozzle multiple times as it is rotated. This can make it slightly trickier to see the issues with your calibration pipeline. You may need to run a round of calibration and watch the results live to see which orientation of the toolhead gives the pipeline the most trouble.
-<!-- TODO: SCREENSHOT the calibrate button -->
+#### Stage Breakdown
 
-#### Tuning the Pipeline
+Stages 0-4 pre-process the image from the camera to make the tip of the nozzle clearer. Their goal is to outline the tip of the nozzle on its own so that it's exact position can be calculated. Of these stages, #3, `Threshold` is the most useful to tune. (See below for details)
+![Stages 0-4](images/Stages%200-4.png)
 
-<!-- TODO: SCREENSHOT, RREVIEW THAT THIS WORKS!!!! -->
-1. Click on Pipeline `Edit`.
-  ![The Edit Pipeline](images/edit-pipeline.png)
+The Results stage, `DetectCirclesHough`, takes the highlighted nozzle tip and calculates it's exact location by fitting a perfect circle to the tip. It's important that this calculation be reliable and repeatable. It's also important not to have extra erroneous circles detected, which could throw off the nozzle tip calibration and lead to imprecise picking.
+![Results Stage](images/results-stage.png)
 
-2. The main view will show a circle if OpenPnP was able to identify what it thinks is the homing fiducial.
-    1. If there are more than one circle, then we need to more clearly distinguish the real nozzle tip.
-    2. If there is one circle, but it is not correctly drawn around the nozzle tip, then we need to more clearly distinguish the nozzle tip.
-    3. If there are no circles, we need to loosen the filtering to make the nozzle tip easier to identify.
-    4. If the image looks like the good one above, your pipeline is properly tuned. If you've still been getting failures when homing, you may need to slightly loosen the filtering.
+Stages 5-7 are for debugging and showing you visually the output of the Results Stage. The most useful stage here is the #6 `DrawCircles` stage. After adjusting a setting, review the `DrawCircles` stage and check if the fiducial has been correctly identified. It may be helpful to pin the `DrawCircles` stage, too.
+![Stages 5-7](images/Stages-5-7.png)
 
-1. Click on the `Threshold` stage
-  ![Select the threshold stage](images/threshold-stage.png)
+!!! Tip
+    It may be helpful to pin the DrawCircles stage so you can see the results of the pipeline. This saves you having to click back and forth between stages while making adjustments.
+    ![Click on the DrawCircles stage](images/drawCicles-for-nozzles.png)
+    ![Pin the DrawCircles view](images/pin-drawCircles-for-Nozzles.png)
 
-2. Raise or lower the `threshold` parameter as necessary until the image is precise.
-    1. If the image is too black, raise the `threshold` setting.
-    2. If the image is too bright, lower the `threshold` setting.
-   <!-- ![](images/detect-circles-stage.png) -->
+#### General Strategy
 
-3. Click on the `DrawCircles` stage and check if the fiducial has been correctly identified.
-  ![Click on the DrawCircles stage](images/draw-circles-stage.png)
+The main view will show a circle if OpenPnP was able to identify what it thinks is the nozzle tip.
 
-4. If not, pin the view of the `DrawCircles` stage.
-  ![Pin the DrawCircles view](images/pin-draw-circles.png)
+1. If there are more than one circle, then we need to more clearly distinguish the real nozzle tip.
+2. If there is one circle, but it is not correctly drawn around the nozzle tip, then we need to more clearly distinguish the nozzle tip.
+3. If there are no circles, we need to loosen the filtering to make the nozzle tip easier to identify.
+4. If the image looks like the good one above, your pipeline is properly tuned. If you've still been getting failures when homing, you may need to slightly loosen the filtering.
 
-5. Click on the `DetectCirclesHough` stage.
-  ![Select the detect circles stage](images/detect-circles-stage.png)
+You will need to take an iterative approach to tune your vision pipeline. Because your machine's cameras and lighting conditions are unique, there is unfortunately no one-size-fits-all solution here. Make small changes and track how they affect the identification of the tip of your nozzle.
 
-6. Raise or lower the `param2` parameter as necessary until the correct number of circles are identified.
-    1. If there are no circles, lower the `param2` setting.
-    2. If there are too many circles, raise the `param2` setting.
-<!-- TODO: Photo shop image -->
+!!! Note "Check the Debug Results"
+    Unlike the homing fiducial tuning, nozzle tip tuning needs to be able to identify the nozzle multiple times as it is rotated. This can make it slightly trickier to see the issues with your calibration pipeline. You may need to run a round of calibration and watch the results live to see which orientation of the toolhead gives the pipeline the most trouble.
+    ![Calibrate Tip Button](images/calibrate-button.png)
+
+#### Threshold Tuning
+
+The `Threshold` stage is the most commonly edited stage. It turns the camera image into black and white, which starkly defines the tip of your nozzle. It is important that only the tip of your nozzle is outlined in black after this step. Raise or lower the `threshold` parameter as necessary until the image is precise.
+
+* If the image is too dark, raise the `threshold` setting.
+* If the image is too bright, lower the `threshold` setting.
+![Threshold Comparison](images/Threshold-comparison-modified-2.png)
+
+#### DetectCirclesHough Tuning
+
+`DetectCirclesHough` is the other commonly edited stage. You'll need to experiment with the following adjustments:
+
+The `param2` parameter adjusts how likely the algorithm will be to detect a circle.
+
+1. If there are no circles, lower the `param2` setting.
+2. If there are too many circles, raise the `param2` setting.
+
+![Param2 Comparison](images/param2-comparison.png)
+
+Depending on your nozzle tip, may also need to adjust the `maxDiameter` setting.
+
+1. Raise the `maxDiameter` setting if there are no circles detected at all after adjusting the other settings.
+2. Lower the `maxDiameter` setting if very large circles are drawn around noise in the image.
+
+![MaxDiameter Comparison](images/maxDiameter-comparison.png)
 
 <!-- ### Part Recognition
 
 1. Go to the `Vision` tab.
   ![The Vision Tab](images/vision-tab.png)
 
-2. Select on `BottomVision` from the type dropdown.
+1. Select on `BottomVision` from the type dropdown.
   ![Fiducial Vision Dropdown](images/fiducial-vision-dropdown.png)
 
-3. Select `- Default Machine Bottom Vision -` from the pipeline list.
+1. Select `- Default Machine Bottom Vision -` from the pipeline list.
   ![Select the default fiducial vision](images/select-default-fiducial-vision.png)
 
-4. Click on Pipeline `Edit`.
+1. Click on Pipeline `Edit`.
   ![The Edit Pipeline](images/edit-pipeline.png) -->
