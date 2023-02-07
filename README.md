@@ -15,6 +15,7 @@ This repository is the source for the Opulo Documentation site found at [docs.op
     ```bash
     pip install mkdocs
     pip install mkdocs-material
+    pip install mkdocs-glightbox
     ```
 
 5. Clone this repository:
