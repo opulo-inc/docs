@@ -4,6 +4,16 @@
 
 This guide is focused on performing basic calibration for your LumenPnP. Specifically it will test the motion system, and calibrate the cameras so that they can identify objects and apply offsets to the toolhead for precise part picking and placing. These steps are usually only necessary when first setting up a LumenPnP for the first time.
 
+Pick and place machines are complicated, and require lots of calibration to work correctly. Also, OpenPnP is a large piece of software, and can take time to learn. Please note that the process of learning the software and getting your machine calibrated can take many hours, and that time should be set aside for getting everything honed in.
+
+We provide these docs, the walkthrough video, and default configuration files to make the process as straightforward as possible, but if you notice things that we can be doing to make the process easier, please do not hesitate to let us know by making a [Github Issue](https://github.com/opulo-inc/docs/issues).
+
+## **Walkthrough Video**
+
+This walkthrough video shows the entire calibration process starting from stock configuration. We highly recommend watching the video along with walking through the docs on this site when setting up your machine.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CSnczX6VJ7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## **What you'll need**
 
 - A LumenPnP with the mechanical and electrical build completed.
