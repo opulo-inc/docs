@@ -69,7 +69,6 @@ nav:
               - Getting Started: openpnp/calibration/index.md
               - Importing Configuration: openpnp/calibration/1-import-config/index.md
               - Connecting to Your Machine: openpnp/calibration/2-connect-to-machine/index.md
-              - Camera Fisheye: openpnp/calibration/3-camera-fisheye-cal/index.md
               - Homing Fiducial: openpnp/calibration/4-homing-fiducial/index.md
               - MM/Pixel: openpnp/calibration/5-mm-per-pixel/index.md
               - Nozzle Offset: openpnp/calibration/6-nozzle-offset/index.md
