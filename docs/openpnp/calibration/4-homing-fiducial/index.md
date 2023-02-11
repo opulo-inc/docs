@@ -103,7 +103,7 @@ As before, we're going to double-check our camera exposure.
 5. Click on the "Home" button in the `Machine Controls Pane > Jog Tab` and watch your machine home using the limit switches, then move the top camera over the homing fiducial and find its exact location. You may still get an error about `nozzle tip calibration`, which is normal. We'll be working on that next.
   ![Home the machine](images/Connect-and-home.png)
 
-6. If your machine positions correctly over the homing fiducial but you receive the error: `FIDUCIAL-HOME no matches found.`, you should double-check your camera settings. If they seem alright, you may need to adjust your [vision pipeline](../../../misc/troubleshooting/vision-pipeline-adjustment/index.md).
+6. If your machine positions correctly over the homing fiducial but you receive the error: `FIDUCIAL-HOME no matches found.`, you should double-check your camera settings. If they seem alright, you may need to adjust your [Homing Fiducial Pipeline](../../../vision-pipeline-adjustment/2-homing-fiducial-pipeline.md).
   ![A first attempt at homing the LumenPnP](images/Cant-find-homing-fiducial.png)
 
 ## Next Steps

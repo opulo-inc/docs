@@ -69,7 +69,7 @@ The next step is to set the physical location of the FTP board in OpenPNP. You'l
 
 15. If the fiducial check fails, here are some options for moving forward:
     1. You might need to rotate the FTP board to be more square to the LumenPnP motion system.
-    2. You may need to adjust your [vision pipeline](../../../misc/troubleshooting/vision-pipeline-adjustment/index.md).
+    2. You may need to adjust your [PCB Fiducial Vision Pipeline](../../../vision-pipeline-adjustment/3-pcb-fiducial-pipeline.md).
     3. If you'd prefer, you can also fall back on manually defining the board's location using the "Multiple Placements" icon button.
       ![Use the board location from multiple placements button to manually set the board location and rotation](images/Board-location-from-multiple-placements-button.png)
 
@@ -82,7 +82,7 @@ The next step is to set the physical location of the FTP board in OpenPNP. You'l
   ![Start placing components](images/One-step-placement.png)
 
 3. If the component was not picked up correctly, you will need to adjust your [feeder location or height](../../../misc/troubleshooting/solutions#incorrect-feeder-z-position).
-4. If the component was not identified by the bottom camera correctly, you will likely need to adjust its [vision pipeline](../../../misc/troubleshooting/vision-pipeline-adjustment/index.md).
+4. If the component was not identified by the bottom camera correctly, you will likely need to adjust its [Part Identification Vision Pipeline](../../../vision-pipeline-adjustment/5-part-identification-pipeline.md).
 5. If the component did not stick to the FTP board, you should lower the FTP board's Z axis location (`0.10mm` increments are a good starting place).
 6. If the component stuck to the FTP board but was not centered on placement location (on the metal pads), you will need to do some fine tuning. It is useful to place five or so components before attempting to diagnose exactly what's wrong with your placements.
 7. Continue to click the "Single Job Step" to place the additional components (or click the "Play" icon button and pause the operation when you're ready.)
