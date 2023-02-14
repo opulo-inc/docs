@@ -26,9 +26,11 @@ Computer vision used in OpenPnP takes photos from your top or bottom camera and 
 2. Identifying certain elements of the photo. For example: `DetectCirclesHough`.
 3. Showing you more information on the screen so that you can build, debug, and tweak the pipeline. For example: `DrawCircles`.
 
-Because each of these kinds of stages live together in the pipeline, it can be a little confusing trying to decode how each stage works and what they're for.
+You will need to fine-tune each stage to adjust how it works by changing its "parameters." For example, the `Threshold` stage takes in the photo from your camera (or the previous stage in the pipeline) and turns it into stark black and white. It uses a `threshold` parameter to pick the brightness level where the distinction is made.
 
-Each stage of the pipeline has "parameters" that control its function. For example, the `ImageWriteDebug` step will ask you for parts of a file name to use when saving a debug image. Another more typical example is the `Threshold` stage, which will use a `threshold` parameter to pick which parts of your image will become white, and which will become black. When editing your vision pipeline, you should be able to start with simply tuning the parameters for the stages in the default pipeline. As you get more experienced, and if you're setting up more complicated placement jobs, you may need to add more stages to the pipeline to fine tune it for your needs.
+![Threshold comparison](images/threshold-comparison-general.png)
+
+For more complicated changes to your pipeline can also add and remove stages. But this shouldn't be necessary for most people.
 
 ## Pipeline Organization
 
@@ -43,6 +45,8 @@ The pipeline editing view has several sections and features you should know abou
 3. Stage output. This shows error messages if there's a problem with your stage or pipeline.
 4. Stage settings. This lets you change the settings for the selected stage.
 5. Pin Image. This lets you keep the results of the currently selected stage on on main view, even if you select another stage. Use this to pin a debugging stage so that you can quickly see the results of changes to a stage you're editing.
+
+![Pipeline Editing View](images/pipeline-organization.png)
 
 ## Editing Strategy
 
