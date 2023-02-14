@@ -67,7 +67,7 @@ For the most reliable identification of nozzle tips, you should tune the vision 
 You will need to take an iterative approach to tune your vision pipeline. Because your machine's cameras and lighting conditions are unique, there is unfortunately no one-size-fits-all solution here. Make small changes and track how they affect the identification of the tip of your nozzle.
 
 !!! Note "Check the Debug Results"
-    Unlike [homing fiducial tuning](2-homing-fiducial-pipeline.md), nozzle tip tuning needs to be able to identify the nozzle multiple times as it is rotated. This can make it slightly trickier to see the issues with your calibration pipeline. You may need to run a round of calibration and watch the results live to see which orientation of the toolhead gives the pipeline the most trouble.
+    Unlike [homing fiducial tuning](2-homing-fiducial-pipeline.md), nozzle tip tuning needs to be able to identify the nozzle multiple times as it is rotated. This can make it slightly trickier to see the issues with your calibration pipeline. You may need to run a round of calibration and watch the results live to see which orientation of the toolhead gives the pipeline the most trouble. You can also increase the `Allowed Misdetects` option if you're getting good picking results, but homing still fails occasionally.
     ![Calibrate Tip Button](images/calibrate-button.png)
 
 ## Threshold Tuning
@@ -83,7 +83,7 @@ The `Threshold` stage is the most commonly edited stage. It turns the camera ima
 
 `DetectCirclesHough` is the other commonly edited stage. You'll need to experiment with the following adjustments:
 
-The `param2` parameter adjusts how likely the algorithm will be to detect a circle.
+`param2` adjusts how likely the algorithm will be to detect a circle.
 
 1. If there are no circles, lower the `param2` setting.
 2. If there are too many circles, raise the `param2` setting.
@@ -96,3 +96,12 @@ Depending on your nozzle tip, may also need to adjust the `maxDiameter` setting.
 2. Lower the `maxDiameter` setting if very large circles are drawn around noise in the image.
 
 ![MaxDiameter Comparison](images/max-diameter-comparison.png)
+
+## BlurMedian Tuning
+
+`BlurMedian` can be useful if there are debris blocking the inner hole of your nozzle tip. That debris can cause the round silhouette of the hole to be interrupted and not be identified by the `DetectCirclesHough` stage. Use `BlurMedian` to remove artifacts in the photo, but don't blur so much that you significantly change the silhouette of the nozzle.
+
+![BlurMedian Comparison](images/blurMedian-comparison.png)
+
+1. Raise the `kernelSize` if the center of your nozzle tip doesn't make a perfect circle.
+2. Lower the `kernelSize` if the center of your nozzle tip is distorted from too much blur.
