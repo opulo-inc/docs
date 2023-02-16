@@ -75,6 +75,7 @@ nav:
               - Bottom Camera Position: openpnp/calibration/7-bottom-camera-position/index.md
               - Backlash Compensation: openpnp/calibration/8-backlash-compensation/index.md
               - Automatic Toolchanger: openpnp/calibration/9-auto-toolchanger/index.md
+              - Vacuum Part Detection: openpnp/calibration/10-vacuum-sensor/index.md
         - Running Your First Job: 
               - Introduction: openpnp/ftp/index.md
               - Installing Feeders: openpnp/ftp/1-installing-the-feeders/index.md
