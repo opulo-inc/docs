@@ -10,7 +10,7 @@ If the offset of the nozzle tip to the top camera is set incorrectly, the machin
 
 ## Bad Fiducial Scan
 
-It's possible that when OpenPnP scans for the fiducials on your PCB, it actually found a bright section of silkscreen or another pad, and that shifted all the placements on your board. Rerun your fiducial scan and check to see if OpenPnP is correctly finding the fiducial. See the instructions for [Tuning the PCB Fiducial Pipeline](../../../vision-pipeline-adjustment/3-pcb-fiducial-pipeline.md).
+It's possible that when OpenPnP scans for the fiducials on your PCB, it actually found a bright section of silkscreen or another pad, and that shifted all the placements on your board. Rerun your fiducial scan and check to see if OpenPnP is correctly finding the fiducial. See the instructions for [Tuning the PCB Fiducial Pipeline](../../../openpnp/vision-pipeline-adjustment/3-pcb-fiducial-pipeline.md).
 
 ## Incorrect Feeder Z Position
 
@@ -65,7 +65,7 @@ If you're finding that trying to manually jog the Z axis of your machine does no
 
 ## Bottom Vision Error
 
-See [Nozzle Calibration Pipeline Adjustment](../../../vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md), or [Part Identification Pipeline Adjustment](../../../vision-pipeline-adjustment/5-part-identification-pipeline.md)
+See [Nozzle Calibration Pipeline Adjustment](../../../openpnp/vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md), or [Part Identification Pipeline Adjustment](../../../openpnp/vision-pipeline-adjustment/5-part-identification-pipeline.md)
 
 ## Check Vacuum Pump
 

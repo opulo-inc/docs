@@ -14,7 +14,7 @@ Computer vision is one of the most important and complicated elements of a pick 
 3. [Finding the tips of your nozzles (Bottom Camera)](4-nozzle-calibration-pipeline.md)
 4. [Confirming and orienting the parts the machine has picked up. (Bottom Camera)](5-part-identification-pipeline.md)
 
-We've included good settings in the [default machine configuration](../openpnp/calibration/1-import-config/index.md) to get you started, but you will likely need to tune the settings for your exact needs depending on the ambient light in your room, the settings you used when [configuring your cameras](../openpnp/calibration/2-connect-to-machine/index.md#bottom-camera-config), and the kinds of components you're placing. This page is to get you set up to place components for your [FTP](../openpnp/ftp/index.md), and learn the basics of how adjusting computer vision works.
+We've included good settings in the [default machine configuration](../calibration/1-import-config/index.md) to get you started, but you will likely need to tune the settings for your exact needs depending on the ambient light in your room, the settings you used when [configuring your cameras](../calibration/2-connect-to-machine/index.md#bottom-camera-config), and the kinds of components you're placing. This page is to get you set up to place components for your [FTP](../ftp/index.md), and learn the basics of how adjusting computer vision works.
 
 **For more information, we highly recommend reading the [OpenPnP documentation](https://github.com/openpnp/openpnp/wiki/Bottom-Vision).**
 

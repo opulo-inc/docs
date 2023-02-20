@@ -80,12 +80,12 @@ nav:
               - Installing Feeders: openpnp/ftp/1-installing-the-feeders/index.md
               - Setting Up the Board: openpnp/ftp/2-setting-up-the-board/index.md
         - Next Steps: openpnp/next-steps/index.md
-    - Vision Pipeline Adjustment:
-        - Introduction: vision-pipeline-adjustment/1-introduction.md
-        - Homing Fiducial Pipeline: vision-pipeline-adjustment/2-homing-fiducial-pipeline.md
-        - PCB Fiducial Pipeline: vision-pipeline-adjustment/3-pcb-fiducial-pipeline.md
-        - Nozzle Calibration Pipeline: vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md
-        - Part Identification Pipeline: vision-pipeline-adjustment/5-part-identification-pipeline.md
+        - Vision Pipeline Adjustment:
+            - Introduction: openpnp/vision-pipeline-adjustment/1-introduction.md
+            - Homing Fiducial Pipeline: openpnp/vision-pipeline-adjustment/2-homing-fiducial-pipeline.md
+            - PCB Fiducial Pipeline: openpnp/vision-pipeline-adjustment/3-pcb-fiducial-pipeline.md
+            - Nozzle Calibration Pipeline: openpnp/vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md
+            - Part Identification Pipeline: openpnp/vision-pipeline-adjustment/5-part-identification-pipeline.md
     - Misc:
         - Troubleshooting: 
               - Symptoms: misc/troubleshooting/symptoms/index.md

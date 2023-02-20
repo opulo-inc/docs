@@ -1,7 +1,7 @@
 
 # Nozzle Calibration Pipeline
 
-If you receive the error message `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` when homing your LumenPnP, you likely need to adjust your nozzle tip calibration pipeline. Follow the steps below for a guide on the iterative approach.
+If you receive the error message `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` when homing your LumenPnP, you likely need to adjust your nozzle tip calibration pipeline. Follow the steps below for a guide on the iterative approach. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=1875).
 ![Cant't find nozzle tip](images/too-many-vision-redirects.png)
 
 ## Position Nozzle Over Bottom Camera
@@ -72,7 +72,7 @@ You will need to take an iterative approach to tune your vision pipeline. Becaus
 
 ## Threshold Tuning
 
-The `Threshold` stage is the most commonly edited stage. It turns the camera image into black and white, which starkly defines the tip of your nozzle. It is important that the inner hole of your nozzle is a clear white circle after this step. Raise or lower the `threshold` parameter as necessary until the image is precise.
+The `Threshold` stage is the most commonly edited stage. It turns the camera image into black and white, which starkly defines the tip of your nozzle. It is important that the inner hole of your nozzle is a clear white circle after this step. Raise or lower the `threshold` parameter as necessary until the image is precise. Note that the `invert` button is checked so that the nozzle tip hole is shown in white for the next steps.
 
 * If the image is too dark, raise the `threshold` setting.
 * If the image is too bright, lower the `threshold` setting.
