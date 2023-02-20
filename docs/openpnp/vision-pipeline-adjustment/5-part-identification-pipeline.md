@@ -2,24 +2,58 @@
 
 Part identification is the most difficult pipeline to tune because different parts will need special consideration. Even just for the normal components used in the [FTP](../ftp/index.md), you need to be sure that the picked components are distinguishable from the tip of your nozzle. Depending on how well you set your [camera exposure](../calibration/2-connect-to-machine/index.md#bottom-camera-config) and other settings, you may need to go back and adjust them, which, of course, would require that you re-tune your[nozzle tip pipeline](4-nozzle-calibration-pipeline.md) to account for the changes.
 
+## Setup Nozzle
+
+1. Install a nozzle tip on your first toolhead. In this example we'll work with the N045 nozzle tip.
+  ![Install the N045 nozzle](images/N045-nozzle-installed.png)
+
+2. Click on the `Machine Setup` tab in the top right pane.
+  ![Machine setup tab](images/Machine-Setup-Tab-3.png)
+
+3. Click on the "Expand" checkbox to open all of the features about your machine.
+  ![Expanding the Machine Config options](images/Expand-Checkbox-3.png)
+
+4. Click on `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`
+  ![Open the Nozzle N1 settings](images/select-nozzle-N1.png)
+
+5. Click on the `Nozzle Tips` tab.
+  ![Nozzle Tip Tab](images/nozzle-tip-tab.png)
+
+6. Click the `Loaded?` checkbox for the nozzle you're tuning.
+  ![Loaded Checkbox](images/loaded-checkbox.png)
+
+7. Click on `Nozzle Tips > ReferenceNozzleTip N045` (or whichever nozzle you're working with).
+  ![Nozzle Tips Section](images/nozzle-tips-section.png)
+
+8. Check that the correct toolhead is selected in the `Machine Controls Tab`.
+  ![Activate Toolhead](images/select-correct-nozzle.png)
+
+## Pickup Component
+
+To tune a part identification pipeline, you'll need to pick up the component you want to tune. You can either [setup a feeder](../ftp/1-installing-the-feeders/index.md) and use the "pick" button.
+
+Alternatively, you can manually take a component and place it on your nozzle tip. To activate the nozzle's suction, use the `Actuators Tab > H1:VAC1 > Set Boolean Value > On`.
+![Turn On Suction](images/turn-on-suction.png)
+
 ## Open the Pipeline
 
-TODO: Pick up a component for inspection
+1. Go to the `Packages` tab.
+  ![Packages Tab](images/packages-tab.png)
 
-1. Go to the `Vision` tab.
-  ![The Vision Tab](images/vision-tab.png)
+1. Select the package for the component you'll be tuning. For example, the `R_0603_1608Metric` package used in the [Test Placement](../ftp/1-installing-the-feeders/index.md).
+  ![Select Component Package](images/select-component-package.png)
 
-1. Select on `BottomVision` from the type dropdown.
-  ![Fiducial Vision Dropdown](images/fiducial-vision-dropdown.png)
+1. Check that your nozzle tip is compatible with the package you'll be working with.
+  ![Check your nozzle tip is compatible](images/confirm-nozzle-tip-compatible.png)
 
-1. Select `- Default Machine Bottom Vision -` from the pipeline list.
-  ![Select the default fiducial vision](images/select-default-fiducial-vision.png)
+1. Click on the `Bottom Vision Settings Tab`.
+  ![Bottom Vision Settings Tab](images/bottom-part-vision-settings.png)
 
-1. Click on Pipeline `Edit`.
-  ![The Edit Pipeline](images/edit-pipeline.png)
+1. Click on the Pipeline: `Edit` button.
+  ![Pipeline Edit Button](images/edit-package-pipeline.png)
 
 !!! Note
-    You can also go to `Packages Tab > Your Package > Bottom VisionSettings` and click on `Pipeline: Edit` to find the relevant pipeline for your parts and to specialize them.
+    You can also go to `Vision Tab > Type:Bottom Vision > The correct pipeline` and click on `Pipeline: Edit` to edit the pipeline.
 
 ## Check the debug results
 
