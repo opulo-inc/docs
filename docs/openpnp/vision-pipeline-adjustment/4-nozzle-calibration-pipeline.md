@@ -19,16 +19,16 @@ If you receive the error message `Nozzle tip calibration: not enough results fro
   ![Open the Nozzle N1 settings](images/select-nozzle-N1.png)
 
 5. Click on the `Nozzle Tips` tab.
-![Nozzle Tip Tab](images/nozzle-tip-tab.png)
+  ![Nozzle Tip Tab](images/nozzle-tip-tab.png)
 
 6. Click the `Loaded?` checkbox for the nozzle you're tuning.
-![Loaded Checkbox](images/loaded-checkbox.png)
+  ![Loaded Checkbox](images/loaded-checkbox.png)
 
 7. Click on `Nozzle Tips > ReferenceNozzleTip N045` (or whichever nozzle you're tuning).
-![Nozzle Tips Section](images/nozzle-tips-section.png)
+  ![Nozzle Tips Section](images/nozzle-tips-section.png)
 
 8. Click on the `Calibration` tab.
-![Calibration Tab](images/nozzle-tip-calibration.png)
+  ![Calibration Tab](images/nozzle-tip-calibration.png)
 
 9. Home your LumenPnP to make sure your toolhead's location is accurate. Ignore the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error if it appears.
   ![Home the machine](images/home-during-bottom-cam-pos.png)
