@@ -1,6 +1,6 @@
 # Homing Fiducials
 
-If you receive the error message `FIDUCIAL-HOME no matches found` when homing your LumenPnP, you likely need to adjust your homing vision pipeline. Follow the steps below for a guide on the iterative approach.
+If you receive the error message `FIDUCIAL-HOME no matches found` when homing your LumenPnP, you likely need to adjust your homing vision pipeline. Follow the steps below for a guide on the iterative approach. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=1210).
 ![Cant't find homing fiducial](images/Cant-find-homing-fiducial.png)
 
 ## Open the Pipeline
@@ -20,7 +20,7 @@ If you receive the error message `FIDUCIAL-HOME no matches found` when homing yo
 5. Confirm that your top camera is positioned exactly over the homing fiducial.
   ![Center the homing fiducial in the camera view](images/Homing-fiducial-centered.png)
 
-6. Adjust the exposure of your camera image as mentioned in the [Homing Fiducial Section](../openpnp/calibration/4-homing-fiducial/index.md#double-check-camera-exposure).
+6. Adjust the exposure of your camera image as mentioned in the [Homing Fiducial Section](../calibration/4-homing-fiducial/index.md#double-check-camera-exposure).
 
 7. Go to the `Vision` tab.
   ![Switch to the vision tab](images/vision-tab.png)
@@ -53,7 +53,6 @@ If you receive the error message `FIDUCIAL-HOME no matches found` when homing yo
 2. Raise or lower the `threshold` parameter as necessary until the image is precise.
     1. If the image is too black, raise the `threshold` setting.
     2. If the image is too bright, lower the `threshold` setting.
-   <!-- ![](images/detect-circles-stage.png) -->
 
 3. Click on the `DrawCircles` stage and check if the fiducial has been correctly identified.
   ![Click on the DrawCircles stage](images/draw-circles-stage.png)

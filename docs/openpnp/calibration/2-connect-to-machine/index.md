@@ -1,6 +1,6 @@
 # Connecting to Your Machine
 
-Awesome! Now we've got OpenPnP installed on your computer, and we've got the default configuration loaded up. Our next step is getting connected to the machine and getting familiar with OpenPnP's UI.
+Awesome! Now we've got OpenPnP installed on your computer, and we've got the default configuration loaded up. Our next step is getting connected to the machine and getting familiar with OpenPnP's UI. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=102).
 
 1. Connect your LumenPnP to your computer using the included USB cable
 
@@ -68,8 +68,12 @@ Now we'll set up the cameras. The big red "X" in the camera views means that Ope
   ![Saving changes to the Bottom Camera Config](images/Bottom Camera Apply.png)
   ![Bottom camera is now on](images/Bottom-camera-on.png)
 
-9. Adjust the exposure to make the camera feed more reasonable. On some computers, you can toggle Automatic Exposure on, and then back off again to set it correctly. Do not keep auto exposure turned on. You can come back to adjust the exposure later at any time.
-  ![Adjust exposure](images/adjust-exposure.png)
+9. Adjust the exposure to make the camera feed more reasonable. On some computers, you can toggle Automatic Exposure on, and then back off again to set it correctly. Do not keep auto exposure turned on. You can come back to adjust the exposure later at any time. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=867).
+
+    !!! danger "For Mac Users"
+        Due to an issue with the camera driver in OpenPnP, some Mac users might notice that the image settings are greyed out for you. There's a fantastic open-source application called [CameraController](https://github.com/Itaybre/CameraController) that can be used to edit these settings.
+
+    ![Adjust exposure](images/adjust-exposure.png)
 
 ## Top Camera Config
 

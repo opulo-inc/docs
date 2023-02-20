@@ -1,6 +1,6 @@
 # Homing Fiducial
 
-Now that fisheye calibration is complete, we can set up the datum board. The datum board is a reference point for everything else you'll do with the machine. The center dot of the datum board will be the most important calibration point for the machine. It'll be used to fine-tune the LumenPnP's XY position after homing to account for any errors in the limit switches.
+Now that fisheye calibration is complete, we can set up the datum board. The datum board is a reference point for everything else you'll do with the machine. The center dot of the datum board will be the most important calibration point for the machine. It'll be used to fine-tune the LumenPnP's XY position after homing to account for any errors in the limit switches. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=705).
 
 !!! danger "If Your Machine Is v2"
     If you are setting up a v2 LumenPnP kit, your datum board is not yet mounted to the Staging Plate.
@@ -59,7 +59,7 @@ Now that fisheye calibration is complete, we can set up the datum board. The dat
 
 ## Double-Check Camera Exposure
 
-As before, we're going to double-check our camera exposure.
+As before, we're going to double-check our camera exposure. See also our [instructional video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=867) if you prefer.
 
 1. Navigate to the `Machine Setup` tab.
   ![Machine Setup Tab](images/Machine-Setup-Tab-4.png)
@@ -81,9 +81,6 @@ As before, we're going to double-check our camera exposure.
 6. Adjust the exposure and other camera settings. The goal is to make the image clear and have a lot of contrast, without being too bright or too dark overall. In some cases you can simply check the `Auto` checkbox for `Exposure`, then uncheck it to save the automatically set value.
   ![Top camera properly exposed with the auto-exposure turned on](images/Auto-exposure-on.png)
 
-    !!! danger "For Mac Users"
-        Due to an issue with the camera driver in OpenPnP, some Mac users might notice that the image settings are greyed out for you. There's a fantastic open-source application called [CameraController](https://github.com/Itaybre/CameraController) that can be used to edit these settings.
-
 ## Apply Homing Fiducial Changes
 
 1. Double-check that:
@@ -103,7 +100,7 @@ As before, we're going to double-check our camera exposure.
 5. Click on the "Home" button in the `Machine Controls Pane > Jog Tab` and watch your machine home using the limit switches, then move the top camera over the homing fiducial and find its exact location. You may still get an error about `nozzle tip calibration`, which is normal. We'll be working on that next.
   ![Home the machine](images/Connect-and-home.png)
 
-6. If your machine positions correctly over the homing fiducial but you receive the error: `FIDUCIAL-HOME no matches found.`, you should double-check your camera settings. If they seem alright, you may need to adjust your [Homing Fiducial Pipeline](../../../vision-pipeline-adjustment/2-homing-fiducial-pipeline.md).
+6. If your machine positions correctly over the homing fiducial but you receive the error: `FIDUCIAL-HOME no matches found.`, you should double-check your camera settings. If they seem alright, you may need to adjust your [Homing Fiducial Pipeline](../../../openpnp/vision-pipeline-adjustment/2-homing-fiducial-pipeline.md).
   ![A first attempt at homing the LumenPnP](images/Cant-find-homing-fiducial.png)
 
 ## Next Steps

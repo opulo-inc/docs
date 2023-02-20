@@ -7,7 +7,7 @@ description: >
   Setting the millimeters per pixel value in OpenPnP
 ---
 
-Nicely done so far! You've got your homing fiducial all set up. This next step calibrates the relationship between pixels and millimeters to make our cameras more accurate. You might have found that if you drag the reticle on the camera view around, the LumenPnP will move to the highlighted location. But you have probably also found that the movement is not very precise. We'll be fixing that in this calibration.
+Nicely done so far! You've got your homing fiducial all set up. This next step calibrates the relationship between pixels and millimeters to make our cameras more accurate. You might have found that if you drag the reticle on the camera view around, the LumenPnP will move to the highlighted location. But you have probably also found that the movement is not very precise. We'll be fixing that in this calibration. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=1030).
 
 ## Top Camera Calibration
 
