@@ -108,6 +108,7 @@ Now that your positions are set, you can enable automatic tool changing in OpenP
 10. Click `Apply` to save your changes.
   ![Apply Settings](images/apply-tool-changer-n2.png)
 
+
 ## Next Steps
 
-Next is [the FTP](../../ftp/index.md).
+Next is [part detection](../10-vacuum-sensor/index.md).
