@@ -1,6 +1,6 @@
 # Part Identification Pipeline
 
-Part identification is the most difficult pipeline to tune because different parts will need special consideration. Even just for the normal components used in the [FTP](../ftp/index.md), you need to be sure that the picked components are distinguishable from the tip of your nozzle. Depending on how well you set your [camera exposure](../calibration/2-connect-to-machine/index.md#bottom-camera-config) and other settings, you may need to go back and adjust them, which, of course, would require that you re-tune your [nozzle tip pipeline](4-nozzle-calibration-pipeline.md) to account for the changes. 
+Part identification is the most difficult pipeline to tune because different parts will need special consideration. Even just for the normal components used in the [FTP](../ftp/index.md), you need to be sure that the picked components are distinguishable from the tip of your nozzle. Depending on how well you set your [camera exposure](../calibration/2-connect-to-machine/index.md#bottom-camera-config) and other settings, you may need to go back and adjust them, which, of course, would require that you re-tune your [nozzle tip pipeline](4-nozzle-calibration-pipeline.md) to account for the changes.
 
 If you receive an error after picking a component about `No Results Found`, you need to tune your vision pipeline.
 
