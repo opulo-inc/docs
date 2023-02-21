@@ -44,7 +44,7 @@ Nicely done so far! You've got your homing fiducial all set up. This next step c
 11. A box with drag handles will appear in the camera view. Drag the box so that it lines up with the lines on the datum board; they are exactly 5mm x 5mm. Make sure that you are aligning the bounding box with the **center** of the lines as shown in the image below.
   ![Drag the box to the center of the outline square on the datum board.](images/Screen Shot 2022-05-19 at 12.30.48 PM.png)
 
-12. Once you have it perfectly outlined, click `Confirm`. The new calibration numbers will populate the Units per Pixel fields. They should be relatively close to the default values.
+12. Once you have it perfectly outlined, click the `Measure` button again. The new calibration numbers will populate the Units per Pixel fields. They should be relatively close to the default values.
   ![Confirm the test](images/confirm-pixel-per-mm.png)
 
 13. Click `Apply` to save the changes.
