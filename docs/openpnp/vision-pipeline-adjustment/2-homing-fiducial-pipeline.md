@@ -1,4 +1,4 @@
-# Homing Fiducials
+# Homing Fiducials Pipeline
 
 If you receive the error message `FIDUCIAL-HOME no matches found` when homing your LumenPnP, you likely need to adjust your homing vision pipeline. Follow the steps below for a guide on the iterative approach. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=1210).
 ![Cant't find homing fiducial](images/Cant-find-homing-fiducial.png)
