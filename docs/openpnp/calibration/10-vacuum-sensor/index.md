@@ -1,11 +1,12 @@
 
 # Vacuum Part Detection
 
-While the bottom camera can detect if a part was successfully picked with reasonable accuracy, you can also use the LumenPnP's vacuum sensors to double check a successful pick. The way this works is that when a part is successfully picked, it creates a seal at the end of the nozzle. This seal increases the vacuum pressure in the pneumatic line which is picked up by the vacuum sensors. OpenPnP can use this increase in pressure to detect if a part was successfully picked.
-
-We switched vacuum sensors between v2 and v3 versions of the machine. Make sure you're using the correct config for your hardware.
+While the bottom camera can detect if a part was successfully picked with reasonable accuracy, you can also use the LumenPnP's vacuum sensors to double check a successful pick. When a part is successfully picked it creates a seal at the end of the nozzle. This seal increases the vacuum pressure in the pneumatic line which is picked up by the vacuum sensors. OpenPnP can use this increase in pressure to detect if a part was successfully picked.
 
 ## Actuator Setup
+
+!!! NOTE
+    The LumenPnP v2 kit machine has different vacuum sensors than the v3 semi-assembled machine. Make sure to follow the steps for your machine version below.
 
 ### LumenPnP v3
 
@@ -16,38 +17,42 @@ We switched vacuum sensors between v2 and v3 versions of the machine. Make sure 
 
 2. Select your GcodeDriver, then under the Gcode tab, select the `H1 VAC1` actuator, and select the `ACTUATOR_READ_COMMAND` setting.
    ![Part Detection Gcode](images/Screen Shot 2023-02-16 at 10.04.32 AM.png)
-   
+
 3. Make sure the following Gcode is present in the field:
-  ```
-  M260 A112 B1 S1
-  M260 A109
-  M260 B48
-  M260 B10
-  M260 S1
-  M260 A109 B6 S1
-  M261 A109 B1 S2
-  ```
+  
+    ```gcode
+    M260 A112 B1 S1
+    M260 A109
+    M260 B48
+    M260 B10
+    M260 S1
+    M260 A109 B6 S1
+    M261 A109 B1 S2
+    ```
 
-1. With the same `H1 VAC1` actuator selected, now choose the `ACTUATOR_READ_REGEX` setting, and make sure the following is present in the field below:
-   ```
-   ^.*data:(?<Value>.*)
-   ```
+4. With the same `H1 VAC1` actuator selected, now choose the `ACTUATOR_READ_REGEX` setting, and make sure the following is present in the field below:
 
-2. Now select the `H1 VAC2` actuator, and select the `ACTUATOR_READ_COMMAND` setting. Make sure the following Gcode is present in the field below:
-  ```
-  M260 A112 B2 S1
-  M260 A109
-  M260 B48
-  M260 B10
-  M260 S1
-  M260 A109 B6 S1
-  M261 A109 B1 S2
-  ```
+    ```regex
+    ^.*data:(?<Value>.*)
+    ```
 
-1. With the same `H1 VAC2` actuator selected, now choose the `ACTUATOR_READ_REGEX` setting, and make sure the following is present in the field below:
-   ```
-   ^.*data:(?<Value>.*)
-   ```
+5. Now select the `H1 VAC2` actuator, and select the `ACTUATOR_READ_COMMAND` setting. Make sure the following Gcode is present in the field below:
+  
+    ```gcode
+    M260 A112 B2 S1
+    M260 A109
+    M260 B48
+    M260 B10
+    M260 S1
+    M260 A109 B6 S1
+    M261 A109 B1 S2
+    ```
+
+6. With the same `H1 VAC2` actuator selected, now choose the `ACTUATOR_READ_REGEX` setting, and make sure the following is present in the field below:
+
+    ```regex
+    ^.*data:(?<Value>.*)
+    ```
 
 ### LumenPnP v2
 
@@ -57,38 +62,43 @@ We switched vacuum sensors between v2 and v3 versions of the machine. Make sure 
 1. Select your GcodeDriver, then under the Gcode tab, select the `H1 VAC1` actuator, and select the `ACTUATOR_READ_COMMAND` setting.
 
 2. Make sure the following Gcode is present in the field:
-  ```
-  M3426 G2 C1 I1 A110
-  ```
+
+    ```gcode
+    M3426 G2 C1 I1 A110
+    ```
 
     !!! note "Sensor Address"
-        Note that in the above code snippet, the line `M3426 G4 C1 I1 A110` uses `A110` to specify which sensor to read from. Due to the way the sensors are programmed by their manufacturer, the address of the sensor can vary. If `A110` doesn't work for you, try testing each binary value from `0` to `7` (eg `000`, `001`, `010` etc) to see which address is correct for your sensors.
+        In the above code snippet, the line `M3426 G4 C1 I1 A110` uses `A110` to specify which sensor to read from. Due to the way the sensors are programmed by their manufacturer, the address of the sensor can vary. If `A110` doesn't work for you, try testing each binary value from `0` to `7` (eg `000`, `001`, `010` etc) to see which address is correct for your sensors.
 
-1. With the same `H1 VAC1` actuator selected, now choose the `ACTUATOR_READ_REGEX` setting, and make sure the following is present in the field below:
-   ```
-   ^.*V:(?<Value>\d+).*
-   ```
+3. With the same `H1 VAC1` actuator selected, now choose the `ACTUATOR_READ_REGEX` setting, and make sure the following is present in the field below:
 
-2. Select your GcodeDriver, then under the Gcode tab, select the `H1 VAC2` actuator, and select the `ACTUATOR_READ_COMMAND` setting. Make sure the following Gcode is present in the field:
-  ```
-  M3426 G2 C2 I1 A110
-  ```
+    ```regex
+    ^.*V:(?<Value>\d+).*
+    ```
 
-1. With the same `H1 VAC2` actuator selected, now choose the `ACTUATOR_READ_REGEX` setting, and make sure the following is present in the field below:
-   ```
-   ^.*V:(?<Value>\d+).*
-   ```
+4. Select your GcodeDriver, then under the Gcode tab, select the `H1 VAC2` actuator, and select the `ACTUATOR_READ_COMMAND` setting. Make sure the following Gcode is present in the field:
+
+    ```gcode
+    M3426 G2 C2 I1 A110
+    ```
+
+5. With the same `H1 VAC2` actuator selected, now choose the `ACTUATOR_READ_REGEX` setting, and make sure the following is present in the field below:
+
+    ```regex
+    ^.*V:(?<Value>\d+).*
+    ```
 
 ### Enabling and Tuning
 
 1. With the actuator configured correctly, the next step is enabling part detection for nozzles tips. Select a nozzle tip that you'd like to enable part detection for, and click on the Part Detection tab. You should see a menu similar to the one below:
   ![Enabling part detection](images/Screen Shot 2023-02-16 at 10.25.43 AM.png)
 
-1. You might need to tweak the values in the `Low Value` and `High Value` fields for both Part On sensing and Part Off sensing. The image shown above has default values for v3 part detection. 
-2. Thresholds can be determined by opening the `H1:VAC1` or `H1:VAC2` actuator window. Click `On` to turn on your pump and valve, and then click `Read`. You should see a value appear in the `Read Value` text box.
+2. You might need to tweak the values in the `Low Value` and `High Value` fields for both Part On sensing and Part Off sensing. The image shown above has default values for v3 part detection.
+
+3. Thresholds can be determined by opening the `H1:VAC1` or `H1:VAC2` actuator window. Click `On` to turn on your pump and valve, and then click `Read`. You should see a value appear in the `Read Value` text box.
   ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.png)
 
-1. Cover the nozzle with your finger tip. Hit `Read` again. The detection threshold sits in between these two numbers.
+4. Cover the nozzle with your finger tip. Hit `Read` again. The detection threshold sits in between these two numbers.
 
 ## Next Steps
 
