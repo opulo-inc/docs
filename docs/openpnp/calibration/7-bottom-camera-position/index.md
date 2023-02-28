@@ -55,9 +55,6 @@ Now that we know the offset from the top camera to the nozzle, we can use the no
 13. Click the `Apply` button to save the new camera position.
   ![Save the camera location](images/apply-bottom-cam-pos.png)
 
-14. Try homing your machine again. If you get the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error, you will need to adjust your [camera's exposure](../4-homing-fiducial/index.md#double-check-camera-exposure), and then tune your [Bottom Camera Vision Pipeline](../../../openpnp/vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md).
-  ![Home the machine](images/home-during-bottom-cam-pos.png)
-
 ## Next Steps
 
-Next is [Backlash Compensation](../8-backlash-compensation/index.md).
+Next is [Nozzle Tip Calibration](../8-nozzle-tip-calibration/nozzle-tip-calibration.md).

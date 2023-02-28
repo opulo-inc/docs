@@ -73,6 +73,7 @@ nav:
               - MM/Pixel: openpnp/calibration/5-mm-per-pixel/index.md
               - Nozzle Offset: openpnp/calibration/6-nozzle-offset/index.md
               - Bottom Camera Position: openpnp/calibration/7-bottom-camera-position/index.md
+              - Nozzle Tip Calibration: openpnp/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md
               - Backlash Compensation: openpnp/calibration/8-backlash-compensation/index.md
               - Automatic Toolchanger: openpnp/calibration/9-auto-toolchanger/index.md
         - Running Your First Job: 
