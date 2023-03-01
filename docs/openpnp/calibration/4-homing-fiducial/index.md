@@ -1,6 +1,6 @@
 # Homing Fiducial
 
-Now that fisheye calibration is complete, we can set up the datum board. The datum board is a reference point for everything else you'll do with the machine. The center dot of the datum board will be the most important calibration point for the machine. It'll be used to fine-tune the LumenPnP's XY position after homing to account for any errors in the limit switches.
+Now that fisheye calibration is complete, we can set up the datum board. The datum board is a reference point for everything else you'll do with the machine. The center dot of the datum board will be the most important calibration point for the machine. It'll be used to fine-tune the LumenPnP's XY position after homing to account for any errors in the limit switches. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=705).
 
 !!! danger "If Your Machine Is v2"
     If you are setting up a v2 LumenPnP kit, your datum board is not yet mounted to the Staging Plate.
@@ -40,26 +40,25 @@ Now that fisheye calibration is complete, we can set up the datum board. The dat
 8. Turn on the LED ring lights by pressing the `LED` button (if they're not already on).
   ![Turn on the LEDs](images/Turn-on-LEDs.png)
 
-9. Rotate the Top Camera lens until the board is sharply in focus. If you're having trouble, try using the community-created [lens adjustment tool](https://www.printables.com/model/208453-lumen-pnp-lens-adjustment-tool).
-  ![the homing fiducial in focus](images/In-focus-homing-fiducial.png)
-
     !!! info "Tip"
         Right click on the camera feed to change the Reticle style to see the center of the camera image. You can also use the scroll wheel to zoom in on the feed for more precision.
         ![Change the reticle that appears on the camera feed](images/Switch-reticle-type.png)
 
-10. Go back to the `Jog` tab in the "Machine Controls" pane.
+9. Go back to the `Jog` tab in the "Machine Controls" pane.
   ![Switch to the jog tab](images/Jog-tab.png)
 
-11. Set the `Distance` slider to `0.1` for more precise movements.
+10. Set the `Distance` slider to `0.1` for more precise movements.
   ![Make the jog controls more precise](images/Distance-slider-0pt1.png)
 
-12. Manually jog the head so that the reticle in the center of the Top Camera feed in your top camera view is perfectly centered on the Homing Fiducial in the center of the Opulo logo.
+11. Manually jog the head so that the reticle in the center of the Top Camera feed in your top camera view is perfectly centered on the Homing Fiducial in the center of the Opulo logo.
   ![use the jog controls to move the machine](images/jog-controls.png)
   ![Center the homing fiducial in the camera view](images/Homing-fiducial-centered.png)
 
-## Double-Check Camera Exposure
+## Fine-tune Camera Exposure
 
-As before, we're going to double-check our camera exposure.
+In order for OpenPnP to reliably detect the Lumen's homing fiducial, we'll need to set the exposure and camera settings for your top camera correctly. In some cases you can simply check the `Auto` checkbox for `Exposure`, then uncheck it to save the automatically set value. Make sure not to leave any of the settings with the `Auto` checkbox enabled, as that will lead to inconsistent vision results.
+
+See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=867) if you prefer.
 
 1. Navigate to the `Machine Setup` tab.
   ![Machine Setup Tab](images/Machine-Setup-Tab-4.png)
@@ -78,11 +77,8 @@ As before, we're going to double-check our camera exposure.
   ![a good histogram](images/good-histogram.png)
   ![a bad histogram](images/bad-histogram.png)
 
-6. Adjust the exposure and other camera settings. The goal is to make the image clear and have a lot of contrast, without being too bright or too dark overall. In some cases you can simply check the `Auto` checkbox for `Exposure`, then uncheck it to save the automatically set value.
+6. Adjust the exposure and other camera settings. The goal is to make the image clear and have a lot of contrast, without being too bright or too dark overall.
   ![Top camera properly exposed with the auto-exposure turned on](images/Auto-exposure-on.png)
-
-    !!! danger "For Mac Users"
-        Due to an issue with the camera driver in OpenPnP, some Mac users might notice that the image settings are greyed out for you. There's a fantastic open-source application called [CameraController](https://github.com/Itaybre/CameraController) that can be used to edit these settings.
 
 ## Apply Homing Fiducial Changes
 
@@ -100,11 +96,14 @@ As before, we're going to double-check our camera exposure.
 4. Click `Apply` to save your changes.
   ![Save homing fiducial location](images/Homing-fiducial-apply-2.png)
 
-5. Click on the "Home" button in the `Machine Controls Pane > Jog Tab` and watch your machine home using the limit switches, then move the top camera over the homing fiducial and find its exact location. You may still get an error about `nozzle tip calibration`, which is normal. We'll be working on that next.
+5. Click on the "Home" button in the `Machine Controls Pane > Jog Tab` and watch your machine home using the limit switches, then move the top camera over the homing fiducial and find its exact location.
   ![Home the machine](images/Connect-and-home.png)
 
-6. If your machine positions correctly over the homing fiducial but you receive the error: `FIDUCIAL-HOME no matches found.`, you should double-check your camera settings. If they seem alright, you may need to adjust your [vision pipeline](../../../misc/troubleshooting/vision-pipeline-adjustment/index.md).
+6. If you receive the error: `FIDUCIAL-HOME no matches found.`, OpenPnP was not able to identify your homing fiducial. You'll need to double-check your [exposure settings](#fine-tune-camera-exposure), and then you may need to adjust your [Homing Fiducial Pipeline](../../../openpnp/vision-pipeline-adjustment/2-homing-fiducial-pipeline.md).
   ![A first attempt at homing the LumenPnP](images/Cant-find-homing-fiducial.png)
+
+7. Ignore the error for: `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold`. We'll tune those settings next. For now, your homing was successful.
+  ![Nozzle Calibration Error](images/too-many-vision-redirects.png)
 
 ## Next Steps
 
