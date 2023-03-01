@@ -40,20 +40,17 @@ Now that fisheye calibration is complete, we can set up the datum board. The dat
 8. Turn on the LED ring lights by pressing the `LED` button (if they're not already on).
   ![Turn on the LEDs](images/Turn-on-LEDs.png)
 
-9. Rotate the Top Camera lens until the board is sharply in focus. If you're having trouble, try using the community-created [lens adjustment tool](https://www.printables.com/model/208453-lumen-pnp-lens-adjustment-tool).
-  ![the homing fiducial in focus](images/In-focus-homing-fiducial.png)
-
     !!! info "Tip"
         Right click on the camera feed to change the Reticle style to see the center of the camera image. You can also use the scroll wheel to zoom in on the feed for more precision.
         ![Change the reticle that appears on the camera feed](images/Switch-reticle-type.png)
 
-10. Go back to the `Jog` tab in the "Machine Controls" pane.
+9. Go back to the `Jog` tab in the "Machine Controls" pane.
   ![Switch to the jog tab](images/Jog-tab.png)
 
-11. Set the `Distance` slider to `0.1` for more precise movements.
+10. Set the `Distance` slider to `0.1` for more precise movements.
   ![Make the jog controls more precise](images/Distance-slider-0pt1.png)
 
-12. Manually jog the head so that the reticle in the center of the Top Camera feed in your top camera view is perfectly centered on the Homing Fiducial in the center of the Opulo logo.
+11. Manually jog the head so that the reticle in the center of the Top Camera feed in your top camera view is perfectly centered on the Homing Fiducial in the center of the Opulo logo.
   ![use the jog controls to move the machine](images/jog-controls.png)
   ![Center the homing fiducial in the camera view](images/Homing-fiducial-centered.png)
 
