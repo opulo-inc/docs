@@ -46,18 +46,12 @@ Now that we know the offset from the top camera to the nozzle, we can use the no
 10. Jog the toolhead until the left nozzle is directly in the center of the bottom camera's vision.
   ![Position the toolhead over the bottom camera precisely](images/position-over-bottom-cam-precise.png)
 
-11. If the tip of the nozzle isn't in focus, rotate the bottom camera lens to set it in focus. Re-center the nozzle in the camera view if necessary.
-  ![Focus on the tip of the nozzle](images/focus-nozzle-from-bottom-cam.png)
-
-12. Click the "Capture Toolhead Location" button to calculate the correct position for the bottom camera.
+11. Click the "Capture Toolhead Location" button to calculate the correct position for the bottom camera.
   ![Store the camera location](images/store-nozzle-location-bottom.png)
 
-13. Click the `Apply` button to save the new camera position.
+12. Click the `Apply` button to save the new camera position.
   ![Save the camera location](images/apply-bottom-cam-pos.png)
-
-14. Try homing your machine again. If you get the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error, you will need to tune your [Bottom Camera Vision Pipeline](../../../misc/troubleshooting/vision-pipeline-adjustment/index.md).
-  ![Home the machine](images/home-during-bottom-cam-pos.png)
 
 ## Next Steps
 
-Next is [Backlash Compensation](../8-backlash-compensation/index.md).
+Next is [Nozzle Tip Calibration](../8-nozzle-tip-calibration/nozzle-tip-calibration.md).
