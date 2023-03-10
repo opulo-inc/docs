@@ -88,6 +88,12 @@ nav:
             - PCB Fiducial Pipeline: openpnp/vision-pipeline-adjustment/3-pcb-fiducial-pipeline.md
             - Nozzle Calibration Pipeline: openpnp/vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md
             - Part Identification Pipeline: openpnp/vision-pipeline-adjustment/5-part-identification-pipeline.md
+    - Feeders:
+        - Feeder Overview: feeders/overview/index.md
+        - Installing the Slot Harness: feeders/install-harness/index.md
+        - Software Setup: feeders/software-setup/index.md
+        - Firmware Update: feeders/firmware-update/index.md
+
     - Misc:
         - Troubleshooting: 
               - Symptoms: misc/troubleshooting/symptoms/index.md
