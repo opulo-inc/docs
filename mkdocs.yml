@@ -89,10 +89,10 @@ nav:
             - Nozzle Calibration Pipeline: openpnp/vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md
             - Part Identification Pipeline: openpnp/vision-pipeline-adjustment/5-part-identification-pipeline.md
     - Feeders:
-        - Feeder Overview: feeders/overview/index.md
-        - Installing the Slot Harness: feeders/install-harness/index.md
-        - Software Setup: feeders/software-setup/index.md
-        - Firmware Update: feeders/firmware-update/index.md
+        - Feeder Overview: feeders/1-overview/feeder-overview.md
+        - Installing the Slot Harness: feeders/2-install-harness/installing-the-slot-harness.md
+        - Software Setup: feeders/3-software-setup/software-setup.md
+        - Firmware Update: feeders/4-firmware-update/firmware-update.md
 
     - Misc:
         - Troubleshooting: 
