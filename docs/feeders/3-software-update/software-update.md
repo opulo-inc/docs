@@ -19,7 +19,7 @@ TODO instructions on how to get this version if not latest cut on site
 
 2. Follow the instructions for [updating your LumenPnP's firmware](../../byop/motherboard/update-firmware/index.md).
 
-## Update Feeder Firmware (Optional)
+## Update Feeder Firmware **(Optional)**
 
 All feeders come with firmware pre-programmed. These instructions are for updating to a new version of firmware, or putting your own firmware on the feeder.
 
