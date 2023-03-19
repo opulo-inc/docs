@@ -4,9 +4,9 @@ In this step, you'll install and wire slots onto the front and back rails of you
 
 ## Adjust Your Staging Plate
 
-To ensure feeders will mount to your LumenPnP's front rail, we need to ensure that your staging plate is mounted at the correct position.
+To ensure feeders will mount to your LumenPnP's front rail, we need to ensure that your staging plate is mounted at the correct position. **If you have a v3 LumenPnP, your staging plate is already at the correct distance.** You may skip this section.
 
-!!! danger
+!!! danger "Warning"
     Be aware that moving your primary staging plate will change where your bottom camera and homing fiducial markers are mounted. After moving the staging plate, you will need to review your machine's calibration. Specifically, the [Homing Fiducial](../../openpnp/calibration/4-homing-fiducial/index.md#tuning-the-homing-fiducial) and [Bottom Camera Position](../../openpnp/calibration/7-bottom-camera-position/index.md).
 
 1. Unplug your LumenPnP.
@@ -41,7 +41,7 @@ In your Slot Harness Kit, you'll find:
    ![](img/IMG_2027.JPG)
    ![](img/IMG_2029.JPG)
 
-3. Line up slots 1-25 in preparation for mounting to the front rail.
+3. Line up slots 1-25 in numerical order in preparation for mounting to the front rail.
    ![](img/IMG_2038.JPG)
    ![](img/IMG_2039.JPG)
 
@@ -154,4 +154,4 @@ In your Slot Harness Kit, you'll find:
 
 ## Next Steps
 
-Next is [updating your software.](../3-software-setup/software-setup.md)
+Next is [updating your software.](../3-software-update/software-update.md)
