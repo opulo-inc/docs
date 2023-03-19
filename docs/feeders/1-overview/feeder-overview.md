@@ -1,45 +1,43 @@
-# Feeder Overview
+# Overview
 
 This is the Opulo 8mm Feeder:
 
 ![hero image of feeder8](img/with-arm-with-glow.png)
 
-The 8mm feeder is an open source SMT component tape feeder that can reliably feed components as small as 0402. It is designed to work with a LumenPnP Pick and Place Machine, but can mount onto any 20mm X 20mm v-slot extrusion.
+The 8mm feeder is an open source SMT component tape feeder that can reliably feed components as small as 0402. It is designed to work with a LumenPnP Pick and Place Machine, but can mount onto any 20mm X 20mm v-slot extrusion. The source can be found [here](https://github.com/opulo-inc/feeder).
 
-The feeder uses the open source Photon feeder controller firmware, and talks the Photon protocol over RS-485 to any Marlin host with RS-485 support.
+The feeder uses the open source [Photon feeder controller firmware](https://github.com/photonfirmware/photon), and talks the Photon protocol over RS-485 to any Marlin host with RS-485 support.
 
 You can fit up to 50x 8mm Feeders on the front and back rail of your LumenPnP when using two staging plates.
+
 ![2 plates with 50 feeders](img/2plates-50feeders.png)
+
 If you'd like to add a third staging plate, you can fit 25x 8mm Feeders on the front rail of your LumenPnP.
+
 ![3 plates with 25 feeders](img/3plates-25feeders.png)
 
-
 ## Parts of the Feeder
-### Pick Window
-![](img/pick-window.JPG)
-### Buttons
-![](img/buttons.JPG)
-### Indicator Light
-![](img/indicator-light.JPG)
-### Film Guide
-![](img/film-guide-1.JPG)
-![](img/film-guide-2.JPG)
-### Peel Gears
-![](img/peel-gears.JPG)
-### Locking Arm
-![](img/locking-arm.JPG)
 
-## Loading Tape
+=== "Pick Window"
 
-This video shows how tape is loaded into the feeder, and the functionality of the buttons.
+    ![](img/pick-window.JPG)
 
-![](img/film-caught.JPG)
-![](img/film-free.JPG)
+=== "Buttons"
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5qwbSq9e7dI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    ![](img/buttons.JPG)
 
-!!! danger "Keep In Mind"
-    Don't worry if something in the video doesn't look exactly like what you have in the box. We’re constantly tuning and tweaking things to make them better and easier to use, so you might find things look slightly different.
+=== "Status Light"
+
+    ![](img/indicator-light.JPG)
+
+=== "Peel Gears"
+
+    ![](img/peel-gears.JPG)
+
+=== "Locking Arm"
+
+    ![](img/locking-arm.JPG)
+
 
 ## Help
 
