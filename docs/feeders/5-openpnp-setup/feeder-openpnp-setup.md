@@ -23,7 +23,7 @@
    ![adding new photonfeeder](img/new-photon-feeder.png)
 
 1. Mount a feeder to your machine. It can be in any slot.
-   ![mounting feeder]()
+   ![mounting feeder](../4-mounting/img/mounting.gif)
 
 2. Click the search button. OpenPnP will now scan for any feeders attached. This might take a minute!
    ![searching for photon feeders](img/photon-scan.png)

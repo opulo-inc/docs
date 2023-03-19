@@ -54,26 +54,27 @@ When in Peel mode, press and hold the forward and backwards buttons to peel or u
 
 ## Loading Tape
 
-1. Cut the tape across a hole.
+1. Cut the tape straight across one of the indexing holes, leaving a semicircle.
    ![](img/cut-tape.JPG)
    ![](img/cut-tape2.JPG)
-2. Peel back a bit of film.
+2. Peel back a few millimeters of film.
    ![](img/IMG_2170.JPG)
-3. feed the tape into the opening on the back of the feeder
+3. Feed the tape into the opening on the back of the feeder, film side up.
    ![](img/IMG_2171.JPG)
-4. align the semicircle intot he tooth on the drive wheel
+4. Align the semicircle in the tape to the first tooth on the drive wheel.
    ![](img/IMG_2174.JPG)
-5. pull the film out of the pick window
+5. Guide the few millimeters of loose film out of the pick window.
    ![](img/IMG_2172.JPG)
-6. press and hold the forward button while pull up on film
+6. Press and hold the forward button while pulling upwards on film.
    ![gif](img/pull-film-while-driving.gif)
-7. wrap it around and into the slot
+7. Wrap the film around the feeder and guide it into the slot leading to the peel gears.
    ![gif](img/wrap-around-film.gif)
    ![](img/film-guide-1.JPG)
 
-8. press and hold both buttons to switch to peel mode
+8. Press and hold both buttons until the status light turns blue to switch into Peel mode.
    ![gif](img/change-modes.gif)
-9.  press and hold forward to peel, and feed film in. stop when taught
+
+9. Press and hold the forward button to spin the peel motor, and feed film in between the two straight gears. Stop when the film is taught.
 
     ![film loading](img/loading-film.gif)
     
@@ -83,9 +84,9 @@ When in Peel mode, press and hold the forward and backwards buttons to peel or u
         ![](img/film-caught.JPG)
         ![](img/film-free.JPG)
 
-1. make sure it's behind the nubbin
+10. Check to make sure that the film is caught behind the peg that prevents the film from leaving the slot.
     ![](img/film-guide-2.JPG)
     ![](img/film-in-gears.JPG)
 
-2.  tap forward to feed and ensure things are working
+11. Tap the forward button to feed a part and ensure that the tape is loaded correctly.
     ![](img/feed-forward.gif)

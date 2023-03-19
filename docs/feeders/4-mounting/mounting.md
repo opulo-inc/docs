@@ -14,9 +14,9 @@ A feeder can be mounted on your LumenPnP with one smooth motion.
    ![](img/alignment-slot.JPG)
    ![](img/IMG_2175.JPG)
    ![](img/IMG_2156.JPG)
-4. Ensure the notch in the feeders' extrusion cutout grabs into the extrusion.
+4. Ensure the that the feeder is hooked around the extrusion as shown in the image below.
    ![](img/IMG_2158.JPG)
-5. Pull in on the locking arm.
+5. Depress the locking arm.
    ![](img/IMG_2159.JPG)
 6. Pull down on the feeder until it pops into place.
    ![](img/IMG_2161.JPG)
