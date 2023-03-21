@@ -19,25 +19,19 @@ If you'd like to add a third staging plate, you can fit 25x 8mm Feeders on the f
 ## Parts of the Feeder
 
 === "Pick Window"
-
-    ![](img/pick-window.JPG)
+    ![Pick Window](img/pick-window.JPG)
 
 === "Buttons"
-
-    ![](img/buttons.JPG)
+    ![Buttons](img/buttons.JPG)
 
 === "Status Light"
-
-    ![](img/indicator-light.JPG)
+    ![Status Light](img/indicator-light.JPG)
 
 === "Peel Gears"
-
-    ![](img/peel-gears.JPG)
+    ![Peel Gears](img/peel-gears.JPG)
 
 === "Locking Arm"
-
-    ![](img/locking-arm.JPG)
-
+    ![Locking Arm](img/locking-arm.JPG)
 
 ## Help
 
