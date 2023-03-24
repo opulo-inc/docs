@@ -5,7 +5,7 @@ This video shows how tape is loaded into the feeder, and the functionality of th
 !!! note "Keep In Mind"
     Don't worry if something in the video doesn't look exactly like what you have in the box. We’re constantly tuning and tweaking things to make them better and easier to use, so you might find things look slightly different.
 <div class="video-wrapper">
-<iframe width="560" height="315" margin="auto" src="https://www.youtube.com/embed/5qwbSq9e7dI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" margin="auto" src="https://www.youtube.com/embed/rVsv2GUO0Tg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Button Usage
@@ -36,7 +36,7 @@ Pressing and holding the forward or backward button will drive the tape at full 
 
 ### Changing Drive Mode
 
-Pressing and holding both buttons at the same time will make the light flash blue. This toggles the feeder from driving tape with long presses, to peeling film. Press and hold both buttons again to switch back.
+Pressing and holding both buttons at the same time will make the light flash blue. This toggles the feeder from driving tape with long presses, to peeling film with long presses. Press and hold both buttons again to switch back.
 
 ![press and hold both buttons, blue light](img/change-modes.gif)
 

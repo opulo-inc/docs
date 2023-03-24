@@ -4,24 +4,24 @@ To enable feeder usage, you'll need to update both your LumenPnP's firmware and 
 
 ## Update OpenPnP
 
-LumenPnP feeders are supported in OpenPnP version TODO and onward. Update your OpenPnP installation from
-TODO instructions on how to get this version if not latest cut on site
+LumenPnP feeders are a new OpenPnP feature, are not yet in mainline OpenPnP. Information about how to install the correct version is forthcoming.
+<!-- TODO add openpnp instructions -->
 
 ## Update LumenPnP Firmware
 
-!!! note "Machines Version v3.0.TODO+"
-    If your machine's version number is v3.0.TODO or greater, you already have firmware that supports feeders. You can skip this section.
+!!! note "Machines Version v3.0.5+"
+    If your machine's version number is v3.0.5 or greater, you already have firmware that supports feeders. You can skip this section.
 
 1. Download the LumenPnP firmware with feeder support from the latest release [here](https://github.com/opulo-inc/lumenpnp/releases).
    
     !!! danger "Important"
-        It is important that you pick the correct firmware file for your machine. If you have a v2 LumenPnP, choose the `v2-lumenpnp-firmware-feeder-support.bin`. If you have a v3, choose `v2-lumenpnp-firmware-feeder-support.bin`.
+        It is important that you pick the correct firmware file for your machine. If you have a v2 LumenPnP, choose the `v2-lumenpnp-firmware-feeder-support.bin`. If you have a v3, choose `v3-lumenpnp-firmware-feeder-support.bin`.
 
 2. Follow the instructions for [updating your LumenPnP's firmware](../../byop/motherboard/update-firmware/index.md).
 
 ## Update Feeder Firmware **(Optional)**
 
-All feeders come with firmware pre-programmed. These instructions are for updating to a new version of firmware, or putting your own firmware on the feeder.
+**All feeders come with firmware pre-programmed. These instructions are for updating to a new version of firmware, or putting your own firmware on the feeder.**
 
 1. Get the firmware binary you'd like to program. You can download a precompiled binary from the Photon [releases page](https://github.com/photonfirmware/photon/releases), or compile a new one yourself.
 2. Download and install the STM32CubeProgrammer application, found [here](https://www.st.com/en/development-tools/stm32cubeprog.html#section-get-software-table).

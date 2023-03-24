@@ -34,17 +34,20 @@ If you'd like to add a third staging plate, you can fit 25x 8mm Feeders on the f
 
     ![](img/peel-gears.JPG)
 
-=== "Locking Arm"
+=== "Release Lever"
 
     ![](img/locking-arm.JPG)
 
 
 ## Help
 
-If you find that there's something unclear in this documentation, please [submit a ticket on Github](https://github.com/opulo-inc/docs) about it! You can also file an issue using the link in the upper right of any page on this site. We're trying to make this as clear and understandable as possible, so every issue you tag helps us make it better for everyone else. You can also check out the [Discord server](https://discordapp.com/invite/TCwy6De) and ask questions to the community.
-
 If you get stuck, please don't hesitate to send us an email at support@opulo.io, or use our [support form](https://opulo.io/pages/contact-support).
+
+If you find that there's something unclear in this documentation, please [submit a ticket on Github](https://github.com/opulo-inc/docs) about it! You can also file an issue using the link in the upper right of any page on this site. We're trying to make this as clear and understandable as possible, so every issue you tag helps us make it better for everyone else. You can also check out the [Discord server](https://discordapp.com/invite/TCwy6De) and ask questions to the community.
 
 ## Next steps
 
 Before using the feeders, you'll [install the slot harness](../2-install-harness/installing-the-slot-harness.md).
+
+!!! danger "WIP"
+    This section of the docs is still in progress as software builds are finalized. Some information might be incomplete.
