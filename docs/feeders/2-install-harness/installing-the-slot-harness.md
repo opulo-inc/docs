@@ -117,38 +117,38 @@ In your Slot Harness Kit, you'll find:
    ![](img/IMG_2131.JPG)
    ![](img/IMG_2132.JPG)
 
-2. Plug the next 25 connectors into the 25 slots on the front rail.
+2. Plug the next 25 connectors into slots `1`-`25`.
    ![](img/IMG_2102.JPG)
    ![](img/IMG_2103.JPG)
    ![](img/IMG_2105.JPG)
 
-1. Attach the cable to the bottom of the right side of the front rail using two cable clips.
+3. Attach the cable to the bottom of the right side of the front rail using two cable clips.
    ![](img/IMG_2108.JPG)
    ![](img/IMG_2109.JPG)
 
-1. Fold the cable over, and secure the cable to the bottom of the right rail using three cable clips as shown.
+4. Fold the cable over, and secure the cable to the bottom of the right rail using three cable clips as shown.
    ![](img/IMG_2110.JPG)
    ![](img/IMG_2111.JPG)
    ![](img/IMG_2112.JPG)
 
-1. Fold the cable over again and secure to the bottom of the right side of the back rail using two more cable clips.
+5. Fold the cable over again and secure to the bottom of the right side of the back rail using two more cable clips.
    ![](img/IMG_2113.JPG)
    ![](img/IMG_2114.JPG)
 
-1. Bend a small "U" shape into the cable in between the final 25 connectors as shown.
+6. Bend a small "U" shape into the cable in between the final 25 connectors as shown.
    ![](img/IMG_2131.JPG)
    ![](img/IMG_2132.JPG)
 
-1. Plug the final 25 connectors into the 25 slots on the back rail.
+7. Plug the final 25 connectors into slots `26`-`50`, starting with slot `26`.
    ![](img/IMG_2115.JPG)
    ![](img/IMG_2116.JPG)
    ![](img/IMG_2117.JPG)
    ![](img/IMG_2119.JPG)
 
-1. Take a minute to ensure that your wiring looks like the picture below.
+8. Take a minute to ensure that your wiring looks like the picture below.
    ![](img/IMG_2120.JPG)
 
-1. Lower your machine back down onto its four legs.
+9. Lower your machine back down onto its four legs.
    ![](img/IMG_2122.JPG)
    ![](img/IMG_2125.JPG)
 

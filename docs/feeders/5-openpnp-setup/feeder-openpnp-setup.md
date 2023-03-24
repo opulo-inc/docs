@@ -2,8 +2,8 @@
 
 ## Actuator Setup
 
-!!! note "config files from release TODO or later"
-    you don't gotta set this up, it'll already be there
+!!! note "Config Files from Release v3.0.5 or Later"
+      If you've set up your LumenPnP using OpenPnP config files from release `v3.0.5` or later, you can skip this step; it's already been done for you.
 
 1. Open OpenPnP.
 2. Make a new Actuator titled `PhotonFeederData` and give it the following settings:
@@ -31,14 +31,14 @@
 3. Once the search has completed, you should see the feeder you loaded on your rail appear in the Feeder table. The name will be the feeder's unique ID number, followed by the slot it's in.
    ![auto populated feeders](img/auto-populated-feeders.png)
 
-4. set part. hit feed command. Any part will work, but OpenPnP requires a part to be selected before we can test feeder operation)
+4. Select a part from the drop down menu. (Any part will work, but OpenPnP requires a part to be selected before we can test.) Hit feed button shown below.
    ![feed command photon](img/feed-photon-feeder.png)
 
-5. Set part, set position, set all data.
+5. Now, you can set the pick position as you would with any other field in OpenPnP. There's also a field to choose the pitch of the parts in your tape.
    ![set photon pick position](img/pick-position.png)
 
-6. try to pick
+6. Try to pick from the feeder using the pick button.
 
-7.  You should now be able to select these feeders as part of any job.
+7. You should now be able to select the feeders as part of any job.
 
-8. Move the feeder to a new slot. hit scan or whatever to find out that it's smart
+8. Move the feeder to a new slot. Click the `Find` button in that feeder's menu. You'll see the slot number update to reflect the feeder's new position. After you have positions set for all slots, OpenPnP will automatically go to the feeder's new location to pick when it detects a slot change.
