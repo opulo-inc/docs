@@ -9,6 +9,8 @@ markdown_extensions:
     - def_list
     - pymdownx.superfences
     - footnotes
+    - pymdownx.tabbed:
+        alternate_style: true 
 
 theme:
     name: material
@@ -19,6 +21,7 @@ theme:
     features:
         - navigation.footer
         - navigation.tracking
+        - content.tabs.link
 
 plugins:
    - glightbox:
@@ -88,6 +91,15 @@ nav:
             - PCB Fiducial Pipeline: openpnp/vision-pipeline-adjustment/3-pcb-fiducial-pipeline.md
             - Nozzle Calibration Pipeline: openpnp/vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md
             - Part Identification Pipeline: openpnp/vision-pipeline-adjustment/5-part-identification-pipeline.md
+    - Feeders:
+        - Overview: feeders/1-overview/feeder-overview.md
+        - Installing the Slot Harness: feeders/2-install-harness/installing-the-slot-harness.md
+        - Software Update: feeders/3-software-update/software-update.md
+        - Mounting Feeders: feeders/4-mounting/mounting.md
+        - OpenPnP Setup: feeders/5-openpnp-setup/feeder-openpnp-setup.md
+        - Loading Tape: feeders/6-loading-tape/loading-tape.md
+        
+
     - Misc:
         - Troubleshooting: 
               - Symptoms: misc/troubleshooting/symptoms/index.md

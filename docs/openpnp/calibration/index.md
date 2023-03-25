@@ -12,7 +12,9 @@ We provide these docs, the walkthrough video, and default configuration files to
 
 This walkthrough video shows the entire calibration process starting from stock configuration. We highly recommend watching the video along with walking through the docs on this site when setting up your machine.
 
+<div class="video-wrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CSnczX6VJ7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## **What you'll need**
 
