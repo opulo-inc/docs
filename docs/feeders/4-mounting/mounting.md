@@ -13,9 +13,9 @@ A feeder can be mounted on your LumenPnP with one smooth motion.
    ![holding feeder at 45 degrees](img/IMG_2150.JPG)
 
 3. Align the peg on the slot with the channel in the feeder.
-   ![](img/alignment-slot.JPG)
-   ![](img/IMG_2175.JPG)
-   ![](img/IMG_2156.JPG)
+   ![Channel in the feeder](img/alignment-slot.JPG)
+   ![Slot in the aluminum extrusion](img/IMG_2175.JPG)
+   ![Channel in the feeder aligned with aluminum extrusion](img/IMG_2156.JPG)
 
 4. Ensure the that the feeder is hooked around the extrusion as shown in the image below.
    ![Hooking the feeder around the rear rail](img/IMG_2158.JPG)
@@ -32,9 +32,9 @@ A feeder can be mounted on your LumenPnP with one smooth motion.
 7. You should see the status light blink gold, indicating that the feeder has booted up.
    ![boot light sequence](img/boot-lights.gif)
 
-7. Release the lever arm.
+8. Release the lever arm.
 
 !!! note "Powder on the Rail"
     You might notice that a small amount of dust or powder develops on your machine's feeder rail. This is totally ok. The feeder prints are designed to be just a little undersized, so that they wear in to exactly the right fit over a few insertion cycles.
-    ![powder on the rail](TODO)
-
+    ![powder on the rail]()
+    <!-- TODO: Photo -->
