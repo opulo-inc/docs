@@ -35,6 +35,7 @@ A feeder can be mounted on your LumenPnP with one smooth motion.
 7. Release the lever arm.
 
 !!! note "Powder on the Rail"
-    You might notice that a small amount of dust or powder develops on your machine's feeder rail. This is totally ok. The feeder prints are designed to be just a little undersized, so that they wear in to exactly the right fit over a few insertion cycles.
-    ![powder on the rail](TODO)
+    You might notice that a small amount of dust or powder develops on your machine's feeder rail. This is totally ok. The feeder prints are designed to be just a little undersized, so that they wear in to exactly the right fit over a few insertion cycles. Brush any powder away and continue use as normal.
+    
+    ![powder on the rail](img/powder-on-rail.jpg)
 
