@@ -33,7 +33,6 @@ If you'd like to add a third staging plate, you can fit 25x 8mm Feeders on the f
 === "Release Lever"
     ![Release Lever](img/locking-arm.JPG)
 
-
 ## Help
 
 If you get stuck, please don't hesitate to send us an email at support@opulo.io, or use our [support form](https://opulo.io/pages/contact-support).
