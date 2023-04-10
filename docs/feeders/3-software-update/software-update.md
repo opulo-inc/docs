@@ -15,7 +15,10 @@ LumenPnP feeders are a new OpenPnP feature, are not yet in mainline OpenPnP. Inf
 1. Download the LumenPnP firmware with feeder support from the latest release [here](https://github.com/opulo-inc/lumenpnp/releases).
 
     !!! danger "Important"
-        It is important that you pick the correct firmware file for your machine. If you have a v2 LumenPnP, choose the `v2-lumenpnp-firmware-feeder-support.bin`. If you have a v3, choose `v3-lumenpnp-firmware-feeder-support.bin`.
+        It is important that you pick the correct firmware file for your machine.
+
+           - If you have a v2, choose `v2-lumenpnp-firmware-feeder-support.bin`.
+           - If you have a v3, choose `v3-lumenpnp-firmware-feeder-support.bin`.
 
 2. Follow the instructions for [updating your LumenPnP's firmware](../../byop/motherboard/update-firmware/index.md).
 
