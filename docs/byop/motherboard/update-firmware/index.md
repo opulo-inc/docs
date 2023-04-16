@@ -3,7 +3,70 @@
 
 All motherboards come pre-flashed with firmware from Opulo and should work out of the box without these steps. If you're setting up a LumenPnP with feeders for the first time, you may need to update your LumenPnP's firmware.
 
-## Option 1: Auto Build Marlin and `dfu-util` (RECOMMENDED)
+!!! danger "Important"
+    It is important that you pick the correct firmware file for your machine.
+
+        - If you have a v2, choose `v2-lumenpnp-firmware-feeder-support.bin`.
+        - If you have a v3, choose `v3-lumenpnp-firmware-feeder-support.bin`.
+
+## Option 1: Prebuilt Firmware and STMProgrammer (RECOMMENDED)
+
+The easiest way to update your LumenPnP's motherboard is to use a precompiled binary of the firmware, and the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) software by ST.
+
+1. Download the latest [precompiled firmware](https://github.com/opulo-inc/lumenpnp/releases) `.bin` file for your motherboard version.
+2. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html).
+3. Open STM32CubeProgrammer.
+4. Select `USB` from the connection type dropdown on the right.
+    ![USB Connection drop down](images/usb-connection.png)
+5. Switch to the "download" tab on the left.
+    ![Switch to the download tab](images/download-tab.png)
+
+6. Attach the LumenPnP Motherboard to your computer with the included USB cable (USB C to A for Motherboard 3.0, or USB B to A for Motherboard 4.0).
+
+7. Boot your motherboard into DFU Mode
+    1. Press and hold the `BOOT` button
+    2. Press the `Reset` button and hold for 10 seconds
+    3. Release the `Reset` button and wait for 10 seconds
+    4. Release the `BOOT` button
+  ![Boot and Reset buttons on the motherboard](images/IMG_0749.JPG)
+
+    !!! info "NOTE"
+        If you have a hard time getting your board to enter DFU mode, instead try powering off the machine entirely, holding the 'BOOT' button, plugging in power, waiting 10 seconds, then release the `BOOT` button.
+8. Click the refresh button in the `Port` line to detect the motherboard's port.
+    ![Refresh button](images/refresh-button.png)
+
+9. Select the newly discovered USB port from the `Port` dropdown menu.
+    ![Select USB Port](images/select-port.png)
+
+10. Double-check the other fields on the right match the image above:
+    1. `PID: 0xdf11`
+    2. `VID: 0x0483`
+    3. `Read Unprotect (MCU): Unchecked`
+    4. `TZEN Regression (MCU): Unchecked`
+
+11. Click the green `Connect` button to connect to the motherboard.
+    ![Connect to Motherboard button](images/connect-to-motherboard.png)
+
+12. Click the `Browse` button to browse for the binary you downloaded earlier.
+    ![Click the browse button](images/browse-for-binary.png)
+
+13. Click the `Start Programming` button to upload the firmware to the motherboard.
+    ![Start Programming the motherboard](images/start-programming.png)
+
+14. Let the upload finish.
+    ![Upload finished](images/upload-done.png)
+
+15. Press the `reset` button on the motherboard to reboot it.
+
+16. The machine should show up as a COM/Serial Port on your PC now, and you should be able to access it via OpenPNP. If it doesn't, press the Reset button on the board again, or power-cycle the machine *after the flashing is completed*.
+
+This is how you can check whether your machine is connected properly:
+
+* Windows: ![Device manager](images/STM32_COM_port_connected.png)
+* Mac/Linux: ![Terminal lsusb](images/linux_lsusb.png)
+
+
+## Option 2: Auto Build Marlin and `dfu-util`
 
 !!! info "Marlin"
     Building an older version of Marlin with the recommended config files won't work. If you are unsure whether a previously-downloaded local version of Marlin is the newest one, re-downloading it is the safest choice.
@@ -54,7 +117,7 @@ All motherboards come pre-flashed with firmware from Opulo and should work out o
 * Windows: ![Device manager](images/STM32_COM_port_connected.png)
 * Mac/Linux: ![Terminal lsusb](images/linux_lsusb.png)
 
-## Option 2: Auto Build Marlin Only
+## Option 3: Auto Build Marlin Only
 
 Note that flashing the firmware using the Auto Build Marlin Plugin might work, but seems error-prone for most people. We recommend using `dfu-util` as described above. Here are the steps to use Auto Build Marlin if you'd like to try it.
 
@@ -86,7 +149,7 @@ This is how you can check whether your machine is connected properly:
 * Windows: ![Device manager](images/STM32_COM_port_connected.png)
 * Mac/Linux: ![Terminal lsusb](images/linux_lsusb.png)
 
-## Option 3: PlatformIO
+## Option 4: PlatformIO
 
 1. Download the [latest Marlin firmware][marlin] and unzip it.
 2. Install [VSCode][vscode] and its [PlatformIO extension][pIO].
@@ -147,25 +210,6 @@ If you aren't able to upload, you can check to see if your motherboard is bootin
 * Mac/Linux: ![lsusb output](images/linux_lsusb_bootloader.png)
 
 Also, reference [the Marlin instructions for uploading](https://marlinfw.org/docs/basics/install_platformio.html).
-
-### Option 4: ST-Link (Not Recommended)
-
-This method requires an ST-Link (V2 Clone or equivalent). Additionally you need the software  [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) by ST. This method is a bit more involved and takes longer than just using the DFU mode.
-
-1. Compile (build) the project normally with PIO
-2. This generates a .bin-file that contains the firmware
-3. Connect your board to your ST-Link through the SWD header on board
-4. Start STM32CubeProgrammer
-5. Connect to the MCU:
-  ![STM32CubeProgrammer UI](images/connect_STM_to_programmer.png)
-
-6. Click on **Open file** and navigate to the **firmware.bin** file in *PROJECT_DIRECTORY/.pio/build/STM32F407VE_black*
-  ![STM32 Open File](images/open_firmware_bin_file.png)
-
-7. Click on **Download**. This will flash the SMT32F4 with the provided firmware
-  ![Download Button](images/start_firmware_download.png)
-
-8. Done! Now you just have to disconnect the ST-Link and press the reset button on the board.
 
 ## Next steps
 
