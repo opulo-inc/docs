@@ -4,7 +4,14 @@ To enable feeder usage, you'll need to update both your LumenPnP's firmware and 
 
 ## Update OpenPnP
 
-LumenPnP feeders are a new OpenPnP feature, are not yet in mainline OpenPnP. Information about how to install the correct version is forthcoming.
+LumenPnP feeders are a new OpenPnP feature, are not yet in mainline OpenPnP. These docs are based on a 2023-04-05 release, which you can download here:
+
+- Linux ([.deb](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-linux-test.deb))
+- Windows ([32 Bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x32-test.exe)) ([64 Bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x64-test.exe))
+- Mac ([.dmg](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-macos-test.dmg))
+
+You can also download the most recent builds of OpenPnP that support feeders [here](https://openpnp.org/test-downloads/), but there could be updates or changes that differ from these docs.
+
 <!-- TODO add openpnp instructions -->
 
 ## Update LumenPnP Firmware
