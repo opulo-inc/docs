@@ -59,7 +59,7 @@ You can also download the most recent builds of OpenPnP that support feeders [he
 9. Hold down the BOOT button located here on the feeder:
    ![boot button](img/boot-button.png)
 
-10. While holding the BOOT button, insert the pins of the programmer into the plated holes on the feeder as shown in the picture below. The holes are slightly offset, so the programmer pins will stay in contact with the through holes. Once connected, release the BOOT button.
+10. While holding the BOOT button, insert the pins of the programmer into the plated holes on the feeder as shown in the picture below. The holes are slightly offset, so the programmer pins will stay in contact with the through holes. Once connected, release the BOOT button. If the feeder's LED flashes and turns red, it is not ready to be programmed. Try again.
 
     !!! Note
         The feeder does not need to be mounted on a rail for this step; it can be powered by the programmer.
@@ -67,6 +67,7 @@ You can also download the most recent builds of OpenPnP that support feeders [he
     ![offset holes](img/offset-pins.jpg)
     ![inserting pins](img/inserting-programmer.jpg)
     ![programmer inserted](img/programmer-inserted.jpg)
+    ![Feeder not ready to be programmed](img/feeder-not-ready.png)
 
 11. Click the green connect button in STM32CubeProgrammer.
     ![stm32 cube software connect panel](img/connect-button.png)
@@ -80,7 +81,7 @@ You can also download the most recent builds of OpenPnP that support feeders [he
 13. Click the "Browse" button and navigate to the provided `firmware.bin` file.
     ![Browse Button](img/browse-button.png)
 
-14. Ensure that the “Start address” is 0x08000000. (You can check any of the checkboxes, but the first two will take much longer to program.)
+14. Ensure that the “Start address” is `0x08000000`.
     ![Start Address](img/start-address.png)
 
 15. Click "Start Programming".

@@ -18,28 +18,61 @@
 ## Add Feeders
 -->
 
-1. Power on your LumenPnP and connect to it.
+Both the feeder slots, and the Photon Feeders themselves have unique identifiers that OpenPnP will use to keep your components organized easily. Even if you rearrange your feeders, OpenPnP will remember which component was loaded onto it. And since OpenPnP will remember where each feeder slot is located, the picking location will already be set for you!
 
-2. Go to the “Feeders” Tab. Click the Plus to add a new feeder, and select `PhotonFeeder`.
-   ![adding new photon feeder](img/new-photon-feeder.png)
+To get started the first time with your new feeders, you'll need to attach them all to your LumenPnP, and let OpenPnP scan them to save their information.
 
-3. Mount a feeder to your machine. It can be in any slot.
+## Finding Feeders
+
+You'll need to do these steps whenever you have brand new feeders.
+
+1. Power on your LumenPnP and connect to it in OpenPnP as usual.
+
+2. Click on the `Feeders` tab.
+  ![Machine Setup Tab](img/feeders-tab.png)
+
+3. Click the plus to add a new feeder,
+   ![Add a feeder](img/add-feeder.png)
+
+4. Select `PhotonFeeder`.
+   ![adding new photon feeder](img/add-photon-feeder.png)
+
+5. Mount all of your new feeders to your machine. They can be in any slot.
    ![mounting feeder](../4-mounting/img/mounting.gif)
 
-4. Click the search button. OpenPnP will now scan for any feeders attached. This might take a minute!
-   ![searching for photon feeders](img/photon-scan.png)
+6. Click the `Search` button. OpenPnP will now scan for any feeders attached. This will take a minute, and you'll see the progress showing which slots have feeders in them.
+   ![search button for photon feeders](img/search-for-feeders.png)
+   ![searching for photon feeders](img/feeder-search-progress.png)
 
-5. Once the search has completed, you should see the feeder you loaded on your rail appear in the Feeder table. The name will be the feeder's unique ID number, followed by the slot it's in.
-   ![auto populated feeders](img/auto-populated-feeders.png)
+7. Once the search has completed, each physically inserted feeder will be listed. The name will be the feeder's unique ID number, followed by the slot it's in. In this example, there are two feeders inserted.
+   ![auto populated feeders](img/identified-feeders.png)
 
-6. Select a part from the drop down menu. (Any part will work, but OpenPnP requires a part to be selected before we can test.) Hit feed button shown below.
-   ![feed command photon](img/feed-photon-feeder.png)
+## Test Setup
 
-7. Now, you can set the pick position as you would with any other field in OpenPnP. There's also a field to choose the pitch of the parts in your tape.
-   ![set photon pick position](img/pick-position.png)
+To finish setting up your new feeders, we need to mark where they're located on your LumenPnP. As mentioned above, the locations of each feeder slot will be saved and reused, so you shouldn't need to do this every time you remove and replace a feeder.
 
-8. Try to pick from the feeder using the pick button.
+1. Home your LumenPnP
+   ![Home the machine](img/home-machine.png)
 
-9. You should now be able to select the feeders as part of any job.
+2. Use the machine controls to position your camera over the feeder. This will be more precise later after you load components into the feeder, so a rough estimate is fine for now.
+   ![Move the machine](img/move-machine.png)
 
-10. Move the feeder to a new slot. Click the `Find` button in that feeder's menu. You'll see the slot number update to reflect the feeder's new position. After you have positions set for all slots, OpenPnP will automatically go to the feeder's new location to pick when it detects a slot change.
+3. Save the rough feeder position with the "Capture Camera Location" button. For now, save it for both the `Slot Location` and `Part Offset`.
+   ![Capture Camera Location](img/rough-camera-location.png)
+
+4. Click `Apply` to save your changes.
+   ![Apply Feeder Changes](img/apply-changes.png)
+
+5. Select a part from the drop down menu.
+   ![Assign a part to your feeder](img/assign-part.png)
+
+6. Press the feed button to test that the feeder responds to the LumenPnP.
+   ![Test Feed](img/feed-button.png)
+
+## Next Steps
+
+You'll need to fine-tune the position of the pick location—especially the z-height. This is easiest with [tape loaded into the feeder](../6-loading-tape/loading-tape.md).
+
+!!! tip "Moving Feeders"
+      If you remove a feeder from your machine and reinsert it into another feeder slot, you'll need to tell OpenPnP to update its location. To do this, click the `Find` button in that feeder's menu. You'll see the slot number update to reflect the feeder's new slot, and its location will update accordingly!
+      ![Find new feeder location](img/find-feeder-slot.png)
