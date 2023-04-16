@@ -1,5 +1,5 @@
 # OpenPnP Setup
-
+<!-- 
 ## Actuator Setup
 
 !!! note "Config Files from Release v3.0.5 or Later"
@@ -16,6 +16,7 @@
    ![actuator regex for photon actuator](img/photon-read-regex-data.png)
 
 ## Add Feeders
+-->
 
 1. Power on your LumenPnP and connect to it.
 
