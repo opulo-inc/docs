@@ -6,13 +6,29 @@ A feeder can be mounted on your LumenPnP with one smooth motion.
 
 ## Installing Spool Arm
 
-1. Use a 2.0mm hex wrench to unscrew the countersunk screw in the spool arm slot,
+1. Grab a spool arm and thimble.
+   ![spool arm and thimble](img/spool-parts.jpg)
+
+2. Insert the V-shaped side of the thimble into the spool arm as shown, so that the thimble and the block feature on the other end of the arm are on the same side. Make sure that the flat side of the thimble is facing the rest of the arm when inserting.
+   ![inserting thimble into spool arm](img/thimble-inserted.jpg)
+   ![inserting thimble into spool arm](img/thimble-inserted-back.jpg)
+
+3. Rotate the thimble 90 degrees so that the flat side is facing downwards, as shown below.
+   ![rotating the thimble 90 degrees](img/thimble-rotate.jpg)
+   ![rotating the thimble 90 degrees](img/thimble-rotate-back.jpg)
+
+4. The spool arm should look like the image below.
+   ![assembled spool arm](img/spool-assembled-1.jpg)
+   ![assembled spool arm](img/spool-assembled-2.jpg)
+   ![assembled spool arm](img/spool-assembled-3.jpg)
+
+5. Use a 2.0mm hex wrench to unscrew the countersunk screw in the spool arm slot,
    ![Unscrewing the Spool Arm mount screw](img/IMG_2146.JPG)
 
-2. Insert the spool arm upright, with the flat side of the arm facing the PCB.
+6. Insert the spool arm upright, with the flat side of the arm facing the PCB.
    ![Inserting the Spool Arm](img/IMG_2147.JPG)
 
-3. Replace the screw.
+7. Replace the screw.
    ![Re-tightening the Spool Arm mount screw](img/IMG_2149.JPG)
 
 ## Insert Feeder
