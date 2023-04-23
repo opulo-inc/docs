@@ -1,55 +1,18 @@
-<!-- <!-- markdownlint-disable MD033--> -->
+<!-- markdownlint-disable MD033-->
 # Loading Tape
 
 This video shows how tape is loaded into the feeder, and the functionality of the buttons.
 
-!!! note "Keep In Mind"
+!!! Note "Keep In Mind"
     Don't worry if something in the video doesn't look exactly like what you have in the box. We’re constantly tuning and tweaking things to make them better and easier to use, so you might find things look slightly different.
 <div class="video-wrapper">
 <iframe width="560" height="315" margin="auto" src="https://www.youtube.com/embed/rVsv2GUO0Tg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## Feeder Buttons
-
-### Feeding
-
-Tapping the forward button will make the feeder feed forward 4mm. Tapping the backward button makes the feeder feed backwards 4mm.
-
-=== "Feed Forward"
-
-    ![gif of tapping forward button, feeding tape](img/feed-forward.gif)
-
-=== "Feed Backward"
-
-    ![gif of tapping backwards button, feeding tape](img/feed-backward.gif)
-
-### Driving Tape
-
-Pressing and holding the forward or backward button will drive the tape at full speed.
-
-=== "Drive Tape Forward"
-    ![press hold forward, tape drives forward](img/drive-forward.gif)
-
-=== "Drive Tape Backward"
-    ![press hold backward, tape drives backward](img/drive-backward.gif)
-
-### Changing Drive Mode
-
-Pressing and holding both buttons at the same time will make the light flash blue. This toggles the feeder from driving tape with long presses, to peeling film with long presses. Press and hold both buttons again to switch back.
-
-![press and hold both buttons, blue light](img/change-modes.gif)
-
-### Peeling Film
-
-When in Peel mode, press and hold the forward and backwards buttons to peel or unpeel film.
-
-=== "Peeling Film"
-    ![press hold forward, peel film](img/peel.gif)
-
-=== "Unpeeling Film"
-    ![press hold backward, unpeel film](img/unpeel.gif)
-
 ## Loading Tape in Feeder
+
+!!! Note
+    See also the [Feeder Buttons](../1-overview/feeder-overview.md#feeder-buttons) documentation for manually driving your feeders.
 
 1. Cut the tape straight across one of the indexing holes, leaving a semicircle.
    ![Cutting component tape](img/cut-tape.JPG)
@@ -86,10 +49,9 @@ When in Peel mode, press and hold the forward and backwards buttons to peel or u
         ![Film incorrectly stuck between peel and worm gear](img/film-caught.JPG)
         ![Film correctly flowing out the peel gears](img/film-free.JPG)
 
-    <!-- TODO: Needs a red circle, I was confused -->
 10. Check to make sure that the film is caught behind the peg that prevents the film from leaving the slot.
-    ![Film tucked behind guide peg](img/film-guide-2.JPG)
-    ![Film tucked behind guide peg angle 2](img/film-in-gears.JPG)
+    ![Film tucked behind guide peg](img/film-guide-modified-2.jpg)
+    ![Film tucked behind guide peg angle 2](img/film-in-gears-modified.jpg)
 
-11. Tap the forward button to feed a part and ensure that the tape is loaded correctly.
+11. Tap the forward button to feed a part and ensure that the tape is loaded correctly. You need to feed the feeder at least once to ensure consistent feeding in the future.
     ![GIF successful feeding](img/feed-forward.gif)
