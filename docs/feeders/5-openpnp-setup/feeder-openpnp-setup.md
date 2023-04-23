@@ -1,22 +1,4 @@
 # OpenPnP Setup
-<!-- 
-## Actuator Setup
-
-!!! note "Config Files from Release v3.0.5 or Later"
-      If you've set up your LumenPnP using OpenPnP config files from release `v3.0.5` or later, you can skip this step; it's already been done for you.
-
-1. Open OpenPnP.
-2. Make a new Actuator titled `PhotonFeederData` and give it the following settings:
-   ![PhotonFeederData actuator](img/photon-actuator.png)
-3. Press Apply to save your changes.
-4. Navigate to `Drivers > GcodeDriver`. Switch to the `Gcode` tab. Switch the `Head Mountable` dropdown to `Actuator: [No Head] PhotonFeederData`. Switch the `Setting` to `ACTUATOR_READ_COMMAND`. In the text box, paste in `M485 {Value}`.
-   ![actuator read command for photon actuator](img/actuator-read-data.png)
-
-5. Switch the `Setting` to `ACTUATOR_READ_REGEX`. In the text box, paste in `rs485-reply: (?<Value>.*)`
-   ![actuator regex for photon actuator](img/photon-read-regex-data.png)
-
-## Add Feeders
--->
 
 Both the feeder slots, and the Photon Feeders themselves have unique identifiers that OpenPnP will use to keep your components organized easily. Even if you rearrange your feeders, OpenPnP will remember which component was loaded onto it. And since OpenPnP will remember where each feeder slot is located, the picking location will already be set for you!
 
