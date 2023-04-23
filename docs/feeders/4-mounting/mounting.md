@@ -58,7 +58,4 @@ A feeder can be mounted on your LumenPnP with one smooth motion.
 5. Pull down on the feeder until it pops into place.
    ![Dropping the Feeder into place](img/IMG_2161.JPG)
 
-6. You should see the status light blink gold, indicating that the feeder has booted up.
-   ![boot light sequence](img/boot-lights.gif)
-
-7. Release the lever arm.
+6. Release the lever arm. You may want to double-check that the spring finger contacts on the feeder are properly touching the metal pads on the slot until you get the hang of installing them.
