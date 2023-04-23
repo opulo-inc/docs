@@ -98,6 +98,7 @@ nav:
         - Mounting Feeders: feeders/4-mounting/mounting.md
         - OpenPnP Setup: feeders/5-openpnp-setup/feeder-openpnp-setup.md
         - Loading Tape: feeders/6-loading-tape/loading-tape.md
+        - Final Setup: feeders/7-final-setup/final-feeder-setup.md
         
 
     - Misc:
