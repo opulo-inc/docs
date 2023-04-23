@@ -160,7 +160,7 @@ In your Slot Harness Kit, you'll find:
 
 ## Next Steps
 
-Next is [updating your software.](../3-software-update/software-update.md)
+If you came here from the [Wiring](../../semi-assembly/wiring/index.md) page, go back to step 35 to finish plugging everything in. Otherwise, next is [updating your software.](../3-software-update/software-update.md)
 
 [clip-url]: https://github.com/opulo-inc/lumenpnp/blob/main/pnp/cad/FDM/extrusion-cable-clip.FCStd
 [slot-url]: https://github.com/opulo-inc/feeder
