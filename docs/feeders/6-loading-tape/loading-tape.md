@@ -55,3 +55,7 @@ This video shows how tape is loaded into the feeder, and the functionality of th
 
 11. Tap the forward button to feed a part and ensure that the tape is loaded correctly. You need to feed the feeder at least once to ensure consistent feeding in the future.
     ![GIF successful feeding](img/feed-forward.gif)
+
+## Next Steps
+
+Last is the [Final Setup.](../7-final-setup/final-feeder-setup.md)

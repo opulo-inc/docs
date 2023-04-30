@@ -12,8 +12,6 @@ LumenPnP feeders are a new OpenPnP feature, are not yet in mainline OpenPnP. The
 
 You can also download the most recent builds of OpenPnP that support feeders [here](https://openpnp.org/test-downloads/), but there could be updates or changes that differ from these docs.
 
-<!-- TODO add openpnp instructions -->
-
 ## Update LumenPnP Firmware
 
 !!! note "Machines Version v3.0.5+"
@@ -89,3 +87,7 @@ You can also download the most recent builds of OpenPnP that support feeders [he
 
 16. Wait until the software prompts that the firmware has been downloaded successfully. You may disconnect the programmer from the feeder.
     ![programming complete pop up](img/programming-complete.png)
+
+## Next Steps
+
+Next, you'll [mount your feeders.](../4-mounting/mounting.md)
