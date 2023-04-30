@@ -59,3 +59,7 @@ A feeder can be mounted on your LumenPnP with one smooth motion.
    ![Dropping the Feeder into place](img/IMG_2161.JPG)
 
 6. Release the lever arm. You may want to double-check that the spring finger contacts on the feeder are properly touching the metal pads on the slot until you get the hang of installing them.
+
+## Next Steps
+
+Next, you'll [configure your attached feeders in OpenPnP.](../5-openpnp-setup/feeder-openpnp-setup.md)

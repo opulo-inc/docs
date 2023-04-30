@@ -165,4 +165,6 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 
 You're done with your build! Time to head over to the OpenPnP section of the docs for calibration and running your first job:
 
-## [OpenPnP Docs Page](../../openpnp/index.md)
+## Next Steps
+
+You're done with your build! Next, you'll set up [OpenPnP.](../../openpnp/index.md)

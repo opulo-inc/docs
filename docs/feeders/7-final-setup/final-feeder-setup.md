@@ -49,5 +49,9 @@ Now that you've loaded a component into the feeder, we'll fine-tune the feeder's
 
 16. Use the "Pick" button to test picking the component. If it isn't picked appropriately you may need to tune the Part Offset, especially the Z-axis.
     ![Pick Component Button](img/pick-component.png)
-17. You can recycle the picked component with the `Machine Controls > Special > Recycle button`, or simply turn off the vacuum in `Actuators > H1:VAC1 > Off`.
+17. Simply turn off the vacuum in `Actuators > H1:VAC1 > Off` to recycle your component.
 18. Repeat this tuning with each of your feeders, and then you'll be ready to start a job!
+
+## Next Steps
+
+If you came here from the FTP documentation, your next step is [Setting up the Board.](../../openpnp/ftp/2-setting-up-the-board/index.md)

@@ -16,3 +16,5 @@ It might be useful to refer to this guide again after you finish it the first ti
   - Printed tray feeders
 
 It's highly recommend to take some time to read through the [OpenPnP Wiki](https://github.com/openpnp/openpnp/wiki/User-Manual). The OpenPnP documentation is much more in depth that this guide, as this guide is meant to get you up and running quickly with a known board and configuration. As you set up your own jobs, the OpenPnP documentation should be your primary reference.
+
+Get Started with [Installing Your Feeders.](1-installing-the-feeders/index.md)
