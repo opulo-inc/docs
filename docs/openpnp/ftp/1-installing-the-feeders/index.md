@@ -9,21 +9,6 @@ description: >
 
 The FTP PCB has two different types of components that need to be placed: resistors and LEDs. Each will need its own feeder so that the LumenPnP can pick each type of component.
 
-!!! Note "Powered Feeders"
-    This page describes installing the 3D printed "tray" feeders that come with the FTP kit. If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder) and would prefer to use them for your FTP, follow the steps for **[setting them up](../../../feeders/1-overview/feeder-overview.md)** now, and then you'll come back to this guide to finish preparing for the FTP by [setting up the board](../index.md).
-
-## Attach Feeders
-
-1. Use two M3x10 button head screws and two M3 wingnuts to secure the printed tray feeder through onto the staging plate using holes: C15 and E15.
-  ![Install the feeder to the staging plate](images/Feeder-installed-with-screws.jpg)
-
-2. For each component, cut a strip of component tape off the reel about 125mm long.
-
-3. Slide the Resistors into the left-most tray feeder, and the LEDs the adjacent tray.
-
-4. In OpenPnP, connect to your LumenPnP and home it.
-  ![Connect to your LumenPnP and home it](images/Connect-and-home.png)
-
 ## Import Board
 
 1. Download the FTP board design. It's in the `LumenPnP_PCBs.zip` artifact on the [latest major release.](https://github.com/opulo-inc/lumenpnp/releases/)
@@ -40,14 +25,71 @@ The FTP PCB has two different types of components that need to be placed: resist
 5. Go to `File > Import Board > KiCAD .pos`
   ![Start importing the board](images/Import-board-file-menu.png)
 6. In the Import popup:
-    1. Select the `ftp-top.pos` file you downloaded earlier as the Top File
-    2. Enable the `Assign Parts` checkbox.
-    3. Enable the `Create Missing Parts` checkbox.
-    4. Click `Import`
-  ![Fill out the board import dialog](images/Board-import-dialog.png)
+       1. Select the `ftp-top.pos` file you downloaded earlier as the Top File
+       2. Enable the `Assign Parts` checkbox.
+       3. Enable the `Create Missing Parts` checkbox.
+       4. Click `Import`
+
+     ![Fill out the board import dialog](images/Board-import-dialog.png)
 
 7. Go to `File > Save Job As` and save your FTP job.
   ![Save Job As](images/Save-job-as.png)
+
+## Installing the N045 Nozzle
+
+1. Grease the nozzle holder before installing the N045 nozzle.
+  ![Grease the nozzle holder before installing the N045 nozzle](images/Install-nozzle-grease.jpg)
+
+2. Install your N045 nozzle onto the nozzle holder.
+  ![Install the N045 nozzle](images/Install-nozzle-nozzle.jpg)
+
+3. Wipe off any excess grease.
+  ![Wipe excess grease from the nozzle holder](images/Install-nozzle-wipe.jpg)
+
+4. Go to the `Machine Setup` tab in OpenPnP.
+  ![Switch to the Machine Setup Tab](images/Machine-setup-tab.png)
+
+5. Navigate to `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`.
+  ![Select Nozzle N1](images/Reference-nozzle-n1.png)
+
+6. In the lower-right pane, switch to the `Nozzle Tips` tab.
+  ![Switch to the nozzle tips tab](images/Nozzle-tips-tab.png)
+
+7. For row `N045`, check both the `Compatible` and `Loaded` checkboxes. If you haven't set up automatic nozzle changing, you will receive a popup saying that you're required to manually load the nozzle on the toolhead.
+  ![Load Nozzle N045](images/Load-nozzle-n045.png)
+
+8. Go to the `Packages` tab in the top-right pane.
+  ![Switch to the Packages Tab](images/Packages-tab.png)
+
+9. Select `LED_0603_1608Metric` from the list.
+  ![Select the LED package](images/Select-led-package.png)
+
+10. In the lower-right pane, you'll be in the `Nozzle Tips` tab. Click the `Compatible` on the `N045` row.
+  ![Mark compatible with N045 nozzle](images/Select-led-nozzle-tips.png)
+
+11. Similarly, select `R_0603_1608Metric` from the Package list.
+  ![Select the resistor package](images/Select-resistor-package.png)
+
+12. And click the `Compatible` checkbox on the `N045` row.
+  ![Mark compatible with N045 nozzle](images/Select-resistor-nozzle-tips.png)
+
+13. Under the bottom-left `Machine Controls` pane, select `Nozzle: N1 - N045 (Head:H1)` to enable the left toolhead.
+  ![Select Nozzle N1](images/Enable-nozzle-n1.png)
+
+## Attach Feeders
+
+!!! Note "Powered Feeders"
+    If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder) and would prefer to use them for your FTP, follow the steps for **[setting them up](../../../feeders/1-overview/feeder-overview.md)** now, and then you'll come back to this guide to finish preparing for the FTP by [setting up the board](../index.md).
+
+1. Use two M3x10 button head screws and two M3 wingnuts to secure the printed tray feeder through onto the staging plate using holes: C15 and E15.
+  ![Install the feeder to the staging plate](images/Feeder-installed-with-screws.jpg)
+
+2. For each component, cut a strip of component tape off the reel about 125mm long.
+
+3. Slide the Resistors into the left-most tray feeder, and the LEDs the adjacent tray.
+
+4. In OpenPnP, connect to your LumenPnP and home it.
+  ![Connect to your LumenPnP and home it](images/Connect-and-home.png)
 
 ## Add Feeders
 
@@ -92,47 +134,6 @@ The FTP PCB has two different types of components that need to be placed: resist
 
 14. Do the same procedure again for the LED feeder. You'll assign the part `LED_0603_1608Metric-LED_Small` to the new feeder.
 
-## Installing the N045 Nozzle
-
-1. Grease the nozzle holder before installing the N045 nozzle.
-  ![Grease the nozzle holder before installing the N045 nozzle](images/Install-nozzle-grease.jpg)
-
-2. Install your N045 nozzle onto the nozzle holder.
-  ![Install the N045 nozzle](images/Install-nozzle-nozzle.jpg)
-
-3. Wipe off any excess grease.
-  ![Wipe excess grease from the nozzle holder](images/Install-nozzle-wipe.jpg)
-
-4. Go to the `Machine Setup` tab in OpenPnP.
-  ![Switch to the Machine Setup Tab](images/Machine-setup-tab.png)
-
-5. Navigate to `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`.
-  ![Select Nozzle N1](images/Reference-nozzle-n1.png)
-
-6. In the lower-right pane, switch to the `Nozzle Tips` tab.
-  ![Switch to the nozzle tips tab](images/Nozzle-tips-tab.png)
-
-7. For row `N045`, check both the `Compatible` and `Loaded` checkboxes. If you haven't set up automatic nozzle changing, you will receive a popup saying that you're required to manually load the nozzle on the toolhead.
-  ![Load Nozzle N045](images/Load-nozzle-n045.png)
-
-8. Go to the `Packages` tab in the top-right pane.
-  ![Switch to the Packages Tab](images/Packages-tab.png)
-
-9. Select `LED_0603_1608Metric` from the list.
-  ![Select the LED package](images/Select-led-package.png)
-
-10. In the lower-right pane, you'll be in the `Nozzle Tips` tab. Click the `Compatible` on the `N045` row.
-  ![Mark compatible with N045 nozzle](images/Select-led-nozzle-tips.png)
-
-11. Similarly, select `R_0603_1608Metric` from the Package list.
-  ![Select the resistor package](images/Select-resistor-package.png)
-
-12. And click the `Compatible` checkbox on the `N045` row.
-  ![Mark compatible with N045 nozzle](images/Select-resistor-nozzle-tips.png)
-
-13. Under the bottom-left `Machine Controls` pane, select `Nozzle: N1 - N045 (Head:H1)` to enable the left toolhead.
-  ![Select Nozzle N1](images/Enable-nozzle-n1.png)
-
 ## Fine-tuning feeder height
 
 1. Navigate to the `Feeders` tab in the top-right pane.
@@ -174,4 +175,4 @@ The FTP PCB has two different types of components that need to be placed: resist
 
 ## Next Steps
 
-Next is [setting up the board](../2-setting-up-the-board/index.md).
+Next is [Setting Up The Board.](../2-setting-up-the-board/index.md)
