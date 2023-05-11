@@ -65,7 +65,6 @@ This is how you can check whether your machine is connected properly:
 * Windows: ![Device manager](images/STM32_COM_port_connected.png)
 * Mac/Linux: ![Terminal lsusb](images/linux_lsusb.png)
 
-
 ## Option 2: Auto Build Marlin and `dfu-util`
 
 !!! info "Marlin"

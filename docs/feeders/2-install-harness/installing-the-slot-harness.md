@@ -4,7 +4,7 @@ In this step, you'll install and wire slots onto the front and back rails of you
 
 ## Adjust Your Staging Plate
 
-To ensure feeders will mount to your LumenPnP's front rail, we need to ensure that your staging plate is mounted at the correct position. **If you have a v3 LumenPnP, your staging plate is already at the correct distance.** You may skip this section.
+To ensure feeders will mount to your LumenPnP's front rail, we need to ensure that your staging plate is mounted at the correct position. **If you have a v3 LumenPnP, your staging plate is already at the correct distance, and can skip this section.**
 
 !!! danger "Warning"
     Be aware that moving your primary staging plate will change where your bottom camera and homing fiducial markers are mounted. After moving the staging plate, you will need to review your machine's calibration. Specifically, the [Homing Fiducial](../../openpnp/calibration/4-homing-fiducial/index.md#tuning-the-homing-fiducial) and [Bottom Camera Position](../../openpnp/calibration/7-bottom-camera-position/index.md).
@@ -17,33 +17,40 @@ To ensure feeders will mount to your LumenPnP's front rail, we need to ensure th
   ![measuring with the squaring bracket](img/staging-plate-spacing.png)
 
 4. Re-tighten the four M5x8mm button head screws to secure the staging plate.
+   ![Tighten the staging plate screws](img/staging-right-screw-1.JPG)
 
 ## Prepare the Slots
 
 In your Slot Harness Kit, you'll find:
 
-* 49x Slots
-* 1x Termination Slot
-* 1x Slot Cable Harness
-* 1x Feeder Programmer
-* 10x Cable Clips
-* 50x M5x10mm Socket Head Screws
-* 50x M5 T-Slot Nuts
+| Count | Item                                |
+| ----- | ----------------------------------- |
+| 49x   | [Feeder Slots][slot-url]            |
+| 1x    | [Feeder Termination Slot][slot-url] |
+| 1x    | [Feeder Programmer][slot-url]       |
+| 10x   | [Cable Clips][clip-url]             |
+| 50x   | M5x10mm Socket Head Screws          |
+| 50x   | M5 T-Slot Nuts                      |
 
 ![Slot Harness Kit](img/IMG_1969.JPG)
 
-1. Note that each slot has a number from 1-50. This is the slot's **address**. It's important that you **mount slots in order**. You'll also notice that the 50th slot is a different color. It's important that **50 is connected last in the harness**. This allows the feeders to communicate correctly.
-   ![Slot number 1](img/IMG_2023.JPG)
-   ![Slots 50 is a different color](img/IMG_1973.JPG)
+!!! Note
+    Each slot has a number from 1-50. This is the slot's **address**. It's important that you **mount slots in order**. You'll also notice that the 50th slot is a different color. It's important that **50 is connected last in the harness**. This allows the feeders to communicate correctly.
+      ![Slot number 1](img/IMG_2023.JPG)
+      ![Slots 50 is a different color](img/IMG_1973.JPG)
 
-2. For each slot, take an M5x10mm socket head screw and insert it in the circular opening on the back. Lightly thread an M5 T-slot nut onto each one as shown.
+1. For slot number 1, take an M5x10mm socket head screw and insert it in the circular opening on the back.
    ![Inserting the M5x10mm screw](img/IMG_2026.JPG)
    ![Screw protruding from the back of the slot](img/IMG_2027.JPG)
+
+2. Lightly thread an M5 T-slot nut onto the screw as shown.
    ![Loosely threading the t-slot nut](img/IMG_2029.JPG)
 
-3. Line up slots 1-25 in numerical order in preparation for mounting to the front rail.
-   ![Slots lined up in order](img/IMG_2038.JPG)
+3. Repeat this for each feeder slot.
    ![Slots lined up in order side angle](img/IMG_2039.JPG)
+
+4. Line up slots 1-25 in numerical order in preparation for mounting to the front rail.
+   ![Slots lined up in order](img/IMG_2038.JPG)
 
 ## Mount the Slots
 
@@ -59,7 +66,7 @@ In your Slot Harness Kit, you'll find:
    ![Front left leg](img/IMG_2030.JPG)
    ![Spool Arm held in place against the front left leg](img/IMG_2032.JPG)
 
-5. Insert the T-slot nut of the `1` slot into the extrusion as shown, and slide it into the notch in the spool arm. Tighten the M5 screw to secure the slot. This notch places the slot exactly 85mm away from the front left leg.
+5. Insert the T-slot nut of the `1` Feeder Slot into the extrusion as shown, and slide it into the notch in the spool arm. Tighten the M5 screw to secure the slot. This notch places the slot exactly 85mm away from the front left leg.
    ![Slot 1 positioned in the extrusion at the correct distance](img/IMG_2034.JPG)
    ![Slot 1 positioned at the notch in the spool arm](img/IMG_2037.JPG)
 
@@ -71,7 +78,7 @@ In your Slot Harness Kit, you'll find:
 7. Continue until slots `1`-`25` are mounted to the front rail.
    ![Slots 1-25 mounted](img/IMG_2047.JPG)
 
-8. Next, you'll mount slots to the back rail. Near the back right leg, place the flat of the square end of the spool arm against the triangle bracket, and the flat back of the arm against the back rail extrusion as shown in the image.
+8. Next, you'll mount slots to the back rail. Near the back right leg, place the flat of the square end of the spool arm against the metal triangle bracket. Lay the flat back of the arm against the back rail extrusion as shown in the image.
    ![Spool Arm held in place against the back right leg](img/IMG_2057.JPG)
 
 9. As before, insert the T-slot nut of the `26` slot into the extrusion as shown, and slide it into the notch in the spool arm. Tighten the M5 screw to secure the slot.
@@ -153,4 +160,7 @@ In your Slot Harness Kit, you'll find:
 
 ## Next Steps
 
-Next is [updating your software.](../3-software-update/software-update.md)
+If you came here from the [Wiring](../../semi-assembly/wiring/index.md) page, go back to step 35 to finish plugging everything in. Otherwise, next is [updating your software.](../3-software-update/software-update.md)
+
+[clip-url]: https://github.com/opulo-inc/lumenpnp/blob/main/pnp/cad/FDM/extrusion-cable-clip.FCStd
+[slot-url]: https://github.com/opulo-inc/feeder
