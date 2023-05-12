@@ -63,6 +63,3 @@ If you find that there's something unclear in this documentation, please [submit
 ## Next steps
 
 Before using the feeders, you'll [install the slot harness](../2-install-harness/installing-the-slot-harness.md).
-
-!!! danger "WIP"
-    This section of the docs is still in progress as software builds are finalized. Some information might be incomplete.
