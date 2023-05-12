@@ -60,6 +60,11 @@ A feeder can be mounted on your LumenPnP with one smooth motion.
 
 6. Release the lever arm. You may want to double-check that the spring finger contacts on the feeder are properly touching the metal pads on the slot until you get the hang of installing them.
 
+!!! danger "Powering on the LumenPnP with feeders already mounted"
+      In some circumstances, you might find that plugging in your LumenPnP with many feeders already mounted prevents the machine from booting. This is a known issue due to high inrush current, but there's a method to get a successful boot. Before powering on your machine, lift a few feeders up and away from the rail slightly, just so that they disconnect from power as shown in the image below. Then plug in your LumenPnP. If you get a successful boot, you can drop the feeders down onto the rail fully. If you don't, lift a few more feeders and repeat.
+
+      ![Dropping the Feeder into place](img/lift2.jpg)
+
 ## Next Steps
 
 Next, you'll [configure your attached feeders in OpenPnP.](../5-openpnp-setup/feeder-openpnp-setup.md)
