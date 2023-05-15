@@ -4,11 +4,11 @@ OpenPnP is a piece of open source software designed to control pick and place ma
 
 These guides were designed with OpenPnP version `2022-08-01_18-07-09.2a36a8d` in mind, but they should work for other version as well.
 
-![](openpnp-logo.png)
+![OpenPnP Logo](openpnp-logo.png)
 
 ## What's on this site?
 
 * How to configure and calibrate your LumenPnP in OpenPnP
 * How to run a job on your LumenPnP using OpenPnP
 
-Let's dive in!
+Let's dive in! Get started with [Importing Configuration Files.](calibration/1-import-config/index.md)

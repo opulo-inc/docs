@@ -136,7 +136,10 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
   ![](images/wired-overview.JPG)
 
 34. Attach the strain relief print into the bottom of the bottom rail in the left leg assembly.
-  ![](images/mount-strain.JPG)
+    ![](images/mount-strain.JPG)
+
+    !!! Note
+        If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder), follow the steps for [installing the Slot Harness](../../feeders/2-install-harness/installing-the-slot-harness.md) now, and then come back here to plug in the last few wires below.
 
 35. Fit the cover back onto the motherboard by rotating it underneath the pneumatic tubing, and pressing down around the stepper driver pins and heatsinks. Remount using the hardware it was originally mounted with.
   ![](images/mount-cover-1.JPG)
@@ -160,6 +163,8 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 41. Lower your machine down onto all four legs.
 42. Plug the three USB cables coming from your machine into your computer. Depending on your computer's hardware, you might need to plug these all into separate USB ports on your computer and not use an external hub. We'll cover more about this later during calibration.
 
-43. You're done with your build! Time to head over to the OpenPnP section of the docs for calibration and running your first job:
+You're done with your build! Time to head over to the OpenPnP section of the docs for calibration and running your first job:
 
-## [OpenPnP Docs Page](../../openpnp/index.md)
+## Next Steps
+
+You're done with your build! Next, you'll set up [OpenPnP.](../../openpnp/index.md)

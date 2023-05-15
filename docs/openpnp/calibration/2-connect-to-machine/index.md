@@ -44,31 +44,34 @@ Now we'll set up the cameras. The big red "X" in the camera views means that Ope
 
     If you have this problem, you will need to plug at least one of the webcams directly into your computer via a separate USB port. Occasionally this can cause the webcam's name to be incorrect, but you'll still be able to select it from the drop-down list with a little trial and error.
 
-1. In the top-left corner, change the camera view to one of the "Show All" options. You should then see two camera feeds that are black, and have red X's on them.
+1. Remove both camera's lens caps. They pull up and off. (They're already removed in the image below)
+  ![Lens cap locations](../5-mm-per-pixel/images/remove-lens-caps.jpg)
+
+2. In the top-left corner, change the camera view to one of the "Show All" options. You should then see two camera feeds that are black, and have red X's on them.
   ![show both camera feeds](images/switch-camera-display.png)
 
-2. Again, navigate to the `Machine Setup` tab.
-3. Again, click the "Expand" checkbox if necessary.
-4. Click on `Cameras > OpenPnpCaptureCamera Bottom`.
+3. Again, navigate to the `Machine Setup` tab.
+4. Again, click the "Expand" checkbox if necessary.
+5. Click on `Cameras > OpenPnpCaptureCamera Bottom`.
   ![Finding the Bottom Camera Settings](images/Bottom Camera Config.png)
 
-5. In the lower detail pane, switch to the `Device Settings` tab.
+6. In the lower detail pane, switch to the `Device Settings` tab.
   ![Switching to the camera device settings](images/Bottom-camera-device-settings.png)
 
-6. In the `Device` drop-down, choose `PnP Bottom Camera`.
+7. In the `Device` drop-down, choose `PnP Bottom Camera`.
   ![Selecting the correct device for the Bottom Camera](images/Bottom-camera-select-device.png)
 
     !!! info "Duplicate Camera Names"
         There have been a few reports of users on Windows seeing two of the same camera name in their Open PnP drop down menu. If this happens to you, use trial and error to identify which camera is which in the list. Sorry for any inconvenience.
 
-7. In the `Format` drop-down, choose the `1280x720 10fps` setting.
+8. In the `Format` drop-down, choose the `1280x720 10fps` setting.
   ![setting bottom camera resolution](images/Bottom resolution.png)
 
-8. Click the `Apply` button in the bottom right. You should then see the camera display start showing the feed from the camera, or at least see the red X disappear. We'll fix the exposure next.
+9. Click the `Apply` button in the bottom right. You should then see the camera display start showing the feed from the camera, or at least see the red X disappear. We'll fix the exposure next.
   ![Saving changes to the Bottom Camera Config](images/Bottom Camera Apply.png)
   ![Bottom camera is now on](images/Bottom-camera-on.png)
 
-9. Quickly adjust the exposure to make the camera feed more reasonable. On some computers, you can toggle Automatic Exposure on, and then back off again to set it correctly. Do not keep auto exposure turned on. Later on we'll set the exposure more accurately. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=867).
+10. Quickly adjust the exposure to make the camera feed more reasonable. On some computers, you can toggle Automatic Exposure on, and then back off again to set it correctly. Do not keep auto exposure turned on. Later on we'll set the exposure more accurately. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=867).
 
     !!! danger "For Mac Users"
         Due to an issue with the camera driver in OpenPnP, some Mac users might notice that the image settings are greyed out for you. There's a fantastic open-source application called [CameraController](https://github.com/Itaybre/CameraController) that can be used to edit these settings.
