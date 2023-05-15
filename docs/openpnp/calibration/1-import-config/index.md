@@ -24,7 +24,7 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 4. Download the `openpnp-config-vX.X.X.zip` file for that release, and unzip it.
 
     !!! info "Older Releases"
-        Older releases have the OpenPnP configuration files in the source. If you can't find the OpenPnP config zip in the release, download the `Source Code` from the release, unzip, and open the `openpnp` folder.
+        Older releases have the OpenPnP configuration files in the source. If you can't find the OpenPnP config zip in the release, download the `Source Code` from the release, unzip, and open the `openpnp` folder. If you have a v2 LumenPnP kit, you can get your `vision-settings.xml` from the [`3.0.0`](https://github.com/opulo-inc/lumenpnp/releases/tag/v3.0.0) release or later, as it wasn't a part of earlier configuration packages.
 
 5. Inside you'll find the four configuration files you need: `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`.
 
@@ -36,7 +36,7 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
   
 8. Double-check that OpenPnP is closed.
 
-9.  In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
+9. In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
 
 10. Copy the configuration files from the LumenPnP source files into `.openpnp2` and overwrite the old configuration files. Note that if you've already been using OpenPnP, you may want to only replace your `machine.xml` file, as the other files will overwrite your existing components and vision libraries.
 
@@ -56,14 +56,14 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
         Older releases have the OpenPnP configuration files in the source. If you can't find the OpenPnP config zip in the release, download the `Source Code` from the release, unzip, and open the `openpnp` folder.
 
 5. Inside you'll find the four configuration files you need: `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`.
-   
+
 6. To install these files in OpenPnP, you'll need to find its configuration folder. First, follow [these instructions](https://www.macworld.com/article/671158/how-to-show-hidden-files-on-a-mac.html) to show hidden folders in Finder.
 
 7. Next, navigate to: `/Users/[username]/.openpnp2`.
   
-8.  Double check that OpenPnP is closed.
+8. Double check that OpenPnP is closed.
 
-9.  In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
+9. In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
 
 10. Copy the configuration files from the LumenPnP source files into `.openpnp2` and overwrite the old configuration files. Note that if you've already been using OpenPnP, you may want to only replace your `machine.xml` file, as the other files will overwrite your existing components and vision libraries.
 
