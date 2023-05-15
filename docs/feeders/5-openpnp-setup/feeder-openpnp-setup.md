@@ -8,7 +8,13 @@ To get started the first time with your new feeders, you'll need to attach them 
 
 You'll need to do these steps whenever you have brand new feeders.
 
-1. Power on your LumenPnP and connect to it in OpenPnP as usual.
+!!! danger "v2 LumenPnP Config"
+      If you have a v2 LumenPnP, the default Z height of your nozzle could cause a collision with feeders. We recommend printing and installing updated Z-gantries (shown below) and nozzle rack, which moves your nozzles up 13mm preventing a collision. You can download them [here](https://github.com/opulo-inc/lumenpnp/releases/download/v3.0.4/LumenPnP-STLs-v3.0.4.zip).
+      ![nozzles shifted up 13mm](img/nozzles-shifted.png)
+      If you have a single nozzle setup, you can also just edit the Safe Zone values in your Z axis configuration in OpenPnP to prevent a collision.
+      ![axis limit settings in openpnp](img/axis-limits.png)
+
+1. Power on your LumenPnP and connect to it.
 
 2. Click on the `Feeders` tab.
   ![Machine Setup Tab](img/feeders-tab.png)
