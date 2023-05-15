@@ -2,6 +2,8 @@
 
 Both the feeder slots, and the Photon Feeders themselves have unique identifiers that OpenPnP will use to keep your components organized easily. Even if you rearrange your feeders, OpenPnP will remember which component was loaded onto it. And since OpenPnP will remember where each feeder slot is located, the picking location will already be set for you!
 
+If you'd like to start with a fresh config, you can download the `openpnp-config-vX.X.X.zip` file from the [most recent release](https://github.com/opulo-inc/lumenpnp/releases).
+
 To get started the first time with your new feeders, you'll need to attach them all to your LumenPnP, and let OpenPnP scan them to save their information.
 
 ## Finding Feeders
