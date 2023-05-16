@@ -15,8 +15,9 @@
 2. Cut strips of double-sided tape and apply them to the top of the FTP board. Do not cover the fiducial markers, but make sure that each of the pads are covered by tape. The double-sided tape lets the components stick to the board so that you can do a "mock" run of a placement job without dealing with solder paste.
   ![Apply double-sided tape to the board](images/Apply-tape-to-board.jpg)
 
-3. Place the FTP board in the holders and push them so that they're snug against the sides of the board.
+3. Place the FTP board in the holders and push them so that they're snug against the sides of the board. The top edge of the board should line up with the ridge in the dynamic board mount's tab.
   ![Insert the FTP board](images/FTP-pcb-mounted.jpg)
+  ![Board Mount Tab](images/board-mount-tab.png)
 
 4. Tighten down the holders. You shouldn't be able to move the board except by pressing on the tab holding it in place.
 
