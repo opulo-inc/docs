@@ -76,7 +76,7 @@ Nicely done so far! You've got your homing fiducial all set up. This next step c
    ![Jog the nozzle over the camera](images/jog-controls-bottom.png)
    ![Jog the nozzle over the camera](images/jogging-finished.png)
 
-8. Twist the lens of the bottom camera until the tip of the nozzle is in focus.
+8. Twist the lens of the bottom camera until the tip of the nozzle is in focus. You may need to loosen the set screw on the side to allow it to turn.
    ![Jog the nozzle over the camera](images/in-focus-nozzle.png)
 
 9. Go to the `General Configuration` tab.
