@@ -88,7 +88,7 @@ In this step, you will assemble the main frame of the machine.
   ![](images/back-rail-offset.JPG)
   ![](images/back-rail-no-offset.JPG)
 
-19. Slide the back rail up and let the left side of it rest on the spacing bracket included in your tool kit. Make sure it's resting on the short side (50mm). Lightly tighten the top screw on the left side, making sure to keep the end of the extrusion and right angle brackets perfectly flush with the side of the extrusion.
+19. Slide the back rail up and let the left side of it rest on the spacing bracket included in your tool kit. Make sure it's resting on the short side (50mm). Lightly tighten the top screw on the left side, making sure to keep the end of the extrusion and right angle brackets perfectly flush with the side of the extrusion. Note that you may need to loosen the screws a little to back them out of the bracket before tightening the assembly together.
   ![](images/alignment-bracket.JPG)
   ![](images/left-bracket-rest.JPG)
   ![](images/left-bracket-top-screw.JPG)
