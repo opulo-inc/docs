@@ -32,7 +32,10 @@ The FTP PCB has two different types of components that need to be placed: resist
 
      ![Fill out the board import dialog](images/Board-import-dialog.png)
 
-7. Go to `File > Save Job As` and save your FTP job.
+7. In the `Parts` tab on the top right, find the lines for the newly created components: `LED_0603_1608Metric-LED_Small` and `R_0603_1608_Metric-R_Small`. Set their Height values to `0.5`mm by double-clicking the cell.
+  ![Set the part height](images/set-height.png)
+
+8. Go to `File > Save Job As` and save your FTP job.
   ![Save Job As](images/Save-job-as.png)
 
 ## Installing the N045 Nozzle
