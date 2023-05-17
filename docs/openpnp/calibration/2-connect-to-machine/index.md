@@ -7,6 +7,9 @@ Awesome! Now we've got OpenPnP installed on your computer, and we've got the def
 2. Open OpenPnP on your computer. You should now see the OpenPnP UI:
   ![OpenPnP's basic UI](images/openpnp-ui.png)
 
+!!! Note "Linux"
+    On linux you'll need to join the `dialout` and `video` groups, or provide `udev` rules for the LumenPnP's usb devices.
+
 ## Com Port and Baud Rate
 
 Before connecting to the LumenPnP, you need to set which USB port to use for communication in OpenPnP.

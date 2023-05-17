@@ -1,6 +1,6 @@
 # Homing Fiducial
 
-Now that fisheye calibration is complete, we can set up the datum board. The datum board is a reference point for everything else you'll do with the machine. The center dot of the datum board will be the most important calibration point for the machine. It'll be used to fine-tune the LumenPnP's XY position after homing to account for any errors in the limit switches. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=705).
+Now we can set up the datum board. The datum board is a reference point for everything else you'll do with the machine. The center dot of the datum board will be the most important calibration point for the machine. It'll be used to fine-tune the LumenPnP's XY position after homing to account for any errors in the limit switches. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=705).
 
 !!! danger "If Your Machine Is v2"
     If you are setting up a v2 LumenPnP kit, your datum board is not yet mounted to the Staging Plate.
@@ -86,6 +86,9 @@ See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECM
     * The Homing Fiducial is in the center of the reticle in the camera feed.
     * The camera image is in sharp focus.
     * The camera image is properly exposed.
+
+    !!! info "Tip"
+        If you're having trouble adjusting the focus, try using the community-created [lens adjustment tool](https://www.printables.com/model/208453-lumen-pnp-lens-adjustment-tool). You may also need to loosen the set screw on the side of the camera.
 
 2. Go back to Machine Setup and select `Heads > ReferenceHead H1`.
   ![Return to the homing fiducial location settings](images/Select-Reference-Head-H1-5.png)
