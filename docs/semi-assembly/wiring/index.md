@@ -25,7 +25,7 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
   ![](images/cable-harness-placement-1.JPG)
   ![](images/cable-harness-placement-2.JPG)
 
-7. Screw two M5x10mm socket head screws through the mounting holes in the cable chain and into the `front-drag-chain-mount`. If you notice that a cable chain clip pops out at any point, it can easily be pressed right back into place.
+7. Screw two M5x10mm socket head screws through the mounting holes in the cable chain and into the `front-drag-chain-mount`. (This may be a tight fit.) If you notice that a cable chain clip pops out at any point, it can easily be pressed right back into place.
   ![](images/screw-chain-front.JPG)
   ![](images/chain-clip-pop.JPG)
   ![](images/chain-clip-set.JPG)
@@ -39,7 +39,10 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
   ![](images/chain-head-mount-3.JPG)
 
 10. Look at your machine from the back. You should see the two cables you pulled aside earlier. Take the connector with four wires and plug it into the port on the back side of the camera, as shown below.
-  ![](images/plug-top-cam.JPG)
+
+    !!! Note
+        For this and the following steps, the wire connectors only fit in one direction. If you ever need to remove the connectors, make sure to unlatch them and pull from the connector -- not from the wires themselves -- to avoid damage.
+    ![](images/plug-top-cam.JPG)
 
 11. Take the remaining cable on the back side of the X gantry with only three wires and plug it into the top light, as shown below.
   ![](images/plug-top-light.JPG)
@@ -47,31 +50,34 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 12. On the front side of the X gantry, take the connector with four holes but only three wires and plug it into the limit switch PCB.
   ![](images/plug-z-limit.JPG)
 
-13. Take the connector with six holes and four wires and plug it into the Z motor.
+13. Take the **unlabeled** connector with six holes and four wires and plug it into the Z motor.
   ![](images/plug-z-motor.JPG)
 
 14. Grab two zip ties from the bag in your tool kit and fit them through the channels in the top side of the X gantry.
   ![](images/zip-tie-1.JPG)
   ![](images/zip-tie-2.JPG)
 
-15. Find the cable labeled `LH`, route it over the top of the Z motor, and secure it in place with the zip tie on the left side of the X gantry. Trim the excess zip tie.
+15. Find the cable labeled `LM`, route it over the top of the Z motor, and secure it in place with the zip tie on the left side of the X gantry. Trim the excess zip tie.
   ![](images/zip-lh-1.JPG)
   ![](images/zip-lh-2.JPG)
   ![](images/lh-trim.JPG)
 
-16. Plug the cable labeled `LH` into the left motor on the X gantry. This cable is inserted from the bottom.
+16. Plug the cable labeled `LM` into the left motor on the X gantry. This cable is inserted from the bottom.
   ![](images/plug-lh.JPG)
 
-17. Find the cable labeled `RH` and secure it in place using the zip tie on the right side of the X gantry. Trim the excess zip tie.
+17. Find the cable labeled `RM` and secure it in place using the zip tie on the right side of the X gantry. Trim the excess zip tie.
   ![](images/zip-rh-2.JPG)
   ![](images/rh-trim.JPG)
 
-18. Plug the cable labeled `RH` into the right motor on the X gantry. This cable is inserted from the bottom.
+18. Plug the cable labeled `RM` into the right motor on the X gantry. This cable is inserted from the bottom.
   ![](images/plug-rh.JPG)
 
 19. Find the two pieces of tubing labeled `LH` and `RH`, and insert `LH` into the left motor, and `RH` into the right motor. Make sure that the tubing is in between the `LH` and `RH` cable harness going to the motors as shown in the image below.
   ![](images/tubing.JPG)
   ![](images/tubing-inserted.JPG)
+  
+    !!! Note
+          If you ever need to remove the tubing, press down on the blue plastic circle while pulling upward on the tubing.
 
 20. Your X gantry should look like the image below.
   ![](images/finished-head.JPG)
@@ -87,7 +93,7 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
   ![](images/overview-down.JPG)
   ![](images/overview-up.JPG)
 
-24. Remove the motherboard cover by unscrewing any screws, lifting the top edge away from the board, and rotating it out from underneath the pneumatic tubing.
+24. Remove the motherboard cover by unscrewing the two M3x30mm screws, and removing the two plastic spacers. Lift the top edge away from the board and rotate it out from underneath the pneumatic tubing.
   ![](images/cover-remove-1.JPG)
   ![](images/cover-remove-2.JPG)
   ![](images/cover-remove-3.JPG)
@@ -135,13 +141,13 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 33. Tuck any excess cabling underneath the motherboard. Your machine should look like the image below.
   ![](images/wired-overview.JPG)
 
-34. Attach the strain relief print into the bottom of the bottom rail in the left leg assembly.
+34. Use two M5x10mm screws and two T-slot nuts to attach the strain relief print into the bottom of the bottom rail in the left leg assembly.
     ![](images/mount-strain.JPG)
 
     !!! Note
         If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder), follow the steps for [installing the Slot Harness](../../feeders/2-install-harness/installing-the-slot-harness.md) now, and then come back here to plug in the last few wires below.
 
-35. Fit the cover back onto the motherboard by rotating it underneath the pneumatic tubing, and pressing down around the stepper driver pins and heatsinks. Remount using the hardware it was originally mounted with.
+35. Fit the cover back onto the motherboard by rotating it underneath the pneumatic tubing, and pressing down around the stepper driver pins and heatsinks. Remount using the original two M3x30mm screws and the two plastic spacers.
   ![](images/mount-cover-1.JPG)
   ![](images/mount-cover-2.JPG)
   ![](images/mount-cover-3.JPG)
