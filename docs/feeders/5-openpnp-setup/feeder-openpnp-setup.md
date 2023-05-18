@@ -6,15 +6,19 @@ If you'd like to start with a fresh config, you can download the `openpnp-config
 
 To get started the first time with your new feeders, you'll need to attach them all to your LumenPnP, and let OpenPnP scan them to save their information.
 
+## Preliminary Steps
+
+If you have a v2 LumenPnP, the default Z height of your nozzle could cause a collision with feeders. We recommend printing and installing updated Z-gantries (shown below) and nozzle rack, which moves your nozzles up 13mm preventing a collision. You can download them [here](https://github.com/opulo-inc/lumenpnp/releases/download/v3.0.4/LumenPnP-STLs-v3.0.4.zip).
+   ![nozzles shifted up 13mm](img/nozzles-shifted.jpg)
+If you have a single nozzle setup, you can also just edit the Safe Zone values in your Z axis configuration in OpenPnP to prevent a collision.
+   ![axis limit settings in openpnp](img/axis-limits.png)
+
+Also, double-check your GcodeDriver settings. Make sure to uncheck both `Remove Comments?` and `Compress Gcode?`, and confirm you're using the typical `GcodeDriver` instead of a `GcodeAsyncDriver`.
+![Compress Gcode setting](img/dont-compress-gcode.png)
+
 ## Finding Feeders
 
 You'll need to do these steps whenever you have brand new feeders.
-
-!!! danger "v2 LumenPnP Config"
-      If you have a v2 LumenPnP, the default Z height of your nozzle could cause a collision with feeders. We recommend printing and installing updated Z-gantries (shown below) and nozzle rack, which moves your nozzles up 13mm preventing a collision. You can download them [here](https://github.com/opulo-inc/lumenpnp/releases/download/v3.0.4/LumenPnP-STLs-v3.0.4.zip).
-      ![nozzles shifted up 13mm](img/nozzles-shifted.png)
-      If you have a single nozzle setup, you can also just edit the Safe Zone values in your Z axis configuration in OpenPnP to prevent a collision.
-      ![axis limit settings in openpnp](img/axis-limits.png)
 
 1. Power on your LumenPnP and connect to it.
 
