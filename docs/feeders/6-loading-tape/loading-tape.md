@@ -58,4 +58,4 @@ This video shows how tape is loaded into the feeder, and the functionality of th
 
 ## Next Steps
 
-Last is the [Final Setup.](../7-final-setup/final-feeder-setup.md)
+Last is [Setting Pick Position](../7-setting-pick-position/setting-pick-position.md).

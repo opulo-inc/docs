@@ -1,4 +1,4 @@
-# Final Feeder Setup
+# Setting Pick Position
 
 Now that you've loaded a component into the feeder, we'll fine-tune the feeder's position in OpenPnP and test picking a component.
 
