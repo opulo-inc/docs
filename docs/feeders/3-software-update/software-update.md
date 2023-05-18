@@ -12,6 +12,12 @@ LumenPnP feeders are a new OpenPnP feature, are not yet in mainline OpenPnP. The
 
 You can also download the most recent builds of OpenPnP that support feeders [here](https://openpnp.org/test-downloads/), but there could be updates or changes that differ from these docs.
 
+!!! danger "Mac Users"
+    Because of [a bug with how OpenPnP signs their releases](https://github.com/openpnp/openpnp/issues/1559), Mac users with ARM processors might experience a crash on boot. You can still run OpenPnP by navigating to `Applications -> OpenPnP` and right clicking on the OpenPnP app and selecting "Show Package Contents":
+    ![Show package contents on the openpnp app](img/opnp-show-package-contents.png)
+    Then navigate to `Contents -> MacOS` and double click on `JavaApplicationStub` to run OpenPnP.
+    ![clicking on javaapplicationstub](img/boot-opnp-java-stub.png)
+
 ## Update LumenPnP Firmware
 
 !!! note "Machines Version v3.0.5+"
