@@ -99,8 +99,8 @@ nav:
         - OpenPnP Setup: feeders/5-openpnp-setup/feeder-openpnp-setup.md
         - Loading Tape: feeders/6-loading-tape/loading-tape.md
         - Setting Pick Position: feeders/7-setting-pick-position/setting-pick-position.md
+        - Troubleshooting: feeders/8-troubleshooting/troubleshooting.md
         
-
     - Misc:
         - Troubleshooting: 
               - Symptoms: misc/troubleshooting/symptoms/index.md
