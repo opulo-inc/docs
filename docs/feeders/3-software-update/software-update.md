@@ -37,6 +37,10 @@ You can also download the most recent builds of OpenPnP that support feeders [he
 
 **All feeders come with firmware pre-programmed. These instructions are for updating to a new version of firmware, or putting custom firmware on the feeder.**
 
+!!! danger "Set Jumper to 3.3v"
+    Make sure that the jumper on your programmer is set to 3.3v. On the 3 pin header, make sure the jumper is connecting the center pin to the pin labeled "3.3v". The feeder logic operates at 3.3v, so it should be set to this prior to use.
+    ![programmer jumper](img/programmer-jumper.jpg)
+
 1. Connect the included programmer to your computer.
    <!-- TODO: Get photo of programmer plugged into computer -->
 2. Download a precompiled Feeder binary from the [Photon releases page](https://github.com/photonfirmware/photon/releases), or [compile it yourself](https://github.com/opulo-inc/feeder).
@@ -82,16 +86,16 @@ You can also download the most recent builds of OpenPnP that support feeders [he
 12. Once connected, Switch to the download tab on the left.
 ![Download Tab](img/download-tab.png)
 
-13. Click the "Browse" button and navigate to the provided `firmware.bin` file.
+1.  Click the "Browse" button and navigate to the provided `firmware.bin` file.
     ![Browse Button](img/browse-button.png)
 
-14. Ensure that the “Start address” is `0x08000000`.
+2.  Ensure that the “Start address” is `0x08000000`.
     ![Start Address](img/start-address.png)
 
-15. Click "Start Programming".
+3.  Click "Start Programming".
     ![Start Programming](img/start-programming.png)
 
-16. Wait until the software prompts that the firmware has been downloaded successfully. You may disconnect the programmer from the feeder.
+4.  Wait until the software prompts that the firmware has been downloaded successfully. You may disconnect the programmer from the feeder.
     ![programming complete pop up](img/programming-complete.png)
 
 ## Next Steps
