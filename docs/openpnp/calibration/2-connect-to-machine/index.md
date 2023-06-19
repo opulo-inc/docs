@@ -47,6 +47,10 @@ Now we'll set up the cameras. The big red "X" in the camera views means that Ope
 
     If you have this problem, you will need to plug at least one of the webcams directly into your computer via a separate USB port. Occasionally this can cause the webcam's name to be incorrect, but you'll still be able to select it from the drop-down list with a little trial and error.
 
+!!! Note
+    More recent LumenPnP machines ship with a more recessed bottom camera, shown below. The images in our setup guides mostly show an older mounting solution. Simply follow the steps normally unless otherwise noted.
+    ![recessed bottom camera](images/new-bottom-camera.jpg)
+
 1. Remove both camera's lens caps. They pull up and off. (They're already removed in the image below)
   ![Lens cap locations](../5-mm-per-pixel/images/remove-lens-caps.jpg)
 
