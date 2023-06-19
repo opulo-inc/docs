@@ -54,53 +54,56 @@ Nicely done so far! You've got your homing fiducial all set up. This next step c
 
 ## Bottom Camera Calibration
 
-1. Install an N24 nozzle on the left tool head.
+1. Apply some lubricant to the end of your nozzle holder with the lubrication packet included with your nozzles. This is important for repeatably fully attaching the nozzles without damaging the rubber O-rings around the holder.
+  ![Apply Lubricant to holder](images/apply-super-lube.png)
+
+2. Install an N24 nozzle on the left tool head.
   ![Install a N24 nozzle](images/n24-nozzle-attached.png)
 
-2. Click on the `Machine Setup` tab in the top right pane.
+3. Click on the `Machine Setup` tab in the top right pane.
   ![Machine Setup Tab](images/Machine-Setup-Tab-3.png)
 
-3. Click on the "Expand" checkbox to open all of the features about your machine.
+4. Click on the "Expand" checkbox to open all of the features about your machine.
   ![Expanding the Machine Config options](images/Expand-Checkbox-3.png)
 
-4. Click on `Cameras > OpenPnPCaptureCamera Bottom`.
+5. Click on `Cameras > OpenPnPCaptureCamera Bottom`.
    ![Select the bottom camera](images/select-bottom-camera.png)
 
-5. Go to the `Position` tab.
+6. Go to the `Position` tab.
    ![Go to the Position tab](images/bottom-position-tab.png)
 
-6. Click on the "Position nozzle over location" button
+7. Click on the "Position nozzle over location" button
    ![Position nozzle over camera](images/position-nozzle-over-camera.png)
 
-7. Use the jog controls to move the nozzle directly over the center of the bottom camera. Do not adjust the Z-axis.
+8. Use the jog controls to move the nozzle directly over the center of the bottom camera. Do not adjust the Z-axis.
    ![Jog the nozzle over the camera](images/jog-controls-bottom.png)
    ![Jog the nozzle over the camera](images/jogging-finished.png)
 
-8. Twist the lens of the bottom camera until the tip of the nozzle is in focus. You may need to loosen the set screw on the side to allow it to turn.
+9. Twist the lens of the bottom camera until the tip of the nozzle is in focus. You may need to loosen the set screw on the side to allow it to turn.
    ![Jog the nozzle over the camera](images/in-focus-nozzle.png)
 
-9. Go to the `General Configuration` tab.
+10. Go to the `General Configuration` tab.
    ![Go to the general configuration tab](images/general-configuration-bottom-tab.png)
 
-10. Scroll down to `Units Per Pixel`.
+11. Scroll down to `Units Per Pixel`.
    ![The bottom camera's units per pixel section](images/units-per-pixel-section-bottom.png)
 
-11. Set the X and Y Object Dimensions to `4`.
+12. Set the X and Y Object Dimensions to `4`.
   ![Set the object dimensions for calibration](images/set-object-dimensions-bottom.png)
 
-12. Then click the `Measure` button.
+13. Then click the `Measure` button.
   ![Click the measure button](images/click-measure-bottom.png)
 
-13. A box with drag handles will appear in the camera viewfinder. Drag the bounding box around the nozzle tip so that it's perfectly tangent to the edges; they are exactly 4mm x 4mm.
+14. A box with drag handles will appear in the camera viewfinder. Drag the bounding box around the nozzle tip so that it's perfectly tangent to the edges; they are exactly 4mm x 4mm.
   ![Drag the box to the edges of the nozzle.](images/measure-nozzle-mm-per-px.png)
 
-14. Once you have it perfectly outlined, click `Confirm`. New numbers should populate the Units per Pixel fields. They should be relatively close to the default values.
+15. Once you have it perfectly outlined, click `Confirm`. New numbers should populate the Units per Pixel fields. They should be relatively close to the default values.
   ![Confirm the test](images/confirm-pixel-per-mm-bottom.png)
 
-15. Then click `Apply` to save the changes.
+16. Then click `Apply` to save the changes.
   ![Apply the new settings](images/apply-pixel-per-mm-settings-bottom.png)
 
-16. To confirm, drag the reticle on the bottom camera view to move the machine. The **nozzle tip** should move exactly where you tell it to. If it's inaccurate, try doing the calibration again or tweaking the values in the fields.
+17. To confirm, drag the reticle on the bottom camera view to move the machine. The **nozzle tip** should move exactly where you tell it to. If it's inaccurate, try doing the calibration again or tweaking the values in the fields.
 
 ## Next Steps
 
