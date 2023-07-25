@@ -6,10 +6,6 @@
   --md-accent-fg-color: #DAA520;
 }
 
-[aria-expanded=true] {
-  font-weight: bold;
-}
-
 a {
   color: #daa520;
 }
