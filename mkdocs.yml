@@ -109,4 +109,5 @@ nav:
         - Maintenance and Upgrades: 
               - REV03 Mobo Interposer Guide: misc/maintenance-upgrades/rev3-vac-interposer/index.md
               - Second Nozzle Upgrade Guide: misc/maintenance-upgrades/second-tool/index.md
+              - Standalone Feeder Control: misc/maintenance-upgrades/standalone-feeders/index.md
 
