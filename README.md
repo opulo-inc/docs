@@ -10,12 +10,10 @@ This repository is the source for the Opulo Documentation site found at [docs.op
 2. Open Terminal, Command Prompt, or Powershell.
 3. Pick a location to store the docs, and use [cd](https://linuxhint.com/cd-command-in-terminal/) to navigate there.
 
-4. Install Mkdocs and MKdocs Material
+4. Install Mkdocs and our plugins
 
     ```bash
-    pip install mkdocs
-    pip install mkdocs-material
-    pip install mkdocs-glightbox
+    pip -r requirements.txt
     ```
 
 5. Clone this repository:
