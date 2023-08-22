@@ -8,7 +8,7 @@ The LumenPnP is an open source Pick and Place project led by [Opulo](https://www
 
 ![hero image of LumenPnP](semi-hero.png)
 
-The LumenPnP is an ongoing project. The current version, V3, uses strip feeders and can reliably place components as small as 0402. Opulo is working on active, powered feeders.
+The LumenPnP is an ongoing project. The current version, V3, can reliably place components as small as 0402 using 8mm [powered feeders](https://opulo.io/products/8mm-feeder) and/or 3D printed strip feeders.  
 
 The LumenPnP is completely open source and has an active community with ongoing mechanical, electrical, and software modifications.
 
