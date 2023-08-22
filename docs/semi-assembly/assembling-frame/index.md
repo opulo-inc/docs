@@ -3,11 +3,15 @@
 
 In this step, you will assemble the main frame of the machine.
 
+!!! note
+    If your LumenPnP is a `v3.1.0` or later machine, then it will have linear rails on the X and Y axes. The installation steps will be largely the same, though the photos in this guide may show previous versions of the machine. Any unique directions for `v3.1.0` and later machines will be called out specifically.
+
+<!-- TODO: Update Photo for Linear Rails -->
 1. Remove the left and right leg assemblies from the second tray.
   ![](images/remove-left-legs.JPG)
   ![](images/remove-right-legs.JPG)
 
-2. Remove the two aluminum rails from underneath the cable chain in the first tray.
+2. Remove the two aluminum rails from underneath the cable chain in the first tray. <!-- TODO: Update Photo for Linear Rails -->
   ![](images/removing-cable-chain.JPG)
   ![](images/removing-front-and-back-rails.JPG)
 
@@ -108,11 +112,17 @@ In this step, you will assemble the main frame of the machine.
   ![](images/y-gantries-back.JPG)
   ![](images/x-gantry-mounted.JPG)
 
-23. Attach the X gantry to the Y gantries by tightening four M5x25 socket head screws found in your hardware bag into the two holes on each side of the X gantry assembly.
-  ![](images/mount-x-gantry-1.JPG)
-  ![](images/mount-x-gantry-2.JPG)
-  ![](images/mount-x-gantry-3.JPG)
-  ![](images/mount-x-gantry-4.JPG)
+23. Attach the X gantry to the Y gantries
+
+    === "`v3.1.0` and Later"
+        Attach the X gantry to the Y gantries by tightening four M5x25 socket head screws found in your hardware bag into the two holes on each side of the X gantry assembly.
+        ![](images/mount-x-gantry-1.JPG)
+        ![](images/mount-x-gantry-2.JPG)
+        ![](images/mount-x-gantry-3.JPG)
+        ![](images/mount-x-gantry-4.JPG)
+
+    === "`3.0.5` and Earlier"
+        TODO: DO SOMETHING!!!!  
 
 24. Your machine frame is done!
   ![](images/frame-complete.JPG)
