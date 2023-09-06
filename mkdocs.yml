@@ -26,16 +26,20 @@ theme:
 plugins:
    - glightbox:
         draggable: false
-   
-
 nav:
     - Home: index.md
-    - Semi Assembly (v3): 
+    - Semi Assembly (v3.0): 
         - Introduction: semi-assembly/index.md
         - Unboxing: semi-assembly/unboxing/index.md
         - Assembling the Frame: semi-assembly/assembling-frame/index.md
         - Mounting Staging Plates: semi-assembly/mounting-staging-plates/index.md
         - Wiring: semi-assembly/wiring/index.md
+    - Semi Assembly (v3.1): 
+        - Introduction: semi-assembly-3-1/index.md
+        - Unboxing: semi-assembly-3-1/unboxing-3-1/index.md
+        - Assembling the Frame: semi-assembly-3-1/assembling-frame-3-1/index.md
+        - Mounting Staging Plates: semi-assembly-3-1/mounting-staging-plates-3-1/index.md
+        - Wiring: semi-assembly-3-1/wiring-3-1/index.md
     - Kit Assembly (v2): 
         - Introduction: byop/index.md
         - Mechanical Assembly:
