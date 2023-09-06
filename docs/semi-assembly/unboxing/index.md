@@ -1,7 +1,7 @@
 <!-- markdownlint-disable-file MD045-->
 # Unboxing
 
-1. First, take a look at what's in the box! The first thing you'll see when you open the package is the getting started card. This card has your machine's version number on it. Make sure your version number begins with `v3`.
+1. First, take a look at what's in the box! The first thing you'll see when you open the package is the getting started card. This card has your machine's version number on it. Make sure your version number begins with `v3.0`.
   ![](images/opened-box.png)
   ![](images/getting-started-card.png)
 
@@ -13,17 +13,7 @@
     * IEC power cable
     * Front rail
     * Back rail
-
-        ![](images/first-tray.png)
-        
-   Machines version # `v3.1.0` (and beyond) will also contain the following components in this tray:
-     
-     * Feet for the build and staging plates
-     * 4x extension feet for the left and right leg assemblies
-     * Power supply
-
-     ![](images/first-tray-v3-1.png)	
-
+    ![](images/first-tray.png)
 
 3. Grab the foam as shown below, rotate the tray up, then pull it out and set it aside, revealing the second tray of parts.
     ![](images/first-tray-left-grip.png)
@@ -37,20 +27,7 @@
     * Power supply
     * Getting started kit
     * Tool bag
-
-
     ![](images/second-tray.png)
-    
-    Machines version # `v3.1.0` (and beyond) **will only** contain the following components in this tray:
-    
-    * Left and right leg assemblies
-    * X gantry assembly
-    * Getting started kit
-    * Tool bag
- 
-    ![](images/lower-tray-v3.1.png)
-
-
 
 5. Open up the tool bag. Inside, you'll find the following items:
     * Hobby knife
