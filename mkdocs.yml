@@ -1,6 +1,7 @@
 site_name: Opulo Documentation
 site_url: https://docs.opulo.io/
 repo_url: https://github.com/opulo-inc/lumenpnp/
+edit_uri: https://github.com/opulo-inc/docs/edit/main/docs
 
 extra_css: [stylesheets/extra.css]
 
@@ -22,6 +23,7 @@ theme:
         - navigation.footer
         - navigation.tracking
         - content.tabs.link
+        - content.action.edit
 
     palette: 
     
