@@ -8,6 +8,9 @@ Pick and place machines are complicated, and require lots of calibration to work
 
 We provide these docs, the walkthrough video, and default configuration files to make the process as straightforward as possible, but if you notice things that we can be doing to make the process easier, please do not hesitate to let us know by making a [Github Issue](https://github.com/opulo-inc/docs/issues).
 
+!!! danger "Important"
+    It is important that you complete these calibration steps **in order**. Each calibration step relies on the steps that come before, so it's imperative that you complete them in the order we have them listed.
+
 ## **Walkthrough Video**
 
 This walkthrough video shows the entire calibration process starting from stock configuration. We highly recommend watching the video along with walking through the docs on this site when setting up your machine.
@@ -20,3 +23,7 @@ This walkthrough video shows the entire calibration process starting from stock 
 
 - A LumenPnP with the mechanical and electrical build completed.
 - Read through the [OpenPnP Wiki](https://github.com/openpnp/openpnp/wiki/User-Manual). It'll be super important to getting going with your machine. **These docs are meant to augment the OpenPnP docs, not replace them.**
+
+## **Next Steps**
+
+First, we'll [import the configuration](1-import-config/index.md).
