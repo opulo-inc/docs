@@ -14,6 +14,9 @@ Now we can set up the datum board. The datum board is a reference point for ever
 2. Run a rough home routine by pressing the Home button (shaped like a house). The machine will move to the X, Y, and Z zero positions. Note that the home icon will turn yellow, as the LumenPnP has homed to it's end stops, but hasn't completed its full homing routine. You will may still get one of two error messages: `FIDUCIAL-HOME no matches found.` or `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` This is normal; ignore the errors for now.
   ![Home the machine](images/Connect-and-home.png)
 
+!!! danger "If your machine does not move fully to the front left"
+    If your LumenPnP does not move all the way to the front left of the machine when you click the Home icon, it could mean that your sensorless homing values need to be adjusted. Instructions for tuning this setting are [here](https://youtu.be/CSnczX6VJ7M?si=w_B5Yie0wdoZVjiE&t=553).
+
 ## Tuning the Homing Fiducial
 
 1. Click on the `Machine Setup` tab in the top right pane.
