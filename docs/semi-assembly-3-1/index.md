@@ -6,7 +6,7 @@ These are assembly instructions for the **Semi-Assembled** LumenPnP. If you're l
 
 The LumenPnP is an open source Pick and Place project led by [Opulo](https://www.opulo.io/). The LumenPnP is designed to be low cost and suited towards [mid-scale manufacturing](http://stephenhawes.com/level-2-manufacturing/).
 
-![hero image of LumenPnP](semi-hero-placeholder.png)
+![hero image of LumenPnP](3_1.png)
 
 The LumenPnP is an ongoing project. The current version, V3, can reliably place components as small as 0402 using 8mm [powered feeders](https://opulo.io/products/8mm-feeder) and/or 3D printed strip feeders.  
 
@@ -15,7 +15,7 @@ The LumenPnP is completely open source and has an active community with ongoing 
 It is completely open source and hackable. The main controller has three AUX ports, allowing anyone to add on peripherals or communicate with other machines.
 
 !!! danger "Warning"
-    This documentation corresponds with a specific machine **Version Number**. The Version Number represents what version of hardware your machine has. If you're building a Semi-Assembled LumenPnP, **you have a v3.1.0+ machine, and these docs are for you!** You should see "v3.1.X" on the pamphlet that was included in your kit. If you see "v2" on your pamphlet, use [these instructions](../byop/index.md) for your machine.
+    This documentation corresponds with a specific machine **Version Number**. The Version Number represents what version of hardware your machine has. If you're building a Semi-Assembled LumenPnP, **you have a v3.1.0+ machine, and these docs are for you!** You should see "v3.1.X" on the pamphlet that was included in your kit. If you see "v2" on your pamphlet, use [these instructions](../byop/index.md) for your machine. If you see "v3.0.X" on your pamphlet, use [these instructions](../semi-assembly/index.md).
 
 ## Before you begin
 
@@ -23,7 +23,7 @@ It is completely open source and hackable. The main controller has three AUX por
 
 Throughout this guide we'll be referring to different orientations and directions of the machine as "left, right, front, back, up, and down." In general, these words are in reference to the typical view of the machine, facing it directly, as shown below.
 
-![hero image of LumenPnP](semi-hero-head-on-placeholder.png)
+![hero image of LumenPnP](3_1.png)
 
 We'll also refer to putting the machine "back on its haunches." This refers to a feature of the LumenPnP where it can be lifted up by the front rail and let to rest upright on its back feet. This orientation is tremendously helpful for installing things to the staging plate and plugging things into the motherboard. Whenever putting your machine back, make sure the Y gantry is pushed all the way to the back of the machine to prevent backdriving the Y stepper motor driver.
 
@@ -33,7 +33,9 @@ If you find that there's something unclear in this documentation, please [submit
 
 ### Assembly Video
 
-We have an instructional video that walks you through the process of assembling your LumenPnP. This video is just to help visualize how parts go together; you'll still need this guide to complete your build. You can find the video embedded below:
+We have an instructional video that walks you through the process of assembling your LumenPnP. This video is just to help visualize how parts go together; you'll still need this guide to complete your build. **This video is for an older version of the machine**, with V-Slot rollers instead of linear rails. There will definitely be differences between what you see in the video and what you have in your box. Reference the written documentation before the video if you're unsure.
+
+You can find the video embedded below:
 
 <div class="video-wrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ugixh3Ngr5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
