@@ -1,7 +1,7 @@
 <!-- markdownlint-disable-file MD045-->
 # Unboxing
 
-1. First, take a look at what's in the box! The first thing you'll see when you open the package is the getting started card. This card has your machine's version number on it. Make sure your version number begins with `v3`.
+1. First, take a look at what's in the box! The first thing you'll see when you open the package is the getting started card. This card has your machine's version number on it. Make sure your version number begins with `v3.0`.
   ![](images/opened-box.png)
   ![](images/getting-started-card.png)
 
