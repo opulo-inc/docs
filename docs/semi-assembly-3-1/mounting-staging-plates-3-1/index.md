@@ -6,6 +6,8 @@ In this step, you will mount the Staging Plate and Build Plate to the machine's 
 1. Remove the staging plate and build plate from the first tray. The staging plate has the motherboard, camera, pumps, valves, wiring, and tubing mounted on it. The build plate is bare.
   ![](images/staging-plate.JPG)
   ![](images/build-plate.JPG)
+  
+2. Remove the rubber band from around the nozzle rack
 
 2. Get 8x M5x8mm button head screws and 8x t-slot nuts from your hardware bag.
   ![](images/plate-hardware.JPG)
@@ -44,20 +46,19 @@ In this step, you will mount the Staging Plate and Build Plate to the machine's 
 10. Tighten the second screw on the left side of the machine.
   ![](images/staging-left-screw-2.JPG)
 
-11. Place the build plate onto the same rail as the staging plate. Ensure the t-slot nuts are fully inserted into the extrusion.
+11. Use the alignment bracket again to confirm that the staging plate is still aligned correctly.
+12. Place the build plate onto the same rail as the staging plate. Ensure the t-slot nuts are fully inserted into the extrusion.
   ![](images/drop-in-build-1.JPG)
   ![](images/drop-in-build-2.JPG)
 
 12. Slide the build plate flush against the staging plate, and tighten all four screws.
   ![](images/build-alignment.JPG)
 
-13. Lift the machine up onto its back legs.
-  ![](images/machine-lift.JPG)
-  ![](images/machine-lift-2.JPG)
-
 14. Grab the build plate foot from the second tray, and unscrew the screw in the print.
   ![](images/build-foot.JPG)
   ![](images/build-foot-separated.JPG)
+
+13. Lift the machine up onto its back legs.
 
 15. Mount the build plate foot in the center of the circle cutout, right beneath the goblin icon. Tighten the screw you removed earlier in from the top side to secure it in place.
   ![](images/mount-build-foot-1.JPG)
@@ -65,4 +66,4 @@ In this step, you will mount the Staging Plate and Build Plate to the machine's 
 
 ## Next Steps
 
-The plates are fully mounted! Time to move on to [wiring](../wiring/index.md).
+The plates are fully mounted! Time to move on to [wiring](../wiring-3-1/index.md).
