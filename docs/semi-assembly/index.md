@@ -1,4 +1,4 @@
-# Semi Assembly
+# Semi Assembly (v3.0)
 
 These are assembly instructions for the **Semi-Assembled** LumenPnP. If you're looking for the instructions for the "BYOP" bring-your-own-printer kit, you can find them [here](../byop/index.md).
 
