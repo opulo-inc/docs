@@ -1,12 +1,11 @@
-<!-- markdownlint-disable-file MD045-->
 # Unboxing
 
 1. First, take a look at what's in the box! The first thing you'll see when you open the package is the getting started card. This card has your machine's version number on it.
 
     !!!warning "Make sure your version number begins with `v3.1`."
 
-    ![](images/opened-box.png)
-    ![](images/getting-started-card.png)
+    ![Opening the box](images/opened-box.png)
+    ![Getting started card](images/getting-started-card.png)
 
 2. Remove the top protective layer of foam revealing the first tray of components. This tray contains:
     * Staging plate
@@ -21,21 +20,21 @@
     * Feeder Slot Cable Harness
     * 10x Extrusion cable clips
 
-     ![](images/first-tray-v3-1.png)
+     ![Packed box](images/first-tray-v3-1.png)
 
 3. Grab the foam as shown below, rotate the tray up, then pull it out and set it aside, revealing the second tray of parts.
 
-    ![](images/first-tray-left-grip.png)
-    ![](images/first-tray-right-grip.png)
-    ![](images/first-tray-removal.png)
+    ![Removing foam tray](images/first-tray-left-grip.png)
+    ![removing foam tray 2](images/first-tray-right-grip.png)
+    ![Lifting tray out](images/first-tray-removal.png)
 
 4. The second tray contains the following parts:
-    * y-gantry left/right leg assemblies
+    * Y gantry left/right leg assemblies
     * X gantry assembly
     * Getting started kit
     * Tool bag
 
-    ![](images/lower-tray-v3.1.png)
+    ![Tray 2 in box](images/lower-tray-v3.1.png)
 
 5. Open up the tool bag. Inside, you'll find the following items:
     * Hobby knife
@@ -51,8 +50,8 @@
     * Zip ties
     * Feeder programmer
   
-    ![](images/tool-bag.png)
-    ![](images/tool-bag-exploded.png)
+    ![Tool bag](images/tool-bag.png)
+    ![Unpacked tool bag](images/tool-bag-exploded.png)
 
 ## Next Steps
 
