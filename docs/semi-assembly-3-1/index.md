@@ -37,6 +37,7 @@ We have an instructional video that walks you through the process of assembling 
 
 You can find the video embedded below:
 
+<!-- markdownlint-disable MD033 -->
 <div class="video-wrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ugixh3Ngr5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

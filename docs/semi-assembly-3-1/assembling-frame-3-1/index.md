@@ -58,7 +58,6 @@ In this step, you will assemble the main frame of the machine.
   ![](images/front-rail-right-leg-1.png)
   ![](images/front-rail-right-leg-2.png)
   ![](images/front-rail-right-leg-3.png)
-  ![](images/front-rail-right-leg-4.png)
 
 13. Place the front and right leg subassemblies upright as shown in the image below.
   ![](images/legs-and-front-rail.png)
@@ -102,33 +101,28 @@ In this step, you will assemble the main frame of the machine.
   ![](images/lower-machine-1.png)
   ![](images/lower-machine-2.png)
 
-
 22. Slide both Y gantries to the back of the machine (opposite the tension arms), and drop the X gantry assembly onto them as shown. Make sure the toolhead motors are facing you like the image below.
   ![](images/y-gantries-back.png)
   ![](images/x-gantry-mounted.png)
 
 23. Attach the X gantry to the Y gantries by installing a M5x25 socket head screw and M5x16mm socket head screw into the two holes on each side of the X gantry assembly.
-
-	  ![](images/mount-x-gantry-1.png)
-	  ![](images/mount-x-gantry-2.png)
-	  ![](images/mount-x-gantry-3.png)
-	  ![](images/mount-x-gantry-4.png)
+  ![](images/mount-x-gantry-1.png)
+  ![](images/mount-x-gantry-2.png)
+  ![](images/mount-x-gantry-3.png)
+  ![](images/mount-x-gantry-4.png)
 
 24. Install front-leg-extension onto front left leg and front right leg with 2x M5x16 socket head bolts per leg
-
-	  ![](images/install-front-leg-extension-1.JPG)
-	  ![](images/install-front-leg-extension-2.JPG)
-	  ![](images/install-front-leg-extension-3.JPG)
-	  ![](images/install-front-leg-extension-4.JPG)
-
-		
+  ![](images/install-front-leg-extension-1.JPG)
+  ![](images/install-front-leg-extension-2.JPG)
+  ![](images/install-front-leg-extension-3.JPG)
+  ![](images/install-front-leg-extension-4.JPG)
+  
 25. Install a back-leg-extension onto each back leg with 1x M5x16 socket head bolt per leg
- 
- 	  ![](images/install-back-leg-extension-1.JPG)
- 	  ![](images/install-back-leg-extension-2.JPG)
- 	  ![](images/install-back-leg-extension-3.JPG)
- 	  ![](images/install-back-leg-extension-4.JPG)
- 	  ![](images/install-back-leg-extension-5.JPG)
+  ![](images/install-back-leg-extension-1.JPG)
+  ![](images/install-back-leg-extension-2.JPG)
+  ![](images/install-back-leg-extension-3.JPG)
+  ![](images/install-back-leg-extension-4.JPG)
+  ![](images/install-back-leg-extension-5.JPG)
 
 26. Your machine frame is done!
   ![](images/frame-complete.JPG)
