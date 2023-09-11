@@ -25,7 +25,7 @@ Now that we've got all the THT components soldered in, it's time to mount the mo
 |    4 | Stepper motor driver PCB |
 |    4 | PCB Heatsink             |
 
-4. Install the four stepper motor drivers into the X, Y, Z, and Left Head slots. Note that the whale icon on the motor drivers will be right-side up and the two upward-facing pins will be facing to the left.
+4. Install the four stepper motor drivers into the X, Y, Z, Left Head, and Right Head slots. Note that the whale icon on the motor drivers will be right-side up and the two upward-facing pins will be facing to the left.
   ![](images/driver-orientation.png)
 
 5. Install the four heatsinks on the center of the motor drivers.
