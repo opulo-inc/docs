@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD045 -->
 # Second Nozzle Upgrade Guide
 
 If you built a V2 LumenPnP with only one nozzle, follow this guide to install a second one. Note that there have been subtle design changes to the 3D printed parts that attach components to the staging plate. The photos in this guide will show v2 components.
@@ -7,25 +6,26 @@ If you built a V2 LumenPnP with only one nozzle, follow this guide to install a 
 
 [Download the LumenPnP BOM from the most recent release](https://github.com/opulo-inc/lumenpnp/releases) for specifications and links to purchase hardware for the upgrade:
 
-|    Qty | Off The Shelf Parts         |
-| -----: | --------------------------- |
-|      1 | pump-mount (3D Printed)     |
-|      2 | rubber-band                 |
-|      1 | Vacuum Pump                 |
-|      1 | Pump Wire Harness           |
-|      1 | Solenoid Valve              |
-|      1 | pneumatic-y-adapter         |
-|      1 | Pneumatic Adapter MS4M-M5   |
-|      1 | NEMA11 Hollow Shaft Stepper |
-|      1 | CP40 Holder                 |
-|      1 | R Motor Cable Harness       |
-|  325mm | Pneumatic Tubing 6mm OD     |
-| 2025mm | Pneumatic Tubing 4mm OD     |
-|      2 | M3x8 machine screw          |
-|      2 | M3x10 machine screw         |
-|      1 | M3x30 machine screw         |
-|      4 | M2.5x8 machine screw        |
-|      3 | M3 Hex Nuts                 |
+|    Qty | Off The Shelf Parts          |
+| -----: | ---------------------------- |
+|      1 | pump-mount (3D Printed)      |
+|      2 | rubber-band                  |
+|      1 | Vacuum Pump                  |
+|      1 | Pump Wire Harness            |
+|      1 | Solenoid Valve               |
+|      1 | pneumatic-y-adapter          |
+|      1 | Pneumatic Adapter MS4M-M5    |
+|      1 | NEMA11 Hollow Shaft Stepper  |
+|      1 | CP40 Holder                  |
+|      1 | R Motor Cable Harness        |
+|      1 | [Stepper Motor Driver][step] |
+|  325mm | Pneumatic Tubing 6mm OD      |
+| 2025mm | Pneumatic Tubing 4mm OD      |
+|      2 | M3x8 machine screw           |
+|      2 | M3x10 machine screw          |
+|      1 | M3x30 machine screw          |
+|      4 | M2.5x8 machine screw         |
+|      3 | M3 Hex Nuts                  |
 
 ## Installing the Tool Head
 
@@ -40,13 +40,13 @@ The new tool will need a new vacuum pump and valve. This will be mostly the same
   ![Two Nut locations on the Pump Mount](images/Populating-The-Staging-Plate-Step-1-2.png)
 
 2. Mount the pump in the Pump Mount using a couple rubber bands. Start by grabbing the rubber band with both hands, giving it a half twist, and folding it over on itself, making two loops.
-  ![](images/IMG_0737.JPG)
-  ![](images/IMG_0738.JPG)
-  ![](images/IMG_0740.JPG)
+  ![rubber band start](images/IMG_0737.JPG)
+  ![twisting the rubber band](images/IMG_0738.JPG)
+  ![double looping the rubber band](images/IMG_0740.JPG)
 
 3. Stretch each rubber band over each pair of pegs on the Pump Mount. Guide the pump between each pair of bands so that it's suspended in the Pump Mount.
-  ![](images/IMG_0742.JPG)
-  ![](images/IMG_0743.JPG)
+  ![rubber bands attached to mount](images/IMG_0742.JPG)
+  ![pump attached to mount](images/IMG_0743.JPG)
 
 4. Mount the Pump Mount to the staging plate using two M3 x 10mm screws. For example: G31 and G33 for the first tool head vacuum pump, and C31 and C33 for the new vacuum pump. (Note, the second photo below shows the newer, v3 LumenPnP pump mount, but you can opt to use the older v2 mount instead.)
   ![Mounting position for the Pump](images/second pump mounting location v2.png)
@@ -64,8 +64,8 @@ The new tool will need a new vacuum pump and valve. This will be mostly the same
 ## Connecting the Pneumatics and wires
 
 1. The origin of vacuum in the machine is our vacuum pump. The off-center port is the one that provides vacuum. Use about 95mm of the 6mm clear tubing and push it onto the off-center port on the vacuum pump. Push the other end onto the inline plastic port of the valve as shown below.
-  ![](images/IMG_0728.JPG)
-  ![](images/IMG_0729.JPG)
+  ![pushing pneumatic tube onto the pump](images/IMG_0728.JPG)
+  ![pushing pneumatic tube onto the valve](images/IMG_0729.JPG)
 
 2. Use a 230mm section of the 6mm clear tubing and push it onto the right-angle plastic port of the valve, and push the other side into the single, larger port of the Y splitter.
   ![Single valve mount](images/IMG_0745.JPG)
@@ -78,16 +78,22 @@ The new tool will need a new vacuum pump and valve. This will be mostly the same
 4. Now take 1.8 meters of 4mm black tubing and push it into the other fork of the Y splitter. Take the loose end, and route it underneath the motherboard.
 
 5. Route both the black tubing and the wire for the new toolhead up along the X umbilical. Attach them with new zip ties, or slip it inside your existing ones, alongside the first tool head's tubing and wires.
-  ![](images/IMG_0824.JPG)
+  ![routing the pneumatic tube along the umbilical](images/IMG_0824.JPG)
 
 6. With the pneumatic tubing dangling loose past the end of the swivel arm, cut any excess tubing (still allowing some slack for motor rotation). Push the other end into the pneumatic coupling on the back side of the rotation stepper motor. Extra slack will allow the motor to rotate freely 180 degrees in each direction, so err on the side of leaving more than less. If the tubing falls away from the umbilical, use one or two small zip ties to secure them together.
-  ![](images/IMG_0825.JPG)
+  ![inserting the pneumatic tube into the toolhead](images/IMG_0825.JPG)
 
 7. Plug the cable into the new tool motor. Make sure it has enough slack so that it isn't strained if the tool is raised or lowered.
   ![plugging in the new tool motor](images/plug in toolhead.png)
 
 8. Plug the new cable (labeled `RM`) into the first port in the second row, labeled `R`. (Note this image shows a Rev 4 motherboard, but the connector is in the same place on the Rev 3 motherboard.)
-  ![](images/plug-rm.JPG)
+    ![attaching the right motor cable](images/plug-rm.JPG)
+
+9. Install the new stepper motor driver into the slot below your cable. The orientation should match your other drivers.
+
+    !!! danger "Note"
+        It is very important to not plug in or unplug stepper motor drivers or motors while the board is powered on. Make sure to unplug the power supply before inserting or removing drivers or motors.
+    ![marking the right motor stepper motor](images/installStepperDriver.JPG)
 
 ## Configuring OpenPnP
 
@@ -204,3 +210,5 @@ With the hardware set up, we need to tell OpenPnP about the newly installed tool
 2. Set [your new nozzle's offset](../../../openpnp/calibration/6-nozzle-offset/index.md).
 3. Try homing your machine again. If you get the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error, you will need to tune your [Bottom Camera Vision Pipeline](../../../openpnp/vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md).
 4. Test picking components out of your feeders. Follow the instructions in the [FTP](../../../openpnp/ftp/1-installing-the-feeders/index.md#installing-the-n045-nozzle) guide. Make sure to activate your newly created tool head, and assign a nozzle tip to it.
+
+[step]: https://wiki.fysetc.com/Silent2209/
