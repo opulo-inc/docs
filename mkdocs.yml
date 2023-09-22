@@ -139,4 +139,16 @@ nav:
               - REV03 Mobo Interposer Guide: misc/maintenance-upgrades/rev3-vac-interposer/index.md
               - Second Nozzle Upgrade Guide: misc/maintenance-upgrades/second-tool/index.md
               - Standalone Feeder Control: misc/maintenance-upgrades/standalone-feeders/index.md
+extra:
+  social:
+    - icon: fontawesome/brands/facebook-f
+      link: https://www.facebook.com/opuloinc
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/OpuloInc
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/opulo.io
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCMf49SMPnhxdLormhEpfyfg
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/invite/TCwy6De
 
