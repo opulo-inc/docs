@@ -11,7 +11,9 @@ markdown_extensions:
     - pymdownx.superfences
     - footnotes
     - pymdownx.tabbed:
-        alternate_style: true 
+        alternate_style: true
+    - attr_list
+    - md_in_html
 
 theme:
     name: material
