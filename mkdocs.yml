@@ -20,6 +20,7 @@ theme:
     font:
         text: Roboto
     features:
+        - navigation.instant
         - navigation.footer
         - navigation.tracking
         - content.tabs.link
