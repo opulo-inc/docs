@@ -5,7 +5,7 @@ Awesome! Now we've got OpenPnP installed on your computer, and we've got the def
 1. Connect your LumenPnP to your computer using the included USB cable
 
 2. Open OpenPnP on your computer. You should now see the OpenPnP UI:
-  ![OpenPnP's basic UI](images/openpnp-ui.png)
+  ![OpenPnP's basic UI](images/openpnp-ui.png){ loading=lazy }
 
 !!! Note "Linux"
     On Linux you'll need to join the `dialout` and `video` groups, or provide `udev` rules for the LumenPnP's usb devices.
@@ -15,26 +15,26 @@ Awesome! Now we've got OpenPnP installed on your computer, and we've got the def
 Before connecting to the LumenPnP, you need to set which USB port to use for communication in OpenPnP.
 
 1. Click on the `Machine Setup` tab.
-  ![Machine Setup Tab](images/Machine-Setup-Tab.png)
+  ![Machine Setup Tab](images/Machine-Setup-Tab.png){ loading=lazy }
 
 2. Click on the "Expand" checkbox to open all of the features.
-  ![Expanding the Machine Config options](images/Expand-Checkbox.png)
+  ![Expanding the Machine Config options](images/Expand-Checkbox.png){ loading=lazy }
 
 3. Under `Drivers` click on `GcodeDriver GcodeDriver`. Below the list of machine settings you'll find the details of the GcodeDriver.
-  ![Reviewing the GcodeDriver options](images/SelectGcodeDriver.png)
+  ![Reviewing the GcodeDriver options](images/SelectGcodeDriver.png){ loading=lazy }
   
 4. In the `Configuration` tab, check the `Baud` and `Port` settings.
    1. Set the `Baud` to `115200`
    2. On Windows, Set the `Port` to the option in the format: `COM2`.
    3. On Mac, Set the `Port` to the option in the format: `cu.usbmodem<a-lot-of-numbers>`
    4. On Linux, Set the `Port` to the option in the format: `ttyACM0`.
-  ![Changing the Port and Baud Rate](images/Check COM Port and Baud Rate.png)
+  ![Changing the Port and Baud Rate](images/Check COM Port and Baud Rate.png){ loading=lazy }
 
     !!! info "Port Not Found"
         If your machine's port does not show up in the drop down, check that your USB cable is plugged in to both your computer and the LumenPnP. Also check that the motherboard is powered on. If you still cannot find the port, try pressing the reset button on the motherboard and closing and reopening OpenPnP.
 
 5. Click `Apply` in the lower right corner to save your changes.
-  ![Apply baud rate and port](images/apply-machine-config.png)
+  ![Apply baud rate and port](images/apply-machine-config.png){ loading=lazy }
 
 ## Bottom Camera Config
 
@@ -49,74 +49,74 @@ Now we'll set up the cameras. The big red "X" in the camera views means that Ope
 
 !!! Note
     More recent LumenPnP machines ship with a more recessed bottom camera, shown below. The images in our setup guides mostly show an older mounting solution. Simply follow the steps normally unless otherwise noted.
-    ![recessed bottom camera](images/new-bottom-camera.jpg)
+    ![recessed bottom camera](images/new-bottom-camera.jpg){ loading=lazy }
 
 1. Remove both camera's lens caps. They pull up and off. (They're already removed in the image below)
-  ![Lens cap locations](../5-mm-per-pixel/images/remove-lens-caps.jpg)
+  ![Lens cap locations](../5-mm-per-pixel/images/remove-lens-caps.jpg){ loading=lazy }
 
 2. In the top-left corner, change the camera view to one of the "Show All" options. You should then see two camera feeds that are black, and have red X's on them.
-  ![show both camera feeds](images/switch-camera-display.png)
+  ![show both camera feeds](images/switch-camera-display.png){ loading=lazy }
 
 3. Again, navigate to the `Machine Setup` tab.
 4. Again, click the "Expand" checkbox if necessary.
 5. Click on `Cameras > OpenPnpCaptureCamera Bottom`.
-  ![Finding the Bottom Camera Settings](images/Bottom Camera Config.png)
+  ![Finding the Bottom Camera Settings](images/Bottom Camera Config.png){ loading=lazy }
 
 6. In the lower detail pane, switch to the `Device Settings` tab.
-  ![Switching to the camera device settings](images/Bottom-camera-device-settings.png)
+  ![Switching to the camera device settings](images/Bottom-camera-device-settings.png){ loading=lazy }
 
 7. In the `Device` drop-down, choose `PnP Bottom Camera`.
-  ![Selecting the correct device for the Bottom Camera](images/Bottom-camera-select-device.png)
+  ![Selecting the correct device for the Bottom Camera](images/Bottom-camera-select-device.png){ loading=lazy }
 
     !!! info "Duplicate Camera Names"
         There have been a few reports of users on Windows seeing two of the same camera name in their Open PnP drop down menu. If this happens to you, use trial and error to identify which camera is which in the list. Sorry for any inconvenience.
 
 8. In the `Format` drop-down, choose the `1280x720 10fps` setting.
-  ![setting bottom camera resolution](images/Bottom resolution.png)
+  ![setting bottom camera resolution](images/Bottom resolution.png){ loading=lazy }
 
 9. Click the `Apply` button in the bottom right. You should then see the camera display start showing the feed from the camera, or at least see the red X disappear. We'll fix the exposure next.
-  ![Saving changes to the Bottom Camera Config](images/Bottom Camera Apply.png)
-  ![Bottom camera is now on](images/Bottom-camera-on.png)
+  ![Saving changes to the Bottom Camera Config](images/Bottom Camera Apply.png){ loading=lazy }
+  ![Bottom camera is now on](images/Bottom-camera-on.png){ loading=lazy }
 
 10. Quickly adjust the exposure to make the camera feed more reasonable. On some computers, you can toggle Automatic Exposure on, and then back off again to set it correctly. Do not keep auto exposure turned on. Later on we'll set the exposure more accurately. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=867).
 
     !!! danger "For Mac Users"
         Due to an issue with the camera driver in OpenPnP, some Mac users might notice that the image settings are greyed out for you. There's a fantastic open-source application called [CameraController](https://github.com/Itaybre/CameraController) that can be used to edit these settings.
 
-    ![Adjust exposure](images/adjust-exposure.png)
+    ![Adjust exposure](images/adjust-exposure.png){ loading=lazy }
 
 ## Top Camera Config
 
 1. Again, navigate to the `Machine Setup` tab.
 2. Again, click the "Expand" checkbox if necessary.
 3. Navigate to `Heads > ReferenceHead H1 > Cameras > OpenPnPCaptureCamera Top`.
-  ![Finding the Top Camera Settings](images/Top-camera-settings.png)
+  ![Finding the Top Camera Settings](images/Top-camera-settings.png){ loading=lazy }
 
 4. In the lower detail pane, switch to the `Device Settings` tab.
-  ![Switching to the camera device settings](images/Top-camera-device-settings.png)
+  ![Switching to the camera device settings](images/Top-camera-device-settings.png){ loading=lazy }
 
 5. In the `Device` drop-down, choose `PnP Top Camera`.
-  ![Selecting the correct device for the Bottom Camera](images/Top-camera-select-device.png)
+  ![Selecting the correct device for the Bottom Camera](images/Top-camera-select-device.png){ loading=lazy }
 
 6. In the `Format` drop-down, choose the `1280x720 10fps` setting.
-  ![setting top camera resolution](images/Top resolution.png)
+  ![setting top camera resolution](images/Top resolution.png){ loading=lazy }
 
 7. Click the `Apply` button in the bottom right. You should then see the camera display start showing the feed from the camera, or at least see the red X disappear.
-  ![Saving changes to the Top Camera Config](images/Top Camera Apply.png)
+  ![Saving changes to the Top Camera Config](images/Top Camera Apply.png){ loading=lazy }
 
 8. Adjust the exposure to make the camera feed more reasonable. Both cameras should now be working. Again, we'll tune the exposure and other vision settings in the coming steps.
-  ![Adjust exposure](images/adjust-exposure-2.png)
+  ![Adjust exposure](images/adjust-exposure-2.png){ loading=lazy }
 
 ## Connecting to the LumenPnP
 
 1. Click the green power button in the Machine Controls section of the UI to connect to your machine.
-  ![Connect to the LumenPnP](images/connect-to-machine-power-button.png)
+  ![Connect to the LumenPnP](images/connect-to-machine-power-button.png){ loading=lazy }
 
 2. The power button will turn red when OpenPnP has connected to your machine. If this doesn't work, check your [port and baud rate](#com-port-and-baud-rate).
-  ![having successfully connected to the LumenPnP and cameras](images/connected-to-machine.png)
+  ![having successfully connected to the LumenPnP and cameras](images/connected-to-machine.png){ loading=lazy }
 
 3. Save your OpenPnP settings with `File > Save Configuration`.
-  ![saving the machine config](images/save-configuration.png)
+  ![saving the machine config](images/save-configuration.png){ loading=lazy }
 
 ## Next Steps
 

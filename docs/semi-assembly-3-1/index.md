@@ -6,7 +6,7 @@ These are assembly instructions for the **Semi-Assembled** LumenPnP. If you're l
 
 The LumenPnP is an open source Pick and Place project led by [Opulo](https://www.opulo.io/). The LumenPnP is designed to be low cost and suited towards [mid-scale manufacturing](http://stephenhawes.com/level-2-manufacturing/).
 
-![hero image of LumenPnP](3_1.png)
+![hero image of LumenPnP](3_1.png){ loading=lazy }
 
 The LumenPnP is an ongoing project. The current version, V3, can reliably place components as small as 0402 using 8mm [powered feeders](https://opulo.io/products/8mm-feeder) and/or 3D printed strip feeders.  
 
@@ -23,7 +23,7 @@ It is completely open source and hackable. The main controller has three AUX por
 
 Throughout this guide we'll be referring to different orientations and directions of the machine as "left, right, front, back, up, and down." In general, these words are in reference to the typical view of the machine, facing it directly, as shown below.
 
-![hero image of LumenPnP](3_1.png)
+![hero image of LumenPnP](3_1.png){ loading=lazy }
 
 We'll also refer to putting the machine "back on its haunches." This refers to a feature of the LumenPnP where it can be lifted up by the front rail and let to rest upright on its back feet. This orientation is tremendously helpful for installing things to the staging plate and plugging things into the motherboard. Whenever putting your machine back, make sure the Y gantry is pushed all the way to the back of the machine to prevent backdriving the Y stepper motor driver.
 

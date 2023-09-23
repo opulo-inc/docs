@@ -15,42 +15,42 @@ Now that we know the offset from the top camera to the nozzle, we can use the no
     * If you're using two nozzles, set the bottom camera Z Location to `31.5mm` (Standard for v3 semi-assembled LumenPnP kits).
 
 1. Click on the `Machine Setup` tab in the top right pane.
-  ![Machine setup tab](images/Machine-Setup-Tab-3.png)
+  ![Machine setup tab](images/Machine-Setup-Tab-3.png){ loading=lazy }
 
 2. Click on the "Expand" checkbox to open all of the features about your machine.
-  ![Expanding the Machine Config options](images/Expand-Checkbox-3.png)
+  ![Expanding the Machine Config options](images/Expand-Checkbox-3.png){ loading=lazy }
 
 3. Click on `Cameras > OpenPnpCaptureCamera Bottom`.
-  ![Select the bottom camera](images/select-bottom-camera-2.png)
+  ![Select the bottom camera](images/select-bottom-camera-2.png){ loading=lazy }
 
 4. Click on the `Position` tab.
-  ![Select the position tab](images/bottom-camera-position.png)
+  ![Select the position tab](images/bottom-camera-position.png){ loading=lazy }
 
 5. Set the camera's Z-axis location:
     * If you have a v2 LumenPnP **kit** with only one nozzle, set the Z axis value to `61mm`.
     * If you have a v3 **semi-assembled** LumenPnP with two nozzles, set the Z axis value to `31.5mm`.
-  ![Set the z position](images/bottom-camera-z-pos.png)
+  ![Set the z position](images/bottom-camera-z-pos.png){ loading=lazy }
 
 6. Home your LumenPnP to make sure your toolhead's location is accurate. As before, ignore the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error if it appears.
-  ![Home the machine](images/home-during-bottom-cam-pos.png)
+  ![Home the machine](images/home-during-bottom-cam-pos.png){ loading=lazy }
 
 7. Jog the toolhead off to the side so that it isn't aligned with any calibration points. This will make it easier to see if the nozzle is lined up with the bottom camera.
-  ![Jog the toolhead](images/bottom-cam-jog-random.png)
+  ![Jog the toolhead](images/bottom-cam-jog-random.png){ loading=lazy }
 
 8. Select the `Nozzle: N1 - N045 (Head:H1)` from the machine controls dropdown.
-  ![Select nozzle from machine control dropdown](images/select-n1-machine-control-bottom.png)
+  ![Select nozzle from machine control dropdown](images/select-n1-machine-control-bottom.png){ loading=lazy }
 
 9. Click the "Position tool over location" button to bring the left nozzle very roughly above the bottom camera.
-  ![Position the toolhead over the bottom camera](images/position-over-bottom-cam.png)
+  ![Position the toolhead over the bottom camera](images/position-over-bottom-cam.png){ loading=lazy }
 
 10. Jog the toolhead until the left nozzle is directly in the center of the bottom camera's vision.
-  ![Position the toolhead over the bottom camera precisely](images/position-over-bottom-cam-precise.png)
+  ![Position the toolhead over the bottom camera precisely](images/position-over-bottom-cam-precise.png){ loading=lazy }
 
 11. Click the "Capture Toolhead Location" button to calculate the correct position for the bottom camera.
-  ![Store the camera location](images/store-nozzle-location-bottom.png)
+  ![Store the camera location](images/store-nozzle-location-bottom.png){ loading=lazy }
 
 12. Click the `Apply` button to save the new camera position.
-  ![Save the camera location](images/apply-bottom-cam-pos.png)
+  ![Save the camera location](images/apply-bottom-cam-pos.png){ loading=lazy }
 
 ## Next Steps
 

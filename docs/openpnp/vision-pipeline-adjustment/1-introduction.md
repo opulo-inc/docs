@@ -28,7 +28,7 @@ Computer vision used in OpenPnP takes photos from your top or bottom camera and 
 
 You will need to fine-tune each stage to adjust how it works by changing its "parameters." For example, the `Threshold` stage takes in the photo from your camera (or the previous stage in the pipeline) and turns it into stark black and white. It uses a `threshold` parameter to pick the brightness level where the distinction is made.
 
-![Threshold comparison](images/threshold-comparison-general.png)
+![Threshold comparison](images/threshold-comparison-general.png){ loading=lazy }
 
 For more complicated changes to your pipeline can also add and remove stages. But this shouldn't be necessary for most people.
 
@@ -46,7 +46,7 @@ The pipeline editing view has several sections and features you should know abou
 4. Stage settings. This lets you change the settings for the selected stage.
 5. Pin Image. This lets you keep the results of the currently selected stage on on main view, even if you select another stage. Use this to pin a debugging stage so that you can quickly see the results of changes to a stage you're editing.
 
-![Pipeline Editing View](images/pipeline-organization.png)
+![Pipeline Editing View](images/pipeline-organization.png){ loading=lazy }
 
 ## Editing Strategy
 

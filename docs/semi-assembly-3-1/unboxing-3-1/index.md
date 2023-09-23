@@ -4,8 +4,8 @@
 
     !!!warning "Make sure your version number begins with `v3.1`."
 
-    ![Opening the box](images/opened-box.png)
-    ![Getting started card](images/getting-started-card.png)
+    ![Opening the box](images/opened-box.png){ loading=lazy }
+    ![Getting started card](images/getting-started-card.png){ loading=lazy }
 
 2. Remove the top protective layer of foam revealing the first tray of components. This tray contains:
     * Staging plate
@@ -20,13 +20,13 @@
     * Feeder Slot Cable Harness
     * 10x Extrusion cable clips
 
-     ![Packed box](images/first-tray-v3-1.png)
+     ![Packed box](images/first-tray-v3-1.png){ loading=lazy }
 
 3. Grab the foam as shown below, rotate the tray up, then pull it out and set it aside, revealing the second tray of parts.
 
-    ![Removing foam tray](images/first-tray-left-grip.png)
-    ![removing foam tray 2](images/first-tray-right-grip.png)
-    ![Lifting tray out](images/first-tray-removal.png)
+    ![Removing foam tray](images/first-tray-left-grip.png){ loading=lazy }
+    ![removing foam tray 2](images/first-tray-right-grip.png){ loading=lazy }
+    ![Lifting tray out](images/first-tray-removal.png){ loading=lazy }
 
 4. The second tray contains the following parts:
     * Y gantry left/right leg assemblies
@@ -34,7 +34,7 @@
     * Getting started kit
     * Tool bag
 
-    ![Tray 2 in box](images/lower-tray-v3.1.png)
+    ![Tray 2 in box](images/lower-tray-v3.1.png){ loading=lazy }
 
 5. Open up the tool bag. Inside, you'll find the following items:
     * Hobby knife
@@ -50,8 +50,8 @@
     * Zip ties
     * Feeder programmer
   
-    ![Tool bag](images/tool-bag.png)
-    ![Unpacked tool bag](images/tool-bag-exploded.png)
+    ![Tool bag](images/tool-bag.png){ loading=lazy }
+    ![Unpacked tool bag](images/tool-bag-exploded.png){ loading=lazy }
 
 ## Next Steps
 

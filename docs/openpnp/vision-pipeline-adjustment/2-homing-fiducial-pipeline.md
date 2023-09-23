@@ -1,43 +1,43 @@
 # Homing Fiducials Pipeline
 
 If you receive the error message `FIDUCIAL-HOME no matches found` when homing your LumenPnP, you likely need to adjust your homing vision pipeline. Follow the steps below for a guide on the iterative approach. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=1210).
-![Cant't find homing fiducial](images/Cant-find-homing-fiducial.png)
+![Cant't find homing fiducial](images/Cant-find-homing-fiducial.png){ loading=lazy }
 
 ## Open the Pipeline
 
 1. Click on the `Machine Setup` tab in the top right pane.
-  ![Machine Setup Tab](images/Machine-Setup-Tab-3.png)
+  ![Machine Setup Tab](images/Machine-Setup-Tab-3.png){ loading=lazy }
 
 2. Click on the "Expand" checkbox if necessary.
-  ![Expanding the Machine Config options](images/Expand-Checkbox-3.png)
+  ![Expanding the Machine Config options](images/Expand-Checkbox-3.png){ loading=lazy }
 
 3. Click on `Heads > ReferenceHead H1`.
-  ![Reviewing the ReferenceHead options](images/Select-Reference-Head-H1.png)
+  ![Reviewing the ReferenceHead options](images/Select-Reference-Head-H1.png){ loading=lazy }
 
 4. Click on the "Position Camera over location" icon button show below. This will move the top camera to where your datum board is mounted.
-  ![Position top camera over homing fiducial](images/Position-camera-over-homing-fiducial.png)
+  ![Position top camera over homing fiducial](images/Position-camera-over-homing-fiducial.png){ loading=lazy }
 
 5. Confirm that your top camera is positioned exactly over the homing fiducial.
-  ![Center the homing fiducial in the camera view](images/Homing-fiducial-centered.png)
+  ![Center the homing fiducial in the camera view](images/Homing-fiducial-centered.png){ loading=lazy }
 
 6. Adjust the exposure of your camera image as mentioned in the [Homing Fiducial Section](../calibration/4-homing-fiducial/index.md#double-check-camera-exposure).
 
 7. Go to the `Vision` tab.
-  ![Switch to the vision tab](images/vision-tab.png)
+  ![Switch to the vision tab](images/vision-tab.png){ loading=lazy }
 
 8. Select on `FiducialVision` from the type dropdown.
-  ![Select fiducial vision](images/fiducial-vision-dropdown.png)
+  ![Select fiducial vision](images/fiducial-vision-dropdown.png){ loading=lazy }
 
 9. Select `- Default Machine Fiducial Locator -` from the pipeline list.
-  ![Select the default pipeline](images/select-default-fiducial-vision.png)
+  ![Select the default pipeline](images/select-default-fiducial-vision.png){ loading=lazy }
 
 10. Click on Pipeline `Edit`.
-  ![Edit the pipeline](images/edit-pipeline.png)
+  ![Edit the pipeline](images/edit-pipeline.png){ loading=lazy }
 
 ## Check the debug results
 
 1. Click on the `DrawCircles` stage.
-  ![Click on the DrawCircles stage](images/draw-circles-stage.png)
+  ![Click on the DrawCircles stage](images/draw-circles-stage.png){ loading=lazy }
 
 2. The main view will show a circle if OpenPnP was able to identify what it thinks is the homing fiducial.
     1. If there are more than one circle, then we need to more clearly distinguish the real homing fiducial.
@@ -48,20 +48,20 @@ If you receive the error message `FIDUCIAL-HOME no matches found` when homing yo
 ## Adjust Pipeline
 
 1. Click on the `Threshold` stage
-  ![Select the threshold stage](images/threshold-stage.png)
+  ![Select the threshold stage](images/threshold-stage.png){ loading=lazy }
 
 2. Raise or lower the `threshold` parameter as necessary until the image is precise.
     1. If the image is too black, raise the `threshold` setting.
     2. If the image is too bright, lower the `threshold` setting.
 
 3. Click on the `DrawCircles` stage and check if the fiducial has been correctly identified.
-  ![Click on the DrawCircles stage](images/draw-circles-stage.png)
+  ![Click on the DrawCircles stage](images/draw-circles-stage.png){ loading=lazy }
 
 4. If not, pin the view of the `DrawCircles` stage.
-  ![Pin the DrawCircles view](images/pin-draw-circles.png)
+  ![Pin the DrawCircles view](images/pin-draw-circles.png){ loading=lazy }
 
 5. Click on the `DetectCirclesHough` stage.
-  ![Select the detect circles stage](images/detect-circles-stage.png)
+  ![Select the detect circles stage](images/detect-circles-stage.png){ loading=lazy }
 
 6. Raise or lower the `param2` parameter as necessary until the correct number of circles are identified.
     1. If there are no circles, lower the `param2` setting.
@@ -70,13 +70,13 @@ If you receive the error message `FIDUCIAL-HOME no matches found` when homing yo
 ## Review Pipeline Output
 
 1. When the fiducial is correctly identified, close the pipeline editor.
-  ![Close the pipeline editor](images/close-pipeline-editor.png)
+  ![Close the pipeline editor](images/close-pipeline-editor.png){ loading=lazy }
 
 2. When prompted, save the edits you've made.
-  ![Save the changes to the pipeline](images/save-pipeline-changes.png)
+  ![Save the changes to the pipeline](images/save-pipeline-changes.png){ loading=lazy }
 
 3. Try homing the machine to see if it can identify the homing fiducial.
-  ![Home the machine](images/home-machine-from-vision.png)
+  ![Home the machine](images/home-machine-from-vision.png){ loading=lazy }
 
 4. If you receive the same `FIDUCIAL-HOME no matches found` error, you'll need to keep tuning your pipeline. Go back to [Check  the debug results](#check-the-debug-results)
-  ![Cant't find homing fiducial](images/Cant-find-homing-fiducial.png)
+  ![Cant't find homing fiducial](images/Cant-find-homing-fiducial.png){ loading=lazy }

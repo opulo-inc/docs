@@ -30,70 +30,70 @@ If you built a V2 LumenPnP with only one nozzle, follow this guide to install a 
 ## Installing the Tool Head
 
 1. Attach the the prepared NEMA11 hollow shaft stepper motor (with the attached CP40 nozzle holder) to the right Z gantry with four M2.5x8mm screws. Make sure the wire port is facing outwards as shown below.
-  ![the four screws to attach the second toolhead](images/attaching the toolhead.png)
+  ![the four screws to attach the second toolhead](images/attaching the toolhead.png){ loading=lazy }
 
 ## Installing the Pneumatics
 
 The new tool will need a new vacuum pump and valve. This will be mostly the same assembly as the components for the first toolhead. The main differences will be that we will mount the electronics at different places on the staging plate, and and plug them into different connections on the motherboard.
 
 1. Start by press-fitting two M3 nuts into the side recesses in the Pump Mount. { start=2 }
-  ![Two Nut locations on the Pump Mount](images/Populating-The-Staging-Plate-Step-1-2.png)
+  ![Two Nut locations on the Pump Mount](images/Populating-The-Staging-Plate-Step-1-2.png){ loading=lazy }
 
 2. Mount the pump in the Pump Mount using a couple rubber bands. Start by grabbing the rubber band with both hands, giving it a half twist, and folding it over on itself, making two loops.
-  ![rubber band start](images/IMG_0737.JPG)
-  ![twisting the rubber band](images/IMG_0738.JPG)
-  ![double looping the rubber band](images/IMG_0740.JPG)
+  ![rubber band start](images/IMG_0737.JPG){ loading=lazy }
+  ![twisting the rubber band](images/IMG_0738.JPG){ loading=lazy }
+  ![double looping the rubber band](images/IMG_0740.JPG){ loading=lazy }
 
 3. Stretch each rubber band over each pair of pegs on the Pump Mount. Guide the pump between each pair of bands so that it's suspended in the Pump Mount.
-  ![rubber bands attached to mount](images/IMG_0742.JPG)
-  ![pump attached to mount](images/IMG_0743.JPG)
+  ![rubber bands attached to mount](images/IMG_0742.JPG){ loading=lazy }
+  ![pump attached to mount](images/IMG_0743.JPG){ loading=lazy }
 
 4. Mount the Pump Mount to the staging plate using two M3 x 10mm screws. For example: G31 and G33 for the first tool head vacuum pump, and C31 and C33 for the new vacuum pump. (Note, the second photo below shows the newer, v3 LumenPnP pump mount, but you can opt to use the older v2 mount instead.)
-  ![Mounting position for the Pump](images/second pump mounting location v2.png)
-  ![V3 pump mount](images/v3-pump.jpg)
+  ![Mounting position for the Pump](images/second pump mounting location v2.png){ loading=lazy }
+  ![V3 pump mount](images/v3-pump.jpg){ loading=lazy }
 
 5. Use two M3x8mm screws to attach the valve to the Valve Mount as shown below. (Note, the third photo below shows the newer, v3 LumenPnP valve mount, but you can opt to use the older v2 mount instead.)
-  ![attaching the valve to the valve mount with two screws](images/mounting the valve to mount.png)
-  ![attaching the valve to the valve mount with two screws](images/valve mounting location.png)
-  ![dual valve mount](images/v3-valve.jpg)
+  ![attaching the valve to the valve mount with two screws](images/mounting the valve to mount.png){ loading=lazy }
+  ![attaching the valve to the valve mount with two screws](images/valve mounting location.png){ loading=lazy }
+  ![dual valve mount](images/v3-valve.jpg){ loading=lazy }
 
 6. Use an M3x30mm screw and an M3 nut to mount the pneumatic Y splitter to the staging plate as shown below. Example locations are B12 and D12 for the two splitters. (Note, the second photo below shows the newer v3 LumenPnP splitter mount, but you can opt to mount the splitter directly to the staging plate instead.)
-  ![Attaching the Y Splitter to the Staging Plate](images/y splitter mount 2.png)
-  ![V3 Y splitter mount](images/v3-y-mount.jpg)
+  ![Attaching the Y Splitter to the Staging Plate](images/y splitter mount 2.png){ loading=lazy }
+  ![V3 Y splitter mount](images/v3-y-mount.jpg){ loading=lazy }
 
 ## Connecting the Pneumatics and wires
 
 1. The origin of vacuum in the machine is our vacuum pump. The off-center port is the one that provides vacuum. Use about 95mm of the 6mm clear tubing and push it onto the off-center port on the vacuum pump. Push the other end onto the inline plastic port of the valve as shown below.
-  ![pushing pneumatic tube onto the pump](images/IMG_0728.JPG)
-  ![pushing pneumatic tube onto the valve](images/IMG_0729.JPG)
+  ![pushing pneumatic tube onto the pump](images/IMG_0728.JPG){ loading=lazy }
+  ![pushing pneumatic tube onto the valve](images/IMG_0729.JPG){ loading=lazy }
 
 2. Use a 230mm section of the 6mm clear tubing and push it onto the right-angle plastic port of the valve, and push the other side into the single, larger port of the Y splitter.
-  ![Single valve mount](images/IMG_0745.JPG)
-  ![tubing inserted into the y splitter](images/IMG_0731.JPG)
+  ![Single valve mount](images/IMG_0745.JPG){ loading=lazy }
+  ![tubing inserted into the y splitter](images/IMG_0731.JPG){ loading=lazy }
 
 3. Switch to using the smaller, 4mm black tubing. Cut a 225mm length of 4mm OD tubing and push one side into a fork of the Y splitter, and route the other end underneath the motherboard and onto the `VAC2` sensor port. Gently press the tube onto the vacuum sensor.
-  ![Pushing tubing into the Y splitter](images/IMG_0733.JPG)
-  ![the VAC 2 sensor on the motherboard](images/vac2-tubing.jpg)
+  ![Pushing tubing into the Y splitter](images/IMG_0733.JPG){ loading=lazy }
+  ![the VAC 2 sensor on the motherboard](images/vac2-tubing.jpg){ loading=lazy }
 
 4. Now take 1.8 meters of 4mm black tubing and push it into the other fork of the Y splitter. Take the loose end, and route it underneath the motherboard.
 
 5. Route both the black tubing and the wire for the new toolhead up along the X umbilical. Attach them with new zip ties, or slip it inside your existing ones, alongside the first tool head's tubing and wires.
-  ![routing the pneumatic tube along the umbilical](images/IMG_0824.JPG)
+  ![routing the pneumatic tube along the umbilical](images/IMG_0824.JPG){ loading=lazy }
 
 6. With the pneumatic tubing dangling loose past the end of the swivel arm, cut any excess tubing (still allowing some slack for motor rotation). Push the other end into the pneumatic coupling on the back side of the rotation stepper motor. Extra slack will allow the motor to rotate freely 180 degrees in each direction, so err on the side of leaving more than less. If the tubing falls away from the umbilical, use one or two small zip ties to secure them together.
-  ![inserting the pneumatic tube into the toolhead](images/IMG_0825.JPG)
+  ![inserting the pneumatic tube into the toolhead](images/IMG_0825.JPG){ loading=lazy }
 
 7. Plug the cable into the new tool motor. Make sure it has enough slack so that it isn't strained if the tool is raised or lowered.
-  ![plugging in the new tool motor](images/plug in toolhead.png)
+  ![plugging in the new tool motor](images/plug in toolhead.png){ loading=lazy }
 
 8. Plug the new cable (labeled `RM`) into the first port in the second row, labeled `R`. (Note this image shows a Rev 4 motherboard, but the connector is in the same place on the Rev 3 motherboard.)
-    ![attaching the right motor cable](images/plug-rm.JPG)
+    ![attaching the right motor cable](images/plug-rm.JPG){ loading=lazy }
 
 9. Install the new stepper motor driver into the slot below your cable. The orientation should match your other drivers.
 
     !!! danger "Note"
         It is very important to not plug in or unplug stepper motor drivers or motors while the board is powered on. Make sure to unplug the power supply before inserting or removing drivers or motors.
-    ![marking the right motor stepper motor](images/installStepperDriver.JPG)
+    ![marking the right motor stepper motor](images/installStepperDriver.JPG){ loading=lazy }
 
 ## Configuring OpenPnP
 
@@ -101,7 +101,7 @@ With the hardware set up, we need to tell OpenPnP about the newly installed tool
 
 ### Add Z-axis
 
-![The OpenPnP settings for the new Z-axis](images/reference z2.png)
+![The OpenPnP settings for the new Z-axis](images/reference z2.png){ loading=lazy }
 
 1. Select the `Machine Setup` tab
 2. Click the `Expand` checkbox if necessary
@@ -120,7 +120,7 @@ With the hardware set up, we need to tell OpenPnP about the newly installed tool
 
 ### Add Rotation Axis
 
-![The OpenPnP settings for the new Rotation axis](images/reference b.png)
+![The OpenPnP settings for the new Rotation axis](images/reference b.png){ loading=lazy }
 
 1. Click on the Add button
 2. Select `ReferenceControllerAxis` and click `Accept`
@@ -146,7 +146,7 @@ With the hardware set up, we need to tell OpenPnP about the newly installed tool
 
 ### Add 2nd Vacuum
 
-![The OpenPnP settings for the new Vacuum](images/VAC2 settings.png)
+![The OpenPnP settings for the new Vacuum](images/VAC2 settings.png){ loading=lazy }
 
 1. Click on `Heads > ReferenceHead H1 > Actuators`
 2. Click on the Add button
@@ -176,7 +176,7 @@ With the hardware set up, we need to tell OpenPnP about the newly installed tool
 
 ### Add 2nd Nozzle
 
-![The OpenPnP settings for the new Vacuum](images/N2 settings.png)
+![The OpenPnP settings for the new Vacuum](images/N2 settings.png){ loading=lazy }
 
 1. Click on `Nozzles`
 2. Click on the Add button

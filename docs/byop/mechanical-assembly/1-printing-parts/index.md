@@ -59,7 +59,7 @@ Use gantry settings for the following parts:
 
 **Before printing the parts, print the calibration part**. This part contains every feature- screw holes, nut slots, extrusion profiles, etc.- used in the printable parts. Printing this first ensures your printer calibration and print settings are correct.
 
-![Corndog](images/corndog.jpg)
+![Corndog](images/corndog.jpg){ loading=lazy }
 
 This is the **calibration print**, colloquially referred to as ["the corndog"](https://github.com/opulo-inc/lumenpnp-archive/releases/download/v2.1.3/FDM-8000_corndog.stl). This part isn't currently included in the exported STLs, so grab it from the link above.
 
@@ -74,7 +74,7 @@ Once you're happy with the fit you can start printing the parts.
 
 ## Printing The Parts
 
-![All 3D printed parts](images/IMG_0637.JPG)
+![All 3D printed parts](images/IMG_0637.JPG){ loading=lazy }
 
 You can find out how many of each part to print in the `LumenPnP-BOM` zip file you downloaded in the first step. After unzipping, open the HTML file in your browser to see the machine's Bill of Materials.
 

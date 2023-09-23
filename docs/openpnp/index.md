@@ -4,7 +4,7 @@ OpenPnP is a piece of open source software designed to control pick and place ma
 
 These guides were designed with OpenPnP version `2022-08-01_18-07-09.2a36a8d`, so the UI screenshots will match this version, but they should work for other versions as well (namely the [updated version of OpenPnP used for feeders](../feeders/3-software-update/software-update.md)).
 
-![OpenPnP Logo](openpnp-logo.png)
+![OpenPnP Logo](openpnp-logo.png){ loading=lazy }
 
 ## What's on this site?
 

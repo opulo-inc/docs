@@ -16,7 +16,7 @@ While the bottom camera can detect if a part was successfully picked with reason
         The v3 vacuum sensors communicate over I2C. Because they have the same address, we talk to them through an I2C multiplexer. The Gcode commands used to talk to them first tell the multiplexer which device we want to talk to, then we capture a sample of data, then return it back to OpenPnP. The vacuum sensor has three registers holding the sample data, but because OpenPnP only supports raw Gcode commands in these fields, we can only use one byte of data. We capture the most significant bits of the sample as they give us the resolution needed to detect a successful pick. If you'd like to sample the CSB or the LSB byte of data instead, change the second to last command in the commands below to `M260 A109 B7 S1` or `M260 A109 B8 S1` respectively. Read the [datasheet](https://cfsensor.com/wp-content/uploads/2022/11/XGZP6857D-Pressure-Sensor-V2.5.pdf) for more information.
 
 2. Select your GcodeDriver, then under the Gcode tab, select the `H1 VAC1` actuator, and select the `ACTUATOR_READ_COMMAND` setting.
-   ![Part Detection Gcode](images/Screen Shot 2023-02-16 at 10.04.32 AM.png)
+   ![Part Detection Gcode](images/Screen Shot 2023-02-16 at 10.04.32 AM.png){ loading=lazy }
 
 3. Make sure the following Gcode is present in the field:
   
@@ -91,12 +91,12 @@ While the bottom camera can detect if a part was successfully picked with reason
 ### Enabling and Tuning
 
 1. With the actuator configured correctly, the next step is enabling part detection for nozzles tips. Select a nozzle tip that you'd like to enable part detection for, and click on the Part Detection tab. You should see a menu similar to the one below:
-  ![Enabling part detection](images/Screen Shot 2023-02-16 at 10.25.43 AM.png)
+  ![Enabling part detection](images/Screen Shot 2023-02-16 at 10.25.43 AM.png){ loading=lazy }
 
 2. You might need to tweak the values in the `Low Value` and `High Value` fields for both Part On sensing and Part Off sensing. The image shown above has default values for v3 part detection.
 
 3. Thresholds can be determined by opening the `H1:VAC1` or `H1:VAC2` actuator window. Click `On` to turn on your pump and valve, and then click `Read`. You should see a value appear in the `Read Value` text box.
-  ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.png)
+  ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.png){ loading=lazy }
 
 4. Cover the nozzle with your finger tip. Hit `Read` again. The detection threshold sits in between these two numbers.
 

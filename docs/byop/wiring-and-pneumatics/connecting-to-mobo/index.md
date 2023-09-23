@@ -5,7 +5,7 @@ Take your LumenPnP and flip it up onto its haunches. You should see lots of cabl
 ## Plugging in
 
 1. We'll first start by plugging in the Y motors you routed behind the motherboard in [Wiring the Y Motors](../wiring-y-motors/index.md). Plug the cable labeled `Y1` into the left Y motor port on the motherboard, and plug the `Y2` cable into the right one.
-  ![](images/IMG_0766.JPG)
+  ![](images/IMG_0766.JPG){ loading=lazy }
 
 1. Take the Bottom Camera USB cable and run it to the left across the staging plate, under the motherboard, and out the other side. Plug it into the USB port by the label `Btm Cam`. Store the excess cable underneath the motherboard.
 
@@ -31,10 +31,10 @@ Take your LumenPnP and flip it up onto its haunches. You should see lots of cabl
 ## Strain Relief
 
 1. Now that we have everything plugged in, it's time to attach all these loose cables to the frame. Use some `Cable Clamps` with some M3x14mm screws and M3 nuts to hold down the cables across the staging plate.
-  ![](images/IMG_0834.JPG)
+  ![](images/IMG_0834.JPG){ loading=lazy }
 
 2. Take your umbilical cable bundles and loosely secure them in place on the `Umbilical Guide` using two big zip ties. Don't tighten all the way yet; we still need to route the pneumatics.
-  ![](images/IMG_0826.JPG)
+  ![](images/IMG_0826.JPG){ loading=lazy }
 
 ## Next steps
 
