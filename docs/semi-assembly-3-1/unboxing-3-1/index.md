@@ -11,32 +11,32 @@
     * Staging plate
     * Build plate
     * Feet for the build and staging plates
-    * 4x Extension feet for the y-gantry left/right leg assemblies
     * Cable chain assembly
     * Cable chain frame mount
     * IEC power cable and power supply
     * Front rail w/25 feeder slots installed
     * Back rail w/25 feeder slots installed
-    * Feeder Slot Cable Harness
     * 10x Extrusion cable clips
 
      ![Packed box](images/first-tray-v3-1.png)
 
-3. Grab the foam as shown below, rotate the tray up, then pull it out and set it aside, revealing the second tray of parts.
+1. Grab the foam as shown below, rotate the tray up, then pull it out and set it aside, revealing the second tray of parts.
 
     ![Removing foam tray](images/first-tray-left-grip.png)
     ![removing foam tray 2](images/first-tray-right-grip.png)
     ![Lifting tray out](images/first-tray-removal.png)
 
-4. The second tray contains the following parts:
+2. The second tray contains the following parts:
     * Y gantry left/right leg assemblies
     * X gantry assembly
     * Getting started kit
     * Tool bag
+    * 4x Extension feet for the y-gantry left/right leg assemblies
+    * Feeder Slot Cable Harness
 
     ![Tray 2 in box](images/lower-tray-v3.1.png)
 
-5. Open up the tool bag. Inside, you'll find the following items:
+1. Open up the tool bag. Inside, you'll find the following items:
     * Hobby knife
     * Flush snips
     * 135 degree tweezers

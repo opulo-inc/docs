@@ -1,20 +1,20 @@
 # Overview
 
-This is the Opulo 8mm Feeder:
+This is the Opulo Feeder:
 
-![hero image of feeder8](img/with-arm-with-glow.png)
+![hero image of feeder8](img/8mm-v110-no-arm-no-glow.png)
 
-The 8mm feeder is an open source SMT component tape feeder that can reliably feed components as small as 0402. It is designed to work with a LumenPnP Pick and Place Machine, but can mount onto any 20mm X 20mm v-slot extrusion. The source can be found [here](https://github.com/opulo-inc/feeder).
+The LumenPnP Feeder is an open source SMT component tape feeder that can reliably feed components as small as 0402. It is designed to work with a LumenPnP Pick and Place Machine, but can mount onto any 20mm X 20mm v-slot extrusion. The source can be found [here](https://github.com/opulo-inc/feeder).
 
 The feeder uses the open source [Photon feeder controller firmware](https://github.com/photonfirmware/photon), and talks the Photon protocol over RS-485 to any Marlin host with RS-485 support.
 
-You can fit up to 50x 8mm Feeders on the front and back rail of your LumenPnP when using two staging plates.
+You can fit up to 50x 8mm or 12mm Feeders on the front and back rail of your LumenPnP when using two staging plates.
 
-![2 plates with 50 feeders](img/2plates-50feeders.png)
+![2 plates with 50 feeders](img/two-plates.png)
 
-If you'd like to add a third staging plate, you can fit 25x 8mm Feeders on the front rail of your LumenPnP.
+If you'd like to add a third staging plate, you can fit 25x 8mm or 12mm Feeders on the front rail of your LumenPnP.
 
-![3 plates with 25 feeders](img/3plates-25feeders.png)
+![3 plates with 25 feeders](img/three-plates.png)
 
 ## Parts of the Feeder
 

@@ -32,4 +32,4 @@ See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECM
 1. If you receive the error message `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` when homing your LumenPnP, you need to [adjust your nozzle tip calibration pipeline](../../vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md).
 ![Cant't find nozzle tip](images/too-many-vision-redirects.png)
 
-Next is [Backlash Compensation](../8-backlash-compensation/index.md).
+Next is configuring the [vacuum sensor](../10-vacuum-sensor/index.md).
