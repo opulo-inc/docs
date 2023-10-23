@@ -1,7 +1,11 @@
 <!-- markdownlint-disable MD029 MD031 MD032 -->
 # Calibrating Backlash Compensation
 
-Semi-assembled (v3) LumenPnP machines should have only a limited amount of backlash in each axis and the default machine configuration in OpenPnP will typically account for it. This step is optional, and only necessary if you are still having issues with backlash. Read the OpenPnP docs page about automatic backlash compensation [here](https://github.com/openpnp/openpnp/wiki/Calibration-Solutions#calibrating-backlash-compensation).
+This calibration is not needed. Semi-assembled (v3) LumenPnP machines should have only a limited amount of backlash in each axis and the default machine configuration in OpenPnP already applies a consistent, tested backlash compensation. **We highly recommend using the settings below for your X and Y axes instead.**
+
+![](images/default-backlash.png)
+
+If you still want to perform this calibration, use the instructions below and read the OpenPnP docs page about automatic backlash compensation [here](https://github.com/openpnp/openpnp/wiki/Calibration-Solutions#calibrating-backlash-compensation).
 
 ## Set Up Acceleration Control
 
@@ -59,7 +63,3 @@ Semi-assembled (v3) LumenPnP machines should have only a limited amount of backl
   ![results of the backlash calibration](images/backlash results.png)
 
 7. Restart from step 10 with the Y axis selected.
-
-## Next Steps
-
-Next is [Automatic Toolchanger Calibration.](../9-auto-toolchanger/index.md)

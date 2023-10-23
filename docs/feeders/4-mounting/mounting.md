@@ -4,7 +4,9 @@ A feeder can be mounted on your LumenPnP with one smooth motion.
 
 ![mounting feeder](img/mounting.gif)
 
-## Installing Spool Arm
+## (8mm) Installing Spool Arm
+
+8mm feeders come with a spool arm that holds a standard 7" spool of components directly on the feeder.
 
 1. Grab a spool arm and thimble.
    ![spool arm and thimble](img/spool-parts.jpg)
@@ -22,7 +24,7 @@ A feeder can be mounted on your LumenPnP with one smooth motion.
    ![assembled spool arm](img/spool-assembled-2.jpg)
    ![assembled spool arm](img/spool-assembled-3.jpg)
 
-5. Use a 2.0mm hex wrench to unscrew the countersunk screw in the spool arm slot,
+5. Use a 2.0mm hex wrench to unscrew the countersunk screw in the spool slot.
    ![Unscrewing the Spool Arm mount screw](img/IMG_2146.JPG)
 
 6. Insert the spool arm upright, with the flat side of the arm facing the PCB.
@@ -30,6 +32,19 @@ A feeder can be mounted on your LumenPnP with one smooth motion.
 
 7. Replace the screw.
    ![Re-tightening the Spool Arm mount screw](img/IMG_2149.JPG)
+
+## (12mm) Installing Ramp
+
+Most spools for 12mm tape are wider than the LumenPnP Feeder, so they cannot be mounted to it. Instead, a ramp allows the tape to feed into the feeder from a floor-mounted spool.
+
+1. Use a 2.0mm hex wrench to unscrew the countersunk screw in the spool slot.
+   ![Unscrewing the Spool Arm mount screw](img/IMG_2146.JPG)
+
+2. Insert the ramp in the orientation shown, with the curve pointing to the tape opening.
+   ![Inserting the Spool Arm](img/inserting-ramp.jpg)
+
+3. Replace the screw.
+   ![Re-tightening the Spool Arm mount screw](img/screwing-in-ramp.jpg)
 
 ## Insert Feeder
 

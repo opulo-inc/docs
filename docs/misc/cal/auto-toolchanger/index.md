@@ -7,24 +7,28 @@ description: >
   Calibrating automatic toolchanger movements
 ---
 
-Throughout the course of a job, you will find that you need multiple different size nozzle tips to pick different sized components. By default OpenPnP will pause a job and wait for you to manually change a nozzle tip, but it can be more efficient to set up automatic tool changing. Perform the following optional steps for each of the nozzle tips you'll be switching between. We recommend reading the [OpenPnP Wiki page](https://github.com/openpnp/openpnp/wiki/Nozzle-Tip-Changer) about this as well.
+Almost all of the jobs that can be run on a LumenPnP are possible using just an `N045` nozzle tip on the first nozzle, and an `N24` nozzle tip on the second. This means that a nozzle tip swap is very rarely needed.
+
+If your job requires more than three nozzle tips, by default OpenPnP will pause a job and wait for you to manually change a nozzle tip. OpenPnP also has an option to enable automatic tool changing. Perform the following optional steps for each of the nozzle tips you'll be switching between. We recommend reading the [OpenPnP Wiki page](https://github.com/openpnp/openpnp/wiki/Nozzle-Tip-Changer) about this as well.
+
+!!! danger "Warning"
+      This procedure is finicky and prone to error. Ensure your brass nozzle holders are sufficiently lubricated with the included lubrication packet, and you set your speeds very low for insertion and removal movements. We highly recommend optimizing your job for just two nozzle tips, or doing a manual nozzle tip swap if absolutely necessary.
 
 1. Insert the labeled nozzle tips into the holder in their respectively labeled slots.
-  ![Nozzle Tips inserted into holder](images/inserted-nozzles.png)
 
 2. Apply some lubricant to the end of your nozzle holder with the lubrication packet included with your nozzles. This is important for repeatably fully attaching the nozzles without damaging the rubber O-rings around the holder.
   ![Apply Lubricant to holder](images/apply-super-lube.png)
 
-3. Click on the `Machine Setup` tab in the top right pane.
+1. Click on the `Machine Setup` tab in the top right pane.
   ![Machine Setup Tab](images/Machine-Setup-Tab-3.png)
 
-4. Click on the "Expand" checkbox to open all of the features about your machine.
+1. Click on the "Expand" checkbox to open all of the features about your machine.
   ![Machine Setup Tab expanded](images/Expand-Checkbox-3.png)
 
-5. Select the nozzle you're working with. For example: `Nozzle Tips > ReferenceNozzleTipN045`
+1. Select the nozzle you're working with. For example: `Nozzle Tips > ReferenceNozzleTipN045`
   ![Nozzle Tip information](images/select-nozzle-tip.png)
 
-6. Select the `Tool Changer` tab.
+1. Select the `Tool Changer` tab.
   ![Nozzle Changer Tab](images/tool-changer-tab.png)
 
 ## Capturing Positions
@@ -107,8 +111,3 @@ Now that your positions are set, you can enable automatic tool changing in OpenP
 
 10. Click `Apply` to save your changes.
   ![Apply Settings](images/apply-tool-changer-n2.png)
-
-
-## Next Steps
-
-Next is [part detection](../10-vacuum-sensor/index.md).

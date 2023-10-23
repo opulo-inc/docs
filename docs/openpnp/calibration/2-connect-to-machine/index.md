@@ -145,4 +145,4 @@ Now we'll set up the cameras. The big red "X" in the camera views means that Ope
 
 ## Next Steps
 
-Next, we'll work on the the camera's [the Homing Fiducials](../4-homing-fiducial/index.md).
+Next, we'll work on the camera's [the Homing Fiducials](../4-homing-fiducial/index.md).
