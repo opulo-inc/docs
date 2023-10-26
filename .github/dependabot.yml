@@ -11,3 +11,9 @@ updates:
     schedule: # Check for updates once a week
       interval: "weekly"
     target-branch: "main" # Branch to create pull requests against
+  # Enable version updates for pip e.g requirements.txt
+  - package-ecosystem: "pip"
+    directory: "/" # Location of package manifests
+    schedule: # Check for updates once a week
+      interval: "weekly"
+    target-branch: "main" # Branch to create pull requests against
