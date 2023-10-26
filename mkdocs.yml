@@ -44,12 +44,21 @@ theme:
           toggle:
             icon: material/brightness-7 
             name: Switch to dark mode
-
-
-
 plugins:
    - glightbox:
         draggable: false
+extra:
+  social:
+    - icon: fontawesome/brands/facebook-f
+      link: https://www.facebook.com/opuloinc
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/OpuloInc
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/opulo.io
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCMf49SMPnhxdLormhEpfyfg
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/invite/TCwy6De
 nav:
     - Home: index.md
     - LumenPnP Assembly:
@@ -140,4 +149,3 @@ nav:
         - Other Calibrations:
               - Backlash Compensation: misc/cal/backlash-compensation/index.md
               - Automatic Toolchanger: misc/cal/auto-toolchanger/index.md
-
