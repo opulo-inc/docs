@@ -44,12 +44,21 @@ theme:
           toggle:
             icon: material/brightness-7 
             name: Switch to dark mode
-
-
-
 plugins:
    - glightbox:
         draggable: false
+extra:
+  social:
+    - icon: fontawesome/brands/facebook-f
+      link: https://www.facebook.com/opuloinc
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/OpuloInc
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/opulo.io
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCMf49SMPnhxdLormhEpfyfg
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/invite/TCwy6De
 nav:
     - Home: index.md
     - LumenPnP Assembly:
@@ -106,8 +115,6 @@ nav:
               - Nozzle Offset: openpnp/calibration/6-nozzle-offset/index.md
               - Bottom Camera Position: openpnp/calibration/7-bottom-camera-position/index.md
               - Nozzle Tip Calibration: openpnp/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md
-              - Backlash Compensation: openpnp/calibration/8-backlash-compensation/index.md
-              - Automatic Toolchanger: openpnp/calibration/9-auto-toolchanger/index.md
               - Vacuum Part Detection: openpnp/calibration/10-vacuum-sensor/index.md
         - Running Your First Job: 
               - Introduction: openpnp/ftp/index.md
@@ -139,16 +146,6 @@ nav:
               - REV03 Mobo Interposer Guide: misc/maintenance-upgrades/rev3-vac-interposer/index.md
               - Second Nozzle Upgrade Guide: misc/maintenance-upgrades/second-tool/index.md
               - Standalone Feeder Control: misc/maintenance-upgrades/standalone-feeders/index.md
-extra:
-  social:
-    - icon: fontawesome/brands/facebook-f
-      link: https://www.facebook.com/opuloinc
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/OpuloInc
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/opulo.io
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/channel/UCMf49SMPnhxdLormhEpfyfg
-    - icon: fontawesome/brands/discord
-      link: https://discord.com/invite/TCwy6De
-
+        - Other Calibrations:
+              - Backlash Compensation: misc/cal/backlash-compensation/index.md
+              - Automatic Toolchanger: misc/cal/auto-toolchanger/index.md

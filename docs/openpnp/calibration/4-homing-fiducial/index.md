@@ -80,7 +80,7 @@ See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECM
   ![a good histogram](images/good-histogram.png)
   ![a bad histogram](images/bad-histogram.png)
 
-6. Adjust the exposure and other camera settings. The goal is to make the image clear and have a lot of contrast, without being too bright or too dark overall.
+1. Adjust the exposure until your histogram has cleanly defined peaks for the bright parts and dark parts of the homing fiducial image. The goal is to make the image clear and have a lot of contrast, so that it's easy to isolate the light areas in our vision pipeline later.
   ![Top camera properly exposed with the auto-exposure turned on](images/Auto-exposure-on.png)
 
 ## Apply Homing Fiducial Changes

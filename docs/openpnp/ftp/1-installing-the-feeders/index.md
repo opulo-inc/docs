@@ -11,20 +11,20 @@ The FTP PCB has two different types of components that need to be placed: resist
 
 ## Import Board
 
-1. Download the FTP board design. It's in the `LumenPnP_PCBs.zip` artifact on the [latest major release.](https://github.com/opulo-inc/lumenpnp/releases/)
+1. Download the FTP board position file. It's titled `ftp-top.pos`, and can be found in the [latest major release.](https://github.com/opulo-inc/lumenpnp/releases/)
 
 2. Navigate to the `Job` tab in the top right.
   ![Job Tab](images/Job-tab.png)
 
-3. Click that "Add" Icon button to add a new board and select `New Board`. Save the board in the same directory as the job.
+1. Click that "Add" Icon button to add a new board and select `New Board`. Save the board in the same directory as the job.
   ![Add a new board to the job](images/Add-new-board.png)
 
-4. Click on the newly-created board in the list to select it.
+1. Click on the newly-created board in the list to select it.
   ![Select the board to import the design](images/Select-board.png)
 
-5. Go to `File > Import Board > KiCAD .pos`
+1. Go to `File > Import Board > KiCAD .pos`
   ![Start importing the board](images/Import-board-file-menu.png)
-6. In the Import popup:
+1. In the Import popup:
        1. Select the `ftp-top.pos` file you downloaded earlier as the Top File
        2. Enable the `Assign Parts` checkbox.
        3. Enable the `Create Missing Parts` checkbox.
@@ -32,10 +32,10 @@ The FTP PCB has two different types of components that need to be placed: resist
 
      ![Fill out the board import dialog](images/Board-import-dialog.png)
 
-7. In the `Parts` tab on the top right, find the lines for the newly created components: `LED_0603_1608Metric-LED_Small` and `R_0603_1608_Metric-R_Small`. Set their Height values to `0.5`mm by double-clicking the cell.
+2. In the `Parts` tab on the top right, find the lines for the newly created components: `LED_0603_1608Metric-LED_Small` and `R_0603_1608_Metric-R_Small`. Set their Height values to `0.5`mm by double-clicking the cell.
   ![Set the part height](images/set-height.png)
 
-8. Go to `File > Save Job As` and save your FTP job.
+1. Go to `File > Save Job As` and save your FTP job.
   ![Save Job As](images/Save-job-as.png)
 
 ## Installing the N045 Nozzle
@@ -84,14 +84,18 @@ The FTP PCB has two different types of components that need to be placed: resist
 !!! Note "Powered Feeders"
     If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder) and would prefer to use them for your FTP, follow the steps for **[setting them up](../../../feeders/1-overview/feeder-overview.md)** now, and then you'll come back to this guide to finish preparing for the FTP by [setting up the board](../index.md).
 
+!!! warning "Search for Feeders on Boot"
+    Every time you open OpenPnP, you'll have to search for your LumenPnP Feeders again to use them. Click the `Search` button in the `Global Config` tab in any `PhotonFeeder` in your feeder list to scan for feeders on your machine.
+    ![](images/search-for-feeders.png)
+
 1. Use two M3x10 button head screws and two M3 wingnuts to secure the printed tray feeder through onto the staging plate using holes: C15 and E15.
   ![Install the feeder to the staging plate](images/Feeder-installed-with-screws.jpg)
 
-2. For each component, cut a strip of component tape off the reel about 125mm long.
+1. For each component, cut a strip of component tape off the reel about 125mm long.
 
-3. Slide the Resistors into the left-most tray feeder, and the LEDs the adjacent tray.
+2. Slide the Resistors into the left-most tray feeder, and the LEDs the adjacent tray.
 
-4. In OpenPnP, connect to your LumenPnP and home it.
+3. In OpenPnP, connect to your LumenPnP and home it.
   ![Connect to your LumenPnP and home it](images/Connect-and-home.png)
 
 ## Add Feeders

@@ -10,7 +10,7 @@ Awesome! Now we've got OpenPnP installed on your computer, and we've got the def
 !!! Note "Linux"
     On Linux you'll need to join the `dialout` and `video` groups, or provide `udev` rules for the LumenPnP's usb devices.
 
-## Com Port and Baud Rate
+## Serial Port Config
 
 Before connecting to the LumenPnP, you need to set which USB port to use for communication in OpenPnP.
 
@@ -24,17 +24,42 @@ Before connecting to the LumenPnP, you need to set which USB port to use for com
   ![Reviewing the GcodeDriver options](images/SelectGcodeDriver.png)
   
 4. In the `Configuration` tab, check the `Baud` and `Port` settings.
-   1. Set the `Baud` to `115200`
-   2. On Windows, Set the `Port` to the option in the format: `COM2`.
-   3. On Mac, Set the `Port` to the option in the format: `cu.usbmodem<a-lot-of-numbers>`
-   4. On Linux, Set the `Port` to the option in the format: `ttyACM0`.
-  ![Changing the Port and Baud Rate](images/Check COM Port and Baud Rate.png)
+    1. Set the `Baud` to `115200`
+    2. On Windows, Set the `Port` to the option in the format: `COM2`.
+    3. On Mac, Set the `Port` to the option in the format: `cu.usbmodem<a-lot-of-numbers>`
+    4. On Linux, Set the `Port` to the option in the format: `ttyACM0`.
+    ![Changing the Port and Baud Rate](images/Check COM Port and Baud Rate.png)
 
-    !!! info "Port Not Found"
-        If your machine's port does not show up in the drop down, check that your USB cable is plugged in to both your computer and the LumenPnP. Also check that the motherboard is powered on. If you still cannot find the port, try pressing the reset button on the motherboard and closing and reopening OpenPnP.
+        !!! info "Port Not Found"
+            If your machine's port does not show up in the drop down, check that your USB cable is plugged in to both your computer and the LumenPnP. Also check that the motherboard is powered on. If you still cannot find the port, try pressing the reset button on the motherboard and closing and reopening OpenPnP.
 
 5. Click `Apply` in the lower right corner to save your changes.
   ![Apply baud rate and port](images/apply-machine-config.png)
+
+!!! success "v3.1+ Speed Increase"
+
+    If your machine is v3.1 or higher, your machine can move much faster than the default configuration because of the addition of linear rails, and use less current for the L and R motors with the addition of pneumatic rotation couplings.
+
+    In the `Gcode` tab under your `GcodeDriver`, select `Default` in the `Head Mountable` dropdown, and `CONNECT_COMMAND` in the `Setting` dropdown. Paste the following GCode after any existing GCode already in the field. Be sure to hit `Apply` to confirm your changes.
+
+    ```
+    M204 T5000 ; Set max travel acceleration
+    M201 Y3500 ; Set max Y acceleration
+    M201 X5000 ; Set max X acceleration
+    M203 X1000 Y1000 ; Set max feedrate in mm/min
+    M906 Y1200 ; Set Y motor current
+    M914 X40 Y40 ; Set Homing sensitivity
+    M906 A200 ; Set L motor current
+    M906 B200 ; Set R motor current
+    ```
+
+    Your settings should look something like the image below:
+    
+    ![](images/31settings.png)
+
+    To tell OpenPnP to take advantage of this speed increase, you can update the `Max Feed Rate` field in the `Driver Settings` tab. How high you make this number depends on how hard you want to push your machine. `50000` is a very aggressive speed, but has shown to be consistent and accurate. If you notice your machine skipping steps, bring your speed down in increments of `2000` until your movement is consistent.
+
+    ![](images/31speedAdjust.png)
 
 ## Bottom Camera Config
 
@@ -120,4 +145,4 @@ Now we'll set up the cameras. The big red "X" in the camera views means that Ope
 
 ## Next Steps
 
-Next, we'll work on the the camera's [the Homing Fiducials](../4-homing-fiducial/index.md).
+Next, we'll work on the camera's [the Homing Fiducials](../4-homing-fiducial/index.md).
