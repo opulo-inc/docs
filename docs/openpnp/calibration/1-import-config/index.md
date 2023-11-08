@@ -13,6 +13,41 @@ You can also download the most recent builds of OpenPnP that support feeders [he
 
 If you'd like to start from scratch with your setup, community member Qwertymodo has posted a [very helpful video](https://www.youtube.com/watch?v=vuFalyzcCZA) showing his process of doing calibration on his machine from scratch.
 
+**We highly recommend using Ubuntu Linux as the OS for running OpenPnP due to how well it handles communication with the cameras.**
+
+## Linux ([Ubuntu Install Guide](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview))
+
+1. Download and install OpenPnP for Linux. Use the version here to ensure OpenPnP works with the LumenPnP Feeders: ([.deb](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-linux-test.deb))
+
+2. Go to the [LumenPnP Releases Page](https://github.com/opulo-inc/lumenpnp/releases).
+
+3. Find the latest release that is compatible with your hardware.
+    1. If your machine's version begins with `v2`, pick the most recent release starting with `v2`.
+    2. If your machine's version begins with `v3`, pick the most recent release starting with `v3`.
+
+4. Download the `LumenPnP-Config-vX.X.X.zip` file for that release, and unzip it.
+
+    !!! info "Older Releases"
+        Older releases have the OpenPnP configuration files in the source. If you can't find the OpenPnP config zip in the release, download the `Source Code` from the release, unzip, and open the `openpnp` folder.
+
+5. Inside you'll find the four configuration files you need: `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`.
+
+6. To install these files in OpenPnP, you'll need to find its configuration folder. In the Ubuntu file manager (Nautilus), press `CTRL` + `H` to show hidden files, or go to the `View` menu and check `Show Hidden Files`.
+
+7. Next, navigate to: `/home/[username]/.openpnp2`.
+  
+8. Double check that OpenPnP is closed.
+
+9. In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
+
+10. Copy the configuration files from the LumenPnP source files into `.openpnp2` and overwrite the old configuration files. Note that if you've already been using OpenPnP, you may want to only replace your `machine.xml` file, as the other files will overwrite your existing components and vision libraries.
+
+!!! danger "Linux Users"
+    Linux requires two quick configuration steps to allow OpenPnP to run:
+
+    1. In order for OpenPnP to communicate to the machine, the user must be added to the `dialout` group. This can be done by entering `sudo adduser [USERNAME] dialout` (where [USERNAME] is the user you're logged in as) into terminal and restarting the computer.
+    2. OpenPnP requires that Java is installed. This can easily be done by entering `sudo apt-get install default-jdk` into terminal.
+
 ## Windows
 
 1. Download and install OpenPnP for Windows. Use the version here to ensure OpenPnP works with the LumenPnP Feeders: ([32 Bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x32-test.exe)) ([64 Bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x64-test.exe))
