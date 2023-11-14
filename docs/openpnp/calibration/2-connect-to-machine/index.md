@@ -47,7 +47,7 @@ Before connecting to the LumenPnP, you need to set which USB port to use for com
     M201 Y3500 ; Set max Y acceleration
     M201 X5000 ; Set max X acceleration
     M203 X1000 Y1000 ; Set max feedrate in mm/min
-    M906 Y1200 ; Set Y motor current
+    M906 Y1000 ; Set Y motor current
     M914 X40 Y40 ; Set Homing sensitivity
     M906 A200 ; Set L motor current
     M906 B200 ; Set R motor current
@@ -57,9 +57,11 @@ Before connecting to the LumenPnP, you need to set which USB port to use for com
     
     ![](images/31settings.png)
 
-    To tell OpenPnP to take advantage of this speed increase, you can update the `Max Feed Rate` field in the `Driver Settings` tab. How high you make this number depends on how hard you want to push your machine. `50000` is a very aggressive speed, but has shown to be consistent and accurate. If you notice your machine skipping steps, bring your speed down in increments of `2000` until your movement is consistent.
-
+    To tell OpenPnP to take advantage of this speed increase, you can update the `Max Feed Rate` field in the `Driver Settings` tab. How high you make this number depends on how hard you want to push your machine. 
+    
     ![](images/31speedAdjust.png)
+
+    `50000` is a very aggressive speed, but has shown to be consistent and accurate. If you notice your machine skipping steps, bring your speed down in increments of `2000` until your movement is consistent.
 
 ## Bottom Camera Config
 
