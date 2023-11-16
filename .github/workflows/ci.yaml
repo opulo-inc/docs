@@ -17,5 +17,5 @@ jobs:
       - run: pip install mkdocs-material 
       - run: pip install mkdocs-glightbox
       - run: sudo apt-get install imagemagick pngquant
-      - run: find . -name '*.png' -execdir mogrify -resize 750x {} && pngquant {} --ext .png --force \;
+      - run: find . -name '*.png' -execdir mogrify -resize 750x {} && pngquant {} --ext .png --force +
       - run: mkdocs gh-deploy --force
