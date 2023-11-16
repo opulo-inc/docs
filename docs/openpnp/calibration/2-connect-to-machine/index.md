@@ -40,28 +40,47 @@ Before connecting to the LumenPnP, you need to set which USB port to use for com
 
     If your machine is v3.1 or higher, your machine can move much faster than the default configuration because of the addition of linear rails, and use less current for the L and R motors with the addition of pneumatic rotation couplings.
 
-    In the `Gcode` tab under your `GcodeDriver`, select `Default` in the `Head Mountable` dropdown, and `CONNECT_COMMAND` in the `Setting` dropdown. Paste the following GCode after any existing GCode already in the field. Be sure to hit `Apply` to confirm your changes.
+      1. In the `Gcode` tab under your `GcodeDriver`, select `Default` in the `Head Mountable` dropdown, and `CONNECT_COMMAND` in the `Setting` dropdown. **Overwrite** the existing text in this field with the new settings below. Be sure to hit `Apply` to confirm your changes.
 
-    ```
-    M204 T5000 ; Set max travel acceleration
-    M201 Y3500 ; Set max Y acceleration
-    M201 X5000 ; Set max X acceleration
-    M203 X1000 Y1000 ; Set max feedrate in mm/min
-    M906 Y1000 ; Set Y motor current
-    M914 X40 Y40 ; Set Homing sensitivity
-    M906 A200 ; Set L motor current
-    M906 B200 ; Set R motor current
-    ```
+        ```
+        G21 ; Set Millimeters Mode
+        G90 ; Set absolute positioning mode
+        M82 ; Set absolute mode for extruder
+        M204 T5000 ; Set max travel acceleration
+        M201 Y1500 ; Set max Y acceleration
+        M201 X2000 ; Set max X acceleration
+        M203 X1000 Y1000 ; Set max feedrate in mm/min
+        M906 Y1000 ; Set Y motor current
+        M906 X800 ; Set X motor current
+        M906 A200 ; Set L motor current
+        M906 B200 ; Set R motor current
+        M569 S0 X Y ; Switches to SpreadCycle
+        ```
 
-    Your settings should look something like the image below:
-    
-    ![](images/31settings.png)
+        Your settings should look similar like the image below:
+       
+        ![](images/31settings.png)
 
-    To tell OpenPnP to take advantage of this speed increase, you can update the `Max Feed Rate` field in the `Driver Settings` tab. How high you make this number depends on how hard you want to push your machine. 
-    
-    ![](images/31speedAdjust.png)
+      2. Next, under the `Setting` dropdown, choose the `HOME_COMMAND` option. **Overwrite** the existing text in this field with the new settings below. Be sure to hit `Apply` to confirm your changes.
 
-    `50000` is a very aggressive speed, but has shown to be consistent and accurate. If you notice your machine skipping steps, bring your speed down in increments of `2000` until your movement is consistent.
+        ```
+        M569 S1 X Y ; Switches to StealthChop
+        M201 Y1500 ; Set Max Y Acceleration
+        M201 X2000 ; Set Max X Acceleration
+        M906 Y400 ; Set Y motor current
+        M906 X200 ; Set X motor current
+        M914 X50 Y30 ; Set Homing Sensitivity
+        G28 ; Home all axis
+        M569 S0 X Y ; Switches back to SpreadCycle
+        M201 Y2500 ; Set Max Y Acceleration
+        M201 X3000 ; Set Max X Acceleration
+        M906 Y1000 ; Set Y motor current
+        M906 X800 ; Set X motor current
+        ```
+
+      3. To tell OpenPnP to take advantage of this speed increase, you can update the `Max Feed Rate` field in the `Driver Settings` tab. Enter `35000` into this field.
+
+      4. If you need to tweak your sensorless homing settings, make sure to adjust the values in the line starting with `M914` under `HOME_COMMAND`, *not* under `CONNECT_COMMAND`.
 
 ## Bottom Camera Config
 
