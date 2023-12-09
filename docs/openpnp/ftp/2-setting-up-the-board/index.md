@@ -21,13 +21,13 @@
 
 4. Tighten down the holders. You shouldn't be able to move the board except by pressing on the tab holding it in place.
 
-5. If you installed your holders in this location, the bottom left corner of your FTP board should be located around X328, Y94.
+5. If you installed your holders in this location, the bottom left corner of your FTP board should be located around `X328, Y94`.
 
 ## Finding the FTP Location
 
 The next step is to set the physical location of the FTP board in OpenPNP. You'll start by setting an approximate location and then fine tune the location using vision. Once the location is set, you can run the job to pick and place components. You'll likely need to go through these steps a few times to tune the settings.
 
-1. Navigate to the `Job` tab in the  top-right pane.
+1. Navigate to the `Job` tab in the top-right pane.
   ![Switch to the Job Tab](images/Job-tab.png)
 
 2. In the bottom-right pane, you'll see the `Placements` panel. Find the three elements with the IDs: `FID1`, `FID2`, and `FID3`. You can sort the list by `Part` to find them easily.
@@ -87,10 +87,10 @@ The next step is to set the physical location of the FTP board in OpenPNP. You'l
 2. It's time to place your first component. Press the "Single job step" icon button repeatedly until OpenPnP moves to pick up an LED, check it's orientation over the bottom camera, and then place it on the board.
   ![Start placing components](images/One-step-placement.png)
 
-1. If the component was not picked up correctly, you will need to adjust your [feeder location or height](../../../misc/troubleshooting/solutions#incorrect-feeder-z-position).
-2. If the component was not identified by the bottom camera correctly, you will likely need to adjust its [Part Identification Vision Pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md).
-3. If the component did not stick to the FTP board, you should lower the FTP board's Z axis location (`0.10mm` increments are a good starting place).
-4. If the component stuck to the FTP board but was not centered on placement location (on the metal pads), you will need to do some fine tuning. It is useful to place five or so components before attempting to diagnose exactly what's wrong with your placements.
-5. Continue to click the "Single Job Step" to place the additional components (or click the "Play" icon button and pause the operation when you're ready.)
+3. If the component was not picked up correctly, you will need to adjust your [feeder location or height](../../../misc/troubleshooting/solutions#incorrect-feeder-z-position).
+4. If the component was not identified by the bottom camera correctly, you will likely need to adjust its [Part Identification Vision Pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md).
+5. If the component did not stick to the FTP board, you should lower the FTP board's Z axis location (`0.10mm` increments are a good starting place).
+6. If the component stuck to the FTP board but was not centered on placement location (on the metal pads), you will need to do some fine tuning. It is useful to place five or so components before attempting to diagnose exactly what's wrong with your placements.
+7. Continue to click the "Single Job Step" to place the additional components (or click the "Play" icon button and pause the operation when you're ready.)
 
 It is perfectly normal for your very first set of component placements to have some errors. There are several different sources of placement error that we can address, one at a time. It will take a little trial and error to get placements perfect. Go to the [Troubleshooting](../../../misc/troubleshooting/symptoms/index.md) page for easy instructions.

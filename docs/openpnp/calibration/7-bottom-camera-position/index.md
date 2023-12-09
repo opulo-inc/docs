@@ -34,10 +34,10 @@ Now that we know the offset from the top camera to the nozzle, we can use the no
 6. Home your LumenPnP to make sure your toolhead's location is accurate. As before, ignore the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error if it appears.
   ![Home the machine](images/home-during-bottom-cam-pos.png)
 
-7. Jog the toolhead off to the side so that it isn't aligned with any calibration points. This will make it easier to see if the nozzle is lined up with the bottom camera.
+7. Jog the toolhead off to the side so that it isn't aligned with any calibration points. This will make it easier to see if the nozzle is lined up with the bottom camera in the next step.
   ![Jog the toolhead](images/bottom-cam-jog-random.png)
 
-8. Select the `Nozzle: N1 - N045 (Head:H1)` from the machine controls dropdown.
+8. Select the `Nozzle: N1 (Head:H1)` from the machine controls dropdown. (It may also include the nozzle tip size if you've already specified that.)
   ![Select nozzle from machine control dropdown](images/select-n1-machine-control-bottom.png)
 
 9. Click the "Position tool over location" button to bring the left nozzle very roughly above the bottom camera.

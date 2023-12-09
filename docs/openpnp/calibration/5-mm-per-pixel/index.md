@@ -57,7 +57,7 @@ Nicely done so far! You've got your homing fiducial all set up. This next step c
 1. Apply some lubricant to the end of your nozzle holder with the lubrication packet included with your nozzles. This is important for repeatably fully attaching the nozzles without damaging the rubber O-rings around the holder.
   ![Apply Lubricant to holder](images/apply-super-lube.png)
 
-2. Install an N24 nozzle on the left tool head.
+2. Install an N24 nozzle on the left tool head. If the stepper motor moves at all while you install the nozzle, you should re-home your Z-axis.
   ![Install a N24 nozzle](images/n24-nozzle-attached.png)
 
 3. Click on the `Machine Setup` tab in the top right pane.
