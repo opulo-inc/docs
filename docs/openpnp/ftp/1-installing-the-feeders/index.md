@@ -16,15 +16,15 @@ The FTP PCB has two different types of components that need to be placed: resist
 2. Navigate to the `Job` tab in the top right.
   ![Job Tab](images/Job-tab.png)
 
-1. Click that "Add" Icon button to add a new board and select `New Board`. Save the board in the same directory as the job.
+3. Click that "Add" Icon button to add a new board and select `New Board`. Save the board in the same directory as the job, perhaps as `ftpPCB.board`
   ![Add a new board to the job](images/Add-new-board.png)
 
-1. Click on the newly-created board in the list to select it.
+4. Click on the newly-created board in the list to select it.
   ![Select the board to import the design](images/Select-board.png)
 
-1. Go to `File > Import Board > KiCAD .pos`
+5. Go to `File > Import Board > KiCAD .pos`
   ![Start importing the board](images/Import-board-file-menu.png)
-1. In the Import popup:
+6. In the Import popup:
        1. Select the `ftp-top.pos` file you downloaded earlier as the Top File
        2. Enable the `Assign Parts` checkbox.
        3. Enable the `Create Missing Parts` checkbox.
@@ -32,10 +32,10 @@ The FTP PCB has two different types of components that need to be placed: resist
 
      ![Fill out the board import dialog](images/Board-import-dialog.png)
 
-2. In the `Parts` tab on the top right, find the lines for the newly created components: `LED_0603_1608Metric-LED_Small` and `R_0603_1608_Metric-R_Small`. Set their Height values to `0.5`mm by double-clicking the cell.
+7. In the `Parts` tab on the top right, find the lines for the newly created components: `LED_0603_1608Metric-LED_Small` and `R_0603_1608_Metric-R_Small`. Set their Height values to `0.5`mm by double-clicking the cell.
   ![Set the part height](images/set-height.png)
 
-1. Go to `File > Save Job As` and save your FTP job.
+8. Go to `File > Save Job As` and save your FTP job.
   ![Save Job As](images/Save-job-as.png)
 
 ## Installing the N045 Nozzle
@@ -86,16 +86,16 @@ The FTP PCB has two different types of components that need to be placed: resist
 
 !!! warning "Search for Feeders on Boot"
     Every time you open OpenPnP, you'll have to search for your LumenPnP Feeders again to use them. Click the `Search` button in the `Global Config` tab in any `PhotonFeeder` in your feeder list to scan for feeders on your machine.
-    ![](images/search-for-feeders.png)
+    ![search for feeders](images/search-for-feeders.png)
 
 1. Use two M3x10 button head screws and two M3 wingnuts to secure the printed tray feeder through onto the staging plate using holes: C15 and E15.
   ![Install the feeder to the staging plate](images/Feeder-installed-with-screws.jpg)
 
-1. For each component, cut a strip of component tape off the reel about 125mm long.
+2. For each component, cut a strip of component tape off the reel about 125mm long.
 
-2. Slide the Resistors into the left-most tray feeder, and the LEDs the adjacent tray.
+3. Slide the Resistors into the left-most tray feeder with the tape feed holes on the left. Slide the LEDs into the adjacent tray. Don't peel back the clear covering tape yet.
 
-3. In OpenPnP, connect to your LumenPnP and home it.
+4. In OpenPnP, connect to your LumenPnP and home it.
   ![Connect to your LumenPnP and home it](images/Connect-and-home.png)
 
 ## Add Feeders
@@ -146,7 +146,7 @@ The FTP PCB has two different types of components that need to be placed: resist
 1. Navigate to the `Feeders` tab in the top-right pane.
   ![Switch to the feeders list](images/Feeders-tab.png)
 
-2. Click on the "Position Nozzle" icon button to bring the nozzle over the feeder.
+2. Select the feeder you want to start with and click on the "Position Nozzle" icon button to bring the nozzle over the feeder.
   ![Position the nozzle over the feeder](images/Position-nozzle-over-feeder.png)
 
 3. Use the Jog controls to lower the Z axis until the nozzle is touching the surface of the plastic tape cover.
@@ -157,7 +157,7 @@ The FTP PCB has two different types of components that need to be placed: resist
 4. Click on the "Capture Nozzle" icon button to save the new Z height of the feeder.
   ![Save the nozzle position](images/Capture-nozzle-position-feeder.png)
 
-5. Jog the XY gantry away from the feeder.
+5. Jog the Z axis safely upwards, and then jog XY gantry away from the feeder.
   ![Move the Tool Head away from the feeder](images/XY-jog-controls.png)
 
 6. Remove the tape cover from the feeder.

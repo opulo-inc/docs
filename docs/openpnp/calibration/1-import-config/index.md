@@ -45,8 +45,10 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 !!! danger "Linux Users"
     Linux requires two quick configuration steps to allow OpenPnP to run:
 
-    1. In order for OpenPnP to communicate to the machine, the user must be added to the `dialout` group. This can be done by entering `sudo adduser [USERNAME] dialout` (where [USERNAME] is the user you're logged in as) into terminal and restarting the computer.
+    1. In order for OpenPnP to communicate to the machine, the user must be added to the `dialout` group. This can be done by entering `sudo adduser [USERNAME] dialout` (where `[USERNAME]` is the user you're logged in as) into terminal and restarting the computer.
     2. OpenPnP requires that Java is installed. This can easily be done by entering `sudo apt-get install default-jdk` into terminal.
+
+    Note that if Java is not installed, OpenPnP will fail silently when you attempt to start by clicking on the icon.
 
 ## Windows
 
@@ -73,7 +75,7 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
   
 8. Double-check that OpenPnP is closed.
 
-9.  In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
+9. In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
 
 10. Copy the configuration files from the LumenPnP source files into `.openpnp2` and overwrite the old configuration files. Note that if you've already been using OpenPnP, you may want to only replace your `machine.xml` file, as the other files will overwrite your existing components and vision libraries.
 
@@ -106,7 +108,7 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
   
 8. Double check that OpenPnP is closed.
 
-9.  In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
+9. In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
 
 10. Copy the configuration files from the LumenPnP source files into `.openpnp2` and overwrite the old configuration files. Note that if you've already been using OpenPnP, you may want to only replace your `machine.xml` file, as the other files will overwrite your existing components and vision libraries.
 
