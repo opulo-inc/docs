@@ -17,6 +17,8 @@ Now we can set up the datum board. The datum board is a reference point for ever
 !!! danger "If your machine does not move fully to the front left"
     If your LumenPnP does not move all the way to the front left of the machine when you click the Home icon, it could mean that your sensorless homing values need to be adjusted. Instructions for tuning this setting are [here](https://youtu.be/CSnczX6VJ7M?si=w_B5Yie0wdoZVjiE&t=553).
 
+    If you have a v3.1 machine, be sure to adjust the existing `M914` line under the `HOME_COMMAND` dropdown in the GCodeDriver, instead of adding the line in `CONNECT_COMMAND`
+
 ## Tuning the Homing Fiducial
 
 1. Click on the `Machine Setup` tab in the top right pane.
