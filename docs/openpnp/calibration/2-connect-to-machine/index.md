@@ -91,11 +91,14 @@ Now we'll set up the cameras. The big red "X" in the camera views means that Ope
 
     Unfortunately, from reports we've gotten from users, it seems that not all computer manufacturers include high-quality internal USB hubs. The lower quality hubs included in these computers can't handle the bandwidth requirements of two webcams plus the motherboard all on a single USB port. If this is the case for your computer, one or both of the webcams will be missing from the configuration list in OpenPnP or any other camera application.
 
-    If you have this problem, you will need to plug at least one of the webcams directly into your computer via a separate USB port. Occasionally this can cause the webcam's name to be incorrect, but you'll still be able to select it from the drop-down list with a little trial and error.
+    If you have this problem, you will need to plug at least one of the webcams directly into your computer via a separate USB port. Occasionally this can cause the webcam's name to be incorrect, but you'll still be able to select it from the drop-down list with a little trial and error. If you decide to plug both cameras directly into your computer, you may need to plug them into different USB hubs to get around data limits.
 
 !!! Note
     More recent LumenPnP machines ship with a more recessed bottom camera, shown below. The images in our setup guides mostly show an older mounting solution. Simply follow the steps normally unless otherwise noted.
     ![recessed bottom camera](images/new-bottom-camera.jpg)
+
+!!! Tip
+    You may find it easier to calibrate your cameras if you use the optional [Nozzle Holder Flange 3D prints](https://www.printables.com/model/400068-lumenpnp-v3-cp40-nozzle-holder-flange-40mm).
 
 1. Remove both camera's lens caps. They pull up and off. (They're already removed in the image below)
   ![Lens cap locations](../5-mm-per-pixel/images/remove-lens-caps.jpg)
@@ -117,7 +120,7 @@ Now we'll set up the cameras. The big red "X" in the camera views means that Ope
     !!! info "Duplicate Camera Names"
         There have been a few reports of users on Windows seeing two of the same camera name in their Open PnP drop down menu. If this happens to you, use trial and error to identify which camera is which in the list. Sorry for any inconvenience.
 
-8. In the `Format` drop-down, choose the `1280x720 10fps` setting.
+8. In the `Format` drop-down, choose the `1280x720 10fps YUY2` setting.
   ![setting bottom camera resolution](images/Bottom resolution.png)
 
 9. Click the `Apply` button in the bottom right. You should then see the camera display start showing the feed from the camera, or at least see the red X disappear. We'll fix the exposure next.
@@ -144,7 +147,7 @@ Now we'll set up the cameras. The big red "X" in the camera views means that Ope
 5. In the `Device` drop-down, choose `PnP Top Camera`.
   ![Selecting the correct device for the Bottom Camera](images/Top-camera-select-device.png)
 
-6. In the `Format` drop-down, choose the `1280x720 10fps` setting.
+6. In the `Format` drop-down, choose the `1280x720 10fps YUY2` setting.
   ![setting top camera resolution](images/Top resolution.png)
 
 7. Click the `Apply` button in the bottom right. You should then see the camera display start showing the feed from the camera, or at least see the red X disappear.
@@ -155,10 +158,13 @@ Now we'll set up the cameras. The big red "X" in the camera views means that Ope
 
 ## Connecting to the LumenPnP
 
+!!! Note
+    Linux users may need to connect the LumenPnP to power first, then connect the USB cable from the LumenPNP to their computer.
+
 1. Click the green power button in the Machine Controls section of the UI to connect to your machine.
   ![Connect to the LumenPnP](images/connect-to-machine-power-button.png)
 
-2. The power button will turn red when OpenPnP has connected to your machine. If this doesn't work, check your [port and baud rate](#com-port-and-baud-rate).
+2. The power button will turn red when OpenPnP has connected to your machine. If this doesn't work, check your [port and baud rate](#serial-port-config).
   ![having successfully connected to the LumenPnP and cameras](images/connected-to-machine.png)
 
 3. Save your OpenPnP settings with `File > Save Configuration`.

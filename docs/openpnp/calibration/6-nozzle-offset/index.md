@@ -34,7 +34,7 @@ See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECM
 
 7. Read the instructions that OpenPnP provides in this window. This guide will use the homing fiducial as the starting point, instead of using putty or flour. But those are valid strategies as well if you'd prefer them.
 
-8. Select the `Nozzle: N1 - N045 (Head:H1)` from the machine controls dropdown.
+8. Select the `Nozzle: N1 (Head:H1)` from the machine controls dropdown. (It may also include the nozzle tip size if you've already specified that.)
   ![Select nozzle from machine control dropdown](images/select-n1-machine-control.png)
 
 9. Jog the nozzle so that it is just barely touching the datum board, and perfectly centered over the homing fiducial. We recommend looking for the shiny edge of the gold fiducial poking out from under the nozzle tip to determine if you've centered it correctly.
@@ -42,7 +42,7 @@ See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECM
   ![Nozzle almost touching homing fiducial](images/PXL_20220519_181926227.jpg)
   ![Nozzle touching the homing fiducial](images/PXL_20220519_181952658.jpg)
 
-10. Click `Store nozzle mark position`. Do not navigate away from the `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1` tab while running the wizard.
+10. Click `Store nozzle mark position`. Do not navigate away from the `Heads > ReferenceHead H1 (or 2) > Nozzles > ReferenceNozzle N1 (or 2)` tab while running the wizard.
   ![Store the nozzle's position](images/store-nozzle-position.png)
 
 11. Raise the nozzle off the datum board.
@@ -61,7 +61,7 @@ See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECM
 
 !!! info "Further Adjustment"
     If you find that your placement accuracy is slightly incorrect after performing this calibration, you can fine-tune your part placement by adjusting the X and Y offsets in the relevant nozzle settings, as shown below.
-    ![](images/manually-adjust-nozzle-offset.png)
+    ![nozzle offsets](images/manually-adjust-nozzle-offset.png)
 
 ## Next Steps
 

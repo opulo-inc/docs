@@ -55,7 +55,7 @@ Now we can set up the datum board. The datum board is a reference point for ever
 10. Set the `Distance` slider to `0.1` for more precise movements.
   ![Make the jog controls more precise](images/Distance-slider-0pt1.png)
 
-11. Manually jog the head so that the reticle in the center of the Top Camera feed in your top camera view is perfectly centered on the Homing Fiducial in the center of the Opulo logo.
+11. Manually jog the head so that the reticle in the center of the Top Camera feed in your top camera view is perfectly centered on the Homing Fiducial in the center of the Opulo logo. You might need to [adjust the exposure of the camera](../2-connect-to-machine/index.md#top-camera-config).
   ![use the jog controls to move the machine](images/jog-controls.png)
   ![Center the homing fiducial in the camera view](images/Homing-fiducial-centered.png)
 
@@ -77,12 +77,12 @@ See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECM
 4. In the lower detail pane, switch to the `Device Settings` tab.
   ![Switching to the camera device settings](images/Top-camera-device-settings-4.png)
 
-5. Right click on the camera feed to enable the image info card. This will give you the brightness histogram of the image. In the next step, you'll want to tune your exposure and other camera settings so the image isn't too bright or too dark. The histogram can help: make sure the graph isn't going all the way to the edges of the X axis in the histogram, and that will make sure all of the image's details are available for the computer to use when it is looking for the homing fiducial.
+5. Right click on the camera feed and select `Show Image Info?` to enable the image info card. This will give you the brightness histogram of the image. In the next step, you'll want to tune your exposure and other camera settings so the image isn't too bright or too dark. The histogram can help: make sure the graph isn't going all the way to the edges of the X axis in the histogram, and that will make sure all of the image's details are available for the computer to use when it is looking for the homing fiducial.
   ![enable the image histogram](images/show-image-info.png)
   ![a good histogram](images/good-histogram.png)
   ![a bad histogram](images/bad-histogram.png)
 
-1. Adjust the exposure until your histogram has cleanly defined peaks for the bright parts and dark parts of the homing fiducial image. The goal is to make the image clear and have a lot of contrast, so that it's easy to isolate the light areas in our vision pipeline later.
+6. Adjust the exposure until your histogram has cleanly defined peaks for the bright parts and dark parts of the homing fiducial image. The goal is to make the image clear and have a lot of contrast, so that it's easy to isolate the light areas in our vision pipeline later.
   ![Top camera properly exposed with the auto-exposure turned on](images/Auto-exposure-on.png)
 
 ## Apply Homing Fiducial Changes

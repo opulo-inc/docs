@@ -15,7 +15,7 @@ While the bottom camera can detect if a part was successfully picked with reason
     !!! info "How It Works"
         The v3 vacuum sensors communicate over I2C. Because they have the same address, we talk to them through an I2C multiplexer. The Gcode commands used to talk to them first tell the multiplexer which device we want to talk to, then we capture a sample of data, then return it back to OpenPnP. The vacuum sensor has three registers holding the sample data, but because OpenPnP only supports raw Gcode commands in these fields, we can only use one byte of data. We capture the most significant bits of the sample as they give us the resolution needed to detect a successful pick. If you'd like to sample the CSB or the LSB byte of data instead, change the second to last command in the commands below to `M260 A109 B7 S1` or `M260 A109 B8 S1` respectively. Read the [datasheet](https://cfsensor.com/wp-content/uploads/2022/11/XGZP6857D-Pressure-Sensor-V2.5.pdf) for more information.
 
-2. Select your GcodeDriver, then under the Gcode tab, select the `H1 VAC1` actuator, and select the `ACTUATOR_READ_COMMAND` setting.
+2. In the Machine Setup tab, go to `Drivers > GcodeDriver GcodeDriver`, then under the Gcode tab, select the `H1 VAC1` actuator, and select the `ACTUATOR_READ_COMMAND` setting.
    ![Part Detection Gcode](images/Screen Shot 2023-02-16 at 10.04.32 AM.png)
 
 3. Make sure the following Gcode is present in the field:
