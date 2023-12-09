@@ -1,7 +1,7 @@
-name: ci 
+name: ci
 on:
   push:
-    branches: 
+    branches:
       - main
 permissions:
   contents: write
@@ -13,9 +13,7 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - run: pip install mkdocs
-      - run: pip install mkdocs-material 
-      - run: pip install mkdocs-glightbox
+      - run: pip install -r requirements.txt
       - run: sudo apt-get install imagemagick pngquant
       - run: find . -name '*.png' -execdir bash -c 'mogrify -resize 750x "$1"' - {} \;
       - run: find . -name '*.png' -execdir bash -c 'pngquant "$1" --ext .png --force' - {} \;
