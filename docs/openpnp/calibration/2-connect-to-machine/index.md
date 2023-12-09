@@ -164,10 +164,10 @@ Now we'll set up the cameras. The big red "X" in the camera views means that Ope
 1. Click the green power button in the Machine Controls section of the UI to connect to your machine.
   ![Connect to the LumenPnP](images/connect-to-machine-power-button.png)
 
-1. The power button will turn red when OpenPnP has connected to your machine. If this doesn't work, check your [port and baud rate](#serial-port-config).
+2. The power button will turn red when OpenPnP has connected to your machine. If this doesn't work, check your [port and baud rate](#serial-port-config).
   ![having successfully connected to the LumenPnP and cameras](images/connected-to-machine.png)
 
-1. Save your OpenPnP settings with `File > Save Configuration`.
+3. Save your OpenPnP settings with `File > Save Configuration`.
   ![saving the machine config](images/save-configuration.png)
 
 ## Next Steps
