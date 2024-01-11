@@ -136,16 +136,20 @@ nav:
         - Loading Tape: feeders/6-loading-tape/loading-tape.md
         - Setting Pick Position: feeders/7-setting-pick-position/setting-pick-position.md
         - Troubleshooting: feeders/8-troubleshooting/troubleshooting.md
-        
+  
+    - Guides: 
+        - Change Motor Current: guides/motor-current/index.md
+        - Change Machine Speed: guides/machine-speed/index.md
+        - Adjust Ring Light Brightness: guides/ring-light-settings/index.md
+        - Tune Sensorless Homing: guides/tuning-sensorless/index.md
+        - Set Motor Disable Timeout: guides/motor-disable-timeout/index.md
+    
+    - Maintenance and Upgrades: 
+        - REV03 Mobo Interposer Guide: maintenance-upgrades/rev3-vac-interposer/index.md
+        - Second Nozzle Upgrade Guide: maintenance-upgrades/second-tool/index.md
+        - Standalone Feeder Control: maintenance-upgrades/standalone-feeders/index.md
+
     - Misc:
-        - Troubleshooting: 
-              - Symptoms: misc/troubleshooting/symptoms/index.md
-              - Solutions: misc/troubleshooting/solutions/index.md
-              - Diagnostic Routines: misc/troubleshooting/diagnostic-routines/index.md
-        - Maintenance and Upgrades: 
-              - REV03 Mobo Interposer Guide: misc/maintenance-upgrades/rev3-vac-interposer/index.md
-              - Second Nozzle Upgrade Guide: misc/maintenance-upgrades/second-tool/index.md
-              - Standalone Feeder Control: misc/maintenance-upgrades/standalone-feeders/index.md
-        - Other Calibrations:
-              - Backlash Compensation: misc/cal/backlash-compensation/index.md
-              - Automatic Toolchanger: misc/cal/auto-toolchanger/index.md
+        - Backlash Compensation: misc/backlash-compensation/index.md
+        - Automatic Toolchanger: misc/auto-toolchanger/index.md
+
