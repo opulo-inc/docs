@@ -1,4 +1,4 @@
-# Adjust Ring Light Brightness
+# Change Ring Light Brightness
 
 For bottom vision operations, we recommend keeping your ring light at full brightness, and keeping your camera's exposure low. We've found this helps remove the likelihood that other light sources in the room will affect your vision pipeline. However, some users have mentioned that lowering the brightness of the ring light has helped them get more consistent vision operations.
 
