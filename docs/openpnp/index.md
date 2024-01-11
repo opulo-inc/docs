@@ -6,6 +6,10 @@ These guides were designed with OpenPnP version `2022-08-01_18-07-09.2a36a8d`, s
 
 ![OpenPnP Logo](openpnp-logo.png)
 
+## Recommended Hardware
+
+OpenPnP is designed to run on many different kinds of host computers. However, USB drivers and internal USB hub bandwith can vary between computers. We recommend using a Lenovo Thinkpad T470 running Ubuntu 20.04 LTS or Ubuntu 22.04 LTS for known good connectivity with your cameras, exposure control, and serial communication.
+
 ## What's on this site?
 
 * How to configure and calibrate your LumenPnP in OpenPnP
