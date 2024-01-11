@@ -1,4 +1,4 @@
-# Updating Motor Current
+# Change Motor Current
 
 The LumenPnP uses stepper motor drivers that allow software-defined current control. The default values work great for normal LumenPnP operation, but if you're troubleshooting an issue or want to experiment with settings, this guide will show you how to update your motor current.
 

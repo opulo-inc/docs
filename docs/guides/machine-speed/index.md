@@ -1,4 +1,4 @@
-# Updating Machine Speed
+# Change Machine Speed
 
 If you'd like to update the max speed that OpenPnP commands the LumenPnP to run at, this is a guide for how to adjust it properly.
 
