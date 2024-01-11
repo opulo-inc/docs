@@ -90,15 +90,20 @@ While the bottom camera can detect if a part was successfully picked with reason
 
 ### Enabling and Tuning
 
-1. With the actuator configured correctly, the next step is enabling part detection for nozzles tips. Select a nozzle tip that you'd like to enable part detection for, and click on the Part Detection tab. You should see a menu similar to the one below:
+1. With the actuator configured correctly, the next step is enabling part detection for nozzles tips. Select the N045 nozzle tip, make sure there's a N045 tip on one of your nozzles, and click on the Part Detection tab. You should see a menu similar to the one below:
   ![Enabling part detection](images/Screen Shot 2023-02-16 at 10.25.43 AM.png)
 
-2. You might need to tweak the values in the `Low Value` and `High Value` fields for both Part On sensing and Part Off sensing. The image shown above has default values for v3 part detection.
-
-3. Thresholds can be determined by opening the `H1:VAC1` or `H1:VAC2` actuator window. Click `On` to turn on your pump and valve, and then click `Read`. You should see a value appear in the `Read Value` text box.
-  ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.png)
-
-4. Cover the nozzle with your finger tip. Hit `Read` again. The detection threshold sits in between these two numbers.
+1. Under `Part On Vacuum Sensing`, make sure that:
+    1. Set `Measurement Method` to `Absolute`.
+    2. Check `Establish Level`.
+    3. Only check `After Pick` next to `Perform Checks?`.
+    4. Adjust values in the `Low Value` and `High Value` fields.
+        1. Open the `H1:VAC1` or `H1:VAC2` actuator window, depending on which nozzle your nozzle tip is on. Click `On` to turn on your pump and valve, and then click `Read`. You should see a value appear in the `Read Value` text box. Take note of this number.
+            ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.png)
+        1. Now, cover the nozzle with your finger tip. Hit `Read` again. Take note of the new number.
+        2. Split the difference between these numbers. For example, if your readings were `250` and `246`, choose `248`. This is the value you should enter into the `High Value` `Vacuum Range` field.
+        3. Leave the `Low Value` `Vacuum Range` field at 220.
+2. Set `Part Off Vacuum Sensing` to `None`.
 
 ## Next Steps
 
