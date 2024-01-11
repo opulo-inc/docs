@@ -41,6 +41,9 @@ You'll need to do these steps whenever you have brand new feeders.
 7. Once the search has completed, each physically inserted feeder will be listed. The name will be the feeder's unique ID number, followed by the slot it's in. In this example, there are two feeders inserted.
    ![auto populated feeders](img/identified-feeders.png)
 
+!!! danger "Before Saving"
+      Because of a [bug in OpenPnP](https://github.com/openpnp/openpnp/issues/1557), a part *must* be assigned to ever feeder before saving your machine configuration. If you want to save your config before finishing setup, we recommend assigning the `FIDUCIAL-HOME` part to any feeders that do not yet have a part assigned.
+
 ## Test Setup
 
 To finish setting up your new feeders, we need to mark where they're located on your LumenPnP. As mentioned above, the locations of each feeder slot will be saved and reused, so you shouldn't need to do this every time you remove and replace a feeder.
