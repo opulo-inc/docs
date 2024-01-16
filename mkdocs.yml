@@ -140,7 +140,7 @@ nav:
     - Guides: 
         - Change Motor Current: guides/motor-current/index.md
         - Change Machine Speed: guides/machine-speed/index.md
-        - Adjust Ring Light Brightness: guides/ring-light-settings/index.md
+        - Change Ring Light Brightness: guides/ring-light-settings/index.md
         - Tune Sensorless Homing: guides/tuning-sensorless/index.md
         - Set Motor Disable Timeout: guides/motor-disable-timeout/index.md
     
@@ -152,4 +152,6 @@ nav:
     - Misc:
         - Backlash Compensation: misc/backlash-compensation/index.md
         - Automatic Toolchanger: misc/auto-toolchanger/index.md
+
+    - Design for LumenPnP: design-for-lumenpnp/index.md
 
