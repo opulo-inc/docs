@@ -9,7 +9,7 @@ description: >
 
 To use OpenPnP with the LumenPnP, you will need to tell the software about your machine's capabilities, such as it's size, how many cameras it has, etc. We've done the basic work for you and put together a starting set of configuration files that will describe your Lumen. To use our defaults, follow the instructions below.
 
-**Please use the OpenPnP version we link to in the instructions below.** OpenPnP has many frequent updates, and some of them change or remove functionality. Keeping to our recommended version ensures that things work correctly and that this documentation is accurate for you.
+**Please use the OpenPnP version we link to in the instructions below.** OpenPnP has many frequent updates, and some of them change or remove functionality. Keeping to our recommended version ensures that things work correctly and that this documentation is accurate for you. Also, this version has support for the LumenPnP feeders.
 
 If you'd like to start from scratch with your setup, community member Qwertymodo has posted a [very helpful video](https://www.youtube.com/watch?v=vuFalyzcCZA) showing his process of doing calibration on his machine from scratch.
 
