@@ -45,7 +45,7 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 !!! danger "Linux Users"
     Linux requires two quick configuration steps to allow OpenPnP to run:
 
-    1. In order for OpenPnP to communicate to the machine, the user must be added to the `dialout` group. This can be done by entering `sudo adduser [USERNAME] dialout` (where `[USERNAME]` is the user you're logged in as) into terminal and restarting the computer.
+    1. In order for OpenPnP to communicate to the machine, the user must be added to the `dialout` group. This can be done by entering `sudo adduser [USERNAME] dialout` (where `[USERNAME]` is the user you're logged in as) into terminal and relogging or restarting the computer.
     2. OpenPnP requires that Java is installed. This can easily be done by entering `sudo apt-get install default-jdk` into terminal.
 
     Note that if Java is not installed, OpenPnP will fail silently when you attempt to start by clicking on the icon.
