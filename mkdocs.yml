@@ -105,10 +105,10 @@ nav:
                 - Actuator Check: byop/testing/actuator-check/index.md
                 - Feedback: byop/testing/feedback/index.md
     - OpenPnP:
-        - Introduction: openpnp/index.md
+        - Install: openpnp/install/index.md
+        - Import Configuration: openpnp/import-config/index.md
         - Calibration:
               - Getting Started: openpnp/calibration/index.md
-              - Importing Configuration: openpnp/calibration/1-import-config/index.md
               - Connecting to Your Machine: openpnp/calibration/2-connect-to-machine/index.md
               - Homing Fiducial: openpnp/calibration/4-homing-fiducial/index.md
               - MM/Pixel: openpnp/calibration/5-mm-per-pixel/index.md
