@@ -78,7 +78,7 @@ Before connecting to the LumenPnP, you need to set which USB port to use for com
         M906 X800 ; Set X motor current
         ```
 
-      3. To tell OpenPnP to take advantage of this speed increase, you can update the `Max Feed Rate` field in the `Driver Settings` tab. Enter `35000` into this field.
+      3. To tell OpenPnP to take advantage of this speed increase, you can update the `Max. Feed Rate [/min]` field in the `Driver Settings` tab. Enter `35000` into this field.
 
       4. If you need to tweak your sensorless homing settings, make sure to adjust the values in the line starting with `M914` under `HOME_COMMAND`, *not* under `CONNECT_COMMAND`.
 
