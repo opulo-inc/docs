@@ -11,6 +11,8 @@ We provide these docs, the walkthrough video, and default configuration files to
 !!! danger "Important"
     It is important that you complete these calibration steps **in order**. Each calibration step relies on the steps that come before, so it's imperative that you complete them in the order we have them listed.
 
+If you'd like to start from scratch with your setup, community member Qwertymodo has posted a [very helpful video](https://www.youtube.com/watch?v=vuFalyzcCZA) showing his process of doing calibration on his machine from scratch.
+
 ## **Walkthrough Video**
 
 This walkthrough video shows the entire calibration process starting from stock configuration. We highly recommend watching the video along with walking through the docs on this site when setting up your machine.
@@ -26,4 +28,4 @@ This walkthrough video shows the entire calibration process starting from stock 
 
 ## **Next Steps**
 
-First, we'll [import the configuration](1-import-config/index.md).
+First, we'll [connect to your machine](2-connect-to-machine/index.md).
