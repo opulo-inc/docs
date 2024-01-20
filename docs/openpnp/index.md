@@ -2,7 +2,7 @@
 
 OpenPnP is a piece of open source software designed to control pick and place machines. It supports a wide range of machines, with many features found in high-end commercial software. You can find out more about it [here](https://openpnp.org/).
 
-These guides were designed with OpenPnP version `2022-08-01_18-07-09.2a36a8d`, so the UI screenshots will match this version, but they should work for other versions as well (namely the [updated version of OpenPnP used for feeders](../feeders/3-software-update/software-update.md)).
+**Please use the OpenPnP version we link to in the following pages.** OpenPnP has many frequent updates, and some of them change or remove functionality. Keeping to our recommended version ensures that things work correctly and that this documentation is accurate for you. Also, our recommended version has support for the LumenPnP feeders.
 
 ![OpenPnP Logo](openpnp-logo.png)
 

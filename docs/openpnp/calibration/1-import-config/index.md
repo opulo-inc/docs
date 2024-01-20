@@ -9,7 +9,7 @@ description: >
 
 To use OpenPnP with the LumenPnP, you will need to tell the software about your machine's capabilities, such as it's size, how many cameras it has, etc. We've done the basic work for you and put together a starting set of configuration files that will describe your Lumen. To use our defaults, follow the instructions below.
 
-**Please use the OpenPnP version we link to in the instructions below.** OpenPnP has many frequent updates, and some of them change or remove functionality. Keeping to our recommended version ensures that things work correctly and that this documentation is accurate for you. Also, this version has support for the LumenPnP feeders.
+**Please use the OpenPnP version we link to in the instructions below.** OpenPnP has many frequent updates, and some of them change or remove functionality. Keeping to our recommended version (2023-04-05 release) ensures that things work correctly and that this documentation is accurate for you. Also, this version has support for the LumenPnP feeders.
 
 If you'd like to start from scratch with your setup, community member Qwertymodo has posted a [very helpful video](https://www.youtube.com/watch?v=vuFalyzcCZA) showing his process of doing calibration on his machine from scratch.
 
@@ -17,7 +17,7 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 
 ## Linux ([Ubuntu Install Guide](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview))
 
-1. Download and install OpenPnP for Linux. Use the version here to ensure OpenPnP works with the LumenPnP Feeders: ([.deb](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-linux-test.deb))
+1. Download and install OpenPnP for Linux. Use the version here to ensure OpenPnP works with the LumenPnP Feeders: ([Download .deb](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-linux-test.deb))([Download .tar.gz](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-unix-test.tar.gz))
 
 2. Go to the [LumenPnP Releases Page](https://github.com/opulo-inc/lumenpnp/releases).
 
@@ -52,7 +52,7 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 
 ## Windows
 
-1. Download and install OpenPnP for Windows. Use the version here to ensure OpenPnP works with the LumenPnP Feeders: ([32 Bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x32-test.exe)) ([64 Bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x64-test.exe))
+1. Download and install OpenPnP for Windows. Use the version here to ensure OpenPnP works with the LumenPnP Feeders: ([Download 32 Bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x32-test.exe)) ([Download 64 Bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x64-test.exe))
 
 2. Go to the [LumenPnP Releases Page](https://github.com/opulo-inc/lumenpnp/releases).
 
@@ -81,7 +81,7 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 
 ## MacOS
 
-1. Download and install OpenPnP for Mac. Use the version here to ensure OpenPnP works with the LumenPnP Feeders: ([.dmg](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-macos-test.dmg))
+1. Download and install OpenPnP for Mac. Use the version here to ensure OpenPnP works with the LumenPnP Feeders: ([Download .dmg](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-macos-test.dmg))
 
     !!! danger "Mac Users"
         Because of [a bug with how OpenPnP signs their releases](https://github.com/openpnp/openpnp/issues/1559), Mac users with ARM processors might experience a crash on boot. You can still run OpenPnP by navigating to `Applications -> OpenPnP` and right clicking on the OpenPnP app and selecting "Show Package Contents":
