@@ -97,7 +97,7 @@ Nicely done so far! You've got your homing fiducial all set up. This next step c
 14. A box with drag handles will appear in the camera viewfinder. Drag the bounding box around the nozzle tip so that it's perfectly tangent to the edges; they are exactly 4mm x 4mm.
   ![Drag the box to the edges of the nozzle.](images/measure-nozzle-mm-per-px.png)
 
-15. Once you have it perfectly outlined, click `Confirm`. New numbers should populate the Units per Pixel fields. They should be relatively close to the default values.
+15. Once you have it perfectly outlined, click `Confirm` (may still read `Measure` on some versions of OpenPnP). New numbers should populate the Units per Pixel fields. They should be relatively close to the default values.
   ![Confirm the test](images/confirm-pixel-per-mm-bottom.png)
 
 16. Then click `Apply` to save the changes.
