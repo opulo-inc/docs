@@ -58,4 +58,4 @@ Now that we've got all the THT components soldered in, it's time to mount the mo
 
 ## Next steps
 
-Make sure your motherboard is [running the latest firmware](../update-firmware/index.md).
+Continue to [wiring and pneumatics](../../wiring-and-pneumatics/wiring-y-motors/index.md).
