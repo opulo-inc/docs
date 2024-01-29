@@ -138,6 +138,7 @@ nav:
         - Troubleshooting: feeders/8-troubleshooting/troubleshooting.md
   
     - Guides: 
+        - Update LumenPnP Firmware: guides/update-firmware/index.md
         - Change Motor Current: guides/motor-current/index.md
         - Change Machine Speed: guides/machine-speed/index.md
         - Change Ring Light Brightness: guides/ring-light-settings/index.md
@@ -152,6 +153,7 @@ nav:
     - Misc:
         - Backlash Compensation: misc/backlash-compensation/index.md
         - Automatic Toolchanger: misc/auto-toolchanger/index.md
+        
 
     - Design for LumenPnP: design-for-lumenpnp/index.md
 

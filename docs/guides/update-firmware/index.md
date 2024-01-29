@@ -1,19 +1,20 @@
 <!-- markdownlint-disable-file MD046 -->
-# Update the Firmware
+# Update LumenPnP Firmware
 
-All motherboards come pre-flashed with firmware from Opulo and should work out of the box without these steps. If you're setting up a LumenPnP with feeders for the first time, you may need to update your LumenPnP's firmware.
-
-!!! danger "Important"
-    It is important that you pick the correct firmware file for your machine.
-
-        - If you have a v2, choose `v2-lumenpnp-firmware-feeder-support.bin`.
-        - If you have a v3, choose `v3-lumenpnp-firmware-feeder-support.bin`.
+All motherboards come pre-flashed with firmware from Opulo and should work out of the box without these steps. If you need to update your LumenPnP's firmware, this guide will help you do so.
 
 ## Option 1: Prebuilt Firmware and STMProgrammer (RECOMMENDED)
 
 The easiest way to update your LumenPnP's motherboard is to use a precompiled binary of the firmware, and the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) software by ST.
 
 1. Download the latest [precompiled firmware](https://github.com/opulo-inc/lumenpnp/releases) `.bin` file for your motherboard version.
+
+    !!! danger "Important"
+        It is important that you pick the correct firmware file for your machine.
+
+        - If you have a v2, choose `v2-lumenpnp-firmware-feeder-support.bin`.
+        - If you have a v3, choose `v3-lumenpnp-firmware-feeder-support.bin`.
+  
 2. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html).
 3. Open STM32CubeProgrammer.
 4. Select `USB` from the connection type dropdown on the right.
@@ -32,33 +33,33 @@ The easiest way to update your LumenPnP's motherboard is to use a precompiled bi
 
     !!! info "NOTE"
         If you have a hard time getting your board to enter DFU mode, instead try powering off the machine entirely, holding the 'BOOT' button, plugging in power, waiting 10 seconds, then release the `BOOT` button.
-8. Click the refresh button in the `Port` line to detect the motherboard's port.
+1. Click the refresh button in the `Port` line to detect the motherboard's port.
     ![Refresh button](images/refresh-button.png)
 
-9. Select the newly discovered USB port from the `Port` dropdown menu.
+2. Select the newly discovered USB port from the `Port` dropdown menu.
     ![Select USB Port](images/select-port.png)
 
-10. Double-check the other fields on the right match the image above:
+3.  Double-check the other fields on the right match the image above:
     1. `PID: 0xdf11`
     2. `VID: 0x0483`
     3. `Read Unprotect (MCU): Unchecked`
     4. `TZEN Regression (MCU): Unchecked`
 
-11. Click the green `Connect` button to connect to the motherboard.
+4.  Click the green `Connect` button to connect to the motherboard.
     ![Connect to Motherboard button](images/connect-to-motherboard.png)
 
-12. Click the `Browse` button to browse for the binary you downloaded earlier.
+5.  Click the `Browse` button to browse for the binary you downloaded earlier.
     ![Click the browse button](images/browse-for-binary.png)
 
-13. Click the `Start Programming` button to upload the firmware to the motherboard.
+6.  Click the `Start Programming` button to upload the firmware to the motherboard.
     ![Start Programming the motherboard](images/start-programming.png)
 
-14. Let the upload finish.
+7.  Let the upload finish.
     ![Upload finished](images/upload-done.png)
 
-15. Press the `reset` button on the motherboard to reboot it.
+8.  Press the `reset` button on the motherboard to reboot it.
 
-16. The machine should show up as a COM/Serial Port on your PC now, and you should be able to access it via OpenPNP. If it doesn't, press the Reset button on the board again, or power-cycle the machine *after the flashing is completed*.
+9.  The machine should show up as a COM/Serial Port on your PC now, and you should be able to access it via OpenPNP. If it doesn't, press the Reset button on the board again, or power-cycle the machine *after the flashing is completed*.
 
 This is how you can check whether your machine is connected properly:
 
@@ -67,10 +68,10 @@ This is how you can check whether your machine is connected properly:
 
 ## Option 2: Auto Build Marlin and `dfu-util`
 
-!!! info "Marlin"
-    Building an older version of Marlin with the recommended config files won't work. If you are unsure whether a previously-downloaded local version of Marlin is the newest one, re-downloading it is the safest choice.
+!!! info "Marlin Version"
+    LumenPnP feeders require some custom Marlin features that we have not yet merged into mainline. Before this happens, be sure you're pulling from our fork with these features.
 
-1. Download the [latest Marlin firmware][marlin] and unzip it.
+1. Download the [latest Marlin firmware with feeder support][marlin] and unzip it.
 2. Install [VSCode][vscode] and its [PlatformIO extension][pIO].
 3. Open Marlin firmware's folder in VSCode.
 4. Download the Marlin configuration files [here][marlin-config] and
@@ -80,7 +81,7 @@ This is how you can check whether your machine is connected properly:
 8. Try to build Marlin using the build button with the hammer icon as shown below. See [Troubleshooting](#troubleshooting-building-with-auto-build-marlin) for more help
     ![Marlin Auto Build screenshot](images/marlin-auto-build-ui.png)
 
-9. Attach the LumenPnP Motherboard to your computer with the included USB cable (USB C to A for Motherboard 3.0, or USB B to A for Motherboard 4.0).
+9.  Attach the LumenPnP Motherboard to your computer with the included USB cable (USB C to A for Motherboard 3.0, or USB B to A for Motherboard 4.0).
 
 10. Boot your motherboard into DFU Mode
     1. Press and hold the `BOOT` button
@@ -92,7 +93,7 @@ This is how you can check whether your machine is connected properly:
     !!! info "NOTE"
         If you have a hard time getting your board to enter DFU mode, instead try powering off the machine entirely, holding the 'BOOT' button, plugging in power, waiting 10 seconds, then release the `BOOT` button.
 
-11. In the integrated terminal in the root of the repository, flash the Motherboard using `dfu-util` by running the command:
+1.  In the integrated terminal in the root of the repository, flash the Motherboard using `dfu-util` by running the command:
 
     ```shell
     dfu-util -d 0x0483:0xdf11 -s 0x08000000:leave -a 0 -D ./.pio/build/Opulo_Lumen_REV3/firmware.bin
@@ -107,9 +108,9 @@ This is how you can check whether your machine is connected properly:
         * `-a 0` makes the tool use the alt setting required for flashing the ESP32.
         * `-D ./.pio/build/Opulo_Lumen_REV3/firmware.bin` is the path to the to-be-flashed firmware. If you want to flash another file, change this.
 
-12. Wait for the process to finish.
+2.  Wait for the process to finish.
 
-13. The machine should show up as a COM/Serial Port on your PC now, and you should be able to access it via OpenPNP. If it doesn't, press the Reset button on the board, or power-cycle the machine *after the flashing is completed*.
+3.  The machine should show up as a COM/Serial Port on your PC now, and you should be able to access it via OpenPNP. If it doesn't, press the Reset button on the board, or power-cycle the machine *after the flashing is completed*.
 
  This is how you can check whether your machine is connected properly:
 
@@ -120,7 +121,7 @@ This is how you can check whether your machine is connected properly:
 
 Note that flashing the firmware using the Auto Build Marlin Plugin might work, but seems error-prone for most people. We recommend using `dfu-util` as described above. Here are the steps to use Auto Build Marlin if you'd like to try it.
 
-1. Download the [latest Marlin firmware][marlin] and unzip it.
+1. Download the [latest Marlin firmware with feeder support][marlin] and unzip it.
 2. Install [VSCode][vscode] and its [PlatformIO extension][pIO].
 3. Open Marlin firmware's folder in VSCode.
 4. Download the Marlin configuration files [here][marlin-config].
@@ -183,13 +184,13 @@ This is how you can check whether your machine is connected properly:
 
 ## Flashing Factory Firmware
 
-If you've put new firmware on your motherboard, but just want to get back to the firmware that your machine was flashed with, check the release for your build number and download the .bin firmware file attached to it. Put your board into DFU mode as described above, connect to your computer, and flash the binary to the board using the following command:
+If you've put new firmware on your motherboard, but want to reinstall the firmware that your machine was flashed with, check the release for your build number and download the .bin firmware file attached to it. Put your board into DFU mode as described above, connect to your LumenPnP over USB, and flash the binary to the board using the STMProgrammer tool, or the following command (for Mac and Linux):
 
 ```shell
-`dfu-util -d 0x0483:0xdf11 -s 0x08000000:leave -a 0 -D ~/path/to/firmware.bin`
+dfu-util -d 0x0483:0xdf11 -s 0x08000000:leave -a 0 -D ~/path/to/firmware.bin
 ```
 
-Once flashing is completed, the machine should automatically exit DFU mode, and be accessible to OpenPNP again.
+Once flashing is completed, press the reset button on the motherboard boot into the new firmware.
 
 ## Troubleshooting
 
@@ -210,13 +211,11 @@ If you aren't able to upload, you can check to see if your motherboard is bootin
 
 Also, reference [the Marlin instructions for uploading](https://marlinfw.org/docs/basics/install_platformio.html).
 
-## Next steps
 
-Continue to [wiring and pneumatics](../../wiring-and-pneumatics/wiring-y-motors/index.md).
 
 [abmvs]: https://marketplace.visualstudio.com/items?itemName=MarlinFirmware.auto-build
 [marlin-docs]: https://marlinfw.org/docs/basics/auto_build_marlin.html
 [marlin-config]: https://github.com/MarlinFirmware/Configurations/tree/import-2.1.x/config/examples/Opulo/Lumen_REV4
-[marlin]: https://github.com/MarlinFirmware/Marlin/
+[marlin]: https://github.com/sphawes/Marlin/tree/feeder-safety
 [vscode]: https://code.visualstudio.com/
 [pIO]: https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide
