@@ -8,7 +8,7 @@ Awesome! Now we've got OpenPnP installed on your computer, and we've got the def
   ![OpenPnP's basic UI](images/openpnp-ui.png)
 
 !!! Note "Linux"
-    On Linux you'll need to join the `dialout` and `video` groups, or provide `udev` rules for the LumenPnP's usb devices.
+    On Linux you'll need to join the `dialout` and `video` groups, or provide `udev` rules for the LumenPnP's usb devices. Restart afterwards to make sure the new rules take effect.
 
 ## Serial Port Config
 
