@@ -144,15 +144,14 @@ nav:
         - Change Ring Light Brightness: guides/ring-light-settings/index.md
         - Tune Sensorless Homing: guides/tuning-sensorless/index.md
         - Set Motor Disable Timeout: guides/motor-disable-timeout/index.md
+        - Second Nozzle Upgrade Guide: guides/second-tool/index.md
+        - REV03 Mobo Interposer Guide: guides/rev3-vac-interposer/index.md
     
-    - Maintenance and Upgrades: 
-        - REV03 Mobo Interposer Guide: maintenance-upgrades/rev3-vac-interposer/index.md
-        - Second Nozzle Upgrade Guide: maintenance-upgrades/second-tool/index.md
-        - Standalone Feeder Control: maintenance-upgrades/standalone-feeders/index.md
 
     - Misc:
         - Backlash Compensation: misc/backlash-compensation/index.md
         - Automatic Toolchanger: misc/auto-toolchanger/index.md
+        - Standalone Feeder Control: misc/standalone-feeders/index.md
         
 
     - Design for LumenPnP: design-for-lumenpnp/index.md
