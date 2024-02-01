@@ -56,7 +56,7 @@ If you'd like to add a third staging plate, you can fit 25x 8mm or 12mm Feeders 
 
 ## Help
 
-If you get stuck, please don't hesitate to send us an email at support@opulo.io, or use our [support form](https://opulo.io/pages/contact-support).
+If you get stuck, please don't hesitate to use our [support form](https://opulo.io/pages/contact-support).
 
 If you find that there's something unclear in this documentation, please [submit a ticket on Github](https://github.com/opulo-inc/docs) about it! You can also file an issue using the link in the upper right of any page on this site. We're trying to make this as clear and understandable as possible, so every issue you tag helps us make it better for everyone else. You can also check out the [Discord server](https://discordapp.com/invite/TCwy6De) and ask questions to the community.
 
