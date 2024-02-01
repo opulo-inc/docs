@@ -35,6 +35,8 @@ See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECM
 
 1. Repeat this section but instead using N2 and the N24 nozzle tip. If you need to change the exposure during this, be sure to test the N045 calibration again to make sure it works with the new exposure setting.
 
+1. As a final check, home your LumenPnP again to ensure that homing fiducial detection and nozzle tip calibration finish successfully without errors.
+
 1. After you've settled on an exposure setting, record the final exposure value for inputting when restarting OpenPnP as you did for the top camera.
 
 Next is configuring the [vacuum sensor](../10-vacuum-sensor/index.md).

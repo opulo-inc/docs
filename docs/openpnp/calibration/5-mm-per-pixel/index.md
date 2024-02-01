@@ -12,7 +12,7 @@ This next step calibrates the relationship between pixels and millimeters to mak
 ## Mounting Nozzle Tips
 
 1. Lubricate both of your brass nozzles using the included packet of SuperLube. We do this before shipping, but adding a bit extra ensures that mounting nozzle tips doesn't damage the rubber O-rings around the holder.
-  ![Apply Lubricant to holder](images/apply-super-lube.png)
+  ![Apply Lubricant to holder](images/apply-super-lube.jpg)
 
 1. Identify your machine's nozzle tips. They're mounted in the rack on your staging plate.
    ![](/semi-assembly-3-1/mounting-staging-plates-3-1/images/nozzle-tip-location.JPG)
@@ -60,7 +60,7 @@ This next step calibrates the relationship between pixels and millimeters to mak
 1.  Then click the `Measure` button.
   ![Click the measure button](images/click-measure-button.png)
 
-1.  A box with drag handles will appear in the camera view. Drag the box so that it lines up with the lines on the datum board; they are exactly 5mm x 5mm. Make sure that you are aligning the bounding box with the **center** of the lines as shown in the image below.
+1.  Click and drag in the camera view to create a box. Drag the box so that it lines up with the lines on the datum board; they are exactly 5mm x 5mm. Make sure that you are aligning the bounding box with the **center** of the lines as shown in the image below.
   ![Drag the box to the center of the outline square on the datum board.](images/Screen Shot 2022-05-19 at 12.30.48 PM.png)
 
     !!! Note "Squareness"
