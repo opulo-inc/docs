@@ -1,63 +1,34 @@
 
 # Vacuum Part Detection
 
-While the bottom camera can detect if a part was successfully picked with reasonable accuracy, you can also use the LumenPnP's vacuum sensors to double check a successful pick. When a part is successfully picked it creates a seal at the end of the nozzle. This seal increases the vacuum pressure in the pneumatic line which is picked up by the vacuum sensors. OpenPnP can use this increase in pressure to detect if a part was successfully picked.
-
-## Actuator Setup
+While the bottom camera can detect if a part was successfully picked, you can use the LumenPnP's vacuum sensors to check for a successful pick a bit quicker. When a part is successfully picked it creates a seal at the end of the nozzle. This seal increases the vacuum pressure in the pneumatic line which is measured by the vacuum sensors. OpenPnP can use this increase in pressure to detect if a part was successfully picked.
 
 !!! NOTE
     The LumenPnP v2 kit machine has different vacuum sensors than the v3 semi-assembled machine. Make sure to follow the steps for your machine version below.
 
-### LumenPnP v3
+## LumenPnP v3
 
-1. To enable vacuum part detection for v3 machines, we first need to configure the GCode in OpenPnP. This GCode should already be configured correctly in OpenPnP if you're using the default configuration files.
+1. Ensure there's still an N045 nozzle tip on the N1 nozzle.
+2. Navigate to `Machine Setup > Nozzle Tips > ReferenceNozzleTip N045 > Part Detection`.
+  ![Enabling part detection](images/Screen Shot 2023-02-16 at 10.25.43 AM.png)
 
-    !!! info "How It Works"
-        The v3 vacuum sensors communicate over I2C. Because they have the same address, we talk to them through an I2C multiplexer. The Gcode commands used to talk to them first tell the multiplexer which device we want to talk to, then we capture a sample of data, then return it back to OpenPnP. The vacuum sensor has three registers holding the sample data, but because OpenPnP only supports raw Gcode commands in these fields, we can only use one byte of data. We capture the most significant bits of the sample as they give us the resolution needed to detect a successful pick. If you'd like to sample the CSB or the LSB byte of data instead, change the second to last command in the commands below to `M260 A109 B7 S1` or `M260 A109 B8 S1` respectively. Read the [datasheet](https://cfsensor.com/wp-content/uploads/2022/11/XGZP6857D-Pressure-Sensor-V2.5.pdf) for more information.
+1. Open the `H1:VAC1` actuator window. Click `On` to turn on your pump and valve, and then click `Read`. You should see a value appear in the `Read Value` text box. Take note of this number.
+   ![vac1 actuator](images/vac1-actuator.png)
+   ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.png)
 
-2. In the Machine Setup tab, go to `Drivers > GcodeDriver GcodeDriver`, then under the Gcode tab, select the `H1 VAC1` actuator, and select the `ACTUATOR_READ_COMMAND` setting.
-   ![Part Detection Gcode](images/Screen Shot 2023-02-16 at 10.04.32 AM.png)
+2. Now, cover the nozzle with your finger tip. Hit `Read` again. Take note of the new number.
 
-3. Make sure the following Gcode is present in the field:
-  
-    ```gcode
-    M260 A112 B1 S1
-    M260 A109
-    M260 B48
-    M260 B10
-    M260 S1
-    M260 A109 B6 S1
-    M261 A109 B1 S2
-    ```
+3. Split the difference between these numbers. For example, if your readings were `250` and `246`, choose `248`.
 
-4. With the same `H1 VAC1` actuator selected, now choose the `ACTUATOR_READ_REGEX` setting, and make sure the following is present in the field below:
+4. Enter this value into the `High Value` field in the `Vacuum Range` setting.
+   ![entering vac threshold value for n045](images/entering-vac-cal.png)
 
-    ```regex
-    ^.*data:(?<Value>.*)
-    ```
+5. Perform this step again, but using N2 and the N24 nozzle tip.
 
-5. Now select the `H1 VAC2` actuator, and select the `ACTUATOR_READ_COMMAND` setting. Make sure the following Gcode is present in the field below:
-  
-    ```gcode
-    M260 A112 B2 S1
-    M260 A109
-    M260 B48
-    M260 B10
-    M260 S1
-    M260 A109 B6 S1
-    M261 A109 B1 S2
-    ```
-
-6. With the same `H1 VAC2` actuator selected, now choose the `ACTUATOR_READ_REGEX` setting, and make sure the following is present in the field below:
-
-    ```regex
-    ^.*data:(?<Value>.*)
-    ```
-
-### LumenPnP v2
+## LumenPnP v2
 
 !!! note "v2 Interposers"
-    If you have a v2 machine, please [check if you have interposer boards installed](../../../misc/maintenance-upgrades/rev3-vac-interposer/index.md).
+    If you have a v2 machine, please [check if you have interposer boards installed](/guides/rev3-vac-interposer).
 
 1. Select your GcodeDriver, then under the Gcode tab, select the `H1 VAC1` actuator, and select the `ACTUATOR_READ_COMMAND` setting.
 
@@ -87,23 +58,6 @@ While the bottom camera can detect if a part was successfully picked with reason
     ```regex
     ^.*V:(?<Value>\d+).*
     ```
-
-### Enabling and Tuning
-
-1. With the actuator configured correctly, the next step is enabling part detection for nozzles tips. Select the N045 nozzle tip, make sure there's a N045 tip on one of your nozzles, and click on the Part Detection tab. You should see a menu similar to the one below:
-  ![Enabling part detection](images/Screen Shot 2023-02-16 at 10.25.43 AM.png)
-
-1. Under `Part On Vacuum Sensing`, make sure that:
-    1. Set `Measurement Method` to `Absolute`.
-    2. Check `Establish Level`.
-    3. Only check `After Pick` next to `Perform Checks?`.
-    4. Adjust values in the `Low Value` and `High Value` fields.
-        1. Open the `H1:VAC1` or `H1:VAC2` actuator window, depending on which nozzle your nozzle tip is on. Click `On` to turn on your pump and valve, and then click `Read`. You should see a value appear in the `Read Value` text box. Take note of this number.
-            ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.png)
-        1. Now, cover the nozzle with your finger tip. Hit `Read` again. Take note of the new number.
-        2. Split the difference between these numbers. For example, if your readings were `250` and `246`, choose `248`. This is the value you should enter into the `High Value` `Vacuum Range` field.
-        3. Leave the `Low Value` `Vacuum Range` field at 220.
-2. Set `Part Off Vacuum Sensing` to `None`.
 
 ## Next Steps
 

@@ -78,5 +78,5 @@ If you receive the error message `FIDUCIAL-HOME no matches found` when homing yo
 3. Try homing the machine to see if it can identify the homing fiducial.
   ![Home the machine](images/home-machine-from-vision.png)
 
-4. If you receive the same `FIDUCIAL-HOME no matches found` error, you'll need to keep tuning your pipeline. Go back to [Check  the debug results](#check-the-debug-results)
+4. If you receive the same `FIDUCIAL-HOME no matches found` error, you'll need to keep tuning your pipeline. Go back to [checking the debug results](#check-the-debug-results).
   ![Cant't find homing fiducial](images/Cant-find-homing-fiducial.png)
