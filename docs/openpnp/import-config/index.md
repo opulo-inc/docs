@@ -22,7 +22,7 @@ To use OpenPnP with the LumenPnP, you will need to tell the software about your 
     !!! info "Older Releases"
         Older releases have the OpenPnP configuration files in the source. If you can't find the OpenPnP config zip in the release, download the `Source Code` from the release, unzip, and open the `openpnp` folder.
 
-4. Inside you'll find the four configuration files you need: `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`.
+4. Inside you'll find the two configuration files you need: `machine.xml` and `vision-settings.xml`.
 
 5. To install these files in OpenPnP, you'll need to find its configuration folder. In the Ubuntu file manager (Nautilus), press `CTRL` + `H` to show hidden files, or go to the `View` menu and check `Show Hidden Files`.
 
@@ -47,7 +47,7 @@ To use OpenPnP with the LumenPnP, you will need to tell the software about your 
     !!! info "Older Releases"
         Older releases have the OpenPnP configuration files in the source. If you can't find the OpenPnP config zip in the release, download the `Source Code` from the release, unzip, and open the `openpnp` folder. If you have a v2 LumenPnP kit, you can get your `vision-settings.xml` from the [`3.0.0`](https://github.com/opulo-inc/lumenpnp/releases/tag/v3.0.0) release or later, as it wasn't a part of earlier configuration packages.
 
-4. Inside you'll find the four configuration files you need: `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`.
+4. Inside you'll find the two configuration files you need: `machine.xml` and `vision-settings.xml`.
 
 5. To install these files in OpenPnP, you'll need to find its configuration folder. First, follow [these instructions](https://support.microsoft.com/en-us/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2) to show hidden folders in Windows Explorer.
 
@@ -74,7 +74,7 @@ To use OpenPnP with the LumenPnP, you will need to tell the software about your 
     !!! info "Older Releases"
         Older releases have the OpenPnP configuration files in the source. If you can't find the OpenPnP config zip in the release, download the `Source Code` from the release, unzip, and open the `openpnp` folder.
 
-4. Inside you'll find the four configuration files you need: `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`.
+4. Inside you'll find the two configuration files you need: `machine.xml` and `vision-settings.xml`.
 
 5. To install these files in OpenPnP, you'll need to find its configuration folder. First, follow [these instructions](https://www.macworld.com/article/671158/how-to-show-hidden-files-on-a-mac.html) to show hidden folders in Finder.
 
