@@ -159,6 +159,11 @@ Now we'll attach the `Valve Mount` to the staging plate.
   ![](images/PXL_20220206_182121691.MP.jpg)
   ![](images/PXL_20220206_182234874.MP.jpg)
 
+## Datum Board
+
+Use four M3x16mm screws and four M3 nuts to secure the datum board and datum board mount to the staging plate on the rear of the bottom camera, through holes: B18, A19, A21, B22. The the fisheye calibration pattern should be facing down, and the gold grid lines and fiducial in the center of the Opulo logo facing upwards. Tighten this down securely.
+![the mounting location for the datum board and holder](images/Screen Shot 2022-01-11 at 12.51.47 PM.png)
+
 ## Next steps
 
 Continue to [installing the motherboard](../../motherboard/installing-tht/index.md).

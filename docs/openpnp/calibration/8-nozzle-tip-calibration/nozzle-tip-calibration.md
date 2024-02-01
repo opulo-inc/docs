@@ -1,35 +1,40 @@
 # Nozzle Tip Calibration
 
-Whenever you home your LumenPnP, OpenPnP will double-check the homing fiducial's location, and then it will identify the nozzle tips on each of your nozzles. Up until now you've probably been getting the error message: `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` because OpenPnP can't identify the tips of your nozzles.
-![Nozzle Calibration Error](images/too-many-vision-redirects.png)
-
-Nozzle Tip Calibration needs to be successful for both toolheads, and for any nozzle tip that you're going to use in your jobs. We recommend starting with the N045 and N14, since they're the most versatile.
+Nozzle Tip Calibration lets OpenPnP profile exactly how your nozzles rotate by looking at them with the bottom camera. This calibrates out any runout or misalignment.
 
 See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=1875).
 
-1. Install an N045 nozzle on the left toolhead. (Or whichever nozzle tip you're going to calibrate, on the correct toolhead)
-  ![Install the N045 nozzle](images/N045-nozzle-installed.png)
+1. Select `Nozzle: N1` from the dropdown under `Machine Controls`.
+   ![](../7-bottom-camera-position/images/select-n1-machine-control-bottom.png)
 
-2. Click on the `Machine Setup` tab in the top right pane.
-  ![Machine Setup Tab](images/Machine-Setup-Tab-3.png)
-
-3. Click on the "Expand" checkbox to open all of the features about your machine.
-  ![Expanding the Machine Config options](images/Expand-Checkbox-3.png)
-
-4. Click on `Cameras > OpenPnPCaptureCamera Bottom`.
+1. Navigate to `Machine Setup > Cameras > OpenPnPCaptureCamera Bottom`.
   ![Switching to the camera device settings](images/Bottom-camera-device-settings.png)
 
-5. In the lower detail pane, switch to the `Device Settings` tab.
+1. Go to the position tab and click the "Move Nozzle to Position" button.
+
+1. Switch to the `Device Settings` tab. Check, then uncheck the Exposure "Auto" checkbox to set the camera to manual exposure mode.
   ![Switching to the camera device settings](images/Bottom-camera-device-settings.png)
 
-6. Do the same [exposure fine-tuning](../4-homing-fiducial/index.md#fine-tune-camera-exposure) as we did for the top camera.
-  ![a good histogram](images/good-histogram.png)
+1. Now, we'll set the exposure for the bottom camera, but we'll set it quite a bit less than what we did for the top camera. The bottom camera needs to be able to find the dark hole in the nozzle tip for calibration, but it can't be so bright that we have trouble differentiating between the tip and a part. Use the images below as reference.
+  ![exposure too high](images/bottom-exp-high.png)
+  ![exposure too low](images/bottom-exp-low.png)
+  ![exposure correct](images/bottom-exp-good.png)
 
-7. Click on the "Home" button in the `Machine Controls Pane > Jog Tab`. You should see OpenPnP identify the inner hole of the nozzle tip in several different nozzle rotations.
-  ![Home the machine](images/Connect-and-home.png)
-  ![Calibration centered on nozzle hole](images/calibration-centered-on-nozzle-hole.png)
+    !!! warning "Other Camera Settings"
+        There are quite a bit of other settings available to adjust for your camera. In general, we recommend only adjusting the exposure. If you choose to experiment with other sliders, we recommend recording your original values so you can easily get back to a good configuration.
 
-8. If you receive the error message `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` when homing your LumenPnP, you need to [adjust your nozzle tip calibration pipeline](../../vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md).
+1. Navigate to `Machine Setup > Nozzle Tips > N045 > Calibration`, and click the `Calibrate` button.
+  ![click the calibrate button for n045](images/n045-calibrate-button.png)
+
+1. If calibration fails, click the Pipeline `Edit` button to [adjust the nozzle tip vision pipeline](../../vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md), then retest.
 ![Cant't find nozzle tip](images/too-many-vision-redirects.png)
+![click pipeline edit button](images/n045-edit-pipeline.png)
+
+1. Once you've calibrated successfully, set `Auto Recalibration` from `Manual` to `NozzleTipChange`. This will cause OpenPnP to calibrate any loaded N045 nozzle tips after homing, or after swapping tips. Hit `Apply` to save your changes.
+![setting nozzle tip recal from manual to nozzletipchange](images/n045-change-recal.png)
+
+1. Repeat this section but instead using N2 and the N24 nozzle tip. If you need to change the exposure during this, be sure to test the N045 calibration again to make sure it works with the new exposure setting.
+
+1. After you've settled on an exposure setting, record the final exposure value for inputting when restarting OpenPnP as you did for the top camera.
 
 Next is configuring the [vacuum sensor](../10-vacuum-sensor/index.md).

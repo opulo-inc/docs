@@ -20,3 +20,6 @@ If your machine is homing the X or Y axis too early, or not registering that it'
     2. In the Console, send `M914 <AXIS><NEW_VALUE>` where `<AXIS>` is either `X` or `Y`, and `<NEW_VALUE>` is slightly more than the starting point number you found in your `CONNECT_COMMAND`. For example, `M914 X45`.
     3. Try homing the axis again.
     4. If it still doesn't home correctly, repeat setting the value higher and rehoming until it homes correctly.
+8. After you've found good values, add the new values to your `CONNECT_COMMAND` in the format `M914 X<NEW_VALUE> Y<NEW_VALUE>`. If there's **already** a line with `M914` in your `CONNECT_COMMAND`, edit that one instead.
+   ![adding sensorless value](img/adding-sensorless-tweak.png)
+9. Hit "Apply" to save your changes. The new sensorless values will be applied the next time you connect to your machine from OpenPnP.

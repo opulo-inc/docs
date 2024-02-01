@@ -14,7 +14,7 @@ See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECM
 !!! info "Tip"
     OpenPnP has some new methods of calibration using a secondary fiducial at a different Z height, and a small piece of paper. If you'd like to explore this method of calibration, you can find the OpenPnP docs about this process [here](https://github.com/openpnp/openpnp/wiki/Calibration-Solutions#calibrating-precision-camera-to-nozzle-offsets). This process requires [making and installing a calibration rig](https://github.com/openpnp/openpnp/wiki/Vision-Solutions#calibration-rig), [3D Units per Pixel calibration](https://github.com/openpnp/openpnp/wiki/3D-Units-per-Pixel), and [Advanced Camera Calibration](https://github.com/openpnp/openpnp/wiki/Advanced-Camera-Calibration).
 
-1. Install an N045 nozzle on the left toolhead.
+1. Ensure you still have an N045 nozzle on the left toolhead.
   ![Install the N045 nozzle](images/N045-nozzle-installed.png)
 
 2. Click on the `Machine Setup` tab in the top right pane.
@@ -32,32 +32,32 @@ See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECM
 6. Confirm that the `Include Z?` checkbox is unchecked.
   ![do not use the include z checkbox](images/include-z-unchecked-n1.png)
 
-7. Read the instructions that OpenPnP provides in this window. This guide will use the homing fiducial as the starting point, instead of using putty or flour. But those are valid strategies as well if you'd prefer them.
+7. Read the instructions that OpenPnP provides in this window. This guide will use the homing fiducial as the starting point, instead of using putty or flour. Those are valid strategies as well if you'd prefer them.
 
-8. Select the `Nozzle: N1 (Head:H1)` from the machine controls dropdown. (It may also include the nozzle tip size if you've already specified that.)
+8. Select the `Nozzle: N1` from the machine controls dropdown.
   ![Select nozzle from machine control dropdown](images/select-n1-machine-control.png)
 
-9. Jog the nozzle so that it is just barely touching the datum board, and perfectly centered over the homing fiducial. We recommend looking for the shiny edge of the gold fiducial poking out from under the nozzle tip to determine if you've centered it correctly.
+1. Jog the nozzle so that it is just barely touching the datum board, and perfectly centered over the homing fiducial. We recommend looking for the shiny edge of the gold fiducial poking out from under the nozzle tip to determine if you've centered it correctly.
   ![Jog controls](images/jog-controls-nozzle-offset.png)
   ![Nozzle almost touching homing fiducial](images/PXL_20220519_181926227.jpg)
   ![Nozzle touching the homing fiducial](images/PXL_20220519_181952658.jpg)
 
-10. Click `Store nozzle mark position`. Do not navigate away from the `Heads > ReferenceHead H1 (or 2) > Nozzles > ReferenceNozzle N1 (or 2)` tab while running the wizard.
+1.  Click `Store nozzle mark position`. Do not navigate away from this configuration page while running the wizard.
   ![Store the nozzle's position](images/store-nozzle-position.png)
 
-11. Raise the nozzle off the datum board.
+1.  Raise the nozzle off the datum board.
   ![raise the z-axis](images/z-axis-jog.png)
 
-12. Jog the X and Y axes to bring the top camera directly centered over the homing fiducial. Again, do not switch away from the Offset Wizard tab.
+1.  Jog the X and Y axes to bring the top camera directly centered over the homing fiducial. Again, do not switch away from the Offset Wizard tab, as OpenPnP will not save your nozzle mark position.
   ![bring the top camera over the homing fiducial](images/jog-xy-nozzle-offset.png)
 
-13. After centering the homing fiducial in the top camera view, click `Calculate nozzle offset`.
+1.  After centering the homing fiducial in the top camera view, click `Calculate nozzle offset`.
   ![calculate the nozzle offset](images/calculate-nozzle-offset.png)
 
-14. Click `Apply` to save the nozzle offset change.
+1.  Click `Apply` to save the nozzle offset change.
   ![click the apply button](images/apply-nozzle-offset.png)
 
-15. If you have a v3 semi-assembled LumenPnP machine, start again from step 1 to calibrate your right nozzle. Place the nozzle on your right toolhead, and use `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N2` section.
+1.  If you have a v3 semi-assembled LumenPnP machine, start again from step 1 to calibrate your right nozzle. Place the nozzle on your right toolhead, and use `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N2` section.
 
 !!! info "Further Adjustment"
     If you find that your placement accuracy is slightly incorrect after performing this calibration, you can fine-tune your part placement by adjusting the X and Y offsets in the relevant nozzle settings, as shown below.
