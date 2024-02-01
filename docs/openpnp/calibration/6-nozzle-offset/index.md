@@ -57,7 +57,7 @@ See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECM
 1.  Click `Apply` to save the nozzle offset change.
   ![click the apply button](images/apply-nozzle-offset.png)
 
-1.  If you have a v3 semi-assembled LumenPnP machine, start again from step 1 to calibrate your right nozzle. Place the nozzle on your right toolhead, and use `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N2` section.
+1.  Start again from step 1 to calibrate your right nozzle. Use the `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N2` section.
 
 !!! info "Further Adjustment"
     If you find that your placement accuracy is slightly incorrect after performing this calibration, you can fine-tune your part placement by adjusting the X and Y offsets in the relevant nozzle settings, as shown below.

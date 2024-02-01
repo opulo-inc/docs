@@ -41,6 +41,20 @@ Before connecting to the LumenPnP, you need to set which USB port to use for com
 2. Click `Apply` in the lower right corner to save your changes.
   ![Apply baud rate and port](images/apply-machine-config.png)
 
+## Establishing Serial Connection
+
+1. Click the green power button in the Machine Controls section of the UI to connect to your machine.
+  ![Connect to the LumenPnP](images/connect-to-machine-power-button.png)
+
+1. The power button will turn red when OpenPnP has connected to your machine. If this doesn't work, check your [serial port](#serial-port-configuration).
+  ![having successfully connected to the LumenPnP and cameras](images/connected-to-machine.png)
+
+1. Save your OpenPnP settings with `File > Save Configuration`.
+  ![saving the machine config](images/save-configuration.png)
+
+1. Turn on your machine's Ring Lights. Click the `LED` button under the `Actuators` tab under `Machine Controls`. Click `On` in the popup.
+   ![](images/turn-on-led.png)
+
 <!-- 
 !!! success "v3.1+ Speed Increase"
 
@@ -152,16 +166,7 @@ Now we'll set up the cameras. The big red "X" in the camera views means that Ope
   ![Adjust exposure](images/adjust-exposure-2.png)
 
 
-## Establishing Serial Connection
 
-1. Click the green power button in the Machine Controls section of the UI to connect to your machine.
-  ![Connect to the LumenPnP](images/connect-to-machine-power-button.png)
-
-1. The power button will turn red when OpenPnP has connected to your machine. If this doesn't work, check your [serial port](#serial-port-configuration).
-  ![having successfully connected to the LumenPnP and cameras](images/connected-to-machine.png)
-
-1. Save your OpenPnP settings with `File > Save Configuration`.
-  ![saving the machine config](images/save-configuration.png)
 
 ## Next Steps
 
