@@ -43,7 +43,7 @@ OpenPnP is designed to run on many different kinds of host computers. However, U
 1. Download and install OpenPnP for Mac. Use the version here to ensure OpenPnP works with the LumenPnP Feeders: ([Download .dmg](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-macos-test.dmg))
 
     !!! danger "Mac Users"
-        Because of [a bug with how OpenPnP signs their releases](https://github.com/openpnp/openpnp/issues/1559), Mac users with ARM processors might experience a crash on boot. You can still run OpenPnP by navigating to `Applications -> OpenPnP` and right clicking on the OpenPnP app and selecting "Show Package Contents":
+        Because of [a bug with how OpenPnP signs their releases](https://github.com/openpnp/openpnp/issues/1559), Mac users with ARM processors might experience a crash on boot, or not be able to access the cameras. You can still run OpenPnP by navigating to `Applications -> OpenPnP` and right clicking on the OpenPnP app and selecting "Show Package Contents":
         ![Show package contents on the openpnp app](img/opnp-show-package-contents.png)
         Then navigate to `Contents -> MacOS` and double click on `JavaApplicationStub` to run OpenPnP.
         ![clicking on javaapplicationstub](img/boot-opnp-java-stub.png)
