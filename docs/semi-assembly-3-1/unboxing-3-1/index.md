@@ -2,7 +2,7 @@
 
 1. First, take a look at what's in the box! The first thing you'll see when you open the package is the getting started card. This card has your machine's version number on it.
 
-    !!!warning "Make sure your version number begins with `v3.1`."
+    !!!warning "Make sure your version number begins with `v3.1` or `v3.2`."
 
     ![Opening the box](images/opened-box.png)
     ![Getting started card](images/getting-started-card.png)
