@@ -2,6 +2,8 @@
 
 In this step, you will mount and connect all the wiring and pneumatic tubing.
 
+## Installing Front Drag Chain Mount
+
 1. Find the `front-drag-chain-mount` print in the first tray, and grab a M5x25mm socket head screw from the hardware bag.
   ![Drag Train Mount print with screw](images/front-leg-cable-chain-mount.JPG)
 
@@ -12,6 +14,8 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
   ![Position screw for installing drag train mount](images/chain-mount-1.JPG)
   ![Screwing in drag train mount](images/chain-mount-2.JPG)
   ![Drag train mount attached](images/chain-mount-3.JPG)
+
+## Installing Drag Chain Assembly
 
 4. Grab the cable harness from the first tray. One side of the cable chain will have shorter wires, and the other will have longer wires with a print zip tied to it. Place your harness as shown in the image below.
   ![Cable harness](images/cable-harness.JPG)
@@ -110,6 +114,8 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
   ![Overview photo](images/overview-down.JPG)
   ![LumenPnP lifted up](images/overview-up.JPG)
 
+## Wiring the Motherboard
+
 30. Remove the motherboard cover by unscrewing the two M3x30mm screws. Lift the top edge away from the board and rotate it out from underneath the pneumatic tubing.
   ![Unscrewing motherboard cover](images/cover-remove-1.JPG)
   ![Removing motherboard cover](images/cover-remove-2.JPG)
@@ -176,31 +182,36 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 46. Tuck any excess cabling underneath the motherboard. Your machine should look like the image below.
   ![Finished motherboard](images/wired-overview.JPG)
 
-47. Follow the steps for [installing the Slot Harness](https://docs.opulo.io/feeders/2-install-harness/installing-the-slot-harness/#install-the-harness) here, and then come back to this page for guidance on plugging in the last few wires in the section below.
+## Installing Feeder Slots
 
-48. Fit the cover back onto the motherboard by rotating it underneath the pneumatic tubing, and pressing down around the stepper driver pins and heatsinks. Remount using the original two M3x30mm screws.
-  ![Inserting the motherboard cover](images/mount-cover-1.JPG)
-  ![Screwing in the motherboard cover](images/mount-cover-2.JPG)
+Follow the steps for [installing the Slot Harness](https://docs.opulo.io/feeders/2-install-harness/installing-the-slot-harness/index.md) here, and then come back to this page for guidance on plugging in the last few wires in the section below.
 
-49. Grab the USB <-> 4 pin connector cable from your tool bag, and plug the 4 pin connector into the back of the bottom camera. Attach the cable to the bottom camera mount using a zip tie and snip off the excess.
+!!! info "This page will ask you which version of the Feeder Slot you're installing -"
+    
+    * If your machine is a V3.1, select `Individual Feeder Slots`.
+    * If your machine is a V3.2 or greater, select `Feeder Slot Blades`.
+
+## Finalize Wiring
+
+48. Grab the USB <-> 4 pin connector cable from your tool bag, and plug the 4 pin connector into the back of the bottom camera. Attach the cable to the bottom camera mount using a zip tie and snip off the excess.
   ![Attaching bottom camera cable](images/plug-bottom-cam.JPG)
   ![Securing bottom camera cable](images/zip-bottom-cam.JPG)
 
-50. Find the staging plate foot from the second tray, and press fit it onto the bottom camera mount, taking care to align the cutout with the bottom camera cable.
+49. Find the staging plate foot from the second tray, and press fit it onto the bottom camera mount, taking care to align the cutout with the bottom camera cable.
   ![Positioning staging plate foot](images/mount-foot-1.JPG)
   ![Installing staging plate foot](images/mount-foot-2.JPG)
 
-51. Route the USB cable underneath the motherboard.
+50. Route the USB cable underneath the motherboard.
   ![USB cable routed under motherboard](images/usb-under-mobo.JPG)
   ![Final wiring of motherboard](images/final-wiring.JPG)
 
-52. Plug the power supply into a wall outlet, and plug the barrel jack into the port in the upper-right corner of the motherboard. You should see a light come on underneath the cover.
-53. Plug the USB-B cable located in your tool bag into the USB port on the bottom-left corner of the motherboard.
-54. Lower your machine down onto all four legs.
-55. Plug the three USB cables coming from your machine into your computer. Depending on your computer's hardware, you might need to plug these all into separate USB ports on your computer and not use an external hub. We'll cover more about this later during calibration.
+51. Plug the power supply into a wall outlet, and plug the barrel jack into the port in the upper-right corner of the motherboard. You should see a light come on underneath the cover.
+52. Plug the USB-B cable located in your tool bag into the USB port on the bottom-left corner of the motherboard.
+53. Lower your machine down onto all four legs.
+54. Plug the three USB cables coming from your machine into your computer. Depending on your computer's hardware, you might need to plug these all into separate USB ports on your computer and not use an external hub. We'll cover more about this later during calibration.
 
 You're done with your build! Time to head over to the OpenPnP section of the docs for calibration and running your first job:
 
 ## Next Steps
 
-You're done with your build! Next, you'll set up [OpenPnP.](../../openpnp/index.md)
+!!! success "You're done with your build! Next, you'll set up [OpenPnP.](../../openpnp/install/index.md)"

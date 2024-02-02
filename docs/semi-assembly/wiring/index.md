@@ -3,6 +3,8 @@
 
 In this step, you will mount and connect all the wiring and pneumatic tubing.
 
+## Installing Front Drag Chain Mount
+
 1. Find the `front-drag-chain-mount` print in the first tray, and grab an M5x25mm and M5x16mm socket head screw from the hardware bag.
   ![](images/front-leg-cable-chain-mount.JPG)
 
@@ -13,6 +15,8 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
   ![](images/chain-mount-1.JPG)
   ![](images/chain-mount-2.JPG)
   ![](images/chain-mount-3.JPG)
+
+## Installing Drag Chain Assembly
 
 4. Grab the cable harness from the first tray. One side of the cable chain will have shorter wires, and the other will have longer wires with a print zip tied to it. Place your harness as shown in the image below.
   ![](images/cable-harness.JPG)
@@ -93,6 +97,8 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
   ![](images/overview-down.JPG)
   ![](images/overview-up.JPG)
 
+## Wiring the Motherboard
+
 24. Remove the motherboard cover by unscrewing the two M3x30mm screws, and removing the two plastic spacers. Lift the top edge away from the board and rotate it out from underneath the pneumatic tubing.
   ![](images/cover-remove-1.JPG)
   ![](images/cover-remove-2.JPG)
@@ -147,7 +153,16 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
     !!! Note
         If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder), follow the steps for [installing the Slot Harness](../../feeders/2-install-harness/installing-the-slot-harness.md) now, and then come back here to plug in the last few wires below.
 
-35. Fit the cover back onto the motherboard by rotating it underneath the pneumatic tubing, and pressing down around the stepper driver pins and heatsinks. Remount using the original two M3x30mm screws and the two plastic spacers.
+## Installing Feeder Slots [Optional]
+
+If you have Feeder Slots to install, you should do this now.
+  
+  * Follow the steps for [installing the Slot Harness](https://docs.opulo.io/feeders/2-install-harness/installing-the-slot-harness/index.md) here.
+  * Afterwards, return to this page for guidance on plugging in the last few wires in the section below.
+
+## Finalize Wiring
+
+35. If you have not done so already, fit the cover back onto the motherboard by rotating it underneath the pneumatic tubing, and pressing down around the stepper driver pins and heatsinks. Remount using the original two M3x30mm screws and the two plastic spacers.
   ![](images/mount-cover-1.JPG)
   ![](images/mount-cover-2.JPG)
   ![](images/mount-cover-3.JPG)
@@ -173,4 +188,4 @@ You're done with your build! Time to head over to the OpenPnP section of the doc
 
 ## Next Steps
 
-You're done with your build! Next, you'll set up [OpenPnP.](../../openpnp/index.md)
+You're done with your build! Next, you'll set up [OpenPnP.](../../openpnp/install/index.md)
