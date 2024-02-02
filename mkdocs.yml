@@ -91,7 +91,6 @@ nav:
             - Motherboard Installation:
                 - Install THT: byop/motherboard/installing-tht/index.md
                 - Mounting the Motherboard: byop/motherboard/mounting/index.md
-                - Updating Firmware: byop/motherboard/update-firmware/index.md
             - Wiring and Pneumatics:
                 - Wiring the Y Motors: byop/wiring-and-pneumatics/wiring-y-motors/index.md
                 - Sheathing the Umbilicals: byop/wiring-and-pneumatics/sheathing-umbilicals/index.md
@@ -146,6 +145,8 @@ nav:
         - Set Motor Disable Timeout: guides/motor-disable-timeout/index.md
         - Second Nozzle Upgrade Guide: guides/second-tool/index.md
         - REV03 Mobo Interposer Guide: guides/rev3-vac-interposer/index.md
+        - Enabling N2 Nozzle for Homing: guides/enable-n2-nozzle/index.md
+        - Collecting OpenPnP Logs: guides/openpnp-logs/index.md
     
 
     - Misc:

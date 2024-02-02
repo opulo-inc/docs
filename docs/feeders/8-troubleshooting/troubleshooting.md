@@ -12,7 +12,7 @@ A red light as soon as the feeder is connected to power means that the feeder wa
     - If not, it's an issue with the slot.
         - Check the pads of the slot. Are they clean and free of debris? Power off your machine and wipe them clean, then try again.
 
-If none of these steps fix the issue, please email us at [support@opulo.io](https://opulo.io/pages/contact-support) and we'll help you out!
+If none of these steps fix the issue, please contact us at [support.opulo.io](https://opulo.io/pages/contact-support) and we'll help you out!
 
 ## Red Light After Feed
 
@@ -22,7 +22,7 @@ A red light after attempting to feed with either the buttons or through OpenPnP 
     - If so, try [reseating the drive motor cable](#reseating-the-drive-motor-cable).
     - If not, you probably had a tape jam. Try [reloading tape](../6-loading-tape/loading-tape.md) and make sure the tape and film's path away from the feeder is clear of obstructions.
 
-If none of these steps fix the issue, please email us at [support@opulo.io](https://opulo.io/pages/contact-support) and we'll help you out!
+If none of these steps fix the issue, please contact us at [support.opulo.io](https://opulo.io/pages/contact-support) and we'll help you out!
 
 ### Reseating the Drive Motor Cable
 
