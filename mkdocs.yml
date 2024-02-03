@@ -145,7 +145,6 @@ nav:
         - Set Motor Disable Timeout: guides/motor-disable-timeout/index.md
         - Second Nozzle Upgrade Guide: guides/second-tool/index.md
         - REV03 Mobo Interposer Guide: guides/rev3-vac-interposer/index.md
-        - Enabling N2 Nozzle for Homing: guides/enable-n2-nozzle/index.md
         - Collecting OpenPnP Logs: guides/openpnp-logs/index.md
     
 
