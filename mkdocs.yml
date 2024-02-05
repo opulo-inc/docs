@@ -146,6 +146,7 @@ nav:
         - Second Nozzle Upgrade Guide: guides/second-tool/index.md
         - REV03 Mobo Interposer Guide: guides/rev3-vac-interposer/index.md
         - Collecting OpenPnP Logs: guides/openpnp-logs/index.md
+        - Updating OpenPnP GCode Macros: guides/update-gcode-macros/index.md
     
 
     - Misc:
