@@ -184,12 +184,12 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 
 ## Installing Feeder Slots
 
-Follow the steps for [installing the Slot Harness](https://docs.opulo.io/feeders/2-install-harness/installing-the-slot-harness/index.md) here, and then come back to this page for guidance on plugging in the last few wires in the section below.
+The next step is installing the Feeder Slot Cable Harness. Select the appropriate installation instructions linked below based off your machine version.
 
-!!! info "This page will ask you which version of the Feeder Slot you're installing -"
-    
-    * If your machine is a V3.1, select `Individual Feeder Slots`.
-    * If your machine is a V3.2 or greater, select `Feeder Slot Blades`.
+  * If your machine is a `v3.1`, [install the harness for Individual Feeder Slots](/feeders/2-install-harness/feeder-slot/#install-the-harness).
+  * If your machine is a `v3.2` or greater, [install the harness for Feeder Slot Blades](/feeders/2-install-harness/feeder-blade/#install-the-harness).
+
+After you complete this step return to this page for guidance on plugging in the last few wires in the next section.
 
 ## Finalize Wiring
 
