@@ -2,7 +2,7 @@
 
 In this step, you'll install and wire slots onto the front and back rails of your LumenPnP. Slots provide power and communication to your feeders.
 
-!!! info "If your machine is v3.1.0 or greater"
+!!! info "If your machine is v3.1 or greater"
     Your LumenPnP came with slots pre-installed, so you can jump ahead to the [Install the Harness](#install-the-harness) section.
 
 ## Adjust Your Staging Plate
