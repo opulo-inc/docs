@@ -180,8 +180,9 @@ In your Slot Harness Kit, you'll find:
 ## Next Steps
 
 If you were directed to this page by LumenPnP wiring instructions return to one of the following pages to finish plugging everything in:
-* [v3.0](docs.opulo.io/semi-assembly-3-1/wiring-3-1/#finalize-wiring)
-* [v3.1 / V3.2](docs.opulo.io/semi-assembly/wiring-3/#finalize-wiring)
+
+* [v3.0](/semi-assembly/wiring/#finalize-wiring)
+* [v3.1 / V3.2](/semi-assembly-3-1/wiring-3-1/#finalize-wiring)
 
 Otherwise, next is [updating your software.](../3-software-update/software-update.md)
 
