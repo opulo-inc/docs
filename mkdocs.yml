@@ -134,8 +134,8 @@ nav:
         - Overview: feeders/1-overview/feeder-overview.md
         - Installing the Slot Harness:
             - Introduction: feeders/2-install-harness/index.md
-            - Slot Blades: feeders/2-install-harness/feeder-blade/installing-the-blade-harness.md
-            - Individual Slots: feeders/2-install-harness/feeder-slot/installing-the-slot-harness.md
+            - Slot Blades: feeders/2-install-harness/feeder-blade/index.md
+            - Individual Slots: feeders/2-install-harness/feeder-slot/index.md
         - Software Update: feeders/3-software-update/software-update.md
         - Mounting Feeders: feeders/4-mounting/mounting.md
         - OpenPnP Setup: feeders/5-openpnp-setup/feeder-openpnp-setup.md
