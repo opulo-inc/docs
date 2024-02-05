@@ -151,13 +151,13 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
     ![](images/mount-strain.JPG)
 
     !!! Note
-        If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder), follow the steps for [installing the Slot Harness](../../feeders/2-install-harness/installing-the-slot-harness.md) now, and then come back here to plug in the last few wires below.
+        If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder), follow the steps for [installing the Slot Harness](/feeders/2-install-harness/) now, and then come back here to plug in the last few wires below.
 
 ## Installing Feeder Slots [Optional]
 
 If you have Feeder Slots to install, you should do this now.
   
-  * Follow the steps for [installing the Slot Harness](https://docs.opulo.io/feeders/2-install-harness/installing-the-slot-harness/index.md) here.
+  * Follow the steps for [installing the Slot Harness](/feeders/2-install-harness/) here.
   * Afterwards, return to this page for guidance on plugging in the last few wires in the section below.
 
 ## Finalize Wiring
