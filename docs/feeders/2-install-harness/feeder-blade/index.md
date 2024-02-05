@@ -1,6 +1,9 @@
-# Installing the Slot Harness (New Blade)
+# Installing the Slot Harness for Blades
 
 In this step, you'll install and wire slots onto the front and back rails of your LumenPnP. Slots provide power and communication to your feeders.
+
+!!! info "If your machine is v3.1.0 or greater"
+    Your LumenPnP came with blades pre-installed, so you can jump ahead to the [Install the Harness](#install-the-harness) section.
 
 ## Adjust Your Staging Plate
 
@@ -109,7 +112,6 @@ In your Slot Harness Kit, you'll find:
 
 3. Find the end of the cable harness with the `← TO MOBO` label. Plug this end into the feeder port on your motherboard. Flip the cable over so that it's leading off the left side of the motherboard.
    ![The motherboard side of the cable harness](img/IMG_0548.jpg)
-   ![Cable plugged into motherboard](img/IMG_2089.JPG)
    ![Cable routed to the left of the motherboard](img/IMG_2090.jpeg)
 
 4. Fit the cover back onto the motherboard by rotating it underneath the pneumatic tubing, and pressing down around the stepper driver pins and heatsinks. Remount using the original two M3x30mm screws.
@@ -125,53 +127,53 @@ In your Slot Harness Kit, you'll find:
    ![Routing the cable with a clip](img/IMG_0562.jpg)
    ![Adding an additional clip](img/IMG_0563.jpg)
 
-6. Plug the cable into the exposed connector on the backside of `Feeder Slot Blade (#1 - #12)`.
+7. Plug the cable into the exposed connector on the backside of `Feeder Slot Blade (#1 - #12)`.
     ![Alt text](img/IMG_0564.jpg)
 
-7. Collect one of the shorter cables from the cable bag and bend it into a "U" shape.
+8. Collect one of the shorter cables from the cable bag and bend it into a "U" shape.
    ![Holding the cable between two connectors](img/IMG_0565.jpg)
    ![Bending the cable between two connectors](img/IMG_0566.jpg)
 
-8. Use this cable to connect `Feeder Slot Blade (#1 - #12)` to `Feeder Slot Blade (#13 - #25)` as shown.
+9. Use this cable to connect `Feeder Slot Blade (#1 - #12)` to `Feeder Slot Blade (#13 - #25)` as shown.
    ![connecting two slot blades](img/IMG_0567.jpg)
    ![Plugging in more slots](img/IMG_0568.jpg)
    ![All front slots connected](img/IMG_0569.jpg)
    ![All front slots connected2](img/IMG_0570.jpg)
 
-8. Collect the longer cables from the cable bag for connecting `Feeder Slot Blade (#13 - #25)` to `Feeder Slot Blade (#26 - #37)`.
+10. Collect the longer cables from the cable bag for connecting `Feeder Slot Blade (#13 - #25)` to `Feeder Slot Blade (#26 - #37)`.
     ![Alt text](img/IMG_0571.jpg)
 
-9. Attach this cable to exposed connector on the right side of `Feeder Slot Blade (#13 - #25)`.
+11. Attach this cable to exposed connector on the right side of `Feeder Slot Blade (#13 - #25)`.
    ![Alt text](img/IMG_0572.jpg)
    
-10. Attach the cable to the bottom of the right side of the front rail using two cable clips.
+12. Attach the cable to the bottom of the right side of the front rail using two cable clips.
    ![Adding a cable clip](img/IMG_0573.jpg)
    ![Adding a second cable clip](img/IMG_0574.jpg)
 
-10. Fold the cable over, and secure the cable to the bottom of the right rail using three cable clips as shown.
+13. Fold the cable over, and secure the cable to the bottom of the right rail using three cable clips as shown.
    ![Folding the cable over with a clip](img/IMG_0575.jpg)
    ![Adding the second cable clip](img/IMG_0576.jpg)
    ![Adding the third cable clip](img/IMG_0577.jpg)
 
-11. Fold the cable over again and secure to the bottom of the right side of the back rail using two more cable clips.
+14. Fold the cable over again and secure to the bottom of the right side of the back rail using two more cable clips.
    ![One cable clip on the bottom rail](img/IMG_0578.jpg)
    ![Second cable clip on the bottom rail](img/IMG_0579.jpg)
 
-11. Plug the cable into the exposed connector on the right side of `Feeder Slot Blade (#26 - #37)`.
+15. Plug the cable into the exposed connector on the right side of `Feeder Slot Blade (#26 - #37)`.
     ![Alt text](img/IMG_0580.jpg)
 
-12. Collect the last short cables from the cable bag and bend it into a "U" shape.
+16. Collect the last short cables from the cable bag and bend it into a "U" shape.
    ![Holding the cable between two connectors](img/IMG_0583.jpg)
    ![Bending the cable between two connectors](img/IMG_0584.jpg)
     
-13. Use this cable to connect `Feeder Slot Blade (#26 - #37)` to `Feeder Slot Blade (#38 - #50)` as shown.
+17. Use this cable to connect `Feeder Slot Blade (#26 - #37)` to `Feeder Slot Blade (#38 - #50)` as shown.
     ![Alt text](img/IMG_0585.jpg)
     ![Alt text](img/IMG_0586.jpg)
 
-14. Take a minute to ensure that your wiring looks like the picture below.
+18. Take a minute to ensure that your wiring looks like the picture below.
    ![Final wiring for feeder slots](img/IMG_0590.jpg)
 
-15. Lower your LumenPnP back down onto its four legs.
+19. Lower your LumenPnP back down onto its four legs.
    ![Lowering down the LumenPnP](img/IMG_0591.jpg)
    ![The LumenPnP flat on the table](img/IMG_0592.jpg)
 
