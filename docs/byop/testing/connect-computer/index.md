@@ -29,7 +29,7 @@
         1. Restart your computer
         2. Check if the LumenPnP shows up in Device Manager (Windows).
         3. Try another USB Port
-        4. Try [re-flashing firmware](../../motherboard/update-firmware/index.md)
+        4. Try [re-flashing firmware](/guides/update-firmware/)
 
 ## Cameras
 We also need to check connecting to the cameras. CNCjs has a webcam feature, so we'll use it for this test too.
