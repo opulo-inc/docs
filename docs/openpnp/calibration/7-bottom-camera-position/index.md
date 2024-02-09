@@ -20,7 +20,7 @@ Now that we know the offset from the top camera to the nozzle, we can use the no
 1.  Jog the toolhead until the left nozzle is directly in the center of the bottom camera's vision.
   ![Position the toolhead over the bottom camera precisely](images/position-over-bottom-cam-precise.png)
 
-1.  Click the "Capture Toolhead Location" button to calculate the correct position for the bottom camera.
+1.  Click the "Capture Toolhead Location" button to calculate the correct position for the bottom camera. **Make sure your Z height is at 31.5.** If it isn't, manually enter `31.5` into the Z field.
   ![Store the camera location](images/store-nozzle-location-bottom.png)
 
 1.  Click the `Apply` button to save the new camera position.
