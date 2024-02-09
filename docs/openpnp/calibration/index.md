@@ -17,6 +17,9 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 
 This walkthrough video shows the entire calibration process starting from stock configuration. We highly recommend watching the video along with walking through the docs on this site when setting up your machine.
 
+!!! danger "This video is for an old version"
+        This video is for an older version of the LumenPnP. **Always reference the docs before the video**. The video is just meant to serve as a visual aid, but the written documentation should always be ground truth.
+
 <div class="video-wrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CSnczX6VJ7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
