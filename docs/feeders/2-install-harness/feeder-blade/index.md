@@ -10,7 +10,7 @@ In this step, you'll install and wire slots onto the front and back rails of you
 To ensure feeders will mount to your LumenPnP's front rail, we need to ensure that your staging plate is mounted at the correct position. **If you have a v3 LumenPnP, your staging plate is already at the correct distance, and can skip this section.**
 
 !!! danger "Warning"
-    Be aware that moving your primary staging plate will change where your bottom camera and homing fiducial markers are mounted. After moving the staging plate, you will need to review your machine's calibration. Specifically, the [Homing Fiducial](../../openpnp/calibration/4-homing-fiducial/index.md#tuning-the-homing-fiducial) and [Bottom Camera Position](../../openpnp/calibration/7-bottom-camera-position/index.md).
+    Be aware that moving your primary staging plate will change where your bottom camera and homing fiducial markers are mounted. After moving the staging plate, you will need to review your machine's calibration. Specifically, the [Homing Fiducial](../../../openpnp/calibration/4-homing-fiducial/index.md#tuning-the-homing-fiducial) and [Bottom Camera Position](../../../openpnp/calibration/7-bottom-camera-position/index.md).
 
 1. Unplug your LumenPnP.
 
@@ -43,7 +43,7 @@ In your Slot Harness Kit, you'll find:
     * Feeder Slot Blade (#13 - #25)
     * Feeder Slot Blade (#26 - #37)
     * Feeder Slot Blade (#38 - #50)
-    
+
       ![Slot number 1](img/feeder-blade-set.jpg)
 
 ## Mount the Feeder Slot Blades
@@ -97,7 +97,7 @@ In your Slot Harness Kit, you'll find:
    ![Alt text](img/IMG_0533.jpg)
    ![Alt text](img/IMG_0535.jpg)
    ![Alt text](img/IMG_0536.jpg)
- 
+
  11. `Feeder Slot Blade (#26 - #37)` and `Feeder Slot Blade (#38 - #50)` should now be firmly mounted to the rear rail.
    ![Alt text](img/IMG_0540.jpg)
 
@@ -145,7 +145,7 @@ In your Slot Harness Kit, you'll find:
 
 11. Attach this cable to exposed connector on the right side of `Feeder Slot Blade (#13 - #25)`.
    ![Alt text](img/IMG_0572.jpg)
-   
+
 12. Attach the cable to the bottom of the right side of the front rail using two cable clips.
    ![Adding a cable clip](img/IMG_0573.jpg)
    ![Adding a second cable clip](img/IMG_0574.jpg)
@@ -165,7 +165,7 @@ In your Slot Harness Kit, you'll find:
 16. Collect the last short cables from the cable bag and bend it into a "U" shape.
    ![Holding the cable between two connectors](img/IMG_0583.jpg)
    ![Bending the cable between two connectors](img/IMG_0584.jpg)
-    
+
 17. Use this cable to connect `Feeder Slot Blade (#26 - #37)` to `Feeder Slot Blade (#38 - #50)` as shown.
     ![Alt text](img/IMG_0585.jpg)
     ![Alt text](img/IMG_0586.jpg)
@@ -181,10 +181,10 @@ In your Slot Harness Kit, you'll find:
 
 If you were directed to this page by LumenPnP wiring instructions return to one of the following pages to finish plugging everything in:
 
-* [v3.0](/semi-assembly/wiring/#finalize-wiring)
-* [v3.1 / V3.2](/semi-assembly-3-1/wiring-3-1/#finalize-wiring)
+* [v3.0](../../../semi-assembly/wiring/index.md#finalize-wiring)
+* [v3.1 / V3.2](../../../semi-assembly-3-1/wiring-3-1/index.md#finalize-wiring)
 
-Otherwise, next is [updating your software.](../3-software-update/software-update.md)
+Otherwise, next is [updating your software.](../../3-software-update/software-update.md)
 
 [clip-url]: https://github.com/opulo-inc/lumenpnp/blob/main/pnp/cad/FDM/extrusion-cable-clip.FCStd
 [slot-url]: https://github.com/opulo-inc/feeder

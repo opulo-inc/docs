@@ -35,7 +35,7 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 
 8. Your machine should now look like the image below.
   ![Machine overview](images/chain-half-mount.JPG)
-  
+
 9. Remove the plastic wrapping from toolhead-side of the cable chain.
   ![Sliding off plastic from cable harness](images/unbag-wires1.JPG)
   ![Released cable harness](images/unbag-wires2.JPG)
@@ -85,7 +85,7 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 
 22. Plug the cable labeled `RM` into the right motor on the X gantry. This cable is inserted from the bottom.
     ![Plug in Right motor cable](images/plug-rh.JPG)
-  
+
 23. Tighten right Z gantry zip tie to secure the RM cable in place
     ![Right motor cable secured with zip tie](images/zip-rh-3.JPG)
 
@@ -96,7 +96,7 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 25. Find the two pieces of tubing labeled `LH` and `RH`, and insert `LH` into the left motor, and `RH` into the right motor. Make sure that the tubing is in between the `LH` and `RH` cable harness going to the motors as shown in the image below.
     ![LH and RH tubing](images/tubing.JPG)
     ![LH and RH tubing installed](images/tubing-inserted.JPG)
-  
+
     !!! Note
           If you ever need to remove the tubing, press down on the blue plastic circle while pulling upward on the tubing.
 
@@ -142,7 +142,7 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 36. Remove the plastic wrapping from motherboard-side of the cable chain.
   ![Pulling off plastic wrap from cable chain](images/unbag-wires3.JPG)
   ![Released wires](images/unbag-wires4.JPG)
-  
+
 37. Take a look at the bundle of cables coming from the cable chain. One cable with a USB connector will not be zip tied into the print. Move this cable out of the way for now, as we won't be routing it with the rest of the cables.
   ![USB cable](images/isolate-top-cam.JPG)
 
@@ -175,7 +175,7 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 
 44. Plug the harness labeled `ZL` into the Z Limit Switch port.
   ![Plugging in ZL](images/plug-zl.JPG)
-  
+
 45. Plug the harness labeled `DL` into the Top Light port.
   ![Plugging in DL](images/plug-dl.JPG)
 
@@ -186,8 +186,8 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 
 The next step is installing the Feeder Slot Cable Harness. Select the appropriate installation instructions linked below based off your machine version.
 
-  * If your machine is a `v3.1`, [install the harness for Individual Feeder Slots](/feeders/2-install-harness/feeder-slot/#install-the-harness).
-  * If your machine is a `v3.2` or greater, [install the harness for Feeder Slot Blades](/feeders/2-install-harness/feeder-blade/#install-the-harness).
+  * If your machine is a `v3.1`, [install the harness for Individual Feeder Slots](../../feeders/2-install-harness/feeder-slot/index.md#install-the-harness).
+  * If your machine is a `v3.2` or greater, [install the harness for Feeder Slot Blades](../../feeders/2-install-harness/feeder-blade/index.md#install-the-harness).
 
 After you complete this step return to this page for guidance on plugging in the last few wires in the next section.
 

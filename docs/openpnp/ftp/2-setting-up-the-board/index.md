@@ -74,7 +74,7 @@ The next step is to set the physical location of the FTP board in OpenPNP. You'l
     3. If you'd prefer, you can also fall back on manually defining the board's location using the "Multiple Placements" icon button.
       ![Use the board location from multiple placements button to manually set the board location and rotation](images/Board-location-from-multiple-placements-button.png)
 
-16. To double-check the board's location, rerun the fiducial scan. It is also useful to select some of the other placement locations and move the camera to them as well to check that the camera is centered between the metal pads. If the camera is not lining up correctly, see [Troubleshooting](../../../misc/troubleshooting/symptoms/index.md) for help getting things more tightly set up.
+16. To double-check the board's location, rerun the fiducial scan. It is also useful to select some of the other placement locations and move the camera to them as well to check that the camera is centered between the metal pads. If the camera is not lining up correctly, see [PCB fiducial pipeline adjustment](../../vision-pipeline-adjustment/3-pcb-fiducial-pipeline.md) for help getting things more tightly set up.
 
 ## Placing Components
 
@@ -87,10 +87,10 @@ The next step is to set the physical location of the FTP board in OpenPNP. You'l
 2. It's time to place your first component. Press the "Single job step" icon button repeatedly until OpenPnP moves to pick up an LED, check it's orientation over the bottom camera, and then place it on the board.
   ![Start placing components](images/One-step-placement.png)
 
-3. If the component was not picked up correctly, you will need to adjust your [feeder location or height](../../../misc/troubleshooting/solutions#incorrect-feeder-z-position).
-4. If the component was not identified by the bottom camera correctly, you will likely need to adjust its [Part Identification Vision Pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md).
-5. If the component did not stick to the FTP board, you should lower the FTP board's Z axis location (`0.10mm` increments are a good starting place).
-6. If the component stuck to the FTP board but was not centered on placement location (on the metal pads), you will need to do some fine tuning. It is useful to place five or so components before attempting to diagnose exactly what's wrong with your placements.
-7. Continue to click the "Single Job Step" to place the additional components (or click the "Play" icon button and pause the operation when you're ready.)
+1. If the component was not picked up correctly, you will need to adjust your [feeder location or height](../1-installing-the-feeders/index.md#fine-tuning-feeder-height).
+2. If the component was not identified by the bottom camera correctly, you will likely need to adjust its [Part Identification Vision Pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md).
+3. If the component did not stick to the FTP board, you should lower the FTP board's Z axis location (`0.10mm` increments are a good starting place).
+4. If the component stuck to the FTP board but was not centered on placement location (on the metal pads), you will need to do some fine tuning. It is useful to place five or so components before attempting to diagnose exactly what's wrong with your placements.
+5. Continue to click the "Single Job Step" to place the additional components (or click the "Play" icon button and pause the operation when you're ready.)
 
-It is perfectly normal for your very first set of component placements to have some errors. There are several different sources of placement error that we can address, one at a time. It will take a little trial and error to get placements perfect. Go to the [Troubleshooting](../../../misc/troubleshooting/symptoms/index.md) page for easy instructions.
+It is perfectly normal for your very first set of component placements to have some errors. There are several different sources of placement error that we can address, one at a time. It will take a little trial and error to get placements perfect. Go to the [vision pipeline adjustment](../../vision-pipeline-adjustment/1-introduction.md) page for easy instructions.
