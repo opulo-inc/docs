@@ -79,7 +79,7 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 19. Find the two pieces of tubing labeled `LH` and `RH`, and insert `LH` into the left motor, and `RH` into the right motor. Make sure that the tubing is in between the `LH` and `RH` cable harness going to the motors as shown in the image below.
   ![](images/tubing.JPG)
   ![](images/tubing-inserted.JPG)
-  
+
     !!! Note
           If you ever need to remove the tubing, press down on the blue plastic circle while pulling upward on the tubing.
 
@@ -151,13 +151,13 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
     ![](images/mount-strain.JPG)
 
     !!! Note
-        If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder), follow the steps for [installing the Slot Harness](/feeders/2-install-harness/) now, and then come back here to plug in the last few wires below.
+        If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder), follow the steps for [installing the Slot Harness](../../feeders/2-install-harness/index.md) now, and then come back here to plug in the last few wires below.
 
 ## Installing Feeder Slots [Optional]
 
 If you have Feeder Slots to install, you should do this now.
-  
-  * Follow the steps for [installing the Slot Harness](/feeders/2-install-harness/) here.
+
+  * Follow the steps for [installing the Slot Harness](../../feeders/2-install-harness/index.md) here.
   * Afterwards, return to this page for guidance on plugging in the last few wires in the section below.
 
 ## Finalize Wiring

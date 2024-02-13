@@ -15,7 +15,7 @@ This next step calibrates the relationship between pixels and millimeters to mak
   ![Apply Lubricant to holder](images/apply-super-lube.jpg)
 
 1. Identify your machine's nozzle tips. They're mounted in the rack on your staging plate.
-   ![](/semi-assembly-3-1/mounting-staging-plates-3-1/images/nozzle-tip-location.JPG)
+   ![](../../../semi-assembly-3-1/mounting-staging-plates-3-1/images/nozzle-tip-location.JPG)
 
 1. Remove the nozzle tips labeled `N045` and `N24` from the rack.
 

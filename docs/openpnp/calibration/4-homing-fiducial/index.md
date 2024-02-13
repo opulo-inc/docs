@@ -6,14 +6,14 @@ Now we can set up the datum board. The datum board is a reference point for ever
   ![Home the machine](images/Connect-and-home.png)
 
 !!! danger "If your machine does not move fully to the front left"
-    If your LumenPnP does not move all the way to the front left of the machine when you click the Home icon, it could mean that your sensorless homing values need to be adjusted. Instructions for tuning this setting are [here](/guides/tuning-sensorless/).
+    If your LumenPnP does not move all the way to the front left of the machine when you click the Home icon, it could mean that your sensorless homing values need to be adjusted. Instructions for tuning this setting are [here](../../../guides/tuning-sensorless/index.md).
 
 ## Setting Homing Fiducial Location
 
 1. Navigate to  `Machine Setup > Heads > ReferenceHead H1`.
   ![Reviewing the ReferenceHead options](images/Select-Reference-Head-H1.png)
-  
-1. In the Configuration tab, change the `Homing Method` to `ResetToFiducialLocation`. This will let us adjust Homing Fiducial settings. 
+
+1. In the Configuration tab, change the `Homing Method` to `ResetToFiducialLocation`. This will let us adjust Homing Fiducial settings.
   ![Switch to using the homing fiducial](images/Select-ResetToFiducialLocation.png)
 
 1. Click `Apply` to save this change.
@@ -65,13 +65,13 @@ We also detail this process in our [setup video](https://youtube.com/watch?v=CSn
 
 1. **Uncheck** the Auto Exposure checkbox. We want to **manually** set exposure.
    ![Top camera properly exposed with the auto-exposure turned on](images/Auto-exposure-on.png)
-  
+
 2. Adjust the exposure using the slider. The goal is to make sure the histogram graph has two cleanly defined peaks without clipping; one for the bright parts and dark parts of the homing fiducial image. See the images below for reference.
   ![a good histogram](images/good-histogram.png)
   ![a bad histogram](images/bad-histogram.png)
 
 1. Once you've found a good exposure value, **record this value**. OpenPnP does not always reestablish camera settings when reconnecting, so having this value recorded for easily setting your exposure again on boot is important. When doing so, be sure to check, then uncheck the "Auto Exposure" box to put your camera into manual exposure mode, then slide the slider to your recorded value.
-  
+
 ## Test Fiducial Homing
 
 1. Navigate to `Machine Setup > Heads > ReferenceHead H1`.

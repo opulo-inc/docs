@@ -29,7 +29,7 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
            - If you have a v2, choose `v2-lumenpnp-firmware-feeder-support.bin`.
            - If you have a v3, choose `v3-lumenpnp-firmware-feeder-support.bin`.
 
-2. Follow the instructions for [updating your LumenPnP's firmware](../../byop/motherboard/update-firmware/index.md).
+2. Follow the instructions for [updating your LumenPnP's firmware](../../guides/update-firmware/index.md).
 
 ## Update Feeder Firmware **(Optional)**
 
