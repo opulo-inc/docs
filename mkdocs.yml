@@ -159,6 +159,8 @@ nav:
         - Backlash Compensation: misc/backlash-compensation/index.md
         - Automatic Toolchanger: misc/auto-toolchanger/index.md
         - Standalone Feeder Control: misc/standalone-feeders/index.md
+
+    - FAQ: faq/index.md
         
 
     - Design for LumenPnP: design-for-lumenpnp/index.md
