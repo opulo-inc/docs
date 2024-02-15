@@ -6,6 +6,9 @@ Now we've got OpenPnP installed on your computer, and we've got the default conf
 2. Plug in your LumenPnP via the barrel jack. It's important you do this before USB is plugged in to ensure the proper power-up sequence.
 3. Connect your LumenPnP to your computer using the included USB cable.
 
+    !!! warning "Plug in USB before opening OpenPnP"
+        It's important that you plug your LumenPnP USB cable into your computer **before** launching OpenPnP. If OpenPnP is already open, it might have a hard time finding the correct communication port. Make sure OpenPnP is closed before plugging in your USB cable. 
+
 4. Connect both cameras to your computer using the USB cables.
 
     **Use separate USB ports directly into your computer**. The cameras require a lot of USB bandwidth, and many USB hubs aren't capable of handling it. For best results, make sure each camera is plugged into a different USB port directly into your computer, ideally on different interal USB hubs.
