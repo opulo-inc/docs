@@ -135,7 +135,7 @@ nav:
             - Introduction: feeders/2-install-harness/index.md
             - Slot Blades: feeders/2-install-harness/feeder-blade/index.md
             - Individual Slots: feeders/2-install-harness/feeder-slot/index.md
-        - Software Update: feeders/3-software-update/software-update.md
+        - Software Update: feeders/3-software-update/index.md
         - Mounting Feeders: feeders/4-mounting/mounting.md
         - OpenPnP Setup: feeders/5-openpnp-setup/feeder-openpnp-setup.md
         - Loading Tape: feeders/6-loading-tape/loading-tape.md

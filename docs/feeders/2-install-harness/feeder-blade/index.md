@@ -10,7 +10,7 @@ In this step, you'll install and wire slots onto the front and back rails of you
 To ensure feeders will mount to your LumenPnP's front rail, we need to ensure that your staging plate is mounted at the correct position. **If you have a v3 LumenPnP, your staging plate is already at the correct distance, and can skip this section.**
 
 !!! danger "Warning"
-    Be aware that moving your primary staging plate will change where your bottom camera and homing fiducial markers are mounted. After moving the staging plate, you will need to review your machine's calibration. Specifically, the [Homing Fiducial](../../openpnp/calibration/4-homing-fiducial/index.md#tuning-the-homing-fiducial) and [Bottom Camera Position](../../openpnp/calibration/7-bottom-camera-position/index.md).
+    Be aware that moving your primary staging plate will change where your bottom camera and homing fiducial markers are mounted. After moving the staging plate, you will need to review your machine's calibration. Specifically, the [Homing Fiducial](/openpnp/calibration/4-homing-fiducial) and [Bottom Camera Position](/openpnp/calibration/7-bottom-camera-position).
 
 1. Unplug your LumenPnP.
 
@@ -19,7 +19,7 @@ To ensure feeders will mount to your LumenPnP's front rail, we need to ensure th
 3. Measure exactly 75mm of clearance between the front rail and the staging plate. You can use the [squaring bracket](https://github.com/opulo-inc/lumenpnp/blob/main/pnp/cad/FDM/squaring-bracket.FCStd) included in LumenPnP v3 kits. (STL available in the latest [LumenPnP Release](https://github.com/opulo-inc/lumenpnp/releases))
   ![measuring with the squaring bracket](img/staging-plate-spacing.png)
 
-4. Re-tighten the four M5x8mm button head screws to secure the staging plate.
+1. Re-tighten the four M5x8mm button head screws to secure the staging plate.
    ![Tighten the staging plate screws](img/staging-right-screw-1.JPG)
 
 ## Prepare the Slots
@@ -184,7 +184,7 @@ If you were directed to this page by LumenPnP wiring instructions return to one 
 * [v3.0](/semi-assembly/wiring/#finalize-wiring)
 * [v3.1 / V3.2](/semi-assembly-3-1/wiring-3-1/#finalize-wiring)
 
-Otherwise, next is [updating your software.](../3-software-update/software-update.md)
+Otherwise, next is [updating your software.](/feeders/3-software-update)
 
 [clip-url]: https://github.com/opulo-inc/lumenpnp/blob/main/pnp/cad/FDM/extrusion-cable-clip.FCStd
 [slot-url]: https://github.com/opulo-inc/feeder

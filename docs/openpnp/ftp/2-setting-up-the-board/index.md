@@ -74,7 +74,7 @@ The next step is to set the physical location of the FTP board in OpenPNP. You'l
     3. If you'd prefer, you can also fall back on manually defining the board's location using the "Multiple Placements" icon button.
       ![Use the board location from multiple placements button to manually set the board location and rotation](images/Board-location-from-multiple-placements-button.png)
 
-16. To double-check the board's location, rerun the fiducial scan. It is also useful to select some of the other placement locations and move the camera to them as well to check that the camera is centered between the metal pads. If the camera is not lining up correctly, see [Troubleshooting](../../../misc/troubleshooting/symptoms/index.md) for help getting things more tightly set up.
+16. To double-check the board's location, rerun the fiducial scan. It is also useful to select some of the other placement locations and move the camera to them as well to check that the camera is centered between the metal pads.
 
 ## Placing Components
 
@@ -92,7 +92,7 @@ The next step is to set the physical location of the FTP board in OpenPNP. You'l
 - If the component was not picked up correctly, you will need to adjust your [feeder location or height](../1-installing-the-feeders/index.md).
 - If the component was not identified by the bottom camera correctly, you will likely need to adjust its [Part Identification Vision Pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md).
 - If the component did not stick to the FTP board, you should lower the FTP board's Z axis location (`0.10mm` increments are a good starting place).
-- If the component stuck to the FTP board but was not centered on placement location (on the pads on the PCB), it's likely you need to adjust that part's [vision pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md) or that [nozzle's offset](openpnp/calibration/6-nozzle-offset/index.md).
+- If the component stuck to the FTP board but was not centered on placement location (on the pads on the PCB), it's likely you need to adjust that part's [vision pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md) or that [nozzle's offset](/openpnp/calibration/6-nozzle-offset).
 - If the component is not rotated correctly, it's likely you need to adjust that part's [vision pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md) or you need to adjust the relevant feeder's rotation value.
 
-It is normal for your first set of component placements to have some offset errors. The vast majority of these errors can be fixed with [vision pipeline adjustment](../../vision-pipeline-adjustment/1-introduction.md) and tuning your [nozzle offsets](openpnp/calibration/6-nozzle-offset/index.md).
+It is normal for your first set of component placements to have some offset errors. The vast majority of these errors can be fixed with [vision pipeline adjustment](../../vision-pipeline-adjustment/1-introduction.md) and tuning your [nozzle offsets](/openpnp/calibration/6-nozzle-offset).
