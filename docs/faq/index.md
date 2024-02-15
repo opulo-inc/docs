@@ -30,6 +30,8 @@ Some parts in the Bill of Materials are difficult to source. These components ar
 
 Opulo keeps all of its internal assembly instructions [public and available](https://ohai.opulo.io/), which is a helpful resource when building your own. Note that this documentation is meant for technicians at Opulo, so it references jigs and tools that you might not have.
 
+If you're trying to program your feeder slots, there's a utility in the [LumenPnP Debug Tool](https://debug.opulo.io/) that will let you program them using a single feeder.
+
 ## Can you update the repo?
 
 Opulo's source repositories are updated continuously. All work is pushed on a daily basis to the relevant feature branch. If you don't see updates in the repo, it's likely you're looking in `main` and the changes are in another branch.
