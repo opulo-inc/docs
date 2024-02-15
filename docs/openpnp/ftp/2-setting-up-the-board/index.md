@@ -87,10 +87,12 @@ The next step is to set the physical location of the FTP board in OpenPNP. You'l
 2. It's time to place your first component. Press the "Single job step" icon button repeatedly until OpenPnP moves to pick up an LED, check it's orientation over the bottom camera, and then place it on the board.
   ![Start placing components](images/One-step-placement.png)
 
-3. If the component was not picked up correctly, you will need to adjust your [feeder location or height](../../../misc/troubleshooting/solutions#incorrect-feeder-z-position).
-4. If the component was not identified by the bottom camera correctly, you will likely need to adjust its [Part Identification Vision Pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md).
-5. If the component did not stick to the FTP board, you should lower the FTP board's Z axis location (`0.10mm` increments are a good starting place).
-6. If the component stuck to the FTP board but was not centered on placement location (on the metal pads), you will need to do some fine tuning. It is useful to place five or so components before attempting to diagnose exactly what's wrong with your placements.
-7. Continue to click the "Single Job Step" to place the additional components (or click the "Play" icon button and pause the operation when you're ready.)
+### Debugging
 
-It is perfectly normal for your very first set of component placements to have some errors. There are several different sources of placement error that we can address, one at a time. It will take a little trial and error to get placements perfect. Go to the [Vision Pipeline Adjustment](../../vision-pipeline-adjustment/1-introduction.md) page for easy instructions.
+- If the component was not picked up correctly, you will need to adjust your [feeder location or height](../1-installing-the-feeders/index.md).
+- If the component was not identified by the bottom camera correctly, you will likely need to adjust its [Part Identification Vision Pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md).
+- If the component did not stick to the FTP board, you should lower the FTP board's Z axis location (`0.10mm` increments are a good starting place).
+- If the component stuck to the FTP board but was not centered on placement location (on the pads on the PCB), it's likely you need to adjust that part's [vision pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md) or that [nozzle's offset](openpnp/calibration/6-nozzle-offset/index.md).
+- If the component is not rotated correctly, it's likely you need to adjust that part's [vision pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md) or you need to adjust the relevant feeder's rotation value.
+
+It is normal for your first set of component placements to have some offset errors. The vast majority of these errors can be fixed with [vision pipeline adjustment](../../vision-pipeline-adjustment/1-introduction.md) and tuning your [nozzle offsets](openpnp/calibration/6-nozzle-offset/index.md).
