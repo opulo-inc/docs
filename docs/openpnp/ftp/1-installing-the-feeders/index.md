@@ -121,25 +121,28 @@ The FTP PCB has two different types of components that need to be placed: resist
 7. Set the Pick location to: `X=45`, `Y=175`, `Z=20` as a starting point.
   ![Set the starting location for the left feeder](images/Set-left-pick-location.png)
 
-8. Click on the "Position Camera" icon button to move the top camera roughly over the left feeder.
+    !!! danger "Feeder rotation value"
+        The `Rotation` field in feeder configuration sets the orientation that OpenPnP thinks the **component starts at in the tape**. If you find that your parts are placing with a consistent rotation offset, try adjusting this value (start with increments of 90 degrees) until your parts are placing with the correct orientation.
+
+1. Click on the "Position Camera" icon button to move the top camera roughly over the left feeder.
   ![Move the top camera over the left feeder's approximate location](images/Position-camera-over-feeder.png)
 
-9. Position the center of the top camera feed over the center of the top-most slot holding a resistor in the tray. You can drag the reticle in the camera feed, or use the jog buttons.
+1. Position the center of the top camera feed over the center of the top-most slot holding a resistor in the tray. You can drag the reticle in the camera feed, or use the jog buttons.
   ![Manually move closer to the correct feeder location](images/Position-over-feeder-start-rough.png)
 
-10. Zoom in on the camera feed and *precisely* position the center of the reticle over the center of the slot holding the resistor. The resistor itself may not be perfectly centered, that is fine.
+1.  Zoom in on the camera feed and *precisely* position the center of the reticle over the center of the slot holding the resistor. The resistor itself may not be perfectly centered, that is fine.
   ![Manually move closer to the correct feeder location](images/Position-over-feeder-start-precise.png)
 
-11. Click the "Capture Camera Location" icon button to save the XY position of the start of the feeder.
+1.  Click the "Capture Camera Location" icon button to save the XY position of the start of the feeder.
   ![Save the current camera position as the start place for the feeder](images/Capture-camera-position-feeder.png)
 
-12. Click `Apply` to save the feeder settings
+1.  Click `Apply` to save the feeder settings
   ![Save feeder settings](images/Save-feeder-settings.png)
 
-13. Click the `Enable` checkbox in the feeder list.
+1.  Click the `Enable` checkbox in the feeder list.
   ![Enable the feeder so that it is used](images/Enable-feeder.png)
 
-14. Do the same procedure again for the LED feeder. You'll assign the part `LED_0603_1608Metric-LED_Small` to the new feeder.
+1.  Do the same procedure again for the LED feeder. You'll assign the part `LED_0603_1608Metric-LED_Small` to the new feeder.
 
 ## Fine-tuning feeder height
 
