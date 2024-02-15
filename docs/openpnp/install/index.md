@@ -28,6 +28,8 @@ OpenPnP is designed to run on many different kinds of host computers. However, U
 
 1. Open OpenPnP and make sure it loads fully. Doing this will make sure that OpenPnP puts a configuration folder on your computer that we'll need in the next step.
 
+1. OpenPnP might prompt you to download a new version. Click `Cancel` then `Exit` to this prompt.
+
 1. Close OpenPnP.
 
 ### Windows
@@ -35,6 +37,8 @@ OpenPnP is designed to run on many different kinds of host computers. However, U
 1. Download and install OpenPnP for Windows. Use the version here to ensure OpenPnP works with the LumenPnP Feeders: ([Download 32 Bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x32-test.exe)) ([Download 64 Bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x64-test.exe))
 
 2. Open OpenPnP and make sure it loads fully. Doing this will make sure that OpenPnP puts a configuration folder on your computer that we'll need in the next step.
+
+1. OpenPnP might prompt you to download a new version. Click `Cancel` then `Exit` to this prompt.
 
 3. Close OpenPnP.
 
@@ -49,6 +53,8 @@ OpenPnP is designed to run on many different kinds of host computers. However, U
         ![clicking on javaapplicationstub](img/boot-opnp-java-stub.png)
 
 1. Open OpenPnP and make sure it loads fully. Doing this will make sure that OpenPnP puts a configuration folder on your computer that we'll need in the next step.
+
+1. OpenPnP might prompt you to download a new version. Click `Cancel` then `Exit` to this prompt.
 
 1. Close OpenPnP.
 
