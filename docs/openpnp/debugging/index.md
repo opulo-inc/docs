@@ -1,6 +1,6 @@
 # Debugging Placement Errors
 
-You might have found an inaccuracy or error when placing parts. This page address these errors, and how to go about fixing them. you might se a couple try to make solutions more header-y
+You might have found an inaccuracy or error when placing parts. This page address these errors, and how to go about fixing them. You might encounter a couple of these errors at once, so choose one to address before moving on.
 
 ## Part placement is seemingly random
 
