@@ -139,7 +139,6 @@ nav:
               - Installing Feeders: openpnp/ftp/1-installing-the-feeders/index.md
               - Setting Up the Board: openpnp/ftp/2-setting-up-the-board/index.md
         - Debugging: openpnp/debugging/index.md
-              
         - Vision Pipeline Adjustment:
             - Introduction: openpnp/vision-pipeline-adjustment/1-introduction.md
             - Homing Fiducial Pipeline: openpnp/vision-pipeline-adjustment/2-homing-fiducial-pipeline.md
