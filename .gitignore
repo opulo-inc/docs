@@ -8,6 +8,8 @@ hugo_stats.json
 # Build folder
 site/
 
+.cache
+
 # Temporary lock file while building
 /.hugo_build.lock
 
