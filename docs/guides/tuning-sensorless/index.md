@@ -3,7 +3,7 @@
 If your machine is homing the X or Y axis too early, or not registering that it's hit the end of travel, use this guide to tune sensorless homing.
 
 !!! note "M914 Command"
-        Sensorless homing sensitivity is set using the M914 Gcode command. For more information, check out [Marlin's M914 documentation](https://marlinfw.org/docs/gcode/M914.html).
+    Sensorless homing sensitivity is set using the M914 Gcode command. For more information, check out [Marlin's M914 documentation](https://marlinfw.org/docs/gcode/M914.html).
 
 1. Connect to your machine.
 2. In OpenPnP, navigate to `Machine Setup` > `Drivers` > `GcodeDriver` > `Setting`: `CONNECT_COMMAND`.

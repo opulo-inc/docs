@@ -40,6 +40,9 @@ If you still want to perform this calibration, use the instructions below and re
 9. Change the Motion Control Type to `ConstantAcceleration`. Note that you may want to change this back to `ToolpathFeedRate` when you're done running the backlash calibration.
   ![switch to constant acceleration](images/constant-acceleration.png)
 
+    !!! warning "Command Timeout"
+        You also might need to increase your `Command Timeout` value in this tab. Try increasing it to 10000 ms to ensure OpenPnP doesn't timeout during calibration.
+
 10. Click `Apply` to save your changes.
   ![save the driver settings](images/save-driver-settings-changes.png)
   
