@@ -8,7 +8,7 @@ If you'd like to accomplish this a different way, there are a few options.
 !!! danger "Help"
     This is not the standard way of communicating with the Photon feeders! As Photon gets more adoption, and boards are designed around communicating with them specifically, this will become more common practice. But for now, this method of talking with feeders will require a bit of debugging and trial & error. If you have trouble, hop into our [Discord server](https://discordapp.com/invite/TCwy6De) and see if someone has a solution!
 
-## Lumen Emulation
+## LumenPnP Emulation
 
 By emulating the LumenPnP motherboard, you can communicate with feeders in the intended method using different hardware. You will need:
 
@@ -19,6 +19,6 @@ Following the [motherboard's schematic](https://github.com/opulo-inc/lumenpnp/tr
 
 This method allows you to interface with the feeders using the standard method in OpenPnP. Aside from setting up a second serial port for communicating with feeders, all other configuration should be the same.
 
-## USB <-> RS-485 Dongle (Untested)
+## USB <-> RS-485 Dongle
 
 This method uses a [USB <-> RS-485 adapter](https://www.amazon.com/s?k=usb+rs485) to communicate with the feeders. Communicating directly with the RS-485 bus has been done for debugging, but not for regular communication during a job. This will require some tinkering to get going, including changing the regex for feeder communication in OpenPnP.

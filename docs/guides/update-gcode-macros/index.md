@@ -5,10 +5,10 @@ OpenPnP puts general machine configuration in the same file as machine-specific 
 **If you're setting up your machine for the first time, you don't need to do this.** This guide is only for folks that are looking to update their machine config, but set up their machine using an older version of the configuration files.
 
 !!! warning "OpenPnP Version"
-        Be sure that you're using the recommended version of OpenPnP for this guide. You can find installation instructions [here](/openpnp/install).
+    Be sure that you're using the recommended version of OpenPnP for this guide. You can find installation instructions [here](/openpnp/install).
 
 !!! warning "Firmware Version"
-        These macros require that your firmware is up to date with the latest firmware release for your machine. [Make sure you're up to date](/guides/update-firmware).
+    These macros require that your firmware is up to date with the latest firmware release for your machine. [Make sure you're up to date](/guides/update-firmware).
 
 ## v3.1+ Machines
 

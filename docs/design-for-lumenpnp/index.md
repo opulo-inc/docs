@@ -10,7 +10,7 @@ Also be sure to check out the [Midscale Website](https://midscale.io/) for infor
 
 The LumenPnP can support up to 50 automated 8mm or 12mm feeders. This means you can have **up to 50 unique components in feeders** provided they come in 8mm and 12mm tape. When using strip feeders, it's possible to populate up to **79 unique components** on one machine.
 
-LumenPnP v3.1 Component Support:
+LumenPnP v3.1+ Component Support:
 
 - Minimum part size: **0402**
 - Minimum lead pitch: **0.4mm**

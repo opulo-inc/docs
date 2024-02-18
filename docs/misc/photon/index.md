@@ -1,3 +1,7 @@
+---
+description: Photon protocol definition and examples 
+---
+
 # Photon Protocol
 
 The Photon Protocol is designed to facilitate ids and uuids
