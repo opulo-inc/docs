@@ -10,4 +10,4 @@ When setting the position of a feeder, the rotation value you enter is equal to 
 
 ## The part's vision pipeline needs adjustment
 
-If your rotation offset is consistently 90 or 180 degrees this is less likely, but it could still worth [adjusting that part's vision pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md).
+If your rotation offset is consistently 90 or 180 degrees this is less likely, but it could still worth [adjusting that part's vision pipeline](/openpnp/vision-pipeline-adjustment/5-part-identification-pipeline/).
