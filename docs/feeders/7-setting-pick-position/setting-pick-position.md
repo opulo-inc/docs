@@ -49,8 +49,8 @@ Now that you've loaded a component into the feeder, we'll fine-tune the feeder's
 
 16. Use the "Pick" button to test picking the component. If it isn't picked appropriately you may need to tune the Part Offset, especially the Z-axis.
     ![Pick Component Button](img/pick-component.png)
-17. Simply turn off the vacuum in `Actuators > H1:VAC1 > Off` to recycle your component.
-18. Repeat this tuning with each of your feeders, and then you'll be ready to start a job!
+17. Click the `Discard` button under `Machine Controls -> Special` to discard the part.
+18. Repeat this tuning with each of your feeders.
 
 ## Next Steps
 
