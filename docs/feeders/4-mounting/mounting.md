@@ -76,9 +76,23 @@ Most spools for 12mm tape are wider than the LumenPnP Feeder, so they cannot be 
 6. Release the lever arm. You may want to double-check that the spring finger contacts on the feeder are properly touching the metal pads on the slot until you get the hang of installing them.
 
 !!! danger "Powering on the LumenPnP with feeders already mounted"
-      In some circumstances, you might find that plugging in your LumenPnP with many feeders already mounted prevents the machine from booting. This is a known issue due to high inrush current, but there's a method to get a successful boot. Before powering on your machine, lift a few feeders up and away from the rail slightly, just so that they disconnect from power as shown in the image below. Then plug in your LumenPnP. If you get a successful boot, you can drop the feeders down onto the rail fully. If you don't, lift a few more feeders and repeat.
+      With old power supplies, you might find that plugging in your LumenPnP with many feeders already mounted prevents the machine from booting. This is a known issue due to high inrush current. If you're experiencing this issue, please [contact support](https://www.opulo.io/pages/contact-support) and we'll send you an updated power supply that solves this issue. All v3.1+ machines shipped with this updated power supply.
+
+      If you'd like to continue without the new power supply, use the following method. Before powering on your machine, lift a few feeders up and away from the rail slightly, just so that they disconnect from power as shown in the image below. Then plug in your LumenPnP. If you get a successful boot, you can drop the feeders down onto the rail fully. If you don't, lift a few more feeders and repeat.
 
       ![Dropping the Feeder into place](img/lift2.jpg)
+
+!!! tip "Mounting inline with other feeders"
+
+      If you're mounting a feeder inline with many others, reach under the spools to depress the lever arm, push forward to tip the feeder, then depress the lever from the top and remove.
+
+      ![removing feeder inline](img/feeder-inline-remove-lever-low.gif){: style="width:80%;margin-left:0%;"}
+
+      The feeder can also be mounted and removed without depressing the lever arm. If you're having trouble reaching the lever arm, try mounting and removing the feeder by pushing or pulling the spool arm as shown below.
+
+      ![](img/feeder-inline-insert-low.gif){: style="width:80%;margin-left:0%;"}
+
+      ![](img/feeder-inline-remove-low.gif){: style="width:80%;margin-left:0%;"}
 
 ## Next Steps
 

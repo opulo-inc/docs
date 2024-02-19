@@ -1,6 +1,6 @@
 # Overview
 
-This is the Opulo Feeder:
+This is the LumenPnP Feeder:
 
 ![hero image of feeder8](img/8mm-v110-no-arm-no-glow.png)
 
@@ -37,20 +37,24 @@ If you'd like to add a third staging plate, you can fit 25x 8mm or 12mm Feeders 
 
 === "Feeding"
     Tapping the forward button will make the feeder feed forward 4mm. Tapping the backward button makes the feeder feed backwards 4mm.
+
     ![gif of tapping forward button, feeding tape](img/feed-forward.gif)
     ![gif of tapping backwards button, feeding tape](img/feed-backward.gif)
 
 === "Driving Tape"
     Pressing and holding the forward or backward button will drive the tape at full speed.
+
     ![press hold forward, tape drives forward](img/drive-forward.gif)
     ![press hold backward, tape drives backward](img/drive-backward.gif)
 
 === "Changing Drive Mode"
     Pressing and holding both buttons at the same time will make the light flash blue. This toggles the feeder from driving tape with long presses, to peeling film with long presses. Press and hold both buttons again to switch back.
+
     ![press and hold both buttons, blue light](img/change-modes.gif)
 
 === "Peeling Film"
     When in Peel mode, press and hold the forward and backwards buttons to peel or unpeel film.
+
     ![press hold forward, peel film](img/peel.gif)
     ![press hold backward, unpeel film](img/unpeel.gif)
 
