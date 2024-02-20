@@ -39,6 +39,7 @@ theme:
         - content.tabs.link
         - content.action.edit
         - toc.integrate
+        - content.code.copy
 
     palette: 
         #primary: custom
