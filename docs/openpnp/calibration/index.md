@@ -17,17 +17,6 @@ OpenPnP has a feature called `Issues and Solutions` that tries to identify calib
 
 If you'd like to start from scratch with your setup, community member Qwertymodo has posted a [very helpful video](https://www.youtube.com/watch?v=vuFalyzcCZA) showing his process of doing calibration on his machine from scratch. This video is now a bit out of date, but can be helpful in seeing how OpenPnP operates.
 
-## Walkthrough video
-
-This walkthrough video shows the entire calibration process starting from stock configuration. We highly recommend watching the video along with walking through the docs on this site when setting up your machine.
-
-!!! danger "This video is for an old version"
-        This video is for an older version of the LumenPnP. **Always reference the docs before the video**. The video is just meant to serve as a visual aid, but the written documentation should always be ground truth.
-
-<div class="video-wrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CSnczX6VJ7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
 ## **What you'll need**
 
 - A LumenPnP with the mechanical and electrical build completed.
