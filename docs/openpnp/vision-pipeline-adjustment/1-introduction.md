@@ -9,14 +9,16 @@ description: >
 
 Computer vision is one of the most important and complicated elements of a pick and place machine. Vision is used in four main places:
 
-1. [Finding your homing fiducial (Top Camera)](2-homing-fiducial-pipeline.md)
-2. [Finding the fiducial marks on your PCBs (Top Camera)](3-pcb-fiducial-pipeline.md)
-3. [Finding the tips of your nozzles (Bottom Camera)](4-nozzle-calibration-pipeline.md)
-4. [Confirming and orienting the parts the machine has picked up. (Bottom Camera)](5-part-identification-pipeline.md)
+- [Finding your homing fiducial (Top Camera)](2-homing-fiducial-pipeline.md)
+- [Finding the fiducial marks on your PCBs (Top Camera)](3-pcb-fiducial-pipeline.md)
+- [Finding the tips of your nozzles (Bottom Camera)](4-nozzle-calibration-pipeline.md)
+- [Confirming and orienting the parts the machine has picked up. (Bottom Camera)](5-part-identification-pipeline.md)
 
 We've included good settings in the [default machine configuration](/openpnp/calibration/1-import-config) to get you started, but you will likely need to tune the settings for your exact needs depending on the ambient light in your room, the settings you used when configuring your cameras, and the kinds of components you're placing.
 
-**For more information, we highly recommend reading the [OpenPnP documentation](https://github.com/openpnp/openpnp/wiki/Bottom-Vision).**
+## Ambient light
+
+Because machine vision is heavily dependent on lighting, we recommend maintaining consistent lighting in the room where you're operating the LumenPnP. Changing the lighting in the room can require readjusting your vision settings. 
 
 ## Computer Vision Basics
 
@@ -43,16 +45,3 @@ The pipeline editing view has several sections and features:
 5. Pin Image. This lets you keep the results of the currently selected stage on on main view, even if you select another stage. Use this to pin a debugging stage so that you can quickly see the results of changes to a stage you're editing.
 
 ![Pipeline Editing View](images/pipeline-organization.png)
-
-## Editing Strategy
-
-Here's a brief example of the typical iterative workflow for adjusting your vision pipelines:
-
-1. Open the Pipeline.
-2. Check the current output and identify the problem that is causing feature detection to fail.
-3. Adjust the stage settings to change the pipeline output.
-4. Review the new pipeline output.
-5. Return to step 2 as necessary.
-
-!!! Note
-    Anytime the lighting conditions around your LumenPnP or your camera settings change you may need to adjust your vision pipelines.
