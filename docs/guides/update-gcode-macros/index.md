@@ -46,6 +46,7 @@ Version 3.1 and upward of the LumenPnP uses linear rails, so speeds and currents
 
     ```gcode
     M204 T2000 ; Sets acceleration for homing
+    G28 X ; Home X in case of first boot
     G28 ; Home all axes
     ```
 
@@ -114,6 +115,8 @@ Version 3.0.0 - 3.0.5 of the LumenPnP uses the REV04 motherboard, which uses int
 1. Paste the following Gcode into the text field:
 
     ```gcode
+    M204 T2000 ; Sets acceleration for homing
+    G28 X ; Home X in case of first boot
     G28 ; Home all axes
     ```
 

@@ -49,8 +49,13 @@ Now that you've loaded a component into the feeder, we'll fine-tune the feeder's
 
 16. Use the "Pick" button to test picking the component. If it isn't picked appropriately you may need to tune the Part Offset, especially the Z-axis.
     ![Pick Component Button](img/pick-component.png)
+
 17. Click the `Discard` button under `Machine Controls -> Special` to discard the part.
+
 18. Repeat this tuning with each of your feeders.
+
+!!! danger "Maintaining feeder position"
+    After setting your pick position, we recommend keeping the feeders and machine powered. Powering down the machine can result in a slight change in position which could require resetting the pick position.
 
 ## Next Steps
 
