@@ -33,17 +33,15 @@ If you find that there's something unclear in this documentation, please [submit
 
 ### Assembly Video
 
-We have an instructional video that walks you through the process of assembling your LumenPnP. This video is just to help visualize how parts go together; you'll still need this guide to complete your build. **This video is for an older version of the machine**, with V-Slot rollers instead of linear rails. There will definitely be differences between what you see in the video and what you have in your box. Reference the written documentation before the video if you're unsure.
+We have an instructional video that walks you through the process of assembling your LumenPnP. This video is just to help visualize how parts go together; you'll still need this guide to complete your build. **This video is for an older version of the machine**, with V-Slot rollers instead of linear rails. There will definitely be differences between what you see in the video and what you have in your box. **Always reference the written documentation before the video.**
 
-You can find the video embedded below:
+!!! danger "Keep In Mind"
+    Don't worry if something in the video doesn't look exactly like what you have in the box. We’re constantly tuning and tweaking things to make them better and easier to use, so you might find things look slightly different.
 
 <!-- markdownlint-disable MD033 -->
 <div class="video-wrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ugixh3Ngr5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-!!! danger "Keep In Mind"
-        Don't worry if something in the video doesn't look exactly like what you have in the box. We’re constantly tuning and tweaking things to make them better and easier to use, so you might find things look slightly different.
 
 ### Timing
 
@@ -52,7 +50,7 @@ Expect assembly to take about **50 minutes**.
 ### You'll Need
 
 * Your packaged Semi-Assembled LumenPnP
-* A clear tabletop for assembly
+* A clear, smooth, flat tabletop for assembly
 * A computer
 * The ability to plug in three high-bandwidth USB-A ports - Your computer will need to communicate with both the data stream that controls the machine, along with two webcam feeds. It might be possible to handle all of this data through one USB port on your computer with an external USB hub, but you might find you need to plug into a few different ports on your computer, depending on the hardware you have.
 
