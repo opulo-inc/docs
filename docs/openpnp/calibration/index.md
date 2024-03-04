@@ -20,6 +20,7 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 ## **What you'll need**
 
 - A LumenPnP with the mechanical and electrical build completed.
+- A smooth, flat surface to operate your machine on. The LumenPnP should **always** be used on a flat surface.
 - Read through the [OpenPnP Wiki](https://github.com/openpnp/openpnp/wiki/User-Manual). It'll be super important to getting going with your machine. **These docs are meant to augment the OpenPnP docs, not replace them.**
 
 ## **Next Steps**

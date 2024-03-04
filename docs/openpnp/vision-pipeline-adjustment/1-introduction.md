@@ -18,7 +18,7 @@ We've included good settings in the [default machine configuration](/openpnp/cal
 
 ## Ambient light
 
-Because machine vision is heavily dependent on lighting, we recommend maintaining consistent lighting in the room where you're operating the LumenPnP. Changing the lighting in the room can require readjusting your vision settings. 
+Because machine vision is heavily dependent on lighting, we recommend maintaining consistent lighting in the room where you're operating the LumenPnP. Changing the lighting in the room can require readjusting your vision settings.
 
 ## Computer Vision Basics
 
