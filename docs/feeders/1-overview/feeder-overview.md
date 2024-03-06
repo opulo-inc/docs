@@ -36,7 +36,7 @@ If you'd like to add a third staging plate, you can fit 25x 8mm or 12mm Feeders 
 ## Feeder Buttons
 
 === "Feeding"
-    Tapping the forward button will make the feeder feed forward 4mm. Tapping the backward button makes the feeder feed backwards 4mm.
+    Tapping the forward button will make the feeder feed forward 2mm. Tapping the backward button makes the feeder feed backwards 4mm.
 
     ![gif of tapping forward button, feeding tape](img/feed-forward.gif)
     ![gif of tapping backwards button, feeding tape](img/feed-backward.gif)
@@ -48,7 +48,7 @@ If you'd like to add a third staging plate, you can fit 25x 8mm or 12mm Feeders 
     ![press hold backward, tape drives backward](img/drive-backward.gif)
 
 === "Changing Drive Mode"
-    Pressing and holding both buttons at the same time will make the light flash blue. This toggles the feeder from driving tape with long presses, to peeling film with long presses. Press and hold both buttons again to switch back.
+    Pressing and holding both buttons at the same time will toggle between driving tape with long presses, and peeling film with long presses. This is indicated by the inicator light flashing: gold for peel mode, and blue for drive mode.
 
     ![press and hold both buttons, blue light](img/change-modes.gif)
 
