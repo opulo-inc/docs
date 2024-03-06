@@ -96,6 +96,31 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
 4.  Wait until the software prompts that the firmware has been downloaded successfully. You may disconnect the programmer from the feeder.
     ![programming complete pop up](img/programming-complete.png)
 
+## Checking Current Firmware Version
+
+1. Press and hold both buttons on the feeder.
+1. Wait until the light comes on, indicating that you've [switched modes](/feeders/1-overview/feeder-overview/#__tabbed_2_3).
+1. Keep the buttons held until the light goes off.
+
+    !!! danger "Firmware versions v1.0.2 and before"
+        Earlier versions of firmware will never turn off the light. If the light stays on, you're running v1.0.2 or earlier. [Update your firmware](#update-feeder-firmware-optional) to get the latest features and bugfixes.
+
+1. Watch the indicator light and take note of its color, and how many times it flashes.
+
+    <figure markdown>
+        ![checking feeder firmware version](img/version-check.gif)
+        <figcaption>The gif above shows the version being checked for a feeder running `v1.0.3`. Both buttons are held and the mode light comes on. The mode light goes off, and the indicator light flashes green once.</figcaption>
+    </figure>
+
+1. Once the indicator light is done flashing, release the buttons.
+1. Use the table below to identify the firmware version loaded on your feeder.
+
+| Firmware Version      | Flashes            |            |
+| :-------------------- | :----------------- | :--------- |
+| Any Beta Firmware     | One Red Flash      | 🟥         |
+| v1.0.2 or previous    | No Flash           |            |
+| v1.0.3                | One Green Flash    | 🟩         |
+
 ## Next Steps
 
 Next, you'll [mount your feeders.](../4-mounting/mounting.md)
