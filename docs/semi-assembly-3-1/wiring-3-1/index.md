@@ -75,8 +75,14 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 18. Plug the cable labeled `LM` into the left motor on the X gantry. This cable is inserted from the bottom.
   ![Left motor cable plugged in](images/plug-lh.JPG)
 
-19. Tighten left Z gantry zip tie to secure the LM cable in place
+19. Tighten left Z gantry zip tie to secure the LM cable in place.
+
     ![Zip tie securing left motor cable](images/zip-lh-4.JPG)
+
+    !!! danger "Warning"
+        Be sure to secure the zip tie **around the thicker black insulation of the cable**. Failure to do so will cause undue stress on the cabling, which can result in the cable failing. Be sure to secure the zip tie securly around the black insulation, and not around the four individual wires within.
+
+        ![incorrect cable mounting](images/incorrect-cable.jpg)
 
 20. Find the cable labeled `RM` and secure it in place using the zip tie on the right side of the X gantry.
     ![Secured RM cable with a zip tie](images/zip-rh-2.JPG)
@@ -86,8 +92,14 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 22. Plug the cable labeled `RM` into the right motor on the X gantry. This cable is inserted from the bottom.
     ![Plug in Right motor cable](images/plug-rh.JPG)
   
-23. Tighten right Z gantry zip tie to secure the RM cable in place
+23. Tighten the right Z gantry zip tie to secure the RM cable in place.
+
     ![Right motor cable secured with zip tie](images/zip-rh-3.JPG)
+
+    !!! danger "Warning"
+        Be sure to secure the zip tie **around the thicker black insulation of the cable**. Failure to do so will cause undue stress on the cabling, which can result in the cable failing. Be sure to secure the zip tie securly around the black insulation, and not around the four individual wires within.
+
+        ![incorrect cable mounting](images/incorrect-cable.jpg)
 
 24. Trim the excess zip ties from the LM and RM cables.
     ![Clipping zip ties](images/lh-trim.JPG)
@@ -103,14 +115,14 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 26. Your X gantry should look like the image below.
   ![Final X gantry](images/finished-head.JPG)
 
-27. Take the print attached to the wire exiting from the middle of the cable chain, and align it with the back of the X motor as shown in the image below.
+1.  Take the print attached to the wire exiting from the middle of the cable chain, and align it with the back of the X motor as shown in the image below.
   ![Aligning X motor cable](images/x-umbilical.JPG)
 
-28. Using two M5x16mm socket head screws, mount the X cable guide to the Y gantry. Then plug the cable into the X motor.
+1.  Using two M5x16mm socket head screws, mount the X cable guide to the Y gantry. Then plug the cable into the X motor.
   ![Screwing in X motor cable mount](images/x-umbilical-mount.JPG)
   ![Attaching x motor cable](images/x-motor-plug.JPG)
 
-29. Your machine should look like the image below. Lift it up onto its back legs for final wiring steps.
+1.  Your machine should look like the image below. Lift it up onto its back legs for final wiring steps.
   ![Overview photo](images/overview-down.JPG)
   ![LumenPnP lifted up](images/overview-up.JPG)
 
