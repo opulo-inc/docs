@@ -48,6 +48,9 @@ The easiest way to update your LumenPnP's motherboard is to use a precompiled bi
 4.  Click the green `Connect` button to connect to the motherboard.
     ![Connect to Motherboard button](images/connect-to-motherboard.png)
 
+4. Delete all the flash on the chip by clicking the "Full Chip Erase" button.
+    ![full chip earse button](images/full-chip-erase.png)
+
 5.  Click the `Browse` button to browse for the binary you downloaded earlier.
     ![Click the browse button](images/browse-for-binary.png)
 
