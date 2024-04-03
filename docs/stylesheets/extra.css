@@ -63,3 +63,7 @@ a.md-nav__link:hover {
   height: 100%;
   border: 0;
 }
+
+.mermaid {
+  text-align: center;
+}

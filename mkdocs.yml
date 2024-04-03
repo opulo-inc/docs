@@ -178,6 +178,7 @@ nav:
     
 
     - Misc:
+        - Machine Versions and Upgrades: misc/versions-upgrades/index.md
         - Backlash Compensation: misc/backlash-compensation/index.md
         - Automatic Toolchanger: misc/auto-toolchanger/index.md
         - Standalone Feeder Control: misc/standalone-feeders/index.md
