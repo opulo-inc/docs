@@ -29,7 +29,8 @@ theme:
     name: material
     logo: img/opulo.png
     favicon: img/favicon.ico
-    font: false
+    font:
+        text: Roboto
     features:
         - navigation.footer
         - navigation.tracking
@@ -67,7 +68,7 @@ plugins:
         cards_layout_options:
             background_color: "#111111" 
             color: "#daa520"
-            font_family: Roboto 
+            
     - neoteroi.mkdocsoad:
         use_pymdownx: true
 extra:
