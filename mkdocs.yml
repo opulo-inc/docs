@@ -29,8 +29,7 @@ theme:
     name: material
     logo: img/opulo.png
     favicon: img/favicon.ico
-    font:
-        text: Roboto
+    font: false
     features:
         - navigation.footer
         - navigation.tracking
@@ -176,7 +175,6 @@ nav:
         - Collecting OpenPnP Logs: guides/openpnp-logs/index.md
         - Updating OpenPnP GCode Macros: guides/update-gcode-macros/index.md
     
-
     - Misc:
         - Machine Versions and Upgrades: misc/versions-upgrades/index.md
         - Backlash Compensation: misc/backlash-compensation/index.md
@@ -184,7 +182,6 @@ nav:
         - Standalone Feeder Control: misc/standalone-feeders/index.md
 
     - FAQ: faq/index.md
-        
 
     - Design for LumenPnP: design-for-lumenpnp/index.md
 
