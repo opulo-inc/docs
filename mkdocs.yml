@@ -68,7 +68,7 @@ plugins:
         cards_layout_options:
             background_color: "#111111" 
             color: "#daa520"
-            
+            font_family: Roboto 
     - neoteroi.mkdocsoad:
         use_pymdownx: true
 extra:
