@@ -142,9 +142,17 @@ flowchart TD
 
 Community member Stargirl developed a linear rail modification for the v2 LumenPnP. Many folks in the community have performed this mod with great success. If you'd like to upgrade your v2 to linear rails, use [Stargirl's instructions on Printables](https://www.printables.com/model/235331-lumen-pnp-linear-rail-mods).
 
+Once you've added the linear rails, you can greatly increase the speed of your machine. Do this by changing the "Max. Feed Rate [/min]" in your GcodeDriver's Driver Settings in OpenPnP to `35000`.
+
+![](img/update-speed.png)
+
 ### Stargirl's v3 Linear Rail Mod
 
 Community member Stargirl developed a linear rail modification for the v3.0 LumenPnP. Many folks in the community have performed this mod with great success. If you'd like to upgrade your v3.0 to linear rails, use [Stargirl's instructions on Printables](https://www.printables.com/model/278803-lumenpnp-linear-rail-mods-v3).
+
+Once you've added the linear rails, you can greatly increase the speed of your machine. Do this by changing the "Max. Feed Rate [/min]" in your GcodeDriver's Driver Settings in OpenPnP to `35000`.
+
+![](img/update-speed.png)
 
 ### New Z Gantries
 
