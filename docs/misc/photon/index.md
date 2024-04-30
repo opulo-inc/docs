@@ -4,11 +4,13 @@ description: Photon protocol definition and examples
 
 # Photon Protocol
 
-The Photon Protocol is designed to facilitate ids and uuids
+The Photon Protocol is designed to facilitate **two different types of addressing**. In Photon, you can address a feeder using both its UUID (the hard-coded name of that unique device) and its slot (the physical location on the machine). This is so that we can:
+
+- keep track of what part is loaded into a feeder even when it's moved to a different location
+- find a feeder regardless of where it's loaded on the machine
+- easily discover new feeders when they're loaded onto the machine
 
 Only the host may initiate communication. Every Photon interaction is comprised of two packets: one packet from the host with a command and optional payload, and a response from a feeder with a status and optional payload of information.
-
-broadcast and unicast
 
 The following is the basic Photon packet structure.
 
@@ -16,13 +18,49 @@ The following is the basic Photon packet structure.
 
 The packet is made up of two parts: the header and the payload. The header contains exactly five bytes: "to" address, "from" address, packet ID, payload length, and the CRC. The payload *always* has at least one byte, either a command ID or a status. The payload can have optional further bytes.
 
-``` mermaid
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
+The host can send either broadcast and unicast commands. Unicast commands are meant for only the device in a certain slot. Broadcast commands are effectively speaking to the whole bus, and are instead addressing based on UUID, initialization status, or potentially other factors.
+
+**Example Feeder Init and Feed**
+
+```mermaid
+sequenceDiagram
+    participant H as Host
+    participant F as Slot 5
+    H->>F: Hey, is a feeder at slot 5? (Command ID: 0x01)
+    activate F
+    F->>H: Yes, my name is {UUID}
+    deactivate F
+    H->>F: Cool, please initalize. (Command ID: 0x02)
+    activate F
+    F->>H: I am initialized.
+    deactivate F
+    H->>F: Please feed 4mm. (Command ID: 0x04)
+    activate F
+    F->>H: On it!
+    H->>F: Are you done yet? (Command ID: 0x06)
+    Note right of H: Delay
+    H->>F: Are you done yet? (Command ID: 0x06)
+    Note right of H: Delay
+    H->>F: Are you done yet? (Command ID: 0x06)
+    F->>H: I'm done, and I fed successfully.
+    deactivate F
+```
+
+**Example Bus Scan**
+
+```mermaid
+sequenceDiagram
+    participant H as Host
+    participant F as Slot N
+    loop
+        H->>F: Hey, is a feeder at slot N? (Command ID: 0x01)
+        F->>H: Yes, my name is {UUID}
+        H->>F: Cool, please initalize (Command ID: 0x02)
+        activate F
+        F->>H: I am initialized.
+        deactivate F
+        Note right of H: N++
+    end
 ```
 
 ## Header Bytes
@@ -37,7 +75,7 @@ Valid values are anywhere between `0x00` and `0xFF`. Address `0x00` is reserved 
 
 This byte indicates which address the packet is coming from. This address value is equivalent to the slot addresses.
 
-Valid values are anywhere between `0x00` and `0xFF`. Address `0x00` is reserved for the host.
+Valid values are anywhere between `0x00` and `0xFF`. Address `0x00` is reserved for the host, and `0xFF` should not be used.
 
 ### Packet ID
 
@@ -101,17 +139,17 @@ The rest of the payload is used for any other information that needs to be sent,
 
 | Command Code | Name                     |
 | ------  | ----------------------------- |
-| `0x01`  | Get Feeder ID                 |
-| `0x02`  | Initialize Feeder             |
-| `0x03`  | Get Version                   |
-| `0x04`  | Move Feed Forward             |
-| `0x05`  | Move Feed Backward            |
-| `0x06`  | Move Feed Status              |
-| `0xbf`  | Vendor Options                |
-| `0xc0`  | Get Feeder Address            |
-| `0xc1`  | Identify Feeder               |
-| `0xc2`  | Program Feeder Floor          |
-| `0xc3`  | Uninitialized Feeders Respond |
+| `0x01`  | `GET_FEEDER_ID`                 |
+| `0x02`  | `INITIALIZE_FEEDER`             |
+| `0x03`  | `GET_VERSION`                   |
+| `0x04`  | `MOVE_FEED_FORWARD`             |
+| `0x05`  | `MOVE_FEED_BACKWARD`            |
+| `0x06`  | `MOVE_FEED_STATUS`              |
+| `0xbf`  | `VENDOR_OPTIONS`                |
+| `0xc0`  | `GET_FEEDER_ADDRESS`            |
+| `0xc1`  | `IDENTIFY_FEEDER`               |
+| `0xc2`  | `PROGRAM_FEEDER_FLOOR`          |
+| `0xc3`  | `UNINITIALIZED_FEEDERS_RESPOND` |
 
 | Status Code | Name                    |
 | ----------- | ----------------------  |
@@ -126,9 +164,7 @@ The rest of the payload is used for any other information that needs to be sent,
 
 ## Command IDs
 
-Each Command ID the host can send a feeder have certain payload requirements, and certain expected responses from the feeder.
-
-### GET_ID `0x01`
+### GET_FEEDER_ID `0x01`
 
 | Send                 |              |
 | -------------------- | ------------ |
@@ -146,6 +182,7 @@ GET_ID is used to get a feeder's UUID knowing only it's slot address. GET_ID is 
 #### Example
 
 Send:
+
 ```
 [02] [00] [07] [01] [C0] [01]
  |    |    |    |    |    |
@@ -163,8 +200,9 @@ To Address
 ```
 
 Receive:
+
 ```
-[00] [02] [07] [13] [D7] [00] [02] [48] ..... [37] [30]
+[00] [02] [07] [0D] [D7] [00] [02] [48] ..... [37] [30]
  |    |    |    |    |    |    |_____________________|
  |    |    |    |    |    |    | 
  |    |    |    |    |    |    | 
@@ -183,5 +221,63 @@ Receive:
 To Address
 ```
 
+### INITIALIZE_FEEDER `0x02`
 
+| Send                 |              |
+| -------------------- | ------------ |
+| Requires Initialized | NO           |
+| Addressing           | UNICAST      |
+| Payload              | 12 Byte UUID |
 
+| Receive              |              |         |
+| -------------------- | ------------ | ------- |
+| Status               | `OK`         | 0       |
+| Payload              | 12 Byte UUID | 1-13    |
+
+INITIALIZE_FEEDER is used to initialize a feeder and allow it to perform other functions.
+
+#### Example
+
+Send:
+
+```
+[02] [00] [07] [0D] [C0] [02] [02] [48] ..... [37] [30]
+ |    |    |    |    |    |    |_____________________|
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |   12 Byte Feeder UUID
+ |    |    |    |    |    |    
+ |    |    |    |    |   Sending Command 0x02 means INITIALIZE
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 13    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+To Address
+```
+
+Receive:
+
+```
+[00] [02] [07] [0D] [D7] [00] [02] [48] ..... [37] [30]
+ |    |    |    |    |    |    |_____________________|
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |   12 Byte Feeder UUID
+ |    |    |    |    |    |
+ |    |    |    |    |   Status 0x00 means OK
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 13    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+To Address
+```
