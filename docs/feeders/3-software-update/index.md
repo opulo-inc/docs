@@ -12,8 +12,11 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
 
 !!! danger "Mac Users"
     Because of [a bug with how OpenPnP signs their releases](https://github.com/openpnp/openpnp/issues/1559), Mac users with ARM processors might experience a crash on boot. You can still run OpenPnP by navigating to `Applications -> OpenPnP` and right clicking on the OpenPnP app and selecting "Show Package Contents":
+
     ![Show package contents on the openpnp app](img/opnp-show-package-contents.png)
+
     Then navigate to `Contents -> MacOS` and double click on `JavaApplicationStub` to run OpenPnP.
+    
     ![clicking on javaapplicationstub](img/boot-opnp-java-stub.png)
 
 ## Update LumenPnP Firmware

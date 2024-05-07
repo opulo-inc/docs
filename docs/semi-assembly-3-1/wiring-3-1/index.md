@@ -82,6 +82,9 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 
 1.  Tighten left Z gantry zip tie to secure the LM cable in place.
 
+    !!! danger "This zip tie is not optional"
+        This zip tie provides critical strain relief for the cable harness and motor connector. Failure to do so will result in excessive wear on your cable harness. Please be sure that you install it.
+
     ![Zip tie securing left motor cable](images/zip-lh-4.JPG)
 
     !!! danger "Warning"
@@ -102,6 +105,9 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
     ![Plug in Right motor cable](images/plug-rh.JPG)
   
 5.  Tighten the right Z gantry zip tie to secure the RM cable in place.
+
+    !!! danger "This zip tie is not optional"
+        This zip tie provides critical strain relief for the cable harness and motor connector. Failure to do so will result in excessive wear on your cable harness. Please be sure that you install it.
 
     ![Right motor cable secured with zip tie](images/zip-rh-3.JPG)
 

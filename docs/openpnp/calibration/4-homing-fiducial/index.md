@@ -2,7 +2,10 @@
 
 Now we can set up the datum board. The datum board is a reference point for everything else you'll do with the machine. The center dot of the datum board will be the most important calibration point for the machine. It'll be used to fine-tune the LumenPnP's XY position after homing to account for any errors in the limit switches. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=705).
 
-1. Run a rough home routine by pressing the Home button (shaped like a house). The machine will move to the X, Y, and Z zero positions.
+1. Before pressing the homing button (now and every time in the future), make sure that your nozzles are level. OpenPnP is not capable of keeping track of previous homing status per axis and making movement decisions based on that, so it's required to make sure the heads are level first to make sure there is no collision.
+  ![level nozzles](images/level-nozzles.JPG)
+
+2. Run a rough home routine by pressing the Home button (shaped like a house). The machine will move to the X, Y, and Z zero positions.
   ![Home the machine](images/Connect-and-home.png)
 
 !!! danger "If your machine does not move fully to the front left"
@@ -13,7 +16,7 @@ Now we can set up the datum board. The datum board is a reference point for ever
 1. Navigate to  `Machine Setup > Heads > ReferenceHead H1`.
   ![Reviewing the ReferenceHead options](images/Select-Reference-Head-H1.png)
   
-1. In the Configuration tab, change the `Homing Method` to `ResetToFiducialLocation`. This will let us adjust Homing Fiducial settings. 
+1. In the Configuration tab, change the `Homing Method` to `ResetToFiducialLocation`. This will let us adjust Homing Fiducial settings.
   ![Switch to using the homing fiducial](images/Select-ResetToFiducialLocation.png)
 
 1. Click `Apply` to save this change.
