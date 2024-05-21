@@ -162,7 +162,7 @@ The rest of the payload is used for any other information that needs to be sent,
 |    `0xFE`   | `TIMEOUT`               |
 |    `0xFF`   | `UNKNOWN`               |
 
-## Command IDs
+## Unicast Commands
 
 ### GET_FEEDER_ID `0x01`
 
@@ -172,7 +172,7 @@ The rest of the payload is used for any other information that needs to be sent,
 | Addressing           | UNICAST      |
 | Payload              | NONE         |
 
-| Receive              |              |         |
+| Receive              | Value              | Position |
 | -------------------- | ------------ | ------- |
 | Status               | `OK`         | 0       |
 | Payload              | 12 Byte UUID | 1-13    |
@@ -229,9 +229,9 @@ To Address
 | Addressing           | UNICAST      |
 | Payload              | 12 Byte UUID |
 
-| Receive              |              |         |
+| Receive              | Value              | Position |
 | -------------------- | ------------ | ------- |
-| Status               | `OK`         | 0       |
+| Status               | `OK` (0x00), `WRONG_FEEDER_ID` (0x01)   | 0       |
 | Payload              | 12 Byte UUID | 1-13    |
 
 INITIALIZE_FEEDER is used to initialize a feeder and allow it to perform other functions.
@@ -274,6 +274,563 @@ Receive:
  |    |    |    |   Checksum   
  |    |    |    |  
  |    |    |   Payload Length of 13    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+To Address
+```
+
+### GET_VERSION `0x03`
+
+| Send                 |              |
+| -------------------- | ------------ |
+| Requires Initialized | YES           |
+| Addressing           | UNICAST      |
+| Payload              | None |
+
+| Receive              | Value              | Position |
+| -------------------- | ------------ | ------- |
+| Status               | `OK`         | 0       |
+| Payload              | Version      | 1    |
+
+GET_VERSION is used to get the version of the protocol used by a specific feeder.
+
+#### Example
+
+Send:
+
+```
+[02] [00] [07] [01] [C0] [03]
+ |    |    |    |    |    |   
+ |    |    |    |    |    |     
+ |    |    |    |    |    |    
+ |    |    |    |    |    |   
+ |    |    |    |    |    |    
+ |    |    |    |    |   Sending Command 0x02 means GET_VERSION
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 1    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+To Address
+```
+
+Receive:
+
+```
+[00] [02] [07] [02] [D7] [00] [01] 
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |   Protocol Version
+ |    |    |    |    |    |
+ |    |    |    |    |   Status 0x00 means OK
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 2    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+To Address
+```
+
+### MOVE_FEED_FORWARD `0x04`
+
+| Send                 |              |
+| -------------------- | ------------ |
+| Requires Initialized | YES           |
+| Addressing           | UNICAST      |
+| Payload              | Distance to move (in tenths of a mm) |
+
+| Receive              | Value              | Position |
+| -------------------- | ------------ | ------- |
+| Status               | `OK`         | 0       |
+| Payload              | Expected Feed Time in milliseconds | 1-2 (Big Endian)   |
+
+MOVE_FEED_FORWARD is used to command a feeder to feed a certain distance forward. It returns the expected amount of time it will take to perform the feed.
+
+#### Example
+
+Send:
+
+```
+[02] [00] [07] [02] [C0] [04] [28] 
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |   Distance (in tenths of a mm)
+ |    |    |    |    |    |    
+ |    |    |    |    |   Sending Command 0x04 means MOVE_FEED_FORWARD
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 2    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+To Address
+```
+
+Receive:
+
+```
+[00] [02] [07] [03] [D7] [00] [02] [48]
+ |    |    |    |    |    |    |____|
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |   2 Byte Expected Time to Feed
+ |    |    |    |    |    |
+ |    |    |    |    |   Status 0x00 means OK
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 3    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+To Address
+```
+
+### MOVE_FEED_BACKWARD `0x05`
+
+| Send                 |              |
+| -------------------- | ------------ |
+| Requires Initialized | YES           |
+| Addressing           | UNICAST      |
+| Payload              | Distance to move (in tenths of a mm) |
+
+| Receive              | Value              | Position |
+| -------------------- | ------------ | ------- |
+| Status               | `OK`         | 0       |
+| Payload              | Expected Feed Time in milliseconds | 1-2 (Big Endian)   |
+
+MOVE_FEED_BACKWARD is used to command a feeder to feed a certain distance backwards. It returns the expected amount of time it will take to perform the feed.
+
+#### Example
+
+Send:
+
+```
+[02] [00] [07] [02] [C0] [05] [28] 
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |   Distance (in tenths of a mm)
+ |    |    |    |    |    |    
+ |    |    |    |    |   Sending Command 0x05 means MOVE_FEED_BACKWARD
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 2    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+To Address
+```
+
+Receive:
+
+```
+[00] [02] [07] [0D] [D7] [00] [02] [48]
+ |    |    |    |    |    |    |____|
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |   2 Byte Expected Time to Feed
+ |    |    |    |    |    |
+ |    |    |    |    |   Status 0x00 means OK
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 3    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+To Address
+```
+
+### MOVE_FEED_STATUS `0x06`
+
+| Send                 |              |
+| -------------------- | ------------ |
+| Requires Initialized | YES          |
+| Addressing           | UNICAST      |
+| Payload              | None |
+
+| Receive              | Value              | Position |
+| -------------------- | ------------ | ------- |
+| Status               | `OK` (0x00), `COULDNT_REACH` (0x01) | 0       |
+| Payload              | None |     |
+
+MOVE_FEED_STATUS is used to determine if a feeder has finished a feed command, and get the status of the last feed. Feeding is blocking, so this command is intended to be used to probe a feeder until a response is received with the last feed's status.
+
+#### Example
+
+Send:
+
+```
+[02] [00] [07] [01] [C0] [06] 
+ |    |    |    |    |    |   
+ |    |    |    |    |    |    
+ |    |    |    |    |    |   
+ |    |    |    |    |    |   
+ |    |    |    |    |    |    
+ |    |    |    |    |   Sending Command 0x06 means MOVE_FEED_STATUS
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 1    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+To Address
+```
+
+Receive:
+
+```
+[00] [02] [07] [01] [D7] [00] 
+ |    |    |    |    |    |   
+ |    |    |    |    |    |   
+ |    |    |    |    |    |     
+ |    |    |    |    |    |   
+ |    |    |    |    |    |
+ |    |    |    |    |   Status 0x00 means OK
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 1    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+To Address
+```
+
+### VENDOR_OPTIONS `0xBF`
+
+| Send                 |              |
+| -------------------- | ------------ |
+| Requires Initialized | YES           |
+| Addressing           | UNICAST      |
+| Payload              | Implementation Dependent |
+
+| Receive              | Value              | Position |
+| -------------------- | ------------ | ------- |
+| Status               | Implementation Dependent        | 0       |
+| Payload              | Implementation Dependent |     |
+
+VENDOR_OPTIONS is a section used to add vendor-specific commands behind a dedicated command ID. The specifics of this command depend on your implementation.
+
+#### Example
+
+Send:
+
+```
+[02] [00] [07] [0D] [C0] [BF] [02] [48] ..... [37] [30]
+ |    |    |    |    |    |    |_____________________|
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |   Vendor-Specific Payload
+ |    |    |    |    |    |    
+ |    |    |    |    |   Sending Command 0xBF means VENDOR_OPTIONS
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length is dependent on implementation    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+To Address
+```
+
+Receive:
+
+```
+[00] [02] [07] [0D] [D7] [3F] [02] [48] ..... [37] [30]
+ |    |    |    |    |    |    |_____________________|
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |   Vendor-Specific Payload
+ |    |    |    |    |    |
+ |    |    |    |    |   Vendor-Specific Status
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length dependent on implementation    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+To Address
+```
+
+## Broadcast Commands
+
+### GET_FEEDER_ADDRESS `0xC0`
+
+| Send                 |              |
+| -------------------- | ------------ |
+| Requires Initialized | NO           |
+| Addressing           | BROADCAST      |
+| Payload              | 12 Byte UUID |
+
+| Receive              | Value              | Position |
+| -------------------- | ------------ | ------- |
+| Status               | `OK`         | 0       |
+| Payload              | None |    |
+
+GET_FEEDER_ADDRESS is used to get the slot address of a feeder based on its UUID. If a feeder's UUID matches the one sent in the payload, it will respond with status `OK` (0x00) with a "From" address that indicates its slot.
+
+#### Example
+
+Send:
+
+```
+[FF] [00] [07] [0D] [C0] [C0] [02] [48] ..... [37] [30]
+ |    |    |    |    |    |    |_____________________|
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |   12 Byte Feeder UUID
+ |    |    |    |    |    |    
+ |    |    |    |    |   Sending Command 0xC0 means GET_FEEDER_ADDRESS
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 13    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+Broadcast Address
+```
+
+Receive:
+
+```
+[00] [02] [07] [01] [D7] [00] 
+ |    |    |    |    |    |   
+ |    |    |    |    |    |     
+ |    |    |    |    |    |    
+ |    |    |    |    |    |   
+ |    |    |    |    |    |
+ |    |    |    |    |   Status 0x00 means OK
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 1    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+To Address
+```
+
+### IDENTIFY_FEEDER `0xC1`
+
+| Send                 |              |
+| -------------------- | ------------ |
+| Requires Initialized | NO           |
+| Addressing           | BROADCAST    |
+| Payload              | 12 Byte UUID |
+
+| Receive              | Value              | Position |
+| -------------------- | ------------ | ------- |
+| Status               | `OK`         | 0       |
+| Payload              | None         |         |
+
+IDENTIFY_FEEDER is used to cause the feeder to do some action that makes it identifiable by a user. For example, the LumenPnP feeders flash their main indicator light when they receive this command.
+
+#### Example
+
+Send:
+
+```
+[FF] [00] [07] [0D] [C0] [C1] [02] [48] ..... [37] [30]
+ |    |    |    |    |    |    |_____________________|
+ |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |   12 Byte Feeder UUID
+ |    |    |    |    |    |    
+ |    |    |    |    |   Sending Command 0xC1 means IDENTIFY_FEEDER
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 13    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+Broadcast Address
+```
+
+Receive:
+
+```
+[00] [02] [07] [01] [D7] [00]
+ |    |    |    |    |    |   
+ |    |    |    |    |    |     
+ |    |    |    |    |    |     
+ |    |    |    |    |    |  
+ |    |    |    |    |    |
+ |    |    |    |    |   Status 0x00 means OK
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 1   
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+To Address
+```
+
+### PROGRAM_FEEDER_FLOOR `0xC2`
+
+| Send                 |              |
+| -------------------- | ------------ |
+| Requires Initialized | NO           |
+| Addressing           | BROADCAST    |
+| Payload              | 12 Byte UUID |
+|                      | Address to Program |
+
+| Receive              | Value              | Position |
+| -------------------- | ------------------ | ------- |
+| Status               | `OK`               | 0       |
+| Payload              | None       |     |
+
+
+PROGRAM_FEEDER_FLOOR is used to program an address into a slot. This should only need to be done once per slot.
+
+#### Example
+
+Send:
+
+```
+[FF] [00] [07] [0E] [C0] [C2] [02] [48] ..... [37] [30] [05]
+ |    |    |    |    |    |    |_____________________|   |
+ |    |    |    |    |    |    |                         |
+ |    |    |    |    |    |    |                         |
+ |    |    |    |    |    |    |                        Address to program
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |   12 Byte Feeder UUID
+ |    |    |    |    |    |    
+ |    |    |    |    |   Sending Command 0xC2 means PROGRAM_FEEDER_FLOOR
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 14    
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+Broadcast Address
+```
+
+Receive:
+
+```
+[00] [05] [07] [01] [D7] [00]
+ |    |    |    |    |    |   
+ |    |    |    |    |    |     
+ |    |    |    |    |    |     
+ |    |    |    |    |    |  
+ |    |    |    |    |    |
+ |    |    |    |    |   Status 0x00 means OK
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 1   
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address (which was just programmed)
+ |  
+To Address
+```
+
+### UNINITIALIZED_FEEDERS_RESPOND `0xC3`
+
+| Send                 |              |
+| -------------------- | ------------ |
+| Requires Initialized | NO           |
+| Addressing           | BROADCAST    |
+| Payload              | None         |
+
+| Receive              | Value              | Position |
+| -------------------- | ------------------ | ------- |
+| Status               | `OK`               | 0       |
+| Payload              | 12 Byte UUID       | 1-12    |
+
+UNINITIALIZED_FEEDERS_RESPOND causes all feeders on the bus that are not initialized to respond. This command should only be used when it's known that there's only one uninitialized feeder on the bus. This command is mainly used for helping in slot programming utilies.
+
+#### Example
+
+Send:
+
+```
+[FF] [00] [07] [0E] [C0] [C3] 
+ |    |    |    |    |    |   
+ |    |    |    |    |    |   
+ |    |    |    |    |    |   
+ |    |    |    |    |    |   
+ |    |    |    |    |    |   
+ |    |    |    |    |    |  
+ |    |    |    |    |    |    
+ |    |    |    |    |   Sending Command 0xC3 means UNINITIALIZED_FEEDERS_RESPOND
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 1  
+ |    |    |  
+ |    |   Packet ID
+ |    |  
+ |   From Address
+ |  
+Broadcast Address
+```
+
+Receive:
+
+```
+[00] [02] [07] [0D] [D7] [00] [02] [48] ..... [37] [30]
+ |    |    |    |    |    |    |_____________________|
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |   12 Byte Feeder UUID
+ |    |    |    |    |    |
+ |    |    |    |    |   Status 0x00 means OK
+ |    |    |    |    |
+ |    |    |    |   Checksum   
+ |    |    |    |  
+ |    |    |   Payload Length of 13   
  |    |    |  
  |    |   Packet ID
  |    |  
