@@ -181,6 +181,7 @@ nav:
         - Backlash Compensation: misc/backlash-compensation/index.md
         - Automatic Toolchanger: misc/auto-toolchanger/index.md
         - Standalone Feeder Control: misc/standalone-feeders/index.md
+        - Photon Protocol: misc/photon/index.md
 
     - FAQ: faq/index.md
 
