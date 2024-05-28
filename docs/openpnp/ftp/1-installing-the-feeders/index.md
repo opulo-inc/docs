@@ -166,21 +166,27 @@ The FTP PCB has two different types of components that need to be placed: resist
 6. Remove the tape cover from the feeder.
 7. Click the "Pick" icon button to pick a component from the feeder. If the component is picked up properly, your Z-height is correct. If not, you should:
   ![Pick from the feeder](images/Pick-from-feeder.png)
+
     1. Lower the Z height of the feeder by `0.1mm`
     2. Press Apply to save the change
     3. Home the machine
     4. Try picking a component from the feeder again.
 
-8. After you've successfully picked a component, in the machine `Machine Controls` pane, switch to the `Special` Tab.
+    !!! warning "Effective Safe Z Coordinate Error"
+        If you get an "Effective Safe Z coordinate" error as shown below, be sure that you've set the height of the part you're picking in the "Parts" tab.
+        
+        ![](images/effectivesafezerror.png)
+
+1. After you've successfully picked a component, in the machine `Machine Controls` pane, switch to the `Special` Tab.
   ![Switch to the special tab](images/Special-tab.png)
 
-9. Recycle the component you've successfully picked up
+1. Recycle the component you've successfully picked up
   ![Recycle the component you've picked up](images/Recycle-component.png)
 
-10. Copy the final Z height, select the other feeder, paste it for the other feeder, and press `Apply`
+1.  Copy the final Z height, select the other feeder, paste it for the other feeder, and press `Apply`
   ![Apply the z height from the first feeder to the second one](images/Copy-and-paste-z-height.png)
 
-11. Test picking a component from the other feeder
+1.  Test picking a component from the other feeder
   ![Pick from the feeder](images/Pick-from-feeder.png)
 
 ## Next Steps
