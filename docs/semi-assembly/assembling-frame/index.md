@@ -112,17 +112,13 @@ In this step, you will assemble the main frame of the machine.
   ![](images/y-gantries-back.JPG)
   ![](images/x-gantry-mounted.JPG)
 
-23. Attach the X gantry to the Y gantries
+23. Attach the X gantry to the Y gantries by tightening four M5x25 socket head screws found in your hardware bag into the two holes on each side of the X gantry assembly.
+  ![](images/mount-x-gantry-1.JPG)
+  ![](images/mount-x-gantry-2.JPG)
+  ![](images/mount-x-gantry-3.JPG)
+  ![](images/mount-x-gantry-4.JPG)
 
-    === "`v3.1.0` and Later"
-        Attach the X gantry to the Y gantries by tightening four M5x25 socket head screws found in your hardware bag into the two holes on each side of the X gantry assembly.
-        ![](images/mount-x-gantry-1.JPG)
-        ![](images/mount-x-gantry-2.JPG)
-        ![](images/mount-x-gantry-3.JPG)
-        ![](images/mount-x-gantry-4.JPG)
 
-    === "`3.0.5` and Earlier"
-        TODO: DO SOMETHING!!!!  
 
 24. Your machine frame is done!
   ![](images/frame-complete.JPG)
