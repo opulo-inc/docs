@@ -118,8 +118,6 @@ In this step, you will assemble the main frame of the machine.
   ![](images/mount-x-gantry-3.JPG)
   ![](images/mount-x-gantry-4.JPG)
 
-
-
 24. Your machine frame is done!
   ![](images/frame-complete.JPG)
 

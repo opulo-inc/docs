@@ -28,6 +28,12 @@ When designing the board, be sure to keep the PCB's dimensions under **225mm x 4
 
 It's also important to make sure that your PCB has [fiducials](https://en.wikipedia.org/wiki/Fiducial_marker#Printed_circuit_boards) to allow the LumenPnP to find your PCB in space for accurate population. We recommend using a **1mm diameter fiducial with at least a 2mm diameter soldermask opening**. This gives OpenPnP an easier time identifying the fiducial with machine vision. In KiCAD, this footprint is called `Fiducial:Fiducial_1mm_Mask2mm`.
 
+We recommend adding **three fiducials** located at the **outside edges** of your board, ideally as far away from each other as possible. The farther at the edges you place them, the more accurate the fiducial calibration should be.
+
+### Panelizing
+
+Putting multiple boards into a **panel** of boards can help increase efficiency when using a pick and place machine by reducing the number of times you need to run a job. [KiKit](https://github.com/yaqwsx/KiKit) is a great tool for automatically panelizing your KiCAD PCBs, but it's possible to do it [manually as well](https://youtu.be/JMQgIM53zQM?si=e1Lw3Dab6k9kS6iE&t=6).
+
 ### Double Sided PCBs
 
 The LumenPnP is capable of populating double-sided PCBs. There are a few things to consider if you'd like to do this:
