@@ -1,6 +1,6 @@
 # Part Identification Pipeline
 
-Part identification is the most difficult pipeline to tune because different parts will need special consideration. Even just for the normal components used in the [FTP](../ftp/index.md), you need to be sure that the picked components are distinguishable from the tip of your nozzle. Depending on how well you set your [camera exposure](/openpnp/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration/) and other settings, you may need to go back and adjust them, which would require that you re-tune your [nozzle tip pipeline](4-nozzle-calibration-pipeline.md) to account for the changes.
+Part identification is the most difficult pipeline to tune because it needs to accomodate every part in your job.
 
 If you receive an error after picking a component about `No Results Found`, you need to tune your vision pipeline.
 
@@ -9,28 +9,36 @@ If you receive an error after picking a component about `No Results Found`, you 
 ## Setup nozzle
 
 1. Install a nozzle tip on your first toolhead. In this example we'll work with the N045 nozzle tip.
-  ![Install the N045 nozzle](images/N045-nozzle-installed.png)
+  
+    ![Install the N045 nozzle](images/N045-nozzle-installed.png)
 
 2. Click on the `Machine Setup` tab in the top right pane.
-  ![Machine setup tab](images/Machine-Setup-Tab-3.png)
+  
+    ![Machine setup tab](images/Machine-Setup-Tab-3.png)
 
-3. Click on the "Expand" checkbox to open all of the features about your machine.
-  ![Expanding the Machine Config options](images/Expand-Checkbox-3.png)
+3. Click on the "Expand" checkbox.
+  
+    ![Expanding the Machine Config options](images/Expand-Checkbox-3.png)
 
 4. Click on `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`
-  ![Open the Nozzle N1 settings](images/select-nozzle-N1.png)
+  
+    ![Open the Nozzle N1 settings](images/select-nozzle-N1.png)
 
 5. Click on the `Nozzle Tips` tab.
-  ![Nozzle Tip Tab](images/nozzle-tip-tab.png)
+  
+    ![Nozzle Tip Tab](images/nozzle-tip-tab.png)
 
 6. Click the `Loaded?` checkbox for the nozzle you're tuning.
-  ![Loaded Checkbox](images/loaded-checkbox.png)
+  
+    ![Loaded Checkbox](images/loaded-checkbox.png)
 
 7. Click on `Nozzle Tips > ReferenceNozzleTip N045` (or whichever nozzle you're working with).
-  ![Nozzle Tips Section](images/nozzle-tips-section.png)
+  
+    ![Nozzle Tips Section](images/nozzle-tips-section.png)
 
 8. Check that the correct toolhead is selected in the `Machine Controls Tab`.
-  ![Activate Toolhead](images/select-correct-nozzle.png)
+  
+    ![Activate Toolhead](images/select-correct-nozzle.png)
 
 ## Pick component
 
@@ -40,20 +48,31 @@ To tune a part identification pipeline, you'll need to pick up the component you
 
 ## Open the pipeline
 
-1. Go to the `Packages` tab.
-  ![Packages Tab](images/packages-tab.png)
+1. With a part now picked and on the nozzle, go to the `Packages` tab.
+  
+    ![Packages Tab](images/packages-tab.png)
 
-2. Select the package for the component you'll be tuning. For example, the `R_0603_1608Metric` package used in the [Test Placement](../ftp/1-installing-the-feeders/index.md).
-  ![Select Component Package](images/select-component-package.png)
+2. Select the package for the component you'll be tuning.
+  
+    ![Select Component Package](images/select-component-package.png)
 
 3. Check that your nozzle tip is compatible with the package you'll be working with.
-  ![Check your nozzle tip is compatible](images/confirm-nozzle-tip-compatible.png)
+  
+    ![Check your nozzle tip is compatible](images/confirm-nozzle-tip-compatible.png)
 
 4. Click on the `Bottom Vision Settings Tab`.
-  ![Bottom Vision Settings Tab](images/bottom-part-vision-settings.png)
+  
+    ![Bottom Vision Settings Tab](images/bottom-part-vision-settings.png)
 
 5. Click on the Pipeline: `Edit` button.
-  ![Pipeline Edit Button](images/edit-package-pipeline.png)
+  
+    ![Pipeline Edit Button](images/edit-package-pipeline.png)
+
+    !!! warning "Affects all other parts"
+
+        Directly clicking the "Edit" button will adjust the vision pipeline for **every other package assigned to this pipeline**. If you'd like to adjust the pipeline for **just** this package, click on the "Specialize for `PACKAGE_NAME`" button before editing. 
+
+1. Allow OpenPnP to jog the nozzle to the bottom camera position.
 
 ## Edit the pipeline
 
@@ -88,7 +107,8 @@ To tune a part identification pipeline, you'll need to pick up the component you
           ![pipeline clipboard button](images/pipeline-paste-button.png)
 
 1. Click on the `DrawRotatedRects` stage.
-  ![Click on the DrawRotatedRects stage](images/draw-rotated-rects-stage.png)
+  
+    ![Click on the DrawRotatedRects stage](images/draw-rotated-rects-stage.png)
 
 1. The main view will show a rectangle around the silhouette of your component.
     1. If the rectangle is not precise around your component, then we need to more clearly distinguish the real component from the toolhead.
@@ -108,17 +128,8 @@ The `Threshold` stage is the most commonly edited stage. It turns the camera ima
 ![Threshold Comparison](images/part-threshold-comparison.png)
 
 ## Test part identification
-
-1. Go to the `Packages` tab.
-  ![Packages Tab](images/packages-tab.png)
-
-2. Select the package for the component you'll be tuning. For example, the `R_0603_1608Metric` package used in the [Test Placement](../ftp/1-installing-the-feeders/index.md).
-  ![Select Component Package](images/select-component-package.png)
-
-3. Click on the `Bottom Vision Settings Tab`.
-  ![Bottom Vision Settings Tab](images/bottom-part-vision-settings.png)
   
-4. Click on the `Test Alignment` button.
+1. To see how your adjusted pipeline performs, click on the `Test Alignment` button.
   ![Alt text](test-alignment-button.png)
 
 !!! NOTE

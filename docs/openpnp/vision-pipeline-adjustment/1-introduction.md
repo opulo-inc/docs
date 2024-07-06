@@ -6,15 +6,16 @@ type: docs
 description: >
   Vision Pipeline Adjustment
 ---
+# Vision Pipeline Adjustment
 
 Computer vision is one of the most important and complicated elements of a pick and place machine. Vision is used in four main places:
 
-- [Finding your homing fiducial (Top Camera)](2-homing-fiducial-pipeline.md)
-- [Finding the fiducial marks on your PCBs (Top Camera)](3-pcb-fiducial-pipeline.md)
-- [Finding the tips of your nozzles (Bottom Camera)](4-nozzle-calibration-pipeline.md)
-- [Confirming and orienting the parts the machine has picked up. (Bottom Camera)](5-part-identification-pipeline.md)
+- [Finding the homing fiducial (Top Camera)](2-homing-fiducial-pipeline.md)
+- [Finding PCB fiducials (Top Camera)](3-pcb-fiducial-pipeline.md)
+- [Calibrating Nozzle Tips (Bottom Camera)](4-nozzle-calibration-pipeline.md)
+- [Calibrating component position (Bottom Camera)](5-part-identification-pipeline.md)
 
-We've included good settings in the [default machine configuration](/openpnp/calibration/1-import-config) to get you started, but you will likely need to tune the settings for your exact needs depending on the ambient light in your room, the settings you used when configuring your cameras, and the kinds of components you're placing.
+The default settings in the provided configuration files work well, but depending on your lighting conditions, component geometry, or other factors, you might need to adjust them.
 
 ## Ambient light
 

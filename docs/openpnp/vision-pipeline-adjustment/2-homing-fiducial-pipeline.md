@@ -1,38 +1,48 @@
 # Homing Fiducials Pipeline
 
-If you receive the error message `FIDUCIAL-HOME no matches found` when homing your LumenPnP, you likely need to adjust your homing vision pipeline. Follow the steps below for a guide on the iterative approach. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=1210).
-![Cant't find homing fiducial](images/Cant-find-homing-fiducial.png)
+If you receive the error message `FIDUCIAL-HOME no matches found` when homing your LumenPnP, you likely need to adjust your homing vision pipeline. Follow the steps below for a guide on the iterative approach.
+
+  ![Cant't find homing fiducial](images/Cant-find-homing-fiducial.png)
 
 ## Open the Pipeline
 
 1. Click on the `Machine Setup` tab in the top right pane.
-  ![Machine Setup Tab](images/Machine-Setup-Tab-3.png)
+  
+    ![Machine Setup Tab](images/Machine-Setup-Tab-3.png)
 
 2. Click on the "Expand" checkbox if necessary.
-  ![Expanding the Machine Config options](images/Expand-Checkbox-3.png)
+  
+    ![Expanding the Machine Config options](images/Expand-Checkbox-3.png)
 
 3. Click on `Heads > ReferenceHead H1`.
-  ![Reviewing the ReferenceHead options](images/Select-Reference-Head-H1.png)
+  
+    ![Reviewing the ReferenceHead options](images/Select-Reference-Head-H1.png)
 
 4. Click on the "Position Camera over location" icon button show below. This will move the top camera to where your datum board is mounted.
-  ![Position top camera over homing fiducial](images/Position-camera-over-homing-fiducial.png)
+  
+    ![Position top camera over homing fiducial](images/Position-camera-over-homing-fiducial.png)
 
 5. Confirm that your top camera is positioned exactly over the homing fiducial.
-  ![Center the homing fiducial in the camera view](images/Homing-fiducial-centered.png)
+  
+    ![Center the homing fiducial in the camera view](images/Homing-fiducial-centered.png)
 
 6. Adjust the exposure of your camera image as mentioned in the [Homing Fiducial Section](../calibration/4-homing-fiducial/index.md#double-check-camera-exposure).
 
 7. Go to the `Vision` tab.
-  ![Switch to the vision tab](images/vision-tab.png)
+  
+    ![Switch to the vision tab](images/vision-tab.png)
 
 8. Select on `FiducialVision` from the type dropdown.
-  ![Select fiducial vision](images/fiducial-vision-dropdown.png)
+  
+    ![Select fiducial vision](images/fiducial-vision-dropdown.png)
 
 9. Select `- Default Machine Fiducial Locator -` from the pipeline list.
-  ![Select the default pipeline](images/select-default-fiducial-vision.png)
+  
+    ![Select the default pipeline](images/select-default-fiducial-vision.png)
 
 10. Click on Pipeline `Edit`.
-  ![Edit the pipeline](images/edit-pipeline.png)
+  
+    ![Edit the pipeline](images/edit-pipeline.png)
 
 ## Edit the pipeline
 
@@ -79,7 +89,7 @@ This window is where you can edit the vision pipeline to detect your homing fidu
 ### Circle detection method
 
 !!! warning "Legacy Method"
-    If your vision pipeline doesnt look like this, you have a more recent version of the homing fiducial pipeline. This section is for older versions. If your pipeline looks like this, we recommend you switch to the [circle symmetry method](#circular-symmetry-method).
+    If your pipeline looks like this, we recommend you switch to the [circle symmetry method](#circular-symmetry-method).
 
 1. Click on the `DrawCircles` stage.
   ![Click on the DrawCircles stage](images/draw-circles-stage.png)
