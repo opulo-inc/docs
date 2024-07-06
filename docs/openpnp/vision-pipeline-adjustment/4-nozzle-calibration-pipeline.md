@@ -2,45 +2,58 @@
 # Nozzle Calibration Pipeline
 
 If you receive the error message `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` when homing your LumenPnP, you likely need to adjust your nozzle tip calibration pipeline. Follow the steps below for a guide on the iterative approach. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=1875).
-![Cant't find nozzle tip](images/too-many-vision-redirects.png)
+
+  ![Cant't find nozzle tip](images/too-many-vision-redirects.png)
 
 ## Position Nozzle Over Bottom Camera
 
 1. Install a nozzle tip on your first toolhead. In this example we'll work with the N045 nozzle tip.
-  ![Install the N045 nozzle](images/N045-nozzle-installed.png)
+  
+    ![Install the N045 nozzle](images/N045-nozzle-installed.png)
 
 2. Click on the `Machine Setup` tab in the top right pane.
-  ![Machine setup tab](images/Machine-Setup-Tab-3.png)
+  
+    ![Machine setup tab](images/Machine-Setup-Tab-3.png)
 
-3. Click on the "Expand" checkbox to open all of the features about your machine.
-  ![Expanding the Machine Config options](images/Expand-Checkbox-3.png)
+3. Click on the "Expand" checkbox.
+  
+    ![Expanding the Machine Config options](images/Expand-Checkbox-3.png)
 
 4. Click on `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`
-  ![Open the Nozzle N1 settings](images/select-nozzle-N1.png)
+  
+    ![Open the Nozzle N1 settings](images/select-nozzle-N1.png)
 
 5. Click on the `Nozzle Tips` tab.
-  ![Nozzle Tip Tab](images/nozzle-tip-tab.png)
+  
+    ![Nozzle Tip Tab](images/nozzle-tip-tab.png)
 
-6. Click the `Loaded?` checkbox for the nozzle you're tuning.
-  ![Loaded Checkbox](images/loaded-checkbox.png)
+1. Click the `Loaded?` checkbox for the nozzle you're tuning.
+  
+    ![Loaded Checkbox](images/loaded-checkbox.png)
 
-7. Click on `Nozzle Tips > ReferenceNozzleTip N045` (or whichever nozzle you're tuning).
-  ![Nozzle Tips Section](images/nozzle-tips-section.png)
+1. Click on `Nozzle Tips > ReferenceNozzleTip N045` (or whichever nozzle you're tuning).
+  
+    ![Nozzle Tips Section](images/nozzle-tips-section.png)
 
-8. Click on the `Calibration` tab.
-  ![Calibration Tab](images/nozzle-tip-calibration.png)
+1. Click on the `Calibration` tab.
+  
+    ![Calibration Tab](images/nozzle-tip-calibration.png)
 
-9. Home your LumenPnP to make sure your toolhead's location is accurate. Ignore the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error if it appears.
-  ![Home the machine](images/home-during-bottom-cam-pos.png)
+1. Home your LumenPnP to make sure your toolhead's location is accurate. Ignore the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error if it appears.
+  
+    ![Home the machine](images/home-during-bottom-cam-pos.png)
 
-10. Select the `Nozzle: N1 - N045 (Head:H1)` from the machine controls dropdown. (Or whichever tip you're tuning)
-  ![Select nozzle from machine control dropdown](images/select-n1-machine-control-bottom.png)
+1.  Select the `Nozzle: N1 - N045 (Head:H1)` from the machine controls dropdown (or whichever tip you're tuning).
+  
+    ![Select nozzle from machine control dropdown](images/select-n1-machine-control-bottom.png)
 
-11. Click the "Position tool over location" button to bring the left nozzle above the bottom camera.
-  ![Position over Bottom Camera](images/position-over-bottom-camera.png)
+1.  Click the "Position tool over location" button to bring the left nozzle above the bottom camera.
+  
+    ![Position over Bottom Camera](images/position-over-bottom-camera.png)
 
-12. Click on Pipeline `Edit`.
-![Edit Pipeline Button](images/edit-tip-pipeline.png)
+1.  Click on Pipeline `Edit`.
+
+    ![Edit Pipeline Button](images/edit-tip-pipeline.png)
 
 ## Edit the pipeline
 
@@ -135,16 +148,20 @@ If you receive the error message `Nozzle tip calibration: not enough results fro
 
     1. There's only one property to adjust in this stage called `diameter`. A diameter too large could allow other potential circles into the image and could be erroneously detected by the pipeline. A diameter too small could potentially clip the actual homing fiducial if the first position capture isn't perfectly centered on the homing fiducial.
 
-    ![](images/tip-circular-symmetry-mask.png)
+      ![](images/tip-circular-symmetry-mask.png)
 
 2. Check the output of the `cir` stage of the pipeline. This stage looks for circular symmetry in the image, and outputs a colored heatmap showing where it thinks the center of circular symmetry is. The goal is to have this stage put the brightest, most yellow point of the heatmap in the center of the homing fiducial. Click on this stage to view its settings.
 
     1. You can tell if OpenPnP is detecting circular symmetry if there's line of text similar to `Circle [x=639.5, y=361.5, diameter=78.0, score=133.06040353848752]` in the field in the bottom right of the window. This means OpenPnP found circular symmetry, and it tells you about the circle that it found. If there isn't a row here, it means the pipeline isn't detecting a circle. Try increasing the `maxDiameter` and decreasing the `minDiameter` until you get a circle.
-    ![](images/tip-circular-symmetry-pipeline.png)
+    
+      ![](images/tip-circular-symmetry-pipeline.png)
 
     2. If the pipeline isn't finding a circle, you might need to adjust the max diameter circle that the pipeline can find. Increase the value for `maxDiameter` to tell the stage to accept found circles of a larger diameter.
 
 ### Detect Circles Method (Legacy)
+
+!!! warning "Legacy Method"
+    If your pipeline looks like this, we recommend you switch to the [circle symmetry method](#circular-symmetry-method).
 
 #### Stage Breakdown
 
