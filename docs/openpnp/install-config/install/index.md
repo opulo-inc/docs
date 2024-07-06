@@ -1,4 +1,4 @@
-# OpenPnP Install
+# OpenPnP Install ([Video Guide](https://youtu.be/DUt_FHVjnwY?si=ELaEfcwpfC9QmYKF&t=44))
 
 OpenPnP is a piece of open source software designed to control pick and place machines. It supports a wide range of machines, with many features found in high-end commercial software. You can find out more about it [here](https://openpnp.org/).
 
