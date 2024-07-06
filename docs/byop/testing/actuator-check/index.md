@@ -67,7 +67,7 @@ M107 P1               ;turn off the valve
     Interposer Boards Installed
     ![Interposer Boards Installed](images/IMG_1325.JPG)
 
-    If you bought a LumenPnP kit that did not come with interposer boards installed and would like to upgrade them, please [reach out to our support team](https://opulo.io/pages/contact-support) and we'll get some sent out to you as soon as possible. We have an [installation guide](https://docs.opulo.io/guides/rev3-vac-interposer/) to guide you through the process.
+    If you bought a LumenPnP kit that did not come with interposer boards installed and would like to upgrade them, please [reach out to our support team](https://opulo.io/pages/contact-support) and we'll get some sent out to you as soon as possible at only the cost of shipping (even if you're out of warranty). We have an [installation guide](https://docs.opulo.io/guides/rev3-vac-interposer/) to guide you through the process.
 
     If you have the interposer boards installed for your vacuum sensors, change the `G4` to a `G2` in your "sensor read" GCode command. This changes the gain of the sensor to a more usable value. The difference in value should now be about 2000.
 
@@ -78,7 +78,7 @@ M3426 G4 C2 I1 A110  ;read vac 2 value
 ```
 
 !!! danger "In Case Of Error"
-          These commands are meant for a newer version of Marlin that adds support for multiple ADCs. If you're getting an error in response from Marlin, [update the firmware to the latest version](/guides/update-firmware/).
+    These commands are meant for a newer version of Marlin that adds support for multiple ADCs. If you're getting an error in response from Marlin, [update the firmware to the latest version](/guides/update-firmware/).
 
 ## Next steps
 

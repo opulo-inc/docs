@@ -1,75 +1,77 @@
 # OpenPnP Setup
 
-Both the feeder slots, and the Photon Feeders themselves have unique identifiers that OpenPnP will use to keep your components organized easily. Even if you rearrange your feeders, OpenPnP will remember which component was loaded onto it. And since OpenPnP will remember where each feeder slot is located, the picking location will already be set for you!
+Now you'll scan for and configure your LumenPnP Feeders in OpenPnP.
 
-If you'd like to start with a fresh config, you can download the `openpnp-config-vX.X.X.zip` file from the [most recent release](https://github.com/opulo-inc/lumenpnp/releases).
+!!! warning "v2 LumenPnP Users"
+      If you have a v2 LumenPnP, the default Z height of your nozzle could cause a collision with feeders. We recommend printing and installing updated Z-gantries (shown below) and nozzle rack, which moves your nozzles up 13mm preventing a collision. You can download them [here](https://github.com/opulo-inc/lumenpnp/releases/download/v3.0.4/LumenPnP-STLs-v3.0.4.zip).
 
-To get started the first time with your new feeders, you'll need to attach them all to your LumenPnP, and let OpenPnP scan them to save their information.
+      ![nozzles shifted up 13mm](img/nozzles-shifted.jpg)
 
-## Preliminary Steps
+## Scanning for Feeders
 
-If you have a v2 LumenPnP, the default Z height of your nozzle could cause a collision with feeders. We recommend printing and installing updated Z-gantries (shown below) and nozzle rack, which moves your nozzles up 13mm preventing a collision. You can download them [here](https://github.com/opulo-inc/lumenpnp/releases/download/v3.0.4/LumenPnP-STLs-v3.0.4.zip).
-   ![nozzles shifted up 13mm](img/nozzles-shifted.jpg)
-If you have a single nozzle setup, you can also just edit the Safe Zone values in your Z axis configuration in OpenPnP to prevent a collision.
-   ![axis limit settings in openpnp](img/axis-limits.png)
+1. Click on the `Feeders` tab.
+  
+   ![Machine Setup Tab](img/feeders-tab.png)
 
-Also, double-check your GcodeDriver settings. Make sure to uncheck both `Remove Comments?` and `Compress Gcode?`, and confirm you're using the typical `GcodeDriver` instead of a `GcodeAsyncDriver`.
-![Compress Gcode setting](img/dont-compress-gcode.png)
+1. Click the plus to add a new feeder,
+   
+      ![Add a feeder](img/add-feeder.png)
 
-## Finding Feeders
+2. Select `PhotonFeeder`.
+   
+      ![adding new photon feeder](img/add-photon-feeder.png)
 
-You'll need to do these steps whenever you have brand new feeders.
+3. Mount all of your new feeders to your machine. They can be in any slot.
+   
+      ![mounting feeder](../4-mounting/img/mounting.gif)
 
-1. Power on your LumenPnP and connect to it.
+4. Click the `Search` button. OpenPnP will now scan for any feeders attached. This will take a minute, and you'll see the progress showing which slots have feeders in them.
+   
+      ![search button for photon feeders](img/search-for-feeders.png)
+   
+      ![searching for photon feeders](img/feeder-search-progress.png)
 
-2. Click on the `Feeders` tab.
-  ![Machine Setup Tab](img/feeders-tab.png)
-
-3. Click the plus to add a new feeder,
-   ![Add a feeder](img/add-feeder.png)
-
-4. Select `PhotonFeeder`.
-   ![adding new photon feeder](img/add-photon-feeder.png)
-
-5. Mount all of your new feeders to your machine. They can be in any slot.
-   ![mounting feeder](../4-mounting/img/mounting.gif)
-
-6. Click the `Search` button. OpenPnP will now scan for any feeders attached. This will take a minute, and you'll see the progress showing which slots have feeders in them.
-   ![search button for photon feeders](img/search-for-feeders.png)
-   ![searching for photon feeders](img/feeder-search-progress.png)
-
-7. Once the search has completed, each physically inserted feeder will be listed. The name will be the feeder's unique ID number, followed by the slot it's in. In this example, there are two feeders inserted.
-   ![auto populated feeders](img/identified-feeders.png)
+5. Once the search has completed, each physically inserted feeder will be listed. The name will be the feeder's unique ID number, followed by the slot it's in. In this example, there are two feeders inserted.
+   
+      ![auto populated feeders](img/identified-feeders.png)
 
 !!! danger "Before Saving"
-      Because of a [bug in OpenPnP](https://github.com/openpnp/openpnp/issues/1557), a part *must* be assigned to ever feeder before saving your machine configuration. If you want to save your config before finishing setup, we recommend assigning the `FIDUCIAL-HOME` part to any feeders that do not yet have a part assigned.
+      Because of a [bug in OpenPnP](https://github.com/openpnp/openpnp/issues/1557), a part *must* be assigned to every feeder before saving your machine configuration. If you want to save your config before finishing setup, we recommend assigning the `FIDUCIAL-HOME` part to any feeders that do not yet have a part assigned.
 
-## Test Setup
+## Configure
 
-To finish setting up your new feeders, we need to mark where they're located on your LumenPnP. As mentioned above, the locations of each feeder slot will be saved and reused, so you shouldn't need to do this every time you remove and replace a feeder.
+Now that your feeders have been discovered in OpenPnP, you'll need to configure each one.
 
-1. Home your LumenPnP
-   ![Home the machine](img/home-machine.png)
+1. Home your LumenPnP.
+   
+      ![Home the machine](img/home-machine.png)
 
 2. Use the machine controls to position your camera over the feeder. This will be more precise later after you load components into the feeder, so a rough estimate is fine for now.
-   ![Move the machine](img/move-machine.png)
+   
+      ![Move the machine](img/move-machine.png)
 
 3. Save the rough feeder position with the "Capture Camera Location" button. For now, save it for both the `Slot Location` and `Part Offset`.
-   ![Capture Camera Location](img/rough-camera-location.png)
+   
+      ![Capture Camera Location](img/rough-camera-location.png)
 
 4. Click `Apply` to save your changes.
-   ![Apply Feeder Changes](img/apply-changes.png)
+   
+      ![Apply Feeder Changes](img/apply-changes.png)
 
 5. Select a part from the drop down menu.
-   ![Assign a part to your feeder](img/assign-part.png)
+   
+      ![Assign a part to your feeder](img/assign-part.png)
 
-6. Press the feed button to test that the feeder responds to the LumenPnP.
-   ![Test Feed](img/feed-button.png)
-
-## Next Steps
-
-You'll need to fine-tune the position of the pick location—especially the z-height. This is easiest with [tape loaded into the feeder](../6-loading-tape/loading-tape.md).
+6. Press the feed button and listen for the feeder's motors moving.
+   
+      ![Test Feed](img/feed-button.png)
 
 !!! tip "Moving Feeders"
       If you remove a feeder from your machine and reinsert it into another feeder slot, you'll need to tell OpenPnP to update its location. To do this, click the `Find` button in that feeder's menu. You'll see the slot number update to reflect the feeder's new slot, and its location will update accordingly!
       ![Find new feeder location](img/find-feeder-slot.png)
+
+## Next Steps
+
+Before you can try picking parts from the feeder, you need to [load some component tape](../6-loading-tape/loading-tape.md).
+
+

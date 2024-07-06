@@ -66,4 +66,4 @@ If you find that there's something unclear in this documentation, please [submit
 
 ## Next steps
 
-Before using the feeders, you'll [install the slot harness](../2-install-harness/index.md).
+Before using the feeders, you'll [install the slot harness](/feeders/2-install-harness/). If your machine already has slots installed, you can jump ahead to [mounting feeders](/feeders/4-mounting/mounting/).

@@ -78,10 +78,6 @@ Most spools for 12mm tape are wider than the LumenPnP Feeder, so they cannot be 
 !!! danger "Powering on the LumenPnP with feeders already mounted"
       With old power supplies, you might find that plugging in your LumenPnP with many feeders already mounted prevents the machine from booting. This is a known issue due to high inrush current. If you're experiencing this issue, please [contact support](https://www.opulo.io/pages/contact-support) and we'll send you an updated power supply that solves this issue. All v3.1+ machines shipped with this updated power supply.
 
-      If you'd like to continue without the new power supply, use the following method. Before powering on your machine, lift a few feeders up and away from the rail slightly, just so that they disconnect from power as shown in the image below. Then plug in your LumenPnP. If you get a successful boot, you can drop the feeders down onto the rail fully. If you don't, lift a few more feeders and repeat.
-
-      ![Dropping the Feeder into place](img/lift2.jpg)
-
 !!! tip "Mounting inline with other feeders"
 
       If you're mounting a feeder inline with many others, reach under the spools to depress the lever arm, push forward to tip the feeder, then depress the lever from the top and remove.

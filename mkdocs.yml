@@ -30,7 +30,7 @@ theme:
     logo: img/opulo.png
     favicon: img/favicon.ico
     font:
-        text: Roboto
+        text: Figtree
     features:
         - navigation.footer
         - navigation.tracking
@@ -128,10 +128,11 @@ nav:
                 - Actuator Check: byop/testing/actuator-check/index.md
                 - Feedback: byop/testing/feedback/index.md
     - OpenPnP:
-        - Install: openpnp/install/index.md
-        - Import Configuration: openpnp/import-config/index.md
+        - Install and Config: 
+              - Install OpenPnP: openpnp/install-config/install/index.md
+              - Import Configuration: openpnp/install-config/import-config/index.md
         - Calibration:
-              - Getting Started: openpnp/calibration/index.md
+              - Introduction: openpnp/calibration/index.md
               - Connecting to Your Machine: openpnp/calibration/2-connect-to-machine/index.md
               - Homing Fiducial: openpnp/calibration/4-homing-fiducial/index.md
               - MM/Pixel: openpnp/calibration/5-mm-per-pixel/index.md
@@ -141,8 +142,9 @@ nav:
               - Vacuum Part Detection: openpnp/calibration/10-vacuum-sensor/index.md
         - Running Your First Job: 
               - Introduction: openpnp/ftp/index.md
-              - Installing Feeders: openpnp/ftp/1-installing-the-feeders/index.md
-              - Setting Up the Board: openpnp/ftp/2-setting-up-the-board/index.md
+              - Board Setup: openpnp/ftp/1-board-setup/index.md
+              - Feeder Setup: openpnp/ftp/2-feeder-setup/index.md
+              - Test Run: openpnp/ftp/3-test-run/index.md
         - Debugging: openpnp/debugging/index.md
         - Vision Pipeline Adjustment:
             - Introduction: openpnp/vision-pipeline-adjustment/1-introduction.md
