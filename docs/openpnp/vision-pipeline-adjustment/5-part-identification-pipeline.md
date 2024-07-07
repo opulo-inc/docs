@@ -1,4 +1,4 @@
-# Part Identification Pipeline
+# Part Identification Pipeline ([Video Guide](https://youtu.be/RVMS6vJzJyU?si=rRQs_61cFfH24sVC&t=432))
 
 Part identification is the most difficult pipeline to tune because it needs to accomodate every part in your job.
 

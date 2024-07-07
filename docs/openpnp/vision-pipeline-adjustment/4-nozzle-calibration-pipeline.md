@@ -1,5 +1,5 @@
 
-# Nozzle Calibration Pipeline
+# Nozzle Calibration Pipeline ([Video Guide](https://youtu.be/RVMS6vJzJyU?si=c-ta9EFDhIMdvlam&t=249))
 
 If you receive the error message `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` when homing your LumenPnP, you likely need to adjust your nozzle tip calibration pipeline. Follow the steps below for a guide on the iterative approach. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=1875).
 
