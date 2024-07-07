@@ -4,6 +4,15 @@ OpenPnP is a piece of open source software designed to control pick and place ma
 
 ![OpenPnP Logo](img/openpnp-logo.png)
 
+## Tutorial Video
+
+This video walks you through the process of installing OpenPnP and importing your configuration files. Each page in this section has a link to the relevant timestamp of the video.
+
+<!-- markdownlint-disable MD033 -->
+<div class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DUt_FHVjnwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## Recommended Hardware
 
 OpenPnP is designed to run on many different kinds of host computers. However, USB drivers and internal USB hub bandwith can vary between computers. We recommend using a Lenovo Thinkpad T470 running Ubuntu 20.04 LTS or Ubuntu 22.04 LTS for known good connectivity with your cameras, exposure control, and serial communication.

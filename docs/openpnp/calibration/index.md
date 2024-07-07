@@ -11,9 +11,14 @@ We provide these docs, the walkthrough video, and default configuration files to
 !!! danger "Important"
     It is important that you complete these calibration steps **in order**. Each calibration step relies on the steps that come before, so it's imperative that you complete them in the order we have them listed.
 
-## Video Guide
+## Tutorial Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/h3mtEQfGMlM?si=iJdkwnZp_Jxw0jCX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+This video walks you through the process of calibrating your LumenPnP in OpenPnP. Each page in this section has a link to the relevant timestamp of the video.
+
+<!-- markdownlint-disable MD033 -->
+<div class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h3mtEQfGMlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Different calibration methods
 

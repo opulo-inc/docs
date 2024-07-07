@@ -6,11 +6,14 @@ This guide walks you through setting up and completing your first placement job 
 
 It will be useful to refer to this guide again after you finish it the first time, since many of these steps will need to be performed for every new board and job you start. Take your time going through this the first time around and keep in mind that this process gets faster with experience.
 
-## Walkthrough Video
+## Tutorial Video
 
-This walkthrough video shows the entire job setup process starting from the end of calibration. We highly recommend watching the video before walking through the docs for job setup.
+This video walks you through the process of running your first job on the LumenPnP. Each page in this section has a link to the relevant timestamp of the video.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sSqrGbgzw3A?si=C_ZuAj7f3P68xx7b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<!-- markdownlint-disable MD033 -->
+<div class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W0kdrxkkXUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## What you'll need
 

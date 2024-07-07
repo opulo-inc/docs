@@ -1,5 +1,5 @@
 
-# PCB Fiducials Pipeline
+# PCB Fiducials Pipeline ([Video Guide](https://youtu.be/RVMS6vJzJyU?si=-dzIkANilr8o8j56&t=18))
 
 Just like the homing fiducial, you'll use fiducial markers to identify the exact location of your boards. Tuning them is the same process, just in a different place in the OpenPnP UI.
 

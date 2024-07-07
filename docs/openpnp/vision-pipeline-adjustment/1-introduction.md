@@ -17,6 +17,15 @@ Computer vision is one of the most important and complicated elements of a pick 
 
 The default settings in the provided configuration files work well, but depending on your lighting conditions, component geometry, or other factors, you might need to adjust them.
 
+## Tutorial Video
+
+This video walks you through the process of calibrating vision for the LumenPnP. Each page in this section has a link to the relevant timestamp of the video.
+
+<!-- markdownlint-disable MD033 -->
+<div class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RVMS6vJzJyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## Ambient light
 
 Because machine vision is heavily dependent on lighting, we recommend maintaining consistent lighting in the room where you're operating the LumenPnP. Changing the lighting in the room can require readjusting your vision settings.

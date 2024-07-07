@@ -31,18 +31,6 @@ We'll also refer to putting the machine "back on its haunches." This refers to a
 
 If you find that there's something unclear in this documentation, please [submit a ticket on Github](https://github.com/opulo-inc/docs) about it! You can also file an issue using the link in the upper right of any page on this site. We're trying to make this as clear and understandable as possible, so every issue you tag helps us make it better for everyone else. You can also check out the [Discord server](https://discordapp.com/invite/TCwy6De) and ask questions to the community.
 
-### Assembly Video
-
-We have an instructional video that walks you through the process of assembling your LumenPnP. This video is just to help visualize how parts go together; you'll still need this guide to complete your build. **This video is for an older version of the machine**, with V-Slot rollers instead of linear rails. There will definitely be differences between what you see in the video and what you have in your box. **Always reference the written documentation before the video.**
-
-!!! danger "Keep In Mind"
-    Don't worry if something in the video doesn't look exactly like what you have in the box. We’re constantly tuning and tweaking things to make them better and easier to use, so you might find things look slightly different.
-
-<!-- markdownlint-disable MD033 -->
-<div class="video-wrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ugixh3Ngr5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
 ### Timing
 
 Expect assembly to take about **50 minutes**.
