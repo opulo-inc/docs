@@ -26,13 +26,16 @@ With OpenPnP installed on your computer and the default configuration installed,
 Before connecting to the LumenPnP, you need to set which USB port to use for communication in OpenPnP.
 
 1. Click on the `Machine Setup` tab.
-  ![Machine Setup Tab](images/Machine-Setup-Tab.png)
+  
+    ![Machine Setup Tab](images/Machine-Setup-Tab.png)
 
 2. Click on the "Expand" checkbox to open all of the features.
-  ![Expanding the Machine Config options](images/Expand-Checkbox.png)
+  
+    ![Expanding the Machine Config options](images/Expand-Checkbox.png)
 
 3. Under `Drivers` click on `GcodeDriver GcodeDriver`. Below the list of machine settings you'll find the details of the GcodeDriver.
-  ![Reviewing the GcodeDriver options](images/SelectGcodeDriver.png)
+  
+    ![Reviewing the GcodeDriver options](images/SelectGcodeDriver.png)
   
 1. In the `Configuration` tab, select the `Port` for your LumenPnP.
     1. On Windows, the `Port` will look like `COM2` or `COM3`.
