@@ -1,5 +1,4 @@
 anyio==4.2.0
-autobom @ file:///Users/stephen/autobom
 Babel==2.14.0
 beautifulsoup4==4.12.3
 blinker==1.6.2
