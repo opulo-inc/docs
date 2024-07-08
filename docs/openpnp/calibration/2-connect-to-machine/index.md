@@ -115,7 +115,7 @@ Before connecting to the LumenPnP, you need to set which USB port to use for com
 
       4. If you need to tweak your sensorless homing settings, make sure to adjust the values in the line starting with `M914` under `HOME_COMMAND`, *not* under `CONNECT_COMMAND`. -->
 
-## Bottom Camera Config
+## Bottom Camera Configuration
 
 Next, you'll configure the cameras.
 
@@ -167,7 +167,7 @@ Next, you'll configure the cameras.
     !!! danger "For Mac Users"
         Due to an issue with the camera driver in OpenPnP, some Mac users might notice that the image settings are greyed out for you. There's a fantastic open-source application called [CameraController](https://github.com/Itaybre/CameraController) that can be used to edit these settings.
 
-## Top Camera Config
+## Top Camera Configuration
 
 1. Under the `Machine Setup` tab, click on `Heads > ReferenceHead H1 > Cameras > OpenPnpCaptureCamera Top`.
   
@@ -195,4 +195,4 @@ Next, you'll configure the cameras.
 
 ## Next Steps
 
-Next, we'll work on the camera's [the Homing Fiducials](../4-homing-fiducial/index.md).
+Next, we'll set up the machine's [the homing fiducial](../4-homing-fiducial/index.md).
