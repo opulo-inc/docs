@@ -24,13 +24,7 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
 !!! note "Machines Version v3.0.5+"
     If your machine's version number is `v3.0.5` or greater, you already have firmware that supports feeders. You can skip this section.
 
-1. Download the LumenPnP firmware with feeder support from the latest release [here](https://github.com/opulo-inc/lumenpnp/releases).
-
-    !!! danger "Important"
-        It is important that you pick the correct firmware file for your machine.
-
-           - If you have a v2, choose `v2-lumenpnp-firmware-feeder-support.bin`.
-           - If you have a v3, choose `v3-lumenpnp-firmware-feeder-support.bin`.
+1. Download the LumenPnP firmware from the latest release [here](https://github.com/opulo-inc/lumenpnp/releases) that matches your machine's version. Firmware file names start with the machine versions they support.
 
 2. Follow the instructions for [updating your LumenPnP's firmware](/guides/update-firmware/index.md).
 
@@ -40,6 +34,7 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
 
 !!! danger "Set Jumper to 3.3v"
     Make sure that the jumper on your programmer is set to 3.3v. On the 3 pin header, make sure the jumper is connecting the center pin to the pin labeled "3.3v". The feeder logic operates at 3.3v, so it should be set to this prior to use.
+
     ![programmer jumper](img/programmer-jumper.jpg)
 
 1. Connect the included programmer to your computer.
@@ -47,26 +42,28 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
 2. Download a precompiled Feeder binary from the [Photon releases page](https://github.com/photonfirmware/photon/releases), or [compile it yourself](https://github.com/opulo-inc/feeder).
 3. Download and install the [STM32CubeProgrammer application](https://www.st.com/en/development-tools/stm32cubeprog.html#section-get-software-table).
 4. Open the STM32CubeProgrammer application
-5. On the Blue dropdown next to the connect button, select `UART`
-   ![Select UART](img/uart-dropdown.png)
+5. On the Blue dropdown next to the connect button, select `UART`.
+
+    ![Select UART](img/uart-dropdown.png)
 
 6. Click the circular arrow icon to scan for new devices.
-   ![stm32 cube software connect panel](img/refresh-button.png)
 
-7. Click the `Port` drop down and select the new port that appears.
+    ![stm32 cube software connect panel](img/refresh-button.png)
+
+7. Click the `Port` drop down and select the new port that appears. On Mac, this port should start with `cu.usbmodem`.
     ![Select Port](img/select-port.png)
 
 8. Set the following settings:
     1. `Baudrate: 9600`
     2. `Parity: Even`
-    3. `RTS: 0`
-    4. `DTR: 0`
-    5. `Read Unprotect (MCU): Unchecked`
-    6. `TZEN Regression (MCU): Unchecked`
+    3. `Read Unprotect (MCU): Unchecked`
+    4. `TZEN Regression (MCU): Unchecked`
+    
     ![All Settings](img/all-settings.png)
 
 9. Hold down the BOOT button located here on the feeder:
-   ![boot button](img/boot-button.png)
+
+    ![boot button](img/boot-button.png)
 
 10. While holding the BOOT button, insert the pins of the programmer into the plated holes on the feeder as shown in the picture below. The holes are slightly offset, so the programmer pins will stay in contact with the through holes. Once connected, release the BOOT button. If the feeder's LED flashes and turns red, it is not ready to be programmed. Try again.
 
@@ -88,15 +85,19 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
 ![Download Tab](img/download-tab.png)
 
 1.  Click the "Browse" button and navigate to the provided `firmware.bin` file.
+    
     ![Browse Button](img/browse-button.png)
 
 2.  Ensure that the “Start address” is `0x08000000`.
+    
     ![Start Address](img/start-address.png)
 
 3.  Click "Start Programming".
+    
     ![Start Programming](img/start-programming.png)
 
 4.  Wait until the software prompts that the firmware has been downloaded successfully. You may disconnect the programmer from the feeder.
+    
     ![programming complete pop up](img/programming-complete.png)
 
 ## Checking Current Firmware Version

@@ -11,9 +11,9 @@ Now you'll scan for and configure your LumenPnP Feeders in OpenPnP.
 
 1. Click on the `Feeders` tab.
   
-   ![Machine Setup Tab](img/feeders-tab.png)
+      ![Machine Setup Tab](img/feeders-tab.png)
 
-1. Click the plus to add a new feeder,
+1. Click the plus to add a new feeder.
    
       ![Add a feeder](img/add-feeder.png)
 
