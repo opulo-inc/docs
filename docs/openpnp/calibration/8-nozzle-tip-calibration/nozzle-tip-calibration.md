@@ -10,7 +10,7 @@ Nozzle tip calibration measures exactly how your nozzles rotate by measuring the
   
     ![Switching to the camera device settings](images/Bottom-camera-device-settings.png)
 
-1. Go to the "Position" tab and click the "Move Nozzle to Position" button.
+1. Go to the "Position" tab and click the "Position the tool over the center of the location" button.
 
 2. Switch to the `Device Settings` tab. Check, then uncheck the Exposure "Auto" checkbox to set the camera to manual exposure mode.
   
