@@ -26,7 +26,7 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
 
 1. Download the LumenPnP firmware from the latest release [here](https://github.com/opulo-inc/lumenpnp/releases) that matches your machine's version. Firmware file names start with the machine versions they support.
 
-2. Follow the instructions for [updating your LumenPnP's firmware](/guides/update-firmware/index.md).
+2. Follow the instructions for [updating your LumenPnP's firmware](/guides/update-firmware).
 
 ## Update Feeder Firmware **(Optional)**
 
