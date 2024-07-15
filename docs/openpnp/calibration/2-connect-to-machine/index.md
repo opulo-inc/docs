@@ -68,6 +68,11 @@ Before connecting to the LumenPnP, you need to set which USB port to use for com
 
     ![](images/turn-on-led.png)
 
+    !!! note "Keep Ring Lights On"
+        Keep the ring lights on for the rest of calibration. All calibrations should be based on the lighting from the ring lights.
+
+        When running jobs, the ring lights will turn on automatically when homing, so it's not necessary to turn them on manually in normal operation.
+
 <!-- 
 !!! success "v3.1+ Speed Increase"
 

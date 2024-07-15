@@ -11,7 +11,9 @@ Now we can set up the datum board. The datum board is a reference point for ever
     ![Home the machine](images/Connect-and-home.png)
 
 !!! danger "If your machine does not move fully to the front left"
-    If your LumenPnP does not move all the way to the front left of the machine when you click the Home icon, it could mean that your sensorless homing values need to be adjusted. Instructions for tuning this setting are [here](/guides/tuning-sensorless/).
+    If your LumenPnP does not move all the way to the front left of the machine when you click the Home icon, it could mean that your sensorless homing values need to be adjusted.
+
+    Instructions for tuning this setting are [here](/guides/tuning-sensorless/).
 
 ## Setting Homing Fiducial Location
 
