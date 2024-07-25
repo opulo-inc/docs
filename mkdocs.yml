@@ -67,8 +67,7 @@ plugins:
     - social:
         cards_layout_options:
             background_color: "#111111" 
-            color: "#daa520"
-            font_family: Roboto 
+            color: "#daa520" 
     - neoteroi.mkdocsoad:
         use_pymdownx: true
 extra:
@@ -177,6 +176,8 @@ nav:
         - REV03 Mobo Interposer Guide: guides/rev3-vac-interposer/index.md
         - Collecting OpenPnP Logs: guides/openpnp-logs/index.md
         - Updating OpenPnP GCode Macros: guides/update-gcode-macros/index.md
+        - Find Your OpenPnP Version: guides/get-openpnp-version/index.md
+        - Extracting Your Config Files: guides/extracting-your-config-files/index.md
     
     - Misc:
         - Machine Versions and Upgrades: misc/versions-upgrades/index.md
