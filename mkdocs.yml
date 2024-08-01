@@ -32,7 +32,8 @@ theme:
     font:
         text: Figtree
     features:
-        - navigation.footer
+        # Turning off footer nav as it can be misleading, and we have explicit links to the appropriate next section for every page
+        #- navigation.footer
         - navigation.tracking
         - navigation.tabs
         - navigation.tabs.sticky
@@ -68,7 +69,7 @@ plugins:
         cards_layout_options:
             background_color: "#111111" 
             color: "#daa520"
-            font_family: Roboto 
+            font_family: Figtree 
     - neoteroi.mkdocsoad:
         use_pymdownx: true
 extra:
