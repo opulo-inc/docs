@@ -69,4 +69,4 @@ OpenPnP is designed to run on many different kinds of host computers. However, U
 
 ## Next Step
 
-Let's [import configuration files.](../import-config//index.md)
+Let's [import configuration files.](../import-config/index.md)

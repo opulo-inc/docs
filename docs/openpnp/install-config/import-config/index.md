@@ -75,4 +75,4 @@ To use OpenPnP with the LumenPnP, you will need to tell the software about your 
 
 ## Next Steps
 
-The next step is [calibration](../calibration/index.md).
+The next step is [calibration](../../calibration/).
