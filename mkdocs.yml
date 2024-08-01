@@ -178,6 +178,8 @@ nav:
         - REV03 Mobo Interposer Guide: guides/rev3-vac-interposer/index.md
         - Collecting OpenPnP Logs: guides/openpnp-logs/index.md
         - Updating OpenPnP GCode Macros: guides/update-gcode-macros/index.md
+        - Find Your OpenPnP Version: guides/get-openpnp-version/index.md
+        - Extracting Your Config Files: guides/extracting-your-config-files/index.md
     
     - Misc:
         - Machine Versions and Upgrades: misc/versions-upgrades/index.md
