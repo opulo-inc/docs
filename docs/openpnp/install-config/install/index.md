@@ -41,7 +41,7 @@ OpenPnP is designed to run on many different kinds of host computers. However, U
 
 1. Close OpenPnP.
 
-### Windows
+### Windows (Not Recommended)
 
 1. Download and install OpenPnP for Windows. Use the version here to ensure OpenPnP works with the LumenPnP Feeders: ([Download 32 Bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x32-test.exe)) ([Download 64 Bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x64-test.exe))
 
@@ -51,7 +51,7 @@ OpenPnP is designed to run on many different kinds of host computers. However, U
 
 3. Close OpenPnP.
 
-### MacOS
+### MacOS (Not Recommended)
 
 1. Download and install OpenPnP for Mac. Use the version here to ensure OpenPnP works with the LumenPnP Feeders: ([Download .dmg](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-macos-test.dmg))
 

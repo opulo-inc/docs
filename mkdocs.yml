@@ -169,6 +169,7 @@ nav:
   
     - Guides: 
         - Update LumenPnP Firmware: guides/update-firmware/index.md
+        - Updating OpenPnP GCode Macros: guides/update-gcode-macros/index.md
         - Change Motor Current: guides/motor-current/index.md
         - Change Machine Speed: guides/machine-speed/index.md
         - Change Ring Light Brightness: guides/ring-light-settings/index.md
@@ -177,7 +178,6 @@ nav:
         - Second Nozzle Upgrade Guide: guides/second-tool/index.md
         - REV03 Mobo Interposer Guide: guides/rev3-vac-interposer/index.md
         - Collecting OpenPnP Logs: guides/openpnp-logs/index.md
-        - Updating OpenPnP GCode Macros: guides/update-gcode-macros/index.md
         - Find Your OpenPnP Version: guides/get-openpnp-version/index.md
         - Extracting Your Config Files: guides/extracting-your-config-files/index.md
     

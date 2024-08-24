@@ -13,15 +13,19 @@ While the bottom camera can detect if a part was successfully picked, you can us
   ![Enabling part detection](images/Screen Shot 2023-02-16 at 10.25.43 AM.png)
 
 1. Open the `H1:VAC1` actuator window. Click `On` to turn on your pump and valve, and then click `Read`. You should see a value appear in the `Read Value` text box. Take note of this number.
-   ![vac1 actuator](images/vac1-actuator.png)
-   ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.png)
+
+    ![vac1 actuator](images/vac1-actuator.png)
+    ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.png)
 
 2. Now, cover the nozzle with your finger tip. Hit `Read` again. Take note of the new number.
 
 3. Split the difference between these numbers. For example, if your readings were `250` and `246`, choose `248`.
 
 4. Enter this value into the `High Value` field in the `Vacuum Range` setting.
-   ![entering vac threshold value for n045](images/entering-vac-cal.png)
+   
+    ![entering vac threshold value for n045](images/entering-vac-cal.png)
+
+1. Hit "Apply" to save your changes.
 
 5. Perform this step again, but using N2 and the N24 nozzle tip.
 

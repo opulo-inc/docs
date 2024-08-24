@@ -1,4 +1,7 @@
-# Unboxing
+---
+title: LumenPnP v4 Assembly - Unboxing
+description: Unboxing the v4 LumenPnP
+---
 
 1. Open the LumenPnP box and look for the `Getting Started` card attached to the top sheet of foam. This has your machine's version number.
 
@@ -47,7 +50,7 @@
 
     ![alt text](img/IMG_2732.JPG)
 
-1. Inside the tool bag you'll find the following items:
+6. Inside the tool bag you'll find the following items:
     * Hobby knife
     * Flush snips
     * 135 degree tweezers

@@ -90,6 +90,8 @@ We also detail this process in our [setup video](https://youtube.com/watch?v=CSn
     ![a good histogram](images/correct-exposure.png){: style="width:60%;margin-left:10%;"}
 
 3. Once you've found a good exposure value, **record this value**. OpenPnP does not always reestablish camera settings when reconnecting, so having this value recorded for easily setting your exposure again on boot is important. When doing so, be sure to check, then uncheck the "Auto Exposure" box to put your camera into manual exposure mode, then slide the slider to your recorded value.
+
+1. Turn off the histogram view the same way you turned it on.
   
 ## Test Fiducial Homing
 
