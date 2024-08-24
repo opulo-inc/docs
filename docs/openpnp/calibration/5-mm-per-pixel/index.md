@@ -27,15 +27,19 @@ This next step calibrates the relationship between pixels and millimeters to mak
   
     ![](images/n045-on-n1.png)
 
-1. Your machine will jog the head to the front of the machine for easy tip loading. Slide the N045 nozzle tip (the one with the smaller opening) onto the **left** nozzle (using red tubing). Rotate the nozzle tip as you mount it to the brass holder to ensure the grease works its way into the tip and around the O-rings. It should slide on and off easily after working it in.
+2. Your machine will jog the head to the front of the machine for easy tip loading. OpenPnP will create a pop up window saying "Task interrupted: ...". This is **not** an error; OpenPnP is just notifying you that it's stopped the job if one is running. You can dismiss this pop up.
+
+    ![](images/task-interrupted.png)
+
+3. Slide the N045 nozzle tip (the one with the smaller opening) onto the **left** nozzle (using red tubing). Rotate the nozzle tip as you mount it to the brass holder to ensure the grease works its way into the tip and around the O-rings. It should slide on and off easily after working it in.
    
     ![left nozzle has red tubing getting n045 tip, right has no tip](images/mountingn1.jpg)
 
-1. Now, navigate to the `ReferenceNozzle N2` and select the `Nozzle Tips` tab. This time, check the checkbox in the `Loaded?` column for the `N24` row.
+4. Now, navigate to the `ReferenceNozzle N2` and select the `Nozzle Tips` tab. This time, check the checkbox in the `Loaded?` column for the `N24` row.
    
     ![](images/n24-on-n2.png)
 
-2. Slide the N24 nozzle tip (the one with the larger opening) onto the **right** nozzle (using blue tubing). Rotate the nozzle tip as you mount it to the brass holder to ensure the grease works its way into the tip and around the O-rings. It should slide on and off easily after working it in.
+5. Slide the N24 nozzle tip (the one with the larger opening) onto the **right** nozzle (using blue tubing). Rotate the nozzle tip as you mount it to the brass holder to ensure the grease works its way into the tip and around the O-rings. It should slide on and off easily after working it in.
    
     ![blue tubing right nozzle getting n24 tip, left already has n045](images/mountingn2.jpg)
 
@@ -105,7 +109,7 @@ This next step calibrates the relationship between pixels and millimeters to mak
    
     ![selecting n2 for control](images/select-n2.png)
 
-2. Click on the "Position Nozzle Over Location" button
+2. Click on the "Position the tool over the center of the location" button
    
     ![Position nozzle over camera](images/position-nozzle-over-camera.png)
 
