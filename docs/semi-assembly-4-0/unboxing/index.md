@@ -55,7 +55,6 @@ description: Unboxing the v4 LumenPnP
     * Flush snips
     * 135 degree tweezers
     * Allen wrench set w/separate 1.3mm driver for adjusting feeder drive wheels
-    * Small Phillips screwdriver
     * ESD wrist strap
     * USB-A to USB-B cable
     * Hardware Kit
