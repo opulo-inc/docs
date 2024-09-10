@@ -87,13 +87,18 @@ extra:
 nav:
     - Home: index.md
     - LumenPnP Assembly:
-        - Semi Assembly (v3.1 / v3.2): 
+        - LumenPnP v4: 
+            - Introduction: semi-assembly-4-0/index.md
+            - Unboxing: semi-assembly-4-0/unboxing/index.md
+            - Frame: semi-assembly-4-0/frame/index.md
+            - Electronics: semi-assembly-4-0/electronics/index.md
+        - LumenPnP v3.1 / v3.2: 
             - Introduction: semi-assembly-3-1/index.md
             - Unboxing: semi-assembly-3-1/unboxing-3-1/index.md
             - Assembling the Frame: semi-assembly-3-1/assembling-frame-3-1/index.md
             - Mounting Staging Plates: semi-assembly-3-1/mounting-staging-plates-3-1/index.md
             - Wiring: semi-assembly-3-1/wiring-3-1/index.md
-        - Semi Assembly (v3.0): 
+        - LumenPnP v3.0: 
             - Introduction: semi-assembly/index.md
             - Unboxing: semi-assembly/unboxing/index.md
             - Assembling the Frame: semi-assembly/assembling-frame/index.md
