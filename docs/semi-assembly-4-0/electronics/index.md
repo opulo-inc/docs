@@ -192,13 +192,16 @@ description: Mounting the control box and installing cables on the v4 LumenPnP
 
 7. Bolt the three together using `2x` M5x16mm flat head bolts.
 
+    !!! warning "A Bit of Resistance"
+        You should expect to feel some resistance when bolting these three together. The slot in the cable chain is slightly undersized for the bolt, so don't worry if you need to use a little bit of extra force to thread these bolts through.
+
     ![alt text](img/IMG_3051.JPG) ![alt text](img/IMG_3052.JPG)
 
 8. Thread `2x` more M5x16mm flat head bolts through the holes in the Y drag chain by the X motor as shown.
 
     ![alt text](img/IMG_3053.JPG) ![alt text](img/IMG_3054.JPG)
 
-9. Align these bolts with the holes in the drag chain support by the text "Y Drag Chain Mounts Here" and drop it into place. Loosely thread `2x` M5 nuts onto the bolts.
+9.  Align these bolts with the holes in the drag chain support by the text "Y Drag Chain Mounts Here" and drop it into place. Loosely thread `2x` M5 nuts onto the bolts.
 
     ![alt text](img/IMG_3055.JPG) ![alt text](img/IMG_3056.JPG)
 
@@ -218,36 +221,36 @@ description: Mounting the control box and installing cables on the v4 LumenPnP
 
     ![alt text](img/IMG_3072.JPG)
 
-1.  Separate the USB cable from the bundle and route the rest of the cables into the control box as shown.
+14. Separate the USB cable from the bundle and route the rest of the cables into the control box as shown.
 
     ![alt text](img/IMG_3073.JPG)
     ![alt text](img/IMG_3074.JPG)
 
-2.  Plug the cables you just routed into their respective ports. Match the labels on the cables with the labels on the control board. Use the images below for reference.
+15. Plug the cables you just routed into their respective ports. Match the labels on the cables with the labels on the control board. Use the images below for reference.
 
     ![alt text](img/IMG_3075.JPG) ![alt text](img/IMG_3076.JPG) ![alt text](img/IMG_3077.JPG) ![alt text](img/IMG_3078.JPG) ![alt text](img/IMG_3079.JPG) ![alt text](img/IMG_3080.JPG) ![alt text](img/IMG_3081.JPG)
 
-3.  Reattach the cover by fitting the top edge, then pushing on the bottom until it snaps into place.
+16. Reattach the cover by fitting the top edge, then pushing on the bottom until it snaps into place.
 
     ![alt text](img/IMG_3084.JPG) ![alt text](img/IMG_3085.JPG)
 
-4.  Push the blue tubing into the `R` pneumatic port, and push the red tubing into the `L` pneumatic port.
+17. Push the blue tubing into the `R` pneumatic port, and push the red tubing into the `L` pneumatic port.
 
     ![alt text](img/IMG_3086.JPG) ![alt text](img/IMG_3087.JPG)
 
-5.  Your control box should look like the image below.
+18. Your control box should look like the image below.
 
     ![alt text](img/IMG_3088.JPG)
 
-6.  Rotate the machine so you're facing the front, and pull the gantry all the way toward you.
+19. Rotate the machine so you're facing the front, and pull the gantry all the way toward you.
 
     ![alt text](img/IMG_3090.JPG)
 
-7.  Plug the R motor cable into the right nozzle motor port, secure it in place using a zip tie, and snip off the remainder. Press the blue tubing into the pneumatic coupler on top of the R motor.
+20. Plug the R motor cable into the right nozzle motor port, secure it in place using a zip tie, and snip off the remainder. Press the blue tubing into the pneumatic coupler on top of the R motor.
 
     ![alt text](img/IMG_3091.JPG) ![alt text](img/IMG_3092.JPG) ![alt text](img/IMG_3093.JPG) ![alt text](img/IMG_3094.JPG)
 
-8.  Plug the L motor cable into the left nozzle motor port, secure it in place using a zip tie, and snip off the remainder. Press the red tubing into the pneumatic coupler on top of the L motor.
+21. Plug the L motor cable into the left nozzle motor port, secure it in place using a zip tie, and snip off the remainder. Press the red tubing into the pneumatic coupler on top of the L motor.
 
     ![alt text](img/IMG_3095.JPG) ![alt text](img/IMG_3096.JPG) ![alt text](img/IMG_3097.JPG) ![alt text](img/IMG_3098.JPG)
 
