@@ -10,7 +10,7 @@ This repository is the source for the Opulo Documentation site found at [docs.op
 2. Open Terminal, Command Prompt, or Powershell.
 3. Pick a location to store the docs, and use [cd](https://linuxhint.com/cd-command-in-terminal/) to navigate there.
 
-4. Clone this repository:
+4. Clone this repository: 
 
    ```bash
    git clone https://github.com/opulo-inc/docs.git
