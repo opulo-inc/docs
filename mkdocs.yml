@@ -187,7 +187,8 @@ nav:
         - Extracting Your Config Files: guides/extracting-your-config-files/index.md
     
     - Misc:
-        - Machine Versions and Upgrades: misc/versions-upgrades/index.md
+        - Machine Versions: misc/versions/index.md
+        - Upgrade: misc/upgrade/index.md
         - Backlash Compensation: misc/backlash-compensation/index.md
         - Standalone Feeder Control: misc/standalone-feeders/index.md
         - Photon Protocol: misc/photon/index.md
