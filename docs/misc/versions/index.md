@@ -2,7 +2,7 @@
 description: Outlining the different versions and features of the LumenPnP
 ---
 
-# LumenPnP Versions and Upgrades
+# LumenPnP Versions
 
 The LumenPnP is always being upgraded and improved. This page is a reference for determining what and how to upgrade parts of your machine, depending on what version you built or bought.
 
