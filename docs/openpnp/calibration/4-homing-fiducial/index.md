@@ -1,12 +1,12 @@
 # Homing Fiducial ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=YzBwkxLlAcJWxDJe&t=527))
 
-Now we can set up the datum board. The datum board is a reference point for everything else you'll do with the machine. The center dot of the datum board will be the most important calibration point for the machine. It'll be used to fine-tune the LumenPnP's XY position after homing to account for any errors in the limit switches. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=705).
+Now we can set up the datum board. The datum board is a reference point for everything else you'll do with the machine. The center dot of the datum board will be the most important calibration point for the machine. It'll be used to fine-tune the LumenPnP's XY position after homing to account for any errors in the limit switches.
 
 1. Before pressing the homing button (now and every time in the future), make sure that your nozzles are level. OpenPnP is not capable of keeping track of previous homing status per axis and making movement decisions based on that, so it's required to make sure the heads are level first to make sure there is no collision.
   
     ![level nozzles](images/level-nozzles.JPG)
 
-1. Run a rough home routine by pressing the Home button. The machine will move to the X, Y, and Z zero positions.
+2. Run a rough home routine by pressing the Home button. The machine will move to the X, Y, and Z zero positions.
   
     ![Home the machine](images/Connect-and-home.png)
 
@@ -71,7 +71,7 @@ Now we can set up the datum board. The datum board is a reference point for ever
 
 In order for OpenPnP to reliably detect the LumenPnP's homing fiducial, we'll need to set the exposure and camera settings for your top camera correctly.
 
-We also detail this process in our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=867).
+We also detail this process in our [setup video](https://youtu.be/h3mtEQfGMlM?t=842).
 
 1. Navigate to `Machine Setup > Heads > ReferenceHead H1 > Cameras > OpenPnPCaptureCamera Top`.
   
