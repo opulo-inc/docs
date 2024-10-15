@@ -18,7 +18,7 @@ The LumenPnP is currently running a version of Marlin with new features that sup
 
 ## Should I build or buy a LumenPnP?
 
-It depends! If you are looking to have a blast putting together a desktop fabrication machine, then go for the build! It's a lot of work to but one together from scratch. It can take many, many hours to source all the parts and assemble the machine.
+It depends! If you are looking to have a blast putting together a desktop fabrication machine, then go for the build! It's a lot of work to put one together from scratch. It can take many, many hours to source all the parts and assemble the machine.
 
 If you're just looking to have a tool that'll help you build your boards, buying a machine might be a better fit, as it's up and running in under an hour. You can pick one up [here](https://www.opulo.io/products/lumenpnp).
 
