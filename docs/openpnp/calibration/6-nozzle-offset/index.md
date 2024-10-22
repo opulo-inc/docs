@@ -33,7 +33,7 @@ Now we need to tell OpenPnP how far the nozzles are away from the center point o
   
     ![Offset wizard settings](images/offset-wizard-n1.png)
   
-1. Confirm that the `Include Z?` checkbox is unchecked.
+1. Confirm that the `Include Z?` checkbox is checked.
   
     ![do not use the include z checkbox](images/include-z-unchecked-n1.png)
 
