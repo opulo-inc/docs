@@ -151,13 +151,13 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
     ![](images/mount-strain.webp)
 
     !!! Note
-        If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder), follow the steps for [installing the Slot Harness](/feeders/2-install-harness/) now, and then come back here to plug in the last few wires below.
+        If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder), follow the steps for [installing the Slot Harness](../../feeders/2-install-harness/index.md) now, and then come back here to plug in the last few wires below.
 
 ## Installing Feeder Slots [Optional]
 
 If you have Feeder Slots to install, you should do this now.
 
-  * Follow the steps for [installing the Slot Harness](/feeders/2-install-harness/) here.
+  * Follow the steps for [installing the Slot Harness](../../feeders/2-install-harness/index.md) here.
   * Afterwards, return to this page for guidance on plugging in the last few wires in the section below.
 
 ## Finalize Wiring
@@ -188,4 +188,4 @@ You're done with your build! Time to head over to the OpenPnP section of the doc
 
 ## Next Steps
 
-You're done with your build! Next, you'll set up [OpenPnP.](../../openpnp/install/index.md)
+You're done with your build! Next, you'll set up [OpenPnP.](../../openpnp/install-config/install/index.md)

@@ -78,7 +78,7 @@ M3426 G4 C2 I1 A110  ;read vac 2 value
 ```
 
 !!! danger "In Case Of Error"
-    These commands are meant for a newer version of Marlin that adds support for multiple ADCs. If you're getting an error in response from Marlin, [update the firmware to the latest version](/guides/update-firmware/).
+    These commands are meant for a newer version of Marlin that adds support for multiple ADCs. If you're getting an error in response from Marlin, [update the firmware to the latest version](../../../guides/update-firmware/index.md).
 
 ## Next steps
 

@@ -19,7 +19,7 @@ This next step calibrates the relationship between pixels and millimeters to mak
 
 1. Identify your machine's nozzle tips. They're mounted in the rack on your staging plate.
 
-    ![](/semi-assembly-3-1/mounting-staging-plates-3-1/images/nozzle-tip-location.webp)
+    ![](../../../semi-assembly-3-1/mounting-staging-plates-3-1/images/nozzle-tip-location.webp)
 
 1. Remove the nozzle tips labeled `N045` and `N24` from the rack.
 

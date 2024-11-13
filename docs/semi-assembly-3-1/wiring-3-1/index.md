@@ -213,8 +213,8 @@ In this step, you will mount and connect all the wiring and pneumatic tubing.
 
 The next step is installing the Feeder Slot Cable Harness. Select the appropriate installation instructions linked below based off your machine version.
 
-  * If your machine is a `v3.1`, [install the harness for Individual Feeder Slots](/feeders/2-install-harness/feeder-slot/#install-the-harness).
-  * If your machine is a `v3.2` or greater, [install the harness for Feeder Slot Blades](/feeders/2-install-harness/feeder-blade/#install-the-harness).
+  * If your machine is a `v3.1`, [install the harness for Individual Feeder Slots](../../feeders/2-install-harness/feeder-slot/index.md#install-the-harness).
+  * If your machine is a `v3.2` or greater, [install the harness for Feeder Slot Blades](../../feeders/2-install-harness/feeder-blade/index.md#install-the-harness).
 
 After you complete this step return to this page for guidance on plugging in the last few wires in the next section.
 
@@ -241,4 +241,4 @@ You're done with your build! Time to head over to the OpenPnP section of the doc
 
 ## Next Steps
 
-!!! success "You're done with your build! Next, you'll set up [OpenPnP](../../openpnp/install/index.md)."
+!!! success "You're done with your build! Next, you'll set up [OpenPnP](../../openpnp/install-config/install/index.md)."

@@ -20,4 +20,4 @@ If parts from both nozzles are causing a consistent rotational offset, it could 
 
 ## The bottom vision pipeline for your parts needs adjustment
 
-OpenPnP decides how to place parts onto your board based on what it sees in the bottom camera view. If a bright light or reflective surface in view of the camera is making OpenPnP think your part is a different size than it is, you'll see a placement error. [Adjust your part identification pipeline](/openpnp/vision-pipeline-adjustment/5).
+OpenPnP decides how to place parts onto your board based on what it sees in the bottom camera view. If a bright light or reflective surface in view of the camera is making OpenPnP think your part is a different size than it is, you'll see a placement error. [Adjust your part identification pipeline](../vision-pipeline-adjustment/5-part-identification-pipeline.md).

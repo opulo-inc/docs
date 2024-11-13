@@ -24,7 +24,7 @@ To use OpenPnP with the LumenPnP, you will need to tell the software about your 
 5. To install these files in OpenPnP, you'll need to find its configuration folder. In the Ubuntu file manager (Nautilus), press `CTRL` + `H` to show hidden files, or go to the `View` menu and check `Show Hidden Files`.
 
 6. Next, navigate to: `/home/[username]/.openpnp2`.
-  
+
 7. Double check that OpenPnP is closed.
 
 8. In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
@@ -46,7 +46,7 @@ To use OpenPnP with the LumenPnP, you will need to tell the software about your 
 6. Navigate to:
     - On Windows Vista and newer: `C:\Users\[username]\.openpnp2`.
     - On Windows XP and older: `C:\Documents and Settings\[username]\.openpnp2`.
-  
+
 7. Double-check that OpenPnP is closed.
 
 8. In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
@@ -66,7 +66,7 @@ To use OpenPnP with the LumenPnP, you will need to tell the software about your 
 5. To install these files in OpenPnP, you'll need to find its configuration folder. First, follow [these instructions](https://www.macworld.com/article/671158/how-to-show-hidden-files-on-a-mac.html) to show hidden folders in Finder.
 
 6. Next, navigate to: `/Users/[username]/.openpnp2`.
-  
+
 7. Double check that OpenPnP is closed.
 
 8. In the `.openpnp2` folder you'll find the currently used configuration files, `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml`. It is a good idea to copy these somewhere as backup whenever you make changes like this.
@@ -75,4 +75,4 @@ To use OpenPnP with the LumenPnP, you will need to tell the software about your 
 
 ## Next Steps
 
-The next step is [calibration](../../calibration/).
+The next step is [calibration](../../calibration/index.md).

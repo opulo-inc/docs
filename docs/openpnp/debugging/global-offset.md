@@ -6,15 +6,15 @@ If parts are universally placed with an offset in the X and/or Y axis, there are
 
 ## Bottom camera position needs adjustment
 
-If OpenPnP's understanding of where the bottom camera is located is incorrect, part placements can also be incorrect. Perform a [nozzle offset calibration](/openpnp/calibration/6-nozzle-offset/) on one nozzle, then immediately [set the bottom camera position](/openpnp/calibration/7-bottom-camera-position/) without rotating the nozzle.
+If OpenPnP's understanding of where the bottom camera is located is incorrect, part placements can also be incorrect. Perform a [nozzle offset calibration](../calibration/6-nozzle-offset/index.md) on one nozzle, then immediately [set the bottom camera position](../calibration/7-bottom-camera-position/index.md) without rotating the nozzle.
 
 ## Fiducial calibration pipeline needs adjustment
 
-If OpenPnP incorrectly detects your fiducials and instead thinks a silkscreen marking or footprint pad is the fiducial, all of the locations on your board will be shifted. [Make sure your fiducial pipeline is correctly identifying your PCB's fiducials.](/openpnp/vision-pipeline-adjustment/3-pcb-fiducial-pipeline/)
+If OpenPnP incorrectly detects your fiducials and instead thinks a silkscreen marking or footprint pad is the fiducial, all of the locations on your board will be shifted. [Make sure your fiducial pipeline is correctly identifying your PCB's fiducials.](../vision-pipeline-adjustment/3-pcb-fiducial-pipeline.md)
 
 ## Both nozzles need offset calibration adjustment
 
-It's possible that both of your nozzle offsets need adjusting. [Make sure your nozzle offsets are correct.](/openpnp/calibration/6-nozzle-offset/)
+It's possible that both of your nozzle offsets need adjusting. [Make sure your nozzle offsets are correct.](../calibration/6-nozzle-offset/index.md)
 
 ## The LumenPnP skipped steps during motion
 

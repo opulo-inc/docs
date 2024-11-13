@@ -69,4 +69,4 @@ This video shows how tape is loaded into the feeder, and the functionality of th
 
 ## Next Steps
 
-Next, you'll [set pick position](/feeders/7-setting-pick-position/setting-pick-position/).
+Next, you'll [set pick position](../7-setting-pick-position/setting-pick-position.md).

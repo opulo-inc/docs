@@ -156,4 +156,4 @@ Disabling parts on a board is a helpful feature in OpenPnP for DNP parts, altern
 
 ## Next Step
 
-Next, you'll [set up a feeder](/openpnp/ftp/2-feeder-setup/).
+Next, you'll [set up a feeder](../2-feeder-setup/index.md).

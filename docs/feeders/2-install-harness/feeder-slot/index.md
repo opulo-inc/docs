@@ -10,7 +10,7 @@ In this step, you'll install and wire slots onto the front and back rails of you
 To ensure feeders will mount to your LumenPnP's front rail, we need to ensure that your staging plate is mounted at the correct position. **If you have a v3 LumenPnP, your staging plate is already at the correct distance, and can skip this section.**
 
 !!! danger "Warning"
-    Be aware that moving your primary staging plate will change where your bottom camera and homing fiducial markers are mounted. After moving the staging plate, you will need to review your machine's calibration. Specifically, the [Homing Fiducial](../../openpnp/calibration/4-homing-fiducial/#tuning-the-homing-fiducial) and [Bottom Camera Position](../../openpnp/calibration/7-bottom-camera-position/).
+    Be aware that moving your primary staging plate will change where your bottom camera and homing fiducial markers are mounted. After moving the staging plate, you will need to review your machine's calibration. Specifically, the [Homing Fiducial](../../../openpnp/calibration/4-homing-fiducial/index.md#tuning-the-homing-fiducial) and [Bottom Camera Position](../../../openpnp/calibration/7-bottom-camera-position/index.md).
 
 1. Unplug your LumenPnP.
 
@@ -165,10 +165,10 @@ In your Slot Harness Kit, you'll find:
 
 If you were directed to this page by LumenPnP wiring instructions return to one of the following pages to finish plugging everything in:
 
-* [v3.0](/semi-assembly/wiring/#finalize-wiring)
-* [v3.1 / V3.2](/semi-assembly-3-1/wiring-3-1/#finalize-wiring)
+* [v3.0](../../../semi-assembly/wiring/index.md#finalize-wiring)
+* [v3.1 / V3.2](../../../semi-assembly-3-1/wiring-3-1/index.md#finalize-wiring)
 
-Otherwise, next is [updating your software.](../3-software-update)
+Otherwise, next is [updating your software.](../../3-software-update/index.md)
 
 [clip-url]: https://github.com/opulo-inc/lumenpnp/blob/main/pnp/cad/FDM/extrusion-cable-clip.FCStd
 [slot-url]: https://github.com/opulo-inc/feeder

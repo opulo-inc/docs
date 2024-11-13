@@ -42,7 +42,7 @@ If you receive an error after picking a component about `No Results Found`, you 
 
 ## Pick component
 
-To tune a part identification pipeline, you'll need to pick up the component you want to tune. You can [setup a feeder](../ftp/1-installing-the-feeders/index.md) and use the "pick" button.
+To tune a part identification pipeline, you'll need to pick up the component you want to tune. You can [setup a feeder](../ftp/2-feeder-setup/index.md) and use the "pick" button.
 
 ![Pick Button For Feeder](images/pick-button-feeder.webp)
 
@@ -123,7 +123,7 @@ The `Threshold` stage is the most commonly edited stage. It turns the camera ima
 * If the image is too bright, raise the `threshold` setting.
 
 !!! danger "Exposure settings"
-    If you're having trouble getting your image to look like the "Good Threshold" image below, it could be that your bottom camera exposure is too high, making it difficult for OpenPnP to distinguish between the part and the nozzle tip. [Adjust your bottom camera's exposure](/openpnp/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration/), then retry tuning your threshold value.
+    If you're having trouble getting your image to look like the "Good Threshold" image below, it could be that your bottom camera exposure is too high, making it difficult for OpenPnP to distinguish between the part and the nozzle tip. [Adjust your bottom camera's exposure](../calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md), then retry tuning your threshold value.
 
 ![Threshold Comparison](images/part-threshold-comparison.webp)
 

@@ -52,12 +52,12 @@ You might have found an inaccuracy or error when placing parts. This page addres
 
 If the nozzle is not picking parts consistently, there are a few potential root causes:
 
-- **The vacuum sensor threshold is too sensitive.** If you notice that your nozzle is attempting to pick a part, but seems to raise up too quickly, the vacuum sensor threshold value is incorrectly telling OpenPnP that it's successfully picked the part. This can be solved by [tuning your vacuum sensor threshold value](/openpnp/calibration/10-vacuum-sensor).
-- **The feeder Z position is set too high.** If the machine is told to pick a part slightly too high, the nozzle tip doesn't make a good seal on the part, and fails to pick. This is solved by adjusting the [feeder's height](/feeders/7-setting-pick-position/setting-pick-position/).
+- **The vacuum sensor threshold is too sensitive.** If you notice that your nozzle is attempting to pick a part, but seems to raise up too quickly, the vacuum sensor threshold value is incorrectly telling OpenPnP that it's successfully picked the part. This can be solved by [tuning your vacuum sensor threshold value](../calibration/10-vacuum-sensor/index.md).
+- **The feeder Z position is set too high.** If the machine is told to pick a part slightly too high, the nozzle tip doesn't make a good seal on the part, and fails to pick. This is solved by adjusting the [feeder's height](../../feeders/7-setting-pick-position/setting-pick-position.md).
 - **Lack of suction force from the nozzle tip.** Especially for the smallest N045 nozzle tip, some solder paste can get stuck in the tip, reducing suction force. If you cannot see a tiny circle of light shining through the tip when held up to a light, you might need to clean the tip with a thin wire and some isopropyl alcohol.
 
 ### "No result found" error
 
-![no parts found error](/openpnp/vision-pipeline-adjustment/images/no-parts-found.webp)
+![no parts found error](../vision-pipeline-adjustment/images/no-parts-found.webp)
 
-- If the component was not identified by the bottom camera correctly, you will likely need to adjust its [Part Identification Vision Pipeline](/openpnp/vision-pipeline-adjustment/5-part-identification-pipeline.md).
+- If the component was not identified by the bottom camera correctly, you will likely need to adjust its [Part Identification Vision Pipeline](../vision-pipeline-adjustment/5-part-identification-pipeline.md).

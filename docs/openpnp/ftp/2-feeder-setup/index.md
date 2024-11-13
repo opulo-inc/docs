@@ -11,7 +11,7 @@ description: >
 The FTP PCB has two different types of components: resistors and LEDs. We'll just be populating up the resistors to demonstrate disabling placements.
 
 !!! Note "Powered Feeders"
-    If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder), we highly recommend using them for populating the FTP board. Follow the instructions for **[setting them up](../../../feeders/1-overview/feeder-overview.md)** now, and then proceed to the [test run](/openpnp/ftp/3-test-run/) once complete.
+    If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder), we highly recommend using them for populating the FTP board. Follow the instructions for **[setting them up](../../../feeders/1-overview/feeder-overview.md)** now, and then proceed to the [test run](../3-test-run/index.md) once complete.
 
 ## Mount a Strip Feeder
 
@@ -118,4 +118,4 @@ The FTP PCB has two different types of components: resistors and LEDs. We'll jus
 
 ## Next Steps
 
-Next is [running a test job](/openpnp/ftp/3-test-run/).
+Next is [running a test job](../3-test-run/index.md).

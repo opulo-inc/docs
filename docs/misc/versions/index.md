@@ -10,7 +10,7 @@ The LumenPnP is always being upgraded and improved. This page is a reference for
 
 ### v2.X.X
 
-![](/byop/hero-alpha-min.webp){: style="width:60%;margin-left:10%;"}
+![](../../byop/hero-alpha-min.webp){: style="width:60%;margin-left:10%;"}
 
 The v2 of the LumenPnP was a kit. It came as a box of parts and circuit boards, and users would 3D print all the plastic parts themselves. The LumenPnP v2 had:
 
@@ -23,7 +23,7 @@ The v2 of the LumenPnP was a kit. It came as a box of parts and circuit boards, 
 
 ### v3.0.X
 
-![](/semi-assembly/semi-hero.webp){: style="width:60%;margin-left:10%;"}
+![](../../semi-assembly/semi-hero.webp){: style="width:60%;margin-left:10%;"}
 
 v3.0 versions of the LumenPnP were the first to come semi-assembled. They arrived with all printed parts included, and bolted together from just a handful of subassemblies. The LumenPnP v3.0 had:
 
@@ -36,7 +36,7 @@ v3.0 versions of the LumenPnP were the first to come semi-assembled. They arrive
 
 ### v3.1.X
 
-![](/semi-assembly-3-1/3_1.webp){: style="width:60%;margin-left:10%;"}
+![](../../semi-assembly-3-1/3_1.webp){: style="width:60%;margin-left:10%;"}
 
 v3.1.X was a significant improvement to the previous version, introducing linear rails and upgrading to cable chain.
 
@@ -49,7 +49,7 @@ v3.1.X was a significant improvement to the previous version, introducing linear
 
 ### v3.2.X
 
-![](/semi-assembly-3-1/3_1.webp){: style="width:60%;margin-left:10%;"}
+![](../../semi-assembly-3-1/3_1.webp){: style="width:60%;margin-left:10%;"}
 
 v3.2.X of the machine is almost identical to v3.1.X, except that the slots (where feeders interface with the machine) are ganged together into "blades" to make them easier to manufacure.
 
@@ -158,11 +158,11 @@ Once you've added the linear rails, you can greatly increase the speed of your m
 
 In machines prior to v3.1, there wasn't much strain relief for the L and R motors.
 
-![](/semi-assembly/wiring/images/finished-head.webp){: style="width:60%;margin-left:10%;"}
+![](../../semi-assembly/wiring/images/finished-head.webp){: style="width:60%;margin-left:10%;"}
 
 Starting in v3.1, the z-gantry print got a location to secure the cable using a zip tie.
 
-![](/semi-assembly-3-1/wiring-3-1/images/zip-lh-4.webp){: style="width:60%;margin-left:10%;"}
+![](../../semi-assembly-3-1/wiring-3-1/images/zip-lh-4.webp){: style="width:60%;margin-left:10%;"}
 
 Reprinting your z-gantries from the [v3.1 release](https://github.com/opulo-inc/lumenpnp/releases/tag/v3.1.0) and zip tieing the cables to the print will greatly improve the strain relief for your machine's cables.
 
@@ -173,4 +173,4 @@ Reprinting your z-gantries from the [v3.1 release](https://github.com/opulo-inc/
 
 If you're upgrading your machine's hardware, it's very likely you'll need to update how OpenPnP controls it as well. Depending on what you changed, you'll have to splice new Gcode into OpenPnP to support it. In general, speed settings are based on if your machine has linear rails or rollers.
 
-To update your Gcode Macros, visit [our guide for doing so](/guides/update-gcode-macros).
+To update your Gcode Macros, visit [our guide for doing so](../../guides/update-gcode-macros/index.md).

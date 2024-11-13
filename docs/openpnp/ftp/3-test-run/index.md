@@ -6,13 +6,13 @@ Before running the job, you'll test the bottom vision pipeline that is used to a
 
 1. Pick a part from your feeder by selecting it in the table in the "Feeders" tab, and clicking on the "Feed and pick" button.
 
-    ![feed and pick](/feeders/7-setting-pick-position/img/pick-component.webp)
+    ![feed and pick](../../../feeders/7-setting-pick-position/img/pick-component.webp)
 
 1. In the "Parts" tab, select the part you just picked and click the "Test Alignment" button.
 
     ![test bottom vision](images/test-bottom-vision.webp)
 
-1. Watch the bottom camera feed. Look for a red rectangle superimposed on the image. The rectangle should be perfectly hugging the component. If it is not, adjust your [part identification pipeline](/openpnp/vision-pipeline-adjustment/5-part-identification-pipeline/) before proceeding.
+1. Watch the bottom camera feed. Look for a red rectangle superimposed on the image. The rectangle should be perfectly hugging the component. If it is not, adjust your [part identification pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md) before proceeding.
 
     ![bottom vision output](images/bottom-vision-detection.webp)
 
@@ -26,4 +26,4 @@ Before running the job, you'll test the bottom vision pipeline that is used to a
 
     ![Start placing components](images/One-step-placement.webp)
 
-2. After a few parts are populated, move on to [debugging](/openpnp/debugging) to fine tune your calibration.
+2. After a few parts are populated, move on to [debugging](../../debugging/index.md) to fine tune your calibration.
