@@ -4,73 +4,73 @@ Part identification is the most difficult pipeline to tune because it needs to a
 
 If you receive an error after picking a component about `No Results Found`, you need to tune your vision pipeline.
 
-![No Parts Found](images/no-parts-found.png)
+![No Parts Found](images/no-parts-found.webp)
 
 ## Setup nozzle
 
 1. Install a nozzle tip on your first toolhead. In this example we'll work with the N045 nozzle tip.
-  
-    ![Install the N045 nozzle](images/N045-nozzle-installed.png)
+
+    ![Install the N045 nozzle](images/N045-nozzle-installed.webp)
 
 2. Click on the `Machine Setup` tab in the top right pane.
-  
-    ![Machine setup tab](images/Machine-Setup-Tab-3.png)
+
+    ![Machine setup tab](images/Machine-Setup-Tab-3.webp)
 
 3. Click on the "Expand" checkbox.
-  
-    ![Expanding the Machine Config options](images/Expand-Checkbox-3.png)
+
+    ![Expanding the Machine Config options](images/Expand-Checkbox-3.webp)
 
 4. Click on `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`
-  
-    ![Open the Nozzle N1 settings](images/select-nozzle-N1.png)
+
+    ![Open the Nozzle N1 settings](images/select-nozzle-N1.webp)
 
 5. Click on the `Nozzle Tips` tab.
-  
-    ![Nozzle Tip Tab](images/nozzle-tip-tab.png)
+
+    ![Nozzle Tip Tab](images/nozzle-tip-tab.webp)
 
 6. Click the `Loaded?` checkbox for the nozzle you're tuning.
-  
-    ![Loaded Checkbox](images/loaded-checkbox.png)
+
+    ![Loaded Checkbox](images/loaded-checkbox.webp)
 
 7. Click on `Nozzle Tips > ReferenceNozzleTip N045` (or whichever nozzle you're working with).
-  
-    ![Nozzle Tips Section](images/nozzle-tips-section.png)
+
+    ![Nozzle Tips Section](images/nozzle-tips-section.webp)
 
 8. Check that the correct toolhead is selected in the `Machine Controls Tab`.
-  
-    ![Activate Toolhead](images/select-correct-nozzle.png)
+
+    ![Activate Toolhead](images/select-correct-nozzle.webp)
 
 ## Pick component
 
 To tune a part identification pipeline, you'll need to pick up the component you want to tune. You can [setup a feeder](../ftp/1-installing-the-feeders/index.md) and use the "pick" button.
 
-![Pick Button For Feeder](images/pick-button-feeder.png)
+![Pick Button For Feeder](images/pick-button-feeder.webp)
 
 ## Open the pipeline
 
 1. With a part now picked and on the nozzle, go to the `Packages` tab.
-  
-    ![Packages Tab](images/packages-tab.png)
+
+    ![Packages Tab](images/packages-tab.webp)
 
 2. Select the package for the component you'll be tuning.
-  
-    ![Select Component Package](images/select-component-package.png)
+
+    ![Select Component Package](images/select-component-package.webp)
 
 3. Check that your nozzle tip is compatible with the package you'll be working with.
-  
-    ![Check your nozzle tip is compatible](images/confirm-nozzle-tip-compatible.png)
+
+    ![Check your nozzle tip is compatible](images/confirm-nozzle-tip-compatible.webp)
 
 4. Click on the `Bottom Vision Settings Tab`.
-  
-    ![Bottom Vision Settings Tab](images/bottom-part-vision-settings.png)
+
+    ![Bottom Vision Settings Tab](images/bottom-part-vision-settings.webp)
 
 5. Click on the Pipeline: `Edit` button.
-  
-    ![Pipeline Edit Button](images/edit-package-pipeline.png)
+
+    ![Pipeline Edit Button](images/edit-package-pipeline.webp)
 
     !!! warning "Affects all other parts"
 
-        Directly clicking the "Edit" button will adjust the vision pipeline for **every other package assigned to this pipeline**. If you'd like to adjust the pipeline for **just** this package, click on the "Specialize for `PACKAGE_NAME`" button before editing. 
+        Directly clicking the "Edit" button will adjust the vision pipeline for **every other package assigned to this pipeline**. If you'd like to adjust the pipeline for **just** this package, click on the "Specialize for `PACKAGE_NAME`" button before editing.
 
 1. Allow OpenPnP to jog the nozzle to the bottom camera position.
 
@@ -80,7 +80,7 @@ To tune a part identification pipeline, you'll need to pick up the component you
 
       If you want to reset your part identification pipeline to the clean default configuration, you can easily update your vision pipeline as follows.
 
-      ![circular symmetry image pipeline](images/default-part-id-pipeline.png)
+      ![circular symmetry image pipeline](images/default-part-id-pipeline.webp)
 
       1. Click the "Copy" button in the code block below to save the vision pipeline to your clipboard.
 
@@ -104,11 +104,11 @@ To tune a part identification pipeline, you'll need to pick up the component you
 
       2.  Click the "Clipboard" icon in the vision pipeline window to insert the new pipeline into OpenPnP.
 
-          ![pipeline clipboard button](images/pipeline-paste-button.png)
+          ![pipeline clipboard button](images/pipeline-paste-button.webp)
 
 1. Click on the `DrawRotatedRects` stage.
-  
-    ![Click on the DrawRotatedRects stage](images/draw-rotated-rects-stage.png)
+
+    ![Click on the DrawRotatedRects stage](images/draw-rotated-rects-stage.webp)
 
 1. The main view will show a rectangle around the silhouette of your component.
     1. If the rectangle is not precise around your component, then we need to more clearly distinguish the real component from the toolhead.
@@ -125,12 +125,12 @@ The `Threshold` stage is the most commonly edited stage. It turns the camera ima
 !!! danger "Exposure settings"
     If you're having trouble getting your image to look like the "Good Threshold" image below, it could be that your bottom camera exposure is too high, making it difficult for OpenPnP to distinguish between the part and the nozzle tip. [Adjust your bottom camera's exposure](/openpnp/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration/), then retry tuning your threshold value.
 
-![Threshold Comparison](images/part-threshold-comparison.png)
+![Threshold Comparison](images/part-threshold-comparison.webp)
 
 ## Test part identification
-  
+
 1. To see how your adjusted pipeline performs, click on the `Test Alignment` button.
-  ![Alt text](test-alignment-button.png)
+  ![Alt text](test-alignment-button.webp)
 
 !!! NOTE
     If you receive the `Part height unknown and camera Bottom does not support part height sensing.` error, you need to set your part's height. This lets OpenPnP position it appropriately above the bottom camera.
@@ -139,5 +139,5 @@ The `Threshold` stage is the most commonly edited stage. It turns the camera ima
      2. Select your Component
      3. Double-click the Height Column to modify it.
 
-    ![Part Height Error](images/part-height-error.png)
-    ![Set Part Height](images/set-part-height.png)
+    ![Part Height Error](images/part-height-error.webp)
+    ![Set Part Height](images/set-part-height.webp)

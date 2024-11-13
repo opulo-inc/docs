@@ -19,61 +19,61 @@ With OpenPnP installed on your computer and the default configuration installed,
         **Use separate USB ports directly into your computer**. The cameras require a lot of USB bandwidth, and many USB hubs aren't capable of handling it. For best results, make sure each camera is plugged into a different USB port directly into your computer, ideally on different interal USB hubs.
 
 5. Open OpenPnP on your computer. You should now see the OpenPnP UI:
-  ![OpenPnP's basic UI](images/openpnp-ui.png)
+  ![OpenPnP's basic UI](images/openpnp-ui.webp)
 
 ## Serial Port Configuration
 
 Before connecting to the LumenPnP, you need to set which USB port to use for communication in OpenPnP.
 
 1. Click on the `Machine Setup` tab.
-  
-    ![Machine Setup Tab](images/Machine-Setup-Tab.png)
+
+    ![Machine Setup Tab](images/Machine-Setup-Tab.webp)
 
 2. Click on the "Expand" checkbox to open all of the features.
-  
-    ![Expanding the Machine Config options](images/Expand-Checkbox.png)
+
+    ![Expanding the Machine Config options](images/Expand-Checkbox.webp)
 
 3. Under `Drivers` click on `GcodeDriver GcodeDriver`. Below the list of machine settings you'll find the details of the GcodeDriver.
-  
-    ![Reviewing the GcodeDriver options](images/SelectGcodeDriver.png)
-  
+
+    ![Reviewing the GcodeDriver options](images/SelectGcodeDriver.webp)
+
 1. In the `Configuration` tab, select the `Port` for your LumenPnP.
     1. On Windows, the `Port` will look like `COM2` or `COM3`.
     2. On Mac, the `Port` will be in the format: `cu.usbmodem<a-lot-of-numbers>`
     3. On Linux, Set the `Port` to the option in the format: `ttyACM0`.
-    ![Changing the Port and Baud Rate](images/Check COM Port and Baud Rate.png)
+    ![Changing the Port and Baud Rate](images/Check COM Port and Baud Rate.webp)
 
         !!! info "Port Not Found"
             If your machine's port does not show up in the drop down, check that your USB cable is plugged in to both your computer and the LumenPnP. Also check that the motherboard is powered on. If you still cannot find the port, try pressing the reset button on the motherboard and closing and reopening OpenPnP.
 
 2. Click `Apply` in the lower right corner to save your changes.
-   
-    ![Apply baud rate and port](images/apply-machine-config.png)
+
+    ![Apply baud rate and port](images/apply-machine-config.webp)
 
 ## Establishing Serial Connection
 
 1. Click the green power button in the Machine Controls section of the UI to connect to your machine.
 
-    ![Connect to the LumenPnP](images/connect-to-machine-power-button.png)
+    ![Connect to the LumenPnP](images/connect-to-machine-power-button.webp)
 
 1. The power button will turn red when OpenPnP has connected to your machine. If this doesn't work, check your [serial port](#serial-port-configuration).
 
-    ![having successfully connected to the LumenPnP and cameras](images/connected-to-machine.png)
+    ![having successfully connected to the LumenPnP and cameras](images/connected-to-machine.webp)
 
 1. Save your OpenPnP settings with `File > Save Configuration`.
 
-    ![saving the machine config](images/save-configuration.png)
+    ![saving the machine config](images/save-configuration.webp)
 
 1. Turn on your machine's Ring Lights. Click the `LED` button under the `Actuators` tab under `Machine Controls`. Click `On` in the popup.
 
-    ![](images/turn-on-led.png)
+    ![](images/turn-on-led.webp)
 
     !!! note "Keep Ring Lights On"
         Keep the ring lights on for the rest of calibration. All calibrations should be based on the lighting from the ring lights.
 
         When running jobs, the ring lights will turn on automatically when homing, so it's not necessary to turn them on manually in normal operation.
 
-<!-- 
+<!--
 !!! success "v3.1+ Speed Increase"
 
     If your machine is v3.1 or higher, your machine can move much faster than the default configuration because of the addition of linear rails, and use less current for the L and R motors with the addition of pneumatic rotation couplings.
@@ -96,8 +96,8 @@ Before connecting to the LumenPnP, you need to set which USB port to use for com
         ```
 
         Your settings should look similar like the image below:
-       
-        ![](images/31settings.png)
+
+        ![](images/31settings.webp)
 
       2. Next, under the `Setting` dropdown, choose the `HOME_COMMAND` option. **Overwrite** the existing text in this field with the new settings below. Be sure to hit `Apply` to confirm your changes.
 
@@ -127,44 +127,44 @@ Next, you'll configure the cameras.
 !!! Note
     More recent LumenPnP machines ship with a more recessed bottom camera, shown below. The images in our setup guides mostly show an older mounting solution, but either works the same.
 
-    ![recessed bottom camera](images/new-bottom-camera.jpg)
+    ![recessed bottom camera](images/new-bottom-camera.webp)
 
 1. Make sure both camera's lens caps are removed. (They are already removed in the image below.)
-  
-    ![Lens cap locations](../5-mm-per-pixel/images/remove-lens-caps.jpg)
+
+    ![Lens cap locations](../5-mm-per-pixel/images/remove-lens-caps.webp)
 
 1. In the top-left corner, change the camera view to "Show All Horizontal". You will see two sections for camera feeds that have a red "X". An "X" in the camera views means that OpenPnP isn't yet configured to receive that camera feed.
 
-    ![show both camera feeds](images/switch-camera-display.png)
+    ![show both camera feeds](images/switch-camera-display.webp)
 
 1. Under the `Machine Setup` tab, click on `Cameras > OpenPnpCaptureCamera Bottom`.
-  
-    ![Finding the Bottom Camera Settings](images/Bottom Camera Config.png)
+
+    ![Finding the Bottom Camera Settings](images/Bottom Camera Config.webp)
 
 1. In the lower detail pane, switch to the `Device Settings` tab.
-  
-    ![Switching to the camera device settings](images/Bottom-camera-device-settings.png)
+
+    ![Switching to the camera device settings](images/Bottom-camera-device-settings.webp)
 
 1. In the `Device` drop-down, choose `PnP Bottom Camera`.
-  
-    ![Selecting the correct device for the Bottom Camera](images/Bottom-camera-select-device.png)
+
+    ![Selecting the correct device for the Bottom Camera](images/Bottom-camera-select-device.webp)
 
     !!! info "Duplicate Camera Names"
         Due to a bug in OpenPnP, it's possible that you'll see two of the same camera name in this drop down menu. If the first one you pick is incorrect, use the other option of the same name.
 
 2. In the `Format` drop-down, choose the setting with the highest resolution and the lowest frame rate. In this image, it's `1280x720 10fps`.
-  
-    ![setting bottom camera resolution](images/Bottom resolution.png)
+
+    ![setting bottom camera resolution](images/Bottom resolution.webp)
 
 3. Click the `Apply` button in the bottom right. You should see the red "X" disappear from the bottom camera feed. The image might be entirely black.
-  
-    ![Saving changes to the Bottom Camera Config](images/Bottom Camera Apply.png)
 
-    ![Bottom camera is now on](images/Bottom-camera-on.png)
+    ![Saving changes to the Bottom Camera Config](images/Bottom Camera Apply.webp)
+
+    ![Bottom camera is now on](images/Bottom-camera-on.webp)
 
 4. Adjust the exposure to make the image visible. To ensure the camera has auto exposure disabled, toggle the "Auto" checkbox next to "Exposure" on and then off again. Do not keep auto exposure turned on. Slide the slider until you see a clearer picture. You'll set the exposure more accurately in a later step.
 
-    ![Adjust exposure](images/adjust-exposure.png)
+    ![Adjust exposure](images/adjust-exposure.webp)
 
     !!! warning "Other Camera Settings"
         We highly recommend not adjusting any of the other sliders for your camera's settings. Exposure is the only slider you should adjust from the default values the camera boots up with.
@@ -175,28 +175,28 @@ Next, you'll configure the cameras.
 ## Top Camera Configuration
 
 1. Under the `Machine Setup` tab, click on `Heads > ReferenceHead H1 > Cameras > OpenPnpCaptureCamera Top`.
-  
-    ![Finding the Top Camera Settings](images/Top-camera-settings.png)
+
+    ![Finding the Top Camera Settings](images/Top-camera-settings.webp)
 
 4. In the lower detail pane, switch to the `Device Settings` tab.
-  
-    ![Switching to the camera device settings](images/Top-camera-device-settings.png)
+
+    ![Switching to the camera device settings](images/Top-camera-device-settings.webp)
 
 5. In the `Device` drop-down, choose `PnP Top Camera`.
-  
-    ![Selecting the correct device for the Bottom Camera](images/Top-camera-select-device.png)
+
+    ![Selecting the correct device for the Bottom Camera](images/Top-camera-select-device.webp)
 
 1. In the `Format` drop-down, choose the setting with the highest resolution and the lowest frame rate. In this image, it's `1280x720 10fps`.
-  
-    ![setting top camera resolution](images/Top resolution.png)
+
+    ![setting top camera resolution](images/Top resolution.webp)
 
 1. Click the `Apply` button in the bottom right. You should then see the camera display start showing the feed from the camera, or at least see the red X disappear.
-  
-    ![Saving changes to the Top Camera Config](images/Top Camera Apply.png)
+
+    ![Saving changes to the Top Camera Config](images/Top Camera Apply.webp)
 
 1. Adjust the exposure to make the image visible. To ensure the camera has auto exposure disabled, toggle the "Auto" checkbox next to "Exposure" on and then off again. Do not keep auto exposure turned on. Slide the slider until you see a clearer picture. You'll set the exposure more accurately in a later step.
-  
-    ![Adjust exposure](images/adjust-exposure-2.png)
+
+    ![Adjust exposure](images/adjust-exposure-2.webp)
 
 ## Next Steps
 

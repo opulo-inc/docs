@@ -10,20 +10,20 @@ While the bottom camera can detect if a part was successfully picked, you can us
 
 1. Ensure there's still an N045 nozzle tip on the N1 nozzle.
 2. Navigate to `Machine Setup > Nozzle Tips > ReferenceNozzleTip N045 > Part Detection`.
-  ![Enabling part detection](images/Screen Shot 2023-02-16 at 10.25.43 AM.png)
+  ![Enabling part detection](images/Screen Shot 2023-02-16 at 10.25.43 AM.webp)
 
 1. Open the `H1:VAC1` actuator window. Click `On` to turn on your pump and valve, and then click `Read`. You should see a value appear in the `Read Value` text box. Take note of this number.
 
-    ![vac1 actuator](images/vac1-actuator.png)
-    ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.png)
+    ![vac1 actuator](images/vac1-actuator.webp)
+    ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.webp)
 
 2. Now, cover the nozzle with your finger tip. Hit `Read` again. Take note of the new number.
 
 3. Split the difference between these numbers. For example, if your readings were `250` and `246`, choose `248`.
 
 4. Enter this value into the `High Value` field in the `Vacuum Range` setting.
-   
-    ![entering vac threshold value for n045](images/entering-vac-cal.png)
+
+    ![entering vac threshold value for n045](images/entering-vac-cal.webp)
 
 1. Hit "Apply" to save your changes.
 

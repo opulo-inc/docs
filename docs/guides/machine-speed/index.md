@@ -8,7 +8,7 @@ If you'd like to update the max speed that OpenPnP commands the LumenPnP to run 
       Marlin does an exceptional job of managing acceleration, jerk, and speed control. OpenPnP tries to brute these settings into the gcode stream, which can cause issues with other parts of the configuration.
 
 1. Go to `Machine Setup` > `Drivers` > `GcodeDrivers` > `Driver Settings` > `Max. Feed Rate [/min]`
-   ![](img/change-machine-speed.png)
+   ![](img/change-machine-speed.webp)
 2. This field is the correct place to update the max movement speed of the LumenPnP for most operations.
 
 !!! note "Marlin Max Feed Rate"

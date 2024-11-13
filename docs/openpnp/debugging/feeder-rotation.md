@@ -1,6 +1,6 @@
 # 90 degree offset
 
-![parts rotated 90 degrees from their intended rotation](img/feeder-rotation.png){: style="width:60%;margin-left:10%;"}
+![parts rotated 90 degrees from their intended rotation](img/feeder-rotation.webp){: style="width:60%;margin-left:10%;"}
 
 If some of your parts are placed with a 90 or 180 degree offset, there are a couple potential root causes:
 

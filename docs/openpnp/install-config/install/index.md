@@ -2,7 +2,7 @@
 
 OpenPnP is a piece of open source software designed to control pick and place machines. It supports a wide range of machines, with many features found in high-end commercial software. You can find out more about it [here](https://openpnp.org/).
 
-![OpenPnP Logo](img/openpnp-logo.png)
+![OpenPnP Logo](img/openpnp-logo.webp)
 
 ## Tutorial Video
 
@@ -57,9 +57,9 @@ OpenPnP is designed to run on many different kinds of host computers. However, U
 
     !!! danger "Mac Users"
         Because of [a bug with how OpenPnP signs their releases](https://github.com/openpnp/openpnp/issues/1559), Mac users with ARM processors might experience a crash on boot, or not be able to access the cameras. You can still run OpenPnP by navigating to `Applications -> OpenPnP` and right clicking on the OpenPnP app and selecting "Show Package Contents":
-        ![Show package contents on the openpnp app](img/opnp-show-package-contents.png)
+        ![Show package contents on the openpnp app](img/opnp-show-package-contents.webp)
         Then navigate to `Contents -> MacOS` and double click on `JavaApplicationStub` to run OpenPnP.
-        ![clicking on javaapplicationstub](img/boot-opnp-java-stub.png)
+        ![clicking on javaapplicationstub](img/boot-opnp-java-stub.webp)
 
 1. Open OpenPnP and make sure it loads fully. Doing this will make sure that OpenPnP puts a configuration folder on your computer that we'll need in the next step.
 

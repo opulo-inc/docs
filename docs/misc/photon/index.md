@@ -1,5 +1,5 @@
 ---
-description: Photon protocol definition and examples 
+description: Photon protocol definition and examples
 ---
 
 # Photon Protocol
@@ -14,7 +14,7 @@ Only the host may initiate communication. Every Photon interaction is comprised 
 
 The following is the basic Photon packet structure.
 
-![](img/photon-packet.png)
+![](img/photon-packet.webp)
 
 The packet is made up of two parts: the header and the payload. The header contains exactly five bytes: "to" address, "from" address, packet ID, payload length, and the CRC. The payload *always* has at least one byte, either a command ID or a status. The payload can have optional further bytes.
 
@@ -188,14 +188,14 @@ Send:
  |    |    |    |    |    |
  |    |    |    |    |   Sending Command 0x01 means GET_ID
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 1    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 1
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
@@ -204,20 +204,20 @@ Receive:
 ```
 [00] [02] [07] [0D] [D7] [00] [02] [48] ..... [37] [30]
  |    |    |    |    |    |    |_____________________|
- |    |    |    |    |    |    | 
- |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |    |
  |    |    |    |    |    |   12 Byte UUID
  |    |    |    |    |    |
  |    |    |    |    |   Status 0x00 means OK
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 13    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 13
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
@@ -243,20 +243,20 @@ Send:
 ```
 [02] [00] [07] [0D] [C0] [02] [02] [48] ..... [37] [30]
  |    |    |    |    |    |    |_____________________|
- |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
  |    |    |    |    |    |    |
  |    |    |    |    |    |   12 Byte Feeder UUID
- |    |    |    |    |    |    
+ |    |    |    |    |    |
  |    |    |    |    |   Sending Command 0x02 means INITIALIZE
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 13    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 13
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
@@ -265,20 +265,20 @@ Receive:
 ```
 [00] [02] [07] [0D] [D7] [00] [02] [48] ..... [37] [30]
  |    |    |    |    |    |    |_____________________|
- |    |    |    |    |    |    | 
- |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |    |
  |    |    |    |    |    |   12 Byte Feeder UUID
  |    |    |    |    |    |
  |    |    |    |    |   Status 0x00 means OK
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 13    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 13
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
@@ -303,43 +303,43 @@ Send:
 
 ```
 [02] [00] [07] [01] [C0] [03]
- |    |    |    |    |    |   
- |    |    |    |    |    |     
- |    |    |    |    |    |    
- |    |    |    |    |    |   
- |    |    |    |    |    |    
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
  |    |    |    |    |   Sending Command 0x02 means GET_VERSION
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 1    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 1
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
 Receive:
 
 ```
-[00] [02] [07] [02] [D7] [00] [01] 
+[00] [02] [07] [02] [D7] [00] [01]
  |    |    |    |    |    |    |
- |    |    |    |    |    |    | 
- |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |    |
  |    |    |    |    |    |   Protocol Version
  |    |    |    |    |    |
  |    |    |    |    |   Status 0x00 means OK
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 2    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 2
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
@@ -363,22 +363,22 @@ MOVE_FEED_FORWARD is used to command a feeder to feed a certain distance forward
 Send:
 
 ```
-[02] [00] [07] [02] [C0] [04] [28] 
+[02] [00] [07] [02] [C0] [04] [28]
  |    |    |    |    |    |    |
- |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
  |    |    |    |    |    |    |
  |    |    |    |    |    |   Distance (in tenths of a mm)
- |    |    |    |    |    |    
+ |    |    |    |    |    |
  |    |    |    |    |   Sending Command 0x04 means MOVE_FEED_FORWARD
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 2    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 2
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
@@ -387,20 +387,20 @@ Receive:
 ```
 [00] [02] [07] [03] [D7] [00] [02] [48]
  |    |    |    |    |    |    |____|
- |    |    |    |    |    |    | 
- |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |    |
  |    |    |    |    |    |   2 Byte Expected Time to Feed
  |    |    |    |    |    |
  |    |    |    |    |   Status 0x00 means OK
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 3    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 3
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
@@ -424,22 +424,22 @@ MOVE_FEED_BACKWARD is used to command a feeder to feed a certain distance backwa
 Send:
 
 ```
-[02] [00] [07] [02] [C0] [05] [28] 
+[02] [00] [07] [02] [C0] [05] [28]
  |    |    |    |    |    |    |
- |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
  |    |    |    |    |    |    |
  |    |    |    |    |    |   Distance (in tenths of a mm)
- |    |    |    |    |    |    
+ |    |    |    |    |    |
  |    |    |    |    |   Sending Command 0x05 means MOVE_FEED_BACKWARD
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 2    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 2
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
@@ -448,20 +448,20 @@ Receive:
 ```
 [00] [02] [07] [0D] [D7] [00] [02] [48]
  |    |    |    |    |    |    |____|
- |    |    |    |    |    |    | 
- |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |    |
  |    |    |    |    |    |   2 Byte Expected Time to Feed
  |    |    |    |    |    |
  |    |    |    |    |   Status 0x00 means OK
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 3    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 3
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
@@ -485,44 +485,44 @@ MOVE_FEED_STATUS is used to determine if a feeder has finished a feed command, a
 Send:
 
 ```
-[02] [00] [07] [01] [C0] [06] 
- |    |    |    |    |    |   
- |    |    |    |    |    |    
- |    |    |    |    |    |   
- |    |    |    |    |    |   
- |    |    |    |    |    |    
+[02] [00] [07] [01] [C0] [06]
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
  |    |    |    |    |   Sending Command 0x06 means MOVE_FEED_STATUS
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 1    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 1
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
 Receive:
 
 ```
-[00] [02] [07] [01] [D7] [00] 
- |    |    |    |    |    |   
- |    |    |    |    |    |   
- |    |    |    |    |    |     
- |    |    |    |    |    |   
+[00] [02] [07] [01] [D7] [00]
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
  |    |    |    |    |    |
  |    |    |    |    |   Status 0x00 means OK
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 1    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 1
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
@@ -548,20 +548,20 @@ Send:
 ```
 [02] [00] [07] [0D] [C0] [BF] [02] [48] ..... [37] [30]
  |    |    |    |    |    |    |_____________________|
- |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
  |    |    |    |    |    |    |
  |    |    |    |    |    |   Vendor-Specific Payload
- |    |    |    |    |    |    
+ |    |    |    |    |    |
  |    |    |    |    |   Sending Command 0xBF means VENDOR_OPTIONS
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length is dependent on implementation    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length is dependent on implementation
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
@@ -570,20 +570,20 @@ Receive:
 ```
 [00] [02] [07] [0D] [D7] [3F] [02] [48] ..... [37] [30]
  |    |    |    |    |    |    |_____________________|
- |    |    |    |    |    |    | 
- |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
+ |    |    |    |    |    |    |
  |    |    |    |    |    |   Vendor-Specific Payload
  |    |    |    |    |    |
  |    |    |    |    |   Vendor-Specific Status
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length dependent on implementation    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length dependent on implementation
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
@@ -611,42 +611,42 @@ Send:
 ```
 [FF] [00] [07] [0D] [C0] [C0] [02] [48] ..... [37] [30]
  |    |    |    |    |    |    |_____________________|
- |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
  |    |    |    |    |    |    |
  |    |    |    |    |    |   12 Byte Feeder UUID
- |    |    |    |    |    |    
+ |    |    |    |    |    |
  |    |    |    |    |   Sending Command 0xC0 means GET_FEEDER_ADDRESS
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 13    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 13
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 Broadcast Address
 ```
 
 Receive:
 
 ```
-[00] [02] [07] [01] [D7] [00] 
- |    |    |    |    |    |   
- |    |    |    |    |    |     
- |    |    |    |    |    |    
- |    |    |    |    |    |   
+[00] [02] [07] [01] [D7] [00]
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
  |    |    |    |    |    |
  |    |    |    |    |   Status 0x00 means OK
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 1    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 1
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
@@ -672,20 +672,20 @@ Send:
 ```
 [FF] [00] [07] [0D] [C0] [C1] [02] [48] ..... [37] [30]
  |    |    |    |    |    |    |_____________________|
- |    |    |    |    |    |    | 
+ |    |    |    |    |    |    |
  |    |    |    |    |    |    |
  |    |    |    |    |    |   12 Byte Feeder UUID
- |    |    |    |    |    |    
+ |    |    |    |    |    |
  |    |    |    |    |   Sending Command 0xC1 means IDENTIFY_FEEDER
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 13    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 13
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 Broadcast Address
 ```
 
@@ -693,21 +693,21 @@ Receive:
 
 ```
 [00] [02] [07] [01] [D7] [00]
- |    |    |    |    |    |   
- |    |    |    |    |    |     
- |    |    |    |    |    |     
- |    |    |    |    |    |  
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
  |    |    |    |    |    |
  |    |    |    |    |   Status 0x00 means OK
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 1   
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 1
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```
 
@@ -740,17 +740,17 @@ Send:
  |    |    |    |    |    |    |                        Address to program
  |    |    |    |    |    |    |
  |    |    |    |    |    |   12 Byte Feeder UUID
- |    |    |    |    |    |    
+ |    |    |    |    |    |
  |    |    |    |    |   Sending Command 0xC2 means PROGRAM_FEEDER_FLOOR
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 14    
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 14
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 Broadcast Address
 ```
 
@@ -758,21 +758,21 @@ Receive:
 
 ```
 [00] [05] [07] [01] [D7] [00]
- |    |    |    |    |    |   
- |    |    |    |    |    |     
- |    |    |    |    |    |     
- |    |    |    |    |    |  
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
  |    |    |    |    |    |
  |    |    |    |    |   Status 0x00 means OK
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 1   
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 1
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address (which was just programmed)
- |  
+ |
 To Address
 ```
 
@@ -796,24 +796,24 @@ UNINITIALIZED_FEEDERS_RESPOND causes all feeders on the bus that are not initial
 Send:
 
 ```
-[FF] [00] [07] [0E] [C0] [C3] 
- |    |    |    |    |    |   
- |    |    |    |    |    |   
- |    |    |    |    |    |   
- |    |    |    |    |    |   
- |    |    |    |    |    |   
- |    |    |    |    |    |  
- |    |    |    |    |    |    
+[FF] [00] [07] [0E] [C0] [C3]
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
+ |    |    |    |    |    |
  |    |    |    |    |   Sending Command 0xC3 means UNINITIALIZED_FEEDERS_RESPOND
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 1  
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 1
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 Broadcast Address
 ```
 
@@ -828,13 +828,13 @@ Receive:
  |    |    |    |    |    |
  |    |    |    |    |   Status 0x00 means OK
  |    |    |    |    |
- |    |    |    |   Checksum   
- |    |    |    |  
- |    |    |   Payload Length of 13   
- |    |    |  
+ |    |    |    |   Checksum
+ |    |    |    |
+ |    |    |   Payload Length of 13
+ |    |    |
  |    |   Packet ID
- |    |  
+ |    |
  |   From Address
- |  
+ |
 To Address
 ```

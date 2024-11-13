@@ -27,12 +27,12 @@ If none of these steps fix the issue, please contact us at [support.opulo.io](ht
 ### Reseating the Drive Motor Cable
 
  1. Remove the drive motor cover using the allen key set that came with your LumenPnP.
-    ![remove drive cover](img/remove-drive-cover.jpeg)
-    ![removed drive cover](img/removed-drive-cover.jpeg)
+    ![remove drive cover](img/remove-drive-cover.webp)
+    ![removed drive cover](img/removed-drive-cover.webp)
  2. Remove the cable plugged into the motherboard.
-    ![removed drive cable](img/removed-drive-cable.jpeg)
+    ![removed drive cable](img/removed-drive-cable.webp)
  3. Plug it back in in the orientation shown (shiny crimp side should be facing down), and push it in all the way using a small allen key.
-    ![plugging in the drive motor cable](img/drive-motor-cable-plugging.jpeg)
-    ![ok plug of drive motor cable](img/ok-plug.jpeg)
-    ![bad plug of drive motor cable](img/ng-plug.jpeg)
+    ![plugging in the drive motor cable](img/drive-motor-cable-plugging.webp)
+    ![ok plug of drive motor cable](img/ok-plug.webp)
+    ![bad plug of drive motor cable](img/ng-plug.webp)
  4. Bolt the drive motor cover back on, and test again.

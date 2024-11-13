@@ -6,28 +6,28 @@ If you want to find out what version of OpenPnP you are using, please see the ap
 
 1. Go to the top left of the screen and click on `OpenPnP` > `About OpenPnP`.
 
-      ![](img/mac-openpnp1.png)
+      ![](img/mac-openpnp1.webp)
 
 2. The version will be listed as a date:
 
-      ![](img/mac-openpnp2.png)
+      ![](img/mac-openpnp2.webp)
 
 ## Windows
 
 1. Go to the top of the program and click on `Help` > `About`.
 
-      ![](img/windows-openpnp1.png)
+      ![](img/windows-openpnp1.webp)
 
 2. The version will be listed as a date:
 
-      ![](img/windows-openpnp2.png)
+      ![](img/windows-openpnp2.webp)
 
 ## Linux
 
 1. Go to the top of the program and click on `Help` > `About`.
 
-      ![](img/linux-openpnp1.png)
+      ![](img/linux-openpnp1.webp)
 
 2. The version will be listed as a date:
 
-      ![](img/linux-openpnp2.png)
+      ![](img/linux-openpnp2.webp)

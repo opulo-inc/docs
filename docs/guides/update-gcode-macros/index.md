@@ -17,7 +17,7 @@ Version 3.1 and upward of the LumenPnP uses linear rails, so speeds and currents
 ### Connect Command (v3.1+)
 
 1. Select the `Default` and `CONNECT_COMMAND` dropdowns under `Machine Setup > Drivers > GcodeDriver GcodeDriver > Gcode`.
-   ![](img/connect-command.png)
+   ![](img/connect-command.webp)
 
 1. Paste the following Gcode into the text field:
 
@@ -40,7 +40,7 @@ Version 3.1 and upward of the LumenPnP uses linear rails, so speeds and currents
 ### Home Command (v3.1+)
 
 1. Select the `Default` and `HOME_COMMAND` dropdowns under `Machine Setup > Drivers > GcodeDriver GcodeDriver > Gcode`.
-   ![](img/home-command.png)
+   ![](img/home-command.webp)
 
 1. Paste the following Gcode into the text field:
 
@@ -55,7 +55,7 @@ Version 3.1 and upward of the LumenPnP uses linear rails, so speeds and currents
 ### VAC1 and VAC2 Actuator Read Commands (v3.1+)
 
 1. Select the `Actuator: H1 VAC1` and `ACTUATOR_READ_COMMAND` dropdowns under `Machine Setup > Drivers > GcodeDriver GcodeDriver > Gcode`.
-   ![](img/vac1-read.png)
+   ![](img/vac1-read.webp)
 
 1. Paste the following Gcode into the text field:
 
@@ -68,7 +68,7 @@ Version 3.1 and upward of the LumenPnP uses linear rails, so speeds and currents
 1. Click the `Apply` button in the bottom right.
 
 1. Select the `Actuator: H1 VAC2` and `ACTUATOR_READ_COMMAND` dropdowns under `Machine Setup > Drivers > GcodeDriver GcodeDriver > Gcode`.
-   ![](img/vac2-read.png)
+   ![](img/vac2-read.webp)
 
 1. Paste the following Gcode into the text field:
 
@@ -87,7 +87,7 @@ Version 3.0.0 - 3.0.5 of the LumenPnP uses the REV04 motherboard, which uses int
 ### Connect Command (v3.0)
 
 1. Select the `Default` and `CONNECT_COMMAND` dropdowns under `Machine Setup > Drivers > GcodeDriver GcodeDriver > Gcode`.
-   ![](img/connect-command.png)
+   ![](img/connect-command.webp)
 
 1. Paste the following Gcode into the text field:
 
@@ -110,7 +110,7 @@ Version 3.0.0 - 3.0.5 of the LumenPnP uses the REV04 motherboard, which uses int
 ### Home Command (v3.0)
 
 1. Select the `Default` and `HOME_COMMAND` dropdowns under `Machine Setup > Drivers > GcodeDriver GcodeDriver > Gcode`.
-   ![](img/home-command.png)
+   ![](img/home-command.webp)
 
 1. Paste the following Gcode into the text field:
 
@@ -125,7 +125,7 @@ Version 3.0.0 - 3.0.5 of the LumenPnP uses the REV04 motherboard, which uses int
 ### VAC1 and VAC2 Actuator Read Commands (v3.0)
 
 1. Select the `Actuator: H1 VAC1` and `ACTUATOR_READ_COMMAND` dropdowns under `Machine Setup > Drivers > GcodeDriver GcodeDriver > Gcode`.
-   ![](img/vac1-read.png)
+   ![](img/vac1-read.webp)
 
 1. Paste the following Gcode into the text field:
 
@@ -138,7 +138,7 @@ Version 3.0.0 - 3.0.5 of the LumenPnP uses the REV04 motherboard, which uses int
 1. Click the `Apply` button in the bottom right.
 
 1. Select the `Actuator: H1 VAC2` and `ACTUATOR_READ_COMMAND` dropdowns under `Machine Setup > Drivers > GcodeDriver GcodeDriver > Gcode`.
-   ![](img/vac2-read.png)
+   ![](img/vac2-read.webp)
 
 1. Paste the following Gcode into the text field:
 

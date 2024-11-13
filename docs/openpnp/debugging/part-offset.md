@@ -1,6 +1,6 @@
 # Part offset
 
-![parts placed offset relative to the part's orientation](img/part-offset.png){: style="width:60%;margin-left:10%;"}
+![parts placed offset relative to the part's orientation](img/part-offset.webp){: style="width:60%;margin-left:10%;"}
 
 If parts are placed offset **relative to the orientation of the footprint**, there's a main potential root cause:
 

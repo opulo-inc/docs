@@ -38,7 +38,7 @@ M150 P0                    ;turn off ring lights
 
 If you'd like to change the brightness that your ring lights actuate to during a job, you can edit the P value in this section of the "Machine Setup" tab in OpenPnP:
 
-![P value highlighted in gcode textbox](images/edit-ringlight-brightness.png)
+![P value highlighted in gcode textbox](images/edit-ringlight-brightness.webp)
 
 ## Vacuum Sensors
 
@@ -62,10 +62,10 @@ M107 P1               ;turn off the valve
     Some LumenPnP kits shipped with a less than optimal vacuum sensor wiring. Some people's sensors can detect a swing of about 200, but in some cases there isn't enough of a difference for a useful signal because of some part tolerances. We're sorry about this! When the community discovered this issue, we stopped shipping immediately and designed a board that sits in between the vacuum sensor and the motherboard that makes the signal much stronger. Once we confirmed this board fixes the issue, we installed them on all machines we shipped moving forward.
 
     No Interposers Installed
-    ![No Interposers Installed](images/IMG_1293.JPG)
+    ![No Interposers Installed](images/IMG_1293.webp)
 
     Interposer Boards Installed
-    ![Interposer Boards Installed](images/IMG_1325.JPG)
+    ![Interposer Boards Installed](images/IMG_1325.webp)
 
     If you bought a LumenPnP kit that did not come with interposer boards installed and would like to upgrade them, please [reach out to our support team](https://opulo.io/pages/contact-support) and we'll get some sent out to you as soon as possible at only the cost of shipping (even if you're out of warranty). We have an [installation guide](https://docs.opulo.io/guides/rev3-vac-interposer/) to guide you through the process.
 

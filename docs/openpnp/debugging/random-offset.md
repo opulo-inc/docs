@@ -1,6 +1,6 @@
 # Random offset
 
-![random offsets and rotations](img/random-offset.png){: style="width:60%;margin-left:10%;"}
+![random offsets and rotations](img/random-offset.webp){: style="width:60%;margin-left:10%;"}
 
 If your parts are being placed with seemingly random offsets and rotations, there are couple potential root causes:
 

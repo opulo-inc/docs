@@ -10,7 +10,7 @@ Before telling the machine to move, it's important to make sure that your limit 
 
 One more step before having the machine move: manually move the the machine's head to the lower left corner of the machine. Don't move it completely into the limit switches, leave a few centimeters of space.
 
-![](images/manual-home.jpg)
+![](images/manual-home.webp)
 
 Doing this makes sure that the machine head does not crash into the build plate during the homing and motor tests.
 

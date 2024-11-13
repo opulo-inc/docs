@@ -14,32 +14,32 @@ You might have found an inaccuracy or error when placing parts. This page addres
 
 - title: Random offset
   content: Parts are placed seemingly randomly.
-  image: img/random-offset.png
+  image: img/random-offset.webp
   url: random-offset.md
 
 - title: Global offset
   content: Every part is shifted the same amount in X and Y
-  image: img/global-offset.png
+  image: img/global-offset.webp
   url: global-offset.md
 
 - title: Nozzle offset
   content: All parts placed with a certain nozzle have offset
-  image: img/nozzle-offset.png
+  image: img/nozzle-offset.webp
   url: nozzle-offset.md
 
 - title: Part offset
   content: Parts have offset relative to part's orientation
-  image: img/part-offset.png
+  image: img/part-offset.webp
   url: part-offset.md
 
 - title: Rotational offset
   content: Parts are placed with a consistent rotational offset
-  image: img/rotational-offset.png
+  image: img/rotational-offset.webp
   url: rotational-offset.md
 
 - title: 90 degree offset
   content: Parts are rotated in increments of 90 degrees
-  image: img/feeder-rotation.png
+  image: img/feeder-rotation.webp
   url: feeder-rotation.md
 
 ::/cards::
@@ -58,6 +58,6 @@ If the nozzle is not picking parts consistently, there are a few potential root 
 
 ### "No result found" error
 
-![no parts found error](/openpnp/vision-pipeline-adjustment/images/no-parts-found.png)
+![no parts found error](/openpnp/vision-pipeline-adjustment/images/no-parts-found.webp)
 
 - If the component was not identified by the bottom camera correctly, you will likely need to adjust its [Part Identification Vision Pipeline](/openpnp/vision-pipeline-adjustment/5-part-identification-pipeline.md).

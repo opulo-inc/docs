@@ -4,7 +4,7 @@ description: Instructions for fixing a consistent rotational offset
 
 # Rotational offset
 
-![parts placed with a consistent global offset for only one nozzle](img/rotational-offset.png){: style="width:60%;margin-left:10%;"}
+![parts placed with a consistent global offset for only one nozzle](img/rotational-offset.webp){: style="width:60%;margin-left:10%;"}
 
 If parts placed have a consistent rotational offset, there are a couple potential root causes:
 
@@ -16,7 +16,7 @@ If the nozzle tip you've selected to pick a part doesn't apply enough suction fo
 
 If parts from both nozzles are causing a consistent rotational offset, it could be that you need to adjust your bottom camera rotation. Navigate to `Machine Setup -> Cameras -> OpenPnPCaptureCamera Bottom -> Image Transforms` and adjust the value in the `Rotation` field.
 
-![adjusting camera rotation](img/adjusting-camera-rotation.png)
+![adjusting camera rotation](img/adjusting-camera-rotation.webp)
 
 ## The bottom vision pipeline for your parts needs adjustment
 

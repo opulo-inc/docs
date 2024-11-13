@@ -1,6 +1,6 @@
 # Nozzle offset
 
-![parts placed with a consistent global offset for only one nozzle](img/nozzle-offset.png){: style="width:60%;margin-left:10%;"}
+![parts placed with a consistent global offset for only one nozzle](img/nozzle-offset.webp){: style="width:60%;margin-left:10%;"}
 
 If parts placed with a specific nozzle have a consistent offset in the X and/or Y axis, there are a couple potential root causes:
 

@@ -4,4 +4,4 @@ Welcome to the Opulo Docs site! Here you'll find build guides, setup instruction
 
 Something look wrong? Please [let us know](https://github.com/opulo-inc/docs/issues/new)!
 
-![hero image of LumenPnP](semi-assembly-4-0/v4-iso-hero.png)
+![hero image of LumenPnP](semi-assembly-4-0/v4-iso-hero.webp)

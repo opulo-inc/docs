@@ -1,6 +1,6 @@
 # Global offset
 
-![parts placed with a consistent global offset](img/global-offset.png){: style="width:60%;margin-left:10%;"}
+![parts placed with a consistent global offset](img/global-offset.webp){: style="width:60%;margin-left:10%;"}
 
 If parts are universally placed with an offset in the X and/or Y axis, there are a few potential root causes:
 

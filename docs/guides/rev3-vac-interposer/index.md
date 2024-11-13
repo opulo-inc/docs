@@ -22,51 +22,51 @@ This process should take about 60 minutes.
 * 2x Interposer PCBAs
 * Your REV03 Motherboard
 
-![A photo of the tools specified above](images/1-tools-required.jpg)
-![A photo of the unmodified motherboard](images/2-unmodified-mobo.jpg)
+![A photo of the tools specified above](images/1-tools-required.webp)
+![A photo of the unmodified motherboard](images/2-unmodified-mobo.webp)
 
 ## Installation
 
 1. If your board looks like the image below, then you do not have the interposers installed, and this guide is for you! If your vacuum sensors have a little green board between them and the motherboard, you're all set and **don't need to perform this installation**.
-   ![A close-up view of the old sensors](images/3-old-sensor-close-up.jpg)
+   ![A close-up view of the old sensors](images/3-old-sensor-close-up.webp)
 
 2. First, you'll need to remove the existing vacuum sensors. You'll find them near the USB-C connector labeled "VAC1" and "VAC2". Using your hot air gun, apply heat to the legs of one of the vacuum sensors on your motherboard. Wait until you see the solder become molten and shiny, then gently remove the sensor from the PCB using tweezers. Perform the same operation for the second sensor.
 
-    ![A photo of hot air being applied to the first sensor](images/4-applying-heat.jpg)
-    ![A photo of the first sensor removed](images/5-first-sensor-removed.jpg)
-    ![A photo of hot air being applied to the second sensor](images/6-applying-heat-second-sensor.jpg)
+    ![A photo of hot air being applied to the first sensor](images/4-applying-heat.webp)
+    ![A photo of the first sensor removed](images/5-first-sensor-removed.webp)
+    ![A photo of hot air being applied to the second sensor](images/6-applying-heat-second-sensor.webp)
 
     !!! danger "Warning"
         Be careful not to tug too hard on the sensor. It's held down to the PCB with just a few copper pads, and pulling too hard might result in lifting those pads off the PCB. Make sure the solder is completely molten and the sensor should come away easily.
 
 3. Remove any remaining solder on the vacuum sensor pads. The pads need to be cleaned and flat for the interposer installation. Use solder wick (and flux if necessary) to remove any solder from the six pads that make up each vacuum sensor footprint. Clean up any excess flux or solder residue.
-    ![A photo of solder wick being used to clean the pads](images/7-cleaning-pads.jpg)
+    ![A photo of solder wick being used to clean the pads](images/7-cleaning-pads.webp)
 
 4. Now you can install an interposer board. First, make sure you have the correct board orientation. The bottom of the board has six pads that match the vacuum sensor footprint on the board. Make sure they line up with the footprint and that a bit of the interposer board is hanging off of the edge of the motherboard.
-    ![A photo of the front side of the interposer, with the three plated edges oriented towards the top](images/8-interposer-front.jpg)
-    ![A photo of the back side of the interposer](images/9-interposer-back.jpg)
+    ![A photo of the front side of the interposer, with the three plated edges oriented towards the top](images/8-interposer-front.webp)
+    ![A photo of the back side of the interposer](images/9-interposer-back.webp)
     Correct orientation
 
-    ![A photo of the interposer placed on the motherboard, with the lower edge overhanging slightly](images/10-interposer-placed.jpg)
+    ![A photo of the interposer placed on the motherboard, with the lower edge overhanging slightly](images/10-interposer-placed.webp)
 
     Make sure the six pads of the footprint on the motherboard align with the six plated edges of the interposer board.
 
-    ![A photo of the interposer on the motherboard from above, with red arrows pointing to the six plated edges of the interposer matching with the 6 pads on the motherboard](images/11-interposer-connections.jpg)
+    ![A photo of the interposer on the motherboard from above, with red arrows pointing to the six plated edges of the interposer matching with the 6 pads on the motherboard](images/11-interposer-connections.webp)
 
 5. Add a bit of solder to one of the pads on the motherboard, and tack the interposer in place with a bit of solder on one of the pads. Apply heat to this joint while you align the interposer board using your tweezers.
-    ![A photo of one pad on the motherboard's sensor footprint soldered](images/12-solder-one-pad.jpg)
-    ![A photo of the interposer board held in place using the one soldered pad](images/13-tack-interposer.jpg)
+    ![A photo of one pad on the motherboard's sensor footprint soldered](images/12-solder-one-pad.webp)
+    ![A photo of the interposer board held in place using the one soldered pad](images/13-tack-interposer.webp)
 
 6. Once your board is aligned with the pads and tacked in place, apply solder to the remaining five pads. Make sure that you have a good fillet of solder connecting the interposer board to the pad on the motherboard.
 
-    ![A photo of solder being applied to the interposer plated edges and the corresponding PCB pads](images/14-soldering-interposer.jpg)
-    ![A photo of the interposer completely soldered to the motherboard](images/15-interposer-soldered.jpg)
+    ![A photo of solder being applied to the interposer plated edges and the corresponding PCB pads](images/14-soldering-interposer.webp)
+    ![A photo of the interposer completely soldered to the motherboard](images/15-interposer-soldered.webp)
 
 7. Repeat steps 4 and 5 with the second interposer board and the second vacuum footprint on the motherboard.
 
-    ![A photo of the second interposer board soldered in place on the motherboard](images/16-second-interposer-soldered.jpg)
-    ![A photo showing both interposer boards soldered to the motherboard](images/17-both-interposers-soldered.jpg)
-    ![A photo with a full view of the motherboard with the modifications completed](images/18-completed-motherboard.jpg)
+    ![A photo of the second interposer board soldered in place on the motherboard](images/16-second-interposer-soldered.webp)
+    ![A photo showing both interposer boards soldered to the motherboard](images/17-both-interposers-soldered.webp)
+    ![A photo with a full view of the motherboard with the modifications completed](images/18-completed-motherboard.webp)
 
 ## Checking Readings
 

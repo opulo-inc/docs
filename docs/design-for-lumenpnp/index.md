@@ -45,4 +45,4 @@ The LumenPnP is capable of populating double-sided PCBs. There are a few things 
 
 If you're using the LumenPnP to populate your PCBs, feel free to add the "Built With" mark on your PCB. KiCAD footprint files can be found [here](https://github.com/opulo-inc/lumenpnp/tree/main/lib/kicad/built-with-lumenpnp.pretty).
 
-![built with mark](img/build-with-lumenpnp-stamp.png)
+![built with mark](img/build-with-lumenpnp-stamp.webp)

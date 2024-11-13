@@ -7,7 +7,7 @@ This is a guide for adjusting the brightness of your ring lights for all operati
 ## Universal Brightness/Color Adjustment
 
 1. Go to `Machine Setup` > `Drivers` > `GcodeDrivers` > `Gcode Tab` > `Head Mountable`: `Actuator [No Head] LED` > `Setting`: `ACTUATE_BOOLEAN_COMMAND`.
-   ![](img/led-actuator.png)
+   ![](img/led-actuator.webp)
 2. You should see something like `{True:M150 P255 R255 U255 B255}{False:M150 P0}`.
     1. `P255` = Brightness value, Adjust this value from 0 to 255 to change the amount of brightness the LED outputs
     2. `R255` = Red value, Adjust this value from 0 to 255 to change the amount of red in the LED

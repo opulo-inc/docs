@@ -4,8 +4,8 @@
 
     !!!warning "Make sure your version number begins with `v3.1` or `v3.2`."
 
-    ![Opening the box](images/opened-box.png)
-    ![Getting started card](images/getting-started-card.png)
+    ![Opening the box](images/opened-box.webp)
+    ![Getting started card](images/getting-started-card.webp)
 
 2. Remove the top protective layer of foam revealing the first tray of components. This tray contains:
     * Staging plate
@@ -18,13 +18,13 @@
     * Back rail w/25 feeder slots installed
     * 10x Extrusion cable clips
 
-     ![Packed box](images/first-tray-v3-1.png)
+     ![Packed box](images/first-tray-v3-1.webp)
 
 1. Grab the foam as shown below, rotate the tray up, then pull it out and set it aside, revealing the second tray of parts.
 
-    ![Removing foam tray](images/first-tray-left-grip.png)
-    ![removing foam tray 2](images/first-tray-right-grip.png)
-    ![Lifting tray out](images/first-tray-removal.png)
+    ![Removing foam tray](images/first-tray-left-grip.webp)
+    ![removing foam tray 2](images/first-tray-right-grip.webp)
+    ![Lifting tray out](images/first-tray-removal.webp)
 
 2. The second tray contains the following parts:
     * Y gantry left/right leg assemblies
@@ -34,7 +34,7 @@
     * 4x Extension feet for the y-gantry left/right leg assemblies
     * Feeder Slot Cable Harness
 
-    ![Tray 2 in box](images/lower-tray-v3.1.png)
+    ![Tray 2 in box](images/lower-tray-v3.1.webp)
 
 1. Open up the tool bag. Inside, you'll find the following items:
     * Hobby knife
@@ -49,9 +49,9 @@
     * Hardware bag
     * Zip ties
     * Feeder programmer
-  
-    ![Tool bag](images/tool-bag.png)
-    ![Unpacked tool bag](images/tool-bag-exploded.png)
+
+    ![Tool bag](images/tool-bag.webp)
+    ![Unpacked tool bag](images/tool-bag-exploded.webp)
 
 ## Next Steps
 

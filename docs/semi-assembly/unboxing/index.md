@@ -2,8 +2,8 @@
 # Unboxing
 
 1. First, take a look at what's in the box! The first thing you'll see when you open the package is the getting started card. This card has your machine's version number on it. Make sure your version number begins with `v3.0`.
-  ![](images/opened-box.png)
-  ![](images/getting-started-card.png)
+  ![](images/opened-box.webp)
+  ![](images/getting-started-card.webp)
 
 2. Remove the top protective layer of foam revealing the first tray of components. This tray contains:
     * Staging plate
@@ -13,12 +13,12 @@
     * IEC power cable
     * Front rail
     * Back rail
-    ![](images/first-tray.png)
+    ![](images/first-tray.webp)
 
 3. Grab the foam as shown below, rotate the tray up, then pull it out and set it aside, revealing the second tray of parts.
-    ![](images/first-tray-left-grip.png)
-    ![](images/first-tray-right-grip.png)
-    ![](images/first-tray-removal.png)
+    ![](images/first-tray-left-grip.webp)
+    ![](images/first-tray-right-grip.webp)
+    ![](images/first-tray-removal.webp)
 
 4. The second tray contains the following parts:
     * Left and right leg assemblies
@@ -27,7 +27,7 @@
     * Power supply
     * Getting started kit
     * Tool bag
-    ![](images/second-tray.png)
+    ![](images/second-tray.webp)
 
 5. Open up the tool bag. Inside, you'll find the following items:
     * Hobby knife
@@ -41,8 +41,8 @@
     * USB-A to USB-B cable
     * Hardware bag
     * Zip ties
-    ![](images/tool-bag.png)
-    ![](images/tool-bag-exploded.png)
+    ![](images/tool-bag.webp)
+    ![](images/tool-bag-exploded.webp)
 
 ## Next Steps
 

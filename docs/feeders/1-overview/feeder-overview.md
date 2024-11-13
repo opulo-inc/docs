@@ -2,7 +2,7 @@
 
 This is the LumenPnP Feeder:
 
-![hero image of feeder8](img/8mm-v110-no-arm-no-glow.png)
+![hero image of feeder8](img/8mm-v110-no-arm-no-glow.webp)
 
 The LumenPnP Feeder is an open source SMT component tape feeder that can reliably feed components as small as 0402. It is designed to work with a LumenPnP Pick and Place Machine, but can mount onto any 20mm X 20mm v-slot extrusion. The source can be found [here](https://github.com/opulo-inc/feeder).
 
@@ -10,28 +10,28 @@ The feeder uses the open source [Photon feeder controller firmware](https://gith
 
 You can fit up to 50x 8mm or 12mm Feeders on the front and back rail of your LumenPnP when using two staging plates.
 
-![2 plates with 50 feeders](img/two-plates.png)
+![2 plates with 50 feeders](img/two-plates.webp)
 
 If you'd like to add a third staging plate, you can fit 25x 8mm or 12mm Feeders on the front rail of your LumenPnP.
 
-![3 plates with 25 feeders](img/three-plates.png)
+![3 plates with 25 feeders](img/three-plates.webp)
 
 ## Parts of the Feeder
 
 === "Pick Window"
-    ![Pick Window](img/pick-window.JPG)
+    ![Pick Window](img/pick-window.webp)
 
 === "Buttons"
-    ![Buttons](img/buttons.JPG)
+    ![Buttons](img/buttons.webp)
 
 === "Status Light"
-    ![Status Light](img/indicator-light.JPG)
+    ![Status Light](img/indicator-light.webp)
 
 === "Peel Gears"
-    ![Peel Gears](img/peel-gears.JPG)
+    ![Peel Gears](img/peel-gears.webp)
 
 === "Release Lever"
-    ![Release Lever](img/locking-arm.JPG)
+    ![Release Lever](img/locking-arm.webp)
 
 ## Feeder Buttons
 

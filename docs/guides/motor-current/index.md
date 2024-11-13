@@ -13,5 +13,5 @@ The LumenPnP uses stepper motor drivers that allow software-defined current cont
 
 1. In OpenPnP, navigate to `Machine Setup` > `Drivers` > `GcodeDrivers` > `Gcode` Tab > `Setting`: `CONNECT_COMMAND`
 2. Look to see if your config already has an `M906` line of gcode for the axis you're updating. If there is already a command, simply update the current value in that line. If there isn't an `M906` line add it at the end.
-   ![](img/305-motor-current.png)
+   ![](img/305-motor-current.webp)
 3. We recommend that you do not exceed 1.5 amps (1500 milliamps) for the X or Y axis.

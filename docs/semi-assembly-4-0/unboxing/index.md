@@ -5,16 +5,16 @@ description: Unboxing the v4 LumenPnP
 
 1. Open the LumenPnP box and look for the `Getting Started` card attached to the top sheet of foam. This has your machine's version number.
 
-    ![alt text](img/IMG_2702.JPG)
-    ![alt text](img/IMG_2710.JPG)
+    ![alt text](img/IMG_2702.webp)
+    ![alt text](img/IMG_2710.webp)
 
     !!!warning "Make sure your version number begins with `v4`."
 
-    ![alt text](img/IMG_2713.JPG)
+    ![alt text](img/IMG_2713.webp)
 
 2. Remove the top protective layer of foam and reveal the first tray of components.
 
-    ![alt text](img/IMG_2714.JPG)
+    ![alt text](img/IMG_2714.webp)
 
 3. This tray contains:
     * Staging plate
@@ -29,15 +29,15 @@ description: Unboxing the v4 LumenPnP
     * Alignment bracket
     * Control Box
 
-     ![alt text](img/IMG_2731.JPG)
+     ![alt text](img/IMG_2731.webp)
 
 4. Grab the foam as shown below, rotate the tray up, then pull it out and set it aside, revealing the second tray of parts.
 
-    ![alt text](img/IMG_2718.JPG)
-    ![alt text](img/IMG_2719.JPG)
-    ![alt text](img/IMG_2722.JPG)
-    ![alt text](img/IMG_2723.JPG)
-    ![alt text](img/IMG_2715.JPG)
+    ![alt text](img/IMG_2718.webp)
+    ![alt text](img/IMG_2719.webp)
+    ![alt text](img/IMG_2722.webp)
+    ![alt text](img/IMG_2723.webp)
+    ![alt text](img/IMG_2715.webp)
 
 5. The second tray contains the following parts:
     * Left and right Y gantry assemblies
@@ -48,7 +48,7 @@ description: Unboxing the v4 LumenPnP
     * Feeder Blade Cable Harnesses
     * Nozzle Rack
 
-    ![alt text](img/IMG_2732.JPG)
+    ![alt text](img/IMG_2732.webp)
 
 6. Inside the tool bag you'll find the following items:
     * Hobby knife
@@ -60,8 +60,8 @@ description: Unboxing the v4 LumenPnP
     * Hardware Kit
     * Zip ties
     * Feeder programmer
-  
-    ![alt text](img/IMG_2734.JPG)
+
+    ![alt text](img/IMG_2734.webp)
 
 ## Next Steps
 

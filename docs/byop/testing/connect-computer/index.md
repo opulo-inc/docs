@@ -42,7 +42,7 @@ We also need to check connecting to the cameras. CNCjs has a webcam feature, so 
 
 4.  Finally, click the gear and look for detected webcams in the dropdown under "Use a built-in camera or a connected webcam". You should find "PnP Top Camera" and "PnP Bottom Camera" in the dropdown. Select each one and test out the camera feed.
 
-![](images/Screen Shot 2022-02-04 at 9.52.50 PM.png)
+![](images/Screen Shot 2022-02-04 at 9.52.50 PM.webp)
 
 !!! danger "Troubleshooting"
           If the cameras don't seem to be working, try zooming the image and toggling it on and off again. Additionally, some combinations of the USB hub chip we use in the motherboard and USB hub chips used in computers don't allow for video streaming to work for one or both cameras. If you don't see either or both cameras appear, don't worry! You can always unplug them from the motherboard and plug them directly into your computer.

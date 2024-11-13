@@ -13,11 +13,11 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
 !!! danger "Mac Users"
     Because of [a bug with how OpenPnP signs their releases](https://github.com/openpnp/openpnp/issues/1559), Mac users with ARM processors might experience a crash on boot. You can still run OpenPnP by navigating to `Applications -> OpenPnP` and right clicking on the OpenPnP app and selecting "Show Package Contents":
 
-    ![Show package contents on the openpnp app](img/opnp-show-package-contents.png)
+    ![Show package contents on the openpnp app](img/opnp-show-package-contents.webp)
 
     Then navigate to `Contents -> MacOS` and double click on `JavaApplicationStub` to run OpenPnP.
-    
-    ![clicking on javaapplicationstub](img/boot-opnp-java-stub.png)
+
+    ![clicking on javaapplicationstub](img/boot-opnp-java-stub.webp)
 
 ## Update LumenPnP Firmware
 
@@ -35,7 +35,7 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
 !!! danger "Set Jumper to 3.3v"
     Make sure that the jumper on your programmer is set to 3.3v. On the 3 pin header, make sure the jumper is connecting the center pin to the pin labeled "3.3v". The feeder logic operates at 3.3v, so it should be set to this prior to use.
 
-    ![programmer jumper](img/programmer-jumper.jpg)
+    ![programmer jumper](img/programmer-jumper.webp)
 
 1. Connect the included programmer to your computer.
    <!-- TODO: Get photo of programmer plugged into computer -->
@@ -44,61 +44,61 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
 4. Open the STM32CubeProgrammer application
 5. On the Blue dropdown next to the connect button, select `UART`.
 
-    ![Select UART](img/uart-dropdown.png)
+    ![Select UART](img/uart-dropdown.webp)
 
 6. Click the circular arrow icon to scan for new devices.
 
-    ![stm32 cube software connect panel](img/refresh-button.png)
+    ![stm32 cube software connect panel](img/refresh-button.webp)
 
 7. Click the `Port` drop down and select the new port that appears. On Mac, this port should start with `cu.usbmodem`.
-    ![Select Port](img/select-port.png)
+    ![Select Port](img/select-port.webp)
 
 8. Set the following settings:
     1. `Baudrate: 9600`
     2. `Parity: Even`
     3. `Read Unprotect (MCU): Unchecked`
     4. `TZEN Regression (MCU): Unchecked`
-    
-    ![All Settings](img/all-settings.png)
+
+    ![All Settings](img/all-settings.webp)
 
 9. Hold down the BOOT button located here on the feeder:
 
-    ![boot button](img/boot-button.png)
+    ![boot button](img/boot-button.webp)
 
 10. While holding the BOOT button, insert the pins of the programmer into the plated holes on the feeder as shown in the picture below. The holes are slightly offset, so the programmer pins will stay in contact with the through holes. Once connected, release the BOOT button. If the feeder's LED flashes and turns red, it is not ready to be programmed. Try again.
 
     !!! Note
         The feeder does not need to be mounted on a rail for this step; it can be powered by the programmer.
 
-    ![offset holes](img/offset-pins.jpg)
-    ![inserting pins](img/inserting-programmer.jpg)
-    ![programmer inserted](img/programmer-inserted.jpg)
-    ![Feeder not ready to be programmed](img/feeder-not-ready.png)
+    ![offset holes](img/offset-pins.webp)
+    ![inserting pins](img/inserting-programmer.webp)
+    ![programmer inserted](img/programmer-inserted.webp)
+    ![Feeder not ready to be programmed](img/feeder-not-ready.webp)
 
 11. Click the green connect button in STM32CubeProgrammer.
-    ![stm32 cube software connect panel](img/connect-button.png)
+    ![stm32 cube software connect panel](img/connect-button.webp)
 
     !!! Danger "If You Can't Connect"
         If you can't connect to your feeder, check that the programmer is inserted into the pins in the correct orientation. Also, applying gentle pressure to the side of the programmer can help ensure that the pins are making good contact with the plated holes in the feeder PCB.
 
 12. Once connected, Switch to the download tab on the left.
-![Download Tab](img/download-tab.png)
+![Download Tab](img/download-tab.webp)
 
 1.  Click the "Browse" button and navigate to the provided `firmware.bin` file.
-    
-    ![Browse Button](img/browse-button.png)
+
+    ![Browse Button](img/browse-button.webp)
 
 2.  Ensure that the “Start address” is `0x08000000`.
-    
-    ![Start Address](img/start-address.png)
+
+    ![Start Address](img/start-address.webp)
 
 3.  Click "Start Programming".
-    
-    ![Start Programming](img/start-programming.png)
+
+    ![Start Programming](img/start-programming.webp)
 
 4.  Wait until the software prompts that the firmware has been downloaded successfully. You may disconnect the programmer from the feeder.
-    
-    ![programming complete pop up](img/programming-complete.png)
+
+    ![programming complete pop up](img/programming-complete.webp)
 
 ## Checking Current Firmware Version
 
