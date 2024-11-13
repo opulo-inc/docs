@@ -3,7 +3,7 @@ site_url: https://docs.opulo.io/
 repo_url: https://github.com/opulo-inc/lumenpnp/
 edit_uri: https://github.com/opulo-inc/docs/edit/main/docs
 
-extra_css: 
+extra_css:
     - stylesheets/extra.css
     - stylesheets/neoteroi-cards.css
 
@@ -17,17 +17,17 @@ markdown_extensions:
     - meta
     - footnotes
     - pymdownx.tabbed:
-        alternate_style: true 
+        alternate_style: true
     - pymdownx.superfences:
         custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-    
+
 
 theme:
     name: material
-    logo: img/opulo.png
+    logo: img/opulo.webp
     favicon: img/favicon.ico
     font:
         text: Figtree
@@ -42,7 +42,7 @@ theme:
         - toc.integrate
         - content.code.copy
 
-    palette: 
+    palette:
         #primary: custom
         # Palette toggle for dark mode
         - media: "(prefers-color-scheme: dark)"
@@ -57,19 +57,19 @@ theme:
         - media: "(prefers-color-scheme: light)"
           primary: custom
           accent: custom
-          scheme: default 
+          scheme: default
           toggle:
-            icon: material/brightness-7 
+            icon: material/brightness-7
             name: Switch to dark mode
 plugins:
     - glightbox:
         draggable: false
-    - search 
+    - search
     - social:
         cards_layout_options:
-            background_color: "#111111" 
+            background_color: "#111111"
             color: "#daa520"
-            font_family: Figtree 
+            font_family: Figtree
     - neoteroi.mkdocsoad:
         use_pymdownx: true
 extra:
@@ -87,24 +87,24 @@ extra:
 nav:
     - Home: index.md
     - LumenPnP Assembly:
-        - LumenPnP v4: 
+        - LumenPnP v4:
             - Introduction: semi-assembly-4-0/index.md
             - Unboxing: semi-assembly-4-0/unboxing/index.md
             - Frame: semi-assembly-4-0/frame/index.md
             - Electronics: semi-assembly-4-0/electronics/index.md
-        - LumenPnP v3.1 / v3.2: 
+        - LumenPnP v3.1 / v3.2:
             - Introduction: semi-assembly-3-1/index.md
             - Unboxing: semi-assembly-3-1/unboxing-3-1/index.md
             - Assembling the Frame: semi-assembly-3-1/assembling-frame-3-1/index.md
             - Mounting Staging Plates: semi-assembly-3-1/mounting-staging-plates-3-1/index.md
             - Wiring: semi-assembly-3-1/wiring-3-1/index.md
-        - LumenPnP v3.0: 
+        - LumenPnP v3.0:
             - Introduction: semi-assembly/index.md
             - Unboxing: semi-assembly/unboxing/index.md
             - Assembling the Frame: semi-assembly/assembling-frame/index.md
             - Mounting Staging Plates: semi-assembly/mounting-staging-plates/index.md
             - Wiring: semi-assembly/wiring/index.md
-        - Kit Assembly (v2): 
+        - Kit Assembly (v2):
             - Introduction: byop/index.md
             - Mechanical Assembly:
                 - Printing Parts: byop/mechanical-assembly/1-printing-parts/index.md
@@ -134,7 +134,7 @@ nav:
                 - Actuator Check: byop/testing/actuator-check/index.md
                 - Feedback: byop/testing/feedback/index.md
     - OpenPnP:
-        - Install and Config: 
+        - Install and Config:
               - Install OpenPnP: openpnp/install-config/install/index.md
               - Import Configuration: openpnp/install-config/import-config/index.md
         - Calibration:
@@ -146,7 +146,7 @@ nav:
               - Bottom Camera Position: openpnp/calibration/7-bottom-camera-position/index.md
               - Nozzle Tip Calibration: openpnp/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md
               - Vacuum Part Detection: openpnp/calibration/10-vacuum-sensor/index.md
-        - Running Your First Job: 
+        - Running Your First Job:
               - Introduction: openpnp/ftp/index.md
               - Board Setup: openpnp/ftp/1-board-setup/index.md
               - Feeder Setup: openpnp/ftp/2-feeder-setup/index.md
@@ -171,8 +171,8 @@ nav:
         - Loading Tape: feeders/6-loading-tape/loading-tape.md
         - Setting Pick Position: feeders/7-setting-pick-position/setting-pick-position.md
         - Troubleshooting: feeders/8-troubleshooting/troubleshooting.md
-  
-    - Guides: 
+
+    - Guides:
         - Update LumenPnP Firmware: guides/update-firmware/index.md
         - Updating OpenPnP GCode Macros: guides/update-gcode-macros/index.md
         - Change Motor Current: guides/motor-current/index.md
@@ -185,7 +185,7 @@ nav:
         - Collecting OpenPnP Logs: guides/openpnp-logs/index.md
         - Find Your OpenPnP Version: guides/get-openpnp-version/index.md
         - Extracting Your Config Files: guides/extracting-your-config-files/index.md
-    
+
     - Misc:
         - Machine Versions: misc/versions/index.md
         - Upgrade: misc/upgrade/index.md
