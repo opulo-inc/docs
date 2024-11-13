@@ -48,7 +48,7 @@ You might have found an inaccuracy or error when placing parts. This page addres
 
 ### Part not picking
 
-![part fails picking](img/mispick.gif)
+![part fails picking](img/mispick.webp)
 
 If the nozzle is not picking parts consistently, there are a few potential root causes:
 

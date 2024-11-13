@@ -38,25 +38,25 @@ If you'd like to add a third staging plate, you can fit 25x 8mm or 12mm Feeders 
 === "Feeding"
     Tapping the forward button will make the feeder feed forward 2mm. Tapping the backward button makes the feeder feed backwards 4mm.
 
-    ![gif of tapping forward button, feeding tape](img/feed-forward.gif)
-    ![gif of tapping backwards button, feeding tape](img/feed-backward.gif)
+    ![gif of tapping forward button, feeding tape](img/feed-forward.webp)
+    ![gif of tapping backwards button, feeding tape](img/feed-backward.webp)
 
 === "Driving Tape"
     Pressing and holding the forward or backward button will drive the tape at full speed.
 
-    ![press hold forward, tape drives forward](img/drive-forward.gif)
-    ![press hold backward, tape drives backward](img/drive-backward.gif)
+    ![press hold forward, tape drives forward](img/drive-forward.webp)
+    ![press hold backward, tape drives backward](img/drive-backward.webp)
 
 === "Changing Drive Mode"
     Pressing and holding both buttons at the same time will toggle between driving tape with long presses, and peeling film with long presses. This is indicated by the inicator light flashing: gold for peel mode, and blue for drive mode.
 
-    ![press and hold both buttons, blue light](img/change-modes.gif)
+    ![press and hold both buttons, blue light](img/change-modes.webp)
 
 === "Peeling Film"
     When in Peel mode, press and hold the forward and backwards buttons to peel or unpeel film.
 
-    ![press hold forward, peel film](img/peel.gif)
-    ![press hold backward, unpeel film](img/unpeel.gif)
+    ![press hold forward, peel film](img/peel.webp)
+    ![press hold backward, unpeel film](img/unpeel.webp)
 
 ## Help
 

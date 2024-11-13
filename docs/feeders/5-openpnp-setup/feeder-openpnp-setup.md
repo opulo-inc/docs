@@ -23,7 +23,7 @@ Now you'll scan for and configure your LumenPnP Feeders in OpenPnP.
 
 3. Mount all of your new feeders to your machine. They can be in any slot.
 
-      ![mounting feeder](../4-mounting/img/mounting.gif)
+      ![mounting feeder](../4-mounting/img/mounting.webp)
 
 4. Click the `Search` button. OpenPnP will now scan for any feeders attached. This will take a minute, and you'll see the progress showing which slots have feeders in them.
 

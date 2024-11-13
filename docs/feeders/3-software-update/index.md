@@ -112,7 +112,7 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
 1. Watch the indicator light and take note of its color, and how many times it flashes.
 
     <figure markdown>
-        ![checking feeder firmware version](img/version-check.gif)
+        ![checking feeder firmware version](img/version-check.webp)
         <figcaption>The gif above shows the version being checked for a feeder running `v1.0.3`. Both buttons are held and the mode light comes on. The mode light goes off, and the indicator light flashes green once.</figcaption>
     </figure>
 

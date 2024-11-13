@@ -2,7 +2,7 @@
 
 A feeder can be mounted on your LumenPnP with one smooth motion.
 
-![mounting feeder](img/mounting.gif)
+![mounting feeder](img/mounting.webp)
 
 ## (8mm) Installing Spool Arm
 
@@ -82,13 +82,13 @@ Most spools for 12mm tape are wider than the LumenPnP Feeder, so they cannot be 
 
       If you're mounting a feeder inline with many others, reach under the spools to depress the lever arm, push forward to tip the feeder, then depress the lever from the top and remove.
 
-      ![removing feeder inline](img/feeder-inline-remove-lever-low.gif){: style="width:80%;margin-left:0%;"}
+      ![removing feeder inline](img/feeder-inline-remove-lever-low.webp){: style="width:80%;margin-left:0%;"}
 
       The feeder can also be mounted and removed without depressing the lever arm. If you're having trouble reaching the lever arm, try mounting and removing the feeder by pushing or pulling the spool arm as shown below.
 
-      ![](img/feeder-inline-insert-low.gif){: style="width:80%;margin-left:0%;"}
+      ![](img/feeder-inline-insert-low.webp){: style="width:80%;margin-left:0%;"}
 
-      ![](img/feeder-inline-remove-low.gif){: style="width:80%;margin-left:0%;"}
+      ![](img/feeder-inline-remove-low.webp){: style="width:80%;margin-left:0%;"}
 
 ## Next Steps
 
