@@ -17,7 +17,7 @@ This next step calibrates the relationship between pixels and millimeters to mak
 
     ![Apply Lubricant to holder](images/apply-super-lube.webp)
 
-1. Identify your machine's nozzle tips. They're mounted in the rack on your staging plate.
+1. Identify your machine's nozzle tips. They're mounted in the rack on your staging plate for v3, and in your packaging for v4.
 
     ![](../../../semi-assembly-3-1/mounting-staging-plates-3-1/images/nozzle-tip-location.webp)
 
@@ -109,11 +109,14 @@ This next step calibrates the relationship between pixels and millimeters to mak
 
     ![selecting n2 for control](images/select-n2.webp)
 
-2. Click on the "Position the tool over the center of the location" button
+2. Click on the "Position the tool over the center of the location" button. This will jog the N2 nozzle tip to the center of the focal plane for the bottom camera.
+
+    !!! Tip "Z Position for v3 and v4"
+        The bottom camera's focal plane is focused at different Z heights between versions v3 and v4 of the LumenPnP. If you're using a v4, your nozzle should jog to be at the same Z height as the top surface of the datum board (and have a Z Location value of 5.5).
 
     ![Position nozzle over camera](images/position-nozzle-over-camera.webp)
 
-3. Use the jog controls to move the nozzle directly over the center of the bottom camera. Do not adjust the Z-axis.
+3. Use the jog controls to move the nozzle directly over the center of the bottom camera.
 
     ![Jog the nozzle over the camera](images/jog-controls-bottom.webp)
 
@@ -136,23 +139,23 @@ This next step calibrates the relationship between pixels and millimeters to mak
 
     ![Set the object dimensions for calibration](images/set-object-dimensions-bottom.webp)
 
-1.  Then click the `Measure` button.
+7.  Then click the `Measure` button.
 
     ![Click the measure button](images/click-measure-bottom.webp)
 
-1.  Click and drag in the bottom camera viewfinder to bring up a bounding box. Drag the bounding box around the nozzle tip so that it's perfectly tangent to the edges as shown in the image.
+8.  Click and drag in the bottom camera viewfinder to bring up a bounding box. Drag the bounding box around the nozzle tip so that it's perfectly tangent to the edges as shown in the image.
 
     ![Drag the box to the edges of the nozzle.](images/measure-nozzle-mm-per-px.webp)
 
-1.  Once you have it perfectly outlined, click `Measure` again. New numbers should populate the Units per Pixel fields. They should be relatively close to the default values.
+9.  Once you have it perfectly outlined, click `Measure` again. New numbers should populate the Units per Pixel fields. They should be relatively close to the default values.
 
     ![Confirm the test](images/confirm-pixel-per-mm-bottom.webp)
 
-1.  Then click `Apply` to save the changes.
+10. Then click `Apply` to save the changes.
 
     ![Apply the new settings](images/apply-pixel-per-mm-settings-bottom.webp)
 
-1.  To confirm, drag the reticle on the bottom camera view to move the machine. The **nozzle tip** should move exactly where you tell it to. If it's inaccurate, try doing the calibration again or tweaking the values in the fields.
+11. To confirm, drag the reticle on the bottom camera view to move the machine. The **nozzle tip** should move exactly where you tell it to. If it's inaccurate, try doing the calibration again or tweaking the values in the fields.
 
 ## Next Steps
 
