@@ -1,13 +1,13 @@
 <!-- markdownlint-disable MD033-->
 # Loading Tape
 
-This video shows how tape is loaded into the feeder, and the functionality of the buttons.
+<!-- This video shows how tape is loaded into the feeder, and the functionality of the buttons.
 
 !!! Note "Keep In Mind"
     Don't worry if something in the video doesn't look exactly like what you have in the box. We’re constantly tuning and tweaking things to make them better and easier to use, so you might find things look slightly different.
 <div class="video-wrapper">
 <iframe width="560" height="315" margin="auto" src="https://www.youtube.com/embed/rVsv2GUO0Tg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+</div> -->
 
 !!! Note
     See also the [Feeder Buttons](../1-overview/feeder-overview.md#feeder-buttons) documentation for manually driving your feeders.
@@ -44,11 +44,14 @@ This video shows how tape is loaded into the feeder, and the functionality of th
 
       ![Film tucked into its guide slot](img/film-guide-1.webp)
 
-8. Press and hold both buttons until the status light turns blue to switch into Peel mode.
+8. Press and hold both buttons until the status light turns yellow to switch into Peel mode.
 
-      ![GIF pressing both buttons on the feeder](img/change-modes.webp)
+    ![GIF pressing both buttons on the feeder](img/change-modes.webp)
 
-9. Press and hold the forward button to spin the peel motor, and feed film in between the two straight gears. Stop when the film is taught.
+    !!! note "Toggling Modes"
+        Pressing and holding both buttons toggles between Drive and Peel modes. A blue status light indicates you've switched to Drive mode, and a yellow status light indicates you've switched to Peel mode.
+
+9. Press and hold the forward button to spin the peel motor, and feed film in between the two straight gears. Stop when the film is taut.
 
     ![GIF loading film into the peel gears](img/loading-film.webp)
 
@@ -63,7 +66,7 @@ This video shows how tape is loaded into the feeder, and the functionality of th
 
       ![Film tucked behind guide peg angle 2](img/film-in-gears-modified.webp)
 
-11. Tap the forward button to feed a part and ensure that the tape is loaded correctly. You need to feed the feeder at least once to ensure consistent feeding in the future.
+11. Tap the forward button to feed a part and ensure that the tape is loaded correctly. **You need to feed the feeder at least twice to ensure consistent feeding in the future.**
 
       ![GIF successful feeding](img/feed-forward.webp)
 

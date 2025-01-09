@@ -107,9 +107,12 @@ description: Mounting the control box and installing cables on the v4 LumenPnP
 
 1. Plug the four routed cables into their respective ports. Match the labels on the cables with the labels on the control board. Use the images below for reference.
 
+    !!! danger "Fully Insert Connectors"
+        Make sure that you have **fully inserted** all connectors. This is critical to ensure proper operation of your LumenPnP.
+
     ![alt text](img/IMG_3000.webp) ![alt text](img/IMG_3001.webp) ![alt text](img/IMG_3002.webp) ![alt text](img/IMG_3003.webp)
 
-1. Your control box interior should look like the image below.
+2. Your control box interior should look like the image below.
 
     ![alt text](img/IMG_3004.webp)
 
@@ -160,97 +163,109 @@ description: Mounting the control box and installing cables on the v4 LumenPnP
 
 1. Plug the Z limit cable into the connector on the back side of the circuit board mounted to the front of the head. Plug the Z motor cable into the Z motor.
 
+    !!! danger "Fully Insert Connectors"
+        Make sure that you have **fully inserted** all connectors. This is critical to ensure proper operation of your LumenPnP.
+
     ![alt text](img/IMG_3029.webp) ![alt text](img/IMG_3030.webp)
 
-1. Check that your machine looks like the image below.
+2. Check that your machine looks like the image below.
 
     ![alt text](img/IMG_3032.webp)
 
-1. Pick up the X drag chain and hang it over the back leg as shown below.
+3. Pick up the X drag chain and hang it over the back leg as shown below.
 
     ![alt text](img/IMG_3033.webp) ![alt text](img/IMG_3034.webp)
 
-2. Get the X gantry drag chain support panel and orient it as shown below, with the text on the right and facing upwards.
+4. Get the X gantry drag chain support panel and orient it as shown below, with the text on the right and facing upwards.
 
     ![alt text](img/IMG_3035.webp) ![alt text](img/IMG_3036.webp)
 
-3. Lift the drag chain, slide the support panel underneath it, and rest the drag chain on top.
+5. Lift the drag chain, slide the support panel underneath it, and rest the drag chain on top.
 
     ![alt text](img/IMG_3039.webp) ![alt text](img/IMG_3040.webp) ![alt text](img/IMG_3042.webp)
 
-4. On the left side, align the holes in the support panel with the holes in the Y gantry. The X drag chain should be centered on the support panel.
+6. On the left side, align the holes in the support panel with the holes in the Y gantry. The X drag chain should be centered on the support panel.
 
     ![alt text](img/IMG_3043.webp) ![alt text](img/IMG_3044.webp)
 
-5. Bolt the left side of the support panel into the Y gantry using `2x` M5x10mm socket head bolts.
+7. Bolt the left side of the support panel into the Y gantry using `2x` M5x10mm socket head bolts.
 
     ![alt text](img/IMG_3047.webp) ![alt text](img/IMG_3048.webp)
 
-6. On the right side, align the holes in the drag chain with the holes in the support panel, and with the holes in the other Y gantry.
+8. On the right side, align the holes in the drag chain with the holes in the support panel, and with the holes in the other Y gantry.
 
     ![alt text](img/IMG_3046.webp) ![alt text](img/IMG_3050.webp)
 
-7. Bolt the three together using `2x` M5x16mm flat head bolts.
+9.  Bolt the three together using `2x` M5x16mm flat head bolts.
 
     !!! warning "A Bit of Resistance"
         You should expect to feel some resistance when bolting these three together. The slot in the cable chain is slightly undersized for the bolt, so don't worry if you need to use a little bit of extra force to thread these bolts through.
 
     ![alt text](img/IMG_3051.webp) ![alt text](img/IMG_3052.webp)
 
-8. Thread `2x` more M5x16mm flat head bolts through the holes in the Y drag chain by the X motor as shown.
+10. Thread `2x` more M5x16mm flat head bolts through the holes in the Y drag chain by the X motor as shown.
 
     ![alt text](img/IMG_3053.webp) ![alt text](img/IMG_3054.webp)
 
-9.  Align these bolts with the holes in the drag chain support by the text "Y Drag Chain Mounts Here" and drop it into place. Loosely thread `2x` M5 nuts onto the bolts.
+11. Align these bolts with the holes in the drag chain support by the text "Y Drag Chain Mounts Here" and drop it into place. Loosely thread `2x` M5 nuts onto the bolts.
 
     ![alt text](img/IMG_3055.webp) ![alt text](img/IMG_3056.webp)
 
-10. Use the cutout in the squaring bracket to hold the nuts in place while you tighten the bolts using an allen key.
+12. Use the cutout in the squaring bracket to hold the nuts in place while you tighten the bolts using an allen key.
 
     ![alt text](img/IMG_3058.webp) ![alt text](img/IMG_3059.webp) ![alt text](img/IMG_3061.webp) ![alt text](img/IMG_3062.webp)
 
-11. Plug the X motor cable into the X motor, and plug the XY limit cable into the XY limit switch PCB as shown. Use a zip tie to secure the XY limit cable in place as shown, and snip off the excess using the snips in your tool kit.
+13. Plug the X motor cable into the X motor, and plug the XY limit cable into the XY limit switch PCB as shown. Use a zip tie to secure the XY limit cable in place as shown, and snip off the excess using the snips in your tool kit.
+
+    !!! danger "Fully Insert Connectors"
+        Make sure that you have **fully inserted** all connectors. This is critical to ensure proper operation of your LumenPnP.
 
     ![alt text](img/IMG_3067.webp) ![alt text](img/IMG_3068.webp) ![alt text](img/IMG_3069.webp) ![alt text](img/IMG_3070.webp)
 
-12. Lay the Y drag chain on top of the control box as shown, align it with the holes in the box, and secure in place with `2x` M5x16mm flat head bolts.
+14. Lay the Y drag chain on top of the control box as shown, align it with the holes in the box, and secure in place with `2x` M5x16mm flat head bolts.
 
     ![alt text](img/IMG_3063.webp) ![alt text](img/IMG_3064.webp) ![alt text](img/IMG_3065.webp) ![alt text](img/IMG_3066.webp)
 
-13. Rotate the machine so the control box is facing you. Remove the rubber band holding the cable bundle together.
+15. Rotate the machine so the control box is facing you. Remove the rubber band holding the cable bundle together.
 
     ![alt text](img/IMG_3072.webp)
 
-14. Separate the USB cable from the bundle and route the rest of the cables into the control box as shown.
+16. Separate the USB cable from the bundle and route the rest of the cables into the control box as shown.
 
     ![alt text](img/IMG_3073.webp)
     ![alt text](img/IMG_3074.webp)
 
-15. Plug the cables you just routed into their respective ports. Match the labels on the cables with the labels on the control board. Use the images below for reference.
+17. Plug the cables you just routed into their respective ports. Match the labels on the cables with the labels on the control board. Use the images below for reference.
+
+    !!! danger "Fully Insert Connectors"
+        Make sure that you have **fully inserted** all connectors. This is critical to ensure proper operation of your LumenPnP.
 
     ![alt text](img/IMG_3075.webp) ![alt text](img/IMG_3076.webp) ![alt text](img/IMG_3077.webp) ![alt text](img/IMG_3078.webp) ![alt text](img/IMG_3079.webp) ![alt text](img/IMG_3080.webp) ![alt text](img/IMG_3081.webp)
 
-16. Reattach the cover by fitting the top edge, then pushing on the bottom until it snaps into place.
+18. Reattach the cover by fitting the top edge, then pushing on the bottom until it snaps into place.
 
     ![alt text](img/IMG_3084.webp) ![alt text](img/IMG_3085.webp)
 
-17. Push the blue tubing into the `R` pneumatic port, and push the red tubing into the `L` pneumatic port.
+19. Push the blue tubing into the `R` pneumatic port, and push the red tubing into the `L` pneumatic port.
 
     ![alt text](img/IMG_3086.webp) ![alt text](img/IMG_3087.webp)
 
-18. Your control box should look like the image below.
+20. Your control box should look like the image below.
 
     ![alt text](img/IMG_3088.webp)
 
-19. Rotate the machine so you're facing the front, and pull the gantry all the way toward you.
+21. Rotate the machine so you're facing the front, and pull the gantry all the way toward you.
 
     ![alt text](img/IMG_3090.webp)
 
-20. Plug the R motor cable into the right nozzle motor port, secure it in place using a zip tie, and snip off the remainder. Press the blue tubing into the pneumatic coupler on top of the R motor.
+22. Plug the R motor cable into the right nozzle motor port, secure it in place using a zip tie, and snip off the remainder. Press the blue tubing into the pneumatic coupler on top of the R motor.
+
+    !!! danger "Fully Insert Connectors"
+        Make sure that you have **fully inserted** all connectors. This is critical to ensure proper operation of your LumenPnP.
 
     ![alt text](img/IMG_3091.webp) ![alt text](img/IMG_3092.webp) ![alt text](img/IMG_3093.webp) ![alt text](img/IMG_3094.webp)
 
-21. Plug the L motor cable into the left nozzle motor port, secure it in place using a zip tie, and snip off the remainder. Press the red tubing into the pneumatic coupler on top of the L motor.
+23. Plug the L motor cable into the left nozzle motor port, secure it in place using a zip tie, and snip off the remainder. Press the red tubing into the pneumatic coupler on top of the L motor.
 
     ![alt text](img/IMG_3095.webp) ![alt text](img/IMG_3096.webp) ![alt text](img/IMG_3097.webp) ![alt text](img/IMG_3098.webp)
 

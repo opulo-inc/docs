@@ -85,7 +85,7 @@ This next step calibrates the relationship between pixels and millimeters to mak
     ![Drag the box to the center of the outline square on the datum board.](images/Screen Shot 2022-05-19 at 12.30.48 PM.webp)
 
     !!! Note "Squareness"
-        Don't worry if the square fo the box doesn't perfectly align with the camera image. Any slight skew will be adjusted for duing jobs with fiducial calibration.
+        Don't worry if the square of the box doesn't perfectly align with the camera image. Any slight skew will be adjusted for duing jobs with fiducial calibration.
 
 1.  Once you have it perfectly outlined, click the `Measure` button again. The new calibration numbers will populate the Units per Pixel fields. They should be relatively close to the default values.
 

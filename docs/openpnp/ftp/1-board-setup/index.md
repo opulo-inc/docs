@@ -128,6 +128,8 @@ Next, you'll set the physical location of the FTP board in OpenPnP.
 
     ![Set the Z coordinates of your board](images/Set-board-location-z.webp)
 
+1. Jog the Nozzle back up and out of the way to prevent a crash.
+
 6.  Click on the "Fiducial Scan" button. The machine will move to the fiducial locations and use the camera to identify the center of the fiducial.
 
     ![Automatically set board location](images/Auto-check-board-fiducials.webp)

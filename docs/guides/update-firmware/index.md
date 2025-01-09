@@ -10,11 +10,16 @@ Update your LumenPnP's motherboard using the [STM32CubeProgrammer](https://www.s
     !!! danger "Important"
         It is important that you pick the correct firmware file for your machine.
 
-        - If you have a v2, choose `v2-lumenpnp-firmware-feeder-support.bin`.
-        - If you have a v3.0, choose `v3.0-lumenpnp-firmware-feeder-support.bin`.
-        - If you have a v3.1 or higher, choose `v3.1+-lumenpnp-firmware-feeder-support.bin`.
+        - If you have a v2, choose `v2-lumenpnp-firmware-XX.bin`.
+        - If you have a v3.0, choose `v3.0-lumenpnp-firmware-XX.bin`.
+        - If you have a v3.1 or higher, choose `v3.1+-lumenpnp-firmware-XX.bin`.
+        - If you have a v4 or higher, choose `v4-lumenpnp-firmware-XX.bin`.
 
 2. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html).
+
+    !!! note "Linux Users"
+        If you're using Linux, you'll need to [do a couple steps](https://wiki.somlabs.com/index.php/Installing_STM32CubeProgrammer_on_Ubuntu_18.04) before programming.
+
 3. Open STM32CubeProgrammer.
 4. Select `USB` from the connection type dropdown on the right.
     ![USB Connection drop down](images/usb-connection.webp)

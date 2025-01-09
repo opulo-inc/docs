@@ -33,6 +33,11 @@ Now you'll scan for and configure your LumenPnP Feeders in OpenPnP.
 
 5. Once the search has completed, each physically inserted feeder will be listed. The name will be the feeder's unique ID number, followed by the slot it's in. In this example, there are two feeders inserted.
 
+    !!! note "If None Appear"
+        If you don't see any feeders appear, try adding a `ReferenceTrayFeeder`, then selecting the `PhotonFeeder` again. Due to a bug in OpenPnP, switching views to a different feeder might be required to refresh the UI.
+
+        If you still do not see any feeders appear, double check that the cable running from your feeder rail to the motherboard is fully seated.
+
       ![auto populated feeders](img/identified-feeders.webp)
 
 !!! danger "Before Saving"
@@ -40,7 +45,7 @@ Now you'll scan for and configure your LumenPnP Feeders in OpenPnP.
 
 ## Configure
 
-Now that your feeders have been discovered in OpenPnP, you'll need to configure each one.
+Now that your feeders have been discovered in OpenPnP, you'll need to configure them.
 
 1. Home your LumenPnP.
 
