@@ -24,7 +24,7 @@ This video walks you through the process of calibrating your LumenPnP in OpenPnP
 
 After each step in calibration, save your settings. OpenPnP may not remember your settings if you close the application without saving, so be sure to save every time you adjust your calibration.
 
-![](img/save.png)
+![](img/save.webp)
 
 ## Different calibration methods
 

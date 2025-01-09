@@ -112,6 +112,8 @@ Next, you'll set the physical location of the FTP board in OpenPnP.
 
     ![Switch to the Job Tab](images/Job-tab.webp)
 
+1. Click the green "Plus" icon, select `Existing board`, and select the board you added in a previous step.
+
 2. In the bottom-right pane, you'll see the `Placements` panel. Find the three elements with the IDs: `FID1`, `FID2`, and `FID3`. You can sort the list by `Part` to find them easily.
 
     ![Find each of the board fiducial markers](images/Select-board-fiducials.webp)
