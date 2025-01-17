@@ -9,7 +9,7 @@ description: >
 
 # Import Configuration ([Video Guide](https://youtu.be/DUt_FHVjnwY?si=TI5k7xmZR0c6S1o4&t=236))
 
-To use OpenPnP with the LumenPnP, you will need to tell the software about your machine's capabilities, such as it's size, how many cameras it has, etc. We've done the basic work for you and put together a starting set of configuration files that will describe your LumenPnP. To use our defaults, follow the instructions below.
+To use OpenPnP with the LumenPnP, you will need to tell the software about your machine's capabilities, such as its size, how many cameras it has, etc. We've done the basic work for you and put together a starting set of configuration files that will describe your LumenPnP. To use our defaults, follow the instructions below.
 
 ## Linux
 

@@ -33,7 +33,7 @@ Now we can set up the datum board. The datum board is a reference point for ever
 
     ![Position top camera over homing fiducial](images/Position-camera-over-homing-fiducial.webp)
 
-1. In the bottom left Machine Controls pane, Select the `Actuators` tab.
+1. In the bottom left Machine Controls pane, select the `Actuators` tab.
 
     ![Switch to the Actuators Tab](images/Actuators-tab.webp)
 
