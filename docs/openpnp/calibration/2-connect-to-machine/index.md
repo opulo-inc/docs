@@ -16,7 +16,7 @@ With OpenPnP installed on your computer and the default configuration installed,
 4. Connect both cameras to your computer using the USB cables.
 
     !!! warning "Camera USB Ports"
-        **Use separate USB ports directly into your computer**. The cameras require a lot of USB bandwidth, and many USB hubs aren't capable of handling it. For best results, make sure each camera is plugged into a different USB port directly into your computer, ideally on different interal USB hubs.
+        **Use separate USB ports directly into your computer**. The cameras require a lot of USB bandwidth, and many USB hubs aren't capable of handling it. For best results, make sure each camera is plugged into a different USB port directly into your computer, ideally on different internal USB hubs.
 
 5. Open OpenPnP on your computer. You should now see the OpenPnP UI:
   ![OpenPnP's basic UI](images/openpnp-ui.webp)
