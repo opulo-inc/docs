@@ -58,6 +58,12 @@ If you'd like to add a third staging plate, you can fit 25x 8mm or 12mm Feeders 
     ![press hold forward, peel film](img/peel.webp)
     ![press hold backward, unpeel film](img/unpeel.webp)
 
+## 12mm Variant
+
+![12mm feeder](img/12mm.webp)
+
+There is also a 12mm variant of the feeder, designed for 12mm tape. This variant operates the exact same as its 8mm counterpart.
+
 ## Help
 
 If you get stuck, please don't hesitate to use our [support form](https://opulo.io/pages/contact-support).

@@ -21,6 +21,9 @@ This next step calibrates the relationship between pixels and millimeters to mak
 
     ![](../../../semi-assembly-3-1/mounting-staging-plates-3-1/images/nozzle-tip-location.webp)
 
+    !!! warning "Automatic Nozzle Tip Swapping"
+        OpenPnP supports automatic nozzle tip swapping. However, we've found it's not as consistent and robust as we'd like. The nozzle tip rack is designed such that it could be mounted on the staging plate for this purpose, after a planned future software update that improves this feature. But for now we don't recommend it. Most jobs are run with no swaps needed: just an `N045` on one nozzle, and an `N24` on the other.
+
 1. Remove the nozzle tips labeled `N045` and `N24` from the rack.
 
 1. In OpenPnP, navigate to `Machine Setup > Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1` and select the `Nozzle Tips` tab, and check the checkbox in the `Loaded?` column for the `N045` row.

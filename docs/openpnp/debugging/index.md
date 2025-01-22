@@ -56,6 +56,14 @@ If the nozzle is not picking parts consistently, there are a few potential root 
 - **The feeder Z position is set too high.** If the machine is told to pick a part slightly too high, the nozzle tip doesn't make a good seal on the part, and fails to pick. This is solved by adjusting the [feeder's height](../../feeders/7-setting-pick-position/setting-pick-position.md).
 - **Lack of suction force from the nozzle tip.** Especially for the smallest N045 nozzle tip, some solder paste can get stuck in the tip, reducing suction force. If you cannot see a tiny circle of light shining through the tip when held up to a light, you might need to clean the tip with a thin wire and some isopropyl alcohol.
 
+### Parts sticking
+
+If you're having trouble getting the nozzle to release the part, there are a few potential root causes:
+
+- **The board's Z position is set too high.** If the nozzle doesn't fully press the part into the solder paste, it won't help stick the part in position. Set the board's Z height a little lower to ensure the part is pushed into the paste properly.
+- **The nozzle needs to be cleaned.** If solder paste gets onto the nozzle tip, it can stick to parts. Clean your nozzle tips using isopropyl alcohol and a thin enamel wire to clear out the opening.
+- **Not enough dwell time.** If OpenPnP does not give the pneumatic lines enough time to equalize pressure before moving up after a placement, there might still be some latent vacuum in the lines causing the part to stick. [Disable vacuum sensing](../calibration/10-vacuum-sensor/index.md) and increase the "Place Dwell Time (ms)" on the "Configuration" tab for the relevant nozzle tip. (Vacuum sensing overrides any manually inputted dwell time.)
+
 ### "No result found" error
 
 ![no parts found error](../vision-pipeline-adjustment/images/no-parts-found.webp)

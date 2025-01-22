@@ -143,6 +143,17 @@ description: Putting together the frame of the v4 LumenPnP
 
     ![alt text](img/IMG_2837.webp) ![alt text](img/IMG_2838.webp)
 
+    !!! danger "Check for Squareness"
+        Now is the best time to adjust your frame to ensure it's been assembled square.
+
+        Take the build plate from your packaging and drop it onto the rails.
+
+        ![](img/IMG_2871.webp)
+
+        Pull the staging plate completely forward in the machine, and make sure the edge is flush with the extrusion on both sides of the machine. Then slide to the back of the machine and do the same. Loosen any frame bolts you just mounted to adjust until both sides of the staging plate are flush with the extrusion both at the front and back of the machine.
+
+        ![](img/IMG_2916.webp)
+
 26. Slide both Y gantries to the back of the machine (opposite the tension arms).
 
     ![alt text](img/IMG_2839.webp) ![alt text](img/IMG_2840.webp)

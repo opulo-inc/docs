@@ -27,17 +27,19 @@ We'll also refer to putting the machine "back on its haunches." This refers to a
 
 Make sure to keep the LumenPnP in a cool, dry environment. Do NOT expose to warm environments or direct sunlight for prolonged periods of time.  Use on a flat, stable surface.
 
+The LumenPnP should be used in a room with consistent lighting. The machine vision operations that the machine performs can be affected by ambient lighting changes, so be sure to keep the lighting the same throughout calibration and operation.
+
 ### Help
 
 If you find that there's something unclear in this documentation, please [submit a ticket on Github](https://github.com/opulo-inc/docs) about it! You can also file an issue using the link in the upper right of any page on this site. Every issue you tag helps us make it better for everyone else. You can also check out the [Discord server](https://discordapp.com/invite/TCwy6De) and ask questions to the community. For notices, see [here](notices.md).
 
 ### Timing
 
-Expect assembly to take about **50 minutes**.
+Expect assembly to take about **90 minutes**.
 
 ### You'll Need
 
-* Your packaged Semi-Assembled LumenPnP
+* Your packaged LumenPnP v4
 * A clear, smooth, flat tabletop for assembly
 * A computer
 * The ability to plug in three high-bandwidth USB-A ports - Your computer will need to communicate with both the data stream that controls the machine, along with two webcam feeds. It might be possible to handle all of this data through one USB port on your computer with an external USB hub, but you might find you need to plug into a few different ports on your computer, depending on the hardware you have.

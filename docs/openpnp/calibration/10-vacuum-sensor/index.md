@@ -3,10 +3,12 @@
 
 While the bottom camera can detect if a part was successfully picked, you can use the LumenPnP's vacuum sensors to check for a successful pick a bit quicker. When a part is successfully picked it creates a seal at the end of the nozzle. This seal increases the vacuum pressure in the pneumatic line which is measured by the vacuum sensors. OpenPnP can use this increase in pressure to detect if a part was successfully picked.
 
-!!! NOTE
-    The LumenPnP v2 kit machine has different vacuum sensors than the v3 semi-assembled machine. Make sure to follow the steps for your machine version below.
+!!! note "Disabling Vacuum Detection"
+    If you'd like to disable this feature, it's just a matter of setting "Measurement Method" to "None" on the relevant nozzle tip.
 
-## LumenPnP v3
+    ![](images/disable-vac.webp)
+
+## LumenPnP v3 and v4
 
 1. Ensure there's still an N045 nozzle tip on the N1 nozzle.
 2. Navigate to `Machine Setup > Nozzle Tips > ReferenceNozzleTip N045 > Part Detection`.
