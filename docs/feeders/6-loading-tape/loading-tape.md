@@ -18,6 +18,36 @@
 
       ![cut tape with cut indexing hole](img/cut-tape2.webp)
 
+    !!! note "Using Film Extensions"
+
+        [Film extensions](https://www.opulo.io/products/film-extensions) are strips of film with an adhesive end that allow you to load a feeder without wasting parts.
+
+        First, remove the paper covering the adhesive on the yellow end of the extension
+
+        ![](img/DSC00008.webp)
+        ![](img/DSC00010.webp)
+
+        Apply the adhesive end onto the film on the end of your tape. Make sure to press it down. Align the end of the adhesive with the end of the tape.
+
+        ![](img/DSC00011.webp)
+        ![](img/DSC00012.webp)
+
+        Peel back a little bit of the film to get it started.
+
+        ![](img/DSC00013.webp)
+
+        Load the tape into the feeder, and guide the film out of the pick window.
+
+        ![](img/DSC00014.webp)
+
+        Trim the extension beyond a few centimeters beyond the peel gears.
+
+        ![](img/DSC00015.webp)
+
+        Continue to load the feeder starting from Step 7 below.
+
+
+
 2. Peel back a few millimeters of film.
 
       ![Peeling back tape with tweezers](img/IMG_2170.webp)
