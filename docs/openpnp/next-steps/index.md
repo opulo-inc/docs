@@ -11,7 +11,7 @@ The following links are extra resources to help with calibration and OpenPnP.
 :  Follow this guide to install and set up your Photon Feeders if you haven't done it as part of your FTP.
 
 [Vision Pipeline Adjustment](../vision-pipeline-adjustment/1-introduction.md)
-:  Learn more about how to adjust your OpenPnO vision pipelines.
+:  Learn more about how to adjust your OpenPnP vision pipelines.
 
 [Job Setup](https://github.com/openpnp/openpnp/wiki/User-Manual#job-setup)
 :  This is an incredibly useful document, illustrating the difference between parts, packages, and placements, and how to import information about your parts into the software. It shows the UI and explains what lots of things do, along with walking you through setting up a job. There's also information about setting up feeders.
