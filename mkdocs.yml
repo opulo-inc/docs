@@ -173,6 +173,7 @@ nav:
         - Troubleshooting: feeders/8-troubleshooting/troubleshooting.md
 
     - Guides:
+        - Design for LumenPnP: guides/design-for-lumenpnp/index.md
         - Update LumenPnP Firmware: guides/update-firmware/index.md
         - Updating OpenPnP GCode Macros: guides/update-gcode-macros/index.md
         - Change Motor Current: guides/motor-current/index.md
@@ -195,5 +196,5 @@ nav:
 
     - FAQ: faq/index.md
 
-    - Design for LumenPnP: design-for-lumenpnp/index.md
+    - Software Updates: software-updates/index.md
 

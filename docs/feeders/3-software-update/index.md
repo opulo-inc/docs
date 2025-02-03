@@ -39,7 +39,7 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
 
 1. Connect the included programmer to your computer.
    <!-- TODO: Get photo of programmer plugged into computer -->
-2. Download a precompiled Feeder binary from the [Photon releases page](https://github.com/photonfirmware/photon/releases), or [compile it yourself](https://github.com/opulo-inc/feeder).
+2. Download the most recent firmware [here](/software-updates/), a specific version from the [Photon releases page](https://github.com/photonfirmware/photon/releases), or [compile it yourself](https://github.com/opulo-inc/feeder).
 3. Download and install the [STM32CubeProgrammer application](https://www.st.com/en/development-tools/stm32cubeprog.html#section-get-software-table).
 4. Open the STM32CubeProgrammer application
 5. On the Blue dropdown next to the connect button, select `UART`.
