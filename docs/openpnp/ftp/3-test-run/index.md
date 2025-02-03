@@ -22,7 +22,7 @@ Before running the job, you'll test the bottom vision pipeline that is used to a
 
     It is crucial that you home your machine before each job. The stepper motors in the LumenPnP de-power after being idle for a while, so rehoming ensures that the machine is aligned and positioned correctly for placement.
 
-1. It's time to place your first component. First, press the green "Play" button in the Job tab to start the job. This will initiate fiducial calibration. Once this is complete, click the "Pause" button. You can now use the "Single job step" button to proceed through the job step by step. The LumenPnP will go to pick a component, align it using the bottom camera, and place it on the board. Step through until a few parts are populated.
+1. It's time to place your first component. First, ensure the board's `Check Fids?` checkbox is checked. Then, press the green "Play" button in the Job tab to start the job. This will initiate fiducial calibration. Once this is complete, click the "Pause" button. You can now use the "Single job step" button to proceed through the job step by step. The LumenPnP will go to pick a component, align it using the bottom camera, and place it on the board. Step through until a few parts are populated.
 
     ![Start placing components](images/One-step-placement.webp)
 
