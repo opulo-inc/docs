@@ -14,19 +14,22 @@ Now that we know the offset from the top camera to the nozzle, we can use the no
 
     ![Select nozzle from machine control dropdown](images/select-n1-machine-control-bottom.webp)
 
-3. Click the "Position tool over location" button to bring the left nozzle roughly above the bottom camera.
+3. Jog N1 until it's just barely touching the top surface of the datum board. It doesn't matter exactly where, we just want to move to the Z position of the datum board for setting the bottom camera position.
 
-    ![Position the toolhead over the bottom camera](images/position-over-bottom-cam.webp)
+    ![](images/n1-at-datum-height.webp)
 
-4.  Jog the toolhead until the left nozzle is directly in the center of the bottom camera's vision. For LumenPnP v3, make sure the Z position is `31.5`. For LumenPnP v4, the Z position should be `5.5`. If the nozzle tip is not crisp and in focus at this position, slightly rotate the bottom camera lens until it is.
+1. While keeping the Z position the same, jog the camera over the bottom camera. Using the viewfinder in OpenPnP, center the nozzle tip in the image.
 
-    ![Position the toolhead over the bottom camera precisely](images/position-over-bottom-cam-precise.webp)
+    ![](images/n1-datum-height-over-cam.webp)
 
-5.  Click the "Capture Toolhead Location" button to calculate the correct position for the bottom camera. **Confirm your Z height is at 31.5 for v3 LumenPnP, and at 5.5 for v4 LumenPnP.**
+    !!! warning "If the nozzle tip is blurry"
 
+        If your nozzle tip is blurry when at this position, rotate the lens in the camera until the tip of the nozzle is sharp and in focus.
+
+2.  With the nozzle tip sharp and in focus, click the "Capture Toolhead Location" button to capture the bottom camera position.
     ![Store the camera location](images/store-nozzle-location-bottom.webp)
 
-6.  Click the `Apply` button to save the new camera position.
+3.  Click the `Apply` button to save the new camera position.
 
     ![Save the camera location](images/apply-bottom-cam-pos.webp)
 
