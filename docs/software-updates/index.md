@@ -1,24 +1,55 @@
 # Software Updates
 
-This page contains the most up-to-date version of all the firmware, software, and configuration files for your Opulo hardware.
+This page contains the most up-to-date or recommended version of all the firmware, software, and configuration files for your Opulo hardware.
 
-## LumenPnP Firmware
+---
 
-[Upload Instructions](/guides/update-firmware/)
+## OpenPnP Config Files (.XML)
 
-[LumenPnP v2.X.X Firmware Download](https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.0/v2-lumenpnp-firmware-00.bin)
+It is important that you pick the right config file for the Version of the LumenPnP you own. Example:
 
-[LumenPnP v3.0.X Firmware Download](https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.0/v3.0-lumenpnp-firmware-00.bin)
+If you own a LumenPnP V3, you must use the V3 config files.
 
-[LumenPnP v3.1.X / v3.2.X Firmware Download](https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.0/v3.1+-lumenpnp-firmware-00.bin)
+If you own a LumenPnP V4, you must use the V4 config files.
 
-[LumenPnP v4.X.X Firmware Download](https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.0/v4-lumenpnp-firmware-01.bin)
+* **For V4**
+    * [LumenPnP V4 Config Download](https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.1/LumenPnP-Config-v4-00.zip)
 
-## Feeder Firmware
+* **For V3**
+    * [LumenPnP V3 Config Download](https://github.com/opulo-inc/lumenpnp/releases/download/v3.2.2/LumenPnP-Config-v3-03.zip)
 
-[Upload Instructions](/feeders/3-software-update/)
+* **For V2**
+    * [LumenPnP V2 Config Download](https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.0/LumenPnP-Config-v2-00.zip)
 
-[Feeder Firmware Download](https://github.com/photonfirmware/photon/releases/download/v1.0.3/photon-lumenpnp-v1.0.3.bin)
+---
+
+## Latest LumenPnP Firmware
+
+([Instructions](/guides/update-firmware/))
+
+### V4 Firmware
+
+* [LumenPnP v4.X.X Firmware Download](https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.0/v4-lumenpnp-firmware-01.bin)
+
+### V3.1 & V3.2 Firmware
+
+* [LumenPnP v3.1.X / v3.2.X Firmware Download](https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.0/v3.1+-lumenpnp-firmware-00.bin)
+
+### V3.0 Firmware
+
+* [LumenPnP v3.0.X Firmware Download](https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.0/v3.0-lumenpnp-firmware-00.bin)
+
+### V2 Firmware
+
+* [LumenPnP v2.X.X Firmware Download](https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.0/v2-lumenpnp-firmware-00.bin)
+
+---
+
+## Latest Photon Feeder Firmware
+
+([Instructions](/feeders/3-software-update/))
+
+* [Photon Feeder Firmware Download](https://github.com/photonfirmware/photon/releases/download/v1.0.3/photon-lumenpnp-v1.0.3.bin)
 
 <!-- ## OpenPnP
 
@@ -46,28 +77,41 @@ In February of 2025, OpenPnP made a new stable release, `2025-02-02` (v2.2), whi
 
 [LumenPnP v4 Config Download]() -->
 
-## OpenPnP 2023-04-05
+---
 
-#### Linux
+## Download OpenPnP (2023-04-05)
 
-[Download .deb](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-linux-test.deb)
+!!! success "Recommended!"
 
-[Download .tar.gz](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-unix-test.tar.gz)
+#### Linux Download
 
-#### MacOS (Not Recommended)
+* [Download .deb](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-linux-test.deb)
 
-[Download .dmg](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-macos-test.dmg)
+* [Download .tar.gz](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-unix-test.tar.gz)
 
-#### Windows (Not Recommended)
+---
 
-[Download 32-bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x32-test.exe)
+!!! failure "Not Recommended"
 
-[Download 64-bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x64-test.exe)
+#### MacOS Download
 
-#### OpenPnP Configs
+* [Download .dmg](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-macos-test.dmg)
 
-[LumenPnP v2 Config Download](https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.0/LumenPnP-Config-v2-00.zip)
+#### Windows OS Download
 
-[LumenPnP v3 Config Download](https://github.com/opulo-inc/lumenpnp/releases/download/v3.2.2/LumenPnP-Config-v3-03.zip)
+* [Download 32-bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x32-test.exe)
 
-[LumenPnP v4 Config Download](https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.1/LumenPnP-Config-v4-00.zip)
+* [Download 64-bit .exe](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-windows-x64-test.exe)
+
+---
+
+## Next Step
+
+* **LumenPnP V4 Users**.
+    * If you came here from V4 Configuration Docs, ensure you downloaded the `V4 Config Files`.
+    * Then, head back to [importing V4 configuration files.](../openpnp/v4/install-config/import-config/index.md)
+<br/><br/>
+
+* **LumenPnP V3 Users**.
+    * If you came here from V3 Configuration Docs, ensure you downloaded the `V3 Config Files`.
+    * Then, head back to [import the V3 configuration files.](../openpnp/v3/install-config/import-config/index.md)

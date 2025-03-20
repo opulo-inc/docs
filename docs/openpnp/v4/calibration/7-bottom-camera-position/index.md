@@ -1,0 +1,61 @@
+---
+title: "Bottom Camera Position Calibration"
+linkTitle: "Bottom Camera Position Calibration"
+weight: 60
+type: docs
+description: >
+  Calibrating the offset of the nozzle from the bottom camera.
+
+---
+
+
+# Bottom Camera Position ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=uyDBUttihPh80EQv&t=1580))
+
+---
+
+Now that we have precise alignment between the nozzle tips and the top camera, we can use the calibrated nozzle to set our bottom camera position.
+
+1. **Open the Bottom Camera Settings**.
+    * Navigate to `Machine Setup > Cameras > OpenPnpCaptureCamera Bottom`.
+     ![Select the bottom camera](images/select-bottom-camera-2.webp)
+<br/><br/>
+
+2. **Access the Position Tab**.
+    * Click on the Position tab to begin setting the bottom camera’s location.
+     ![Select the position tab](images/bottom-camera-position.webp)
+<br/><br/>
+
+3. **Select Nozzle N1**.
+    * From the machine controls dropdown, select `Nozzle: N1 - N045 (Head:H1)`. This ensures the left nozzle is used for positioning.
+     ![Select nozzle from machine control dropdown](images/select-n1-machine-control-bottom.webp)
+<br/><br/>
+
+4. **Position Nozzle N1 at Datum Board Height**.
+    * Jog the N1 (left) Nozzle until it just barely touches the top surface of the datum board. This establishes a consistent Z-height reference.
+     ![Position the toolhead over the bottom camera](images/position-over-bottom-cam.webp)
+<br/><br/>
+
+5. **Align Nozzle Tip Over the Bottom Camera**.
+    * Without changing the Z-height, jog the N1 (left) Nozzle over the bottom camera and use OpenPnP’s viewfinder to center the nozzle tip in the image.
+     ![Position the toolhead over the bottom camera precisely](images/position-over-bottom-cam-precise.webp)
+    !!! Tip "Fine-Tuning Focus"
+        The bottom camera’s focus is pre-adjusted before shipping, but you can fine-tune it if needed. The lens is secured with friction grease, so apply light pressure while twisting the top portion of the lens until the image appears sharp. Avoid excessive force.
+<br/><br/>
+
+6. **Capture the Bottom Camera Position**.
+    * Once the nozzle tip is sharp and centered, click the "Capture Toolhead Location" button to save the position.
+    !!! note "Blurry or Pixelated?"
+        If you are zoomed in very close to the nozzle tip, what may appear as blurriness could actually be pixelation. Try zooming out to check if this is the case.
+     ![Store the camera location](images/store-nozzle-location-bottom.webp)
+<br/><br/>
+
+7. Apply the New Camera Position
+    * Click Apply to save the bottom camera position in OpenPnP.
+     ![Save the camera location](images/apply-bottom-cam-pos.webp)
+<br/><br/>
+
+---
+
+## Next Steps
+
+Next is [Nozzle Tip Calibration](../8-nozzle-tip-calibration/nozzle-tip-calibration.md).

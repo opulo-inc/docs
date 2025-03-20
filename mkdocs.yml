@@ -133,44 +133,70 @@ nav:
                 - Motor Check: byop/testing/motor-check/index.md
                 - Actuator Check: byop/testing/actuator-check/index.md
                 - Feedback: byop/testing/feedback/index.md
-    - OpenPnP:
-        - Install and Config:
-              - Install OpenPnP: openpnp/install-config/install/index.md
-              - Import Configuration: openpnp/install-config/import-config/index.md
+    - V3 Configuration: 
+        - Install and Config: 
+            - Install OpenPnP: openpnp/v3/install-config/install/index.md
+            - Import Configuration: openpnp/v3/install-config/import-config/index.md
         - Calibration:
-              - Introduction: openpnp/calibration/index.md
-              - Connecting to Your Machine: openpnp/calibration/2-connect-to-machine/index.md
-              - Homing Fiducial: openpnp/calibration/4-homing-fiducial/index.md
-              - MM/Pixel: openpnp/calibration/5-mm-per-pixel/index.md
-              - Nozzle Offset: openpnp/calibration/6-nozzle-offset/index.md
-              - Bottom Camera Position: openpnp/calibration/7-bottom-camera-position/index.md
-              - Nozzle Tip Calibration: openpnp/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md
-              - Vacuum Part Detection: openpnp/calibration/10-vacuum-sensor/index.md
+            - Introduction: openpnp/v3/calibration/index.md
+            - Connecting to Your Machine: openpnp/v3/calibration/2-connect-to-machine/index.md
+            - Homing Fiducial: openpnp/v3/calibration/4-homing-fiducial/index.md
+            - MM/Pixel: openpnp/v3/calibration/5-mm-per-pixel/index.md
+            - Nozzle Offset: openpnp/v3/calibration/6-nozzle-offset/index.md
+            - Bottom Camera Position: openpnp/v3/calibration/7-bottom-camera-position/index.md
+            - Nozzle Tip Calibration: openpnp/v3/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md
+            - Vacuum Part Detection: openpnp/v3/calibration/10-vacuum-sensor/index.md
         - Running Your First Job:
-              - Introduction: openpnp/ftp/index.md
-              - Board Setup: openpnp/ftp/1-board-setup/index.md
-              - Feeder Setup: openpnp/ftp/2-feeder-setup/index.md
-              - Test Run: openpnp/ftp/3-test-run/index.md
-        - Debugging: openpnp/debugging/index.md
+            - Introduction: openpnp/v3/ftp/index.md
+            - Board Setup: openpnp/v3/ftp/1-board-setup/index.md
+            - Feeder Setup: openpnp/v3/ftp/2-feeder-setup/index.md
+            - Test Run: openpnp/v3/ftp/3-test-run/index.md
+        - Debugging: openpnp/v3/debugging/index.md
         - Vision Pipeline Adjustment:
-            - Introduction: openpnp/vision-pipeline-adjustment/1-introduction.md
-            - Homing Fiducial Pipeline: openpnp/vision-pipeline-adjustment/2-homing-fiducial-pipeline.md
-            - PCB Fiducial Pipeline: openpnp/vision-pipeline-adjustment/3-pcb-fiducial-pipeline.md
-            - Nozzle Calibration Pipeline: openpnp/vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md
-            - Part Identification Pipeline: openpnp/vision-pipeline-adjustment/5-part-identification-pipeline.md
-        - Next Steps: openpnp/next-steps/index.md
+            - Introduction: openpnp/v3/vision-pipeline-adjustment/1-introduction.md
+            - Homing Fiducial Pipeline: openpnp/v3/vision-pipeline-adjustment/2-homing-fiducial-pipeline.md
+            - PCB Fiducial Pipeline: openpnp/v3/vision-pipeline-adjustment/3-pcb-fiducial-pipeline.md
+            - Nozzle Calibration Pipeline: openpnp/v3/vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md
+            - Part Identification Pipeline: openpnp/v3/vision-pipeline-adjustment/5-part-identification-pipeline.md
+        - Next Steps: openpnp/v3/next-steps/index.md
+    - V4 Configuration:
+        - Install and Config:
+                - Install OpenPnP: openpnp/v4/install-config/install/index.md
+                - Import Configuration: openpnp/v4/install-config/import-config/index.md
+        - Calibration:
+            - Introduction: openpnp/v4/calibration/index.md
+            - Connecting to Your Machine: openpnp/v4/calibration/2-connect-to-machine/index.md
+            - Homing Fiducial: openpnp/v4/calibration/4-homing-fiducial/index.md
+            - MM/Pixel: openpnp/v4/calibration/5-mm-per-pixel/index.md
+            - Nozzle Offset: openpnp/v4/calibration/6-nozzle-offset/index.md
+            - Bottom Camera Position: openpnp/v4/calibration/7-bottom-camera-position/index.md
+            - Nozzle Tip Calibration: openpnp/v4/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md
+            - Vacuum Part Detection: openpnp/v4/calibration/10-vacuum-sensor/index.md
+        - Running Your First Job:
+            - Introduction: openpnp/v4/ftp/index.md
+            - Board Setup: openpnp/v4/ftp/1-board-setup/index.md
+            - Feeder Setup: openpnp/v4/ftp/2-feeder-setup/index.md
+            - Test Run: openpnp/v4/ftp/3-test-run/index.md
+        - Debugging: openpnp/v4/debugging/index.md
+        - Vision Pipeline Adjustment:
+            - Introduction: openpnp/v4/vision-pipeline-adjustment/1-introduction.md
+            - Homing Fiducial Pipeline: openpnp/v4/vision-pipeline-adjustment/2-homing-fiducial-pipeline.md
+            - PCB Fiducial Pipeline: openpnp/v4/vision-pipeline-adjustment/3-pcb-fiducial-pipeline.md
+            - Nozzle Calibration Pipeline: openpnp/v4/vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md
+            - Part Identification Pipeline: openpnp/v4/vision-pipeline-adjustment/5-part-identification-pipeline.md
+        - Next Steps: openpnp/v4/next-steps/index.md
     - Feeders:
-        - Overview: feeders/1-overview/feeder-overview.md
-        - Installing the Slot Harness:
-            - Introduction: feeders/2-install-harness/index.md
-            - Slot Blades: feeders/2-install-harness/feeder-blade/index.md
-            - Individual Slots: feeders/2-install-harness/feeder-slot/index.md
-        - Software Update: feeders/3-software-update/index.md
-        - Mounting Feeders: feeders/4-mounting/mounting.md
-        - OpenPnP Setup: feeders/5-openpnp-setup/feeder-openpnp-setup.md
-        - Loading Tape: feeders/6-loading-tape/loading-tape.md
-        - Setting Pick Position: feeders/7-setting-pick-position/setting-pick-position.md
-        - Troubleshooting: feeders/8-troubleshooting/troubleshooting.md
+            - Overview: feeders/1-overview/feeder-overview.md
+            - Installing the Slot Harness:
+                - Introduction: feeders/2-install-harness/index.md
+                - Slot Blades: feeders/2-install-harness/feeder-blade/index.md
+                - Individual Slots: feeders/2-install-harness/feeder-slot/index.md
+            - Software Update: feeders/3-software-update/index.md
+            - Mounting Feeders: feeders/4-mounting/mounting.md
+            - OpenPnP Setup: feeders/5-openpnp-setup/feeder-openpnp-setup.md
+            - Loading Tape: feeders/6-loading-tape/loading-tape.md
+            - Setting Pick Position: feeders/7-setting-pick-position/setting-pick-position.md
+            - Troubleshooting: feeders/8-troubleshooting/troubleshooting.md
 
     - Guides:
         - Design for LumenPnP: guides/design-for-lumenpnp/index.md
