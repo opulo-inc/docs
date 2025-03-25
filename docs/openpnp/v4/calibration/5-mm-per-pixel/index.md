@@ -89,6 +89,7 @@ In this step, we will calibrate the mm/pixels for the **Top Camera**. This requi
 
 7. **Locate a calibration square to be measured**.
     * Jog the machine until a **golden guideline square** is fully visible in the top camera view. The square should be roughly centered in the camera's reticles. The whole square must be visible. If necessary, use the scroll wheel to zoom out and ensure the entire square is visible.
+    * In `Machine Controls`, you can adjust the `Distance Slider` to jog in larger or smaller increments when locating the golden guideline square.
      ![The square guideline on the datum board](images/units-per-pixel-square-on-datum.webp)
 <br/><br/>
 
@@ -105,12 +106,15 @@ In this step, we will calibrate the mm/pixels for the **Top Camera**. This requi
 9. **Finalize Calibration**.
     * Once you have it perfectly outlined, click the `Measure` button again to update the Units Per Pixel values.
      ![Confirm the test](images/confirm-pixel-per-mm.webp)
-
-    * Click `Apply` to save the changes.
+    * Click `Apply` in the lower right corner to save your changes.
      ![Apply the new settings](images/apply-pixel-per-mm-settings.webp)
+    * Save your OpenPnP configuration now. `File > Save Configuration`.
+      ![Save your config now](images/save-configuration.webp)
+
 <br/><br/>
 
-10. **Confirm Top Camera Calibration**.
+1. **Confirm Top Camera Calibration**.
+    * First, ensure your top camera view is fully zoomed out.
     * Click and drag the center reticle (located in the middle of the camera feed) to one of the corners of the Golden Guideline Square.
     * If the mm/pixel calibration is correct, the **Top Camera** will move to be precisely over your chosen corner.
 
@@ -121,18 +125,17 @@ In this step, we will calibrate the mm/pixels for the **Top Camera**. This requi
 The following steps will calibrate the mm/pixels for the **Bottom Camera**. This requires us to set the dimensions and use a virtual bounding box to outline the nozzle tip. This allows us to calibrate the **bottom camera’s Units per pixel**, giving us accurate bottom camera movement.
 
 1. **Rehome your machine using the home button**.
+    * The LumenPnP will attempt to scan the homing fiducial with the top camera, and scan both nozzle tips with the bottom camera. If it fails, that is okay.
     !!! warning "Too Many Vision Misdetects…"
-    Don't worry if you receive a warning stating “Too many vision misdetects…”; this is expected. This means that the bottom camera’s exposure has not yet been properly adjusted to detect the fiducial on the datum board. This will be corrected in the following steps, so you can safely ignore the warning.
-<br/><br/>
+        Don't worry if you receive a warning stating “Too many vision misdetects…”; this is expected. This means that the bottom camera’s exposure has not yet been properly adjusted to detect the fiducial on the datum board. This will be corrected in the following steps, so you can safely ignore the warning.
 
-1. **Select the bottom Camera**. 
+2. **Select the bottom Camera**. 
     * Navigate to `Machine Setup > Cameras > OpenPnPCaptureCamera Bottom`
     * Open the `Position` tab.
      ![Go to the Position tab](images/bottom-position-tab.webp)
-    * In the drop-down under `Machine Controls`, select `Nozzle: N2` to control the nozzle on the right. This way, for any nozzle commands we run, OpenPnP knows to base them on N2 and **not** N1 (left) nozzle.
+    * In the drop-down under `Machine Controls`, select `Nozzle: N2 - N24 (Head: H1)` to control the nozzle on the right. This way, for any nozzle commands we run, OpenPnP knows to base them on Nozzle: N2 and **not** the other nozzle.
      ![selecting n2 for control](images/select-n2.webp)
 <br/><br/>
-
 
 1. **Manually adjust the Nozzle to be over the Bottom Camera**.
     * Using the controls at the bottom left of OpenPnP, jog the N2 (right) nozzle to be roughly in the center of the Datum board. It does not need to be precise.
@@ -162,7 +165,7 @@ The following steps will calibrate the mm/pixels for the **Bottom Camera**. This
      ![Set the object dimensions for calibration](images/set-object-dimensions-bottom.webp)
 <br/><br/>
 
-1. **Align and Measure** 
+1. **Align and Measure**
     * locate and click the `Measure` button.
      ![Click the measure button](images/click-measure-bottom.webp)
     * Click and drag in the camera view to create a bounding box. Align it with the center of the nozzle tip so that it's **perfectly tangent to the edges** as shown in the image.
@@ -172,15 +175,18 @@ The following steps will calibrate the mm/pixels for the **Bottom Camera**. This
 1. **Finalize Bottom Camera Calibration**
     * Once you have it perfectly outlined, click the `Measure` button again to update the Units Per Pixel values.
      ![Confirm the test](images/confirm-pixel-per-mm-bottom.webp)
-    * Click `Apply` to save the changes.
+    * Click `Apply` in the lower right corner to save your changes.
      ![Apply the new settings](images/apply-pixel-per-mm-settings-bottom.webp)
+    * Save your OpenPnP configuration now. `File > Save Configuration`.
+      ![Save your config now](images/save-configuration.webp)
 <br/><br/>
 
-1.  **Confirm Bottom Camera Calibration**. 
-    * Jog the N2 nozzle tip to be away from the center, yet still visible by the bottom camera.
+1. **Confirm Bottom Camera Calibration**.
+    * First, ensure your bottom camera view is fully zoomed out.
+    * Jog the N2 nozzle tip away from the center, yet still visible by the bottom camera.
     * Click and drag the center reticle (located in the middle of the camera feed) to the middle of the nozzle tip.
     * The **Bottom Camera** should now be centered on the nozzle tip again.
-    * If it's inaccurate, repeat the bottom camera calibration and confirm you are using the larger N24 nozzle tip on the nozzle on the right, N2.
+    * If it's inaccurate, repeat the bottom camera calibration and confirm you are using the larger N24 nozzle tip on the nozzle on the right, Nozzle: N2.
 
 ---
 

@@ -31,12 +31,12 @@ Now that we have precise alignment between the nozzle tips and the top camera, w
 <br/><br/>
 
 4. **Position Nozzle N1 at Datum Board Height**.
-    * Jog the N1 (left) Nozzle until it just barely touches the top surface of the datum board. This establishes a consistent Z-height reference.
+    * Jog Nozzle: N1 (left toolhead) until it just barely touches the top surface of the datum board. This establishes a consistent Z-height reference.
      ![Position the toolhead over the bottom camera](images/position-over-bottom-cam.webp)
 <br/><br/>
 
 5. **Align Nozzle Tip Over the Bottom Camera**.
-    * Without changing the Z-height, jog the N1 (left) Nozzle over the bottom camera and use OpenPnP’s viewfinder to center the nozzle tip in the image.
+    * Without changing the Z-height, jog the Nozzle: N1 (left toolhead) over the bottom camera and use OpenPnP’s viewfinder to center the nozzle tip in the image.
      ![Position the toolhead over the bottom camera precisely](images/position-over-bottom-cam-precise.webp)
     !!! Tip "Fine-Tuning Focus"
         The bottom camera’s focus is pre-adjusted before shipping, but you can fine-tune it if needed. The lens is secured with friction grease, so apply light pressure while twisting the top portion of the lens until the image appears sharp. Avoid excessive force.
@@ -49,9 +49,11 @@ Now that we have precise alignment between the nozzle tips and the top camera, w
      ![Store the camera location](images/store-nozzle-location-bottom.webp)
 <br/><br/>
 
-7. Apply the New Camera Position
-    * Click Apply to save the bottom camera position in OpenPnP.
+7. **Apply and Save the Captured Nozzle Position**
+    * Click `Apply` in the lower right corner to save the bottom camera position in OpenPnP.
      ![Save the camera location](images/apply-bottom-cam-pos.webp)
+    * Save your OpenPnP configuration now. `File > Save Configuration`.
+      ![Save your config now](images/save-configuration.webp)
 <br/><br/>
 
 ---

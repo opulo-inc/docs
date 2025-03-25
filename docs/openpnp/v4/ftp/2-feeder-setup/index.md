@@ -128,7 +128,7 @@ Once the feeder is physically installed, it needs to be configured in OpenPnP so
      ![](../../calibration/6-nozzle-offset/images/select-n1-machine-control.webp)
 <br/><br/>
 
-2. **Position nozzle: N1 over the feeder**.
+1. **Position nozzle: N1 over the feeder**.
     * Within the `Feeders` tab, select the feeder you just created and click on the `Position Nozzle` icon button to bring the nozzle over the feeder.
     * Within `Machine Controls`, use the jog controls to lower the Z axis until the nozzle is touching the surface of the plastic tape cover.
      ![Position the nozzle over the feeder](images/Position-nozzle-over-feeder.webp)
@@ -136,22 +136,24 @@ Once the feeder is physically installed, it needs to be configured in OpenPnP so
      ![Position the nozzle over the feeder](images/set-height.webp)
 <br/><br/>
 
-3. **Capture the Z height**.
+1. **Capture the Z height**.
     * Click the `Capture Nozzle` icon button to store the new feeder Z height value.
      ![Save the nozzle position](images/Capture-nozzle-position-feeder.webp)
 <br/><br/>
 
-1. **Apply the Settings**.
+1. **Apply and Save**.
     * Click `Apply` to save these changes to the feeder z height.
+    * Save your OpenPnP configuration now. `File > Save Configuration`.
+      ![Save your config now](images/save-configuration.webp)
 <br/><br/>
 
-5. **Raise the nozzles to avoid collision**.
+1. **Raise the nozzles to avoid collision**.
     * In `Machine Controls`, click the letter `P` between the **Z** up/down arrows to “**Park**” the nozzle at a safe height to prevent unwanted collisions.
     * Jog the nozzles away from the feeder using the arrows in `Machine Controls`. It does not matter where. This will prepare us to test picking parts in the next steps.
      ![Move the Tool Head away from the feeder](images/XY-jog-controls.webp)
 <br/><br/>
 
-6. **Test picking a component**.
+1. **Test picking a component**.
     * Remove the cover tape.
     * Click the `Pick` icon button, seen below, to have the LumenPnP attempt to pick a component from the feeder.
     * If the component is picked up properly, your Z-height is correct.
@@ -167,7 +169,7 @@ Once the feeder is physically installed, it needs to be configured in OpenPnP so
          ![](images/effectivesafezerror.webp)
 <br/><br/>
 
-1.  **Recycle test components**.
+1. **Recycle test components**.
     * Once a pick is successful, switch to the `Special` Tab in the `Machine Controls` pane.
      ![Switch to the special tab](images/Special-tab.webp)
     * Click the `Recycle` button to instruct the LumenPnP to return the picked component back to its original location in the feeder. This allows you to confirm that the picking and placing of components is functioning correctly without wasting parts.

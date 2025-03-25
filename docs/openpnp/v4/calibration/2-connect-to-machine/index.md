@@ -62,7 +62,7 @@ Follow these steps in order:
      ![Changing the Port and Baud Rate](images/Check COM Port and Baud Rate.webp)
 <br/><br/>
 
-1. Apply and Save
+1. **Apply and Save**
     * Click `Apply` in the lower right corner to save your changes.
      ![Apply baud rate and port](images/apply-machine-config.webp)
     * Save your OpenPnP configuration: `File > Save Configuration`.
@@ -102,6 +102,8 @@ Follow these steps in order:
     * Click the `LED` button.
     * Then press `On`.<br/><br/>
      ![](images/turn-on-led.webp)
+    * Close the LED window.
+    * Switch back to the `Jog` tab so you are ready to move the nozzles in the following steps.
 
     !!! note "Keep Ring Lights On"
         Keep the ring lights on for the rest of calibration. All calibrations should be based on the lighting from the ring lights.
@@ -111,10 +113,10 @@ Follow these steps in order:
 
 ## Configuring the Bottom Camera
 
-Before calibration, the bottom camera and exposure must be set up properly.
+Before calibration, the bottom camera and exposure must be set up properly. **We will use a nozzle tip above the bottom camera to properly adjust the exposure**.
 
-1. **Remove Lens Caps**
-    * Ensure both the **top and bottom cameras** are uncovered.
+1. **🚨 Remove Lens Caps 🚨**
+    * ⚠️ Ensure both the **top and bottom cameras** have their lens caps removed.
      ![Lens cap locations](../5-mm-per-pixel/images/remove-lens-caps.webp)
 <br/><br/>
 
@@ -148,7 +150,7 @@ Before calibration, the bottom camera and exposure must be set up properly.
     * In the bottom left of OpenPnP, select `Nozzle: N1` from the `machine controls` drop-down menu.
      ![Select nozzle from machine control dropdown](images/select-n1-machine-control-bottom.webp) //placeholder for photo
     * Using the `Machine Controls`, jog `Nozzle: N1` to be anywhere **above the datum board** and lower `Nozzle: N1`, using the `Z-axis` controls, until it's just *barely* touching the datum board. The exact position on the datum board isn’t critical. This ensures the nozzle is at the correct Z-height for calibration.
-    * **Keeping the Z-height unchanged**, jog Nozzle: N1 to be roughly over the bottom camera.
+    * ⚠️ **Keeping the Z-height unchanged**, jog Nozzle: N1 to be centered over the bottom camera.
      ![Position the toolhead over the bottom camera](images/position-over-bottom-cam.webp) //placeholder for photo
 <br/><br/>
 
@@ -156,11 +158,12 @@ Before calibration, the bottom camera and exposure must be set up properly.
     * Return to `Machine Setup > Cameras > OpenPnpCaptureCamera Bottom` to adjust the exposure. This will help us through the rest of the calibration.
     * In the `OpenPnpCaptureCamera Bottom` go to the `Device Settings` tab and locate the `Properties` section.
     * We will only be touching the exposure slider. All other sliders should be left to their default.
-    * Located the `Exposure` slider and click on the check box labeled `Auto`. Allow the camera to attempt to auto focus.
+    * Located the `Exposure` slider and click on the check box labeled `Auto`. The camera will attempt to find the correct exposure.
     * Then, uncheck the `Auto` box to ensure we are now in "manual adjustment" mode.
     * Adjust the `Exposure` slider until the nozzle tip is easy to see. This is a preliminary adjustment—you'll fine-tune it later.
      ![Adjust exposure](images/adjust-exposure.webp)
-<br/><br/>
+    !!! caution "Not seeing anything in the bottom camera feed?"
+        Ensure the lens caps on the bottom camera has been removed.
 
     !!! warning "Other Camera Settings"
         Do not modify any camera settings other than exposure. The default values should remain unchanged.
@@ -172,6 +175,10 @@ Before calibration, the bottom camera and exposure must be set up properly.
 ---
 
 ## Configuring the Top Camera
+
+The same thing needs to be done to the top camera, where the exposure must be set up properly. **We will use the top camera aligned above the datum board's homing fiducial to properly adjust the exposure**.
+
+🚨 The **homing fiducial** is the 1mm dot in the center of the Opulo logo, located toward the center of the datum board. 🚨
 
 1. **Select the Top Camera in OpenPnP**
     * Navigate to `Machine Setup > Heads > ReferenceHead H1 > Cameras > OpenPnpCaptureCamera Top`.
@@ -194,17 +201,19 @@ Before calibration, the bottom camera and exposure must be set up properly.
 <br/><br/>
 
 1. **Positioning the Top Camera Over the Datum**
-    * Go to `Machine Controls` in the bottom left corner of OpenPnP and **jog the `Top Camera` to be roughly above the datum board**.
+    * Go to `Machine Controls` in the bottom left corner of OpenPnP and **jog the `Top Camera` to be centered above the datum board's homing fiducial**.
 <br/><br/>
 
-1. **Adjust the Exposure**.
+1. **Adjust the Top Camera Exposure**.
     * Return to `Machine Setup > Heads > ReferenceHead H1 > Cameras > OpenPnpCaptureCamera Top` to adjust the exposure. This will help us through the rest of the calibration.
     * In the `OpenPnpCaptureCamera Top` go to the `Device Settings` tab and locate the `Properties` section.
     * We will only be touching the exposure slider. All other sliders should be left to their default.
-    * Located the `Exposure` slider and click on the check box labeled `Auto`. Allow the camera to attempt to auto focus.
-    * Then, uncheck the `Auto` box to ensure we are now in "manual adjustment" mode.
+    * Located the `Exposure` slider and click on the check box labeled `Auto`. The camera will attempt to find the correct exposure.
+    * Then, **uncheck** the `Auto` box to ensure we are now in "**manual adjustment**" mode.
     * Adjust the `Exposure` slider until the Datum Board is easy to see. This is a preliminary adjustment—you'll fine-tune it later.
       ![Adjust exposure](images/adjust-exposure-2.webp)
+    !!! caution "Not seeing anything in the top camera feed?"
+        Ensure the lens caps on the top camera has been removed.
 <br/><br/>
 
 ---

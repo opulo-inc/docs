@@ -22,12 +22,17 @@ Each nozzle has a different vacuum reading due to variations in nozzle tip size.
 
 ## Setting Up Vacuum Part Detection for Nozzle: N1
 
-1. **Confirm the correct nozzle is installed**.
-    * Ensure that the `N045` nozzle tip is securely attached to the **left toolhead**.
+1. **Select the correct nozzle to control**.
+    * In the bottom left of OpenPnP, select `Nozzle: N1 - N045 (Head:H1)` from the **machine controls** dropdown.
+     ![Select nozzle: N1 from machine control dropdown](images/select-n1-machine-control.webp)
 <br/><br/>
 
-1. **Position the Nozzle for Accurate Readings**.
-    * Navigate to `Machine Setup > Cameras > OpenPnPCaptureCamera Bottom > Position tab > Location`
+1. **Confirm the correct nozzle tip is installed**.
+    * Ensure that the `N045` nozzle tip is securely attached to **Nozzle: N1 (left toolhead)**.
+<br/><br/>
+
+1. **Position Nozzle: N1 for Accurate Readings**.
+    * Navigate to `Machine Setup > Cameras > OpenPnPCaptureCamera Bottom > Position tab`
     * Click the `Position the tool over the center of the location` button.
     *  This brings the `nozzle: N1` to the **same Z height as the datum board**, ensuring more consistent readings for the following steps.
 <br/><br/>
@@ -38,48 +43,58 @@ Each nozzle has a different vacuum reading due to variations in nozzle tip size.
 <br/><br/>
 
 1. **Measure the Vacuum Pressure**.
-    Open the H1:VAC1 actuator window.
-    1. Click `On` to activate the pump and valve.
-    2. Click `Read`. A value will appear in the `Read Value box`. This represents the vacuum pressure when the nozzle is **uncovered**.
-    3. **Take note of this number**. We will need it later.
+    * In `Machine Controls`, navigate to the `Actuators` tab.
+    * Select `H1:VAC1` to open the vacuum pressure window.
+    * Click `On` to activate the pump and valve.
+    * Click `Read`. A value will appear in the `Read Value box`. This represents the vacuum pressure when the Nozzle: N1 is **uncovered**.
+    * **Take note of this number**. We will need it later.
 
      ![vac1 actuator](images/vac1-actuator.webp)
      ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.webp)
 <br/><br/>
 
 1. **Measure the Vacuum Pressure with a Sealed Nozzle**.
-    1. Cover the nozzle tip completely with your fingertip.
-    2. Click `Read` again. This represents the vacuum pressure when a part is picked, or "**covered**".
-    3. **Take note of the new value**. We will also need it later.
+    * Cover the nozzle tip completely with your fingertip.
+    * Click `Read` again. This represents the vacuum pressure when a part is picked, or "**covered**".
+    * **Take note of the new value**. We will also need it later.
+    * Click `Off` to deactivate the pump and valve.
+    * Close the `H1:VAC1` vacuum pressure window.
 <br/><br/>
 
-1. **Calculate the Detection Threshold**. 
-    1. Find the midpoint between the uncovered and covered values. For example:
-        * Uncovered: **240**
-        * Covered: **230**
-        * Midpoint: **235** → Enter this as the `High Value`.
+1. **Calculate the Detection Threshold**.
+    * Find the midpoint between the uncovered and covered values. For example:
+        * Uncovered: **220**
+        * Covered: **200**
+        * Midpoint: **210** → Enter this as the `High Value`.
         * ![entering vac threshold value for n045](images/entering-vac-cal.webp)
-    2. Ensure the `Low Value` is at least **5-10 units lower** than the uncovered reading. The default low value is **220**, but if your readings are close to this number, you may need to lower it further to avoid false detections. If your uncovered reading is **225**, setting the low value to **215 (or lower)** is a good starting point.
-    3. Enter the calculated midpoint value into the **Vacuum Range** `High Value` field for the **N045** nozzle tip.
+    * Enter the calculated midpoint value into the **Vacuum Range** `High Value` field for the **N045** nozzle tip.
+    * Ensure the `Low Value` is at least **10-20 units lower** than the "Midpoint" reading. The default low value is **220**, but if your readings are close to this number (like the example above), you may need to lower it further to avoid false detections. If your Midpoint value is **210**, setting the `Low Value` to **190 (or lower)** is a good starting point.
 
     !!! caution
         The difference between uncovered and covered readings may be small, but **even a single-digit change can indicate a successful pick**. Nozzle sizes affect these readings, so expect variations between nozzles.
 
-1. **Apply the Settings**.
-    * Click `Apply` to save the changes to the **N045** nozzle tip.
+1. **Apply and Save**
+    * Click `Apply` in the lower right corner to save your changes to the **N045** nozzle tip.
+    * Save your OpenPnP configuration now. `File > Save Configuration`.
+      ![Save your config now](images/save-configuration.webp)
 
 ---
 
 ## Setting Up Vacuum Part Detection for Nozzle: N2
 
-1. **Confirm the correct nozzle is installed**.
-    * Ensure that the `N24` nozzle tip is securely attached to the **right toolhead**.
+1. **Select the correct nozzle to control**.
+    * In the bottom left of OpenPnP, select `Nozzle: N2 - N24 (Head:H1)` from the **machine controls** dropdown.
+     ![Select nozzle: N2 from machine control dropdown](images/select-n1-machine-control.webp)
 <br/><br/>
 
-1. **Position the Nozzle for Accurate Readings**.
-    * Navigate to `Machine Setup > Cameras > OpenPnPCaptureCamera Bottom > Position tab > Location`
+1. **Confirm the correct nozzle tip is installed**.
+    * Ensure that the `N24` nozzle tip is securely attached to **Nozzle: N2(right toolhead)**.
+<br/><br/>
+
+1. **Position Nozzle: N2 for Accurate Readings**.
+    * Navigate to `Machine Setup > Cameras > OpenPnPCaptureCamera Bottom > Position tab`
     * Click the `Position the tool over the center of the location` button.
-    *  This brings the `nozzle: N2` to the **same Z height as the datum board**, ensuring more consistent readings for the following steps.
+    *  This brings the `Nozzle: N2` to the **same Z height as the datum board**, ensuring more consistent readings for the following steps.
 <br/><br/>
 
 1. **Open the Part Detection Settings**.
@@ -88,35 +103,40 @@ Each nozzle has a different vacuum reading due to variations in nozzle tip size.
 <br/><br/>
 
 1. **Measure the Vacuum Pressure**.
-    Open the `H1:VAC1` actuator window.
-    1. Click `On` to activate the pump and valve.
-    2. Click `Read`. A value will appear in the `Read Value box`. This represents the vacuum pressure when the nozzle is **uncovered**.
-    3. **Take note of this number**. We will need it later.
+    * In `Machine Controls`, navigate to the `Actuators` tab.
+    * Select `H1:VAC2` to open the vacuum pressure window.
+    * Click `On` to activate the pump and valve.
+    * Click `Read`. A value will appear in the `Read Value box`. This represents the vacuum pressure when Nozzle: N2 is **uncovered**.
+    * **Take note of this number**. We will need it later.
 
      ![vac1 actuator](images/vac1-actuator.webp)
      ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.webp)
 <br/><br/>
 
 1. **Measure the Vacuum Pressure with a Sealed Nozzle**.
-    1. Cover the nozzle tip completely with your fingertip.
-    2. Click `Read` again. This represents the vacuum pressure when a part is picked, or "**covered**".
-    3. **Take note of the new value**. We will also need it later.
+    * Cover the nozzle tip completely with your fingertip.
+    * Click `Read` again. This represents the vacuum pressure when a part is picked, or "**covered**".
+    * **Take note of the new value**. We will also need it later.
+    * Click `Off` to deactivate the pump and valve.
+    * Close the `H1:VAC2` vacuum pressure window.
 <br/><br/>
 
-1. **Calculate the Detection Threshold**. 
+1. **Calculate the Detection Threshold**.
     1. Find the midpoint between the uncovered and covered values. For example:
-        * Uncovered: **240**
-        * Covered: **230**
-        * Midpoint: **235** → Enter this as the `High Value`.
-        * ![entering vac threshold value for n045](images/entering-vac-cal.webp)
-    2. Ensure the `Low Value` is at least **5-10 units lower** than the uncovered reading. The default low value is **220**, but if your readings are close to this number, you may need to lower it further to avoid false detections. If your uncovered reading is **225**, setting the low value to **215 (or lower)** is a good starting point.
-    3. Enter the calculated midpoint value into the **Vacuum Range** `High Value` field for the **N24** nozzle tip.
+        * Uncovered: **230**
+        * Covered: **200**
+        * Midpoint: **215** → Enter this as the `High Value`.
+        * ![entering vac threshold value for n24](images/entering-vac-cal.webp)
+    * Enter the calculated midpoint value into the **Vacuum Range** `High Value` field for the **N24** nozzle tip.
+    * Ensure the `Low Value` is at least **10-20 units lower** than the "Midpoint" reading. The default low value is **220**, but if your readings are close to this number(like the example above), you may need to lower it further to avoid false detections. If your Midpoint value is **215**, setting the `Low Value` to **195 (or lower)** is a good starting point.
 
     !!! caution "Don't forget"
         The difference between uncovered and covered readings may be small, but **even a single-digit change can indicate a successful pick**. Nozzle sizes affect these readings, so expect variations between nozzles.
 
-1. **Apply the Settings**.
-    * Click `Apply` to save the changes to the **N24** nozzle tip.
+1. **Apply and Save**
+    * Click `Apply` in the lower right corner to save your changes to the **N24** nozzle tip.
+    * Save your OpenPnP configuration now. `File > Save Configuration`.
+      ![Save your config now](images/save-configuration.webp)
 
 ---
 

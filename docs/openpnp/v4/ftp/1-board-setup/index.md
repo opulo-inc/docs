@@ -21,7 +21,6 @@ The first step in starting the FTP PCB is physically mounting the FTP PCB onto t
      ![Apply double-sided tape to the board](images/Apply-tape-to-board.webp)
 <br/><br/>
 
-
 1. **Place the PCB board into the mounts**.
     * Place the FTP board in the board mounts and push them so that they're snug against the sides of the board.
     * The top edge of the board should line up with the ridge in the dynamic board mount's tab.
@@ -41,7 +40,7 @@ The first step in starting the FTP PCB is physically mounting the FTP PCB onto t
     * Get the latest `ftp-top.pos` file from the [LumenPnP GitHub Releases Page.](https://github.com/opulo-inc/lumenpnp/releases/)
 <br/><br/>
 
-2. **Create a New Board in OpenPnP**.
+1. **Create a New Board in OpenPnP**.
     * Navigate to the `Boards` tab.
     * Click the green "plus" icon (+) and select "Create New Board."
      ![Job Tab](images/create-new-board.webp)
@@ -49,7 +48,7 @@ The first step in starting the FTP PCB is physically mounting the FTP PCB onto t
      ![save board](images/save-as-ftp.webp)
 <br/><br/>
 
-3. **Import the Position data**.
+1. **Import the Position data**.
     * From the "Boards" tab, select the newly created board and click `File > Import Placements > KiCAD .pos`
      ![Start importing the board](images/import-from-boards-tab.webp)
     * Select the `ftp-top.pos` file you downloaded earlier as the "**Top File (.pos)**".
@@ -59,23 +58,28 @@ The first step in starting the FTP PCB is physically mounting the FTP PCB onto t
      ![Fill out the board import dialog](images/Board-import-dialog.webp)
 <br/><br/>
 
-4. **Set Part Height**.
+1. **Set Part Height**.
     * We need to tell OpenPnP how tall the part is so it can take that into consideration when picking that part.
     * In the `Parts` tab, find `R_0603_1608_Metric-R_Small`. 
     * Find the `Height` column and change the height value from `0.0` to `0.5`mm by double-clicking the cell. 
      ![Set the part height](images/set-height.webp)
 <br/><br/>
 
-5. **Save your job file**.
+1. **Save your job file**.
     * Go to `File > Save Job As` and save your FTP job.
-
-    ![Save Job As](images/Save-job-as.webp)
+    * A pop-up window will appear asking if you want to save your changes to the ftp.board.xml. Select `Yes`.
+     ![Save Job As](images/Save-job-as.webp)
 
 ---
 
 ## Installing the N045 Nozzle
 
-1. **Lubricate the brass nozzle**.
+1. **Select the correct nozzle to control**.
+    * In the bottom left of OpenPnP, select `Nozzle: N1 - N045 (Head:H1)` from the **machine controls** dropdown.
+     ![Select nozzle: N1 from machine control dropdown](images/select-n1-machine-control.webp)
+<br/><br/>
+
+1. **Lubricate the brass Nozzle: N1**.
     * Apply a small amount of **SuperLube** to the brass nozzle on the left side. This prevents damage to the rubber O-rings when mounting nozzle tips. We pre-lubricate them before shipping, but adding extra ensures longevity.
      ![Grease the nozzle holder before installing the N045 nozzle](images/Install-nozzle-grease.webp)
     * Wipe off any excess grease.
@@ -100,6 +104,10 @@ The first step in starting the FTP PCB is physically mounting the FTP PCB onto t
     * In the lower-right pane, you'll be in the `Nozzle Tips` tab. Click the `Compatible` on the `N045` row.
      ![Mark compatible with N045 nozzle](images/Select-led-nozzle-tips.webp)
 
+1. **Save Your Configuration**
+    * Save your OpenPnP configuration now. `File > Save Configuration`.
+      ![Save your config now](images/save-configuration.webp)
+
 ---
 
 ## Finding the FTP Board's Location
@@ -110,43 +118,49 @@ Next, OpenPnP needs to know exactly where the board is. We will find and set the
     * Navigate to the `Job` tab in the top-right pane.
      ![Switch to the Job Tab](images/Job-tab.webp)
     * Click the green "plus" icon (+)
-    * Select "**Existing board**" and choose the previously created board.
+    * Select "**Existing board**" and choose the previously created board, named ftp.board.xml.
+    * Click `OK` to add ftp.board.xml to the **Job** tab.
 <br/><br/>
 
-2. **Identify Fiducial Markers**.
+1. **Identify Fiducial Markers**.
     * In the bottom-right pane, you'll see the `Placements` panel. Locate the fiducials, `FID1`, `FID2`, and `FID3`, within there. You can sort the list by `Part` to find them easily.
     * Change their Type from `Placement` to `Fiducial` so OpenPnP recognizes them as reference points adn not actual components.
      ![Find each of the board fiducial markers](images/Select-board-fiducials.webp)
      ![Switch each fiducial component to fiducial type](images/Switch-to-fiducial-type.webp)
 <br/><br/>
 
-3. **Set the Board’s Origin**.
+1. **Home the LumenPnP**.
+    * Level the nozzles to prevent collisions before homing.
+    * Perform a homing of the LumenPnP to ensure that fiducial detection and nozzle tip calibration finish successfully for the `N1` and `N2` nozzles without errors.
+<br/><br/>
+
+1. **Set the Board’s Origin**.
     * Move the top camera so that it's centered on the bottom-left corner of the PCB.
      ![Set the XY coordinates of your board](images/capture-ftp-position.webp)
     * Select the **board** in the `Job` tab and click `Capture Camera Position` to save the current camera position and set the board's origin point.
 <br/><br/>
 
-4. **Set the Board’s Height**.
+1. **Set the Board’s Height**.
     * Jog the N1 Nozzle so that it's just barely touching the top surface of the FTP PCB. 
     * Enter the current Z position (visible in the green bar in the bottom right of the UI) into the board's `Z position` field.
     * In Machine Controls, click the letter `P` between the Z up/down arrows to “**Park**” the nozzle at a safe height to prevent unwanted collisions.
      ![Set the Z coordinates of your board](images/Set-board-location-z.webp)
 <br/><br/>
 
-5. **Run a Fiducial Scan**.
+1. **Run a Fiducial Scan**.
     * Click on the `Fiducial Scan` button to automatically align the board. The machine will move to the fiducial locations and use the camera to identify the center of the fiducial. Then, it calculates and adjusts for any angular offset.
      ![Automatically set board location](images/Auto-check-board-fiducials.webp)
     * If the fiducial check fails for any reason, check out our instructions for adjusting the [PCB fiducial vision pipeline](../../vision-pipeline-adjustment/3-pcb-fiducial-pipeline.md).
 <br/><br/>
 
-6. **Verify Alignment**.
+1. **Verify Alignment**.
     * To confirm that the fiducial calibration was successful, select any placement in the `Placements` table and select the `jog camera to position` button. If the center of the camera is perfectly centered on the footprint, your fiducial calibration was successful.
      ![position cam to fid](images/Position-camera-to-fiducial.webp)
 <br/><br/>
 
 ---
 
-## Disable the LEDs
+## Disable the LED components
 
 Disabling components on a board is a helpful feature in OpenPnP for DNP (Do Not Populate) parts, alternate parts, or other irregularities. We'll disable the LEDs in this job as an example.
 
@@ -157,7 +171,7 @@ Disabling components on a board is a helpful feature in OpenPnP for DNP (Do Not 
      ![last led](images/select-last-led.webp)
 <br/><br/>
 
-2. **Disable the LEDs**.
+1. **Disable the LEDs**.
     * Right click the selected parts, and choose `Set Enabled > Disabled`. 
     * These parts will no longer be populated in the job.
      ![disable](images/disable-led.webp)

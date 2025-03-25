@@ -35,6 +35,7 @@ We will be doing the following steps for the OS you have chosen.
 1. Before continuing, **it is imperative to ensure OpenPnP is not running** and fully closed.
 
 2. Download the zipped OpenPnP V4 Config Files for the `LumenPnP V4` by going to the [Software Updates Page](../../../../software-updates/index.md) and returning to this page after.
+    * ![V4 Config Files Download](img/v4-config-download.webp)
 
 3. Unzip the V4 config files to a location you will remember, while confirming it contains a `machine.xml` and a `vision-settings.xml`.
 
@@ -56,6 +57,7 @@ We will be doing the following steps for the OS you have chosen.
 1. Before continuing, **it is imperative to ensure OpenPnP is not running** and fully closed.
 
 2. Download the zipped OpenPnP V4 Config Files for the `LumenPnP V4` by going to the [Software Updates Page](../../../../software-updates/index.md) and returning to this page after.
+    * ![V4 Config Files Download](img/v4-config-download.webp)
 
 3. Unzip the V4 config files to a location you will remember, while confirming it contains a `machine.xml` and a `vision-settings.xml`.
 
@@ -77,18 +79,19 @@ We will be doing the following steps for the OS you have chosen.
 1. Before continuing, **it is imperative to ensure OpenPnP is not running** and fully closed.
 
 2. Download the zipped OpenPnP V4 Config Files for the `LumenPnP V4` by going to the [Software Updates Page](../../../../software-updates/index.md) and returning to this page after.
+    * ![V4 Config Files Download](img/v4-config-download.webp)
 
-3. Unzip the V4 config files to a location you will remember, while confirming it contains a `machine.xml` and a `vision-settings.xml`.
+1. Unzip the V4 config files to a location you will remember, while confirming it contains a `machine.xml` and a `vision-settings.xml`.
 
-4. Locate OpenPnP’s hidden configuration folder (.openpnp2)
+2. Locate OpenPnP’s hidden configuration folder (.openpnp2)
     * Open Finder and navigate to /Users/[username]/.
     * Reveal hidden files by following [these instructions](https://www.macworld.com/article/671158/how-to-show-hidden-files-on-a-mac.html).
     * There should now be additional folders and files that are visible within the folder you are viewing.
     * Locate and open the `.openpnp2` folder that is now visible.
 
-5. In the `.openpnp2` folder, backup the existing files `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml` by copying them to a safe location.
+3. In the `.openpnp2` folder, backup the existing files `machine.xml`, `packages.xml`, `parts.xml`, and `vision-settings.xml` by copying them to a safe location.
 
-6. **Replace** the old `machine.xml` and `vision-settings.xml` files in the `.openpnp2` folder with the new `machine.xml` and `vision-settings.xml` files you unzipped earlier.
+4. **Replace** the old `machine.xml` and `vision-settings.xml` files in the `.openpnp2` folder with the new `machine.xml` and `vision-settings.xml` files you unzipped earlier.
 
 ---
 
