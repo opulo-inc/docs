@@ -151,7 +151,7 @@ Follow these steps in order:
     * A **”Task Interrupted:”** window will pop up. This is **not** an error! OpenPnP is just notifying you that the job has been stopped if one is running. This is normal and can be dismissed.
      ![](images/n045-on-n1.webp)
      ![](images/task-interrupted.webp)
-    * Slide the **N045 nozzle tip** (the one with the smaller opening) onto the **left nozzle** (red tubing). Rotate the nozzle tip as you mount it to the brass nozzle to evenly distribute the lubricant around the O-rings. It should slide on and off smoothly after working it in.
+    * Slide the **N045 nozzle tip** (the one with the smaller opening) onto the **left nozzle** (using red tubing). Rotate the nozzle tip as you mount it to the brass nozzle to evenly distribute the lubricant around the O-rings. It should slide on and off smoothly after working it in.
      ![left nozzle has red tubing getting n045 tip, right has no tip](images/mountingn1.webp)
 <br/><br/>
 
@@ -160,7 +160,7 @@ Follow these steps in order:
     * Select the `Nozzle Tips` tab, and check the `Loaded?` checkbox for the `N24` row.
     * **Don’t forget.** It will move to the second nozzle and you’ll see the **”Task Interrupted:”** popup window again.
      ![](images/n24-on-n2.webp)
-    * Slide the N24 nozzle tip (the one with the larger opening) onto the **right** nozzle (using blue tubing). Rotate the nozzle tip as you mount it to the brass holder to ensure the grease works its way into the tip and around the O-rings. It should slide on and off easily after working it in.
+    * Slide the N24 nozzle tip (the one with the larger opening) onto the **right nozzle** (using blue tubing). Rotate the nozzle tip as you mount it to the brass holder to ensure the grease works its way into the tip and around the O-rings. It should slide on and off easily after working it in.
      ![blue tubing right nozzle getting n24 tip, left already has n045](images/mountingn2.webp)
 
     !!! Tip "Why These Nozzle Tips?"

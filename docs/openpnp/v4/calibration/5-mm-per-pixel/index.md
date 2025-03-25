@@ -97,8 +97,8 @@ The following steps will calibrate the mm/pixels for the **Bottom Camera**. This
 <br/><br/>
 
 1. **Manually adjust the Nozzle to be over the Bottom Camera**.
-    * Using the controls at the bottom left of OpenPnP, jog the N2 (right) nozzle to be roughly in the center of the Datum board. It does not need to be precise.
-    * Lower the N2 nozzle so that it’s just barely touching the top surface of the Datum Board. It doesn’t matter exactly where.
+    * Using the controls at the bottom left of OpenPnP, jog `Nozzle: N2` (right toolhead) to roughly the center of the Datum board, positioning it near the edge closest to the bottom camera. This placement makes it easier to see the nozzle tip's proximity to the Datum board as you lower it.
+    * Lower the `Nozzle: N2` so that it’s just barely touching the top surface of the Datum Board.
     * **Keep the nozzle at this Z height** and carefully use the jog controls to move it directly over the **center of the bottom camera’s reticle**.
      ![Position nozzle over camera](images/position-nozzle-over-camera.webp)
      ![Jog the nozzle over the camera](images/jog-controls-bottom.webp)

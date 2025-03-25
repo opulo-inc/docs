@@ -25,12 +25,12 @@ Now that we have precise alignment between the nozzle tips and the top camera, w
      ![Select the position tab](images/bottom-camera-position.webp)
 <br/><br/>
 
-3. **Select Nozzle N1**.
+3. **Select Nozzle: N1**.
     * From the machine controls dropdown, select `Nozzle: N1 - N045 (Head:H1)`. This ensures the left nozzle is used for positioning.
      ![Select nozzle from machine control dropdown](images/select-n1-machine-control-bottom.webp)
 <br/><br/>
 
-4. **Position Nozzle N1 at Datum Board Height**.
+4. **Position Nozzle: N1 at Datum Board Height**.
     * Jog Nozzle: N1 (left toolhead) until it just barely touches the top surface of the datum board. This establishes a consistent Z-height reference.
      ![Position the toolhead over the bottom camera](images/position-over-bottom-cam.webp)
 <br/><br/>
