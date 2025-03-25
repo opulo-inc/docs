@@ -44,31 +44,6 @@ Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts whe
     * Open the **"Position"** tab, then click the `Position the tool over the center of the location` button.
 <br/><br/>
 
-1. **Adjust the exposure using the slider**.
-    * 🚨 **Keep all other camera settings at their default value, and only adjust the exposure slider**.
-    * In the lower detail pane, switch to the `Device Settings` tab.
-     ![Switching to the camera device settings](images/Bottom-camera-device-settings.webp)
-    * Right click on the camera feed and select `Show Image Info?` to enable the image info card. This will give you the brightness histogram of the image.
-     ![enable the image histogram](images/show-image-info.webp)
-    * Aim for a **sharp peak on the right side** and a larger **cluster to the left** in the histogram. See the image below for reference.
-     ![a good histogram](images/bottom-exp-good.webp){: style="width:60%;margin-left:10%;"}
-    !!! Warning "🚨 Important 🚨"
-        The reference image below is just an example—**your histogram may look very different** depending on lighting conditions, camera placement, and other environmental factors. **Do not try to match it exactly.** Instead, focus on achieving the key characteristics: a distinct peak on the right and a noticeable cluster to the left. Adjust gradually until the image is clear and well-exposed.
-
-2. **Set the Correct Exposure**.
-    * Adjust the exposure slider to ensure the camera can clearly detect the dark hole in the nozzle tip for calibration. The exposure should be balanced—bright enough to distinguish the nozzle tip from the background but not so bright that the hole becomes difficult to detect. Aim for a setting where the brightest areas are visible but do not appear completely white, and the darker areas remain well-defined. Use the following images as a reference for adjusting exposure:
-     ![exposure too high](images/bottom-exp-high.webp)
-     ![exposure too low](images/bottom-exp-low.webp)
-     ![exposure correct](images/bottom-exp-good.webp)
-<br/><br/>
-
-1. **Record and Save Your Exposure Value**
-    * OpenPnP may not retain camera settings after restart **Record and save your exposure value** by saving them in a text file or writing them down.
-    * This means every time you boot up OpenPnP you'll have to:
-        * Toggle **Auto Exposure** `on`, then `off`. (This puts your camera into manual exposure mode)
-        * **Type your recorded exposure value into the exposure field beside the slider**.
-<br/><br/>
-
 1. **Calibrate the N045 Nozzle Tip**.
     * Navigate to `Machine Setup > Nozzle Tips > N045 > Calibration`, and click the `Calibrate` button.
 

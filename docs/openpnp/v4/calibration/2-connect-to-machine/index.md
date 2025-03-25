@@ -111,9 +111,66 @@ Follow these steps in order:
 
 ---
 
+## Preparing for Homing
+
+1. **Level the nozzles before homing**.
+
+    !!! danger "🚨 Critical Warning: Level Nozzles Before Homing 🚨"
+        **Before pressing the homing button**—now and every time in the future—**you must ensure that your nozzles are level**.<br/><br/>
+        ⚠️ **Failure to do this can cause crashes and potentially damage your machine.**<br/><br/>
+        OpenPnP **does not** remember the previous nozzle positions from the last homing sequence, meaning it **cannot adjust movements based on past alignment**. If the nozzles are not level before homing, they may collide with the machine, leading to misalignment or serious hardware damage.
+      ![level nozzles](images/level-nozzles.webp)
+<br/><br/>
+
+1. Click the **Home button** to perform a rough homing sequence.
+    * The Nozzles will move to X, Y, and Z zero positions **(front-left corner of the LumenPnP)** and park there.
+      ![Home the machine](images/Connect-and-home.webp)
+
+---
+
+## Install the Nozzle Tips
+
+1. **Locate Your Nozzle Tips and SuperLube tube**.
+    * Find and remove the `N045` and `N24` nozzle tips in the nozzle rack located in your LumenPnP v4 packaging.
+    * Remove the `SuperLube` Tube that is also in the LumenPnP V4 packaging.
+
+     ![](../../../semi-assembly-3-1/mounting-staging-plates-3-1/images/nozzle-tip-location.webp)
+
+1. **Lubricate both brass nozzles**.
+    * Apply a small amount of **SuperLube** to the brass nozzles. This prevents damage to the rubber O-rings when mounting nozzle tips. We pre-lubricate them before shipping, but adding extra ensures longevity.
+     ![Apply Lubricant to holder](images/apply-super-lube.webp)
+
+    !!! warning "Automatic Nozzle Tip Swapping"
+        OpenPnP supports automatic nozzle tip swapping, but we don’t recommend it yet due to inconsistent performance. This feature will be improved in a future update, and the nozzle tip rack will be mounted on the staging plate. Most jobs can be completed using an `N045` on one nozzle and an `N24` on the other.
+<br/><br/>
+
+1. **Mount the `N045` Nozzle Tip**.
+    * In OpenPnP, navigate to `Machine Setup > Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`.
+    * Select the `Nozzle Tips` tab, and check the `Loaded?` checkbox for the `N045` row.
+    * **Your machine will jog the head to the front of the machine** for easy tip loading.
+    * A **”Task Interrupted:”** window will pop up. This is **not** an error! OpenPnP is just notifying you that the job has been stopped if one is running. This is normal and can be dismissed.
+     ![](images/n045-on-n1.webp)
+     ![](images/task-interrupted.webp)
+    * Slide the **N045 nozzle tip** (the one with the smaller opening) onto the **left nozzle** (red tubing). Rotate the nozzle tip as you mount it to the brass nozzle to evenly distribute the lubricant around the O-rings. It should slide on and off smoothly after working it in.
+     ![left nozzle has red tubing getting n045 tip, right has no tip](images/mountingn1.webp)
+<br/><br/>
+
+1. **Mount the `N24` Nozzle Tip**.
+    * In OpenPnP, navigate to `Machine Setup > Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N2`.
+    * Select the `Nozzle Tips` tab, and check the `Loaded?` checkbox for the `N24` row.
+    * **Don’t forget.** It will move to the second nozzle and you’ll see the **”Task Interrupted:”** popup window again.
+     ![](images/n24-on-n2.webp)
+    * Slide the N24 nozzle tip (the one with the larger opening) onto the **right** nozzle (using blue tubing). Rotate the nozzle tip as you mount it to the brass holder to ensure the grease works its way into the tip and around the O-rings. It should slide on and off easily after working it in.
+     ![blue tubing right nozzle getting n24 tip, left already has n045](images/mountingn2.webp)
+
+    !!! Tip "Why These Nozzle Tips?"
+        The **N045** and **N24 nozzle tips** cover the vast majority of parts **without needing swaps**. We highly recommend keeping them as the default and only swapping when absolutely (e.g., for very heavy parts).
+
+---
+
 ## Configuring the Bottom Camera
 
-Before calibration, the bottom camera and exposure must be set up properly. **We will use a nozzle tip above the bottom camera to properly adjust the exposure**.
+Before calibration, the bottom camera and exposure must be set up properly. **We will need to install a nozzle tip and position it above the bottom camera to properly adjust the exposure**.
 
 1. **🚨 Remove Lens Caps 🚨**
     * ⚠️ Ensure both the **top and bottom cameras** have their lens caps removed.
@@ -146,39 +203,69 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
      ![Bottom camera is now on](images/Bottom-camera-on.webp)
 <br/><br/>
 
-1. **Positioning 'Nozzle: N1' Over the Bottom Camera**
-    * In the bottom left of OpenPnP, select `Nozzle: N1` from the `machine controls` drop-down menu.
+## Adjust Bottom Camera Exposure
+
+!!! warning "Other Camera Settings"
+    In the following step, **do not** modify any camera settings other than exposure. The default values should remain unchanged.
+
+1. **Select Nozzle: N1**.
+    * (If Nozzle: N1 is already centered over the bottom camera, please skip to step 4.)
+    * From the `Machine Controls` dropdown, select `Nozzle: N1 - N045 (Head:H1)`.
      ![Select nozzle from machine control dropdown](images/select-n1-machine-control-bottom.webp) //placeholder for photo
-    * Using the `Machine Controls`, jog `Nozzle: N1` to be anywhere **above the datum board** and lower `Nozzle: N1`, using the `Z-axis` controls, until it's just *barely* touching the datum board. The exact position on the datum board isn’t critical. This ensures the nozzle is at the correct Z-height for calibration.
-    * ⚠️ **Keeping the Z-height unchanged**, jog Nozzle: N1 to be centered over the bottom camera.
+
+1. **Positioning 'Nozzle: N1' Over the Bottom Camera**
+    * Using the `Machine Controls`, jog `Nozzle: N1` to be anywhere **above the datum board** and lower `Nozzle: N1`, using the `Z-axis` controls, until it's just *barely* touching the datum board. (The very edge of the datum board has been ideal for easily seeing how close it is before Nozzle: N1 makes contact). This ensures the nozzle is at the correct Z-height for calibration.
+    * **Keeping the Z-height unchanged, jog `Nozzle: N1` to be centered over the crosshair reticles in the bottom camera feed**.
      ![Position the toolhead over the bottom camera](images/position-over-bottom-cam.webp) //placeholder for photo
 <br/><br/>
 
-1. **Adjust the Bottom Camera Exposure**.
+1. **Adjust the bottom camera exposure using the slider**.
     * Return to `Machine Setup > Cameras > OpenPnpCaptureCamera Bottom` to adjust the exposure. This will help us through the rest of the calibration.
-    * In the `OpenPnpCaptureCamera Bottom` go to the `Device Settings` tab and locate the `Properties` section.
-    * We will only be touching the exposure slider. All other sliders should be left to their default.
+    * 🚨 **Keep all other camera settings at their default value, and only adjust the exposure slider**.
+    * In the `OpenPnpCaptureCamera Bottom` go to the `Device Settings` tab.
     * Located the `Exposure` slider and click on the check box labeled `Auto`. The camera will attempt to find the correct exposure.
-    * Then, uncheck the `Auto` box to ensure we are now in "manual adjustment" mode.
-    * Adjust the `Exposure` slider until the nozzle tip is easy to see. This is a preliminary adjustment—you'll fine-tune it later.
-     ![Adjust exposure](images/adjust-exposure.webp)
-    !!! caution "Not seeing anything in the bottom camera feed?"
-        Ensure the lens caps on the bottom camera has been removed.
+    * Then, **uncheck** the `Auto` box to ensure we are now in "**manual adjustment**" mode.
+     ![Switching to the camera device settings](images/Bottom-camera-device-settings.webp)
+    * Right click on the bottom camera's feed and select `Show Image Info?` to enable the image info card. This will give you the brightness histogram of the image.
+     ![enable the image histogram](images/show-image-info.webp)
+    * In the next step, we'll be aiming for a **sharp peak on the right side** and a larger **cluster to the left** in the histogram. See the image below for reference.
+     ![a good histogram](images/bottom-exp-good.webp){: style="width:60%;margin-left:10%;"}
+    !!! Warning "🚨 Important 🚨"
+        The reference image below is just an example—**your histogram may look very different** depending on lighting conditions, camera placement, and other environmental factors. **Do not try to match it exactly.** Instead, focus on achieving the key characteristics: a distinct peak on the right and a noticeable cluster to the left. Adjust gradually until the image is clear and well-exposed.
 
-    !!! warning "Other Camera Settings"
-        Do not modify any camera settings other than exposure. The default values should remain unchanged.
+1. **Set the Correct Exposure**.
+    * Adjust the exposure slider, or enter varying manual exposure values, to ensure the camera can clearly detect the dark hole in the nozzle tip for calibration. The exposure should be balanced—bright enough to distinguish the nozzle tip from the background but not so bright that the hole becomes difficult to detect. Aim for a setting where the brightest areas are visible but do not appear completely white, and the darker areas remain well-defined. Use the following images as a reference for adjusting exposure:<br/><br/>
+     ![exposure too high](images/bottom-exp-high.webp)
+     ![exposure too low](images/bottom-exp-low.webp)
+     ![exposure correct](images/bottom-exp-good.webp)
+
+    !!! caution "Not seeing anything in the bottom camera feed?"
+        If you are not seeing anything after adjusting the bottom camera exposure, ensure the lens caps on the bottom camera has been removed.
 
     !!! danger "For Mac Users"
         On some Macs, If OpenPnP doesn’t allow exposure adjustments, use the open-source tool, [CameraController](https://github.com/Itaybre/CameraController).
 <br/><br/>
 
+1. **Record the Bottom Camera Exposure Value**
+    * OpenPnP may not retain camera settings after restart **Record and save your exposure value** by saving them in a text file or writing them down.
+    * This means every time you boot up OpenPnP you'll have to:
+        * Toggle **Auto Exposure** `on`, then `off`. (This puts your camera into manual exposure mode)
+        * **Type your recorded exposure value into the exposure field beside the slider**.
+<br/><br/>
+
+1. **Apply and Save**
+    * Click `Apply` in the lower right corner to save your changes, if applicable.
+    * Save your OpenPnP configuration now. `File > Save Configuration`.
+      ![Save your config now](images/save-configuration.webp)
+
 ---
 
 ## Configuring the Top Camera
 
-The same thing needs to be done to the top camera, where the exposure must be set up properly. **We will use the top camera aligned above the datum board's homing fiducial to properly adjust the exposure**.
+The same thing needs to be done to the top camera, where the exposure must be set up properly. We'll connect to the top camera in this step and adjust the exposure in the next.
 
 🚨 The **homing fiducial** is the 1mm dot in the center of the Opulo logo, located toward the center of the datum board. 🚨
+![Filler image](images/31settings.webp)
 
 1. **Select the Top Camera in OpenPnP**
     * Navigate to `Machine Setup > Heads > ReferenceHead H1 > Cameras > OpenPnpCaptureCamera Top`.
@@ -198,26 +285,14 @@ The same thing needs to be done to the top camera, where the exposure must be se
 1. **Apply and Verify**
    * Click `Apply` to save the **Top Camera settings**. One of the red "X"s in the camera feed should disappear. The image might be entirely black, but we'll fix that in the following steps.
      ![Saving changes to the Top Camera Config](images/Top-Camera-Apply.webp)
-<br/><br/>
 
-1. **Positioning the Top Camera Over the Datum**
-    * Go to `Machine Controls` in the bottom left corner of OpenPnP and **jog the `Top Camera` to be centered above the datum board's homing fiducial**.
-<br/><br/>
-
-1. **Adjust the Top Camera Exposure**.
-    * Return to `Machine Setup > Heads > ReferenceHead H1 > Cameras > OpenPnpCaptureCamera Top` to adjust the exposure. This will help us through the rest of the calibration.
-    * In the `OpenPnpCaptureCamera Top` go to the `Device Settings` tab and locate the `Properties` section.
-    * We will only be touching the exposure slider. All other sliders should be left to their default.
-    * Located the `Exposure` slider and click on the check box labeled `Auto`. The camera will attempt to find the correct exposure.
-    * Then, **uncheck** the `Auto` box to ensure we are now in "**manual adjustment**" mode.
-    * Adjust the `Exposure` slider until the Datum Board is easy to see. This is a preliminary adjustment—you'll fine-tune it later.
-      ![Adjust exposure](images/adjust-exposure-2.webp)
-    !!! caution "Not seeing anything in the top camera feed?"
-        Ensure the lens caps on the top camera has been removed.
+1. **Save Your Configuration**
+    * Save your OpenPnP configuration now. `File > Save Configuration`.
+      ![Save your config now](images/save-configuration.webp)
 <br/><br/>
 
 ---
 
 ## Next Steps
 
-Now that your LumenPnP is connected and both cameras are configured, you're ready to proceed with calibration. Continue to  [Homing Fiducial](../4-homing-fiducial/index.md).
+Now that your LumenPnP is connected and both cameras are configured, you're ready to proceed with setting up the homing fiducial and fine-tuning the top camera exposure. Continue to  [Homing Fiducial and Top Camera Exposure](../4-homing-fiducial/index.md).

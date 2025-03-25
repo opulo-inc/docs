@@ -9,48 +9,7 @@ description: >
 
 # MM/Pixel ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=WXlOSWQ4RWR7R7zD&t=1002))
 
-This next step calibrates the relationship between pixels and millimeters to make our cameras more accurate. But first, we're going to add some nozzle tips to our nozzles.
-
-## Mounting Nozzle Tips
-
-1. **Lubricate both brass nozzles**.
-    * Apply a small amount of **SuperLube** to the brass nozzles. This prevents damage to the rubber O-rings when mounting nozzle tips. We pre-lubricate them before shipping, but adding extra ensures longevity.
-
-    ![Apply Lubricant to holder](images/apply-super-lube.webp)
-<br/><br/>
-
-2. **Locate Your Nozzle Tips**.
-    * Find and remove the `N045` and `N24` nozzle tips in the nozzle rack located in your LumenPnP v4 packaging.
-
-     ![](../../../semi-assembly-3-1/mounting-staging-plates-3-1/images/nozzle-tip-location.webp)
-
-    !!! warning "Automatic Nozzle Tip Swapping"
-        OpenPnP supports automatic nozzle tip swapping, but we don’t recommend it yet due to inconsistent performance. This feature will be improved in a future update, and the nozzle tip rack will be mounted on the staging plate. Most jobs can be completed using an `N045` on one nozzle and an `N24` on the other.
-<br/><br/>
-
-3. **Mount the `N045` Nozzle Tip**.
-    * In OpenPnP, navigate to `Machine Setup > Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`.
-    * Select the `Nozzle Tips` tab, and check the `Loaded?` checkbox for the `N045` row.
-    * **Your machine will jog the head to the front of the machine** for easy tip loading.
-    * A **”Task Interrupted:”** window will pop up. This is **not** an error! OpenPnP is just notifying you that the job has been stopped if one is running. This is normal and can be dismissed.
-     ![](images/n045-on-n1.webp)
-     ![](images/task-interrupted.webp)
-    * Slide the **N045 nozzle tip** (the one with the smaller opening) onto the **left nozzle** (red tubing). Rotate the nozzle tip as you mount it to the brass nozzle to evenly distribute the lubricant around the O-rings. It should slide on and off smoothly after working it in.
-     ![left nozzle has red tubing getting n045 tip, right has no tip](images/mountingn1.webp)
-<br/><br/>
-
-4. **Mount the `N24` Nozzle Tip**.
-    * In OpenPnP, navigate to `Machine Setup > Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N2`.
-    * Select the `Nozzle Tips` tab, and check the `Loaded?` checkbox for the `N24` row.
-    * **Don’t forget.** It will move to the second nozzle and you’ll see the **”Task Interrupted:”** popup window again.
-     ![](images/n24-on-n2.webp)
-    * Slide the N24 nozzle tip (the one with the larger opening) onto the **right** nozzle (using blue tubing). Rotate the nozzle tip as you mount it to the brass holder to ensure the grease works its way into the tip and around the O-rings. It should slide on and off easily after working it in.
-     ![blue tubing right nozzle getting n24 tip, left already has n045](images/mountingn2.webp)
-
-    !!! Tip "Why These Nozzle Tips?"
-        The **N045** and **N24 nozzle tips** cover the vast majority of parts **without needing swaps**. We highly recommend keeping them as the default and only swapping when absolutely (e.g., for very heavy parts).
-
----
+This next step calibrates the relationship between pixels and millimeters to make our cameras more accurate.
 
 ## Top Camera Calibration
 
@@ -61,39 +20,39 @@ In this step, we will calibrate the mm/pixels for the **Top Camera**. This requi
      ![Reviewing the ReferenceHead options](images/Select-Reference-Head-H1.webp)
 <br/><br/>
 
-2. **Position the Camera over the Datum Board**.
+1. **Position the Camera over the Datum Board**.
     * Click on the "Position Camera over location" icon button shown below. This will move the top camera to where your datum board is mounted.
      ![Position top camera over homing fiducial](images/Position-camera-over-homing-fiducial.webp)
 <br/><br/>
 
-3. **Select the Top Camera**. 
+1. **Select the Top Camera**. 
     * Navigate to `Machine Setup > Heads > ReferenceHeadH1 > Cameras > OpenPnPCaptureCamera Top`.
      ![Select the top camera](images/select-top-camera.webp)
 <br/><br/>
 
-4. **Click on the `General Configuration` tab**.
+1. **Click on the `General Configuration` tab**.
      ![Go to the general configuration tab](images/general-configuration-tab.webp)
 <br/><br/>
 
-5. **Scroll down to the** `Units Per Pixel` **section**.
+1. **Scroll down to the** `Units Per Pixel` **section**.
     * Locate the Object Dimension Fields for **X** and **Y**.
      ![The top camera's units per pixel section](images/units-per-pixel-section.webp)
 <br/><br/>
 
-6. **Set the Object Dimensions**.
+1. **Set the Object Dimensions**.
     * In the **X** Object Dimension field, enter `5`.
     * In the **Y** Object Dimension field, enter `5`.
     * Double-check that both **X and Y** are set correctly before proceeding.
      ![Set the object dimensions for automatic calibration](images/set-object-dimensions.webp)
 <br/><br/>
 
-7. **Locate a calibration square to be measured**.
+1. **Locate a calibration square to be measured**.
     * Jog the machine until a **golden guideline square** is fully visible in the top camera view. The square should be roughly centered in the camera's reticles. The whole square must be visible. If necessary, use the scroll wheel to zoom out and ensure the entire square is visible.
     * In `Machine Controls`, you can adjust the `Distance Slider` to jog in larger or smaller increments when locating the golden guideline square.
      ![The square guideline on the datum board](images/units-per-pixel-square-on-datum.webp)
 <br/><br/>
 
-8. **Align and Measure**.
+1. **Align and Measure**.
     * locate and click the `Measure` button.
      ![Click the measure button](images/click-measure-button.webp)
     * Click and drag in the camera view to create a bounding box. Align it with the center of the golden guideline square to align with the lines along its edge. The square is exactly 5mm x 5mm.
@@ -103,7 +62,7 @@ In this step, we will calibrate the mm/pixels for the **Top Camera**. This requi
         Don't worry if the box's square doesn't perfectly align with the camera image. Any slight skew will be adjusted for during jobs with fiducial calibration.
 <br/><br/>
 
-9. **Finalize Calibration**.
+1. **Finalize Calibration**.
     * Once you have it perfectly outlined, click the `Measure` button again to update the Units Per Pixel values.
      ![Confirm the test](images/confirm-pixel-per-mm.webp)
     * Click `Apply` in the lower right corner to save your changes.
@@ -127,9 +86,9 @@ The following steps will calibrate the mm/pixels for the **Bottom Camera**. This
 1. **Rehome your machine using the home button**.
     * The LumenPnP will attempt to scan the homing fiducial with the top camera, and scan both nozzle tips with the bottom camera. If it fails, that is okay.
     !!! warning "Too Many Vision Misdetects…"
-        Don't worry if you receive a warning stating “Too many vision misdetects…”; this is expected. This means that the bottom camera’s exposure has not yet been properly adjusted to detect the fiducial on the datum board. This will be corrected in the following steps, so you can safely ignore the warning.
+        Don't worry if you receive a warning stating “Too many vision misdetects…”; this is expected. This means that the bottom camera’s exposure has not yet been fine-tuned to detect the N045 and N24 nozzle tips. This will be corrected in the following steps, so you can safely ignore the warning.
 
-2. **Select the bottom Camera**. 
+1. **Select the bottom Camera**. 
     * Navigate to `Machine Setup > Cameras > OpenPnPCaptureCamera Bottom`
     * Open the `Position` tab.
      ![Go to the Position tab](images/bottom-position-tab.webp)
