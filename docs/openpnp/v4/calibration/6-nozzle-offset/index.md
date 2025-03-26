@@ -169,3 +169,7 @@ For these steps, you should be in the `Machine Setup` tab.
 ## Next Steps
 
 Next is [Bottom Camera Position](../7-bottom-camera-position/index.md).
+
+!!! info "Further Adjustment"
+    If you find that your placement accuracy is slightly incorrect after performing this calibration, you can fine-tune your part placement by adjusting the X and Y offsets in the relevant nozzle settings, as shown below.
+    ![nozzle offsets](images/manually-adjust-nozzle-offset.webp)

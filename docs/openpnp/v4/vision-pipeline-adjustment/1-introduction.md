@@ -64,3 +64,5 @@ The pipeline editing view has several sections and features:
 5. **Pin Image**:. Locks a specific stage’s results in the main view, even when selecting other stages. This is useful for monitoring the impact of changes to a debugging stage in real time.
 
 ![Pipeline Editing View](images/pipeline-organization.webp)
+
+Next is [Homing Fiducial Pipeline](../vision-pipeline-adjustment/2-homing-fiducial-pipeline.md)

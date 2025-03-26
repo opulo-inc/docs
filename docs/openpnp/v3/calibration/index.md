@@ -41,4 +41,4 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 
 ## **Next Steps**
 
-First, we'll [connect to your LumenPnP V3](openpnp/v3/calibration/2-connect-to-machine/index.md).
+First, we'll [connect to your LumenPnP V3](../calibration/2-connect-to-machine/index.md).

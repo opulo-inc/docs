@@ -1,77 +1,314 @@
-# Connecting to Your Machine ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=EwPYDBEEKK8miH29&t=31))
+# Connecting to Your LumenPnP V3 ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=EwPYDBEEKK8miH29&t=31))
 
-With OpenPnP installed on your computer and the default configuration installed, the next step is connecting to the machine and getting familiar with OpenPnP's UI.
+**Now that OpenPnP is installed and the LumenPnP configuration files have been placed in the hidden system folder, OpenPnP can start with some basic preconfigured settings. The next step is to connect your LumenPnP and get familiar with OpenPnP’s user interface.**.
 
-1. Make sure OpenPnP is closed.
-2. Plug the barrel jack power plug into your LumenPnP.
+## Prepare for Connection
+
+**Before launching OpenPnP, follow these guidelines to ensure a smooth connection**:
+
+!!! warning "USB Connection Order Matters!"
+    Always plug in your LumenPnP’s USB cable before launching OpenPnP.<br/><br/>
+    If OpenPnP is already open, close it before connecting the USB.
+
+!!! warning "Camera USB Ports"
+    **Plug cameras directly into your computer using separate USB ports**.<br/><br/>
+    Avoid USB hubs, as they may not provide enough bandwidth for the cameras.**Use separate USB ports directly into your computer**. The cameras require a lot of USB bandwidth, and many USB hubs aren't capable of handling it. For best results, make sure each camera is plugged into a different USB port directly into your computer, ideally on different internal USB hubs.
+
+---
+
+## Connecting to Your LumenPnP V3
+
+Follow these steps in order:
 
     !!! danger "Always Plug In Barrel Jack First"
          Always plug in the barrel jack before USB power. This ensures the proper power up sequence for the LumenPnP motherboard. When plugging in the barrel jack, *always* make sure the USB type B connector is unplugged.
 
-3. Connect your LumenPnP to your computer using the included USB cable.
+1. **Ensure OpenPnP is closed**.
 
-    !!! warning "Plug in USB before opening OpenPnP"
-        Always plug your LumenPnP USB cable into your computer **before** launching OpenPnP. If OpenPnP is already open, it might have a hard time finding the correct communication port. Make sure OpenPnP is closed before plugging in your USB cable.
+1. **Power the LumenPnP** by plugging in the barrel jack power cable.
 
-4. Connect both cameras to your computer using the USB cables.
+1. **Connect the LumenPnP** to your computer using the included USB cable.
 
-    !!! warning "Camera USB Ports"
-        **Use separate USB ports directly into your computer**. The cameras require a lot of USB bandwidth, and many USB hubs aren't capable of handling it. For best results, make sure each camera is plugged into a different USB port directly into your computer, ideally on different internal USB hubs.
+1. **Connect both cameras** using their USB cables.
 
-5. Open OpenPnP on your computer. You should now see the OpenPnP UI:
+1. **Launch OpenPnP**. You should now see the OpenPnP user interface:
   ![OpenPnP's basic UI](images/openpnp-ui.webp)
+<br/><br/>
 
-## Serial Port Configuration
+---
 
-Before connecting to the LumenPnP, you need to set which USB port to use for communication in OpenPnP.
+## Configuration the Serial Port
 
-1. Click on the `Machine Setup` tab.
+**Before OpenPnP can communicate with the LumenPnP, we need to set the correct serial port**.
 
-    ![Machine Setup Tab](images/Machine-Setup-Tab.webp)
+1. **Open Machine Setup**
+    * Click the `Machine Setup` tab, toward the top right section of OpenPnP.
+     ![Machine Setup Tab](images/Machine-Setup-Tab.webp)
+<br/><br/>
 
-2. Click on the "Expand" checkbox to open all of the features.
+1. **Expand the Configuration Trees**
+    * Check the `Expand` checkbox toward the top right of OpenPnP to show all machine configuration options.
+    * This will expand all of the categories, and sub-categories, in the upper pane of `Machine Setup` and will require you to scroll to see all of the options mentioned below.
+     ![Expanding the Machine Config options](images/Expand-Checkbox.webp)
+<br/><br/>
 
-    ![Expanding the Machine Config options](images/Expand-Checkbox.webp)
+1. **Select the Gcode Driver** 
+    * In the upper pane, locate the newly expanded `Drivers` category and click on `GcodeDriver GcodeDriver`.
+     ![Reviewing the GcodeDriver options](images/SelectGcodeDriver.webp)
+<br/><br/>
 
-3. Under `Drivers` click on `GcodeDriver GcodeDriver`. Below the list of machine settings you'll find the details of the GcodeDriver.
+1. **Choose the Correct Port**
+    * Under the `Serial Port` section in the `Configuration` tab, select the correct `Port` from the dropdown menu:
+        * **Windows**: The `Port` will be labeled as `COM#`. *(Examples COM1, COM2, COM3, etc.)*
+        * **Mac**: Look for a `Port` in the format of `cu.usbmodemXXXX`, where `XXXX` is a series of numbers.
+        * **Linux**: Select the `Port` formatted as `ttyACM#`. *(Examples ttyACM0, ttyACM1, ttyACM2, etc.)*
+     ![Changing the Port and Baud Rate](images/Check COM Port and Baud Rate.webp)
+<br/><br/>
 
-    ![Reviewing the GcodeDriver options](images/SelectGcodeDriver.webp)
+1. **Apply and Save**
+    * Click `Apply` in the lower right corner to save your changes.
+     ![Apply baud rate and port](images/apply-machine-config.webp)
+    * Save your OpenPnP configuration: `File > Save Configuration`.
+     ![saving the machine config](images/save-configuration.webp)
 
-1. In the `Configuration` tab, select the `Port` for your LumenPnP.
-    1. On Windows, the `Port` will look like `COM2` or `COM3`.
-    2. On Mac, the `Port` will be in the format: `cu.usbmodem<a-lot-of-numbers>`
-    3. On Linux, Set the `Port` to the option in the format: `ttyACM0`.
-    ![Changing the Port and Baud Rate](images/Check COM Port and Baud Rate.webp)
+!!! info "Port Not Found?"
 
-        !!! info "Port Not Found"
-            If your machine's port does not show up in the drop down, check that your USB cable is plugged in to both your computer and the LumenPnP. Also check that the motherboard is powered on. If you still cannot find the port, try pressing the reset button on the motherboard and closing and reopening OpenPnP.
+    If your machine's port isn't listed: 
 
-2. Click `Apply` in the lower right corner to save your changes.
+       1. Ensure the USB cable is securely connected on both sides.
+       
+       2. Make sure the motherboard is powered on.
+       
+       3. Close OpenPnP, press the reset button on the control box, wait a few seconds, and reopen OpenPnP. 
+       
+       4. Finally, use our [Debug Tool](https://debug.opulo.io) and see if you are able to connect your LumenPnP there.
+<br/><br/>
 
-    ![Apply baud rate and port](images/apply-machine-config.webp)
+---
 
-## Establishing Serial Connection
+## Establishing a Serial Connection
 
-1. Click the green power button in the Machine Controls section of the UI to connect to your machine.
+1. **Connect OpenPnP to Your Machine**
+    * Click the **green power button** in the `Machine Controls` section (Bottom left of OpenPnP).
+     ![Connect to the LumenPnP](images/connect-to-machine-power-button.webp)
+<br/><br/>
 
-    ![Connect to the LumenPnP](images/connect-to-machine-power-button.webp)
+1. **Confirm Connection**
+    * If successful, the green **power button will turn red**. This means OpenPnP has successfully connected to your machine.
+     ![having successfully connected to the LumenPnP and cameras](images/connected-to-machine.webp)
+    * If unsuccessful,review your [Serial Port Connection](#serial-port-configuration).
+<br/><br/>
 
-1. The power button will turn red when OpenPnP has connected to your machine. If this doesn't work, check your [serial port](#serial-port-configuration).
-
-    ![having successfully connected to the LumenPnP and cameras](images/connected-to-machine.webp)
-
-1. Save your OpenPnP settings with `File > Save Configuration`.
-
-    ![saving the machine config](images/save-configuration.webp)
-
-1. Turn on your machine's Ring Lights. Click the `LED` button under the `Actuators` tab under `Machine Controls`. Click `On` in the popup.
-
-    ![](images/turn-on-led.webp)
+1. **Turn On Ring Lights**
+    * In the bottom left corner of OpenPnP, go to `Machine Controls`.
+    * Click the `Actuators` tab.
+    * Click the `LED` button.
+    * Then press `On`.<br/><br/>
+     ![](images/turn-on-led.webp)
+    * Close the LED window.
+    * Switch back to the `Jog` tab so you are ready to move the nozzles in the following steps.
 
     !!! note "Keep Ring Lights On"
         Keep the ring lights on for the rest of calibration. All calibrations should be based on the lighting from the ring lights.
+        Once calibration is complete and running a job on the LumenPnP, OpenPnP will automatically control the ring lights as needed, eliminating the need for manual operation during normal use.
 
-        When running jobs, the ring lights will turn on automatically when homing, so it's not necessary to turn them on manually in normal operation.
+---
+
+## Preparing for Homing
+
+1. **Level the nozzles before homing**.
+
+    !!! danger "🚨 Critical Warning: Level Nozzles Before Homing 🚨"
+        **Before pressing the homing button**—now and every time in the future—**you must ensure that your nozzles are level**.<br/><br/>
+        ⚠️ **Failure to do this can cause crashes and potentially damage your machine.**<br/><br/>
+        OpenPnP **does not** remember the previous nozzle positions from the last homing sequence, meaning it **cannot adjust movements based on past alignment**. If the nozzles are not level before homing, they may collide with the machine, leading to misalignment or serious hardware damage.
+      ![level nozzles](images/level-nozzles.webp)
+<br/><br/>
+
+1. Click the **Home button** to perform a rough homing sequence.
+    * The Nozzles will move to X, Y, and Z zero positions **(front-left corner of the LumenPnP)** and park there.
+      ![Home the machine](images/Connect-and-home.webp)
+
+!!! danger "If your machine does not move fully to the front left"
+    If your LumenPnP does not move all the way to the front left of the machine when you click the Home icon, it could mean that your sensorless homing values need to be adjusted.
+
+    Instructions for tuning this setting are [here](../../../guides/tuning-sensorless/index.md).
+
+---
+
+## Install the Nozzle Tips
+
+1. **Locate Your Nozzle Tips and SuperLube tube**.
+    * Find and remove the `N045` and `N24` nozzle tips in the nozzle rack located in your LumenPnP v3 packaging or mounted on the staging plate.
+    * Remove the `SuperLube` Tube that is also in the LumenPnP V3 packaging.
+
+     ![](../../../semi-assembly-3-1/mounting-staging-plates-3-1/images/nozzle-tip-location.webp)
+
+1. **Lubricate both brass nozzles**.
+    * Apply a small amount of **SuperLube** to the brass nozzles. This prevents damage to the rubber O-rings when mounting nozzle tips. We pre-lubricate them before shipping, but adding extra ensures longevity.
+     ![Apply Lubricant to holder](images/apply-super-lube.webp)
+
+    !!! warning "Automatic Nozzle Tip Swapping"
+        OpenPnP supports automatic nozzle tip swapping, but we don’t recommend it yet due to inconsistent performance. This feature will be improved in a future update, and the nozzle tip rack will be mounted on the staging plate. Most jobs can be completed using an `N045` on one nozzle and an `N24` on the other.
+<br/><br/>
+
+1. **Mount the `N045` Nozzle Tip**.
+    * In OpenPnP, navigate to `Machine Setup > Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`.
+    * Select the `Nozzle Tips` tab, and check the `Loaded?` checkbox for the `N045` row.
+    * **Your machine will jog the head to the front of the machine** for easy tip loading.
+    * A **”Task Interrupted:”** window will pop up. This is **not** an error! OpenPnP is just notifying you that the job has been stopped if one is running. This is normal and can be dismissed.
+     ![](images/n045-on-n1.webp)
+     ![](images/task-interrupted.webp)
+    * Slide the **N045 nozzle tip** (the one with the smaller opening) onto the **left nozzle** (using red tubing). Rotate the nozzle tip as you mount it to the brass nozzle to evenly distribute the lubricant around the O-rings. It should slide on and off smoothly after working it in.
+     ![left nozzle has red tubing getting n045 tip, right has no tip](images/mountingn1.webp)
+<br/><br/>
+
+1. **Mount the `N24` Nozzle Tip**.
+    * In OpenPnP, navigate to `Machine Setup > Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N2`.
+    * Select the `Nozzle Tips` tab, and check the `Loaded?` checkbox for the `N24` row.
+    * **Don’t forget.** It will move to the second nozzle and you’ll see the **”Task Interrupted:”** popup window again.
+     ![](images/n24-on-n2.webp)
+    * Slide the N24 nozzle tip (the one with the larger opening) onto the **right nozzle** (using blue tubing). Rotate the nozzle tip as you mount it to the brass holder to ensure the grease works its way into the tip and around the O-rings. It should slide on and off easily after working it in.
+     ![blue tubing right nozzle getting n24 tip, left already has n045](images/mountingn2.webp)
+
+    !!! Tip "Why These Nozzle Tips?"
+        The **N045** and **N24 nozzle tips** cover the vast majority of parts **without needing swaps**. We highly recommend keeping them as the default and only swapping when absolutely (e.g., for very heavy parts).
+
+---
+
+## Configuring the Bottom Camera
+
+Before calibration, the bottom camera and exposure must be set up properly. **We will need to install a nozzle tip and position it above the bottom camera to properly adjust the exposure**.
+
+!!! Note
+    More recent LumenPnP machines ship with a more recessed bottom camera, shown below. The images in our setup guides mostly show an older mounting solution, but either works the same.
+
+    ![recessed bottom camera](images/new-bottom-camera.webp)
+
+1. **🚨 Remove Lens Caps 🚨**
+    * ⚠️ Ensure both the **top and bottom cameras** have their lens caps removed.
+     ![Lens cap locations](../5-mm-per-pixel/images/remove-lens-caps.webp)
+<br/><br/>
+
+1. **Select the Bottom Camera in OpenPnP**
+    * Navigate to `Machine Setup` > `Cameras` > `OpenPnpCaptureCamera Bottom`.
+     ![Finding the Bottom Camera Settings](images/Bottom%20Camera%20Config.webp)
+<br/><br/>
+
+1. **Choose the Correct Camera Device**
+    * In the `Device Settings` tab, select `LumenPnP Bottom` from the `Device` dropdown.
+     ![Switching to the camera device settings](images/Bottom-camera-device-settings.webp)
+    * Switch to the `Device Settings` tab in the lower detail pane.
+     ![Selecting the correct device for the Bottom Camera](images/Bottom-camera-select-device.webp)
+
+    !!! info "Duplicate Camera Names"
+        If two cameras appear with the same name, select one—if incorrect, choose the other. This is a bug within OpenPnP.
+<br/><br/>
+
+1. **Set Resolution and Frame Rate**
+    * In the `Format` drop-down menu, select `1920x1080 5fps`. *A low frame rate is crucial to avoid bandwidth/performance issues*.
+     ![setting bottom camera resolution](images/Bottom-resolution.webp)
+<br/><br/>
+
+1. **Apply and Verify**
+    * Click `Apply` to save the **Bottom Camera** settings. One of the red "X"s in the camera feed should disappear. The image might be entirely black, but we'll fix that in the following steps.
+     ![Saving changes to the Bottom Camera Config](images/Bottom%Camera%Apply.webp)
+     ![Bottom camera is now on](images/Bottom-camera-on.webp)
+<br/><br/>
+
+## Adjust Bottom Camera Exposure
+
+!!! warning "Other Camera Settings"
+    In the following step, **do not** modify any camera settings other than exposure. The default values should remain unchanged.
+
+1. **Select Nozzle: N1**.
+    * (If Nozzle: N1 is already centered over the bottom camera, please skip to step 4.)
+    * From the `Machine Controls` dropdown, select `Nozzle: N1 - N045 (Head:H1)`.
+     ![Select nozzle from machine control dropdown](images/select-n1-machine-control-bottom.webp) //placeholder for photo
+
+1. **Positioning 'Nozzle: N1' Over the Bottom Camera**
+    * Using the `Machine Controls`, jog `Nozzle: N1` to be anywhere **above the datum board** and lower `Nozzle: N1`, using the `Z-axis` controls, until it's just *barely* touching the datum board. (The very edge of the datum board has been ideal for easily seeing how close it is before Nozzle: N1 makes contact). This ensures the nozzle is at the correct Z-height for calibration.
+    * **Keeping the Z-height unchanged, jog `Nozzle: N1` to be centered over the crosshair reticles in the bottom camera feed**.
+     ![Position the toolhead over the bottom camera](images/position-over-bottom-cam.webp) //placeholder for photo
+<br/><br/>
+
+1. **Adjust the bottom camera exposure using the slider**.
+    * Return to `Machine Setup > Cameras > OpenPnpCaptureCamera Bottom` to adjust the exposure. This will help us through the rest of the calibration.
+    * 🚨 **Keep all other camera settings at their default value, and only adjust the exposure slider**.
+    * In the `OpenPnpCaptureCamera Bottom` go to the `Device Settings` tab.
+    * Located the `Exposure` slider and click on the check box labeled `Auto`. The camera will attempt to find the correct exposure.
+    * Then, **uncheck** the `Auto` box to ensure we are now in "**manual adjustment**" mode.
+     ![Switching to the camera device settings](images/Bottom-camera-device-settings.webp)
+    * Right click on the bottom camera's feed and select `Show Image Info?` to enable the image info card. This will give you the brightness histogram of the image.
+     ![enable the image histogram](images/show-image-info.webp)
+    * In the next step, we'll be aiming for a **sharp peak on the right side** and a larger **cluster to the left** in the histogram. See the image below for reference.
+     ![a good histogram](images/bottom-exp-good.webp){: style="width:60%;margin-left:10%;"}
+    !!! Warning "🚨 Important 🚨"
+        The reference image below is just an example—**your histogram may look very different** depending on lighting conditions, camera placement, and other environmental factors. **Do not try to match it exactly.** Instead, focus on achieving the key characteristics: a distinct peak on the right and a noticeable cluster to the left. Adjust gradually until the image is clear and well-exposed.
+
+1. **Set the Correct Exposure**.
+    * Adjust the exposure slider, or enter varying manual exposure values, to ensure the camera can clearly detect the dark hole in the nozzle tip for calibration. The exposure should be balanced—bright enough to distinguish the nozzle tip from the background but not so bright that the hole becomes difficult to detect. Aim for a setting where the brightest areas are visible but do not appear completely white, and the darker areas remain well-defined. Use the following images as a reference for adjusting exposure:<br/><br/>
+     ![exposure too high](images/bottom-exp-high.webp)
+     ![exposure too low](images/bottom-exp-low.webp)
+     ![exposure correct](images/bottom-exp-good.webp)
+
+    !!! caution "Not seeing anything in the bottom camera feed?"
+        If you are not seeing anything after adjusting the bottom camera exposure, ensure the lens caps on the bottom camera has been removed.
+
+    !!! danger "For Mac Users"
+        On some Macs, If OpenPnP doesn’t allow exposure adjustments, use the open-source tool, [CameraController](https://github.com/Itaybre/CameraController).
+<br/><br/>
+
+1. **Record the Bottom Camera Exposure Value**
+    * OpenPnP may not retain camera settings after restart **Record and save your exposure value** by saving them in a text file or writing them down.
+    * This means every time you boot up OpenPnP you'll have to:
+        * Toggle **Auto Exposure** `on`, then `off`. (This puts your camera into manual exposure mode)
+        * **Type your recorded exposure value into the exposure field beside the slider**.
+<br/><br/>
+
+1. **Apply and Save**
+    * Click `Apply` in the lower right corner to save your changes, if applicable.
+    * Save your OpenPnP configuration now. `File > Save Configuration`.
+      ![Save your config now](images/save-configuration.webp)
+
+---
+
+## Configuring the Top Camera
+
+The same thing needs to be done to the top camera, where the exposure must be set up properly. We'll connect to the top camera in this step and adjust the exposure in the next.
+
+🚨 The **homing fiducial** is the 1mm dot in the center of the Opulo logo, located toward the center of the datum board. 🚨
+![Filler image](images/31settings.webp)
+
+1. **Select the Top Camera in OpenPnP**
+    * Navigate to `Machine Setup > Heads > ReferenceHead H1 > Cameras > OpenPnpCaptureCamera Top`.
+     ![Finding the Top Camera Settings](images/Top-camera-settings.webp)
+<br/><br/>
+
+1. **Choose the Correct Camera Device**
+    * In the `Device Settings` tab, select `LumenPnP Top` from the `Device` dropdown.
+     ![Switching to the camera device settings](images/Top-camera-device-settings.webp)
+<br/><br/>
+
+1. **Set Resolution and Frame Rate**
+    * In the `Format` dropdown menu, select `1920x1080 5fps`. *A low frame rate is crucial to avoid bandwidth/performance issues*.
+     ![setting top camera resolution](images/Top-resolution.webp)
+<br/><br/>
+
+1. **Apply and Verify**
+   * Click `Apply` to save the **Top Camera settings**. One of the red "X"s in the camera feed should disappear. The image might be entirely black, but we'll fix that in the following steps.
+     ![Saving changes to the Top Camera Config](images/Top-Camera-Apply.webp)
+
+1. **Save Your Configuration**
+    * Save your OpenPnP configuration now. `File > Save Configuration`.
+      ![Save your config now](images/save-configuration.webp)
+<br/><br/>
+
+---
+
+## Next Steps
+
+Now that your LumenPnP is connected and both cameras are configured, you're ready to proceed with setting up the homing fiducial and fine-tuning the top camera exposure. Continue to  [Homing Fiducial and Top Camera Exposure](../4-homing-fiducial/index.md).
 
 <!--
 !!! success "v3.1+ Speed Increase"
@@ -119,85 +356,3 @@ Before connecting to the LumenPnP, you need to set which USB port to use for com
       3. To tell OpenPnP to take advantage of this speed increase, you can update the `Max Feed Rate` field in the `Driver Settings` tab. Enter `35000` into this field.
 
       4. If you need to tweak your sensorless homing settings, make sure to adjust the values in the line starting with `M914` under `HOME_COMMAND`, *not* under `CONNECT_COMMAND`. -->
-
-## Bottom Camera Configuration
-
-Next, you'll configure the cameras.
-
-!!! Note
-    More recent LumenPnP machines ship with a more recessed bottom camera, shown below. The images in our setup guides mostly show an older mounting solution, but either works the same.
-
-    ![recessed bottom camera](images/new-bottom-camera.webp)
-
-1. Make sure both camera's lens caps are removed. (They are already removed in the image below.)
-
-    ![Lens cap locations](../5-mm-per-pixel/images/remove-lens-caps.webp)
-
-1. In the top-left corner, change the camera view to "Show All Horizontal". You will see two sections for camera feeds that have a red "X". An "X" in the camera views means that OpenPnP isn't yet configured to receive that camera feed.
-
-    ![show both camera feeds](images/switch-camera-display.webp)
-
-1. Under the `Machine Setup` tab, click on `Cameras > OpenPnpCaptureCamera Bottom`.
-
-    ![Finding the Bottom Camera Settings](images/Bottom Camera Config.webp)
-
-1. In the lower detail pane, switch to the `Device Settings` tab.
-
-    ![Switching to the camera device settings](images/Bottom-camera-device-settings.webp)
-
-1. In the `Device` drop-down, choose `PnP Bottom Camera`.
-
-    ![Selecting the correct device for the Bottom Camera](images/Bottom-camera-select-device.webp)
-
-    !!! info "Duplicate Camera Names"
-        Due to a bug in OpenPnP, it's possible that you'll see two of the same camera name in this drop down menu. If the first one you pick is incorrect, use the other option of the same name.
-
-2. In the `Format` drop-down, choose the setting with the highest resolution and the lowest frame rate. In this image, it's `1280x720 10fps`.
-
-    ![setting bottom camera resolution](images/Bottom resolution.webp)
-
-3. Click the `Apply` button in the bottom right. You should see the red "X" disappear from the bottom camera feed. The image might be entirely black.
-
-    ![Saving changes to the Bottom Camera Config](images/Bottom Camera Apply.webp)
-
-    ![Bottom camera is now on](images/Bottom-camera-on.webp)
-
-4. Adjust the exposure to make the image visible. To ensure the camera has auto exposure disabled, toggle the "Auto" checkbox next to "Exposure" on and then off again. Do not keep auto exposure turned on. Slide the slider until you see a clearer picture. You'll set the exposure more accurately in a later step.
-
-    ![Adjust exposure](images/adjust-exposure.webp)
-
-    !!! warning "Other Camera Settings"
-        We highly recommend not adjusting any of the other sliders for your camera's settings. Exposure is the only slider you should adjust from the default values the camera boots up with.
-
-    !!! danger "For Mac Users"
-        Due to an issue with the camera driver in OpenPnP, some Mac users might notice that the image settings are greyed out for you. There's a fantastic open-source application called [CameraController](https://github.com/Itaybre/CameraController) that can be used to edit these settings.
-
-## Top Camera Configuration
-
-1. Under the `Machine Setup` tab, click on `Heads > ReferenceHead H1 > Cameras > OpenPnpCaptureCamera Top`.
-
-    ![Finding the Top Camera Settings](images/Top-camera-settings.webp)
-
-4. In the lower detail pane, switch to the `Device Settings` tab.
-
-    ![Switching to the camera device settings](images/Top-camera-device-settings.webp)
-
-5. In the `Device` drop-down, choose `PnP Top Camera`.
-
-    ![Selecting the correct device for the Bottom Camera](images/Top-camera-select-device.webp)
-
-1. In the `Format` drop-down, choose the setting with the highest resolution and the lowest frame rate. In this image, it's `1280x720 10fps`.
-
-    ![setting top camera resolution](images/Top resolution.webp)
-
-1. Click the `Apply` button in the bottom right. You should then see the camera display start showing the feed from the camera, or at least see the red X disappear.
-
-    ![Saving changes to the Top Camera Config](images/Top Camera Apply.webp)
-
-1. Adjust the exposure to make the image visible. To ensure the camera has auto exposure disabled, toggle the "Auto" checkbox next to "Exposure" on and then off again. Do not keep auto exposure turned on. Slide the slider until you see a clearer picture. You'll set the exposure more accurately in a later step.
-
-    ![Adjust exposure](images/adjust-exposure-2.webp)
-
-## Next Steps
-
-Next, we'll set up the machine's [the homing fiducial](../4-homing-fiducial/index.md).

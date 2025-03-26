@@ -6,73 +6,82 @@ If you receive an error after picking a component about `No Results Found`, you 
 
 ![No Parts Found](images/no-parts-found.webp)
 
+---
+
 ## Setup nozzle
 
 1. Install a nozzle tip on your first toolhead. In this example we'll work with the N045 nozzle tip.
+     ![Install the N045 nozzle](images/N045-nozzle-installed.webp)
+<br/><br/>
 
-    ![Install the N045 nozzle](images/N045-nozzle-installed.webp)
-
-2. Click on the `Machine Setup` tab in the top right pane.
-
-    ![Machine setup tab](images/Machine-Setup-Tab-3.webp)
+2. Navigate to the `Machine Setup` tab in the top right pane.
+     ![Machine setup tab](images/Machine-Setup-Tab-3.webp)
+<br/><br/>
 
 3. Click on the "Expand" checkbox.
+     ![Expanding the Machine Config options](images/Expand-Checkbox-3.webp)
+<br/><br/>
 
-    ![Expanding the Machine Config options](images/Expand-Checkbox-3.webp)
-
-4. Click on `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`
-
-    ![Open the Nozzle N1 settings](images/select-nozzle-N1.webp)
+4. Navigate to `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`
+     ![Open the Nozzle N1 settings](images/select-nozzle-N1.webp)
+<br/><br/>
 
 5. Click on the `Nozzle Tips` tab.
-
-    ![Nozzle Tip Tab](images/nozzle-tip-tab.webp)
+     ![Nozzle Tip Tab](images/nozzle-tip-tab.webp)
+<br/><br/>
 
 6. Click the `Loaded?` checkbox for the nozzle you're tuning.
+     ![Loaded Checkbox](images/loaded-checkbox.webp)
+<br/><br/>
 
-    ![Loaded Checkbox](images/loaded-checkbox.webp)
+7. Navigate to `Nozzle Tips > ReferenceNozzleTip N045` (or whichever nozzle you're working with).
+     ![Nozzle Tips Section](images/nozzle-tips-section.webp)
+<br/><br/>
 
-7. Click on `Nozzle Tips > ReferenceNozzleTip N045` (or whichever nozzle you're working with).
+8. Verify that the correct toolhead is selected is selected in the `Machine Controls Tab`.
+     ![Activate Toolhead](images/select-correct-nozzle.webp)
+<br/><br/>
 
-    ![Nozzle Tips Section](images/nozzle-tips-section.webp)
+---
 
-8. Check that the correct toolhead is selected in the `Machine Controls Tab`.
+## Pick a Component
 
-    ![Activate Toolhead](images/select-correct-nozzle.webp)
-
-## Pick component
-
-To tune a part identification pipeline, you'll need to pick up the component you want to tune. You can [setup a feeder](../ftp/2-feeder-setup/index.md) and use the "pick" button.
+To fine-tune the part identification pipeline, first pick up the component you want to adjust. You can [setup a feeder](../ftp/2-feeder-setup/index.md) and use the `pick` button.
 
 ![Pick Button For Feeder](images/pick-button-feeder.webp)
 
+---
+
 ## Open the pipeline
 
-1. With a part now picked and on the nozzle, go to the `Packages` tab.
+1. Once a part is picked and on the nozzle, navigate to the `Packages` tab.
+     ![Packages Tab](images/packages-tab.webp)
+<br/><br/>
 
-    ![Packages Tab](images/packages-tab.webp)
+2. Select the package corresponding to the component you are tuning.
+     ![Select Component Package](images/select-component-package.webp)
+<br/><br/>
 
-2. Select the package for the component you'll be tuning.
-
-    ![Select Component Package](images/select-component-package.webp)
-
-3. Check that your nozzle tip is compatible with the package you'll be working with.
-
-    ![Check your nozzle tip is compatible](images/confirm-nozzle-tip-compatible.webp)
+3. Ensure your nozzle tip is compatible with the selected package.
+     ![Check your nozzle tip is compatible](images/confirm-nozzle-tip-compatible.webp)
+<br/><br/>
 
 4. Click on the `Bottom Vision Settings Tab`.
+     ![Bottom Vision Settings Tab](images/bottom-part-vision-settings.webp)
+<br/><br/>
 
-    ![Bottom Vision Settings Tab](images/bottom-part-vision-settings.webp)
-
-5. Click on the Pipeline: `Edit` button.
+5. Click the `Edit` button in the Pipeline.
 
     ![Pipeline Edit Button](images/edit-package-pipeline.webp)
 
     !!! warning "Affects all other parts"
 
-        Directly clicking the "Edit" button will adjust the vision pipeline for **every other package assigned to this pipeline**. If you'd like to adjust the pipeline for **just** this package, click on the "Specialize for `PACKAGE_NAME`" button before editing.
+        Clicking the "Edit" button directly will modify the vision pipeline for **every package assigned to this pipeline**. To adjust the pipeline **only for this package**, click on the "Specialize for `PACKAGE_NAME`" button before making changes.  
 
-1. Allow OpenPnP to jog the nozzle to the bottom camera position.
+6. Allow OpenPnP to jog the nozzle to the bottom camera position.
+<br/><br/>
+
+---
 
 ## Edit the pipeline
 
@@ -107,29 +116,34 @@ To tune a part identification pipeline, you'll need to pick up the component you
           ![pipeline clipboard button](images/pipeline-paste-button.webp)
 
 1. Click on the `DrawRotatedRects` stage.
+     ![Click on the DrawRotatedRects stage](images/draw-rotated-rects-stage.webp)
+<br/><br/>
 
-    ![Click on the DrawRotatedRects stage](images/draw-rotated-rects-stage.webp)
-
-1. The main view will show a rectangle around the silhouette of your component.
+1. Review the rectangle around your component's silhouette:
     1. If the rectangle is not precise around your component, then we need to more clearly distinguish the real component from the toolhead.
     2. If there is no rectangle, we need to loosen the threshold to make the component easier to identify.
-    3. If the image looks like the good one above, your pipeline is properly tuned. If you've still been getting failures when homing, you may need to slightly loosen the filtering.
+    3. If the image looks like the good one above, your pipeline is properly tuned. If you've still been getting failures when homing, you may need to slightly adjust the filtering parameters.
+<br/><br/>
 
+---
+ 
 ## Threshold tuning
 
-The `Threshold` stage is the most commonly edited stage. It turns the camera image into black and white, which starkly defines the tip of your nozzle. This is especially important for detecting parts, as they should catch all of the light from the upward facing camera LEDs and turn totally white in the image. We need to detect both the position and rotation of the picked component, so a tight, precise rectangle identifying its body is very important. Raise or lower the `threshold` parameter as necessary until the picked component is outlined precisely.
+The `Threshold` stage is the most frequently adjusted stage. It converts the camera image to black and white, ensuring a sharp contrast between the nozzle tip and the component. This step is critical, as the camera's upward-facing LEDs should illuminate the component fully, making it appear bright white in the image. We need to detect both the position and rotation of the picked component, so a tight, precise rectangle identifying its body is very important. Raise or lower the `threshold` parameter as necessary until the picked component is outlined precisely.
 
-* If the image is too dark, lower the `threshold` setting.
-* If the image is too bright, raise the `threshold` setting.
+* If the image is too dark, lower the `threshold` value.
+* If the image is too bright, raise the `threshold` value.
 
 !!! danger "Exposure settings"
-    If you're having trouble getting your image to look like the "Good Threshold" image below, it could be that your bottom camera exposure is too high, making it difficult for OpenPnP to distinguish between the part and the nozzle tip. [Adjust your bottom camera's exposure](../calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md), then retry tuning your threshold value.
+    If you’re struggling to achieve the "Good Threshold" result below, your bottom camera’s exposure might be too high. This can make it difficult for OpenPnP to distinguish the part from the nozzle tip.  [Adjust your bottom camera's exposure](../calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md), then retry tuning your threshold value.
 
 ![Threshold Comparison](images/part-threshold-comparison.webp)
 
+---
+
 ## Test part identification
 
-1. To see how your adjusted pipeline performs, click on the `Test Alignment` button.
+1. Click the `Test Alignment` button to evaluate your pipeline.
   ![Alt text](test-alignment-button.webp)
 
 !!! NOTE

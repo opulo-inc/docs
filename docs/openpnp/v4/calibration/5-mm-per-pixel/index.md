@@ -90,8 +90,6 @@ The following steps will calibrate the mm/pixels for the **Bottom Camera**. This
 
 1. **Select the bottom Camera**. 
     * Navigate to `Machine Setup > Cameras > OpenPnPCaptureCamera Bottom`
-    * Open the `Position` tab.
-     ![Go to the Position tab](images/bottom-position-tab.webp)
     * In the drop-down under `Machine Controls`, select `Nozzle: N2 - N24 (Head: H1)` to control the nozzle on the right. This way, for any nozzle commands we run, OpenPnP knows to base them on Nozzle: N2 and **not** the other nozzle.
      ![selecting n2 for control](images/select-n2.webp)
 <br/><br/>
@@ -109,6 +107,8 @@ The following steps will calibrate the mm/pixels for the **Bottom Camera**. This
 <br/><br/>
 
 1. **Go to the `General Configuration` tab**.
+    * Navigate to `Machine Setup > Cameras > OpenPnPCaptureCamera Bottom`
+    * Select the `General Configuration` tab.
      ![Go to the general configuration tab](images/general-configuration-bottom-tab.webp)
 <br/><br/>
 

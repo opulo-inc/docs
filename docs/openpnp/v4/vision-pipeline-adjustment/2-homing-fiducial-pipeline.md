@@ -4,6 +4,8 @@ If you receive the error message `FIDUCIAL-HOME no matches found` when homing yo
 
   ![Cant't find homing fiducial](images/Cant-find-homing-fiducial.webp)
 
+---
+
 ## Open the Pipeline
 
 1. Click on the `Machine Setup` tab in the top right pane.
@@ -44,9 +46,13 @@ If you receive the error message `FIDUCIAL-HOME no matches found` when homing yo
 
     ![Edit the pipeline](images/edit-pipeline.webp)
 
+---
+
 ## Edit the pipeline
 
 This window allows you to modify the vision pipeline for detecting the homing fiducial. Detection is now based on circular symmetry, replacing the older threshold-based circle detection method. Both methods are included here for reference, but we strongly recommend using circular symmetry.
+
+---
 
 ### Circular symmetry method
 
@@ -96,6 +102,8 @@ This window allows you to modify the vision pipeline for detecting the homing fi
         1. If **multiple circles** are detected, or one detected circle is not correctly drawn around the homing fiducial, refine the filtering until the real homing fiducial is properly detected.
         2. If **no circle appears**, we need to adjust the detection setting to make the real homing fiducial easier to identify.
         3. If the image looks like the reference image, your pipeline is properly tuned. 
+
+---
 
 ### Adjust Pipeline
 

@@ -126,7 +126,7 @@ To fine-tune the part identification pipeline, first pick up the component you w
 <br/><br/>
 
 ---
-
+ 
 ## Threshold tuning
 
 The `Threshold` stage is the most frequently adjusted stage. It converts the camera image to black and white, ensuring a sharp contrast between the nozzle tip and the component. This step is critical, as the camera's upward-facing LEDs should illuminate the component fully, making it appear bright white in the image. We need to detect both the position and rotation of the picked component, so a tight, precise rectangle identifying its body is very important. Raise or lower the `threshold` parameter as necessary until the picked component is outlined precisely.

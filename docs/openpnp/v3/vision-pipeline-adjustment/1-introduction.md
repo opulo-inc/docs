@@ -8,14 +8,16 @@ description: >
 ---
 # Vision Pipeline Adjustment
 
-Computer vision is one of the most important and complicated elements of a pick and place machine. Vision is used in four main places:
+Computer vision is one of the most crucial and complex components of a pick-and-place machine. It plays a key role in four primary tasks:
 
 - [Finding the homing fiducial (Top Camera)](2-homing-fiducial-pipeline.md)
-- [Finding PCB fiducials (Top Camera)](3-pcb-fiducial-pipeline.md)
+- [Identifying PCB fiducials (Top Camera)](3-pcb-fiducial-pipeline.md)
 - [Calibrating Nozzle Tips (Bottom Camera)](4-nozzle-calibration-pipeline.md)
 - [Calibrating component position (Bottom Camera)](5-part-identification-pipeline.md)
 
-The default settings in the provided configuration files work well, but depending on your lighting conditions, component geometry, or other factors, you might need to adjust them.
+The default vision settings provided in the configuration files are optimized for general use. But, due to variations in lighting conditions, component shapes, and other environmental factors, you may need to fine-tune them for optimal performance.
+
+---
 
 ## Tutorial Video
 
@@ -26,32 +28,41 @@ This video walks you through the process of calibrating vision for the LumenPnP.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RVMS6vJzJyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+---
+
 ## Ambient light
 
-Because machine vision is heavily dependent on lighting, we recommend maintaining consistent lighting in the room where you're operating the LumenPnP. Changing the lighting in the room can require readjusting your vision settings.
+!!! caution
+    Machine vision is highly sensitive to lighting conditions. We recommend maintaining consistent lighting in the workspace where the LumenPnP operates. Changes in ambient light may require readjustments to your vision settings.
 
-## Computer Vision Basics
+---
 
-Computer vision used in OpenPnP takes photos from your top or bottom camera and passes them through a "Pipeline" of stages to identify what is in the image. Stages fall into a few categories:
+## Understanding Computer Vision in OpenPnP
 
-1. Manipulating the photo to make it easier for the computer to identify parts of the photo. For example: `Threshold`.
-2. Identifying certain elements of the photo. For example: `DetectCirclesHough`.
-3. Showing you more information on the screen so that you can build, debug, and tweak the pipeline. For example: `DrawCircles`.
+The computer vision system in OpenPnP captures images from the top or bottom camera and processes them through a "Pipeline" consisting of multiple stages. These stages fall into three main categories:
 
-You will need to fine-tune each stage to adjust how it works by changing its "parameters." For example, the `Threshold` stage takes in the photo from your camera (or the previous stage in the pipeline) and turns it into stark black and white. It uses a `threshold` parameter to pick the brightness level where the distinction is made.
+1. **Image Processing**: Modifies the image to make it easier for the computer to identify parts of the photo for better recognition. For example: `Threshold`, which converts an image to stark black and white.
+2. **Feature Detection**: Identifies specific elements in the image. For example: `DetectCirclesHough`, which detects circular shapes.
+3. **Visualize and Debug**: Vision overlays helpful markers to assist with your pipeline tuning by debugging, and tweaking it. For example: `DrawCircles`, which highlights detected circles on the image.
+
+Each stage has adjustable "parameters" that fine-tune its function. For instance, the `Threshold` stage applies a brightness cutoff to differentiate objects from the background. Adjusting its `threshold` parameter changes the brightness level at which this separation occurs.
 
 ![Threshold comparison](images/threshold-comparison-general.webp)
 
-For more complicated changes to your pipeline can also add and remove stages.
+For more advanced adjustments, you can add or remove processing stages in the pipeline. **We do not recommend doing this**.
+
+---
 
 ## Pipeline Editing View
 
 The pipeline editing view has several sections and features:
 
-1. The list of stages. Click on a stage to show it's results in the main view, and show its parameters in the stage settings.
-2. The main view. This shows the result of the currently selected stage unless a particular stage is pinned (see #5).
-3. Stage output. This shows error messages if there's a problem with your stage or pipeline.
-4. Stage settings. This lets you change the settings for the selected stage.
-5. Pin Image. This lets you keep the results of the currently selected stage on on main view, even if you select another stage. Use this to pin a debugging stage so that you can quickly see the results of changes to a stage you're editing.
+1. **Stage List**: Displays all stages in the pipeline. Click on a stage to view its results in the main display and modify its parameters.
+2. **Main view**: Shows the output of the currently selected stage unless a specific stage is pinned (see #5).
+3. **Stage output**: Displays error messages if there's a problem with your stage or pipeline.
+4. **Stage Settings**: Allows you to change the settings for the selected stage.
+5. **Pin Image**:. Locks a specific stage’s results in the main view, even when selecting other stages. This is useful for monitoring the impact of changes to a debugging stage in real time.
 
 ![Pipeline Editing View](images/pipeline-organization.webp)
+
+Next is [Homing Fiducial Pipeline](../vision-pipeline-adjustment/2-homing-fiducial-pipeline.md)

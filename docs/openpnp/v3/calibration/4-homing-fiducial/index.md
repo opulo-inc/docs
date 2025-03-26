@@ -1,111 +1,171 @@
-# Homing Fiducial ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=YzBwkxLlAcJWxDJe&t=527))
+# Homing Fiducial and Top Camera Exposure([Video Guide](https://youtu.be/h3mtEQfGMlM?si=YzBwkxLlAcJWxDJe&t=527))
 
-Now we can set up the datum board. The datum board is a reference point for everything else you'll do with the machine. The center dot of the datum board will be the most important calibration point for the machine. It'll be used to fine-tune the LumenPnP's XY position after homing to account for any errors in the limit switches.
+Now, we can set up the **datum board**. Setting up the datum board ensures **precise and repeatable homing** for the LumenPnP. The center dot on the datum board is called the **"homing fiducial"**, and is the key calibration point, allowing fine-tuning of the machine’s XY position **to compensate for minor variations in limit switch accuracy**.
 
-1. Before pressing the homing button (now and every time in the future), make sure that your nozzles are level. OpenPnP is not capable of keeping track of previous homing status per axis and making movement decisions based on that, so it's required to make sure the heads are level first to make sure there is no collision.
+Then, we will fine-tune the top camera exposure settings for proper homing calibration. **We will use the top camera aligned above the datum board's homing fiducial to properly adjust the exposure**.
 
-    ![level nozzles](images/level-nozzles.webp)
+## Preparing for Homing
 
-2. Run a rough home routine by pressing the Home button. The machine will move to the X, Y, and Z zero positions.
+1. **Level the nozzles before homing**.
 
-    ![Home the machine](images/Connect-and-home.webp)
+    !!! danger "🚨 Critical Warning: Level Nozzles Before Homing 🚨"
+        **Before pressing the homing button**—now and every time in the future—**you must ensure that your nozzles are level**.<br/><br/>
+        ⚠️ **Failure to do this can cause crashes and potentially damage your machine.**<br/><br/>
+        OpenPnP **does not** remember the previous nozzle positions from the last homing sequence, meaning it **cannot adjust movements based on past alignment**. If the nozzles are not level before homing, they may collide with the machine, leading to misalignment or serious hardware damage.
+      ![level nozzles](images/level-nozzles.webp)
+<br/><br/>
 
-!!! danger "If your machine does not move fully to the front left"
-    If your LumenPnP does not move all the way to the front left of the machine when you click the Home icon, it could mean that your sensorless homing values need to be adjusted.
+2. Click the **Home button** to perform a rough homing sequence.
+    * The Nozzles will move to X, Y, and Z zero positions **(front-left corner of the LumenPnP)** and park there.
+      ![Home the machine](images/Connect-and-home.webp)
 
-    Instructions for tuning this setting are [here](../../../guides/tuning-sensorless/index.md).
+---
 
 ## Setting Homing Fiducial Location
 
 1. Navigate to  `Machine Setup > Heads > ReferenceHead H1`.
+      ![Reviewing the ReferenceHead options](images/Select-Reference-Head-H1.webp)
+<br/><br/>
 
-    ![Reviewing the ReferenceHead options](images/Select-Reference-Head-H1.webp)
+2. In the **Configuration tab**, change the **Homing Method** to `ResetToFiducialLocation`.
+    * This sets the **homing sequence** to always finish by **scanning the fiducial**, which helps correct any minor inaccuracies caused by the sensorless homing.
+      ![Switch to using the homing fiducial](images/Select-ResetToFiducialLocation.webp)
+<br/><br/>
 
-1. In the Configuration tab, change the `Homing Method` to `ResetToFiducialLocation`. This will let us adjust Homing Fiducial settings.
+3. Apply and Save
+    * Click `Apply` in the lower right corner to save your changes.
+      ![Apply baud rate and port](images/apply-machine-config.webp)
+    * Save your OpenPnP configuration now. `File > Save Configuration`.
+      ![saving the machine config](images/save-configuration.webp)
 
-    ![Switch to using the homing fiducial](images/Select-ResetToFiducialLocation.webp)
+    !!! Warning "Caution"
+          **DO NOT** click the **homing button** again until you have fine-tuned the homing fiducial location, as explained in the next section.
+<br/><br/>
 
-1. Click `Apply` to save this change.
+4. Click on the **"Position Camera Over Location"** icon button shown below.
+    * This moves the **top camera** to the **approximate position** of the datum board..
+      ![Position top camera over homing fiducial](images/Position-camera-over-homing-fiducial.webp)
+<br/><br/>
 
-    ![Save the homing technique](images/Homing-fiducial-apply.webp)
+5. Ensure **LED lights** are on:
+    * Ensure your **Top and Bottom ring lights** are still on. If not, go back to the **Machine Controls** in the bottom-left section of OpenPnP and go to `Actuators tab > LED > On`.
+      ![Switch to the Actuators Tab](images/Actuators-tab.webp)
+      ![Turn on the LEDs](images/Turn-on-LEDs.webp)
+<br/><br/>
 
-1. Click on the "Position Camera Over Location" icon button show below. This will move the top camera to *approximately* where your datum board is mounted.
+1. Navigate to `Machine Setup > Heads > ReferenceHead H1 > Cameras > OpenPnPCaptureCamera Top`.
+      ![Finding the Top Camera Settings](images/Top-camera-settings-4.webp)
+<br/><br/>
 
-    ![Position top camera over homing fiducial](images/Position-camera-over-homing-fiducial.webp)
+1. In the lower detail pane, switch to the `Device Settings` tab.
+      ![Switching to the camera device settings](images/Top-camera-device-settings-4.webp)
+<br/><br/>
 
-1. In the bottom left Machine Controls pane, select the `Actuators` tab.
+1. Located the `Exposure` slider and **check** the check box labeled `Auto`. The camera will attempt to find the correct exposure.
 
-    ![Switch to the Actuators Tab](images/Actuators-tab.webp)
+1. Then, **uncheck** the `Auto` box to ensure we are now in "**manual adjustment**" mode.
 
-1. Turn on the LED ring lights by pressing the `LED` button, then clicking the `On` button in the popup.
+1. If the image is still difficult to see, slightly adjust the exposure until the datum board is easily visible. This will be fine-tuned after setting the homing fiducial location.
+    * 🚨 **Keep all other camera settings at their default value, and only adjust the exposure slider**.
 
-    ![Turn on the LEDs](images/Turn-on-LEDs.webp)
+2. Navigate back to  `Machine Setup > Heads > ReferenceHead H1`.
+      ![Reviewing the ReferenceHead options](images/Select-Reference-Head-H1.webp)
+
+3. Return to the `Jog` tab in **Machine Controls** so we can fine-tune the homing fiducial location.
+      ![Switch to the jog tab](images/Jog-tab.webp)
+<br/><br/>
+
+1. Set the `Distance` slider to `0.1` or `0.01` for more precise movements.
+    * You can use your mouse scroll wheel to zoom in on the feed for more precision.
+      ![Make the jog controls more precise](images/Distance-slider-0pt1.webp)
+
+2. Align the Top Camera:
+    * Towards the bottom right of OpenPnP, **use the jog controls** to position the **center of the reticle** directly over the **Homing Fiducial** in the perfect-center of the **Opulo logo**. Adjust the `Distance` slider as needed.
+      ![use the jog controls to move the machine](images/jog-controls.webp)
+
+      ![Center the homing fiducial in the camera view](images/Homing-fiducial-centered.webp)
+<br/><br/>
+
+1. Now that we're **perfectly centered** on the homing fiducial, We need to save this location in **two** different places.
+    * **First**, click the `Capture Camera Location` button to save the fiducial’s position for the **Homing Fiducial**.
+    * **Then**, Scroll down to the **Calibration Rig** section and click the `Capture Camera Location` button next to the **Primary Fiducial** field.
+      ![capture camera location button](images/Capture-homing-fiducial-location.webp)s
 
     !!! info "Tip"
-          Cameras are pre-adjusted to the correct focus, but if you'd like to tweak it, the community-created [lens adjustment tool](https://www.printables.com/model/208453-lumen-pnp-lens-adjustment-tool) makes this easy. You will also need to loosen the set screw on the side of the camera.
+        We use the "**Ruler**" Reticle in the following steps. If you prefer a different **reticle style** in the center of the camera feed, right-click the **camera feed** to change the **Reticle style**. Choose "**Ruler**" to match our docs photos best.
+        ![Different reticles](images/Switch-reticle-type.webp)
+<br/><br/>
 
-1. Go back to the `Jog` tab in the "Machine Controls" pane.
+1.  Apply and Save
+    * Click `Apply` in the lower right corner to save your changes.
+      ![Apply](images/apply-machine-config.webp)
+    * Save your OpenPnP configuration now. `File > Save Configuration`.
+      ![Save your config now](images/save-configuration.webp)
+<br/><br/>
 
-    ![Switch to the jog tab](images/Jog-tab.webp)
-
-1.  Set the `Distance` slider to `0.1` for more precise movements.
-
-    ![Make the jog controls more precise](images/Distance-slider-0pt1.webp)
-
-    !!! info "Tip"
-          Right click on the camera feed to change the Reticle style to see the center of the camera image. You can also use the scroll wheel to zoom in on the feed for more precision.
-
-          ![Change the reticle that appears on the camera feed](images/Switch-reticle-type.webp)
-
-1.  Manually jog the head so that the reticle in the center of the Top Camera feed in your top camera view is perfectly centered on the Homing Fiducial in the center of the Opulo logo.
-
-    ![use the jog controls to move the machine](images/jog-controls.webp)
-
-    ![Center the homing fiducial in the camera view](images/Homing-fiducial-centered.webp)
-
-1. Now that we're perfectly centered, capture the exact homing fiducial position using the "Capture Camera Location" button. Also click the "Capture Camera Location" button next to the Primary Fiducial below.
-
-    ![capture camera location button](images/Capture-homing-fiducial-location.webp)
+---
 
 ## Fine-tune Camera Exposure
 
-In order for OpenPnP to reliably detect the LumenPnP's homing fiducial, we'll need to set the exposure and camera settings for your top camera correctly.
+In order for OpenPnP to reliably detect the LumenPnP's homing fiducial, we'll need to **set the exposure and camera settings for your top camera** correctly.
 
 We also detail this process in our [setup video](https://youtu.be/h3mtEQfGMlM?t=842).
 
 1. Navigate to `Machine Setup > Heads > ReferenceHead H1 > Cameras > OpenPnPCaptureCamera Top`.
-
-    ![Finding the Top Camera Settings](images/Top-camera-settings-4.webp)
+      ![Finding the Top Camera Settings](images/Top-camera-settings-4.webp)
+<br/><br/>
 
 1. In the lower detail pane, switch to the `Device Settings` tab.
+      ![Switching to the camera device settings](images/Top-camera-device-settings-4.webp)
+<br/><br/>
 
-    ![Switching to the camera device settings](images/Top-camera-device-settings-4.webp)
+1. Right click on the top camera's feed and select `Show Image Info?` to enable the image info card. This will give you the brightness histogram of the image.
+      ![enable the image histogram](images/show-image-info.webp)
+<br/><br/>
 
-1. Right click on the camera feed and select `Show Image Info?` to enable the image info card. This will give you the brightness histogram of the image.
+1. Adjust the Top Camera exposure using the slider or entering an exposure value.
+    * 🚨 **Keep all other camera settings at their default value, and only adjust the exposure slider**.
+    * Located the `Exposure` slider and click on the check box labeled `Auto`. The camera will attempt to find the correct exposure.
+    * Then, **uncheck** the `Auto` box to ensure we are now in "**manual adjustment**" mode.
+    * Aim for a **sharp peak on the right side** and a larger **cluster to the left** in the histogram. See the image below for reference.
+       ![a good histogram](images/correct-exposure.webp){: style="width:60%;margin-left:10%;"}
+    * Adjust the `Exposure` slider, or manually enter varying exposure values, until the Datum Board is easy to see.
+       ![Adjust exposure](images/adjust-exposure-2.webp)
+    !!! Warning "🚨 Important 🚨"
+        The reference image below is just an example—**your histogram may look very different** depending on lighting conditions, camera placement, and other environmental factors. **Do not try to match it exactly.** Instead, focus on achieving the key characteristics: a distinct peak on the right and a noticeable cluster to the left. Adjust gradually until the image is clear and well-exposed.
+       ![a good histogram](images/correct-exposure.webp){: style="width:60%;margin-left:10%;"}
+    !!! caution "Not seeing anything in the top camera feed?"
+        Ensure the lens caps on the top camera has been removed.
+    !!! info "Tip"
+        Cameras are pre-adjusted to the correct focus, but if you'd like to tweak it, the community-created [lens adjustment tool](https://www.printables.com/model/208453-lumen-pnp-lens-adjustment-tool) makes this easy. You will also need to loosen the set screw on the side of the camera.
+<br/><br/>
 
-    ![enable the image histogram](images/show-image-info.webp)
+1. Once you've found a good exposure value, **record your exposure value** by saving them in a text file or writing them down:
+    * OpenPnP may not retain camera settings after restart, so **save the exposure value** for reference.
+    * This means every time you boot up OpenPnP you'll have to:
+        * Toggle **Auto Exposure** `on`, then `off`. (This puts your camera into manual exposure mode)
+        * **Type your recorded exposure value into the exposure field beside the slider**.
+<br/><br/>
 
-2. Adjust the exposure using the slider. The goal is to make sure the histogram graph has a sharp peak on the right side, and a cluster near the bottom end. See the image below for reference.
+1. **Turn off the histogram view** the same way you turned it on.
 
-    ![a good histogram](images/correct-exposure.webp){: style="width:60%;margin-left:10%;"}
-
-3. Once you've found a good exposure value, **record this value**. OpenPnP does not always reestablish camera settings when reconnecting, so having this value recorded for easily setting your exposure again on boot is important. When doing so, be sure to check, then uncheck the "Auto Exposure" box to put your camera into manual exposure mode, then slide the slider to your recorded value.
-
-1. Turn off the histogram view the same way you turned it on.
+---
 
 ## Test Fiducial Homing
 
 1. Navigate to `Machine Setup > Heads > ReferenceHead H1`.
+      ![Return to the homing fiducial location settings](images/Select-Reference-Head-H1-5.webp)
+<br/><br/>
 
-    ![Return to the homing fiducial location settings](images/Select-Reference-Head-H1-5.webp)
+1. Click on the **Home button** in the `Machine Controls Pane > Jog Tab` and watch your machine home using the limit switches, then moves the top camera over the homing fiducial and find its exact location. When the camera scans the fiducial, it will have a red-colored hue that scans for the fiducial's circle.
+      ![Home the machine](images/Connect-and-home.webp)
+<br/><br/>
 
-1. Click on the "Home" button in the `Machine Controls Pane > Jog Tab` and watch your machine home using the limit switches, then move the top camera over the homing fiducial and find its exact location.
+1. If you receive the error `FIDUCIAL-HOME no matches found`, OpenPnP was not able to find your homing fiducial. You need to adjust your [Homing Fiducial Pipeline](../../vision-pipeline-adjustment/2-homing-fiducial-pipeline.md/).
+      ![A first attempt at homing the LumenPnP](images/Cant-find-homing-fiducial.webp)
+<br/><br/>
 
-    ![Home the machine](images/Connect-and-home.webp)
-
-1. If you receive the error `FIDUCIAL-HOME no matches found`, OpenPnP was not able to find your homing fiducial. You need to adjust your [Homing Fiducial Pipeline](../../../openpnp/vision-pipeline-adjustment/2-homing-fiducial-pipeline.md).
-
-    ![A first attempt at homing the LumenPnP](images/Cant-find-homing-fiducial.webp)
+---
 
 ## Next Steps
 

@@ -30,6 +30,8 @@ OpenPnP is designed to run on many different kinds of host computers. However, U
 
 **Only use the OpenPnP version linked in the instructions below.** OpenPnP undergoes frequent updates that **can alter, break, or eliminate functionality**. Sticking to our suggested version **(the 2023-04-05 release)** guarantees that everything operates correctly and that this documentation remains reliable. This version is also compatible with the LumenPnP feeders.
 
+Because OpenPnP has recently started creating stable releases, we will be adapting to the newest version that we can confirm works without issue. This page will be updated to reflect that change when it happens. Until then, please use the version recommended on this page.
+
 !!! note "Use Linux if possible"
      We highly recommend using Ubuntu Linux as the OS for running OpenPnP due to how well it handles communication with the cameras.
 
