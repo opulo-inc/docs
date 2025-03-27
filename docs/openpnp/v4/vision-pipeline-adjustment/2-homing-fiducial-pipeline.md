@@ -8,43 +8,34 @@ If you receive the error message `FIDUCIAL-HOME no matches found` when homing yo
 
 ## Open the Pipeline
 
-1. Click on the `Machine Setup` tab in the top right pane.
+1. Click on the `Machine Setup` tab in the top right pane.<br/><br/>
+    ![Machine Setup Tab](images/Machine-Setup-Tab-3.webp)<br/><br/>
 
-    ![Machine Setup Tab](images/Machine-Setup-Tab-3.webp)
+2. Click on the "Expand" checkbox if necessary.<br/><br/>
+    ![Expanding the Machine Config options](images/Expand-Checkbox-3.webp)<br/><br/>
 
-2. Click on the "Expand" checkbox if necessary.
+3. Click on `Heads > ReferenceHead H1`.<br/><br/>
+    ![Reviewing the ReferenceHead options](images/Select-Reference-Head-H1.webp)<br/><br/>
 
-    ![Expanding the Machine Config options](images/Expand-Checkbox-3.webp)
+4. Click on the "Position Camera over location" icon button show below. This will move the top camera to the location where your datum board is mounted.<br/><br/>
+    ![Position top camera over homing fiducial](images/Position-camera-over-homing-fiducial.webp)<br/><br/>
 
-3. Click on `Heads > ReferenceHead H1`.
+5. Verify that your top camera is positioned exactly over the homing fiducial.<br/><br/>
+    ![Center the homing fiducial in the camera view](images/Homing-fiducial-centered.webp)<br/><br/>
 
-    ![Reviewing the ReferenceHead options](images/Select-Reference-Head-H1.webp)
+6. Adjust the exposure of your camera image as described in the [Homing Fiducial Section](../calibration/4-homing-fiducial/index.md#double-check-camera-exposure).<br/><br/>
 
-4. Click on the "Position Camera over location" icon button show below. This will move the top camera to the location where your datum board is mounted.
+7. Navigate to the `Vision` tab.<br/><br/>
+    ![Switch to the vision tab](images/vision-tab.webp)<br/><br/>
 
-    ![Position top camera over homing fiducial](images/Position-camera-over-homing-fiducial.webp)
+8. Select on `FiducialVision` from the type dropdown.<br/><br/>
+    ![Select fiducial vision](images/fiducial-vision-dropdown.webp)<br/><br/>
 
-5. Verify that your top camera is positioned exactly over the homing fiducial.
+9. Choose `- Default Machine Fiducial Locator -` from the pipeline list.<br/><br/>
+    ![Select the default pipeline](images/select-default-fiducial-vision.webp)<br/><br/>
 
-    ![Center the homing fiducial in the camera view](images/Homing-fiducial-centered.webp)
-
-6. Adjust the exposure of your camera image as described in the [Homing Fiducial Section](../calibration/4-homing-fiducial/index.md#double-check-camera-exposure).
-
-7. Navigate to the `Vision` tab.
-
-    ![Switch to the vision tab](images/vision-tab.webp)
-
-8. Select on `FiducialVision` from the type dropdown.
-
-    ![Select fiducial vision](images/fiducial-vision-dropdown.webp)
-
-9. Choose `- Default Machine Fiducial Locator -` from the pipeline list.
-
-    ![Select the default pipeline](images/select-default-fiducial-vision.webp)
-
-10. Click `Edit` to open the **Pipeline Editor**.
-
-    ![Edit the pipeline](images/edit-pipeline.webp)
+10. Click `Edit` to open the **Pipeline Editor**.<br/><br/>
+    ![Edit the pipeline](images/edit-pipeline.webp)<br/><br/>
 
 ---
 
@@ -81,21 +72,18 @@ This window allows you to modify the vision pipeline for detecting the homing fi
 
 1. Check the output of the `mask` stage. This stage blacks out unnecessary parts of the image to reduce false detections. This reduces the chance that the pipeline will find a different circle in the image and detect it as the homing fiducial. Click on this stage to view and adjust its `diameter` settings.
 
-    * A diameter too large could allow other potential circles into the image and could be erroneously detected by the pipeline. A diameter too small could potentially mask out the actual homing fiducial.
-
+    * A diameter too large could allow other potential circles into the image and could be erroneously detected by the pipeline. A diameter too small could potentially mask out the actual homing fiducial.<br/><br/>
     ![](images/circular-symmetry-mask.webp)
 
 2. Check the output of the `cir` stage of the pipeline. This stage looks for circular symmetry in the image, and outputs a colored heatmap showing where it thinks the center of circular symmetry is. The goal is to have this stage put the brightest, most yellow point of the heatmap in the center of the homing fiducial. Click on this stage to view its settings.
-
-    1. If OpenPnP detects circular symmetry, you will see a line similar to: `Circle [x=639.5, y=361.5, diameter=78.0, score=133.06040353848752]` in the field in the bottom right of the window. This means OpenPnP found circular symmetry, and it tells you about the circle that it found.
-    ![](images/circular-symmetry-pipeline.webp)
-
-    2. If no circles are detected, adjust the max diameter circle so that it can find larger ones. Increasing the value for `maxDiameter` will tell the stage to accept circles of a larger diameter.
+    * If OpenPnP detects circular symmetry, you will see a line similar to: `Circle [x=639.5, y=361.5, diameter=78.0, score=133.06040353848752]` in the field in the bottom right of the window. This means OpenPnP found circular symmetry, and it tells you about the circle that it found.<br/><br/>
+    ![](images/circular-symmetry-pipeline.webp)<br/><br/>
+    * If no circles are detected, adjust the max diameter circle so that it can find larger ones. Increasing the value for `maxDiameter` will tell the stage to accept circles of a larger diameter.
 
 !!! warning "Legacy - Circle Deteection Method (Outdated)"
     If your pipeline looks like this, we recommend you switch to the [circle symmetry method](#circular-symmetry-method).
 
-    1. Select the `DrawCircles` stage.
+    1. Select the `DrawCircles` stage.<br/><br/>
      ![Click on the DrawCircles stage](images/draw-circles-stage.webp)
 
     2. The main view will show a detected circle if OpenPnP has identified the homing fiducial.
@@ -107,36 +95,38 @@ This window allows you to modify the vision pipeline for detecting the homing fi
 
 ### Adjust Pipeline
 
-1. Click on the `Threshold` stage
-  ![Select the threshold stage](images/threshold-stage.webp)
+1. Click on the `Threshold` stage<br/><br/>
+  ![Select the threshold stage](images/threshold-stage.webp)<br/><br/>
 
 2. Adjust the `threshold` parameter as necessary until the image is precise.
     1. If the image is too dark, Increase the `threshold` setting.
     2. If the image is too bright, decrease the `threshold` setting.
 
-3. Select the `DrawCircles` stage and verify the fiducial has been correctly identified.
-  ![Click on the DrawCircles stage](images/draw-circles-stage.webp)
+3. Select the `DrawCircles` stage and verify the fiducial has been correctly identified.<br/><br/>
+  ![Click on the DrawCircles stage](images/draw-circles-stage.webp)<br/><br/>
 
-4. If not, pin the `DrawCircles` stage view.
-  ![Pin the DrawCircles view](images/pin-draw-circles.webp)
+4. If not, pin the `DrawCircles` stage view.<br/><br/>
+  ![Pin the DrawCircles view](images/pin-draw-circles.webp)<br/><br/>
 
-5. Select the `DetectCirclesHough` stage.
-  ![Select the detect circles stage](images/detect-circles-stage.webp)
+5. Select the `DetectCirclesHough` stage.<br/><br/>
+  ![Select the detect circles stage](images/detect-circles-stage.webp)<br/><br/>
 
 6. Adjust the `param2` parameter as necessary until the correct number of circles are identified.
     1. If no circles are detected, lower the `param2` setting.
     2. If too many circles are detected, raise the `param2` setting.
 
+---
+
 #### Review Pipeline Output
 
-1. Once the fiducial is correctly detected, close the pipeline editor.
-  ![Close the pipeline editor](images/close-pipeline-editor.webp)
+1. Once the fiducial is correctly detected, close the pipeline editor.<br/><br/>
+  ![Close the pipeline editor](images/close-pipeline-editor.webp)<br/><br/>
 
-1. **Save the changes when prompted**.
-  ![Save the changes to the pipeline](images/save-pipeline-changes.webp)
+1. **Save the changes when prompted**.<br/><br/>
+  ![Save the changes to the pipeline](images/save-pipeline-changes.webp)<br/><br/>
 
-1. Attempt to `home` the LumenPnP to see if it can identify the homing fiducial.
-  ![Home the machine](images/home-machine-from-vision.webp)
+1. Attempt to `home` the LumenPnP to see if it can identify the homing fiducial.<br/><br/>
+  ![Home the machine](images/home-machine-from-vision.webp)<br/><br/>
 
-1. If you receive the same `FIDUCIAL-HOME no matches found` error, you'll need to keep tuning your pipeline. Go back to [checking the debug results](#check-the-debug-results).
+1. If you receive the same `FIDUCIAL-HOME no matches found` error, you'll need to keep tuning your pipeline. Go back to [checking the debug results](#check-the-debug-results).<br/><br/>
   ![Cant't find homing fiducial](images/Cant-find-homing-fiducial.webp)

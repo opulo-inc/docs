@@ -1,4 +1,3 @@
-
 # Nozzle Calibration Pipeline ([Video Guide](https://youtu.be/RVMS6vJzJyU?si=c-ta9EFDhIMdvlam&t=249))
 
 If you receive the error message `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` when homing your LumenPnP, you likely need to adjust your nozzle tip calibration pipeline. Follow the steps below for a guide on the iterative approach. See also our [setup video](https://youtube.com/watch?v=CSnczX6VJ7M&si=EnSIkaIECMiOmarE&t=1875).
@@ -9,47 +8,47 @@ If you receive the error message `Nozzle tip calibration: not enough results fro
 
 ## Position Nozzle Over Bottom Camera
 
-1. Click on the `Machine Setup` tab in the top right pane.
+1. Click on the `Machine Setup` tab in the top right pane.<br/><br/>
      ![Machine Setup Tab](images/Machine-Setup-Tab-3.webp)
 <br/><br/>
 
-1. If necessary, click on the "Expand" checkbox.
+1. If necessary, click on the "Expand" checkbox.<br/><br/>
      ![Expanding the Machine Config options](images/Expand-Checkbox-3.webp)
 <br/><br/>
 
-1. Navigate to `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`
+1. Navigate to `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`<br/><br/>
      ![Open the Nozzle N1 settings](images/select-nozzle-N1.webp)
 <br/><br/>
 
-1. Select the `Nozzle Tips` tab.
+1. Select the `Nozzle Tips` tab.<br/><br/>
      ![Nozzle Tip Tab](images/nozzle-tip-tab.webp)
 <br/><br/>
 
-1. Ensure the `Loaded?` checkbox for nozzle tip N045 is checked.
+1. Ensure the `Loaded?` checkbox for nozzle tip N045 is checked.<br/><br/>
      ![Loaded Checkbox](images/loaded-checkbox.webp)
 <br/><br/>
 
-1. Continue to `Nozzle Tips > ReferenceNozzleTip N045` (or the nozzle you're tuning).
+1. Continue to `Nozzle Tips > ReferenceNozzleTip N045` (or the nozzle you're tuning).<br/><br/>
      ![Nozzle Tips Section](images/nozzle-tips-section.webp)
 <br/><br/>
 
-1. Click on the `Calibration` tab.
+1. Click on the `Calibration` tab.<br/><br/>
      ![Calibration Tab](images/nozzle-tip-calibration.webp)
 <br/><br/>
 
-1. Home your LumenPnP to ensure accurate toolhead positioning. Ignore the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error if it appears.
+1. Home your LumenPnP to ensure accurate toolhead positioning. Ignore the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error if it appears.<br/><br/>
      ![Home the machine](images/home-during-bottom-cam-pos.webp)
 <br/><br/>
 
-1.  From the machine controls dropdown, select `Nozzle: N1 - N045 (Head:H1)`
+1.  From the machine controls dropdown, select `Nozzle: N1 - N045 (Head:H1)`<br/><br/>
      ![Select nozzle from machine control dropdown](images/select-n1-machine-control-bottom.webp)
 <br/><br/>
 
-1.  Click the `Position tool over location` button to bring the left nozzle above the bottom camera.
+1.  Click the `Position tool over location` button to bring the left nozzle above the bottom camera.<br/><br/>
      ![Position over Bottom Camera](images/position-over-bottom-camera.webp)
 <br/><br/>
 
-1.  Click `Edit` in the Pipeline section.
+1.  Click `Edit` in the Pipeline section.<br/><br/>
      ![Edit Pipeline Button](images/edit-tip-pipeline.webp)
 
 ---
@@ -140,13 +139,12 @@ If you receive the error message `Nozzle tip calibration: not enough results fro
 
 1. Check the output of the `mask` stage. This stage blacks out unnecessary parts of the image to reduce false detections. This reduces the chance that the pipeline will find a different circle in the image and detect it as the homing fiducial. Click on this stage to view and adjust its `diameter` settings.
 
-    * A diameter too large could allow other potential circles into the image and could be erroneously detected by the pipeline. A diameter too small could potentially mask out the actual homing fiducial.
-
+    * A diameter too large could allow other potential circles into the image and could be erroneously detected by the pipeline. A diameter too small could potentially mask out the actual homing fiducial.<br/><br/>
     ![](images/circular-symmetry-mask.webp)
 
 1. Check the output of the `cir` stage of the pipeline. This stage looks for circular symmetry in the image, and outputs a colored heatmap showing where it thinks the center of circular symmetry is. The goal is to have this stage put the brightest, most yellow point of the heatmap in the center of the homing fiducial. Click on this stage to view its settings.
 
-    * If OpenPnP detects circular symmetry, you will see a line similar to: `Circle [x=639.5, y=361.5, diameter=78.0, score=133.06040353848752]` in the field in the bottom right of the window. This means OpenPnP found circular symmetry, and it tells you about the circle that it found.
+    * If OpenPnP detects circular symmetry, you will see a line similar to: `Circle [x=639.5, y=361.5, diameter=78.0, score=133.06040353848752]` in the field in the bottom right of the window. This means OpenPnP found circular symmetry, and it tells you about the circle that it found.<br/><br/>
     ![](images/circular-symmetry-pipeline.webp)
 
     * If no circles are detected, adjust the max diameter circle so that it can find larger ones. Increasing the value for `maxDiameter` will tell the stage to accept circles of a larger diameter.
@@ -170,12 +168,10 @@ If you receive the error message `Nozzle tip calibration: not enough results fro
 
 #### General Strategy
 
-To reliably detect nozzle tips, tune the pipeline to recognize the internal hole of the nozzle tip rather than its outer edge.
+To reliably detect nozzle tips, tune the pipeline to recognize the internal hole of the nozzle tip rather than its outer edge.<br/><br/>
+![Nozzle Edge vs. Nozzle Hole](images/nozzle-hole-vs-nozzle-edge.webp)<br/><br/>
 
-![Nozzle Edge vs. Nozzle Hole](images/nozzle-hole-vs-nozzle-edge.webp)
- are detected, or one detected circle is not correctly drawn around the homing fiducial, refine the filtering until the real homing fiducial is properly detected.
-
-* **Multiple or incorrect circles detected**: Adjust filtering until only the correct homing fiducial is found.
+* **Multiple or incorrect circles detected**: Adjust filtering until only the correct homing fiducial is found. We need to more clearly distinguish the real nozzle tip.
 * **No circle detected** Adjust detection settings to improve identification.
 * If the image looks like the reference image, your pipeline is properly tuned.
 
@@ -183,15 +179,15 @@ Since each LumenPnP can have unique lighting conditions, tuning requires an iter
 
 !!! Note "Check the Debug Results"
     Unlike [homing fiducial tuning](2-homing-fiducial-pipeline.md), nozzle tip tuning needs to be able to identify the nozzle multiple times as it is rotated. This can make it slightly trickier to see the issues with your calibration pipeline. You may need to run a round of calibration and watch the results live to see which orientation of the toolhead gives the pipeline the most trouble. You can also increase the `Allowed Misdetects` option if you're getting good picking results, but homing still fails occasionally.
-     ![Calibrate Tip Button](images/calibrate-button.webp)
+     ![Calibrate Tip Button](images/calibrate-button.webp)<br/><br/>
 
 #### Threshold Tuning
 
 The `Threshold` stage converts the image to black and white, clearly defining the nozzle tip. Ensure the inner hole appears as a distinct white circle. Raise or lower the `threshold` parameter as necessary until the image is precise. (Note that the `invert` button is checked so that the nozzle tip hole is shown in white for the next steps.)
 
 * If the image is too dark, raise the `threshold` value.
-* If the image is too bright, lower the `threshold` value.
-  ![Threshold Comparison](images/threshold-comparison-3.webp)
+* If the image is too bright, lower the `threshold` value.<br/><br/>
+  ![Threshold Comparison](images/threshold-comparison-3.webp)<br/><br/>
 
 #### DetectCirclesHough Tuning
 
@@ -200,20 +196,19 @@ The `Threshold` stage converts the image to black and white, clearly defining th
 `param2` adjusts how likely the algorithm will be to detect a circle.
 
 * If there are no circles, lower the `param2` setting.
-* If there are too many circles, raise the `param2` setting.
-  ![Param2 Comparison](images/param2-comparison.webp)
+* If there are too many circles, raise the `param2` setting.<br/><br/>
+  ![Param2 Comparison](images/param2-comparison.webp)<br/><br/>
 
 Depending on your nozzle tip, may also need to adjust the `maxDiameter` setting.
 
 * Raise the `maxDiameter` setting if there are no circles detected at all after adjusting the other settings.
-* Lower the `maxDiameter` setting if very large circles are drawn around noise in the image.
-  ![MaxDiameter Comparison](images/max-diameter-comparison.webp)
+* Lower the `maxDiameter` setting if very large circles are drawn around noise in the image.<br/><br/>
+  ![MaxDiameter Comparison](images/max-diameter-comparison.webp)<br/><br/>
 
 #### BlurMedian Tuning
 
-`BlurMedian` can be useful if there are debris blocking the inner hole of your nozzle tip. That debris can cause the round silhouette of the hole to be interrupted and not be identified by the `DetectCirclesHough` stage. Use `BlurMedian` to remove artifacts in the photo, but don't blur so much that you significantly change the silhouette of the nozzle.
-
-![BlurMedian Comparison](images/blurMedian-comparison.webp)
+`BlurMedian` can be useful if there are debris blocking the inner hole of your nozzle tip. That debris can cause the round silhouette of the hole to be interrupted and not be identified by the `DetectCirclesHough` stage. Use `BlurMedian` to remove artifacts in the photo, but don't blur so much that you significantly change the silhouette of the nozzle.<br/><br/>
+![BlurMedian Comparison](images/blurMedian-comparison.webp)<br/><br/>
 
 1. Raise the `kernelSize` if the center of your nozzle tip doesn't make a perfect circle.
 2. Lower the `kernelSize` if the center of your nozzle tip is distorted from too much blur.

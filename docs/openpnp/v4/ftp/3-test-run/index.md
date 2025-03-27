@@ -11,20 +11,20 @@ Before running the job, you'll want to test the bottom vision pipeline, which us
 <br/><br/>
 
 1. **Test alignment**.
-    * Switch to the `Parts` tab, select the part you just picked and click the "Test Alignment" button. 
+    * Switch to the `Parts` tab, select the part you just picked and click the "Test Alignment" button.<br/><br/>
      ![test bottom vision](images/test-bottom-vision.webp)
 <br/><br/>
 
 1. **Verify the bottom vision output**.
     * Watch the bottom camera feed. A red rectangle should outline the component perfectly before disappearing once the part has been checked. 
-    * If the rectangle is misaligned on the part, adjust your [part identification pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md) before proceeding.
+    * If the rectangle is misaligned on the part, adjust your [part identification pipeline](../../vision-pipeline-adjustment/5-part-identification-pipeline.md) before proceeding.<br/><br/>
      ![bottom vision output](images/bottom-vision-detection.webp)
 <br/><br/>
 
 1. **Recycle component**.
-    * Once part identification is confirmed to be working, switch to the `Special` Tab in the `Machine Controls` pane.
-     ![Switch to the special tab](images/Special-tab.webp)
-    * Click the `Recycle` button to instruct the LumenPnP to recycle the picked component.
+    * Once part identification is confirmed to be working, switch to the `Special` Tab in the `Machine Controls` pane.<br/><br/>
+     ![Switch to the special tab](images/Special-tab.webp)<br/><br/>
+    * Click the `Recycle` button to instruct the LumenPnP to recycle the picked component.<br/><br/>
      ![Recycle the component you've picked up](images/Recycle-component.webp)
 <br/><br/>
 
@@ -41,8 +41,8 @@ Before running the job, you'll want to test the bottom vision pipeline, which us
     * Click the green `Play` button. This initiates fiducial calibration. **Once it is done checking the fiducials, click `Pause`**.
     * You can now use the yellow `Single job step` button, located beside the `Play` button, to proceed through the job one step at a time to ensure everything is going smoothly.
     * The LumenPnP will step through picking a component, align it using the bottom camera, and place it on the board.
-    * Step through until a few parts are populated.
-     ![Start placing components](images/One-step-placement.webp)
+    * Step through until a few parts are populated.<br/><br/>
+     ![Start placing components](images/One-step-placement.webp)<br/><br/>
 
 ---
 

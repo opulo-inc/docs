@@ -22,7 +22,7 @@ Each nozzle has a different vacuum reading due to variations in nozzle tip size.
 ## Setting Up Vacuum Part Detection for Nozzle: N1
 
 1. **Select the correct nozzle to control**.
-    * In the bottom left of OpenPnP, select `Nozzle: N1 - N045 (Head:H1)` from the **machine controls** dropdown.
+    * In the bottom left of OpenPnP, select `Nozzle: N1 - N045 (Head:H1)` from the **machine controls** dropdown.<br/><br/>
      ![Select nozzle: N1 from machine control dropdown](images/select-n1-machine-control.webp)
 <br/><br/>
 
@@ -46,8 +46,7 @@ Each nozzle has a different vacuum reading due to variations in nozzle tip size.
     * Select `H1:VAC1` to open the vacuum pressure window.
     * Click `On` to activate the pump and valve.
     * Click `Read`. A value will appear in the `Read Value box`. This represents the vacuum pressure when the Nozzle: N1 is **uncovered**.
-    * **Take note of this number**. We will need it later.
-
+    * **Take note of this number**. We will need it later.<br/><br/>
      ![vac1 actuator](images/vac1-actuator.webp)
      ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.webp)
 <br/><br/>
@@ -73,16 +72,17 @@ Each nozzle has a different vacuum reading due to variations in nozzle tip size.
         The difference between uncovered and covered readings may be small, but **even a single-digit change can indicate a successful pick**. Nozzle sizes affect these readings, so expect variations between nozzles.
 
 1. **Apply and Save**
-    * Click `Apply` in the lower right corner to save your changes to the **N045** nozzle tip.
-    * Save your OpenPnP configuration now. `File > Save Configuration`.
-      ![Save your config now](images/save-configuration.webp)
+    * Click `Apply` in the lower right corner to save your changes to the **N045** nozzle tip.<br/><br/>
+      ![apply](images/apply-button.webp)<br/><br/>
+    * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
+      ![Save your config now](images/save-config-small.webp)<br/><br/>
 
 ---
 
 ## Setting Up Vacuum Part Detection for Nozzle: N2
 
 1. **Select the correct nozzle to control**.
-    * In the bottom left of OpenPnP, select `Nozzle: N2 - N24 (Head:H1)` from the **machine controls** dropdown.
+    * In the bottom left of OpenPnP, select `Nozzle: N2 - N24 (Head:H1)` from the **machine controls** dropdown.<br/><br/>
      ![Select nozzle: N2 from machine control dropdown](images/select-n1-machine-control.webp)
 <br/><br/>
 
@@ -97,8 +97,8 @@ Each nozzle has a different vacuum reading due to variations in nozzle tip size.
 <br/><br/>
 
 1. **Open the Part Detection Settings**.
-    * Navigate to `Machine Setup > Nozzle Tips > ReferenceNozzleTip N24 > Part Detection`.
-     ![Enabling part detection](images/Screen Shot 2023-02-16 at 10.25.43 AM.webp)
+    * Navigate to `Machine Setup > Nozzle Tips > ReferenceNozzleTip N24 > Part Detection`.<br/><br/>
+     ![Enabling part detection](images/Screen Shot 2023-02-16 at 10.25.43 AM.webp)<br/><br/>
 <br/><br/>
 
 1. **Measure the Vacuum Pressure**.
@@ -108,8 +108,8 @@ Each nozzle has a different vacuum reading due to variations in nozzle tip size.
     * Click `Read`. A value will appear in the `Read Value box`. This represents the vacuum pressure when Nozzle: N2 is **uncovered**.
     * **Take note of this number**. We will need it later.
 
-     ![vac1 actuator](images/vac1-actuator.webp)
-     ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.webp)
+     ![vac1 actuator](images/vac1-actuator.webp)<br/><br/>
+     ![actuator control](images/Screen Shot 2023-02-16 at 10.43.29 AM.webp)<br/><br/>
 <br/><br/>
 
 1. **Measure the Vacuum Pressure with a Sealed Nozzle**.
@@ -133,9 +133,10 @@ Each nozzle has a different vacuum reading due to variations in nozzle tip size.
         The difference between uncovered and covered readings may be small, but **even a single-digit change can indicate a successful pick**. Nozzle sizes affect these readings, so expect variations between nozzles.
 
 1. **Apply and Save**
-    * Click `Apply` in the lower right corner to save your changes to the **N24** nozzle tip.
-    * Save your OpenPnP configuration now. `File > Save Configuration`.
-      ![Save your config now](images/save-configuration.webp)
+    * Click `Apply` in the lower right corner to save your changes to the **N24** nozzle tip.<br/><br/>
+      ![apply](images/apply-button.webp)
+    * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
+      ![Save your config now](images/save-configuration.webp)<br/><br/>
 
 ---
 
