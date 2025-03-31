@@ -14,18 +14,10 @@ This next step calibrates the relationship between pixels and millimeters to mak
 ## Top Camera Calibration
 
 In this step, we will calibrate the mm/pixels for the **Top Camera**. This requires us to set the dimensions and use a virtual bounding box to outline and measure one of the squares on the datum board, known as a golden guideline square. This allows us to calibrate the **top camera’s Units per pixel**, giving us accurate top camera movement.
-
-1. **Navigate to ReferenceHead H1**.
-    * In OpenPnP, go to `Machine Setup > Heads > ReferenceHead H1`.<br/><br/>
-     ![Reviewing the ReferenceHead options](images/Select-Reference-Head-H1.webp)
-<br/><br/>
-
-1. **Position the Camera over the Datum Board**.
-    * Click on the "Position Camera over location" icon button shown below. This will move the top camera to where your datum board is mounted.<br/><br/>
-     ![Position top camera over homing fiducial](images/Position-camera-over-homing-fiducial.webp)
 <br/><br/>
 
 1. **Select the Top Camera**.
+    * Confirm that your `Top Camera` is still centered on your `Homing Fiducial`
     * Navigate to `Machine Setup > Heads > ReferenceHeadH1 > Cameras > OpenPnPCaptureCamera Top`.<br/><br/>
      ![Select the top camera](images/select-top-camera.webp)
 <br/><br/>

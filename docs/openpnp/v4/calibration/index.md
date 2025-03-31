@@ -1,6 +1,6 @@
 # Calibration - Introduction
 
-![](img/lumenpnp-v4-docs-logo-small.png)
+![](images/lumenpnp-v4-docs-logo-small.png)
 
 ## What you'll learn
 
@@ -26,7 +26,7 @@ This video walks you through calibrating your LumenPnP in OpenPnP. Each page in 
 
 Save your settings after each calibration step. OpenPnP may not remember your settings if you close the application without saving them, so save them every time you adjust your calibration.
 
-![](img/save.webp)
+![](../calibration/2-connect-to-machine/images/07-full-screen-save-config)
 
 ## Different calibration methods
 
@@ -41,4 +41,4 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 
 ## **Next Steps**
 
-First, we'll [connect to your LumenPnP V4](2-connect-to-machine/index.md).
+First, we'll [Connect to your LumenPnP V4 and configure your bottom camera](2-connect-to-machine/index.md).

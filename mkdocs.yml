@@ -165,8 +165,8 @@ nav:
                 - Import Configuration: openpnp/v4/install-config/import-config/index.md
         - Calibration:
             - Introduction: openpnp/v4/calibration/index.md
-            - Connecting to Your Machine: openpnp/v4/calibration/2-connect-to-machine/index.md
-            - Homing Fiducial: openpnp/v4/calibration/4-homing-fiducial/index.md
+            - Connect to LumenPnP V4 and Configure Bottom Camera: openpnp/v4/calibration/2-connect-to-machine/index.md
+            - Configure Top Camera and Homing Fiducial: openpnp/v4/calibration/4-homing-fiducial/index.md
             - MM/Pixel: openpnp/v4/calibration/5-mm-per-pixel/index.md
             - Nozzle Offset: openpnp/v4/calibration/6-nozzle-offset/index.md
             - Bottom Camera Position: openpnp/v4/calibration/7-bottom-camera-position/index.md
