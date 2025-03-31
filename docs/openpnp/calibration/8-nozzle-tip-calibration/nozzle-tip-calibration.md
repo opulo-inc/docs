@@ -37,6 +37,10 @@ Nozzle tip calibration measures exactly how your nozzles rotate by measuring the
 
     ![click pipeline edit button](images/n045-edit-pipeline.webp)
 
+    !!! tip "Adjust Offset Threshold"
+        You can also increase the "Offset Threshold" value if OpenPnP seems to be detecting the nozzle correctly, but calibration still fails. OpenPnP will discard any nozzle tip found outside this radius from the center of the camera view. Making it larger will allow for a greater nozzle tip offset to still be detected. We recommend starting at `2`, and increasing if needed.
+
+
 4. Once you've calibrated successfully, set `Auto Recalibration` from `Manual` to `NozzleTipChange`. This will cause OpenPnP to calibrate any loaded N045 nozzle tips after homing, or after swapping tips. Hit `Apply` to save your changes.
 
     ![setting nozzle tip recal from manual to nozzletipchange](images/n045-change-recal.webp)
