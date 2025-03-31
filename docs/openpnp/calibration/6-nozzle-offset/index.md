@@ -6,7 +6,7 @@ type: docs
 description: >
   Calibrating the offset of the nozzle from the top camera
 ---
-# Nozzle Offset ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=wUI5YeJmyOG8ii4G&t=1375))
+# Nozzle Offset
 
 Now we need to tell OpenPnP how far the nozzles are away from the center point of the top camera. There are multiple strategies you can use to calculate this. One way is to use OpenPnP's built in Offset Wizard. You can read the OpenPnP docs about this step [here](https://github.com/openpnp/openpnp/wiki/Setup-and-Calibration_Nozzle-Setup).
 

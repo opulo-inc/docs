@@ -1,4 +1,4 @@
-# Homing Fiducial ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=YzBwkxLlAcJWxDJe&t=527))
+# Homing Fiducial
 
 Now we can set up the datum board. The datum board is a reference point for everything else you'll do with the machine. The center dot of the datum board will be the most important calibration point for the machine. It'll be used to fine-tune the LumenPnP's XY position after homing to account for any errors in the limit switches.
 

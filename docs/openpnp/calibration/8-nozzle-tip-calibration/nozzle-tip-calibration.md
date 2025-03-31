@@ -1,4 +1,4 @@
-# Nozzle Tip Calibration ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=FHauQ0aEZQaOBkxV&t=1661))
+# Nozzle Tip Calibration
 
 Nozzle tip calibration measures exactly how your nozzles rotate by measuring them with the bottom camera. This prevents placement error due to runout.
 

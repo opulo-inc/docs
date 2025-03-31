@@ -1,4 +1,4 @@
-# Connecting to Your Machine ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=EwPYDBEEKK8miH29&t=31))
+# Connecting to Your Machine
 
 With OpenPnP installed on your computer and the default configuration installed, the next step is connecting to the machine and getting familiar with OpenPnP's UI.
 

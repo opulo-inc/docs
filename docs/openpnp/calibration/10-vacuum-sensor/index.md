@@ -1,5 +1,5 @@
 
-# Vacuum Part Detection ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=eluz16VnR4F9oS9S&t=1956))
+# Vacuum Part Detection
 
 While the bottom camera can detect if a part was successfully picked, you can use the LumenPnP's vacuum sensors to check for a successful pick a bit quicker. When a part is successfully picked it creates a seal at the end of the nozzle. This seal increases the vacuum pressure in the pneumatic line which is measured by the vacuum sensors. OpenPnP can use this increase in pressure to detect if a part was successfully picked.
 

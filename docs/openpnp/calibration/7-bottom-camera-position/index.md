@@ -1,4 +1,4 @@
-# Bottom Camera Position ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=uyDBUttihPh80EQv&t=1580))
+# Bottom Camera Position
 
 Now that we know the offset from the top camera to the nozzle, we can use the nozzle to set our bottom camera position.
 
