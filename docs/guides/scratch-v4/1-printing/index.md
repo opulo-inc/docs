@@ -5,7 +5,7 @@ The first step in building your LumenPnP is 3D printing all the parts!
 !!! danger "Reprint Everything"
     If you're upgrading an existing machine to v4, it might be tempting to only reprint a subset of the parts. While some of the parts *might* be compatible or at least similar, we **recommend reprinting everything**, because every new release of the machine might have changed something. It's just a bit over a kilogram of plastic for a LumenPnP, so it's not much more material to ensure parity with the version you're building to.
 
-    If you're upgrading from a v3.1 or v3.2, we recommend reprinting everything as well, but you can get away with not reprinting the front and back legs. Although there are some quality of life improvements in these files, it can save you from having to fully disassemble your Y gantries (only the `y-gantry` print itself *needs* to be reprinted for v4). 
+    If you're upgrading from a v3.1 or v3.2, you can *technically* get away with not reprinting the front and back legs. Although there are some quality of life improvements in these files, it can save you from having to fully disassemble your Y gantries (only the `y-gantry` print itself *needs* to be reprinted for v4). 
 
 ## Getting the files
 

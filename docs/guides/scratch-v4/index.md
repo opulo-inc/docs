@@ -3,14 +3,14 @@
 Welcome to the v4 LumenPnP Scratch-Build Guide!
 
 !!! danger "SCRATCH BUILD ONLY"
-    This page is just for folks **building a LumenPnP from scratch!** If you bought a LumenPnP from Opulo's website, instead go to the [regular docs](/semi-assembly-4-0/).
+    This page is just for folks **building a LumenPnP from scratch or upgrading your machine!** If you bought a LumenPnP from Opulo's website, instead go to the [regular docs](/semi-assembly-4-0/).
 
 This guide is for folks that are interested in 1) building a LumenPnP from source, or 2) bought a parts or upgrade kit from Opulo.
 
 You can buy parts kits and individual parts from Opulo, or you can source the parts yourself from the BoM.
 
-!!! warning "NOT FOR BEGINNERS"
-    It is not a simple process assembling a LumenPnP. Building one from scratch will likely require debugging, referencing documentation, and rolling with some errata. This guide also mostly references Opulo's internal work instructions, so you'll have to be comfortable operating off of those as a baseline.
+!!! danger "NOT FOR BEGINNERS"
+    Assembling a LumenPnP is not a simple process. Building one from scratch will likely require debugging, referencing documentation, and rolling with some errata. This guide also mostly references Opulo's internal work instructions, so you'll have to be comfortable operating off of those as a baseline.
 
 ## Pick a Version
 
@@ -30,7 +30,7 @@ This guide uses OHAI for the bulk of the instructions on assembly for this reaso
 - Metric allen key set
 - Superglue or Loctite 435
 - 2.5mm drill bit
-- 
+- 2x adjustable wrenches
 
 ## v3.1 / v3.2 ➡️ v4 Upgrades
 
