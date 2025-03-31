@@ -14,7 +14,7 @@ Now that we know the offset from the top camera to the nozzle, we can use the no
 
     ![Select nozzle from machine control dropdown](images/select-n1-machine-control-bottom.webp)
 
-## v4
+## LumenPnP v4
 
 LumenPnP v4 is designed to have the bottom camera focused at the same height as the datum board. We'll set the bottom camera position and adjust focus using the datum board.
 
@@ -37,7 +37,7 @@ LumenPnP v4 is designed to have the bottom camera focused at the same height as 
 
     ![Save the camera location](images/apply-bottom-cam-pos.webp)
 
-## v3
+## LumenPnP v3
 
 LumenPnP v3 is designed to have the bottom camera focused at the nozzles when they're level (with a Z position of 31.5).
 
