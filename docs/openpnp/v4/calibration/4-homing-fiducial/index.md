@@ -1,4 +1,4 @@
-# Configure Top Camera and Homing Fiducial([Video Guide](https://youtu.be/h3mtEQfGMlM?si=YzBwkxLlAcJWxDJe&t=527))
+# Configure Top Camera and Homing Fiducial
 
 First, we will establish a connection with the top camera, like we did with the bottom camera.
 
@@ -10,7 +10,7 @@ Finally, we will go back and fine-tune the top camera exposure settings for prop
 
 ## Configuring the Top Camera
 
-Nowthat bottom camera exposure has been fine-tuned, the same thing needs to be done to the top camera. We'll connect to the top camera in this step and adjust the exposure.
+Now that your bottom camera exposure has been fine-tuned, the same thing needs to be done to the top camera. We'll connect to the top camera in this step and adjust the exposure.
 
 🚨 The **homing fiducial** is the 1mm dot in the center of the Opulo logo, located toward the center of the datum board. 🚨<br/><br/>
 ![Datum Board Close Up](images/01-datum-board-fiducial.webp)<br/><br/>
@@ -54,7 +54,7 @@ Nowthat bottom camera exposure has been fine-tuned, the same thing needs to be d
 
 1. Click the **Home button** to perform a rough homing sequence.
     * The Nozzles will move to X, Y, and Z zero positions **(front-left corner of the LumenPnP)** and park there.<br/><br/>
-       ![Home the machine](images/home-your-machine-gif.gif)
+       ![Home the machine](../2-connect-to-machine/images/home-your-machine-gif.gif)
 
 ---
 
@@ -143,7 +143,8 @@ We also detail this process in our [setup video](https://youtu.be/h3mtEQfGMlM?t=
       ![Switching to the camera device settings](images/23-device-settings-top-cam.webp)
 <br/><br/>
 
-1. Right click on the top camera's feed and select `Show Image Info?` to enable the image info card. This will give you the brightness histogram of the image.<br/><br/>
+1. Right click on the top camera's feed and select `Show Image Info?` to enable the image info card. This will give you the brightness histogram of the image.
+    * Use the histogram as a general guide rather than a precise measurement—it’s a helpful tool but not exact. For the best results, refer to the comparison photos below, which show examples of 'too bright,' 'too dark,' and 'good exposure' to help you fine-tune your settings after using the histogram.<br/><br/>
       ![enable the image histogram](images/24-show-histogram-for-top-cam.webp)
 <br/><br/>
 
@@ -180,7 +181,7 @@ We also detail this process in our [setup video](https://youtu.be/h3mtEQfGMlM?t=
 ## Test Fiducial Homing
 
 1. Click on the **Home button** in the `Machine Controls Pane > Jog Tab` and watch your machine home using the limit switches, then moves the top camera over the homing fiducial and find its exact location. When the camera scans the fiducial, it will have a red-colored hue that scans for the fiducial's circle.<br/><br/>
-      ![Home the machine](images/32-test-homing-with-homing-fid-gif.gif)
+      ![Home the machine](../2-connect-to-machine/images/home-your-machine-gif.gif)
 <br/><br/>
 
 1. If you receive the error `FIDUCIAL-HOME no matches found`, OpenPnP was not able to find your homing fiducial. You need to adjust your [Homing Fiducial Pipeline](../../vision-pipeline-adjustment/2-homing-fiducial-pipeline.md/).<br/><br/>

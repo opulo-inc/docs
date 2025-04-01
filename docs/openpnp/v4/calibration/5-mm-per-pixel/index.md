@@ -7,7 +7,7 @@ description: >
   Setting the millimeters per pixel value in OpenPnP
 ---
 
-# MM/Pixel ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=WXlOSWQ4RWR7R7zD&t=1002))
+# MM/Pixel
 
 This next step calibrates the relationship between pixels and millimeters to make our cameras more accurate.
 

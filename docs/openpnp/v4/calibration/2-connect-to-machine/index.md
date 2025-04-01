@@ -1,4 +1,4 @@
-# Connect to Your LumenPnP V4 and Configure Bottom Camera ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=EwPYDBEEKK8miH29&t=31))
+# Connect to Your LumenPnP V4 and Configure Bottom Camera
 
 **Now that OpenPnP is installed and the LumenPnP configuration files have been placed in the hidden system folder, OpenPnP can start with some basic preconfigured settings. The next step is to connect your LumenPnP and get familiar with OpenPnP’s user interface.**.
 
@@ -181,9 +181,9 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
         We use the "**Ruler**" Reticle in the following steps. If you prefer a different **reticle style** to be in the center of the camera feed, right-click the **camera feed** to change the **Reticle style**. Choose "**Ruler**" to match our docs photos best.<br/><br/>
         ![Different reticles](images/Switch-reticle-type.webp)
 
-1. **🚨 Remove Lens Caps 🚨**
-    * ⚠️ Ensure both the **top and bottom cameras** have their lens caps removed.<br/><br/>
-     ![Lens cap locations](images/19-temp-photo-remove-lens-caps.webp)
+1. **🚨 Remove the Top Camera Lens Cap 🚨**
+    * ⚠️ Ensure the **top camera** has its lens caps removed.<br/><br/>
+     ![Lens cap locations](images/19-remove-top-cam-lens-cap.webp)
 <br/><br/>
 
 1. **Navigate to the Bottom Camera's Device Settings tab in OpenPnP**
@@ -242,10 +242,11 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
      ![Align over center of bottom camera](images/30-align-over-center-of-bottom-camera-gif.gif)<br/><br/>
     * Right click on the bottom camera's feed and select `Show Image Info?` to enable the image info card. This will give you the brightness histogram of the image.<br/><br/>
      ![enable the image histogram](images/31-show-histograph-gif.gif)<br/><br/>
+    * Use the histogram as a general guide rather than a precise measurement—it’s a helpful tool but not exact. For the best results, refer to the comparison photos below, which show examples of 'too bright,' 'too dark,' and 'good exposure' to help you fine-tune your settings after using the histogram.
     * In the next step, we'll be aiming for a **sharp peak on the right side** and a larger **cluster to the left** in the histogram. See the image below for reference.<br/><br/>
      ![a good histogram](images/32-good-exposure-with-histogram.webp)<br/><br/>
     !!! Warning "🚨 Important 🚨"
-        The reference image below is just an example—**your histogram may look very different** depending on lighting conditions, camera placement, and other environmental factors. **Do not try to match it exactly.** Instead, focus on achieving the key characteristics: a distinct peak on the right and a noticeable cluster to the left. Adjust gradually until the image is clear and well-exposed.
+        The reference image above is just an example—**your histogram may look very different** depending on lighting conditions, camera placement, and other environmental factors. **Do not try to match it exactly.** Instead, focus on achieving the key characteristics: a distinct peak on the right and a noticeable cluster, or peak, to the left. Adjust gradually until the image is clear and well-exposed.
 
 1. **Set the Correct Exposure**.
     * Adjust the exposure slider, or enter varying manual exposure values, to ensure the camera can clearly detect the dark hole in the nozzle tip for calibration. The exposure should be balanced—bright enough to distinguish the nozzle tip from the background but not so bright that the hole becomes difficult to detect. Aim for a setting where the brightest areas are visible but do not appear completely white, and the darker areas remain well-defined. Use the following images as a reference for adjusting exposure:<br/><br/>
