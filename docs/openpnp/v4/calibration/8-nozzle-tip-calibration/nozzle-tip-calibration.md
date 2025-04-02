@@ -1,25 +1,23 @@
----
-title: "Nozzle Tip Runout Compensation"
-linkTitle: "Nozzle Tip Runout Compensation"
-weight: 60
-type: docs
-description: >
-  Calibrating the runout on the nozzle tips, which is the amount of variance it has as it rotates the nozzle.
-
----
-
 # Nozzle Tip Runout Compensation ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=FHauQ0aEZQaOBkxV&t=1661))
 
-Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts when the nozzle rotates. This shift is detected using the bottom camera. The compensation algorithm adjusts for any misalignment, ensuring more accurate placement. This process eliminates errors caused by runout, which can occur from either the nozzle tip or the nozzle itself. The calibration system automatically compensates for any combination of these factors. This section will be walking you through calibrating both nozzles.
+Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts when the nozzle rotates. This shift is detected using the bottom camera. The compensation algorithm adjusts for any misalignment, ensuring more accurate placement. This process eliminates errors caused by runout, which can occur from either the nozzle tip or the nozzle itself. The calibration system automatically compensates for any combination of these factors. This section will be walking you through calibrating the `N045` and `N24` Nozzle Tips.<br/><br/>
+
+**To better visualize what nozzle tip runout is and how the compensation helps, here is an example**:
+
+* **Without** Compensation:<br/><br/>
+     ![Without Runout Comp](images/without-runout-comp.gif)<br/><br/>
+* **With** Compensation: <br/><br/>
+     ![With Runout Comp](images/with-runout-comp.gif)
 
 !!! note
-    Runout can originate from either the nozzle tip or the nozzle it is attached to. The calibration system automatically handles both.
+    Runout can originate from either the nozzle tip or the nozzle it is attached to. The calibration system automatically handles both. 
+<br/><br>
 
 ---
 
 ## Nozzle Tip Runout Compensation for Nozzle: N1 (left toolhead)
 
-!!! note "Important: Read this if you're continuing from the previous steps."  
+!!! note "🚨Important!🚨 Read this if you're continuing from the previous steps."  
     If you have just completed the previous steps, Nozzle: N1 should already be centered over the bottom camera. **Do not move it.** Skip to step 4 to continue.  
 
 1. **Select Nozzle: N1**.
