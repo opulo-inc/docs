@@ -15,6 +15,8 @@ You've picked a version number, so you can go to that release and download all t
 
 Details about what to print can all be found in the Bill of Materials for your version. This is also downloadable from your version's release. The BoM is a standalone webpage (just double click the HTML file to open it in a browser) that tells you everything you need to build a machine, including what color or material to 3D print all the files in, along with a render of the part. Use this for reference on what filament to use when printing.
 
+In general, most parts are intended to be printed in PLA. Folks have printed a Lumen in ABS, PETG, SLA resin, and even SLS nylon. All have their tradeoffs, but we've found we get the best performance from PLA. Note that the `dynamic-board-mount` is the only part in the BoM that *requires* PETG for its flexibility.
+
 ## Slicer Settings
 
 This varies wildly across printer, material, environment, etc. but good rules of thumb are:
@@ -22,6 +24,6 @@ This varies wildly across printer, material, environment, etc. but good rules of
 - 4 shells
 - At least 20% infill, triangular or hexagonal
 - Support mostly not needed, but can be helpful
-- Brims on large flat parts, but mostly not necessary
+- 0.2 mm layer height
 
 ### [Let's start the build ➡️](../2-ohai/)

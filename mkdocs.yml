@@ -186,6 +186,10 @@ nav:
         - Collecting OpenPnP Logs: guides/openpnp-logs/index.md
         - Find Your OpenPnP Version: guides/get-openpnp-version/index.md
         - Extracting Your Config Files: guides/extracting-your-config-files/index.md
+        - DIY Build (WIP): 
+            - Introduction: guides/diy-v4/index.md
+            - Printing Parts: guides/diy-v4/1-printing/index.md
+            - Following OHAI: guides/diy-v4/2-ohai/index.md
 
     - Misc:
         - Machine Versions: misc/versions/index.md

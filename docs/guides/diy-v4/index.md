@@ -1,8 +1,8 @@
 # Introduction
 
-Welcome to the v4 LumenPnP Scratch-Build Guide!
+Welcome to the v4 LumenPnP DIY Build Guide!
 
-!!! danger "SCRATCH BUILD ONLY"
+!!! danger "DIY BUILD ONLY"
     This page is just for folks **building a LumenPnP from scratch or upgrading your machine!** If you bought a LumenPnP from Opulo's website, instead go to the [regular docs](/semi-assembly-4-0/).
 
 This guide is for folks that are interested in 1) building a LumenPnP from source, or 2) bought a parts or upgrade kit from Opulo.
@@ -52,21 +52,19 @@ If you're upgrading your v3.1 or v3.2 LumenPnP to v4, you'll first have to fully
 
 For everything else, please find a place to recycle or use for a new project!
 
-This guide assumes you bought the [upgrade kit](https://www.opulo.io/products/lumenpnp-parts-kit?variant=46268670935227) from Opulo.
+Below is a tentative list of what you'll need for the upgrade, before Opulo has an official upgrade kit for sale:
 
-kit contains:
-
-- drag chain kit
-- control box
-- fastener kit bag
-- camera kit (no cables)
-- z limit and xy limit
-- frame cable harness set
-- feeder cable blade adapter
+- [v4 Drag Chain Kit](https://www.opulo.io/products/lumenpnp-drag-chain-assembly-kit)
+- [Control Box](https://www.opulo.io/products/lumenpnp-control-box)
+- [v4 Fastener Kit](https://www.opulo.io/products/lumenpnp-v4-diy-fastener-kit)
+- [v4 Camera Kit (no cables)](https://www.opulo.io/products/lumenpnp-v4-camera-set?variant=46315988746427)
+- [v4 Endstop Set](https://www.opulo.io/products/lumenpnp-endstop-set)
+- [v4 Frame Cable Harness Set](https://www.opulo.io/products/lumenpnp-frame-cable-harness-set)
+- [Feeder Cable Adapter (lets you use your v3 feeder slots with the v4 control box)](https://www.opulo.io/products/feeder-cable-adapter)
 
 ## Where this guide ends
 
-Upon completing this guide, you'll have what arrives in a box from Opulo when folks purchase a LumenPnP v4. After completing this guide, move on to [the normal assembly process](/semi-assembly-4-0/) to put all the main parts of the machine together.
+Upon completing this guide, you'll have very close to what arrives in a box from Opulo when you purchase a LumenPnP v4. After completing this guide, move on to [the normal assembly process](/semi-assembly-4-0/) to put all the main parts of the machine together.
 
 ## Resources
 

@@ -11,8 +11,8 @@ Follow the OHAI instructions for assembling the X Gantry:
 - All torque spec references
     - If you have a torque driver, it's great to use the spec recommended, but you should also be just fine tightening things down very well in general.
 - Check `top-camera` focus
-    - You can skip this step. We focus every camera before shipping them out, and you can fine tune the actual focus on the machine after it's been assembled
-    - v4 cameras also do not have a screw for focusing, there's a locking grease used to hold the focus, so you can just turn the lens with a bit of force
+    - You can skip this step. We focus every camera before shipping them out, and you can fine tune the actual focus on the machine after it's been assembled.
+    - v4 cameras also do not have a screw for focusing, there's a locking grease used to hold the focus, so you can just turn the lens with a bit of force.
 - Prepare NEMA-17-stepper-motor for x-linear-axis
     - Don't bother with the jig; it's approximately 10mm between the pulley and the motor front face, and it's easy to adjust the pulley position after you have the belt run and tensioned as well.
     - Don't worry about the torque spec either; it's good to have one, but tightening it down really well (without stripping) will also work alright.
@@ -21,9 +21,9 @@ Follow the OHAI instructions for assembling the X Gantry:
 - Install linear-rail-525mm
     - The spacing jig is not necessary; a visual check of the rail being centered is plenty.
 - Prepare NEMA-17-stepper-motor for z-axis
-    - similar as the instructions for the X gantry pulley: just mount it on with a small gap, and adjust the precise position when you can visually align it with the opposite pulley
+    - Similar to the instructions for the X gantry pulley: just mount it on with a small gap, and adjust the precise position when you can visually align it with the opposite pulley
 - Install toolhead components
-    - The jig for tightening the nozzle and rotary coupler on is not necessary. Two wrenches can get the job done easily.
+    - The jig for tightening the nozzle and rotary coupler to the stepper motor is not necessary. Two wrenches can get the job done easily.
 - Gundam test x-gantry
     - Ignore this step. This is an automated QC check we perform on the line, but you'll be able to test these things after your machine is fully assembled.
 
@@ -43,7 +43,7 @@ Follow the OHAI instructions for assembling the left and right Y Gantries.
 - Arbor press operations
     - An awl or screwdriver along with a few gentle taps with a mallet is helpful for setting nuts into prints, no arbor press needed.
 - Prepare y-gantry stepper motor
-    - similar as the instructions for the X gantry pulley: just mount it on with a small gap, and adjust the precise position when you can visually align it with the belt path through the extrusion after assembly
+    - Similar to the instructions for the X gantry pulley: just mount it on with a small gap, and adjust the precise position when you can visually align it with the belt path through the extrusion after assembly
 - Install linear-rail-550mm
     - The spacing jig is not necessary; a visual check of the rail being centered is plenty.
 
@@ -53,7 +53,7 @@ Follow the OHAI instructions for assembling the left and right Y Gantries.
 Follow the OHAI instructions for assembling the front and back feeder rails.
 
 !!! warning "v3.1/v3.2 Upgrade"
-    You don't need to do this step at all if you're upgrading, but you should attach the `feeder cable adapter` to your original feeder cable harness so it can plug into your new motherboard!
+    You don't need to do this step at all if you're upgrading, but you should attach the Feeder Cable Adapter to your original feeder cable harness so it can plug into your new motherboard!
 
 ### [OHAI Feeder Rail Assembly Instructions](https://ohai.opulo.io/lumen/feeder-rail/)
 
