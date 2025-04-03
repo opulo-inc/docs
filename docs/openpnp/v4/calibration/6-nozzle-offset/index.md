@@ -1,14 +1,4 @@
----
-title: "Top Camera to Nozzle Offset Calibration"
-linkTitle: "Nozzle Offset Calibration"
-weight: 60
-type: docs
-description: >
-  Calibrating the offset of the nozzle from the top camera
-
----
-
-# Top Camera to Nozzle Offset ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=wUI5YeJmyOG8ii4G&t=1375))
+# Top Camera to Nozzle Offset
 
 Calibrating the nozzle offset ensures precise alignment between the nozzle tips and the top camera. This process involves capturing the exact position of the nozzle tip and aligning the top camera to the same reference point. The calibration is essential for accurate component placement and must be performed carefully.
 
@@ -92,9 +82,11 @@ For these steps, you should be in the `Machine Setup` tab.
 
 For these steps, you should already be in the `Machine Setup` tab.
 
-!!! Note
-    Use the `P` between the Z-axis up/down arrows to ensure the nozzle tips are out of the way. The `P` stands for **Parking** the nozzle out of the way into a safe height that won’t collide with any objects. If nothing happens after you click the `P` button, that means the nozzles are at a safe height already.
-         ![Level the nozzles](../2-connect-to-machine/images/level-nozzles-gif.gif)
+!!! danger "🚨 Critical Warning: Level Nozzles 🚨"
+    ⚠️ **You must ensure that your nozzles are level**.<br/><br/>
+    **Failure to do this can cause crashes and potentially damage your machine.**<br/><br/>
+    Use the `P` between the Z-axis up/down arrows to ensure the nozzle tips are out of the way. The `P` stands for **Parking** the nozzle out of the way into a safe height that won’t collide with any objects.<br/><br/>
+      ![level nozzles](../2-connect-to-machine/images/level-nozzles-gif.gif)
 
 1. **Confirm the correct nozzle is installed**.
     * Confirm that the `N24` nozzle tip is still securely attached to **Nozzle: N2 (right toolhead)**.<br/><br/>

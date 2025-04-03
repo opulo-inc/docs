@@ -125,6 +125,11 @@ Follow these steps in order:
         ⚠️ **Failure to do this can cause crashes and potentially damage your machine.**<br/><br/>
         OpenPnP **does not** remember the previous nozzle positions from the last homing sequence, meaning it **cannot adjust movements based on past alignment**. If the nozzles are not level before homing, they may collide with the machine, leading to misalignment or serious hardware damage.
          ![level nozzles](../2-connect-to-machine/images/level-nozzles-gif.gif)
+    !!! Note
+        Use the `P` between the Z-axis up/down arrows located in Machine Controls toward the bottom right of OpenPnP. This ensures the nozzle tips are out of the way.<br/><br?> 
+        The `P` stands for **Parking** the nozzle out of the way into a safe height that won’t collide with any objects. If nothing happens after you click the `P` button, that means the nozzles are at a safe height already.
+    !!! Note "Nozzles not level after parking."
+        The nozzles may not be level when clicking the “**Park**” button, which is okay. The nozzle only moves to the point that it reaches the “safe zone” and then stops.
 <br/><br/>
 
 1. Click the **Home button** to perform a rough homing sequence.
@@ -253,6 +258,7 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
      ![exposure too high](images/33-exposure-too-high.webp)<br/><br/>
      ![exposure too low](images/34-exposure-too-low.webp)<br/><br/>
      ![exposure correct](images/35-good-exposure.webp)<br/><br/>
+    * Close the Histogram window when you are done with it. 
 
     !!! caution "Not seeing anything in the bottom camera feed?"
         If you are not seeing anything after adjusting the bottom camera exposure, ensure the lens caps on the bottom camera has been removed.

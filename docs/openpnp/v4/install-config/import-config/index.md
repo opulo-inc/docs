@@ -1,14 +1,4 @@
----
-title: "Importing V4 Config Files"
-linkTitle: "Importing V4 Config Files"
-weight: 1
-type: docs
-description: >
-  Install the correct version of OpenPNP and import into OpenPnP the LumenPnP config files
-
----
-
-# Importing V4 Configuration Files ([Video Guide](https://youtu.be/DUt_FHVjnwY?si=TI5k7xmZR0c6S1o4&t=236))
+# Importing V4 Configuration Files
 
 **To properly use OpenPnP with the LumenPnP V4**, you need to configure the software with your machine's specifications, such as size, camera setup, and other essential settings. To simplify this, we provide a set of pre-configured files. Follow the steps below to import them correctly.
 

@@ -1,21 +1,10 @@
 ![](img/lumenpnp-v4-docs-logo.webp)
 
-# OpenPnP Install ([Video Guide](https://youtu.be/DUt_FHVjnwY?si=ELaEfcwpfC9QmYKF&t=44))
+# OpenPnP Install
 
 OpenPnP is open-source software designed to control pick and place machines. It supports a wide range of machines, with many features found in high-end commercial software. You can find out more about it [here](https://openpnp.org/).
 
 ![OpenPnP Logo](img/openpnp-logo.webp)
-
----
-
-## Tutorial Video
-
-This video walks you through the process of installing OpenPnP and importing your configuration files. Each page in this section has a link to the relevant timestamp of the video.
-
-<!-- markdownlint-disable MD033 -->
-<div class="video-wrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DUt_FHVjnwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 ---
 

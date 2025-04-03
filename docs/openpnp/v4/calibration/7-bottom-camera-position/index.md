@@ -1,15 +1,4 @@
----
-title: "Bottom Camera Position Calibration"
-linkTitle: "Bottom Camera Position Calibration"
-weight: 60
-type: docs
-description: >
-  Calibrating the offset of the nozzle from the bottom camera.
-
----
-
-
-# Bottom Camera Position ([Video Guide](https://youtu.be/h3mtEQfGMlM?si=uyDBUttihPh80EQv&t=1580))
+# Bottom Camera Position
 
 ---
 
