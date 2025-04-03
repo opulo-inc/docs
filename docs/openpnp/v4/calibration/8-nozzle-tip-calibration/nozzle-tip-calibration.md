@@ -127,6 +127,7 @@ Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts whe
     * Level the nozzles to prevent collisions before homing.
     * Perform a homing of the LumenPnP to ensure that fiducial detection and nozzle tip calibration finish successfully for the `N1` and `N2` nozzles without errors.
     * The homing sequence will first scan the homing fiducial, then proceed to scan and calibrate both nozzle tips.
+      ![full homing sequence](images/16-full-homing-sequence-openpnp.gif)
 <br/><br/>
 
 1. **Record Final Exposure Settings for Nozzle: N2**.

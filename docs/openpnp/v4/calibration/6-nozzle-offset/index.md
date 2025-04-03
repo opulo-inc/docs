@@ -24,7 +24,7 @@ For these steps, you should be in the `Machine Setup` tab.
     ⚠️ **You must ensure that your nozzles are level**.<br/><br/>
     **Failure to do this can cause crashes and potentially damage your machine.**<br/><br/>
     Use the `P` between the Z-axis up/down arrows to ensure the nozzle tips are out of the way. The `P` stands for **Parking** the nozzle out of the way into a safe height that won’t collide with any objects.<br/><br/>
-      ![level nozzles]((../2-connect-to-machine/images/level-nozzles-gif.gif))
+      ![level nozzles](../2-connect-to-machine/images/level-nozzles-gif.gif)
 
 1. **Select the correct nozzle to control**.
     * In the bottom left of OpenPnP, select `Nozzle: N1 - N045 (Head:H1)` from the **machine controls** dropdown. This ensures that movements and adjustments apply to the **left** nozzle equipped with the `N045` nozzle tip.<br/><br/>
@@ -99,7 +99,7 @@ For these steps, you should already be in the `Machine Setup` tab.
 1. **Confirm the correct nozzle is installed**.
     * Confirm that the `N24` nozzle tip is still securely attached to **Nozzle: N2 (right toolhead)**.<br/><br/>
 
-2. **Select the correct nozzle to control**.
+1. **Select the correct nozzle to control**.
     * In the bottom left of OpenPnP, select `Nozzle: N2 - N24 (Head:H2)` from the **machine controls** dropdown. This ensures that movements and adjustments apply to the **right** nozzle equipped with the `N24` nozzle tip.<br/><br/>
      ![Select nozzle from machine control dropdown](images/09-select-nozzle-n2-offset.webp)
 <br/><br/>
@@ -120,9 +120,9 @@ For these steps, you should already be in the `Machine Setup` tab.
 <br/><br/>
 
 1. **Position the nozzle over the homing fiducial**.
-    * Jog Nozzle: N2 (right toolhead) so that it *barely* touches the datum board and is perfectly centered over the golden homing fiducial. **Avoid collisions while jogging the nozzle tip**.<br/><br/>
-    * This nozzle tip is larger than the last one, which is okay. We will use the circle just outside of the golden homing fiducial to determine if you've centered it correctly. Accuracy here is crucial to achieving precise placements, so please take your time with this and ensure it is dead center.<br/><br/>
-     ![Nozzle touching the homing fiducial](images/13-nozzle-n2-centered-and-touching-homing-fid.webp)
+    * Jog Nozzle: N2 (right toolhead) so that it is perfectly centered over the homing fiducial, while *barely* touching the datum board. **Avoid collisions while jogging the nozzle tip**.<br><br/>
+     ![Nozzle touching the homing fiducial](images/13-nozzle-n2-centered-and-touching-homing-fid.webp)<br><br/>
+    * This nozzle tip is larger than the last one, which is okay. We will use the circle just outside of the homing fiducial to determine if you've centered it correctly. Please take your time with this and ensure it is dead center.
 <br/><br/>
 
 1. **Capture the Nozzle: N2’s position**.
