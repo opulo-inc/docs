@@ -124,7 +124,7 @@ Follow these steps in order:
         **Before pressing the homing button**—now and every time in the future—**you must ensure that your nozzles are level**.<br/><br/>
         ⚠️ **Failure to do this can cause crashes and potentially damage your machine.**<br/><br/>
         OpenPnP **does not** remember the previous nozzle positions from the last homing sequence, meaning it **cannot adjust movements based on past alignment**. If the nozzles are not level before homing, they may collide with the machine, leading to misalignment or serious hardware damage.
-      ![level nozzles](images/10-level-nozzles.webp)
+      ![level nozzles](images/level-nozzles-gif.gif))
 <br/><br/>
 
 1. Click the **Home button** to perform a rough homing sequence.

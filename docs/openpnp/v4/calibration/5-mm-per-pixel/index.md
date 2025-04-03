@@ -50,9 +50,9 @@ In this step, we will calibrate the mm/pixels for the **Top Camera**. This requi
     * Once you have it perfectly outlined, click the `Measure` button again to update the Units Per Pixel values.<br/><br/>
      ![Confirm the test](images/08-confirm-by-clicking-measure-again.webp)<br/><br/>
     * Click `Apply` in the lower right corner to save your changes.<br/><br/>
-     ![Apply the new settings](images/apply-button.webp)<br/><br/>
+     ![Apply the new settings](../2-connect-to-machine/images/apply-button.webp)<br/><br/>
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
-      ![Save your config now](images/save-config-small.webp)
+      ![Save your config now](../2-connect-to-machine/images/save-config.webp)
 <br/><br/>
 
 1. **Confirm Top Camera Calibration**.
@@ -116,9 +116,9 @@ The following steps will calibrate the mm/pixels for the **Bottom Camera**. This
     * Once you have it perfectly outlined, click the `Measure` button again to update the Units Per Pixel values.<br/><br/>
      ![Confirm by clicking the measure button again](images/19-confirm-by-clicking-apply-again.webp)<br/><br/>
     * Click `Apply` in the lower right corner to save your changes.<br/><br/>
-     ![Apply the new settings](images/apply-button.webp)<br/><br/>
+     ![Apply the new settings](../2-connect-to-machine/images/apply-button.webp)<br/><br/>
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
-      ![Save your config now](images/save-config-small.webp)
+      ![Save your config now](../2-connect-to-machine/images/save-config.webp)
 <br/><br/>
 
 1. **Confirm Bottom Camera Calibration**.

@@ -32,11 +32,11 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
 
 1. **Apply and Verify**
     * Click `Apply` to save the **Top Camera settings**. One of the red "X"s in the camera feed should disappear. The image might be entirely black, but we'll fix that in the following steps.<br/><br/>
-       ![Saving changes to the Top Camera Config](images/apply-button.webp)<br/><br/>
+       ![Saving changes to the Top Camera Config](../2-connect-to-machine/images/apply-button.webp)<br/><br/>
 
 1. **Save Your Configuration**
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
-       ![Save your config now](images/save-config-small.webp)
+       ![Save your config now](../2-connect-to-machine/images/save-config.webp)
 <br/><br/>
 
 ---
@@ -49,7 +49,7 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
         **Before pressing the homing button**—now and every time in the future—**you must ensure that your nozzles are level**.<br/><br/>
         ⚠️ **Failure to do this can cause crashes and potentially damage your machine.**<br/><br/>
         OpenPnP **does not** remember the previous nozzle positions from the last homing sequence, meaning it **cannot adjust movements based on past alignment**. If the nozzles are not level before homing, they may collide with the machine, leading to misalignment or serious hardware damage.
-       ![level nozzles](images/level-nozzles.webp)
+       ![level nozzles](../2-connect-to-machine/images/level-nozzles-gif.gif)
 <br/><br/>
 
 1. Click the **Home button** to perform a rough homing sequence.
@@ -71,9 +71,9 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
 
 1. Apply and Save
     * Click `Apply` in the lower right corner to save your changes.<br/><br/>
-       ![Apply Button](images/apply-button.webp)<br/><br/>
+       ![Apply Button](../2-connect-to-machine/images/apply-button.webp)<br/><br/>
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
-       ![saving the machine config](images/save-config-small.webp)<br/><br/>
+       ![saving the machine config](../2-connect-to-machine/images/save-config.webp)<br/><br/>
 
     !!! Warning "Caution"
           **DO NOT** click the **homing button** again until you have fine-tuned the homing fiducial location, as explained in the next section.
@@ -87,7 +87,7 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
 1. Ensure **LED lights** are still on:
     * Ensure your **Top and Bottom ring lights** are still set to `On`. If not, go back to the **Machine Controls** in the bottom-left section of OpenPnP and go to `Actuators tab > LED > On` and close the actuator window.<br/><br/>
 
-1. Navigate to `Machine Setup > Heads > ReferenceHead H1 > Cameras > OpenPnPCaptureCamera Top`.<br/><br/>
+2. Navigate to `Machine Setup > Heads > ReferenceHead H1 > Cameras > OpenPnPCaptureCamera Top`.<br/><br/>
        ![Finding the Top Camera Settings](images/12-navigate-back-to-top-cam.webp)
 <br/><br/>
 
@@ -97,13 +97,13 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
 
 1. Located the `Exposure` slider and **check** the check box labeled `Auto`. The camera will attempt to find the correct exposure.
 
-1. Then, **uncheck** the `Auto` box to ensure we are now in "**manual adjustment**" mode.<br/><br/>
+2. Then, **uncheck** the `Auto` box to ensure we are now in "**manual adjustment**" mode.<br/><br/>
        ![Auto Exposure ON and OFF](images/14-turn-auto-exposure-on-and-off-gif.gif)<br/><br/>
 
-1. If the image is still difficult to see, slightly adjust the exposure until the datum board is easily visible. This will be fine-tuned after setting the homing fiducial location.
+3. If the image is still difficult to see, slightly adjust the exposure until the datum board is easily visible. This will be fine-tuned after setting the homing fiducial location.
     * 🚨 **Keep all other camera settings at their default value, and only adjust the exposure slider**.
 
-1. Return to the `Machine Controls` (bottom left of OpenPnP) so we can fine-tune the homing fiducial location.<br/><br/>
+4. Return to the `Machine Controls` (bottom left of OpenPnP) so we can fine-tune the homing fiducial location.<br/><br/>
        ![Switch to the jog tab](images/15-jog-tab.webp)
 <br/><br/>
 
@@ -122,9 +122,9 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
 
 2. **Apply and Save**
     * Click `Apply` in the lower right corner to save your changes.<br/><br/>
-       ![Apply Button](images/apply-button.webp)<br/><br/>
+       ![Apply Button](../2-connect-to-machine/images/apply-button.webp)<br/><br/>
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
-       ![saving the machine config](images/save-config-small.webp)<br/><br/>
+       ![saving the machine config](../2-connect-to-machine/images/save-config.webp)<br/><br/>
 <br/><br/>
 
 ---
@@ -172,9 +172,9 @@ We also detail this process in our [setup video](https://youtu.be/h3mtEQfGMlM?t=
 
 1. **Apply and Save**
     * Click `Apply` in the lower right corner to save your changes.<br/><br/>
-       ![Apply Button](images/apply-button.webp)<br/><br/>
+       ![Apply Button](../2-connect-to-machine/images/apply-button.webp)<br/><br/>
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
-       ![saving the machine config](images/save-config-small.webp)<br/><br/>
+       ![saving the machine config](../2-connect-to-machine/images/save-config.webp)<br/><br/>
 
 ---
 

@@ -24,7 +24,7 @@ For these steps, you should be in the `Machine Setup` tab.
     ⚠️ **You must ensure that your nozzles are level**.<br/><br/>
     **Failure to do this can cause crashes and potentially damage your machine.**<br/><br/>
     Use the `P` between the Z-axis up/down arrows to ensure the nozzle tips are out of the way. The `P` stands for **Parking** the nozzle out of the way into a safe height that won’t collide with any objects.<br/><br/>
-      ![level nozzles](../4-homing-fiducial/images/level-nozzles.webp)
+      ![level nozzles]((../2-connect-to-machine/images/level-nozzles-gif.gif))
 
 1. **Select the correct nozzle to control**.
     * In the bottom left of OpenPnP, select `Nozzle: N1 - N045 (Head:H1)` from the **machine controls** dropdown. This ensures that movements and adjustments apply to the **left** nozzle equipped with the `N045` nozzle tip.<br/><br/>
@@ -64,7 +64,7 @@ For these steps, you should be in the `Machine Setup` tab.
 
 1. **Raise Nozzle: N1 off the datum board**.
     * Click the letter `P` between the Z up/down arrows to “**Park**” the nozzle at a safe height. This prevents collisions when moving the top camera into position.<br/><br/>
-     ![Level the nozzles](images/level-nozzles-gif.gif)
+     ![Level the nozzles](../2-connect-to-machine/images/level-nozzles-gif.gif)
 
     !!! Note
         The nozzles may not be level when clicking the “**Park**” button, which is okay. The nozzle only moves to the point that it reaches the “safe zone” and then stops.
@@ -82,9 +82,9 @@ For these steps, you should be in the `Machine Setup` tab.
 
 1. **Apply and Save Nozzle offset**.
     * Click `Apply` in the lower right corner to store the calculated offset for the left N045 nozzle tip.<br/><br/>
-      ![click the apply button](images/apply-button.webp)<br/><br/>
+      ![click the apply button](../2-connect-to-machine/images/apply-button.webp)<br/><br/>
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
-      ![Save your config now](images/save-config-small.webp)<br/><br/>
+      ![Save your config now](../2-connect-to-machine/images/save-config.webp)<br/><br/>
 
 ---
 
@@ -94,7 +94,7 @@ For these steps, you should already be in the `Machine Setup` tab.
 
 !!! Note
     Use the `P` between the Z-axis up/down arrows to ensure the nozzle tips are out of the way. The `P` stands for **Parking** the nozzle out of the way into a safe height that won’t collide with any objects. If nothing happens after you click the `P` button, that means the nozzles are at a safe height already.
-         ![Level the nozzles](images/level-nozzles-gif.gif)
+         ![Level the nozzles](../2-connect-to-machine/images/level-nozzles-gif.gif)
 
 1. **Confirm the correct nozzle is installed**.
     * Confirm that the `N24` nozzle tip is still securely attached to **Nozzle: N2 (right toolhead)**.<br/><br/>
@@ -133,7 +133,7 @@ For these steps, you should already be in the `Machine Setup` tab.
 
 1. **Raise Nozzle: N2 off the datum board**.
     * Click the letter `P` between the Z up/down arrows to “**Park**” the nozzle at a safe height. This prevents collisions when moving the top camera into position.<br/><br/>
-     ![Level the nozzles](images/level-nozzles-gif.gif)
+     ![Level the nozzles](../2-connect-to-machine/images/level-nozzles-gif.gif)
 
     !!! Note
         The nozzles may not be level when clicking the “Park” button, which is okay. The nozzle only moves to the point that it reaches the “safe zone” and then stops.
@@ -151,9 +151,9 @@ For these steps, you should already be in the `Machine Setup` tab.
 
 1. **Apply and Save Nozzle offset**.
     * Click `Apply` in the lower right corner to store the calculated offset for the right N24 nozzle tip.<br/><br/>
-     ![click the apply button](images/apply-button.webp)<br/><br/>
+     ![click the apply button](../2-connect-to-machine/images/apply-button.webp)<br/><br/>
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
-      ![Save your config now](images/save-config-small.webp)<br/><br/>
+      ![Save your config now](../2-connect-to-machine/images/save-config.webp)<br/><br/>
 
 ---
 

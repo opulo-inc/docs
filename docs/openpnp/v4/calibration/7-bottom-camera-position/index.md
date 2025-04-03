@@ -52,9 +52,9 @@ Now that we have precise alignment between the nozzle tips and the top camera, w
 
 7. **Apply and Save the Captured Nozzle Position**
     * Click `Apply` in the lower right corner to save the bottom camera position in OpenPnP.<br/><br/>
-     ![Save the camera location](images/apply-button.webp)<br/><br/>
+     ![Save the camera location](../2-connect-to-machine/images/apply-button.webp)<br/><br/>
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
-      ![Save your config now](images/save-config-small.webp)<br/><br/>
+      ![Save your config now](../2-connect-to-machine/images/save-config.webp)<br/><br/>
 <br/><br/>
 
 ---
