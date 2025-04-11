@@ -66,17 +66,34 @@ Update your LumenPnP's motherboard using the [STM32CubeProgrammer](https://www.s
 
 10. The machine should show up as a COM/Serial Port on your PC now, and you should be able to access it via OpenPNP. If it doesn't, press the Reset button on the board again, or power-cycle the machine *after the flashing is completed*.
 
-## For Developers: PlatformIO
+## Compile Marlin (For Developers)
 
-1. Download the [latest Marlin firmware][marlin] and unzip it.
+As of this writing (April 2025) the LumenPnP dev team is waiting for an official 2.1.3 Marlin release. Because of how the configuration files are structured and updated with the project, we're building firmware out of a branch until the official release occurs. If you have questions about versions and compiling, please join the [LumenPnP Discord Server](https://discordapp.com/invite/TCwy6De) and we'll help you get it built correctly.
+
+### Environment Setup and Compiling
+
+1. Download the `rev05` branch in the `sphawes/Marlin` fork of Marlin, found [here](https://github.com/sphawes/Marlin/tree/rev05).
 2. Install [VSCode][vscode] and its [PlatformIO extension][pIO].
 3. Open Marlin firmware's folder in VSCode.
-4. Download the Marlin configuration files [here][marlin-config].
-5. Replace the files in the `Marlin/Marlin` folder from step #1 with the new configuration files from step #4.
-6. Edit the `platformio.ini` file to indicate which board you're uploading to. Update `default_envs` to read `Opulo_Lumen_REV3` or `Opulo_Lumen_REV4` depending on your motherboard.
-  ![editing platformio.ini](images/Screen Shot 2022-02-04 at 7.27.25 PM.webp)
-7. Attach the LumenPnP Motherboard to your computer with the included USB cable (USB C to A for Motherboard 3.0, or USB B to A for Motherboard 4.0).
-8. Boot your motherboard into DFU Mode
+
+    ![](images/base.webp)
+
+4. Replace the `Configuration.h` and `Configuration_adv.h` files in the `Marlin/Marlin` folder with config files of the same name in any of the config folders located in the `Marlin/Marlin` folder.
+5. Select the board you're compiling for. This can be selected by clicking the "env:???????? (marlin)" text in the bottom menu bar, typing the name of the board in the search bar, and clicking the board you want.
+
+    ![](images/click-env.webp)
+    ![](images/select-env.webp)
+
+6. Test compiling. this can be done by clicking the checkbox in the bottom icon menu.
+
+    ![](images/compile.webp)
+
+7. After you have Marlin compiling, begin making your edits. Many changes can be done in the `Configuration.h` and `Configuration_adv.h` files, especially for wide body mods, default acceleration and speeds, switching to endstops, and other basic config changes.
+
+### Uploading
+
+1. Attach the LumenPnP Motherboard to your computer with the included USB cable (USB C to A for Motherboard 3.0, or USB B to A for Motherboard 4.0).
+2. Boot your motherboard into DFU Mode
     1. Press and hold the `BOOT` button
     2. Press the `Reset` button and hold for 10 seconds
     3. Release the `Reset` button and wait for 10 seconds
@@ -86,22 +103,22 @@ Update your LumenPnP's motherboard using the [STM32CubeProgrammer](https://www.s
     !!! info "NOTE"
         If you have a hard time getting your board to enter DFU mode, instead try powering off the machine entirely, holding the 'BOOT' button, plugging in power, waiting 10 seconds, then release the `BOOT` button.
 
-9. Upload firmware to the board via PlatformIO:
+3. Upload firmware to the board.
+    1. via PlatformIO:
 
-    ![Upload button in PlatformIO](images/vscode_marlin_env.webp)
+        ![Upload button in PlatformIO](images/vscode_marlin_env.webp)
 
-    !!! Note
-        You can also flash using the `dfu-util` command line utility:
+    1. via `dfu-util` command line utility. PlatformIO puts the built binary in `Marlin/.pio/build/BOARD_NAME/firmware.bin`.
 
         ```shell
         dfu-util -d 0x0483:0xdf11 -s 0x08000000:leave -a 0 -D ~/path/to/firmware.bin
         ```
 
-10. Wait for the process to finish:
+    1. via STM32CubeProgrammer (process shown above)
 
-    ![Terminal Output for uploading](images/PIO_upload_done.webp)
+4. When finished, press the reset button on the motherboard to boot the new firmware.
 
-11. The machine should show up as a COM/Serial Port on your PC now, and you should be able to access it via OpenPNP. If it doesn't, press the Reset button on the board, or power-cycle the machine *after the flashing is completed*.
+5. The machine should show up as a COM/Serial Port on your PC now, and you should be able to access it via OpenPNP. If it doesn't, press the Reset button on the board, or power-cycle the machine *after the flashing is completed*.
 
 ## Troubleshooting
 
