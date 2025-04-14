@@ -25,7 +25,7 @@ Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts whe
 
 1. **Select Nozzle: N1**.
     * If `Nozzle: N1` is already centered over the bottom camera, switch to the bottom camera's `Device Settings` tab and skip to `Step 4`.
-    * From the `Machine Controls` dropdown, select `Nozzle: N1 - N045 (Head:H1)`.
+    * From the `Machine Controls` dropdown, select `Nozzle: N1 - N045 (Head:H1)`.<br/><br/>
      ![Select Nozzle: N1 from Machine Controls](../6-nozzle-offset/images/01-seleect-nozzle-n1-from-machine-controls.webp)
 <br/><br/>
 
@@ -35,7 +35,7 @@ Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts whe
 <br/><br/>
 
 1. **Position Nozzle: N1 over the Bottom Camera**.
-    * Open the **"Position"** tab, then click the `Position the tool over the center of the location` button.
+    * Open the **"Position"** tab, then click the `Position the tool over the center of the location` button.<br/><br/>
      ![click the button that positions the toolhead over the bottom camera](images/04-click-position-toolhead-over-bottom-cam.webp)
 <br/><br/>
 
@@ -80,7 +80,7 @@ Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts whe
 <br/><br/>
 
 1. **Position Nozzle: N2 over the Bottom Camera**.
-    * Open the **"Position"** tab, then click the `Position the tool over the center of the location` button.
+    * Open the **"Position"** tab, then click the `Position the tool over the center of the location` button.<br/><br/>
      ![Switching to the Position tab](images/11-click-the-position-nozzle-over-bottom-cam-button.webp)
 <br/><br/>
 
@@ -126,7 +126,7 @@ Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts whe
 1. **Home the LumenPnP**.
     * Level the nozzles to prevent collisions before homing.
     * Perform a homing of the LumenPnP to ensure that fiducial detection and nozzle tip calibration finish successfully for the `N1` and `N2` nozzles without errors.
-    * The homing sequence will first scan the homing fiducial, then proceed to scan and calibrate both nozzle tips.
+    * The homing sequence will first scan the homing fiducial, then proceed to scan and calibrate both nozzle tips.<br/><br/>
       ![full homing sequence](images/16-full-homing-sequence-openpnp.gif)
 <br/><br/>
 

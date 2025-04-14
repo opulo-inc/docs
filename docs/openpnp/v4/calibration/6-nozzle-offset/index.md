@@ -119,7 +119,7 @@ For these steps, you should already be in the `Machine Setup` tab.
 
 1. **Capture the Nozzle: N2’s position**.
     * Click the `Store nozzle mark position` button within the **Offset Wizard** tab to capture Nozzle: N2's location for calibration purposes.
-    * Do not navigate away from the **Offset Wizard tab** while you go through the following steps to capture the nozzle offset.
+    * Do not navigate away from the **Offset Wizard tab** while you go through the following steps to capture the nozzle offset.<br/><br/>
      ![Store Nozzle: N2's position](images/14-store-nozzle-n2-mark-position.webp)
 <br/><br/>
 
@@ -155,6 +155,8 @@ For these steps, you should already be in the `Machine Setup` tab.
 !!! info "Further Adjustment"
     If you find that your placement accuracy is slightly incorrect after performing this calibration, you can fine-tune your part placement by adjusting the X and Y offsets in the relevant nozzle settings, as shown below.
     ![nozzle offsets](images/17-manually-adjust-nozzle-offset.webp)
+
+---
 
 ## Next Steps
 

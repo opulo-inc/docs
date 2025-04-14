@@ -61,7 +61,8 @@ The first step in starting the FTP PCB is physically mounting the FTP PCB onto t
 1. **Set Part Height**.
     * We need to tell OpenPnP how tall the part is so it can take that into consideration when picking that part.
     * In the `Parts` tab, find `R_0603_1608_Metric-R_Small`.
-    * Find the `Height` column and change the height value from `0.0` to `0.5`mm by double-clicking the cell. <br/><br/>
+    * Find the `Height` column and change the height value from `0.0` to `0.5`mm by double-clicking the cell.
+    * Failing to set a part height will cause an error to pop up when trying to pick a part, so ensure you apply and save your changes after you are done. <br/><br/>
      ![Set the part height](images/set-height.webp)
 <br/><br/>
 
@@ -77,7 +78,7 @@ The first step in starting the FTP PCB is physically mounting the FTP PCB onto t
 
 1. **Select the correct nozzle to control**.
     * In the bottom left of OpenPnP, select `Nozzle: N1 - N045 (Head:H1)` from the **machine controls** dropdown.<br/><br/>
-     ![Select nozzle: N1 from machine control dropdown](images/select-n1-machine-control.webp)
+     ![Select nozzle: N1 from machine control dropdown](../../calibration/2-connect-to-machine/images/24-select-nozzle-n1.webp)
 <br/><br/>
 
 1. **Lubricate the brass Nozzle: N1**.
@@ -95,7 +96,7 @@ The first step in starting the FTP PCB is physically mounting the FTP PCB onto t
      ![Load Nozzle N045](images/Load-nozzle-n045.webp)<br/><br/>
     * **Your machine will jog the head to the front of the machine** for easy tip loading.
     * Slide the **N045 nozzle tip** onto the **left nozzle** (red tubing). Rotate the nozzle tip as you mount it to the brass nozzle to evenly distribute the lubricant around the O-rings. It should slide on and off smoothly after working it in.<br/><br/>
-     ![Install the N045 nozzle](images/Install-nozzle-nozzle.webp)
+     ![Install the N045 nozzle](../../calibration/2-connect-to-machine/images/16-n045-nozzle-installed-gif.gif)
 <br/><br/>
 
 1. **Assign the Nozzle Tip to Parts**.
@@ -105,9 +106,9 @@ The first step in starting the FTP PCB is physically mounting the FTP PCB onto t
     * In the lower-right pane, you'll be in the `Nozzle Tips` tab. Click the `Compatible` on the `N045` row.<br/><br/>
      ![Mark compatible with N045 nozzle](images/Select-led-nozzle-tips.webp)<br/><br/>
 
-1. **Save Your Configuration**
+2. **Save Your Configuration**
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
-      ![Save your config now](images/save-config-small.webp)<br/><br/>
+      ![Save your config now](../../calibration/2-connect-to-machine/images/save-config.webp)<br/><br/>
 
 ---
 

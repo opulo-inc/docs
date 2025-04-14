@@ -214,6 +214,8 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
      ![Saving changes to the Bottom Camera Config](images/23-apply-and-save-bottom-cam-settings-gif.gif)
 <br/><br/>
 
+---
+
 ## Adjust Bottom Camera Exposure
 
 !!! warning "Other Camera Settings"
@@ -258,7 +260,7 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
      ![exposure too high](images/33-exposure-too-high.webp)<br/><br/>
      ![exposure too low](images/34-exposure-too-low.webp)<br/><br/>
      ![exposure correct](images/35-good-exposure.webp)<br/><br/>
-    * Close the Histogram window when you are done with it. 
+    * Close the Histogram window when you are done with it.
 
     !!! caution "Not seeing anything in the bottom camera feed?"
         If you are not seeing anything after adjusting the bottom camera exposure, ensure the lens caps on the bottom camera has been removed.

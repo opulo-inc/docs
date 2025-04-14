@@ -43,11 +43,13 @@ This calibration uses a specific pattern of dots to correct for any fisheye effe
 8. Confirm that the `Apply Calibration?` checkbox is enabled after calibration is complete.<br/><br/>
   ![the apply calibration checkbox is checked](images/apply-calibration-is-checked.webp)<br/><br/>
 
+---
+
 ## Top Camera Calibration
 
 1. Again, navigate to the `Machine Setup` tab.
 
-2. Again, click the "Expand" checkbox if necessary.
+2. Click the "Expand" checkbox if necessary.
 
 3. Navigate to `Heads > ReferenceHead H1 > Cameras > OpenPnPCaptureCamera Top`.<br/><br/>
   ![Finding the Top Camera Settings](images/top-camera-config.webp)<br/><br/>

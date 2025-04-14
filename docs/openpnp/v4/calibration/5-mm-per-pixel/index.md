@@ -2,6 +2,8 @@
 
 This next step calibrates the relationship between pixels and millimeters to make our cameras more accurate.
 
+---
+
 ## Top Camera Calibration
 
 In this step, we will calibrate the mm/pixels for the **Top Camera**. This requires us to set the dimensions and use a virtual bounding box to outline and measure one of the squares on the datum board, known as a golden guideline square. This allows us to calibrate the **top camera’s Units per pixel**, giving us accurate top camera movement.
