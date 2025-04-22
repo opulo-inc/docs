@@ -1,5 +1,7 @@
 # Connect to Your LumenPnP V4 and Configure Bottom Camera
 
+![](../images/lumenpnp-v4-docs-logo-small.png)
+
 **Now that OpenPnP is installed and the LumenPnP configuration files have been placed in the hidden system folder, OpenPnP can start with some basic preconfigured settings. The next step is to connect your LumenPnP and get familiar with OpenPnP’s user interface.**.
 
 **Then, we will install the N045 and N24 nozzle tips to help us with calibration**.
@@ -98,7 +100,7 @@ Follow these steps in order:
 
 1. **Confirm Connection**
     * If successful, the green **power button will turn red**. This means OpenPnP has successfully connected to your machine.<br/><br/>
-    * If unsuccessful,review your [Serial Port Connection](#serial-port-configuration).
+    * If unsuccessful,review your [Serial Port Connection](#configuration-the-serial-port).
 <br/><br/>
 
 1. **Turn On Ring Lights**
@@ -124,7 +126,7 @@ Follow these steps in order:
         **Before pressing the homing button**—now and every time in the future—**you must ensure that your nozzles are level**.<br/><br/>
         ⚠️ **Failure to do this can cause crashes and potentially damage your machine.**<br/><br/>
         OpenPnP **does not** remember the previous nozzle positions from the last homing sequence, meaning it **cannot adjust movements based on past alignment**. If the nozzles are not level before homing, they may collide with the machine, leading to misalignment or serious hardware damage.
-         ![level nozzles](../2-connect-to-machine/images/level-nozzles-gif.gif)
+         ![level nozzles](images/level-nozzles-gif.gif)
     !!! Note
         Use the `P` between the Z-axis up/down arrows located in Machine Controls toward the bottom right of OpenPnP. This ensures the nozzle tips are out of the way.<br/><br?> 
         The `P` stands for **Parking** the nozzle out of the way into a safe height that won’t collide with any objects. If nothing happens after you click the `P` button, that means the nozzles are at a safe height already.
@@ -144,9 +146,9 @@ Follow these steps in order:
 1. **Locate Your Nozzle Tips and SuperLube tube**.
     * Find and remove the `N045` and `N24` nozzle tips in the nozzle rack located in your LumenPnP v4 packaging.<br/><br/>
      ![Nozzle Tip Location](images/12-locate-nozzle-tips.webp)<br/><br/>
-    * Remove the `SuperLube` Tube that is also in the LumenPnP V4 Black Tool Kit.<br/><br/>
+    * Remove the `SuperLube` Tube that is in the LumenPnP V4 Black Tool Kit.<br/><br/>
 
-2. **Lubricate both brass nozzles**.
+1. **Lubricate both brass nozzles**.
     * Apply a small amount of **SuperLube** to the brass nozzles. This prevents damage to the rubber O-rings when mounting nozzle tips. We pre-lubricate them before shipping, but adding extra ensures longevity.<br/><br/>
      ![Apply Super Lube to Nozzle Tips](images/13-apply-super-lube.webp)<br/><br/>
 
@@ -158,7 +160,7 @@ Follow these steps in order:
     * In OpenPnP, navigate to `Machine Setup > Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`.
     * Select the `Nozzle Tips` tab, and check the `Loaded?` checkbox for the `N045` row.
     * **Your machine will jog the head to the front of the machine** for easy tip loading.<br/><br/>
-     ![N045 Loaded?](images/14-n045-nozzle-ready-for-loading.webp)
+     ![N045 Loaded?](images/14-n045-nozzle-ready-for-loading.webp)<br/><br/>
     * A **”Task Interrupted:”** window will pop up. This is **not** an error! OpenPnP is just notifying you that the job has been stopped if one is running. This is normal and can be dismissed.<br/><br/>
      ![task interrupted](images/15-task-interrupted.webp)<br/><br/>
     * Slide the **N045 nozzle tip** (the one with the smaller opening) onto the **left nozzle** (using red tubing). Rotate the nozzle tip as you mount it to the brass nozzle to evenly distribute the lubricant around the O-rings. It should slide on and off smoothly after working it in.<br/><br/>
@@ -182,8 +184,8 @@ Follow these steps in order:
 
 Before calibration, the bottom camera and exposure must be set up properly. **We will need to install a nozzle tip and position it above the bottom camera to properly adjust the exposure**.
 
-    !!! info "Tip"
-        We use the "**Ruler**" Reticle in the following steps. If you prefer a different **reticle style** to be in the center of the camera feed, right-click the **camera feed** to change the **Reticle style**. Choose "**Ruler**" to match our docs photos best.<br/><br/>
+!!! tip "Which Reticle should I use?"
+    We use the "**Ruler**" Reticle in the following steps. If you prefer to use the same **reticle style** that we use, right-click on the **top or bottom camera feed** and choose `Reticle`, then "`Ruler`" to match our docs photos best.<br/><br/>
         ![Different reticles](images/Switch-reticle-type.webp)
 
 1. **🚨 Remove the Top Camera Lens Cap 🚨**
@@ -286,5 +288,4 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
 
 ## Next Steps
 
-Now that your LumenPnP is connected, nozzle tips have been installed, and the bottom camera is configured, you're ready to proceed with configuring the top camera and setting up the homing fiducial.<br/><br/> 
-Continue to [Configure Top Camera and Homing Fiducial](../4-homing-fiducial/index.md).
+Now that your LumenPnP V4 is connected, nozzle tips have been installed, and the bottom camera is configured, you're ready to proceed with [Configuring Top Camera and Homing Fiducial](../4-homing-fiducial/index.md).<br/><br/>

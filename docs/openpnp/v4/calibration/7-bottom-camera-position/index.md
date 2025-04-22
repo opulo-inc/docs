@@ -1,5 +1,7 @@
 # Bottom Camera Position
 
+![](../images/lumenpnp-v4-docs-logo-small.png)
+
 ---
 
 Now that we have precise alignment between the nozzle tips and the top camera, we can use the calibrated nozzle to set our bottom camera position.

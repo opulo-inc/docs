@@ -1,5 +1,7 @@
 # Vacuum Part Detection
 
+![](../images/lumenpnp-v4-docs-logo-small.png)
+
 When picking up parts with the LumenPnP, it’s important to verify that a part has been successfully picked. While the bottom camera can confirm this visually, using the LumenPnP's vacuum sensors provides a faster way to detect a successful pick.
 
 ---
@@ -147,4 +149,4 @@ Each nozzle has a different vacuum reading due to variations in nozzle tip size.
 
 ## Next Steps
 
-Next is [the FTP](../../ftp/index.md).
+Next is [Running Your First Job](../../ftp/index.md).

@@ -1,5 +1,7 @@
 # Nozzle Tip Runout Compensation
 
+![](../images/lumenpnp-v4-docs-logo-small.png)
+
 Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts when the nozzle rotates. This shift is detected using the bottom camera. The compensation algorithm adjusts for any misalignment, ensuring more accurate placement. This process eliminates errors caused by runout, which can occur from either the nozzle tip or the nozzle itself. The calibration system automatically compensates for any combination of these factors. This section will be walking you through calibrating the `N045` and `N24` Nozzle Tips.<br/><br/>
 
 **To better visualize what nozzle tip runout is and how the compensation helps, here is an example**:

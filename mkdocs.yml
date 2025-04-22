@@ -133,41 +133,15 @@ nav:
                 - Motor Check: byop/testing/motor-check/index.md
                 - Actuator Check: byop/testing/actuator-check/index.md
                 - Feedback: byop/testing/feedback/index.md
-    - V3 Configuration: 
-        - Install and Config: 
-            - Install OpenPnP: openpnp/v3/install-config/install/index.md
-            - Import Configuration: openpnp/v3/install-config/import-config/index.md
-        - Calibration:
-            - Introduction: openpnp/v3/calibration/index.md
-            - Connecting to Your Machine: openpnp/v3/calibration/2-connect-to-machine/index.md
-            - Homing Fiducial: openpnp/v3/calibration/4-homing-fiducial/index.md
-            - MM/Pixel: openpnp/v3/calibration/5-mm-per-pixel/index.md
-            - Nozzle Offset: openpnp/v3/calibration/6-nozzle-offset/index.md
-            - Bottom Camera Position: openpnp/v3/calibration/7-bottom-camera-position/index.md
-            - Nozzle Tip Calibration: openpnp/v3/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md
-            - Vacuum Part Detection: openpnp/v3/calibration/10-vacuum-sensor/index.md
-        - Running Your First Job:
-            - Introduction: openpnp/v3/ftp/index.md
-            - Board Setup: openpnp/v3/ftp/1-board-setup/index.md
-            - Feeder Setup: openpnp/v3/ftp/2-feeder-setup/index.md
-            - Test Run: openpnp/v3/ftp/3-test-run/index.md
-        - Debugging: openpnp/v3/debugging/index.md
-        - Vision Pipeline Adjustment:
-            - Introduction: openpnp/v3/vision-pipeline-adjustment/1-introduction.md
-            - Homing Fiducial Pipeline: openpnp/v3/vision-pipeline-adjustment/2-homing-fiducial-pipeline.md
-            - PCB Fiducial Pipeline: openpnp/v3/vision-pipeline-adjustment/3-pcb-fiducial-pipeline.md
-            - Nozzle Calibration Pipeline: openpnp/v3/vision-pipeline-adjustment/4-nozzle-calibration-pipeline.md
-            - Part Identification Pipeline: openpnp/v3/vision-pipeline-adjustment/5-part-identification-pipeline.md
-        - Next Steps: openpnp/v3/next-steps/index.md
-    - V4 Configuration:
-        - Install and Config:
+    - OpenPnP Configuration:
+        - Install and Configure OpenPnP:
                 - Install OpenPnP: openpnp/v4/install-config/install/index.md
-                - Import Configuration: openpnp/v4/install-config/import-config/index.md
-        - Calibration:
+                - Import Configuration Files: openpnp/v4/install-config/import-config/index.md
+        - LumenPnP V4 Calibration:
             - Introduction: openpnp/v4/calibration/index.md
             - Connect to LumenPnP V4 and Configure Bottom Camera: openpnp/v4/calibration/2-connect-to-machine/index.md
             - Configure Top Camera and Homing Fiducial: openpnp/v4/calibration/4-homing-fiducial/index.md
-            - MM/Pixel: openpnp/v4/calibration/5-mm-per-pixel/index.md
+            - MM/Pixel Calibration: openpnp/v4/calibration/5-mm-per-pixel/index.md
             - Nozzle Offset: openpnp/v4/calibration/6-nozzle-offset/index.md
             - Bottom Camera Position: openpnp/v4/calibration/7-bottom-camera-position/index.md
             - Nozzle Tip Calibration: openpnp/v4/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md
@@ -223,6 +197,15 @@ nav:
         - Backlash Compensation: misc/backlash-compensation/index.md
         - Standalone Feeder Control: misc/standalone-feeders/index.md
         - Photon Protocol: misc/photon/index.md
+        - LumenPnP V3 Calibration:
+            - Introduction: misc/calibration/index.md
+            - Connecting to Your Machine: misc/calibration/2-connect-to-machine/index.md
+            - Homing Fiducial: misc/calibration/4-homing-fiducial/index.md
+            - MM/Pixel: misc/calibration/5-mm-per-pixel/index.md
+            - Nozzle Offset: misc/calibration/6-nozzle-offset/index.md
+            - Bottom Camera Position: misc/calibration/7-bottom-camera-position/index.md
+            - Nozzle Tip Calibration: misc/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md
+            - Vacuum Part Detection: misc/calibration/10-vacuum-sensor/index.md
 
     - FAQ: faq/index.md
 

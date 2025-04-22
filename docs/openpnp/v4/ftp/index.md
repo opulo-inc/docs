@@ -4,7 +4,7 @@
 
 This guide walks you through setting up and running your first PCB assembly job using the [Getting Started Kit](https://opulo.io/products/getting-started-kit), included with the LumenPnP.
 
-Before starting, ensure you've completed the [Calibration](../calibration/index.md) guide to get your machine up and running. Proper calibration is needed for accurate part placement.
+Before starting, ensure you've completed the [Calibration](../calibration/index.md) guide to get your LumenPnP up and running. Proper calibration is needed for accurate part placement.
 
 This guide isn’t just for first-time setup. You’ll revisit these steps whenever you start a new board until you have the process memorized. The process becomes much faster with experience, so take your time on your first run to build a solid understanding.
 
@@ -32,4 +32,4 @@ This video walks you through the process of running your first job on the LumenP
 
 ## Next Step
 
-Now that you have everything ready, let’s start by [setting up your board.](1-board-setup/index.md).
+Now that you have everything ready, let’s start by [setting up your board](1-board-setup/index.md).

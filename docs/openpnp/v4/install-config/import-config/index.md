@@ -87,4 +87,7 @@ We will be doing the following steps for the OS you have chosen.
 
 ## Next Steps
 
-The next step is [calibration](../../calibration/index.md)
+**The next step is** [**LumenPnP V4 calibration**](../../calibration/index.md) ✅
+<br/><br/>
+
+ℹ️ *If you have an older LumenPnP V3, click [here](../../../../misc/calibration/index.md) to be taken to the V3 calibration specific for your machine.*

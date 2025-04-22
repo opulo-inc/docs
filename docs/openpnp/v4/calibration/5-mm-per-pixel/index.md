@@ -1,5 +1,7 @@
 # MM/Pixel Calibration
 
+![](../images/lumenpnp-v4-docs-logo-small.png)
+
 This next step calibrates the relationship between pixels and millimeters to make our cameras more accurate.
 
 ---

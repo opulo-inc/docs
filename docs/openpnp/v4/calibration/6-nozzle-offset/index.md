@@ -1,5 +1,7 @@
 # Top Camera to Nozzle Offset
 
+![](../images/lumenpnp-v4-docs-logo-small.png)
+
 Calibrating the nozzle offset ensures precise alignment between the nozzle tips and the top camera. This process involves capturing the exact position of the nozzle tip and aligning the top camera to the same reference point. The calibration is essential for accurate component placement and must be performed carefully.
 
 This guide will calibrate both nozzles, ensuring they share the same focal plane as your datum board, components, and PCBs.

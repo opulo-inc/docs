@@ -1,4 +1,4 @@
-# Calibration - Introduction
+# LumenPnP V4 Calibration - Introduction
 
 ![](images/lumenpnp-v4-docs-logo-small.png)
 
@@ -42,4 +42,4 @@ If you'd like to start from scratch with your setup, community member Qwertymodo
 
 ## **Next Steps**
 
-First, we'll [Connect to your LumenPnP V4 and configure your bottom camera](2-connect-to-machine/index.md).
+First, we'll [connect to your LumenPnP V4 and configure your bottom camera](2-connect-to-machine/index.md).
