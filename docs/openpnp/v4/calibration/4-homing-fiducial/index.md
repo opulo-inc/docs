@@ -28,7 +28,7 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
 <br/><br/>
 
 1. **Set Resolution and Frame Rate**
-    * In the `Format` dropdown menu, select `1920x1080 5fps`. *A low frame rate is crucial to avoid bandwidth/performance issues*.<br/><br/>
+    * In the `Format` dropdown menu, select `1920x1080, 5FPS`. *A low frame rate is crucial to avoid bandwidth/performance issues*.<br/><br/>
       ![setting top camera resolution](images/04-choose-1920-1080-5-fps.webp)
 <br/><br/>
 

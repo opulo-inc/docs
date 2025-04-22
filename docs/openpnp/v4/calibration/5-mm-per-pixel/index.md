@@ -43,7 +43,7 @@ In this step, we will calibrate the mm/pixels for the **Top Camera**. This requi
     * locate and click the `Measure` button.<br/><br/>
      ![Click the measure button](images/06-measure-button-top.webp)<br/><br/>
     * Click and drag in the camera view to create a bounding box. Align it with the center of the golden guideline square to align with the lines along its edge. The square is exactly 5mm x 5mm.<br/><br/>
-     ![Creating the Bounding Box](images/07-create-bounding-box-top.gif)
+     ![Creating the Bounding Box](images/07-create-bounding-box-top.gif)<br/><br/>
      ![Close Up of Bounding Box](images/07-bounding-box.gif)<br/><br/>
 
     !!! Note "Squareness"
