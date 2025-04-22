@@ -1,6 +1,10 @@
 # Importing V4 Configuration Files
 
+![](../../calibration/images/lumenpnp-v4-docs-logo-small.png)
+
 **To properly use OpenPnP with the LumenPnP V4**, you need to configure the software with your machine's specifications, such as size, camera setup, and other essential settings. To simplify this, we provide a set of pre-configured files. Follow the steps below to import them correctly.
+
+⚠️ If you are setting up a LumenPnP V3, you cannot use this page. Follow [this link](../../../../misc/import-config/index.md) to the correct V3 config files. ⚠️
 
 ---
 
@@ -87,7 +91,9 @@ We will be doing the following steps for the OS you have chosen.
 
 ## Next Steps
 
-**The next step is** [**LumenPnP V4 calibration**](../../calibration/index.md) ✅
-<br/><br/>
+The next step is [LumenPnP V4 calibration](../../calibration/index.md).
 
-⚠️ *If you have an older LumenPnP* **V3,** *click [here](../../../../misc/calibration/index.md) to be taken to the V3 calibration specific for your machine.*⚠️
+[![V4 Calibration Steps][1]][2]
+
+[1]:  ../../calibration/images/lumenpnp-v4-docs-logo-small.png
+[2]:  ../../calibration/index.md "Redirect to V3 Calibration"

@@ -1,6 +1,4 @@
-![](img/lumenpnp-v4-docs-logo.webp)
-
-# OpenPnP Install
+# Install OpenPnP
 
 OpenPnP is open-source software designed to control pick and place machines. It supports a wide range of machines, with many features found in high-end commercial software. You can find out more about it [here](https://openpnp.org/).
 
@@ -10,7 +8,7 @@ OpenPnP is open-source software designed to control pick and place machines. It 
 
 ## Recommended Hardware and Operating System
 
-OpenPnP is designed to run on many different kinds of host computers. However, USB drivers and internal USB hub bandwidth can vary between computers. For reliable connectivity and exposure control with the LumenPnP cameras, we recommend using a **Lenovo Thinkpad running Ubuntu 20.04 LTS or Ubuntu 22.04 LTS**.
+OpenPnP is designed to run on many different kinds of host computers. However, USB drivers and internal USB hub bandwidth can vary between computers. For reliable connectivity and exposure control with the LumenPnP cameras, we recommend using a **Lenovo Thinkpad** (any model should be fine) **running Ubuntu 20.04 LTS or Ubuntu 22.04 LTS**.
 <br/><br/>
 
 ---
@@ -86,4 +84,22 @@ Because OpenPnP has recently started creating stable releases, we will be adapti
 
 ## Next Step
 
-Let's [import configuration files.](../import-config/index.md)
+## **LumenPnP V4 Users**
+
+[![Import V4 config files][1]][2]
+
+[1]:  ../../calibration/images/lumenpnp-v4-docs-logo-small.png
+[2]:  ../../install-config/import-config/index.md "Redirect to V4 config files"
+
+* If you are setting up a LumenPnP V4, ensure you downloaded the `V4 Config Files` by following these steps for [importing the LumenPnP V4 configuration files](../../install-config/import-config/index.md).
+<br/><br/>
+<br/><br/>
+
+## **LumenPnP V3 Users**
+
+[![Import V3 config files][3]][4]
+
+[3]:  ../../../../misc/calibration/img/lumenpnp-v3-docs-logo-small.png
+[4]:  ../../../../misc/import-config/index.md "Redirect to V3 config files"
+
+* If you are setting up a LumenPnP V3, ensure you download the `V3 Config Files` by following these steps for [importing the LumenPnP V3 configuration files.](../../../../misc/import-config/index.md)

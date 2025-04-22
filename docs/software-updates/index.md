@@ -108,10 +108,23 @@ In February of 2025, OpenPnP made a new stable release, `2025-02-02` (v2.2), whi
 ## Next Step
 
 * **LumenPnP V4 Users**.
+
+    [![V4 Calibration][1]][2]
+
+    [1]:  ../openpnp/v4/calibration/images/lumenpnp-v4-docs-logo-small.png
+    [2]:  ../openpnp/v4/install-config/import-config/index.md "Redirect to V4 Calibration"
+
     * If you came here from V4 Configuration Docs, ensure you downloaded the `V4 Config Files`.
-    * Then, head back to [importing V4 configuration files.](../openpnp/v4/install-config/import-config/index.md)
+    * Then, head back to [importing LumenPnP V4 configuration files.](../openpnp/v4/install-config/import-config/index.md)
+<br/><br/>
 <br/><br/>
 
 * **LumenPnP V3 Users**.
+
+    [![V3 Calibration][3]][4]
+
+    [3]:  ../misc/calibration/img/lumenpnp-v3-docs-logo-small.png
+    [4]:  ../misc/import-config/index.md "Redirect to V3 Calibration"
+
     * If you came here from V3 Configuration Docs, ensure you downloaded the `V3 Config Files`.
-    * Then, head back to [import the V3 configuration files.](../openpnp/v3/install-config/import-config/index.md)
+    * Then, head back to [import the LumenPnP V3 configuration files.](../misc/import-config/index.md)
