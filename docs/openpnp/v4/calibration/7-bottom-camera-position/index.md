@@ -31,7 +31,7 @@ Now that we have precise alignment between the nozzle tips and the top camera, w
      ![Position the toolhead over the bottom camera precisely](../2-connect-to-machine/images/26-touch-datum-board-and-bring-over-bottom-cam-gif.gif)
      ![Position the toolhead over the bottom camera precisely](../2-connect-to-machine/images/27-center-nozzle-tip-over-bottom-camera.webp)
     !!! Tip "Fine-Tuning Focus"
-        The bottom camera’s focus is pre-adjusted before shipping, but you can fine-tune it if needed. The lens is secured with friction grease, so apply light pressure while twisting the top portion of the lens until the image appears sharp. Avoid excessive force.
+        The bottom camera’s focus is pre-adjusted before shipping, but you can fine-tune it if needed. The lens is secured with friction grease, so apply light pressure while twisting the top portion of the side of the lens until the image appears sharp. Avoid excessive force.
 <br/><br/>
 
 6. **Capture the Bottom Camera Position**.

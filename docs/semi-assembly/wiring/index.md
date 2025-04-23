@@ -188,4 +188,4 @@ You're done with your build! Time to head over to the OpenPnP section of the doc
 
 ## Next Steps
 
-You're done with your build! Next, you'll set up [OpenPnP](../../openpnp/v3/install-config/install/index.md).
+You're done with your build! Next, you'll set up [OpenPnP](../../openpnp/v4/install-config/install/index.md).

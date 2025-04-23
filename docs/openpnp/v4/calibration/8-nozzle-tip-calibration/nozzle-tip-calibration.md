@@ -20,13 +20,12 @@ Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts whe
 ## Nozzle Tip Runout Compensation for Nozzle: N1 (left toolhead)
 
 !!! note "🚨Important!🚨 Read this if you're continuing from the previous steps."  
-    If you have just completed the previous steps, **Nozzle: N1 should already be centered over the bottom camera**, and you should be in the Bottom Camera Position tab.<br/><br/>
+    If you have just completed the previous steps, **Nozzle: N1 should already be centered over the bottom camera**.<br/><br/>
     **Do not move the nozzle position**.<br/><br/>
-    Switch to the `Device Settings` tab.<br/><br/>
     Skip to Step 4 to continue.
 
 1. **Select Nozzle: N1**.
-    * If `Nozzle: N1` is already centered over the bottom camera, switch to the bottom camera's `Device Settings` tab and skip to `Step 4`.
+    * If `Nozzle: N1` is already centered over the bottom camera, skip to `Step 4`.
     * From the `Machine Controls` dropdown, select `Nozzle: N1 - N045 (Head:H1)`.<br/><br/>
      ![Select Nozzle: N1 from Machine Controls](../6-nozzle-offset/images/01-seleect-nozzle-n1-from-machine-controls.webp)
 <br/><br/>

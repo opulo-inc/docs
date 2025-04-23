@@ -95,7 +95,7 @@ Follow these steps in order:
 
 1. **Connect OpenPnP to Your Machine**
     * Click the **green power button** in the `Machine Controls` section (Bottom left of OpenPnP).<br/><br/>
-     ![Connect to the LumenPnP](images/08-power-button-green-to-red-gif.gif)
+     ![Click the green power button](images/08-click-power-button.gif)
 <br/><br/>
 
 1. **Confirm Connection**
@@ -128,7 +128,7 @@ Follow these steps in order:
         OpenPnP **does not** remember the previous nozzle positions from the last homing sequence, meaning it **cannot adjust movements based on past alignment**. If the nozzles are not level before homing, they may collide with the machine, leading to misalignment or serious hardware damage.
          ![level nozzles](images/level-nozzles-gif.gif)
     !!! Note
-        Use the `P` between the Z-axis up/down arrows located in Machine Controls toward the bottom right of OpenPnP. This ensures the nozzle tips are out of the way.<br/><br?> 
+        Use the `P` between the Z-axis up/down arrows located in Machine Controls toward the bottom left of OpenPnP. This ensures the nozzle tips are out of the way.<br/><br?> 
         The `P` stands for **Parking** the nozzle out of the way into a safe height that won’t collide with any objects. If nothing happens after you click the `P` button, that means the nozzles are at a safe height already.
     !!! Note "Nozzles not level after parking."
         The nozzles may not be level when clicking the “**Park**” button, which is okay. The nozzle only moves to the point that it reaches the “safe zone” and then stops.
@@ -164,7 +164,7 @@ Follow these steps in order:
     * A **”Task Interrupted:”** window will pop up. This is **not** an error! OpenPnP is just notifying you that the job has been stopped if one is running. This is normal and can be dismissed.<br/><br/>
      ![task interrupted](images/15-task-interrupted.webp)<br/><br/>
     * Slide the **N045 nozzle tip** (the one with the smaller opening) onto the **left nozzle** (using red tubing). Rotate the nozzle tip as you mount it to the brass nozzle to evenly distribute the lubricant around the O-rings. It should slide on and off smoothly after working it in.<br/><br/>
-     ![left nozzle has red tubing getting n045 tip, right has no tip](images/16-N045-nozzle-installed-gif.gif)
+     ![Install N045 Nozzle Tip onto the Left Nozzle N1](images/16-install-n045-nozzle-tip.gif)
 <br/><br/>
 
 1. **Mount the `N24` Nozzle Tip onto Nozzle: N2**.
@@ -173,7 +173,7 @@ Follow these steps in order:
     * **Don’t forget.** It will move to the second nozzle and you’ll see the **”Task Interrupted:”** popup window again.<br/><br/>
      ![N24 Loaded?](images/17-n24-nozzle-ready-for-loading.webp)<br/><br/>
     * Slide the N24 nozzle tip (the one with the larger opening) onto the **right nozzle** (using blue tubing). Rotate the nozzle tip as you mount it to the brass holder to ensure the grease works its way into the tip and around the O-rings. It should slide on and off easily after working it in.<br/><br/>
-     ![blue tubing right nozzle getting n24 tip, left already has n045](images/18-N24-nozzle-installed-gif.gif)<br/><br/>
+     ![Installing the N24 Nozzle Tip onto the Left Nozzle N1](images/18-N24-nozzle-installed-gif.gif)<br/><br/>
 
     !!! Tip "Why These Nozzle Tips?"
         The **N045** and **N24 nozzle tips** cover the vast majority of parts **without needing swaps**. We highly recommend keeping them as the default and only swapping when absolutely (e.g., for very heavy parts).
