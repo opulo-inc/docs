@@ -137,7 +137,13 @@ Follow these steps in order:
         The nozzles may not be level when clicking the “**Park**” button, which is okay. The nozzle only moves to the point that it reaches the “safe zone” and then stops.
 <br/><br/>
 
-1. Click the **Home button** to perform a rough homing sequence.
+1. Before we home the LumenPnP, it is very important that we check a couple of settings.
+    * Go to `Machine Setup > Nozzle Tips >**N045** > Calibration Tab > Auto Recalibration`
+    * Ensure `Auto Recalibration` is set to `Manual`.<br/><br/>
+    * Then, go to `Machine Setup > Nozzle Tips >**N24** > Calibration Tab > Auto Recalibration`
+    * Ensure `Auto Recalibration` is set to `Manual`.<br/><br/>
+
+1. Once the nozzle tips are set to `Manual`, click the **Home button** to perform a rough homing sequence.
     * The Nozzles will move to X, Y, and Z zero positions **(front-left corner of the LumenPnP)** and park there.<br/><br/>
          ![Home your LumenPnP](../../../openpnp/v4/calibration/2-connect-to-machine/images/11-home-your-machine-gif.gif) *This image shows a V4 homing, but the end location is the same for both versions.*
 

@@ -134,7 +134,13 @@ Follow these steps in order:
         The nozzles may not be level when clicking the “**Park**” button, which is okay. The nozzle only moves to the point that it reaches the “safe zone” and then stops.
 <br/><br/>
 
-1. Click the **Home button** to perform a rough homing sequence.
+1. Before we home the LumenPnP, it is very important that we check a couple of settings.
+    * Go to `Machine Setup > Nozzle Tips >**N045** > Calibration Tab > Auto Recalibration`
+    * Ensure `Auto Recalibration` is set to `Manual`.<br/><br/>
+    * Then, go to `Machine Setup > Nozzle Tips >**N24** > Calibration Tab > Auto Recalibration`
+    * Ensure `Auto Recalibration` is set to `Manual`.<br/><br/>
+
+1. Once the nozzle tips are set to `Manual`, click the **Home button** to perform a rough homing sequence.
     * The Nozzles will move to X, Y, and Z zero positions **(front-left corner of the LumenPnP)** and park there.<br/><br/>
         ![Home your LumenPnP](images/11-home-your-machine-gif.gif)
 <br/><br/>
@@ -163,7 +169,7 @@ Follow these steps in order:
      ![N045 Loaded?](images/14-n045-nozzle-ready-for-loading.webp)<br/><br/>
     * A **”Task Interrupted:”** window will pop up. This is **not** an error! OpenPnP is just notifying you that the job has been stopped if one is running. This is normal and can be dismissed.<br/><br/>
      ![task interrupted](images/15-task-interrupted.webp)<br/><br/>
-    * Slide the **N045 nozzle tip** (the one with the smaller opening) onto the **left nozzle** (using red tubing). Rotate the nozzle tip as you mount it to the brass nozzle to evenly distribute the lubricant around the O-rings. It should slide on and off smoothly after working it in.<br/><br/>
+    * Slide the **N045 nozzle tip** (the one with the smaller opening) onto the **left nozzle**. Rotate the nozzle tip as you mount it to the brass nozzle to evenly distribute the lubricant around the O-rings. It should slide on and off smoothly after working it in.<br/><br/>
      ![Install N045 Nozzle Tip onto the Left Nozzle N1](images/16-install-n045-nozzle-tip.gif)
 <br/><br/>
 
@@ -172,7 +178,7 @@ Follow these steps in order:
     * Select the `Nozzle Tips` tab, and check the `Loaded?` checkbox for the `N24` row.
     * **Don’t forget.** It will move to the second nozzle and you’ll see the **”Task Interrupted:”** popup window again.<br/><br/>
      ![N24 Loaded?](images/17-n24-nozzle-ready-for-loading.webp)<br/><br/>
-    * Slide the N24 nozzle tip (the one with the larger opening) onto the **right nozzle** (using blue tubing). Rotate the nozzle tip as you mount it to the brass holder to ensure the grease works its way into the tip and around the O-rings. It should slide on and off easily after working it in.<br/><br/>
+    * Slide the N24 nozzle tip (the one with the larger opening) onto the **right nozzle**. Rotate the nozzle tip as you mount it to the brass holder to ensure the grease works its way into the tip and around the O-rings. It should slide on and off easily after working it in.<br/><br/>
      ![Installing the N24 Nozzle Tip onto the Left Nozzle N1](images/18-N24-nozzle-installed-gif.gif)<br/><br/>
 
     !!! Tip "Why These Nozzle Tips?"
@@ -212,7 +218,8 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
 <br/><br/>
 
 1. **Apply and Verify**
-    * Click `Apply` to save the **Bottom Camera** settings. One of the red "X"s in the camera feed should disappear. The image might be entirely black, but we'll fix that in the following steps.<br/><br/>
+    * Click `Apply` to save the **Bottom Camera** settings. One of the red "X"s in the camera feed should disappear. The image might be entirely black, but we'll fix that in the following steps.
+    * Save your OpenPnP configuration so OpenPnP will remember this when opened. `File > Save Configuration`.<br/><br/>
      ![Saving changes to the Bottom Camera Config](images/23-apply-and-save-bottom-cam-settings-gif.gif)
 <br/><br/>
 
@@ -272,7 +279,7 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
 <br/><br/>
 
 1. **Record the Bottom Camera Exposure Value**
-    * OpenPnP may not retain camera settings after restart **Record and save your exposure value** by saving them in a text file or writing them down.
+    * OpenPnP may not retain your camera exposure settings after restart. **Record and save your exposure value** by saving them in a text file or writing them down.
     * This means every time you boot up OpenPnP you'll have to:
         * Toggle **Auto Exposure** `on`, then `off`. (This puts your camera into manual exposure mode)
         * **Type your recorded exposure value into the exposure field beside the slider**.

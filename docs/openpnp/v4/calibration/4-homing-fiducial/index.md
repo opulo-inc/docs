@@ -160,19 +160,19 @@ We also detail this process in our [setup video](https://youtu.be/h3mtEQfGMlM?t=
        ![exposure too high](images/26-exposure-too-high.webp)<br/><br/>
        ![exposure too low](images/27-exposure-too-low.webp)<br/><br/>
        ![exposure correct](images/28-exposure-just-right.webp)<br/><br/>
+    * Turn off the histogram view the same way you turned it on.
+
     !!! caution "Not seeing anything in the top camera feed?"
         Ensure the lens caps on the top camera has been removed.
 <br/><br/>
 
 1. Once you've found a good exposure value, **record your exposure value** by saving them in a text file or writing them down:
-    * OpenPnP may not retain camera settings after restart, so **save the exposure value** for reference.
+    * OpenPnP may not retain your camera exposure settings after restart. **Record and save your exposure value** by saving them in a text file or writing them down.
     * This means every time you boot up OpenPnP you'll have to:
         * Toggle **Auto Exposure** `on`, then `off`. (This puts your camera into manual exposure mode)
         * **Type your recorded exposure value into the exposure field beside the slider**.
-        * **Turn off the histogram view** the same way you turned it on.
-<br/><br/>
 
-1. **Apply and Save**
+2. **Apply and Save**
     * Click `Apply` in the lower right corner to save your changes.<br/><br/>
        ![Apply Button](../2-connect-to-machine/images/apply-button.webp)<br/><br/>
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
