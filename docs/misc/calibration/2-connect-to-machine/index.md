@@ -138,13 +138,14 @@ Follow these steps in order:
 <br/><br/>
 
 1. Before we home the LumenPnP, it is very important that we check a couple of settings.
-    * Go to `Machine Setup > Nozzle Tips >**N045** > Calibration Tab > Auto Recalibration`
+    * Go to `Machine Setup > Nozzle Tips >N045 > Calibration Tab > Auto Recalibration`
     * Ensure `Auto Recalibration` is set to `Manual`.<br/><br/>
-    * Then, go to `Machine Setup > Nozzle Tips >**N24** > Calibration Tab > Auto Recalibration`
+    * Then, go to `Machine Setup > Nozzle Tips >N24 > Calibration Tab > Auto Recalibration`
     * Ensure `Auto Recalibration` is set to `Manual`.<br/><br/>
 
 1. Once the nozzle tips are set to `Manual`, click the **Home button** to perform a rough homing sequence.
-    * The Nozzles will move to X, Y, and Z zero positions **(front-left corner of the LumenPnP)** and park there.<br/><br/>
+    * The Nozzles will move to X, Y, and Z zero positions **(front-left corner of the LumenPnP)** and park there.
+    * If the LumenPnP does not stay in the front left corner of the machine, Please go back to the prior step and ensure the `Manual` settings was saved.<br/><br/>
          ![Home your LumenPnP](../../../openpnp/v4/calibration/2-connect-to-machine/images/11-home-your-machine-gif.gif) *This image shows a V4 homing, but the end location is the same for both versions.*
 
 !!! danger "If your machine does not move fully to the front left"
