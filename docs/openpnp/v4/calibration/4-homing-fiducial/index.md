@@ -4,7 +4,7 @@
 
 First, we will establish a connection with the top camera, like we did with the bottom camera.
 
-Then, we can set up the **datum board**, which is a key component to the homing sequence. The center dot on the datum board is called the **"homing fiducial"**, and is the key calibration point, allowing fine-tuning of the machine’s XY position **to compensate for minor variations in limit switch accuracy**. configuring the homing fiducial ensures **precise and repeatable homing** for the LumenPnP.
+Then, we can set up the **datum board location**, which is a key component to the homing sequence. The center dot on the datum board is called the **"homing fiducial"**, and is the key calibration point in fine-tuning the machine’s X/Y position and **compensates for minor variations in limit switch accuracy**. Configuring the homing fiducial ensures **precise and repeatable homing** for the LumenPnP.
 
 Finally, we will go back and fine-tune the top camera exposure settings for proper homing calibration. **We will use the top camera aligned above the datum board's homing fiducial to properly adjust the exposure**.
 
