@@ -71,4 +71,4 @@ Now that you've loaded a component into the feeder, we'll fine-tune the feeder's
 
 ## Next Steps
 
-If you came here from the FTP documentation, your next step is [running a test job](../../openpnp/ftp/3-test-run/index.md).
+If you came here from the FTP documentation, your next step is [running a test job](../../openpnp/v4/ftp/3-test-run/index.md).
