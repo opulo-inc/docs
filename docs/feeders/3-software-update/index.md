@@ -61,7 +61,7 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
 
     ![All Settings](img/all-settings.webp)
 
-9. Hold down the BOOT button located here on the feeder:
+9.  Hold down the BOOT button located here on the feeder:
 
     ![boot button](img/boot-button.webp)
 
@@ -78,8 +78,20 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
 11. Click the green connect button in STM32CubeProgrammer.
     ![stm32 cube software connect panel](img/connect-button.webp)
 
-    !!! Danger "If You Can't Connect"
+    !!! Warning "If You Can't Connect"
         If you can't connect to your feeder, check that the programmer is inserted into the pins in the correct orientation. Also, applying gentle pressure to the side of the programmer can help ensure that the pins are making good contact with the plated holes in the feeder PCB.
+
+    !!! Danger "Try the Alternate Method"
+        A small batch of feeders have a hard time entering the bootloader using the instructions above. If you cannot connect, try using the instructions below.
+
+        1. Insert the programmer into the programming port, but do NOT press the boot button. The Status light should turn red.
+
+            ![](img/inserting-programmer.gif)
+        2. Press and hold both buttons. Some light patterns will display. Wait until you see red and blue lights flashing, then turn off. Release the buttons. Your feeder is now in the bootloader.
+
+            ![](img/enter-bootloader.gif)
+        3. Reattempt connection.
+        4. If you still have connection issues, [please reach out to us](https://support.opulo.io/), and [check out this page](../../guides/feeder-uart-boot-fix/index.md).
 
 12. Once connected, Switch to the download tab on the left.
 ![Download Tab](img/download-tab.webp)
@@ -123,7 +135,7 @@ LumenPnP feeders require a specific version of OpenPnP (the 2023-04-05 release),
 | :-------------------- | :----------------- | :--------- |
 | Any Beta Firmware     | One Red Flash      | 🟥         |
 | v1.0.2 or previous    | No Flash           |            |
-| v1.0.3                | One Green Flash    | 🟩         |
+| v1.0.3 or higher      | One Green Flash    | 🟩         |
 
 ## Next Steps
 

@@ -183,6 +183,7 @@ nav:
         - Set Motor Disable Timeout: guides/motor-disable-timeout/index.md
         - Second Nozzle Upgrade Guide: guides/second-tool/index.md
         - REV03 Mobo Interposer Guide: guides/rev3-vac-interposer/index.md
+        - Feeder UART Bootloader Fix: guides/feeder-uart-boot-fix/index.md
         - Collecting OpenPnP Logs: guides/openpnp-logs/index.md
         - Find Your OpenPnP Version: guides/get-openpnp-version/index.md
         - Extracting Your Config Files: guides/extracting-your-config-files/index.md
