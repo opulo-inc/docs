@@ -56,19 +56,47 @@ Your feeder now has the ability to update firmware over UART, but now enters the
 
 ### Tools Needed
 
+![](img/tools.webp)
+
 - Soldering Iron
-- Flux
 - Solder
 - Allen key set from your LumenPnP Tool Kit
 - 1x Interposer Board per feeder (request from Opulo)
+- Feeder to fix
 
 ### Installation
 
-Instruction to be updated shortly.
-<!-- 1. Remove the lever arm screw from your feeder.
-2. Remove the retention arm, being careful of the spring jumping out of its retention holes.
-3. Apply a small amount of flux around the RS-485 transceiver chip's pins.
-4. Lay the interposer board onto the PCB as shown.
-5. With some solder on your iron tip, attach each of the pads to the chip's leads.
-6. Confirm the fix was effective by attempting to [program the board using the UART bootloader]().
-7. Set the lever arm into the frame slot with the spring in its retention holes, and screw it in place. Be sure to not overtighten such that the arm cannot move freely. -->
+1. Remove the lever arm screw from your feeder while holding the lever arm in place.
+   ![](img/remove-lever-screw.webp)
+2. Carefully remove the retention arm, being mindful of the spring jumping out of its retention holes.
+   ![](img/remove-arm.webp)
+3. Remove the screws shown.
+   ![](img/screws-to-remove.webp)
+4. Remove the drive motor cover.
+   ![](img/removed-drive-cover.webp)
+5. Gently lift the PCB away from the frame, and remove the Drive Motor Cable.
+   ![](img/remove-drive-cable.webp)
+6. Gently lift the PCB away from the frame while also lifting the peel motor out of the frame by the worm gear.
+   ![](img/lift-out-peel.webp)
+   ![](img/peel-lifted-out.webp)
+7. Remove the peel motor cable from the PCB.
+   ![](img/remove-peel-cable.webp)
+8. You should be left with the Feeder motherboard.
+   ![](img/feeder-board.webp)
+9.  The chip we'll be adding the interposer to is U6.
+    ![](img/u9.webp)
+10. It will lay over U6 as shown.
+    ![](img/placement.webp)
+11. Apply some solder to your iron tip, and hold the interposer as shown using tweezers.
+    ![](img/about-to-first-pin.webp)
+12. Tack the interposer in place to pin 8 of U6 using the solder on your iron tip.
+    ![](img/first-pin.webp)
+    ![](img/first-pin-done.webp)
+13. Solder the rest of the pins on that side of the interposer.
+    ![](img/first-side.webp)
+    ![](img/first-side-done.webp)
+14. Using tweezers to help align the other side, solder the other four pads to the leads of U6.
+    ![](img/back-side.webp)
+    ![](img/done.webp)
+15. Confirm the fix was effective by attempting to [program the board using the UART bootloader](../../feeders/3-software-update/#update-feeder-firmware-optional), and *not* by using the alternate method shown in red.
+16. If successful, reassemble the feeder in the reverse order.
