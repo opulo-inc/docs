@@ -52,7 +52,7 @@ We've developed a new version of firmware that has a workaround for this bug, an
 
 Your feeder now has the ability to update firmware over UART, but now enters the bootloader by holding both feeder buttons until the blue and red flashing lights stop. Check out the [feeder programming page]() to see full instructions.
 
-## Fix #2: Interposer Board Installation (WIP)
+## Fix #2: Interposer Board Installation
 
 ### Tools Needed
 
@@ -61,7 +61,7 @@ Your feeder now has the ability to update firmware over UART, but now enters the
 - Soldering Iron
 - Solder
 - Allen key set from your LumenPnP Tool Kit
-- 1x Interposer Board per feeder (request from Opulo)
+- 1x Interposer Board per feeder ([request from Opulo](https://support.opulo.io/))
 - Feeder to fix
 
 ### Installation
