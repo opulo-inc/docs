@@ -7,7 +7,7 @@ Your machine now has basic calibration complete. There are still many metrics to
 
 The following links are extra resources to help with calibration and OpenPnP.
 
-[Powered Photon Feeders](../../feeders/1-overview/feeder-overview.md)
+[Powered Photon Feeders](../../../feeders/1-overview/feeder-overview.md)
 :  Follow this guide to install and set up your Photon Feeders if you haven't done it as part of your FTP.
 
 [Vision Pipeline Adjustment](../vision-pipeline-adjustment/1-introduction.md)
