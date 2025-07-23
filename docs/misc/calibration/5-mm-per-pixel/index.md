@@ -74,24 +74,33 @@ The following steps will calibrate the mm/pixels for the **Bottom Camera**. This
 1. **Home your machine using the "Home" button**.
     * The LumenPnP will perform the homing process and position the top camera over the homing fiducial. In future steps, the homing sequence will also scan the nozzle tips after calibrating the homing fiducial, but for now, it should only scan the homing fiducial.
 
-2. **Select the bottom Camera**.
+1. **Select the bottom Camera**.
     * Navigate to `Machine Setup > Cameras > OpenPnPCaptureCamera Bottom`
+
+1. **Access the Position Tab**.
+    * Click on the Position tab to begin setting the bottom camera’s location.
+    * Enter `31.5` into the `Z position field`. (*This step is specific to any LumenPnP V3 machine, and is vital that it is set to 31.5.*) <br/><br/>
+     ![Select the position tab](../../../misc/calibration/7-bottom-camera-position/images/02-bottom-cam-position-tab-v3.webp)
+<br/><br/>
+
+1. **Save the 31.500 Z Position**
+    * Click `Apply` in the lower right corner to save the bottom camera position in OpenPnP.<br/><br/>
+     ![Save the camera location](../../../openpnp/v4/calibration/2-connect-to-machine/images/apply-button.webp)<br/><br/>
+
+1. **Select Nozzle: N2 (Right Nozzle)**.
     * In the drop-down under `Machine Controls`, select `Nozzle: N2 - N24 (Head: H1)` to control the nozzle on the right. This way, for any nozzle commands we run, OpenPnP knows to base them on Nozzle: N2 and **not** the other nozzle.<br/><br/>
      ![selecting n2 for control](../../../openpnp/v4/calibration/5-mm-per-pixel/images/10-select-nozzle-n2.webp)
 <br/><br/>
 
-1. **Manually adjust the Nozzle to be over the Bottom Camera**.
-    * Using the controls at the bottom left of OpenPnP, jog `Nozzle: N2` (right toolhead) to roughly the center of the Datum board, positioning it near the edge closest to the bottom camera.<br/><br/>
-     ![Position nozzle over camera](../../../openpnp/v4/calibration/5-mm-per-pixel/images/11-bring-nozzle-n2-over-datum.webp)<br/><br/>
-    * Lower the `Nozzle: N2` so that it’s just **barely** touching the top surface of the Datum Board, just like we did with the first nozzle tip in previous steps. Placing the nozzle tip on the edge of the Datum Board makes it easier to see the nozzle tip's proximity to the Datum board as you lower it.
-    * **Keep the nozzle at this Z height** and carefully use the jog controls to move it directly over the **center of the bottom camera’s reticle**.<br/><br/>
-     ![Position Nozzle: N2 over camera](../../../openpnp/v4/calibration/5-mm-per-pixel/images/12-bring-n24-over-bottom-camera.gif)
-     ![Jog the nozzle over the camera](../../../openpnp/v4/calibration/5-mm-per-pixel/images/13-nozzle-n24-centered-in-cam-view.webp)<br/><br/>
+1. **Align Nozzle Tip Over the Bottom Camera**.
+    * In the `Position Tab`, click on the button to bring the nozzle tip over the bottom camera. This will jog the Nozzle: N2 (right toolhead) to be roughly over the bottom camera.<br/><br/>
+     ![Position the V3 toolhead over the bottom camera precisely](../7-bottom-camera-position/images/click-to-bring-nozzle-over-bottom-cam.webp)<br/><br/>
+    * In `Machine Controls`, Use the arrows to center the nozzle tip in the bottom camera feed.<br/><br/>
+     ![Jog the nozzle over the camera](../../../openpnp/v4/calibration/5-mm-per-pixel/images/13-nozzle-n24-centered-in-cam-view.webp)
     !!! Tip "Fine-Tuning Focus"
-        The bottom camera’s focus is pre-adjusted before shipping, but you can fine-tune it if needed. The lens is secured with friction grease, so apply light pressure while twisting the top portion of the lens until the image appears sharp. Avoid excessive force.
-<br/><br/>
+        The bottom camera’s focus is pre-adjusted before shipping, but you can fine-tune it if needed. loosen the set-screw in the side and slightly rotate the bottom camera lens until the image appears sharp.
 
-1. **Go to the `General Configuration` tab**.
+2. **Go to the `General Configuration` tab**.
     * Navigate to `Machine Setup > Cameras > OpenPnPCaptureCamera Bottom`
     * Select the `General Configuration` tab.<br/><br/>
      ![Go to the general configuration tab](../../../openpnp/v4/calibration/5-mm-per-pixel/images/14-general-configuration-bottom-camera.webp)

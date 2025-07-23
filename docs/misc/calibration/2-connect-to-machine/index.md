@@ -98,7 +98,7 @@ Follow these steps in order:
 
 1. **Connect OpenPnP to Your Machine**
     * Click the **green power button** in the `Machine Controls` section (Bottom left of OpenPnP).<br/><br/>
-     ![Connect to the LumenPnP](../../../openpnp/v4/calibration/2-connect-to-machine/images/08-power-button-green-to-red-gif.gif)
+     ![Connect to the LumenPnP](../../../openpnp/v4/calibration/2-connect-to-machine/images/08-click-power-button.gif)
 <br/><br/>
 
 1. **Confirm Connection**
@@ -249,18 +249,24 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
      ![Select nozzle from machine control dropdown](../../../openpnp/v4/calibration/2-connect-to-machine/images/24-select-nozzle-n1.webp)
 <br/><br/>
 
-1. **Positioning 'Nozzle: N1' Over the Bottom Camera**
-    * Using the `Machine Controls`, jog `Nozzle: N1` to be roughly centered **above the datum board**.
-    * Set the `Distance` slider to `0.1` or `0.01` for when you need more precise movements.<br/><br/>
-      ![Make the jog controls more precise](../../../openpnp/v4/calibration/2-connect-to-machine/images/distance-slider-machine-controls.webp)<br/><br/>
-    * Lower `Nozzle: N1`, using the `Z-axis` controls, until the nozzle tip is *barely* touching the datum board. (The very edge of the datum board has been ideal for easily seeing how close it is before Nozzle: N1 barely makes contact). Lowering it to the same height as the datum board ensures the nozzle is at the correct Z-height before calibration.<br/><br/>
-     ![Position the toolhead over the bottom camera](../../../openpnp/v4/calibration/2-connect-to-machine/images/25-touch-nozzle-to-datum-board.webp)<br/><br/>
-    * **Keeping the Z-height unchanged, jog `Nozzle: N1` to be centered over the bottom camera feed**.<br/><br/>
-     ![Position the toolhead over the bottom camera](../../../openpnp/v4/calibration/2-connect-to-machine/images/26-touch-datum-board-and-bring-over-bottom-cam-gif.gif)
-     ![Nozzle Tip and Datum Board at same level](../../../openpnp/v4/calibration/2-connect-to-machine/images/27-center-nozzle-tip-over-bottom-camera.webp)
+1. **Select the bottom Camera**.
+    * Navigate to `Machine Setup > Cameras > OpenPnPCaptureCamera Bottom`
+
+1. **Access the Position Tab**.
+    * Click on the `Position` tab.
+    * Enter `31.500` into the `Z position field`. (*This step is specific to any LumenPnP V3 machine, and is vital that it is set to 31.5.*) <br/><br/>
+     ![Select the position tab](../../../misc/calibration/7-bottom-camera-position/images/02-bottom-cam-position-tab-v3.webp)
 <br/><br/>
 
-1. **Adjust the bottom camera exposure using the slider**.
+1. **Save the 31.500 Z Position**
+    * Click `Apply` in the lower right corner to save the bottom camera position in OpenPnP.<br/><br/>
+     ![Save the camera location](../../../openpnp/v4/calibration/2-connect-to-machine/images/apply-button.webp)<br/><br/>
+
+1. **Align Nozzle Tip Over the Bottom Camera**.
+    * In the `Position Tab`, click on the button to bring the nozzle tip over the bottom camera. This will jog the Nozzle: N1 (left toolhead) to be roughly over the bottom camera.<br/><br/>
+     ![Position the V3 toolhead over the bottom camera precisely](../7-bottom-camera-position/images/click-to-bring-nozzle-over-bottom-cam.webp)<br/><br/>
+  
+2. **Adjust the bottom camera exposure using the slider**.
     * Return to `Machine Setup > Cameras > OpenPnpCaptureCamera Bottom` to adjust the exposure. This will help us through the rest of the calibration.
     * 🚨 **Keep all other camera settings at their default value, and only adjust the exposure slider**.
     * In the `OpenPnpCaptureCamera Bottom` go back to the `Device Settings` tab.<br/><br/>
@@ -268,8 +274,10 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
     * Located the `Exposure` slider and click on the check box labeled `Auto`. The camera will attempt to find the correct exposure.
     * Then, **uncheck** the `Auto` box to ensure we are now in "**manual adjustment**" mode.<br/><br/>
      ![Switching to the camera device settings](../../../openpnp/v4/calibration/2-connect-to-machine/images/29-turn-auto-exposure-on-then-off-gif.gif)<br/><br/>
-    * Using the jog controls, fine-tune the nozzle tip location to be perfectly centered over the bottom camera's reticle. You can use your mouse scroll wheel to zoom in on the feed for more precision.<br/><br/>
+    * Using the jog controls, fine-tune the nozzle tip location to be perfectly centered over the bottom camera's reticle. You can use your mouse scroll wheel to zoom in on the feed for more precision. (Images are of a LumenPnP V4 and won't match exactly what you will see)<br/><br/>
      ![Align over center of bottom camera](../../../openpnp/v4/calibration/2-connect-to-machine/images/30-align-over-center-of-bottom-camera-gif.gif)<br/><br/>
+    * Set the `Distance` slider to `0.1` or `0.01` for when you need more precise movements.<br/><br/>
+      ![Make the jog controls more precise](../../../openpnp/v4/calibration/2-connect-to-machine/images/distance-slider-machine-controls.webp)<br/><br/>
     * Right click on the bottom camera's feed and select `Show Image Info?` to enable the image info card. This will give you the brightness histogram of the image.<br/><br/>
      ![enable the image histogram](../../../openpnp/v4/calibration/2-connect-to-machine/images/31-show-histograph-gif.gif)<br/><br/>
     * Use the histogram as a general guide rather than a precise measurement—it’s a helpful tool but not exact. For the best results, refer to the comparison photos below, which show examples of 'too bright,' 'too dark,' and 'good exposure' to help you fine-tune your settings after using the histogram.
@@ -278,7 +286,7 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
     !!! Warning "🚨 Important 🚨"
         The reference image above is just an example—**your histogram may look very different** depending on lighting conditions, camera placement, and other environmental factors. **Do not try to match it exactly.** Instead, focus on achieving the key characteristics: a distinct peak on the right and a noticeable cluster, or peak, to the left. Adjust gradually until the image is clear and well-exposed.
 
-1. **Set the Correct Exposure**.
+3. **Set the Correct Exposure**.
     * Adjust the exposure slider, or enter varying manual exposure values, to ensure the camera can clearly detect the dark hole in the nozzle tip for calibration. The exposure should be balanced—bright enough to distinguish the nozzle tip from the background but not so bright that the hole becomes difficult to detect. Aim for a setting where the brightest areas are visible but do not appear completely white, and the darker areas remain well-defined. Use the following images as a reference for adjusting exposure:<br/><br/>
      ![exposure too high](../../../openpnp/v4/calibration/2-connect-to-machine/images/33-exposure-too-high.webp)<br/><br/>
      ![exposure too low](../../../openpnp/v4/calibration/2-connect-to-machine/images/34-exposure-too-low.webp)<br/><br/>
