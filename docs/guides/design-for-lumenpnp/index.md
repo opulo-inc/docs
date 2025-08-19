@@ -41,8 +41,10 @@ The LumenPnP is capable of populating double-sided PCBs. There are a few things 
 - When populating the first side of the PCB, be sure to use **higher temperature solder paste**. After reflow, when stenciling the second side of the PCB, use a **lower temperature solder paste**. When reflowing for the second time at a lower temperature, the first side will not liquify and the parts will stay soldered on. It is possible to do this with one type of solder paste, but you're relying on only surface tension to retain the parts on the first side.
 - All PCB mounting features used on the LumenPnP will have to accomodate components on the back side. When populating the second side of your board, the universal PCB mounting fixtures will have to be placed strategically as to not interfere with components already mounted on the first side of the board. Your stenciling solution, and reflow oven will also have to account for these parts already being populated.
 
-### `Built With LumenPnP` Footprint
+### Mounting Requirements
 
-If you're using the LumenPnP to populate your PCBs, feel free to add the "Built With" mark on your PCB. KiCAD footprint files can be found [here](https://github.com/opulo-inc/lumenpnp/tree/main/lib/kicad/built-with-lumenpnp.pretty).
+If you are not using Opulo’s PCB mounting brackets and instead use a custom or third-party solution, ensure that the top surface of your PCB is level with the top surface of the datum board. This reference height is 10 mm above the top surface of the staging plate.
 
-![built with mark](img/build-with-lumenpnp-stamp.webp)
+When designing a custom mount, remember to account for the thickness of the PCB itself so the finished assembly places the top surface at the correct height. For example, if your PCB is 1.6 mm thick, the bottom of the PCB should sit 8.4 mm above the staging plate to ensure the top surface aligns at 10 mm.
+
+Any alternative design must maintain this height to ensure proper operation because that is the focal plane height.

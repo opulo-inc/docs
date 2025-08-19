@@ -100,7 +100,7 @@ The following steps will calibrate the mm/pixels for the **Bottom Camera**. This
     !!! Tip "Fine-Tuning Focus"
         The bottom camera’s focus is pre-adjusted before shipping, but you can fine-tune it if needed. loosen the set-screw in the side and slightly rotate the bottom camera lens until the image appears sharp.
 
-2. **Go to the `General Configuration` tab**.
+1. **Go to the `General Configuration` tab**.
     * Navigate to `Machine Setup > Cameras > OpenPnPCaptureCamera Bottom`
     * Select the `General Configuration` tab.<br/><br/>
      ![Go to the general configuration tab](../../../openpnp/v4/calibration/5-mm-per-pixel/images/14-general-configuration-bottom-camera.webp)
