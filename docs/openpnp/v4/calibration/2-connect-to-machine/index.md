@@ -123,7 +123,7 @@ Follow these steps in order:
 1. **Level the nozzles before homing**.
 
     !!! danger "🚨 Critical Warning: Level Nozzles Before Homing 🚨"
-        **Before pressing the homing button**—now and every time in the future—**you must ensure that your nozzles are level**.<br/><br/>
+        **Before pressing the homing button**-now and every time in the future-**you must ensure that your nozzles are level**.<br/><br/>
         ⚠️ **Failure to do this can cause crashes and potentially damage your machine.**<br/><br/>
         OpenPnP **does not** remember the previous nozzle positions from the last homing sequence, meaning it **cannot adjust movements based on past alignment**. If the nozzles are not level before homing, they may collide with the machine, leading to misalignment or serious hardware damage.
          ![level nozzles](images/level-nozzles-gif.gif)
@@ -210,7 +210,7 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
      ![Selecting the correct device for the Bottom Camera](images/21-choose-lumenpnp-bottom-from-dropdown.webp)<br/><br/>
 
     !!! info "Duplicate Camera Names"
-        If two cameras appear with the same name, select one—if incorrect, choose the other. This is a bug within OpenPnP.
+        If two cameras appear with the same name, select one. If incorrect, choose the other. This is a bug within OpenPnP.
 <br/><br/>
 
 1. **Set Resolution and Frame Rate**
@@ -259,14 +259,14 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
      ![Align over center of bottom camera](images/30-align-over-center-of-bottom-camera-gif.gif)<br/><br/>
     * Right click on the bottom camera's feed and select `Show Image Info?` to enable the image info card. This will give you the brightness histogram of the image.<br/><br/>
      ![enable the image histogram](images/31-show-histograph-gif.gif)<br/><br/>
-    * Use the histogram as a general guide rather than a precise measurement—it’s a helpful tool but not exact. For the best results, refer to the comparison photos below, which show examples of 'too bright,' 'too dark,' and 'good exposure' to help you fine-tune your settings after using the histogram.
+    * Use the histogram as a general guide rather than a precise measurement. It’s a helpful tool but not exact. For the best results, refer to the comparison photos below, which show examples of 'too bright,' 'too dark,' and 'good exposure' to help you fine-tune your settings after using the histogram.
     * In the next step, we'll be aiming for a **sharp peak on the right side** and a larger **cluster to the left** in the histogram. See the image below for reference.<br/><br/>
      ![a good histogram](images/32-good-exposure-with-histogram.webp)<br/><br/>
     !!! Warning "🚨 Important 🚨"
-        The reference image above is just an example—**your histogram may look very different** depending on lighting conditions, camera placement, and other environmental factors. **Do not try to match it exactly.** Instead, focus on achieving the key characteristics: a distinct peak on the right and a noticeable cluster, or peak, to the left. Adjust gradually until the image is clear and well-exposed.
+        The reference image above is just an example. **Your histogram may look very different** depending on lighting conditions, camera placement, and other environmental factors. **Do not try to match it exactly.** Instead, focus on achieving the key characteristics: a distinct peak on the right and a noticeable cluster, or peak, to the left. Adjust gradually until the image is clear and well-exposed.
 
 1. **Set the Correct Exposure**.
-    * Adjust the exposure slider, or enter varying manual exposure values, to ensure the camera can clearly detect the dark hole in the nozzle tip for calibration. The exposure should be balanced—bright enough to distinguish the nozzle tip from the background but not so bright that the hole becomes difficult to detect. Aim for a setting where the brightest areas are visible but do not appear completely white, and the darker areas remain well-defined. Use the following images as a reference for adjusting exposure:<br/><br/>
+    * Adjust the exposure slider, or enter varying manual exposure values, to ensure the camera can clearly detect the dark hole in the nozzle tip for calibration. The exposure should be balanced. Meaning, bright enough to distinguish the nozzle tip from the background but not so bright that the hole becomes difficult to detect. Aim for a setting where the brightest areas are visible but do not appear completely white, and the darker areas remain well-defined. Use the following images as a reference for adjusting exposure:<br/><br/>
      ![exposure too high](images/33-exposure-too-high.webp)<br/><br/>
      ![exposure too low](images/34-exposure-too-low.webp)<br/><br/>
      ![exposure correct](images/35-good-exposure.webp)<br/><br/>

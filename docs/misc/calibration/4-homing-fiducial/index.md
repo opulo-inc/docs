@@ -146,7 +146,7 @@ We also detail this process in our [setup video](https://youtu.be/h3mtEQfGMlM?t=
 <br/><br/>
 
 1. Right click on the top camera's feed and select `Show Image Info?` to enable the image info card. This will give you the brightness histogram of the image.
-    * Use the histogram as a general guide rather than a precise measurement—it’s a helpful tool but not exact. For the best results, refer to the comparison photos below, which show examples of 'too bright,' 'too dark,' and 'good exposure' to help you fine-tune your settings after using the histogram.<br/><br/>
+    * Use the histogram as a general guide rather than a precise measurement. It’s a helpful tool but not exact. For the best results, refer to the comparison photos below, which show examples of 'too bright,' 'too dark,' and 'good exposure' to help you fine-tune your settings after using the histogram.<br/><br/>
       ![enable the image histogram](../../../openpnp/v4/calibration/4-homing-fiducial/images/24-show-histogram-for-top-cam.webp)
 <br/><br/>
 
@@ -154,7 +154,7 @@ We also detail this process in our [setup video](https://youtu.be/h3mtEQfGMlM?t=
     * 🚨 **Keep all other camera settings at their default value, and only adjust the exposure slider**.
     * Aim for a **sharp peak on the right side** and a larger **cluster to the left** in the histogram. See the image below for reference.<br/><br/>
     !!! Warning "🚨 Important 🚨"
-        The reference image below is just an example—**your histogram may look very different** depending on lighting conditions, camera placement, and other environmental factors. **Do not try to match it exactly.** Instead, focus on achieving the key characteristics: a distinct peak on the right and a noticeable cluster to the left. Adjust gradually until the image is clear and well-exposed.<br/><br/>
+        The reference image below is just an example. **Your histogram may look very different** depending on lighting conditions, camera placement, and other environmental factors. **Do not try to match it exactly.** Instead, focus on achieving the key characteristics: a distinct peak on the right and a noticeable cluster to the left. Adjust gradually until the image is clear and well-exposed.<br/><br/>
         ![a good histogram](../../../openpnp/v4/calibration/4-homing-fiducial/images/25-good-histogram.webp)<br/><br/>
     * Locate and adjust the `Exposure` slider, or manually enter varying exposure values, until the Datum Board is easy to see.<br/><br/>
        ![exposure too high](../../../openpnp/v4/calibration/4-homing-fiducial/images/26-exposure-too-high.webp)<br/><br/>

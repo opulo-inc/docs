@@ -223,7 +223,7 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
      ![Selecting the correct device for the Bottom Camera](../../../openpnp/v4/calibration/2-connect-to-machine/images/21-choose-lumenpnp-bottom-from-dropdown.webp)<br/><br/>
 
     !!! info "Duplicate Camera Names"
-        If two cameras appear with the same name, select one—if incorrect, choose the other. This is a bug within OpenPnP.
+        If two cameras appear with the same name, select one. If incorrect, choose the other. This is a bug within OpenPnP.
 <br/><br/>
 
 1. **Set Resolution and Frame Rate**
@@ -279,14 +279,14 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
       ![Make the jog controls more precise](../../../openpnp/v4/calibration/2-connect-to-machine/images/distance-slider-machine-controls.webp)<br/><br/>
     * Right click on the bottom camera's feed and select `Show Image Info?` to enable the image info card. This will give you the brightness histogram of the image.<br/><br/>
      ![enable the image histogram](../../../openpnp/v4/calibration/2-connect-to-machine/images/31-show-histograph-gif.gif)<br/><br/>
-    * Use the histogram as a general guide rather than a precise measurement—it’s a helpful tool but not exact. For the best results, refer to the comparison photos below, which show examples of 'too bright,' 'too dark,' and 'good exposure' to help you fine-tune your settings after using the histogram.
+    * Use the histogram as a general guide rather than a precise measurement. It’s a helpful tool but not exact. For the best results, refer to the comparison photos below, which show examples of 'too bright,' 'too dark,' and 'good exposure' to help you fine-tune your settings after using the histogram.
     * In the next step, we'll be aiming for a **sharp peak on the right side** and a larger **cluster to the left** in the histogram. See the image below for reference.<br/><br/>
      ![a good histogram](../../../openpnp/v4/calibration/2-connect-to-machine/images/32-good-exposure-with-histogram.webp)<br/><br/>
     !!! Warning "🚨 Important 🚨"
-        The reference image above is just an example—**your histogram may look very different** depending on lighting conditions, camera placement, and other environmental factors. **Do not try to match it exactly.** Instead, focus on achieving the key characteristics: a distinct peak on the right and a noticeable cluster, or peak, to the left. Adjust gradually until the image is clear and well-exposed.
+        The reference image above is just an example. **Your histogram may look very different** depending on lighting conditions, camera placement, and other environmental factors. **Do not try to match it exactly.** Instead, focus on achieving the key characteristics: a distinct peak on the right and a noticeable cluster, or peak, to the left. Adjust gradually until the image is clear and well-exposed.
 
 1. **Set the Correct Exposure**.
-    * Adjust the exposure slider, or enter varying manual exposure values, to ensure the camera can clearly detect the dark hole in the nozzle tip for calibration. The exposure should be balanced—bright enough to distinguish the nozzle tip from the background but not so bright that the hole becomes difficult to detect. Aim for a setting where the brightest areas are visible but do not appear completely white, and the darker areas remain well-defined. Use the following images as a reference for adjusting exposure:<br/><br/>
+    * Adjust the exposure slider, or enter varying manual exposure values, to ensure the camera can clearly detect the dark hole in the nozzle tip for calibration. The exposure should be balanced. Meaning, sbright enough to distinguish the nozzle tip from the background but not so bright that the hole becomes difficult to detect. Aim for a setting where the brightest areas are visible but do not appear completely white, and the darker areas remain well-defined. Use the following images as a reference for adjusting exposure:<br/><br/>
      ![exposure too high](../../../openpnp/v4/calibration/2-connect-to-machine/images/33-exposure-too-high.webp)<br/><br/>
      ![exposure too low](../../../openpnp/v4/calibration/2-connect-to-machine/images/34-exposure-too-low.webp)<br/><br/>
      ![exposure correct](../../../openpnp/v4/calibration/2-connect-to-machine/images/35-good-exposure.webp)<br/><br/>
