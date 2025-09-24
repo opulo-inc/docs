@@ -88,7 +88,7 @@ Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts whe
 1. **Confirm the Correct Exposure**.
     * The exposure settings from the first nozzle should be close to what Nozzle Tip `N24` requires. If minor adjustments are needed, they will be refined in the **vision pipeline** for Nozzle Tip `N24` in the next steps.
 
-2. **Calibrate the N24 Nozzle Tip**.
+1. **Calibrate the N24 Nozzle Tip**.
     * Navigate to `Machine Setup > Nozzle Tips > N24 > Calibration`, and click the `Calibrate` button.<br/><br/>
      ![click the calibrate button for n045](images/13-click-calibrate-nozzle-tip-n24.webp)
      ![Watch calibration](images/14-nozzle-tip-n24-calibration-.gif)

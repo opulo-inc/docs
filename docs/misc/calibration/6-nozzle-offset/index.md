@@ -93,7 +93,6 @@ When speaking of **decreasing** values, this is always meaning that we are addin
 1. **Confirm camera alignment**
     * Go to `Machine Setup > Heads > ReferenceHead H1 > Primary Fiducial`<br/><br>
       ![primary fiducial location](../../../openpnp/v4/calibration/6-nozzle-offset/images/primary-fid-location.webp)<br/><br>
-    * Ensure the primary fiducials Z-height field is blank.
     * Click the button to bring the Top Camera to the Homing Fiducial.<br/><br>
       ![camera to primary fiducial location](../../../openpnp/v4/calibration/6-nozzle-offset/images/camera-to-homing-fid-button.webp)<br/><br>
     * Check the camera view: the homing fiducial should appear exactly centered.
@@ -120,7 +119,7 @@ When speaking of **decreasing** values, this is always meaning that we are addin
       * Decrease a value will move Nozzle N1 right (X) or backward (Y)
     * Whether the value is positive or negative, you still “increase” or “decrease” to move in the correct direction.<br/><br>
 
-1. **Visual aid**
+2. **Visual aid**
     * Use the table below to decide which way to change the value.
     * Red arrows represent the direction the nozzle is from the fiducial.
     * Blue arrows represent the direction the nozzle will move when that given axis value is raised or lowered.<br/><br>
@@ -134,7 +133,7 @@ When speaking of **decreasing** values, this is always meaning that we are addin
       ![nozzle to primary fiducial location](../../../openpnp/v4/calibration/6-nozzle-offset/images/nozzle-tip-to-homing-fid-button.webp)<br/><br>
     * If both are accurate, proceed to next step.
 
-1. **Apply and Save Adjusted Nozzle offset**.
+2. **Apply and Save Adjusted Nozzle offset**.
     * Click `Apply` in the lower right corner to store the calculated offset for the left nozzle.<br/><br/>
       ![click the apply button](../2-connect-to-machine/images/apply-button.webp)<br/><br/>
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
@@ -222,7 +221,6 @@ Once you have completed the top camera to nozzle tip offset calibration for the 
 1. **Confirm camera alignment**
     * Go to `Machine Setup > Heads > ReferenceHead H1 > Primary Fiducial`<br/><br>
       ![primary fiducial location](../../../openpnp/v4/calibration/6-nozzle-offset/images/primary-fid-location.webp)<br/><br>
-    * Ensure the primary fiducials Z-height field is blank.
     * Click the button to bring the Top Camera to the Homing Fiducial.<br/><br>
       ![camera to primary fiducial location](../../../openpnp/v4/calibration/6-nozzle-offset/images/camera-to-homing-fid-button.webp)<br/><br>
     * Check the camera view: the homing fiducial should appear exactly centered.
@@ -249,7 +247,7 @@ Once you have completed the top camera to nozzle tip offset calibration for the 
       * Decrease a value will move Nozzle N2 right (X) or backward (Y)
     * Whether the value is positive or negative, you still “increase” or “decrease” to move in the correct direction.<br/><br>
 
-1. **Visual aid**
+2. **Visual aid**
     * Use the table below to decide which way to change the value.
     * Red arrows represent the direction the nozzle is from the fiducial.
     * Blue arrows represent the direction the nozzle will move when that given axis value is raised or lowered.<br/><br>
@@ -263,7 +261,7 @@ Once you have completed the top camera to nozzle tip offset calibration for the 
       ![nozzle to primary fiducial location](../../../openpnp/v4/calibration/6-nozzle-offset/images/nozzle-tip-to-homing-fid-button.webp)<br/><br>
     * If both are accurate, proceed to next step.
 
-1. **Apply and Save Adjusted Nozzle offset**.
+2. **Apply and Save Adjusted Nozzle offset**.
     * Click `Apply` in the lower right corner to store the newly adjusted offset for the right nozzle.<br/><br/>
      ![click the apply button](../2-connect-to-machine/images/apply-button.webp)<br/><br/>
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>

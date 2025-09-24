@@ -89,7 +89,7 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
 1. Ensure **LED lights** are still on:
     * Ensure your **Top and Bottom ring lights** are still set to `On`. If not, go back to the **Machine Controls** in the bottom-left section of OpenPnP and go to `Actuators tab > LED > On` and close the actuator window.<br/><br/>
 
-2. Navigate to `Machine Setup > Heads > ReferenceHead H1 > Cameras > OpenPnPCaptureCamera Top`.<br/><br/>
+1. Navigate to `Machine Setup > Heads > ReferenceHead H1 > Cameras > OpenPnPCaptureCamera Top`.<br/><br/>
        ![Finding the Top Camera Settings](images/12-navigate-back-to-top-cam.webp)
 <br/><br/>
 
@@ -99,13 +99,13 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
 
 1. Located the `Exposure` slider and **check** the check box labeled `Auto`. The camera will attempt to find the correct exposure.
 
-2. Then, **uncheck** the `Auto` box to ensure we are now in "**manual adjustment**" mode.<br/><br/>
+1. Then, **uncheck** the `Auto` box to ensure we are now in "**manual adjustment**" mode.<br/><br/>
        ![Auto Exposure ON and OFF](images/14-turn-auto-exposure-on-and-off-gif.gif)<br/><br/>
 
-3. If the image is still difficult to see, slightly adjust the exposure until the datum board is easily visible. This will be fine-tuned after setting the homing fiducial location.
+1. If the image is still difficult to see, slightly adjust the exposure until the datum board is easily visible. This will be fine-tuned after setting the homing fiducial location.
     * 🚨 **Keep all other camera settings at their default value, and only adjust the exposure slider**.
 
-4. Return to the `Machine Controls` (bottom left of OpenPnP) so we can fine-tune the homing fiducial location.<br/><br/>
+1. Return to the `Machine Controls` (bottom left of OpenPnP) so we can fine-tune the homing fiducial location.<br/><br/>
        ![Switch to the jog tab](images/15-jog-tab.webp)
 <br/><br/>
 
@@ -122,7 +122,7 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
     * **Second Location**: Scroll down to the **Calibration Rig** section and click the `Capture Camera Location` button next to the **Primary Fiducial** field.<br/><br/>
        ![Second Capture Position is Primary Fiducial](images/19-second-position-capture-for-primary-fid.webp)<br/><br/>
 
-2. **Apply and Save**
+1. **Apply and Save**
     * Click `Apply` in the lower right corner to save your changes.<br/><br/>
        ![Apply Button](../2-connect-to-machine/images/apply-button.webp)<br/><br/>
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
@@ -172,7 +172,7 @@ We also detail this process in our [setup video](https://youtu.be/h3mtEQfGMlM?t=
         * Toggle **Auto Exposure** `on`, then `off`. (This puts your camera into manual exposure mode)
         * **Type your recorded exposure value into the exposure field beside the slider**.
 
-2. **Apply and Save**
+1. **Apply and Save**
     * Click `Apply` in the lower right corner to save your changes.<br/><br/>
        ![Apply Button](../2-connect-to-machine/images/apply-button.webp)<br/><br/>
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
