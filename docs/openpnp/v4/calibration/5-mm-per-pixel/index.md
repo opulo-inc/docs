@@ -4,9 +4,11 @@
 
 This next step calibrates the relationship between pixels and millimeters to make our cameras more accurate.
 
+The main reason for needing to perform the mm to pixel calibration is to translate pixel data into accurate, real-world measurements (like millimeters). This allows for reliable sizing of objects, quality control, and dimensional analysis in computer vision by correcting for lens distortions and establishing a precise scale factor, which is crucial for tasks needing quantifiable results beyond just visual identification.
+
 ---
 
-## Top Camera Calibration
+## Top Camera MM/Pixel Calibration
 
 In this step, we will calibrate the mm/pixels for the **Top Camera**. This requires us to set the dimensions and use a virtual bounding box to outline and measure one of the squares on the datum board, known as a golden guideline square. This allows us to calibrate the **top camera’s Units per pixel**, giving us accurate top camera movement.
 <br/><br/>
@@ -59,22 +61,30 @@ In this step, we will calibrate the mm/pixels for the **Top Camera**. This requi
       ![Save your config now](../2-connect-to-machine/images/save-config.webp)
 <br/><br/>
 
-1. **Confirm Top Camera Calibration**.
-    * First, ensure your top camera view is fully zoomed out.
+---
+
+### Validate Top Camera MM/Pixel Calibration
+
+Lets verify the top camera calibration was successful. This will ensure the top camera's millimeter per pixel is accurate so it is moving the correct amount for a given command.
+
+1. Ensure your top camera view is fully zoomed out.
+    * Hover over the top camera's video feed, and scroll with the mouse wheel or trackpad to zoom all the way out.
+
+1. Confirm top camera is calibrated correctly.
     * Click and drag the center reticle (located in the middle of the camera feed) to one of the corners of the Golden Guideline Square.
     * If the mm/pixel calibration is correct, the **Top Camera** will move to be precisely over your chosen corner.
      ![Confirm Top Camera Calibration](images/09-confirm-top-cal-is-correct.gif)
 
 ---
 
-## Bottom Camera Calibration
+## Bottom Camera MM/Pixel Calibration
 
 The following steps will calibrate the mm/pixels for the **Bottom Camera**. This requires us to set the dimensions and use a virtual bounding box to outline the nozzle tip. This allows us to calibrate the **bottom camera’s Units per pixel**, giving us accurate bottom camera movement.
 
 1. **Home your machine using the "Home" button**.
     * The LumenPnP will perform the homing process and position the top camera over the homing fiducial. In future steps, the homing sequence will also scan the nozzle tips after calibrating the homing fiducial, but for now, it should only scan the homing fiducial.
 
-2. **Select the bottom Camera**.
+1. **Select the bottom Camera**.
     * Navigate to `Machine Setup > Cameras > OpenPnPCaptureCamera Bottom`
     * In the drop-down under `Machine Controls`, select `Nozzle: N2 - N24 (Head: H1)` to control the nozzle on the right. This way, for any nozzle commands we run, OpenPnP knows to base them on Nozzle: N2 and **not** the other nozzle.<br/><br/>
      ![selecting n2 for control](images/10-select-nozzle-n2.webp)
@@ -125,8 +135,16 @@ The following steps will calibrate the mm/pixels for the **Bottom Camera**. This
       ![Save your config now](../2-connect-to-machine/images/save-config.webp)
 <br/><br/>
 
-1. **Confirm Bottom Camera Calibration**.
-    * First, ensure your bottom camera view is fully zoomed out.
+---
+
+### Validate Bottom Camera MM/Pixel Calibration
+
+Lets verify the bottom camera calibration was successful. This will ensure the bottom camera's millimeter per pixel is accurate so it is moving the correct amount for a given command.
+
+1. Ensure your bottom camera view is fully zoomed out.
+    * Hover over the top camera's feed, and scroll with the mouse wheel or trackpad to zoom all the way out.
+
+1. Confirm bottom camera MM/Pixel is calibrated correctly.
     * Click and drag the center reticle (located in the middle of the camera feed) to the edge of the nozzle tip and then back to the center of the tip.
     * The **Bottom Camera** should now be centered on the nozzle tip again.<br/><br/>
      ![Test your Bottom camera Units Per Pixel](images/20-testing-bottom-cam-units-per-pixel.gif)<br/><br/>
@@ -136,4 +154,4 @@ The following steps will calibrate the mm/pixels for the **Bottom Camera**. This
 
 ## Next Steps
 
-Next is [Nozzle Offset Calibration](../6-nozzle-offset/index.md).
+Next is [Nozzle Offset Calibration](../6-nozzle-offset/index.md). 

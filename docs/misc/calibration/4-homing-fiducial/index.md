@@ -45,6 +45,11 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
 
 ## Preparing for Homing
 
+1. Confirm the following settings before homing the LumenPnP.
+   * Go to Machine Setup > Heads > ReferenceHead H1 > `Homing Method` is set to `None`
+   * Go to Machine Setup > Nozzle Tips > ReferenceNozzleTip N045 > Calibration Tab > **Auto Recalibration**: `Manual`
+   * Go to Machine Setup > Nozzle Tips > ReferenceNozzleTip N24 > Calibration Tab > **Auto Recalibration**: `Manual`
+
 1. **Level the nozzles before homing**.
 
     !!! danger "🚨 Critical Warning: Level Nozzles Before Homing 🚨"
@@ -135,8 +140,6 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
 
 In order for OpenPnP to reliably detect the LumenPnP's homing fiducial, we'll need to **set the exposure and camera settings for your top camera** correctly.
 
-We also detail this process in our [setup video](https://youtu.be/h3mtEQfGMlM?t=842).
-
 1. Navigate to `Machine Setup > Heads > ReferenceHead H1 > Cameras > OpenPnPCaptureCamera Top`.<br/><br/>
       ![Finding the Top Camera Settings](../../../openpnp/v4/calibration/4-homing-fiducial/images/22-back-to-top-cam-again.webp)
 <br/><br/>
@@ -188,7 +191,6 @@ We also detail this process in our [setup video](https://youtu.be/h3mtEQfGMlM?t=
 
 1. If you receive the error `FIDUCIAL-HOME no matches found`, OpenPnP was not able to find your homing fiducial. You need to adjust your [Homing Fiducial Pipeline](../../../openpnp/v4/vision-pipeline-adjustment/2-homing-fiducial-pipeline.md).<br/><br/>
       ![A first attempt at homing the LumenPnP](../../../openpnp/v4/calibration/4-homing-fiducial/images/33-fiducial-home-no-match-found.webp)
-<br/><br/>
 
 ---
 

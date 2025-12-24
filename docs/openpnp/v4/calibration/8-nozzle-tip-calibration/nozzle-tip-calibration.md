@@ -27,7 +27,6 @@ Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts whe
 1. **Select Nozzle: N1**.
     * If `Nozzle: N1` is already centered over the bottom camera, skip to `Step 4`.
     * From the `Machine Controls` dropdown, select `Nozzle: N1 - N045 (Head:H1)`.<br/><br/>
-     ![Select Nozzle: N1 from Machine Controls](../6-nozzle-offset/images/01-seleect-nozzle-n1-from-machine-controls.webp)
 <br/><br/>
 
 1. **Open the bottom Camera Settings**.
@@ -40,9 +39,10 @@ Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts whe
      ![click the button that positions the toolhead over the bottom camera](images/04-click-position-toolhead-over-bottom-cam.webp)
 <br/><br/>
 
-1. **Calibrate the N045 Nozzle Tip**.
+1. **Calibrate the N045 Nozzle Tip Runout**.
     * Navigate to `Machine Setup > Nozzle Tips > N045 > Calibration`, and click the `Calibrate` button.<br/><br/>
-     ![click the calibrate button for n045](images/05-click-calibrate-nozzle-tip-n045.webp)
+     ![click the calibrate button for n045](images/05-click-calibrate-nozzle-tip-n045.webp)<br/><br/>
+    * 🚨 It is very important to closely observe the nozzle runout calibration. As the nozzle rotates, the detection must consistently track the nozzle tip and should not lock onto random circles or features that are clearly not part of the nozzle. If the runout calibration is inaccurate, parts will be placed incorrectly.<br/><br/>
      ![Watch the calibration process](images/06-nozzle-tip-n045-calibration.gif)
 
     !!! warning
@@ -88,9 +88,10 @@ Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts whe
 1. **Confirm the Correct Exposure**.
     * The exposure settings from the first nozzle should be close to what Nozzle Tip `N24` requires. If minor adjustments are needed, they will be refined in the **vision pipeline** for Nozzle Tip `N24` in the next steps.
 
-1. **Calibrate the N24 Nozzle Tip**.
+1. **Calibrate the N24 Nozzle Tip Runout**.
     * Navigate to `Machine Setup > Nozzle Tips > N24 > Calibration`, and click the `Calibrate` button.<br/><br/>
-     ![click the calibrate button for n045](images/13-click-calibrate-nozzle-tip-n24.webp)
+     ![click the calibrate button for n045](images/13-click-calibrate-nozzle-tip-n24.webp)<br/><br/>
+    * 🚨 It is very important to closely observe the nozzle runout calibration. As the nozzle rotates, the detection must consistently track the nozzle tip and should not lock onto random circles or features that are clearly not part of the nozzle. If the runout calibration is inaccurate, parts will be placed incorrectly.<br/><br/>
      ![Watch calibration](images/14-nozzle-tip-n24-calibration-.gif)
 
     !!! warning
@@ -131,8 +132,8 @@ Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts whe
       ![full homing sequence](images/16-full-homing-sequence-openpnp.gif)
 <br/><br/>
 
-1. **Record Final Exposure Settings for Nozzle: N2**.
-    * Once you've finalized your exposure setting for the bottom camera, **record the exposure value. You'll need it when restarting OpenPnP**. We recommend saving these values to a text file and storing it somewhere convenient.
+1. **Update Saved Exposure Settings for Nozzle: N2 (If Needed)**.
+    * If you had to change your saved exposure value for your bottom camera to get a nozzle tip to complete runout calibration successfully, **record the new exposure value. You'll need it when restarting OpenPnP**. We recommend saving these values to a text file and storing it somewhere convenient.
 <br/><br/>
 
 ---

@@ -2,15 +2,15 @@
 
 ![](../../calibration/img/lumenpnp-v3-docs-logo-small.png)
 
+Now that you have confirmed the top camera and nozzle tip locations are perfectly aligned, **you must immediately set the bottom camera position by following the steps below**.
+
+Do **NOT** home the machine at this point. If you have already homed it, return to the previous steps and re-validate that the top camera to nozzle tip offsets are still 100 percent accurate before continuing.
+
+**It is critical that the bottom camera position is set directly after the top camera to nozzle tip offset has been fully and accurately calibrated**. This ensures the bottom camera position itself is correct.
+
+All subsequent calibrations depend on the bottom camera being in the correct location. For this reason, this step must be performed in this order, and the bottom camera position should not be adjusted again once it has been set.
+
 ---
-
-Now that we have precise alignment between the nozzle tips and the top camera, we can use the calibrated nozzle to set our bottom camera position.
-
-1. **Home your machine using the "Home" button**.
-    * The LumenPnP will perform the homing sequence and level both nozzles to be the same height.
-    * Ensure you keep the nozzles level throughout these steps, as you will use this to assist with setting the bottom camera position.<br/><br/>
-     ![Level the nozzles](../../../misc/calibration/7-bottom-camera-position/images/00-level-nozzles.webp)
-<br/><br/>
 
 1. **Open the Bottom Camera Settings**.
     * Navigate to `Machine Setup > Cameras > OpenPnpCaptureCamera Bottom`.<br/><br/>
@@ -19,7 +19,7 @@ Now that we have precise alignment between the nozzle tips and the top camera, w
 
 1. **Access the Position Tab**.
     * Click on the Position tab to begin setting the bottom camera’s location.
-    * Ensure the Z position field is set to 31.5. (*This step is specific to any LumenPnP V3 machine.*) <br/><br/>
+    * Ensure the Bottom camera's Z-height field is set to 31.5. (*This step is specific to any LumenPnP V3 machine.*) <br/><br/>
      ![Select the position tab](../../../misc/calibration/7-bottom-camera-position/images/02-bottom-cam-position-tab-v3.webp)
 <br/><br/>
 
@@ -50,6 +50,12 @@ Now that we have precise alignment between the nozzle tips and the top camera, w
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>
       ![Save your config now](../../../openpnp/v4/calibration/2-connect-to-machine/images/save-config.webp)<br/><br/>
 <br/><br/>
+
+---
+
+!!! note "Reminder: Do not change the bottom camera position."
+    The bottom camera position should not be changed after the bottom camera location is set <br/><br/>
+    All other calibrations are based on the bottom camera's accurate location, which is why it is crucial that this step is performed directly after calibrating the top camera to the nozzle tip. If you crash the nozzle, it is important to ensure the bottom camera's saved coordinates are still accurate before continuing.
 
 ---
 

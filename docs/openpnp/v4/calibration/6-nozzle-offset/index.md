@@ -2,15 +2,17 @@
 
 ![](../images/lumenpnp-v4-docs-logo-small.png)
 
-Calibrating the nozzle offset ensures precise alignment between the nozzle tips and the top camera. This process involves capturing the exact position of the nozzle tip and aligning the top camera to the same reference point. The calibration is essential for accurate component placement and must be performed carefully.
+Calibrating the top camera to nozzle tip offset ensures precise alignment between the nozzle tips and the top camera. This process involves capturing the exact position of the nozzle tip and aligning the top camera to the same reference point. The calibration is essential for accurate component placement and must be performed carefully.
+
+The calibration of the top camera to nozzle tip (this page we're on), and the bottom camera position (the next page) are by far the most important calibrations to be accurate, as most all other calibrations use these as a baseline for their calculations. For this reason, it is very important that the bottom camera position is set directly after the top camera to nozzle tip offset is calibrated.
 
 This guide will calibrate both nozzles, ensuring they share the same focal plane as your datum board, components, and PCBs.
+
+In the previous section, you validated nozzle N2's MM/Pixel calibration. We will switch back to Nozzle N1 to start this calibration.
 
 ---
 
 ## Nozzle: N1 Offset (Left Toolhead)
-
-For these steps, you should be in the `Machine Setup` tab.
 
 !!! danger "🚨 Critical Warning: Level Nozzles 🚨"
     ⚠️ **You must ensure that your nozzles are level**.<br/><br/>
@@ -27,8 +29,40 @@ For these steps, you should be in the `Machine Setup` tab.
     * Confirm that the `N045` nozzle tip is securely attached to **Nozzle: N1 (left toolhead)**.
 <br/><br/>
 
+### Set Nozzle N1's Primary Z-Height
+
+We will capture the correct Z-height value and input it into the primary fiducial's Z-height. This is a very important value to get correct, as it sets the standard for what height the focal plane is, which is the same height as the top of the datum board.
+
+!!! Note
+    It is very important that nozzle N1 stays in the same rotational direction throughout this testing, as nozzle runout has not been configured yet. The camera's crosshair reticle represent the angle of the rotation of a nozzle. Try to keep the crosshair the same throughout this whole section.
+
+1. **Park the nozzle rotation**.
+    * Within Machine Controls (bottom left of OpenPnP),locate the rotational controls, which can be found below the main directional arrows. The rotational control is labeled "C" with a Park button in between its left and right arrows.  This adjusts the rotation.<br/><br/>
+     ![Open the Nozzle: N1 settings](images/machine-controls-rotation.webp)
+    * Press the P button to park the rotation, which should make the lines perfectly straight up and down, like a plus sign.
+<br/><br/>
+
+1. **Position Nozzle: N1 on the homing fiducial**.
+    * Jog Nozzle: N1 (left toolhead) so that the **nozzle tip *barely* touches the datum board** and is perfectly centered over the homing fiducial. **Avoid collisions while jogging the nozzle tip**.<br/><br/>
+    * Use the shiny edges of the fiducial that are visible around the nozzle tip to help determine proper centering. Accuracy here is crucial to achieving precise placements, so please take your time with this and ensure it is dead center by checking it from multiple angles without bumping the machine.<br/><br/>
+     ![Nozzle touching the homing fiducial](images/05-nozzle-tip-n045-touching-homing-fid-center.webp)<br/><br/>
+    * **🚨IMPORTANT!🚨 ⚠️ Keep record of the Z height that is displayed in the green DRO (Digital Read Out) when the nozzle is touching the top of the datum board ⚠️**. This is located in the very bottom right of OpenPnP. In this example, it is 5.2 for nozzle N1, but yours could be different, which is okay.<br/><br/>
+     ![Capture primary fiducial Z Position](images/set-primary-z-height-for-primary-fid.webp)
+    * *(If the DRO is blue, click on it to change it to green) (Your your coordinates, including z-height, will likely be different than what you see in this image)*
+<br/><br/>
+
+1. **Apply captured Z-value to the Primary fiducial's Z-Height**
+    * Take the Z-Height that you captured from the DRO in the previous step and go to `Machine Setup > Heads > ReferenceHead H1 and locate the Primary Fiducial`
+    * Locate the `Z` value field in the primary fiducial and enter the captured z-height into that field.<br/><br/>
+      ![Set the Z-Height for the Primary Fid Z](images/set-primary-fid-z-height-now.webp)<br/><br/>
+    * It is very important that this Z height for `Nozzle N1` is correct, as it will be used as an critical value for other calibrations and most anything that needs to be level with the focal plane, which is at the same height as the datum board.
+
+### Calibrate Nozzle N1's X/Y Offset
+
+Now that Nozzle N1’s Z-height is properly set, we can move straight into calculating the X/Y offset for that nozzle.
+
 1. **Open the Nozzle: N1 settings**.
-    * Click through the following path: `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`.<br/><br/>
+    * Click through the following path: `Machine Setup > Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1`.<br/><br/>
      ![Open the Nozzle: N1 settings](images/02-reference-nozzle-n1-settings.webp)
 <br/><br/>
 
@@ -37,15 +71,9 @@ For these steps, you should be in the `Machine Setup` tab.
      ![Offset wizard settings](images/03-offset-wizard-tab.webp)
 <br/><br/>
 
-1. **Confirm the ‘Include Z?’ setting**.
-    * Ensure that the `Include Z?` checkbox is checked. This ensures that the Z-height is properly factored into the calibration process.<br/><br/>
-     ![include z checkbox](images/04-include-z.webp)
-<br/><br/>
-
-1. **Position Nozzle: N1 over the homing fiducial**.
-    * Jog Nozzle: N1 (left toolhead) so that the **nozzle tip *barely* touches the datum board** and is perfectly centered over the homing fiducial. **Avoid collisions while jogging the nozzle tip**.<br/><br/>
-    * Use the shiny edges of the fiducial that are visible around the nozzle tip to determine proper centering. Accuracy here is crucial to achieving precise placements, so please take your time with this and ensure it is dead center.<br/><br/>
-     ![Nozzle touching the homing fiducial](images/05-nozzle-tip-n045-touching-homing-fid-center.webp)
+1. **keep the ‘Include Z?’ checkbox unchecked**.
+    * Ensure that the `Include Z?` checkbox is **NOT** selected, and is left unchecked. You already should have manually captured the correct Z height for nozzle N1 from the digital read out, so we do not need to apply an Z-offset to it.<br/><br/>
+     ![include z checkbox](images/04-dont-include-z.webp)
 <br/><br/>
 
 1. **Capture Nozzle: N1’s position**.
@@ -80,20 +108,17 @@ For these steps, you should be in the `Machine Setup` tab.
 
 ---
 
-## Validate Nozzle N1's Offset
+### Validate Nozzle N1's Offset
 
 Once you have completed the top camera to nozzle tip offset calibration for the first nozzle, you need to validate that the alignment is accurate before continuing to the second one. This ensures that both the camera and nozzle tips are correctly aligned with the homing fiducial before continuing with production.
 
 **Before starting, ensure you have `Nozzle N1` selected in the `Control Center`.**
 
-When speaking of **increasing** values, this is always meaning that we are adding positive value to the number. Meaning a negative (-) number would go closer to zero.
-When speaking of **decreasing** values, this is always meaning that we are adding negative value to the number. Meaning a negative (-) number would go further away from zero.
-
 1. **Confirm camera alignment**
     * Go to `Machine Setup > Heads > ReferenceHead H1 > Primary Fiducial`<br/><br>
-      ![primary fiducial location](../6-nozzle-offset/images/primary-fid-location.webp)<br/><br>
+      ![primary fiducial location](images/primary-fiducial-location.webp)<br/><br>
     * Click the button to bring the Top Camera to the Homing Fiducial.<br/><br>
-      ![camera to primary fiducial location](../6-nozzle-offset/images/camera-to-homing-fid-button.webp)<br/><br>
+      ![camera to primary fiducial location](images/call-top-cam-to-homing-fid.webp)<br/><br>
     * Check the camera view: the homing fiducial should appear exactly centered.
     * ❌ If it is not centered, restart the camera-to-fiducial calibration.
     * ✅ Do not continue until the fiducial is showing accurately centered in the camera feed.
@@ -101,17 +126,21 @@ When speaking of **decreasing** values, this is always meaning that we are addin
 
 1. **Check nozzle tip alignment**
     * Click the button to place the selected nozzle tip on the Homing Fiducial. It is directly beside the button used for the camera in step 1.<br/><br>
-      ![nozzle to primary fiducial location](../6-nozzle-offset/images/nozzle-tip-to-homing-fid-button.webp)<br/><br>
+      ![nozzle to primary fiducial location](images/call-nozzle-tip-to-homing-fid.webp)<br/><br>
     * The machine should move the nozzle tip to its calculated position.
     * Inspect the nozzle tip visually.
     * ✅ If the nozzle tip sits directly on the fiducial, no correction is needed. Proceed to calibrating Nozzle N2's offset.
     * ❌ If it is off, **note whether it is left, right, in front, or behind the homing fiducial**.
 <br/><br>
 
-1. **Correct nozzle offsets**
+1. **Adjust nozzle offsets, if needed**
     * When the nozzle tip does not land perfectly on the fiducial, adjust its offset.
     * Go to `Machine Setup > Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N1` and locate the Offset values on that page.
-    * Start with fine adjustments to the decimal values so you can dial in the offset gradually. This helps get an idea of how much you need to adjust to get it spot on. Example: If the nozzle tip is sitting to the right of the homing fiducial, change the fake x-value offset of -24.360 to be -24.330, which increases this value, so the nozzle will move to the left.<br/><br>
+    * Do not change the Z-offset value for Nozzle N1. It should stay at 0.000.
+    * Start with fine adjustments to the decimal values of the X and Y fields, so you can dial in the offset gradually. This helps get an idea of how much you need to adjust to get it spot on.
+    * When speaking of **increasing** values, this is always meaning that we are adding positive value to the number. Meaning a negative (-) number would go closer to zero.
+    * When speaking of **decreasing** values, this is always meaning that we are adding negative value to the number. Meaning a negative (-) number would go further away from zero.
+    * Example: If the nozzle tip is sitting to the right of the homing fiducial, change the fake x-value offset of -24.360 to be -24.330, which increases this value, so the nozzle will move to the left.<br/><br>
       ![offset adjustment area](../6-nozzle-offset/images/top-cam-nozzle-offset-adjust.webp)<br/><br>
     * Key points to remember:
       * Increasing a value will move Nozzle N1 left (X) or forward (Y)
@@ -125,11 +154,11 @@ When speaking of **decreasing** values, this is always meaning that we are addin
 ![nozzle offset visual assistance](images/nozzle-offset-visual-assist.webp)<br/><br>
 <br/><br>
 
-1. Once you've adjusted it to be accurate, Validate one last time before moving to the second nozzle.
+1. Once you've adjusted it to be accurate, Validate one last time before moving on.
     * Click the button to bring the Top Camera to the Homing Fiducial and confirm it is still accurate.<br/><br>
-      ![camera to primary fiducial location](../6-nozzle-offset/images/camera-to-homing-fid-button.webp)<br/><br>
+      ![camera to primary fiducial location](images/call-top-cam-to-homing-fid.webp)<br/><br>
     * Click the button to place the selected nozzle tip to our newly adjusted position on the Homing Fiducial, and confirm it is still good.<br/><br>
-      ![nozzle to primary fiducial location](../6-nozzle-offset/images/nozzle-tip-to-homing-fid-button.webp)<br/><br>
+      ![nozzle to primary fiducial location](images/call-nozzle-tip-to-homing-fid.webp)<br/><br>
     * If both are accurate, proceed to next step.
 
 1. **Apply and Save Adjusted Nozzle offset**.
@@ -142,8 +171,6 @@ When speaking of **decreasing** values, this is always meaning that we are addin
 
 ## Nozzle: N2 Offset (Right Toolhead)
 
-For these steps, you should already be in the `Machine Setup` tab.
-
 !!! danger "🚨 Critical Warning: Level Nozzles 🚨"
     ⚠️ **You must ensure that your nozzles are level**.<br/><br/>
     **Failure to do this can cause crashes and potentially damage your machine.**<br/><br/>
@@ -153,23 +180,26 @@ For these steps, you should already be in the `Machine Setup` tab.
 1. **Confirm the correct nozzle is installed**.
     * Confirm that the `N24` nozzle tip is still securely attached to **Nozzle: N2 (right toolhead)**.<br/><br/>
 
-1. **Select the correct nozzle to control**.
+2. **Select the correct nozzle to control**.
     * In the bottom left of OpenPnP, select `Nozzle: N2 - N24 (Head:H2)` from the **machine controls** dropdown. This ensures that movements and adjustments apply to the **right** nozzle equipped with the `N24` nozzle tip.<br/><br/>
      ![Select nozzle from machine control dropdown](images/09-select-nozzle-n2-offset.webp)
 <br/><br/>
 
-1. **Open the Nozzle: N2 settings**.
-    * Click through the following path: `Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N2`.<br/><br/>
-     ![Open the Nozzle N2 settings](images/10-nozzle-n2-settings.webp)
-<br/><br/>
+1. **Position the nozzle over the homing fiducial**.
+    * Jog `Nozzle: N2` (right toolhead) so that it is perfectly centered over the homing fiducial, while *barely* touching the datum board (Just like we did with the first nozzle). **Avoid collisions while jogging the nozzle tip**.<br><br/>
+     ![Nozzle touching the homing fiducial](images/13-nozzle-n2-centered-and-touching-homing-fid.webp)
+    * This nozzle tip is larger than the last one, which is okay. We will use the circle just outside of the homing fiducial to determine if you've centered it correctly. Please take your time with this and ensure it is dead center.<br><br/>
+
+### Calibrate Nozzle N2's X, Y, & Z Offset
 
 1. **Open the Offset Wizard tab**.
-    * Navigate to the `Offset Wizard` tab if you are not already there.<br/><br/>
+    * Navigate to the `Offset Wizard` tab.<br/><br/>
      ![Offset wizard settings](images/11-nozzle-n2-offset-wizard.webp)
 <br/><br/>
 
-1. **Confirm the ‘Include Z?’ setting**.
-    * Ensure that the `Include Z?` checkbox is checked. This ensures that the Z-height is properly factored into the calibration process.<br/><br/>
+1. **click the ‘Include Z?’ checkbox**.
+    * To ensure that Nozzle N2's Z-height registers as the same height as the primary fiducial's Z-height value, we must make sure that Z is included when calibrating these offsets.
+    * To calibrate the Z2 offset, make sure the `Include Z?` checkbox is selected. This will find the difference between the primary fiducial's Z-height value and Nozzle N2's Z-height. Then adds the appropriate offset to Nozzle N2's Z-height.<br/><br/>
      ![use the include z checkbox](images/12-include-z-for-nozzle-n2.webp)
 <br/><br/>
 
@@ -211,7 +241,7 @@ For these steps, you should already be in the `Machine Setup` tab.
 
 ---
 
-## Validate Nozzle N2's Offset
+### Validate Nozzle N2's Offset
 
 Once you have completed the top camera to nozzle tip offset calibration for the second nozzle, you need to validate that the alignment is accurate before continuing to the next calibration steps. This ensures that both the camera and nozzle tips are correctly aligned with the homing fiducial before continuing with production.
 
@@ -219,9 +249,9 @@ Once you have completed the top camera to nozzle tip offset calibration for the 
 
 1. **Confirm camera alignment**
     * Go to `Machine Setup > Heads > ReferenceHead H1 > Primary Fiducial`<br/><br>
-      ![primary fiducial location](../6-nozzle-offset/images/primary-fid-location.webp)<br/><br>
+      ![primary fiducial location](../6-nozzle-offset/images/primary-fiducial-location.webp)<br/><br>
     * Click the button to bring the Top Camera to the Homing Fiducial.<br/><br>
-      ![camera to primary fiducial location](../6-nozzle-offset/images/camera-to-homing-fid-button.webp)<br/><br>
+      ![camera to primary fiducial location](../6-nozzle-offset/images/call-top-cam-to-homing-fid.webp)<br/><br>
     * Check the camera view: the homing fiducial should appear exactly centered.
     * ❌ If it is not centered, restart the camera-to-fiducial calibration.
     * ✅ Do not continue until the fiducial is showing accurately centered in the camera feed.
@@ -229,14 +259,14 @@ Once you have completed the top camera to nozzle tip offset calibration for the 
 
 1. **Check nozzle tip alignment**
     * Click the button to place the selected nozzle tip on the Homing Fiducial. It is directly beside the button used for the camera in step 1.<br/><br>
-      ![nozzle to primary fiducial location](../6-nozzle-offset/images/nozzle-tip-to-homing-fid-button.webp)<br/><br>
+      ![nozzle to primary fiducial location](../6-nozzle-offset/images/call-nozzle-tip-to-homing-fid.webp)<br/><br>
     * The machine should move the nozzle tip to its calculated position.
     * Inspect the nozzle tip visually.
     * ✅ If the nozzle tip sits directly on the fiducial, no correction is needed, and both your nozzle tips are validated. Proceed to the next section.
     * ❌ If it is off, **note whether it is left, right, in front, or behind the homing fiducial**.
 <br/><br>
 
-1. **Correct nozzle offsets**
+   1. **Correct nozzle offsets**
     * When the nozzle tip does not land perfectly on the fiducial, adjust its offset.
     * Go to `Machine Setup > Heads > ReferenceHead H1 > Nozzles > ReferenceNozzle N2` and locate the Offset values on that page.
     * Start with fine adjustments to the decimal values so you can dial in the offset gradually. This helps get an idea of how much you need to adjust to get it spot on. Example: If the nozzle tip is sitting to the right of the homing fiducial, change the fake x-value offset of 23.350 to be 23.380, which increases this value, so the nozzle will move to the left.<br/><br>
@@ -255,9 +285,9 @@ Once you have completed the top camera to nozzle tip offset calibration for the 
 
 1. Once you've adjusted it to be accurate, Validate one last time before moving on.
     * Click the button to bring the Top Camera to the Homing Fiducial and confirm it is still accurate.<br/><br>
-      ![camera to primary fiducial location](../6-nozzle-offset/images/camera-to-homing-fid-button.webp)<br/><br>
+      ![camera to primary fiducial location](../6-nozzle-offset/images/call-top-cam-to-homing-fid.webp)<br/><br>
     * Click the button to place the selected nozzle tip to our newly adjusted position on the Homing Fiducial, and confirm it is still good.<br/><br>
-      ![nozzle to primary fiducial location](../6-nozzle-offset/images/nozzle-tip-to-homing-fid-button.webp)<br/><br>
+      ![nozzle to primary fiducial location](../6-nozzle-offset/images//call-nozzle-tip-to-homing-fid.webp)<br/><br>
     * If both are accurate, proceed to next step.
 
 1. **Apply and Save Adjusted Nozzle offset**.
@@ -268,5 +298,10 @@ Once you have completed the top camera to nozzle tip offset calibration for the 
 ---
 
 ## Next Steps
+
+!!! warning "Do not home the machine between this step and setting your bottom camera position!**"
+    **The top camera to nozzle tip offset is meant to be done directly before setting your bottom camera position. Homing the machine between these steps has the chance to ruin the precise calibration you've done so far.**<br/><br/>
+    If you have confirmed that the Top camera and nozzle tip locations are perfectly accurate, you **MUST** immediately set your bottom camera position, which is the next section. It is crucial that the bottom camera position is set after the top camera to nozzle tip offset has been perfectly aligned, as this ensures the bottom camera position is now 100% accurate. <br/><br/>
+    All other calibrations are based on the bottom camera's accurate location, which is why it is crucial that this step is performed in this order.
 
 Next is [Bottom Camera Position](../7-bottom-camera-position/index.md).

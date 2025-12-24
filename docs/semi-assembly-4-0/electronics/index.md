@@ -190,18 +190,21 @@ description: Mounting the control box and installing cables on the v4 LumenPnP
 
 7. Bolt the left side of the support panel into the Y gantry using `2x` M5x10mm socket head bolts.
 
-    ![alt text](img/IMG_3047.webp) ![alt text](img/IMG_3048.webp)
+    ![alt text](img/IMG_3047.webp)
+    !!! warning "A Bit of Resistance"
+        You should expect to feel some resistance when bolting these three together. The slot in the cable chain is slightly undersized for the bolt, so don't worry if you need to use a little bit of extra force to thread these bolts through.
+    ![alt text](img/IMG_3048.webp)
 
 8. On the right side, align the holes in the drag chain with the holes in the support panel, and with the holes in the other Y gantry.
 
     ![alt text](img/IMG_3046.webp) ![alt text](img/IMG_3050.webp)
 
-9.  Bolt the three together using `2x` M5x16mm flat head bolts.
+9. Bolt the three together using `2x` M5x16mm flat head bolts.
 
+    ![alt text](img/IMG_3051.webp)
     !!! warning "A Bit of Resistance"
         You should expect to feel some resistance when bolting these three together. The slot in the cable chain is slightly undersized for the bolt, so don't worry if you need to use a little bit of extra force to thread these bolts through.
-
-    ![alt text](img/IMG_3051.webp) ![alt text](img/IMG_3052.webp)
+    ![alt text](img/IMG_3052.webp)
 
 10. Thread `2x` more M5x16mm flat head bolts through the holes in the Y drag chain by the X motor as shown.
 

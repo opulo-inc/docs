@@ -2,7 +2,7 @@
 
 ![](../../calibration/img/lumenpnp-v3-docs-logo-small.png)
 
-When picking up parts with the LumenPnP, it’s important to verify that a part has been successfully picked. While the bottom camera can confirm this visually, using the LumenPnP's vacuum sensors provides a faster way to detect a successful pick.
+When picking up parts with the LumenPnP, it’s important to verify that a part has been successfully picked. While the bottom camera also confirms this visually, using the LumenPnP's vacuum sensors provides a faster way to detect a successful pick, preventing it from having to bring the component to the bottom camera first to detect the part. Because the bottom camera does checks the part, even if slightly slower, you can freely disable the vacuum part detection with confidence that you'll still be able to place your parts.
 
 ---
 
@@ -44,7 +44,7 @@ Each nozzle has a different vacuum reading due to variations in nozzle tip size.
      ![Enabling part detection](../../../openpnp/v4/calibration/10-vacuum-sensor/images/03-n045-part-detection-tab.webp)
 <br/><br/>
 
-1. **Measure the Vacuum Pressure**.
+1. **Measure the Vacuum Pressure While Open**.
     * In `Machine Controls`, navigate to the `Actuators` tab.
     * Select `H1:VAC1` to open the vacuum pressure window.
     * Click `On` to activate the pump and valve. <br/><br/>
@@ -54,8 +54,8 @@ Each nozzle has a different vacuum reading due to variations in nozzle tip size.
      ![actuator control](../../../openpnp/v4/calibration/10-vacuum-sensor/images/05-read-vacuum-sensor-n045.webp)
 <br/><br/>
 
-1. **Measure the Vacuum Pressure with a Sealed Nozzle**.
-    * Cover the nozzle tip completely with your fingertip.
+1. **Measure the Vacuum Pressure While Covered**.
+    * **Take one of the components from the strip of components included with your LumenPnP kit**, or a component from your BOM that is an appropriate size for this nozzle, and **hold it up to the nozzle tip**. The vacuum pressure should be able to pick up and hold the part on its own.
     * Click `Read` again. This represents the vacuum pressure when a part is picked, or "**covered**".<br/><br/>
      ![Turn on punp](../../../openpnp/v4/calibration/10-vacuum-sensor/images/06-reading-with-finger-covering-n045.webp)<br/><br/>
     * **Take note of the new value**. We will also need it later.
@@ -76,6 +76,7 @@ Each nozzle has a different vacuum reading due to variations in nozzle tip size.
     !!! caution
         The difference between uncovered and covered readings may be small, but **even a single-digit change can indicate a successful pick**. Nozzle sizes affect these readings, so expect variations between nozzles.
 <br/><br/>
+
 1. **Apply and Save**
     * Click `Apply` in the lower right corner to save your changes to the **N045** nozzle tip.<br/><br/>
      ![apply](../../../openpnp/v4/calibration/2-connect-to-machine/images/apply-button.webp)<br/><br/>
@@ -118,7 +119,7 @@ Each nozzle has a different vacuum reading due to variations in nozzle tip size.
 <br/><br/>
 
 1. **Measure the Vacuum Pressure with a Sealed Nozzle**.
-    * Cover the nozzle tip completely with your fingertip.
+    * **Take a component** from your BOM that is an appropriate size for this nozzle **and hold it up to the nozzle tip**. The vacuum pressure should be able to pick up and hold the part on its own. If you do not have a component large enough for this nozzle tip, you may use your fingertip as a fallback. However, **using an actual component will provide the most accurate results**.
     * Click `Read` again. This represents the vacuum pressure when a part is picked, or "**covered**".<br/><br/>
      ![Vacuum Pump Reading for N24](../../../openpnp/v4/calibration/10-vacuum-sensor/images/14-n24-reading-covered.webp)<br/><br/>
     * **Take note of the new value**. We will also need it later.

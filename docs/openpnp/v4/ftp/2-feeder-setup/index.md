@@ -17,7 +17,7 @@ Feeders hold and present components to the pick-and-place machine in a consisten
 The FTP PCB uses two main types of components: resistors and LEDs. For this guide, we are focusing on resistors to illustrate how to disable placements effectively when needed.
 
 !!! Note "Powered Feeders"
-    If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder), we highly recommend using them for populating the FTP board. Follow the instructions for **[setting them up](../../../feeders/1-overview/feeder-overview.md)** now, and then proceed to the [test run](../3-test-run/index.md) once complete.
+    If you purchased any [8mm Photon Feeders](https://opulo.io/products/8mm-feeder), we highly recommend using them for populating the FTP board. Follow the instructions for **[setting them up](../../../../feeders/1-overview/feeder-overview.md)** now, and then proceed to the [test run](../3-test-run/index.md) once complete.
 
 ---
 

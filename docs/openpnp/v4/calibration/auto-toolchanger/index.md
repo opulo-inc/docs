@@ -9,15 +9,17 @@ description: >
 
 Almost all of the jobs that can be run on a LumenPnP are possible using just an `N045` nozzle tip on the first nozzle, and an `N24` nozzle tip on the second. This means that a nozzle tip swap is very rarely needed.
 
-If your job requires more than three nozzle tips, by default OpenPnP will pause a job and wait for you to manually change a nozzle tip. OpenPnP also has an option to enable automatic tool changing. Perform the following optional steps for each of the nozzle tips you'll be switching between. We recommend reading the [OpenPnP Wiki page](https://github.com/openpnp/openpnp/wiki/Nozzle-Tip-Changer) about this as well.
+If your job requires more than three nozzle tips, by default OpenPnP will pause a job and wait for you to manually change a nozzle tip. OpenPnP also has an option to enable automatic tool changing. Perform the following optional steps for each of the nozzle tips you'll be switching between. We recommend reading the [OpenPnP Wiki page](https://github.com/openpnp/openpnp/wiki/Nozzle-Tip-Changer) about this for additional information.
 
 !!! danger "Warning"
-      This procedure is finicky and prone to error. Ensure your brass nozzle holders are sufficiently lubricated with the included lubrication packet, and you set your speeds very low for insertion and removal movements. We highly recommend optimizing your job for just two nozzle tips, or doing a manual nozzle tip swap if absolutely necessary.
-
-1. Insert the labeled nozzle tips into the holder in their respectively labeled slots.
+      This procedure is finicky and prone to error. Ensure your brass nozzles are sufficiently lubricated with the included lubrication packet, and you set your speeds very low for insertion and removal movements. We highly recommend optimizing your job for just two nozzle tips, or doing a manual nozzle tip swap if absolutely necessary.
 
 1. Apply some lubricant to the end of your nozzle holder with the lubrication packet included with your nozzles. This is important for repeatably fully attaching the nozzles without damaging the rubber O-rings around the holder.
   ![Apply Lubricant to holder](images/apply-super-lube.webp)
+
+1. go through every nozzle tip and place it on the pre-lubed nozzle and then remove it. Repeat this several times or until each nozzle tip slides on to the nozzle easily. This helps prevent friction causing crashes later.
+
+1. Insert the labeled nozzle tips into the holder in their respectively labeled slots.
 
 1. Click on the `Machine Setup` tab in the top right pane.
   ![Machine Setup Tab](images/Machine-Setup-Tab-3.webp)

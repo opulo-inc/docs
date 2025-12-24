@@ -2,6 +2,8 @@
 
 ![](../img/lumenpnp-v3-docs-logo-small.png)
 
+*(**V2 Users**, you can use these docs for your machine as well. For anything specific to V2, we will add notes pointing it out).*
+
 **Now that OpenPnP is installed and the LumenPnP configuration files have been placed in the hidden system folder, OpenPnP can start with some basic preconfigured settings. The next step is to connect your LumenPnP and get familiar with OpenPnP’s user interface.**.
 
 **Then, we will install the N045 and N24 nozzle tips to help us with calibration**.
@@ -45,7 +47,7 @@ Follow these steps in order:
 
 ---
 
-## Configuration the Serial Port
+### Configuration the Serial Port
 
 **Before OpenPnP can communicate with the LumenPnP, we need to set the correct serial port**.
 
@@ -94,7 +96,7 @@ Follow these steps in order:
 
 ---
 
-## Establishing a Serial Connection
+### Establishing a Serial Connection
 
 1. **Connect OpenPnP to Your Machine**
     * Click the **green power button** in the `Machine Controls` section (Bottom left of OpenPnP).<br/><br/>
@@ -140,8 +142,10 @@ Follow these steps in order:
 1. Before we home the LumenPnP, it is very important that we check a couple of settings.
     * Go to `Machine Setup > Nozzle Tips >N045 > Calibration Tab > Auto Recalibration`
     * Ensure `Auto Recalibration` is set to `Manual`.<br/><br/>
+     ![Set nozzle N045 to manual](../../../openpnp/v4/calibration/2-connect-to-machine/images/set-n045-to-manual.webp)<br/><br/>
     * Then, go to `Machine Setup > Nozzle Tips >N24 > Calibration Tab > Auto Recalibration`
     * Ensure `Auto Recalibration` is set to `Manual`.<br/><br/>
+     ![Set nozzle N24 to manual](../../../openpnp/v4/calibration/2-connect-to-machine/images/set-n24-to-manual.webp)<br/><br/>
 
 1. Once the nozzle tips are set to `Manual`, click the **Home button** to perform a rough homing sequence.
     * The Nozzles will move to X, Y, and Z zero positions **(front-left corner of the LumenPnP)** and park there.
@@ -155,7 +159,7 @@ Follow these steps in order:
 
 ---
 
-## Install the Nozzle Tips
+### Install the Nozzle Tips
 
 1. **Locate Your Nozzle Tips and SuperLube tube**.
     * Find and remove the `N045` and `N24` nozzle tips in the nozzle rack that is mounted on the staging plate.<br/><br/>
@@ -197,7 +201,7 @@ Follow these steps in order:
 
 ## Configuring the Bottom Camera
 
-Before calibration, the bottom camera and exposure must be set up properly. **We will need to install a nozzle tip and position it above the bottom camera to properly adjust the exposure**.
+Before calibration begins, the bottom camera and exposure must be set up properly. **We will need to install a nozzle tip and position it above the bottom camera to properly adjust the exposure**.
 
 !!! tip "Which Reticle should I use?"
     We use the "**Ruler**" Reticle in the following steps. If you prefer to use the same **reticle style** that we use, right-click on the **top or bottom camera feed** and choose `Reticle`, then "`Ruler`" to match our docs photos best.<br/><br/>
@@ -232,13 +236,14 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
 <br/><br/>
 
 1. **Apply and Verify**
-    * Click `Apply` to save the **Bottom Camera** settings. One of the red "X"s in the camera feed should disappear. The image might be entirely black, but we'll fix that in the following steps.<br/><br/>
+    * Click `Apply` to save the **Bottom Camera** settings. One of the red "X"s in the camera feed should disappear. The image might be entirely black, but we'll fix that in the following steps.
+    * Save your OpenPnP configuration so OpenPnP will remember this when opened. `File > Save Configuration`.<br/><br/>
      ![Saving changes to the Bottom Camera Config](../../../openpnp/v4/calibration/2-connect-to-machine/images/23-apply-and-save-bottom-cam-settings-gif.gif)
 <br/><br/>
 
 ---
 
-## Adjust Bottom Camera Exposure
+### Adjust Bottom Camera Exposure
 
 !!! warning "Other Camera Settings"
     In the following step, **do not** modify any camera settings other than exposure. The default values should remain unchanged.
@@ -285,7 +290,7 @@ Before calibration, the bottom camera and exposure must be set up properly. **We
     !!! Warning "🚨 Important 🚨"
         The reference image above is just an example. **Your histogram may look very different** depending on lighting conditions, camera placement, and other environmental factors. **Do not try to match it exactly.** Instead, focus on achieving the key characteristics: a distinct peak on the right and a noticeable cluster, or peak, to the left. Adjust gradually until the image is clear and well-exposed.
 
-1. **Set the Correct Exposure**.
+1. **Find the Correct Exposure**.
     * Adjust the exposure slider, or enter varying manual exposure values, to ensure the camera can clearly detect the dark hole in the nozzle tip for calibration. The exposure should be balanced. Meaning, sbright enough to distinguish the nozzle tip from the background but not so bright that the hole becomes difficult to detect. Aim for a setting where the brightest areas are visible but do not appear completely white, and the darker areas remain well-defined. Use the following images as a reference for adjusting exposure:<br/><br/>
      ![exposure too high](../../../openpnp/v4/calibration/2-connect-to-machine/images/33-exposure-too-high.webp)<br/><br/>
      ![exposure too low](../../../openpnp/v4/calibration/2-connect-to-machine/images/34-exposure-too-low.webp)<br/><br/>

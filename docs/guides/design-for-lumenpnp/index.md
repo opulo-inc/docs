@@ -2,9 +2,9 @@
 
 While the LumenPnP is capable of populating the vast majority of PCBs, there are general design guidelines that will help make population as smooth and automated as possible.
 
-All machine capabilities can also be found in the v3.1 [brochure](https://cdn.shopify.com/s/files/1/0570/4256/7355/files/LumenPnP-v3.1-brochure.pdf?v=1698263482).
+All machine capabilities can also be found in the LumenPnP V4 [brochure](https://cdn.shopify.com/s/files/1/0570/4256/7355/files/LumenPnP-v3.1-brochure.pdf?v=1698263482).
 
-Also be sure to check out the [Midscale Website](https://midscale.io/) for information and resources for midscale manufacturing.
+Also be sure to check out the page for [Setting Up An SMT Line](https://www.opulo.io/pages/set-up) or [Hardware.cafe](https://hardware.cafe/) for information and resources for midscale manufacturing.
 
 ## Components
 

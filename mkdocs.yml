@@ -139,7 +139,7 @@ nav:
                 - Import V4 Configuration Files: openpnp/v4/install-config/import-config/index.md
         - LumenPnP V4 Calibration:
             - Introduction: openpnp/v4/calibration/index.md
-            - Connect to LumenPnP V4 and Configure Bottom Camera: openpnp/v4/calibration/2-connect-to-machine/index.md
+            - Connect LumenPnP and Configure Bottom Camera: openpnp/v4/calibration/2-connect-to-machine/index.md
             - Configure Top Camera and Homing Fiducial: openpnp/v4/calibration/4-homing-fiducial/index.md
             - MM/Pixel Calibration: openpnp/v4/calibration/5-mm-per-pixel/index.md
             - Nozzle Offset: openpnp/v4/calibration/6-nozzle-offset/index.md
@@ -198,8 +198,8 @@ nav:
         - Backlash Compensation: misc/backlash-compensation/index.md
         - Standalone Feeder Control: misc/standalone-feeders/index.md
         - Photon Protocol: misc/photon/index.md
-        - Import V3 Config Files: misc/import-config/index.md
-        - LumenPnP V3 Calibration:
+        - Import V2/V3 Config Files: misc/import-config/index.md
+        - LumenPnP V2/V3 Calibration:
             - Introduction: misc/calibration/index.md
             - Connecting to Your Machine: misc/calibration/2-connect-to-machine/index.md
             - Homing Fiducial: misc/calibration/4-homing-fiducial/index.md

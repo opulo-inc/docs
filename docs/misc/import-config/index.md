@@ -2,6 +2,8 @@
 
 ![](../../misc/calibration/img/lumenpnp-v3-docs-logo-small.png)
 
+**If you have an older V2**, you'll download the V2 configuration files instead of the ones for the V3 mentioned below. The instructions to install them should be the same.
+
 **To properly use OpenPnP with the LumenPnP V3**, you need to configure the software with your machine's specifications, such as size, camera setup, and other essential settings. To simplify this, we provide a set of pre-configured files. Follow the steps below to import them correctly.
 
 ⚠️ If you are setting up a LumenPnP V4, you cannot use this page. Follow [this link](../../openpnp/v4/install-config/import-config/index.md) to the correct V4 config files. ⚠️

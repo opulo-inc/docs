@@ -2,7 +2,11 @@
 
 ![](img/lumenpnp-v3-docs-logo-small.png)
 
-*(If you have a LumenPnP V4, these are not the correct steps for your machine. Please go [here](../../openpnp/v4/calibration/index.md) for the V4 Calibration steps)*
+!!! note "V4 Users"
+    **If you have a LumenPnP V4**, these are not the correct steps for your machine. Please go [here](../../openpnp/v4/calibration/index.md) for the V4 Calibration steps
+
+!!! note "V2 Users"
+    If you have a LumenPnP V2, you'll use these docs to set up your machine. We will point out any time there is something vital for V2 users to do. For this reason, it is highly recommended that you read these instructions thoroughly before attempting them. Please keep in mind that you can skip the second nozzle calibration because your machine only has one nozzle. There may be some steps that are slightly different because the docs assume you have a second nozzle. This may require you to perform additional nozzle tip swaps for certain calibrations that are not mentioned in the docs. This is because the V3 docs assume you have two nozzles. Reach out to [support](https://www.opulo.io/pages/contact-support) if you run into any issues along the way.
 
 ---
 
