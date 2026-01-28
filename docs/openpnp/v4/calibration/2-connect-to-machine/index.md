@@ -127,22 +127,22 @@ Follow these steps in order:
         ⚠️ **Failure to do this can cause crashes and potentially damage your machine.**<br/><br/>
         OpenPnP **does not** remember the previous nozzle positions from the last homing sequence, meaning it **cannot adjust movements based on past alignment**. If the nozzles are not level before homing, they may collide with the machine, leading to misalignment or serious hardware damage.
          ![level nozzles](images/level-nozzles-gif.gif)
-    !!! Note
-        Use the `P` between the Z-axis up/down arrows located in Machine Controls toward the bottom left of OpenPnP. This ensures the nozzle tips are out of the way.<br/><br?> 
-        The `P` stands for **Parking** the nozzle out of the way into a safe height that won’t collide with any objects. If nothing happens after you click the `P` button, that means the nozzles are at a safe height already.
-    !!! Note "Nozzles not level after parking."
-        The nozzles may not be level when clicking the “**Park**” button, which is okay. The nozzle only moves to the point that it reaches the “safe zone” and then stops.
 <br/><br/>
 
-1. Before we home the LumenPnP, it is very important that we check a couple of settings.
-    * Go to `Machine Setup > Nozzle Tips >N045 > Calibration Tab > Auto Recalibration`
-    * Ensure `Auto Recalibration` is set to `Manual`.<br/><br/>
-     ![Set nozzle N045 to manual](images/set-n045-to-manual.webp)<br/><br/>
-    * Then, go to `Machine Setup > Nozzle Tips >N24 > Calibration Tab > Auto Recalibration`
-    * Ensure `Auto Recalibration` is set to `Manual`.<br/><br/>
-     ![Set nozzle N24 to manual](images/set-n24-to-manual.webp)<br/><br/>
+1. ⚠️ Before we home the LumenPnP, it is very important that we check three settings are disabled.
+    * **First setting to check:** go to `Machine Setup > Heads > ReferenceHead H1`. Locate the `Homing Method` and ensure it is set to `None`
+     ![Set homing method to be none](images/set-homing-method-to-none.webp)
+    * Click `Apply` to apply this change. Then Save your config file by going to `File > Save Configuration`.<br/><br/>
+    * **Second setting to check:** go to `Machine Setup > Nozzle Tips >N045 > Calibration Tab`.
+    * Locate the `Auto Recalibration` field, and ensure it's set to `Manual`.
+     ![Set nozzle N045 to manual](images/set-n045-to-manual.webp)
+    * Click `Apply`. Then `save your config file`, or the changes will not stick.<br/><br/>
+    * **Final setting to check:** go to `Machine Setup > Nozzle Tips >N24 > Calibration Tab`.
+    * Locate the `Auto Recalibration` field, and ensure it's set to `Manual`.
+     ![Set nozzle N24 to manual](images/set-n24-to-manual.webp)
+    * Click `Apply`. Then `save your config file`, or the changes will not stick.<br/><br/>
 
-1. Once the nozzle tips are set to `Manual`, click the **Home button** to perform a rough homing sequence.
+2. Once you confirm the homing method is set to `None`, and the nozzle tips are set to `Manual`, click the **Home button** to perform a rough homing sequence.
     * The Nozzles will move to X, Y, and Z zero positions **(front-left corner of the LumenPnP)** and park there.
     * If the LumenPnP does not stay in the front left corner of the machine, Please go back to the prior step and ensure the `Manual` settings was saved.<br/><br/>
         ![Home your LumenPnP](images/11-home-your-machine-gif.gif)
@@ -185,7 +185,7 @@ Follow these steps in order:
      ![Installing the N24 Nozzle Tip onto the Left Nozzle N1](images/18-N24-nozzle-installed-gif.gif)<br/><br/>
 
     !!! Tip "Why These Nozzle Tips?"
-        The **N045** and **N24 nozzle tips** cover the vast majority of parts **without needing swaps**. We highly recommend keeping them as the default and only swapping when absolutely (e.g., for very heavy parts).
+        The **N045** and **N24 nozzle tips** cover the vast majority of parts **without needing swaps**. We highly recommend keeping them as the default and only swapping when absolutely necessary(e.g., for very heavy parts).
 
 ---
 
