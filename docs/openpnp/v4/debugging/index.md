@@ -2,7 +2,7 @@
 glightbox: false
 ---
 
-# Debugging
+# Debugging Errors and Offsets
 
 This page is a central repository for debugging OpenPnP errors.
 

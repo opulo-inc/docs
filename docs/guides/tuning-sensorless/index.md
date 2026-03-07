@@ -1,6 +1,8 @@
-# Tune Sensorless Homing
+# Tune Sensorless Homing (V3 only)
 
-If your machine is homing the X or Y axis too early, or not registering that it's hit the end of travel, use this guide to tune sensorless homing.
+Important Note: This only applies to people who own a LumenPnP V3.2 or older. If you have a V4, your machien uses Endstops in place of the sensorless homing that was used in the past.
+
+If your LumenPnP V3 is homing the X or Y axis too early, or not registering that it's hit the end of travel, use this guide to tune sensorless homing.
 
 !!! note "M914 Command"
     Sensorless homing sensitivity is set using the M914 Gcode command. For more information, check out [Marlin's M914 documentation](https://marlinfw.org/docs/gcode/M914.html).

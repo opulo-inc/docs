@@ -62,7 +62,7 @@ If you'd like to add a third staging plate, you can fit 25x 8mm or 12mm Feeders 
 
 ![12mm feeder](img/12mm.webp)
 
-There is also a 12mm variant of the feeder, designed for 12mm tape. This variant operates the exact same as its 8mm counterpart.
+There is also a 12mm variant of the feeder, designed for 12mm tape. This variant operates the exact same as its 8mm counterpart, but uses a spool guide that acts more like a ramp for mounted feeders below.
 
 ## Help
 
@@ -72,4 +72,4 @@ If you find that there's something unclear in this documentation, please [submit
 
 ## Next steps
 
-Before using the feeders, you'll [install the slot harness](../2-install-harness/index.md). If your machine already has slots installed, you can jump ahead to [mounting feeders](../4-mounting/mounting.md).
+Before using the feeders, you'll jump ahead to [mounting feeders](../4-mounting/mounting.md).

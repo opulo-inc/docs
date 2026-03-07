@@ -9,15 +9,16 @@ OpenPnP is open-source software designed to control pick and place machines. It 
 ## Recommended Hardware and Operating System
 
 OpenPnP is designed to run on many different kinds of host computers. However, USB drivers and internal USB hub bandwidth can vary between computers. For reliable connectivity and exposure control with the LumenPnP cameras, we recommend using a **Lenovo Thinkpad** (any model should be fine) **running Ubuntu 20.04 LTS or Ubuntu 22.04 LTS**.
+
+!!!Note "MacOS No Longer Compatible"
+    OpenPnP no longer supports MacOS, and we have found the vurrent release for Mac to be unusable. If you are a Mac user, you'll need to switch to a supported OS or use the older version of OpenPnP 2023-04-05 version.
 <br/><br/>
 
 ---
 
 ## Download and Install OpenPnP
 
-**Only use the OpenPnP version linked in the instructions below.** OpenPnP undergoes frequent updates that **can alter, break, or eliminate functionality**. Sticking to our suggested version **(the 2023-04-05 release)** guarantees that everything operates correctly and that this documentation remains reliable. This version is also compatible with the LumenPnP feeders.
-
-Because OpenPnP has recently started creating stable releases, we will be adapting to the newest version that we can confirm works without issue. This page will be updated to reflect that change when it happens. Until then, please use the version recommended on this page.
+OpenPnP has recently started creating stable releases. We are now supporting OpenPnP's latest main release.
 
 !!! note "Use Linux if possible"
      We highly recommend using Ubuntu Linux as the OS for running OpenPnP due to how well it handles communication with the cameras.
@@ -27,7 +28,7 @@ Because OpenPnP has recently started creating stable releases, we will be adapti
 ### Linux ([Ubuntu Install Guide](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview))
 
 1. **Download and install OpenPnP for Linux**.
-    * ([Download .deb](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-linux-test.deb)) or ([Download .tar.gz](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-unix-test.tar.gz))
+    * ([Download .deb](https://s3-us-west-2.amazonaws.com/openpnp/OpenPnP-linux-main.deb)) or ([Download .tar.gz](https://s3-us-west-2.amazonaws.com/openpnp/OpenPnP-unix-main.tar.gz))
     * Use this version of OpenPnP. It is the version we use and based all of these docs on.
 
     !!! alert "Linux Users"
@@ -61,24 +62,10 @@ Because OpenPnP has recently started creating stable releases, we will be adapti
 
 ---
 
-### MacOS (Not Recommended)
+**Mac Users**
 
-1. **Download and install OpenPnP for Mac**.
-    * ([Download .dmg](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-macos-test.dmg))
-    * Use this version of OpenPnP. It is the version we use and based all of these docs on.
-
-1. **Launch OpenPnP** and make sure it loads fully. Doing this will ensure that OpenPnP creates a configuration folder on your computer, which we'll need in the next step.
-
-1. OpenPnP might prompt you to download a new version. Click `Cancel` and then `Exit` to this prompt.
-
-1. **Completely shut down the OpenPnP software.**
-
-    !!! danger "Mac Users - Trouble Instaling?"
-        Because of [a bug with how OpenPnP signs their releases](https://github.com/openpnp/openpnp/issues/1559), Mac users with ARM processors might experience a crash on boot, or not be able to access the cameras. You can still run OpenPnP by navigating to `Applications -> OpenPnP` and right clicking on the OpenPnP app and selecting "Show Package Contents":
-        ![Show package contents on the openpnp app](img/opnp-show-package-contents.webp)
-        Then navigate to `Contents -> MacOS` and double click on `JavaApplicationStub` to run OpenPnP.
-        ![clicking on javaapplicationstub](img/boot-opnp-java-stub.webp)
-        NOTE: We do not recommend using MacOS with the LumenPnP. Please only use if there is no other option.
+!!!alert "MacOS is no longer supported, nor functional with OpenPnP."
+    Until further development is done, MacOS is forced to use the old version of OpenPnP.
 
 ---
 

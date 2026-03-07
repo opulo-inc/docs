@@ -1,10 +1,11 @@
 # Enable and Load Nozzle Tip on Second Nozzle
+
 > **_NOTE:_** Ensures the N2 nozzle will be checked when homing your LumenPnP.
 
 Confirm the Nozzle Tip you want to use is loaded on the N2 Nozzle.
 
 1. Go to `Machine Setup` > `Heads` > `Reference Head H1` > `Nozzles` > `ReferenceNozzle N2`
-2. Once there, click the checkbox for the Nozzle Tip that you have equiped under the `Loaded?` section.
+2. Once there, click the checkbox for the Nozzle Tip that you have equipped under the `Loaded?` section.
 ![](img/referencenozzle-n2-loaded.webp)
 
 Next, confirm the Nozzle Tip is enabled

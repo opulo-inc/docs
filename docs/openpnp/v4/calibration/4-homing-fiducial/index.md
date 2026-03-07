@@ -48,7 +48,9 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
 1. Confirm the following settings before homing the LumenPnP.
    * Go to Machine Setup > Heads > ReferenceHead H1 > `Homing Method` is set to `None`
    * Go to Machine Setup > Nozzle Tips > ReferenceNozzleTip N045 > Calibration Tab > **Auto Recalibration**: `Manual`
+   * Click the apply button in the bottom right, or it will not save your changes.
    * Go to Machine Setup > Nozzle Tips > ReferenceNozzleTip N24 > Calibration Tab > **Auto Recalibration**: `Manual`
+   * Click the apply button in the bottom right, or it will not save your changes.
 
 1. **Level the nozzles before homing**.
 
@@ -57,6 +59,12 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
         ⚠️ **Failure to do this can cause crashes and potentially damage your machine.**<br/><br/>
         OpenPnP **does not** remember the previous nozzle positions from the last homing sequence, meaning it **cannot adjust movements based on past alignment**. If the nozzles are not level before homing, they may collide with the machine, leading to misalignment or serious hardware damage.
          ![level nozzles](../2-connect-to-machine/images/level-nozzles-gif.gif)
+
+!!! Note
+        Use the `P` between the Z-axis up/down arrows located in Machine Controls toward the bottom left of OpenPnP. This ensures the nozzle tips are out of the way.<br/><br?> 
+        The `P` stands for **Parking** the nozzle out of the way into a safe height that won’t collide with any objects. If nothing happens after you click the `P` button, that means the nozzles are at a safe height already. Note that this can only be done after the LumenPnP has homed at least once, which we did in the prior step.
+    !!! Note "Nozzles not level after parking."
+        The nozzles may not be level when clicking the “**Park**” button, which is okay. The nozzle only moves to the point that it reaches the “safe zone” and then stops.
 <br/><br/>
 
 1. Click the **Home button** to perform a rough homing sequence.
@@ -115,7 +123,8 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
 <br/><br/>
 
 1. Align the Top Camera:
-    * Towards the bottom right of OpenPnP, **use the jog controls** to position the **center of the reticle** directly over the **Homing Fiducial** in the perfect-center of the **Opulo logo**. Adjust the `Distance` slider as needed.<br/><br/>
+    * **Use the jog controls** to position the **center of the reticle** directly over the **Homing Fiducial**. Adjust the `Distance` slider as needed.<br/><br/>
+    * **IMPORTANT! Only align to the homing fiducial dot**. Do not use the Opulo logo surrounding it, as the logo was printed at a different time than the fiducial and may not be perfectly aligned with the homing fiducial.
        ![Center the homing fiducial in the camera view](images/16-top-cam-over-homing-fid-gif.gif)
 <br/><br/>
 
@@ -127,7 +136,7 @@ Now that your bottom camera exposure has been fine-tuned, the same thing needs t
     * **Second Location**: Scroll down to the **Calibration Rig** section and click the `Capture Camera Location` button next to the **Primary Fiducial** field.<br/><br/>
        ![Second Capture Position is Primary Fiducial](images/19-second-position-capture-for-primary-fid.webp)<br/><br/>
 
-1. **Apply and Save**
+2. **Apply and Save**
     * Click `Apply` in the lower right corner to save your changes.<br/><br/>
        ![Apply Button](../2-connect-to-machine/images/apply-button.webp)<br/><br/>
     * Save your OpenPnP configuration now. `File > Save Configuration`.<br/><br/>

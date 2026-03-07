@@ -1,4 +1,6 @@
-# Update Gcode Macros
+# Update Gcode Macros (V2/V3)
+
+This does not apply to someone who has a V4.
 
 OpenPnP puts general machine configuration in the same file as machine-specific configuration. This means that updating settings for your LumenPnP can also force you to redo calibration. To prevent this, this guide will walk you through which GCode macros to update so you don't need to start from scratch on calibration.
 

@@ -141,7 +141,7 @@ The following steps will calibrate the mm/pixels for the **Bottom Camera**. This
 
 Lets verify the bottom camera calibration was successful. This will ensure the bottom camera's millimeter per pixel is accurate so it is moving the correct amount for a given command.
 
-1. Ensure your bottom camera view is fully zoomed out.
+1. Ensure your bottom camera view is zoomed out enough to be able to see the full nozzle tip.
     * Hover over the top camera's feed, and scroll with the mouse wheel or trackpad to zoom all the way out.
 
 1. Confirm bottom camera MM/Pixel is calibrated correctly.

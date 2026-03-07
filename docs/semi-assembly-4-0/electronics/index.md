@@ -274,4 +274,4 @@ description: Mounting the control box and installing cables on the v4 LumenPnP
 
 ## Next Step
 
-Next you'll [install OpenPnP](../../openpnp/v4/install-config/install/index.md).
+Next you'll prepare for calibration using the [Preflight Checklist](../../openpnp/v4-1/preflight/index.md).

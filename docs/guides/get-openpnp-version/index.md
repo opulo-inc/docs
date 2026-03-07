@@ -2,15 +2,19 @@
 
 If you want to find out what version of OpenPnP you are using, please see the appropriate operating system below to find the proper pathway.
 
-## MacOS
+---
 
-1. Go to the top left of the screen and click on `OpenPnP` > `About OpenPnP`.
+## Linux
 
-      ![](img/mac-openpnp1.webp)
+1. Go to the top of the program and click on `Help` > `About`.
+
+      ![](img/linux-openpnp1.webp)
 
 2. The version will be listed as a date:
 
-      ![](img/mac-openpnp2.webp)
+      ![](img/linux-openpnp2.webp)
+
+---
 
 ## Windows
 
@@ -22,12 +26,14 @@ If you want to find out what version of OpenPnP you are using, please see the ap
 
       ![](img/windows-openpnp2.webp)
 
-## Linux
+---
 
-1. Go to the top of the program and click on `Help` > `About`.
+## MacOS
 
-      ![](img/linux-openpnp1.webp)
+1. Go to the top left of the screen and click on `OpenPnP` > `About OpenPnP`.
+
+      ![](img/mac-openpnp1.webp)
 
 2. The version will be listed as a date:
 
-      ![](img/linux-openpnp2.webp)
+      ![](img/mac-openpnp2.webp)

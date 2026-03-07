@@ -53,7 +53,7 @@ If you own a LumenPnP V4, you must use the V4 config files.
 
 <!-- ## OpenPnP
 
-In February of 2025, OpenPnP made a new stable release, `2025-02-02` (v2.2), which is what we recommend installing now. If you downloaded OpenPnP before then, you likely have the original recommended version, `2023-04-05`. You can check what version you have installed by following [this guide](/docs/guides/get-openpnp-version/). Make sure to use the correct configuration based on your version.
+In March of 2026, OpenPnP made a new stable release, `v2.6`, which is what we recommend installing now. If you downloaded OpenPnP before then, you likely have the original recommended version, `2023-04-05`. You can check what version you have installed by following [this guide](/docs/guides/). Make sure to use the correct configuration based on your version.
 
 ### OpenPnP 2025-02-02 (v2.2)
 
@@ -92,10 +92,6 @@ In February of 2025, OpenPnP made a new stable release, `2025-02-02` (v2.2), whi
 ---
 
 !!! failure "Not Recommended"
-
-#### MacOS Download
-
-* [Download .dmg](https://openpnp.s3-us-west-2.amazonaws.com/test/2023-04-05_08-24-36.0aa4ae8/OpenPnP-macos-test.dmg)
 
 #### Windows OS Download
 

@@ -198,7 +198,8 @@ Before calibration begins, the bottom camera and exposure must be set up properl
         ![Different reticles](images/Switch-reticle-type.webp)
 
 1. **🚨 Remove the Top Camera Lens Cap 🚨**
-    * ⚠️ Ensure the **top camera** has its lens caps removed.<br/><br/>
+    * ⚠️ Ensure the **top camera** has its lens caps removed.
+    * The lens cap can be easily pulled off by pulling directly down using your fingers. It does not have threads, and any twisting will result in the top camera being out of focus.<br/><br/>
      ![Lens cap locations](images/19-remove-top-cam-lens-cap.webp)
 <br/><br/>
 

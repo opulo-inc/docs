@@ -6,7 +6,7 @@
 
 **To properly use OpenPnP with the LumenPnP V3**, you need to configure the software with your machine's specifications, such as size, camera setup, and other essential settings. To simplify this, we provide a set of pre-configured files. Follow the steps below to import them correctly.
 
-⚠️ If you are setting up a LumenPnP V4, you cannot use this page. Follow [this link](../../openpnp/v4/install-config/import-config/index.md) to the correct V4 config files. ⚠️
+⚠️ If you are setting up a LumenPnP V4, you cannot use this page. Follow [this link](../../openpnp/v4-1/preflight/index.md) to the correct V4 config files. ⚠️
 
 ---
 
