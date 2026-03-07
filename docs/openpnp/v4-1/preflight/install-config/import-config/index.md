@@ -15,7 +15,7 @@
 
 Download the configuration files for LumenPnP 4.1:
 
-<a href="install-config/install-openpnp/" class="download-button">Download Config Files</a>
+<a href="https://github.com/opulo-inc/lumenpnp/releases/download/v4.1.0/LumenPnP-Config-v4-1.zip" class="download-button">Download Config Files</a>
 
 1. Unzip the download. You should find two files:
     * `machine.xml`
