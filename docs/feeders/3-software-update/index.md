@@ -1,10 +1,10 @@
 # Software Update
 
-Any LumenPnP model from 3.1 to the current version is ready to work with the Photon feeders. If you have an older LumenPnP that has its original firmware, it is possible you'll need to update both your LumenPnP's firmware and OpenPnP.
+Any LumenPnP model from v3.1 to the current version is ready to work with the Photon feeders. If you have an older LumenPnP that has its original firmware, it is possible you'll need to update both your LumenPnP's firmware and OpenPnP.
 
 ## Update OpenPnP
 
-Please update to the latest version of OpenPnP.
+Please update to the latest version of OpenPnP 2.6
 
 ## Update Feeder Firmware **(Optional)**
 
@@ -74,19 +74,19 @@ Please update to the latest version of OpenPnP.
 12. Once connected, Switch to the download tab on the left.
 ![Download Tab](img/download-tab.webp)
 
-1.  Click the "Browse" button and navigate to the provided `firmware.bin` file.
+13.  Click the "Browse" button and navigate to the provided `firmware.bin` file.
 
     ![Browse Button](img/browse-button.webp)
 
-2.  Ensure that the “Start address” is `0x08000000`.
+14.  Ensure that the “Start address” is `0x08000000`.
 
     ![Start Address](img/start-address.webp)
 
-3.  Click "Start Programming".
+15.  Click "Start Programming".
 
     ![Start Programming](img/start-programming.webp)
 
-4.  Wait until the software prompts that the firmware has been downloaded successfully. You may disconnect the programmer from the feeder.
+16.  Wait until the software prompts that the firmware has been downloaded successfully. You may disconnect the programmer from the feeder.
 
     ![programming complete pop up](img/programming-complete.webp)
 
