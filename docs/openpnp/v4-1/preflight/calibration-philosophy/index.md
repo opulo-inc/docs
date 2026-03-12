@@ -28,7 +28,7 @@ Please be aware that some calibration steps cannot be brought back after complet
 **Issues and Solutions** has three types of steps:
 
 * **Fundamental Steps** (To start, only complete the ones we list)
-* **Suggestion Steps** (Do not do these steps until we have validated the fundametnals)
+* **Suggestion Steps** (Attempt at your own risk. These are not verified by us yet. Do not attempt any of these steps until we have validated the fundamentals)
 * **Error Steps** (With our configuration files, there will show some steps labeled as Errors, ignore for calibration.)
 
 OpenPnP includes many calibration tools that are designed to support a wide variety of machines.

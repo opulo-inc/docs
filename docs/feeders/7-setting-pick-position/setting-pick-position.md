@@ -71,7 +71,7 @@ Now that you've loaded a component into the feeder, we'll fine-tune the feeder's
 
 ## Next Steps
 
-If you came here from the **LumenPnP V4 Documentation**, continue to validatiion
+If you came here from the **LumenPnP V4.1 Documentation**, continue to validatiion
 
 <a href="/openpnp/v4-1/controlled-validation-test/job-validation/" class="next-step">V4.1 Job Validation →</a>
 

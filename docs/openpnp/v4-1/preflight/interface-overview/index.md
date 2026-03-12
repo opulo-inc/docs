@@ -76,7 +76,7 @@ The `Severity column` has 3 types:
 
 The `State column` has 3 types:
 
-* **Open** (white - not done)ç
+* **Open** (white - not done)
 * **Solved** (green - Finished Step)
 * **Dismissed** (Grey - Dismissed Steps)
 
@@ -87,11 +87,19 @@ Every calibration Step displays two things:
 
 ---
 
-### Helpful Notes
-
+<div class="good-to-know"><div class="good-to-know-title">
 For making things easier
+</div>
 
-* Use the mouse or trackpad scroll function on the camera preview window to zoom in or out on the image.
+- Use the mouse or trackpad scroll function on the camera preview window to zoom in or out on the image.
+
+<div>
+
+- Right Click and choose crosshair, then select Ruler. This helps when calibrating.
+
+</div>
+
+</div>
 
 ---
 

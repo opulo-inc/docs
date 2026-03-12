@@ -76,9 +76,11 @@ To place the camera in manual exposure mode:
 
 ### Adjust the Top Camera Exposure
 
-Set Exposure ≈ 100 as a starting point.
+Set Exposure ≈ 100 as a rough starting point.
 
-You may need to jog the machine head using the Machine Controls panel so the camera sees the staging plate.
+Using the machine controls in the bottom left of OpenPnP, jog the top camera to be overtop the datum board.
+
+Using the datum board for this is important, as it is used often for top camera vision and gives a solid starting point.
 
 Example of proper brightness:
 
@@ -103,7 +105,7 @@ A properly exposed image should show the homing fiducial clearly without being o
     * `1920x1080, 30FPS, MJPG`
 7. If the camera fails to connect, try:
     * `1920x1080, 5FPS, YUYV`
-8. Click `Test` next to `Capture FPS`. This will:
+8. Click `Test` next to **Capture FPS**. This will:
     * Apply the selected format
     * Start the camera feed
     * Automatically apply the settings
@@ -142,16 +144,16 @@ To place the camera in manual exposure mode:
 
 1. Enable Auto Exposure
     * In the camera properties, there's a column named `Auto`.
-    * Along the `Auto` column, `click the checkbox` beside the exposure property.
+    * Along the `Auto` column, **click the checkbox** beside the `exposure` property.
 2. Disable Auto Exposure
-    * `uncheck the checkbox` you just clicked.
+    * **uncheck the checkbox** you just clicked.
     * This step ensures your exposure settings will be saved correctly.
 
 ---
 
 ### Adjust the Bottom Camera Exposure
 
-Set Exposure ≈ 80 as a starting point.
+Set Exposure ≈ 80 as a rough starting point.
 
 Adjust accordingly.
 

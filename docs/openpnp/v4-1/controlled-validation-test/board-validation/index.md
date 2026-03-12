@@ -45,8 +45,8 @@ The first step in starting the FTP PCB is physically mounting the FTP PCB onto t
 ## Importing the Position File
 
 1. **Download the FTP board position file**.
-    * Get the latest `ftp-top.pos` file from the [LumenPnP GitHub Releases Page.](https://github.com/opulo-inc/lumenpnp/releases/)
-<br/><br/>
+
+<a href="https://github.com/opulo-inc/lumenpnp/releases/download/v4.1.0/ftp-top.pos" class="download-button">Download ftp-top.pos</a>
 
 1. **Create a New Board in OpenPnP**.
     * Navigate to the `Boards` tab.

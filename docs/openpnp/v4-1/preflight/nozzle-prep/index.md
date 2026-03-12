@@ -27,16 +27,16 @@ For calibration, we will use three nozzle tips in total (N045, N08, & N24). We w
 
 Stop if too much lubricant is applied.
 
-The openings in the CP40 nozzle tips are extremely small.
+<div> The openings in the CP40 nozzle tips are extremely small.</div>
 
-Excess lubricant can easily clog the tip.
+<div> Excess lubricant can easily clog the tip. </div>
 
 Only a very small amount is needed.
 
 </div> <div class="good-to-know"> <div class="good-to-know-title"> Good to Know </div>
 
 It is best to lubricate all nozzle tips early on.
-Proper lubrication makes future automatic nozzle tip changes much smoother and prevents the O-rings from wearing prematurely.
+<div> Proper lubrication makes future automatic nozzle tip changes much smoother and prevents the O-rings from wearing prematurely. </div>
 
 </div>
 
@@ -62,7 +62,7 @@ When this is selected:
 * A popup message will appear
 * This popup looks like an error but is expected. It simply pauses the process so you can install the nozzle tip.
 
-<img src="images//nozzle-prep-task-interupted.webp" width="65%">
+<img src="images/nozzle-prep-task-interupted.webp" width="65%">
 
 ---
 

@@ -27,7 +27,7 @@ During homing, the LumenPnP moves the head to its X, Y, and Z zero position, loc
 
 Stop if both nozzles are not close to level. They do not have to be perfectly level.
 
-Homing while the nozzles are misaligned can cause the nozzle to collide with the machine frame or staging plate.
+<div> Homing while the nozzles are misaligned can cause the nozzle to collide with the machine frame or staging plate. </div>
 
 Adjust the nozzles so they are level before continuing.
 
@@ -37,9 +37,13 @@ Adjust the nozzles so they are level before continuing.
 Pro Tip
 </div>
 
-Using the **Z Park** button guarantees that the nozzle tip moves to a safe height. It is encouraged to get into the habbit of doing this frequently while learning the controls.
+Using the Z Park button guarantees that the nozzle tip moves to a safe height.
 
-Keeping the nozzle at a safe height greatly reduces the chance of accidental crashes.
+<div> It is encouraged to get into the habbit of doing this frequently while learning the controls. </div>
+
+<div> Keeping the nozzle at a safe height greatly reduces the chance of accidental crashes. </div>
+
+The Park button is found in Machine Controls between the Z height adjustment arrows
 
 </div>
 

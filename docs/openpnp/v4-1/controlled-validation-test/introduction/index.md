@@ -14,6 +14,8 @@ Before assembling your own design, we will run a validation calibration test usi
 
 Think of It Like a Printer Test Page. Before printing an important document, you run a test page. The FTP test board serves the same purpose.
 
+<img src="images/ftp-top.webp" width="40%">
+
 ### Why Not Use Your Own Board First?
 
 **Your personal design introduces additional variables**:

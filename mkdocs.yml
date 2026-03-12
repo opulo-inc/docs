@@ -162,7 +162,7 @@ nav:
                     - Use an adaptive (top) camera settling method.: openpnp/v4-1/issues-solutions/fundamental/camera-settling-top/index.md
                     - Use an adaptive (bottom) camera settling method.: openpnp/v4-1/issues-solutions/fundamental/camera-settling-bottom/index.md
         - Calibration Validation:
-            - Introduction: openpnp/v4-1/controlled-validation-test/index.md
+            - Introduction: openpnp/v4-1/controlled-validation-test/introduction/index.md
             - Board Validation: openpnp/v4-1/controlled-validation-test/board-validation/index.md
             - Feeder Validation: openpnp/v4-1/controlled-validation-test/feeder-validation/index.md
             - Job Validation: openpnp/v4-1/controlled-validation-test/job-validation/index.md

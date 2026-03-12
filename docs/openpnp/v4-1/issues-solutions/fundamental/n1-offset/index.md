@@ -69,7 +69,7 @@ This is a very important calibration. It is worth taking the time to make sure i
 Record your Z Height Coordinates
 </div>
 
-Keep note of the Z height  when the nozzle is touching the primary fiducial. <div>Use the green DRO (Digital Read Out) that displays the nozzles current coordinates.</div> <img src="images/issues-3-dro.webp" width="40%"><div> It is located in the very bottom right corner of OpenPnP.<div> Keep record of that Z height. You'll need during the bottom camera calibration.
+Keep note of the Z height  when the nozzle is touching the primary fiducial. <div>Use the green DRO (Digital Read Out) that displays the nozzles current coordinates.</div> <img src="images/issues-3-dro.webp" width="40%"><div> It is located in the very bottom right corner of OpenPnP.<div> Keep record of that Z height. You'll need it during the bottom camera calibration.
 
 </div>
 
