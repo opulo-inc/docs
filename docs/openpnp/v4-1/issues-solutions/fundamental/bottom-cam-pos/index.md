@@ -214,6 +214,28 @@ This will move to the next calibration step.
 
 ---
 
+<div class="stop-if"><div class="stop-if-title">
+Very Important!
+</div>
+
+<div>
+You must set the homing method before moving on. This will ensure the homing procedure is performed as needed for reliable operation.
+</div>
+
+<div>
+Go to Machine Setup > Heads > ReferenceHead H1. For Homing Method, choose ResetToFiducialLocation.
+</div>
+
+<img src="images/set-homing-method.webp" width="40%">
+
+<div>
+Click the Apply button in the bottom right, and go back to the Issues & Solutions tab.
+</div>
+
+</div>
+
+---
+
 <div class="next-step-container">
 
 <div class="next-step-title">
