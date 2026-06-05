@@ -8,7 +8,7 @@ The LumenPnP Feeder is an open source SMT component tape feeder that can reliabl
 
 The feeder uses the open source [Photon feeder controller firmware](https://github.com/photonfirmware/photon), and talks the Photon protocol over RS-485 to any Marlin host with RS-485 support.
 
-You can fit up to 50x 8mm or 12mm Feeders on the front and back rail of your LumenPnP when using two staging plates.
+There are **50 Feeder Slots** on the LumenPnP. 8mm and 12mm feeders take up one slot, and 16mm and 24mm feeders take up two slots. You can fit up to 50x 8mm or 12mm Feeders on the front and back rail of your LumenPnP when using two staging plates.
 
 ![2 plates with 50 feeders](img/two-plates.webp)
 
@@ -36,7 +36,7 @@ If you'd like to add a third staging plate, you can fit 25x 8mm or 12mm Feeders 
 ## Feeder Buttons
 
 === "Feeding"
-    Tapping the forward button will make the feeder feed forward 2mm. Tapping the backward button makes the feeder feed backwards 4mm.
+    Tapping the forward button will make the feeder feed forward 2mm. Tapping the backward button makes the feeder feed backwards 2mm.
 
     ![gif of tapping forward button, feeding tape](img/feed-forward.webp)
     ![gif of tapping backwards button, feeding tape](img/feed-backward.webp)
@@ -58,17 +58,21 @@ If you'd like to add a third staging plate, you can fit 25x 8mm or 12mm Feeders 
     ![press hold forward, peel film](img/peel.webp)
     ![press hold backward, unpeel film](img/unpeel.webp)
 
-## 12mm Variant
+## 12mm Version
 
 ![12mm feeder](img/12mm.webp)
 
-There is also a 12mm variant of the feeder, designed for 12mm tape. This variant operates the exact same as its 8mm counterpart, but uses a spool guide that acts more like a ramp for mounted feeders below.
+The 12mm version of the feeder is very similar to the 8mm feeder, but designed for 12mm tape. This version operates the exact same as its 8mm counterpart, but uses a spool guide that acts more like a ramp for mounted feeders below.
+
+## 16mm and 24mm Versions
+
+![2u feeders](img/2u.webp)
+
+The 16mm and 24mm versions of the feeder have a different design, and are loaded a little differently. Also, they take up two slots on the LumenPnP instead of just one slot used by the 8mm and 12mm versions.
 
 ## Help
 
-If you get stuck, please don't hesitate to use our [support form](https://opulo.io/pages/contact-support).
-
-If you find that there's something unclear in this documentation, please [submit a ticket on Github](https://github.com/opulo-inc/docs) about it! You can also file an issue using the link in the upper right of any page on this site. We're trying to make this as clear and understandable as possible, so every issue you tag helps us make it better for everyone else. You can also check out the [Discord server](https://discordapp.com/invite/TCwy6De) and ask questions to the community.
+If you get stuck, please don't hesitate to use our [support form](https://opulo.io/pages/contact-support)!
 
 ## Next steps
 
