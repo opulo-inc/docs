@@ -30,7 +30,7 @@ If you own a LumenPnP V3, you must use the V3 config files.
 
 <a href="https://github.com/opulo-inc/lumenpnp/releases/download/v3.2.2/LumenPnP-Config-v3-03.zip" class="download-button">Download V3 Config Files</a>
 
-<a href="https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.0/LumenPnP-Config-v2-00.zip" class="download-button">Download V3 Config Files</a>
+<a href="https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.0/LumenPnP-Config-v2-00.zip" class="download-button">Download V2 Config Files</a>
 
 <br/><br/>
 

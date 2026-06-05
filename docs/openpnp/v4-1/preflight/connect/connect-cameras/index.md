@@ -67,10 +67,12 @@ To place the camera in manual exposure mode:
 
 1. Enable Auto Exposure
     * In the camera properties, there's a column named `Auto`.
-    * Along the `Auto` column, `click the checkbox` beside the exposure property.
+    * Along the `Auto` column, **click the checkbox beside the exposure property**.
 2. Disable Auto Exposure
-    * `uncheck the checkbox` you just clicked.
+    * **uncheck the checkbox** that you just clicked.
     * This step ensures your exposure settings will be saved correctly.
+
+<img src="images/auto-exposure.webp" width="40%">
 
 ---
 

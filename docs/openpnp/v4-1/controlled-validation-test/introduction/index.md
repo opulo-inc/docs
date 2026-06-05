@@ -8,6 +8,16 @@
 
 ---
 
+<div class="stop-if">
+
+<div class="stop-if-title">
+Before proceeding
+</div>
+
+If you are coming directly from the OpenPnP calibration steps, please check that your homing method is set to "ResetToFiducialLocation" This will ensure you are using vision for homing, which is necessary to be successful placing 0402s.
+
+</div>
+
 ## Validate Using the FTP Test Board First
 
 Before assembling your own design, we will run a validation calibration test using our supplied FTP test board, components, and placement files.

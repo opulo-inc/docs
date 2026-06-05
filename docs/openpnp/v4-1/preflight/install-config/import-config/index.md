@@ -101,6 +101,6 @@ Next Step
 You've installed the correct Opulo provided config files in the .openpnp2 folder, and have confirmed they have loaded correctly. Next is to Establish a connection with your LumenPnP.
 </div>
 
-<a href="../../connect/connect-lumen/" class="next-step">Conenct LumenPnP →</a>
+<a href="../../connect/connect-lumen/" class="next-step">Connect LumenPnP →</a>
 
 </div>

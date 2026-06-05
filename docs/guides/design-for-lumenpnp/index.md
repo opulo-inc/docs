@@ -24,7 +24,7 @@ While it's impossible to list every IC and component package that the LumenPnP i
 
 ## PCB
 
-When designing the board, be sure to keep the PCB's dimensions under **225mm x 400mm**. If you are panelizing your PCB, be sure to keep the resultant dimensions of the panel smaller than this dimension as well. Note that this dimension assumes a third staging plate has been mounted to your machine.
+When designing the board, be sure to keep the PCB's dimensions under **210mm x 390mm**. If you are panelizing your PCB, be sure to keep the resultant dimensions of the panel smaller than this dimension as well. Note that this dimension assumes a third staging plate has been mounted to your machine.
 
 It's also important to make sure that your PCB has [fiducials](https://en.wikipedia.org/wiki/Fiducial_marker#Printed_circuit_boards) to allow the LumenPnP to find your PCB in space for accurate population. We recommend using a **1mm diameter fiducial with at least a 2mm diameter soldermask opening**. This gives OpenPnP an easier time identifying the fiducial with machine vision. In KiCAD, this footprint is called `Fiducial:Fiducial_1mm_Mask2mm`.
 
