@@ -1,0 +1,285 @@
+:root {
+  --md-primary-fg-color:        #1a1a1a;
+  --md-primary-fg-color--light: #DAA520;
+  --md-primary-fg-color--dark:  #34164A;
+
+  --md-accent-fg-color: #DAA520;
+}
+
+a {
+  color: #daa520;
+}
+
+/* a:hover {
+  color: white;
+} */
+
+h1 {
+  color: #daa520;
+}
+
+.md-content {
+  --md-typeset-a-color: #31a1f0;
+}
+
+/* a.md-nav__link {
+  color: black;
+} */
+
+a.md-nav__link--active {
+  --md-typeset-a-color: #DAA520;
+}
+
+.md-nav__link {
+  color: var(--md-typeset-color);
+}
+
+.md-nav__link--passed {
+  color: var(--md-default-fg-color--light);
+}
+
+a.md-nav__link:hover {
+  color: #daa520;
+}
+
+/* label.md-nav__title {
+  color: #daa520;
+} */
+
+.video-wrapper {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+.video-wrapper > iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.mermaid {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 24px 0;
+}
+
+.progress-step2 {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #888;
+  transition: all 0.5s ease-in-out;
+}
+
+.progress-step {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #888;
+  opacity: 0.65;
+  transition: all 0.5s ease-in-out;
+}
+
+.progress-complete {
+  background-color: #1b5e20;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.progress-current {
+  background-color: #daa520;
+  color: white;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.progress-current {
+  animation: glow 0.6s ease-out;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 0px rgba(246, 230, 2, 0.7); }
+  50% { box-shadow: 0 0 10px rgba(246, 230, 2, 0.6); }
+  100% { box-shadow: 0 0 0px rgba(173, 175, 76, 0); }
+}
+
+/* Respects reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .progress-current {
+    animation: none;
+  }
+}
+
+.success-box {
+  border-left: 4px solid #1b5e20;
+  background-color: #1b5e20;
+  padding: 12px 16px;
+  margin: 16px 0;
+}
+
+.failed-box {
+  border-left: 4px solid #5e1b1b;
+  background-color: #5e1b1b;
+  padding: 12px 16px;
+  margin: 16px 0;
+}
+
+.next-step-container {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.next-step-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.next-step-description {
+  margin-bottom: 12px;
+  color: #666;
+}
+
+.next-step {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 18px;
+  background-color: #DAA520;
+  color: white !important;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.next-step:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  background-color: #c8961c;
+}
+
+/* STOP IF - Prevent errors */
+
+.stop-if {
+  border-left: 4px solid #b00020;
+  background-color: #ca5252;
+  padding: 14px 16px;
+  margin: 24px 0;
+  border-radius: 6px;
+}
+
+.stop-if-title {
+  font-weight: 600;
+  color: #43010d;
+  margin-bottom: 6px;
+}
+
+
+/* GOOD TO KNOW - Helpful context */
+
+.good-to-know {
+  border-left: 4px solid #203aca;
+  background-color: #5f6dac;
+  padding: 14px 16px;
+  margin: 24px 0;
+  border-radius: 6px;
+}
+
+.good-to-know-title {
+  font-weight: 600;
+  color: #1f30a2;
+  margin-bottom: 6px;
+}
+
+
+/* PRO TIP - Best practices */
+
+.pro-tip {
+  border-left: 4px solid #1b5e20;
+  background-color: #4e8c4e;
+  padding: 14px 16px;
+  margin: 24px 0;
+  border-radius: 6px;
+}
+
+.pro-tip-title {
+  font-weight: 600;
+  color: #1b5e20;
+  margin-bottom: 6px;
+}
+
+/* Icons to be added to the beginning of the alerts */
+
+.stop-if-title::before {
+  content: "⛔ ";
+}
+
+.good-to-know-title::before {
+  content: "ℹ️ ";
+}
+
+.pro-tip-title::before {
+  content: "✔ ";
+}
+
+.download-button::before {
+  content: "⬇ ";
+}
+
+/* download button */
+
+.download-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #1b5e20;
+  color: white !important;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.download-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  background-color: #154a19;
+}
+
+/* for I&S identifying on docs pages in a nice format */
+
+.issue-solution {
+  border-left: 4px solid #daa520;
+  background-color: #38466b;
+  color: #f2f4f8;
+  padding: 16px 18px;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+.issue-label {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.solution-label {
+  font-weight: 700;
+  margin-top: 10px;
+}
