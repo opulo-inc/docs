@@ -66,7 +66,7 @@ The 12mm version of the feeder is very similar to the 8mm feeder, but designed f
 
 ## 16mm and 24mm Versions
 
-![2u feeders](img/2u.webp)
+![2u feeders](img/2u.webp) 
 
 The 16mm and 24mm versions of the feeder have a different design, and are loaded a little differently. Also, they take up two slots on the LumenPnP instead of just one slot used by the 8mm and 12mm versions.
 
