@@ -46,7 +46,7 @@ Most spools for 12mm tape are wider than the LumenPnP Feeder, so they cannot be 
 3. Replace the screw.
    ![Re-tightening the Spool Arm mount screw](img/screwing-in-ramp.webp)
 
-## Insert Feeder
+## Mounting the Feeder
 
 !!! note "Powder on the Rail"
     You might notice that a small amount of dust or powder develops on your machine's feeder rail. This is totally ok. The feeder prints are designed to be just a little undersized, so that they wear in to exactly the right fit over a few insertion cycles. Brush any powder away and continue use as normal.
@@ -55,6 +55,8 @@ Most spools for 12mm tape are wider than the LumenPnP Feeder, so they cannot be 
 
 !!! note "A Bit of Force is OK"
       It can take a bit of force to mount your feeder, especially the first few times as the print breaks in. As long as you are aligned correctly, you can put a bit of force into mounting the feeder.
+
+### 8mm and 12mm
 
 1. Hold your feeder at a 45 degree angle downwards.
    ![holding feeder at 45 degrees](img/IMG_2150.webp)
@@ -89,6 +91,24 @@ Most spools for 12mm tape are wider than the LumenPnP Feeder, so they cannot be 
       ![](img/feeder-inline-insert-low.webp){: style="width:80%;margin-left:0%;"}
 
       ![](img/feeder-inline-remove-low.webp){: style="width:80%;margin-left:0%;"}
+
+### 16mm and 24mm
+
+16mm and 24mm feeders mount the same way to 8mm and 12mm feeders, by aligning the peg from the slot into the void in the feeder.
+
+![](img/2u-mounting.webp)
+
+!!! warning "Touching the staging plate"
+
+      The design of 16mm and 24mm feeders requires them to stick out a bit farther forward than the 8mm and 12mm versions. On most machines, there will still be a bit of clearance between the nose of the feeder and the staging plate. If you notice that they are touching when the feeder is fully mounted, it is highly recommended that you move your staging plates back 5mm to provide proper clearance. **You will need to redo OpenPnP calibration if you move your staging plate.**
+      
+      **If you bought a LumenPnP after the release of 16mm and 24mm feeders, you've already mounted your plates at the correct distance.**
+
+      ![feeder touching the staging plate](img/touching.webp)
+      ![feeder ok distance](img/2u-correct-gap.webp)
+
+      This extension is required because of the requirements of the EIA-481-F taping standard that is used by the electronics industry. Wider tape has a different exit path curvature requirement, and requires the feeder to extend out a bit farther to accommodate it.
+
 
 ## Next Steps
 

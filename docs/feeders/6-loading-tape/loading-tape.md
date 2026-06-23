@@ -9,8 +9,7 @@
 <iframe width="560" height="315" margin="auto" src="https://www.youtube.com/embed/rVsv2GUO0Tg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div> -->
 
-!!! Note
-    See also the [Feeder Buttons](../1-overview/feeder-overview.md#feeder-buttons) documentation for manually driving your feeders.
+## 8mm and 12mm
 
 1. Cut the tape straight across one of the indexing holes, leaving a semicircle.
 
@@ -99,6 +98,49 @@
 11. Tap the forward button to feed a part and ensure that the tape is loaded correctly. **You need to feed the feeder at least twice to ensure consistent feeding in the future.**
 
       ![GIF successful feeding](img/feed-forward.webp)
+
+## 16mm and 24mm
+
+1. Insert your tape into the opening on the back of the feeder. Push until you can see your tape visible in the pick window.
+
+      ![](img/2u-loading-tape.webp)
+
+1. Lift the pick window and grab the film.
+
+      ![](img/2u-lift-pick-window.webp)
+      ![](img/2u-grab-film.webp)
+
+1. Press and hold the forward button on the feeder while pulling gently on the film to engage the tape with the drive wheel. Drive until parts become visible in the pick window, and when the film can reach the gold peel gears on the back of the feeder.
+
+      ![](img/2u-drive-tape.webp)
+
+1. Press and hold both buttons on the feeder until the indicator light turns gold, indicating the feeder is in `Peel Mode`.
+
+      ![](img/2u-switch-modes.webp)
+
+1. Press and hold the forward button on the feeder while feeding the film into the peel gears until it is sticking out the back side of the feeder.
+
+      ![](img/2u-feed-film.webp)
+
+1. While gently disengaging the peel gears by pressing back on the frame holding the top peel gear, pull the film through until you've taken up all the slack.
+
+      ![](img/2u-pull-film-through.webp)
+      ![2u pull film](img/2u-pull-film.webp)
+
+1. Inspect the film and make sure it's properly centered in the film guide right before entering the peel gears.
+
+      ![](img/2u-proper-film.webp)
+
+1. Your feeder should look the same as the image below.
+
+      ![](img/2u-done.webp)
+
+!!! warning "Tape Exit Path"
+
+      Tape exiting the feeder can lead into the tape entering the feeder. Depending on the geometry of the tape, they can catch and the exit tape can be fed back into the feeder. Be sure to guide your tape exiting to the side of the tape that is entering the feeder.
+
+      ![](img/tape-caught-2u.webp)
+      ![](img/2u-tape-guided.webp)
 
 ## Next Steps
 

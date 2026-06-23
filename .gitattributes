@@ -1,3 +1,4 @@
 *.png
 *.jpg
 *.jpeg
+*.webp filter=lfs diff=lfs merge=lfs -text
