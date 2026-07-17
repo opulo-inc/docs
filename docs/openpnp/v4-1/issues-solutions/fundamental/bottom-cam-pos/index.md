@@ -4,7 +4,6 @@
   <div class="progress-step progress-complete">Fiducial Calibrations</div>
   <div class="progress-step progress-complete">Nozzle Offsets</div>
   <div class="progress-step progress-current">Bottom Camera Calibration</div>
-  <div class="progress-step">Backlash</div>
   <div class="progress-step">Precise Offsets</div>
   <div class="progress-step">Camera Settling</div>
 </div>
@@ -26,6 +25,8 @@ Solution
 Move the nozzle N1 over the up-looking camera Bottom and capture the position.
 
 </div>
+
+<img src="../images/task-06-bottom-cam-pos.webp" width="100%">
 
 ---
 
@@ -215,11 +216,15 @@ This will move to the next calibration step.
 ---
 
 <div class="stop-if"><div class="stop-if-title">
-Very Important!
+Very Important! - Set Homing Method -
 </div>
 
 <div>
-You must set the homing method before moving on. This will ensure the homing procedure is performed as needed for reliable operation.
+You must set the homing method and update the homing fiducial coordinates before moving on. This will ensure the homing procedure is performed properly for reliable operation.
+</div>
+
+<div>
+---
 </div>
 
 <div>
@@ -229,8 +234,48 @@ Go to Machine Setup > Heads > ReferenceHead H1. For Homing Method, choose ResetT
 <img src="images/set-homing-method.webp" width="40%">
 
 <div>
+---
+</div>
+
+<div>
+Once the homing method is set, this unlocks the ability to edit the homing fiducial coordinates and update the X and Y to match what the primary fiducial's coordinates have been set to for X and Y. This is because the primary fiducial is what has been calibrated by Issues & Solutions.
+</div>
+
+<div>
+---
+</div>
+
+<div>
+copy the primary fiducial's XY coordinates and paste them into the homing fiducial's coordinates.
+</div>
+
+<img src="images/copy-primary-coordinates-to-homing-fid.webp" width="40%">
+
+<div>
+---
+</div>
+
+<div>
 Click the Apply button in the bottom right, and go back to the Issues & Solutions tab.
 </div>
+
+<img src="../../../../v4/calibration/2-connect-to-machine/images/apply-button.webp" width="25%">
+
+</div>
+
+---
+
+<div class="stop-if"><div class="stop-if-title">
+Skip Backlash Compensation Steps!
+</div>
+
+<div>
+The upcoming fundamental steps for backlash compensation are optional because the LumenPnP should rarely need this, as it uses one-sided positioning to minimize the effects of backlash during normal operation. Only perform the backlash steps when troubleshooting positioning accuracy issues.
+</div>
+
+<img src="images/skip-backlash-calibration.webp" width100%">
+
+You can find more information on this by going to the `Optional Tasks` AFTER you complete the specific fundamentals we have for the LumenPnP calibration
 
 </div>
 
@@ -243,9 +288,9 @@ Next Step
 </div>
 
 <div class="next-step-description">
-Now that the Bottom Camera Position has been calibrated, we can move on to Backlash Compensation for X and Y axis.
+Now that the Bottom Camera Position has been calibrated, we can skip backlash compensation tasks, and move on to Precise top camera to nozzle tip offset calibration.
 </div>
 
-<a href="../x-backlash/" class="next-step">X Axis Backlash →</a>
+<a href="../n1-offset-precise/" class="next-step">Precise N1 Offset →</a>
 
 </div>

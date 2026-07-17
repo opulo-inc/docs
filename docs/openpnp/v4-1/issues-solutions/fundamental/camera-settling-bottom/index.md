@@ -4,7 +4,6 @@
   <div class="progress-step progress-complete">Fiducial Calibrations</div>
   <div class="progress-step progress-complete">Nozzle Offsets</div>
   <div class="progress-step progress-complete">Bottom Camera Calibration</div>
-  <div class="progress-step progress-complete">Backlash</div>
   <div class="progress-step progress-complete">Precise Offset N1</div>
   <div class="progress-step progress-complete">Precise Offset N2</div>
   <div class="progress-step progress-current">Camera Settling</div>
@@ -27,6 +26,8 @@ Solution
 Set a suitable camera settling method automatically.
 
 </div>
+
+<img src="../images/task-12-adaptive-camera-settling-bottom.webp" width="100%">
 
 ---
 
@@ -60,13 +61,14 @@ Once the process finishes and the issue is marked as **Solved**, click:
 
 ---
 
-Now that you've completed the precise nozzle tip offset calibrations, you're done with the initial Issues and Solutions Setup. Do not do any other I&S Steps until we properly validate the FTP Board. We want to ensure that we are "building on solid ground" before adding additional things.
+## Calibration Complete
+
+Now that you've completed the precise nozzle tip offset calibrations, you are done with the initial Issues and Solutions Setup. Do not do any other I&S Steps until you properly validate the FTP Board by placing components accurately on it. The FTP board gives you a known good position file and PCB to use before using your own position files and PCBs, which gives you a known working state to validate the machines calibration. Before validating the calibration with the FTP board, **we need to confirm your homing is set up properly after calibration has been completed.**
 
 <div class="progress-container">
   <div class="progress-step progress-complete">Fiducial Calibrations</div>
   <div class="progress-step progress-complete">Nozzle Offsets</div>
   <div class="progress-step progress-complete">Bottom Camera Calibration</div>
-  <div class="progress-step progress-complete">Backlash</div>
   <div class="progress-step progress-complete">Precise Offset N1</div>
   <div class="progress-step progress-complete">Precise Offset N2</div>
   <div class="progress-step progress-complete">Camera Settling</div>
@@ -79,9 +81,9 @@ Next Step
 </div>
 
 <div class="next-step-description">
-You have completed the fundamental calibration Steps! Now, we need to validate that the machine is properly calibrated and placing parts in a controlled environment. We'll use the FTP board to accomplish this.
+You have completed the fundamental calibration steps! Next, we'll verify and fine tune the homing process to ensure it performs correctly whenever the machine is homed. After that, we'll use the FTP Board to validate that the machine is properly calibrated and can accurately place components in a controlled environment.
 </div>
 
-<a href="../../../controlled-validation-test/introduction/" class="next-step">Validation Test →</a>
+<a href="../../../prepare-for-homing" class="next-step">Prepare for Homing →</a>
 
 </div>

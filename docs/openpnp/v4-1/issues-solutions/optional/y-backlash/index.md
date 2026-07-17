@@ -1,13 +1,8 @@
 # Calibrate backlash compensation for axis y
 
 <div class="progress-container">
-  <div class="progress-step progress-complete">Fiducial Calibrations</div>
-  <div class="progress-step progress-complete">Nozzle Offsets</div>
-  <div class="progress-step progress-complete">Bottom Camera Calibration</div>
   <div class="progress-step progress-complete">X Backlash</div>
   <div class="progress-step progress-current">Y Backlash</div>
-  <div class="progress-step">Precise Offsets</div>
-  <div class="progress-step">Camera Settling</div>
 </div>
 
 ---
@@ -28,19 +23,27 @@ Automatically calibrates the backlash compensation for y using the primary calib
 
 </div>
 
+<img src="../../fundamental/images/task-08-backlash-comp-y.webp" width="100%">
+
+---
+
+These steps are optional, but if you want to run this step for X and Y, and you see improvements, please let us know at https://support.opulo.io
+
+These steps can take up to 15 mins each to complete.
+
 ---
 
 ## What This Step Does
 
-This step measures backlash in the **Y axis** and allows OpenPnP to compensate for it automatically.
+This step measures backlash in the Y axis and configures OpenPnP's built in backlash compensation. The LumenPnP should rarely need this, as it uses one-sided positioning to minimize the effects of backlash during normal operation.
 
-Once configured, this helps improve positioning accuracy when the machine changes direction.
+Only perform this step when troubleshooting positioning accuracy issues. If backlash compensation produces a noticeable improvement, it may indicate loose belts or another mechanical issue that should be corrected.
 
 ---
 
 ## Start the Backlash Calibration
 
-<img src="../primary-cal-fid-pos/images/accept-button.webp" width="13%"> 
+<img src="../../fundamental/primary-cal-fid-pos/images/accept-button.webp" width="13%"> 
 
 Click accept to begin the calibration.
 
@@ -78,7 +81,7 @@ Be aware that this can take a long time to complete.
 
 Once the process finishes and the issue is marked as **Solved**, click:
 
-<img src="../primary-cal-fid-pos/images/find-issues-and-solutions-button.webp" width="20%">
+<img src="../../fundamental/primary-cal-fid-pos/images/find-issues-and-solutions-button.webp" width="20%">
 
 This will move to the next calibration step.
 

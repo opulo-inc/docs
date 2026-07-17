@@ -65,6 +65,7 @@ plugins:
     - glightbox:
         draggable: false
     - search
+    - zoduki
     - social:
         cards_layout_options:
             background_color: "#111111"
@@ -155,12 +156,15 @@ nav:
                     - Nozzle N1 offsets for the Secondary fiducial: openpnp/v4-1/issues-solutions/fundamental/n1-offset-secondary/index.md
                     - Nozzle N2 offsets for the primary fiducial: openpnp/v4-1/issues-solutions/fundamental/n2-offset/index.md
                     - Determine the up-looking camera Bottom position & initial calibration: openpnp/v4-1/issues-solutions/fundamental/bottom-cam-pos/index.md
-                    - Calibrate backlash compensation for axis x: openpnp/v4-1/issues-solutions/fundamental/x-backlash/index.md
-                    - Calibrate backlash compensation for axis y: openpnp/v4-1/issues-solutions/fundamental/y-backlash/index.md
                     - Calibrate precise camera ↔ nozzle N1 offsets: openpnp/v4-1/issues-solutions/fundamental/n1-offset-precise/index.md
                     - Calibrate precise camera ↔ nozzle N2 offsets: openpnp/v4-1/issues-solutions/fundamental/n2-offset-precise/index.md
                     - Use an adaptive (top) camera settling method.: openpnp/v4-1/issues-solutions/fundamental/camera-settling-top/index.md
                     - Use an adaptive (bottom) camera settling method.: openpnp/v4-1/issues-solutions/fundamental/camera-settling-bottom/index.md
+                - Optional Tasks:
+                    - Calibrate backlash compensation for axis x: openpnp/v4-1/issues-solutions/optional/x-backlash/index.md
+                    - Calibrate backlash compensation for axis y: openpnp/v4-1/issues-solutions/optional/y-backlash/index.md
+            - Prepare for Homing:
+                    - Configure Homing Method: openpnp/v4-1/prepare-for-homing/index.md
         - Calibration Validation:
             - Introduction: openpnp/v4-1/controlled-validation-test/introduction/index.md
             - Board Validation: openpnp/v4-1/controlled-validation-test/board-validation/index.md

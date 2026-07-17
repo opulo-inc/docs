@@ -6,7 +6,6 @@
   <div class="progress-step">N1 Secondary Offsets</div>
   <div class="progress-step">N2 Primary Offsets</div>
   <div class="progress-step">Bottom Camera Calibration</div>
-  <div class="progress-step">Backlash</div>
   <div class="progress-step">Precise Offsets</div>
   <div class="progress-step">Camera Settling</div>
 </div>
@@ -28,6 +27,8 @@ Solution
 Move the nozzle N1 to the primary calibration fiducial and capture its offsets.
 
 </div>
+
+<img src="../images/task-03-n1-offset-primary-fid.webp" width="100%">
 
 ---
 

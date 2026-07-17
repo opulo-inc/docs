@@ -4,7 +4,6 @@
   <div class="progress-step progress-complete">Fiducial Calibrations</div>
   <div class="progress-step progress-complete">Nozzle Offsets</div>
   <div class="progress-step progress-complete">Bottom Camera Calibration</div>
-  <div class="progress-step progress-complete">Backlash</div>
   <div class="progress-step progress-complete">Precise Offset N1</div>
   <div class="progress-step progress-complete">Precise Offset N2</div>
   <div class="progress-step progress-current">Camera Settling</div>
@@ -27,6 +26,8 @@ Solution
 Set a suitable camera settling method automatically.
 
 </div>
+
+<img src="../images/task-11-adaptive-camera-settling-top.webp" width="100%">
 
 ---
 

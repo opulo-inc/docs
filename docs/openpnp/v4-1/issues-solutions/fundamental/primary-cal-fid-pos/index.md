@@ -5,7 +5,6 @@
   <div class="progress-step">Secondary Calibration</div>
   <div class="progress-step">Nozzle Offsets</div>
   <div class="progress-step">Bottom Camera Calibration</div>
-  <div class="progress-step">Backlash</div>
   <div class="progress-step">Precise Offsets</div>
   <div class="progress-step">Camera Settling</div>
 </div>
@@ -27,6 +26,8 @@ Solution
 Move the camera over the primary calibration fiducial and capture its position.
 
 </div>
+
+<img src="../images/task-01-primary-cal-fid-position.webp" width="100%">
 
 ---
 

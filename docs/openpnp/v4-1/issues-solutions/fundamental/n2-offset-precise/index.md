@@ -4,7 +4,6 @@
   <div class="progress-step progress-complete">Fiducial Calibrations</div>
   <div class="progress-step progress-complete">Nozzle Offsets</div>
   <div class="progress-step progress-complete">Bottom Camera Calibration</div>
-  <div class="progress-step progress-complete">Backlash</div>
   <div class="progress-step progress-complete">Precise Offset N1</div>
   <div class="progress-step progress-current">Precise Offset N2</div>
   <div class="progress-step">Camera Settling</div>
@@ -27,6 +26,8 @@ Solution
 Use a test object to perform the precision camera ↔ nozzle N2 offsets calibration.
 
 </div>
+
+<img src="../images/task-10-calibrate-precise-nozzle-n2.webp" width="100%">
 
 ---
 
@@ -88,6 +89,30 @@ Good to Know
 </div>
 
 Auto-detection usually finds a good starting point, but always confirm the detected circle matches the hole punch before continuing.
+
+</div>
+
+---
+
+<div class="stop-if"> <div class="stop-if-title"> be careful not to partly detect the Opulo logo! </div>
+
+When the paper hole punch is being spun around, it can expose a small amount of our logo underneath and cause it to see a bigger circle than what is actually there. This can cause the calibration to be askew and will require you to reopen and complete this step again.
+
+<div>
+
+---
+
+</div>
+
+<img src="../n1-offset-precise/images/hole-punch-error.webp" width="40%">
+
+<div>
+
+---
+
+</div>
+
+As a patch to this happening, you can use black sharpie on a small piece of paper that fits over the datum boards primary fiducial area. Make sure it won't move, and then do the calibration on top of that. This is the quickest solve to get the precise accuracy we need from this step when experiencing this.
 
 </div>
 

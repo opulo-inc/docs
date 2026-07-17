@@ -53,20 +53,29 @@ Located in the bottom left of OpenPnP
 
 ---
 
+<div class="good-to-know"><div class="good-to-know-title">
+For making things easier
+</div>
+
+- Use the mouse's scroll wheel while the mouse is hovering over the camera preview window to zoom in or out on the image.
+
+<div>
+
+- Right click on either camera feed and choose crosshair, then select Ruler. This helps when calibrating.
+
+</div>
+
+</div>
+
+---
+
 ## Issues and Solutions Overview
 
-**Issues and Solutions 'Suggestion' Steps to dismiss**:
+![issues and solutions overview image](images/issues-and-solutions-overview.webp)
 
-* Dynamic Safe Z for N1 - Dismiss and refresh list
-* Dynamic Safe Z for N2 - Dismiss and refresh list
-* Set the low side soft limit and capture - Dismiss and refresh list
-* Set the high side soft limit and capture - Dismiss and refresh list
+The Issues and Solutions tab can be found towards the very top of OpenPnP
 
-![issues adn solutions overview image](images/issues-and-solutions-overview.webp)
-
-Issues and Solutions tab found towards the very top of OpenPnP
-
-the `Find Issues and Solutions` button is how to refresh the steps and find out what needs done next 
+the `Find Issues and Solutions` button is how to refresh the steps and find out what needs done next.
 
 The `Severity column` has 3 types:
 
@@ -87,19 +96,26 @@ Every calibration Step displays two things:
 
 ---
 
-<div class="good-to-know"><div class="good-to-know-title">
-For making things easier
-</div>
+### **Steps to Dismiss and Skip**
 
-- Use the mouse or trackpad scroll function on the camera preview window to zoom in or out on the image.
+**Issues and Solutions 'Suggestion' Steps to dismiss**:
 
-<div>
+*If you see any of the following steps, make sure to dismiss them right away.*
 
-- Right Click and choose crosshair, then select Ruler. This helps when calibrating.
+* `Dynamic Safe Z for N1` - Dismiss this step and refresh list
+* `Dynamic Safe Z for N2` - Dismiss this step and refresh list
+* `Set the low side soft limit and capture` - Dismiss this step and refresh list
+* `Set the high side soft limit and capture` - Dismiss this step and refresh list
 
-</div>
+**Issues and Solutions 'Optional' Steps to skip during initial setup, as they are not needed**:
 
-</div>
+*You don't have to dismiss these. Just skip them when first going through calibration, as this should already be accounted for with one-sided positioning that negates the need for these steps.*
+
+<img src="../../issues-solutions/fundamental/bottom-cam-pos/images/skip-backlash-calibration.webp" width="100%">
+
+
+* `Calibrate backlash compensation for axis x` - Even though it says it is a fundamental step, skip it during calibration.
+* `Calibrate backlash compensation for axis y` - Even though it says it is a fundamental step, skip it during calibration.
 
 ---
 
@@ -138,7 +154,7 @@ Next Step
 </div>
 
 <div class="next-step-description">
-You've completed Preflight! Now we will begin the guided calibration process using OpenPnP's Issues & Solutions
+You've completed Preflight! Now we will begin the guided calibration process using our guide and OpenPnP's Issues & Solutions tasks
 </div>
 
 <a href="../../issues-solutions/fundamental/primary-cal-fid-pos/" class="next-step">Issues and Solutions →</a>

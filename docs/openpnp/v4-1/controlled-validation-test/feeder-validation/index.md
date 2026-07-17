@@ -157,6 +157,21 @@ Once the feeder is physically installed, it needs to be configured in OpenPnP so
      ![Move the Tool Head away from the feeder](../../../v4/ftp/2-feeder-setup/images/XY-jog-controls.webp)
 <br/><br/>
 
+<div class="stop-if"> <div class="stop-if-title"> Assign Nozzle Tips to Every Package </div>
+
+Every package listed in the packages tab must have a nozzle tip assigned to it. If not, OpenPnP may give you an error.
+Go to: Packages tab > select a package > Nozzle Tips tab > Check  the box for given nozzle tip. The ones we will be using for the validation board will be N045 compatible. Choose that one for the components we are testing with.
+
+ <img src="images/must-assign-nozzle-tip-to-package.webp" width="80%">
+
+ <div>
+
+ If you came straight from calibration, you may still have the N08 nozzle tip installed. Swap it back to the N045 for these steps.
+
+ </div>
+
+</div>
+
 1. **Test picking a component**.
     * Remove the cover tape.
     * Click the `Pick` icon button, seen below, to have the LumenPnP attempt to pick a component from the feeder.

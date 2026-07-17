@@ -29,11 +29,10 @@ Before running the job, you'll want to test the bottom vision pipeline, which us
      ![bottom vision output](../../../v4/ftp/3-test-run/images/bottom-vision-detection.webp)
 <br/><br/>
 
-1. **Recycle component**.
+1. **Discard component**.
     * Once part identification is confirmed to be working, switch to the `Special` Tab in the `Machine Controls` pane.<br/><br/>
      ![Switch to the special tab](../../../v4/ftp/2-feeder-setup/images/Special-tab.webp)<br/><br/>
-    * Click the `Recycle` button to instruct the LumenPnP to recycle the picked component.<br/><br/>
-     ![Recycle the component you've picked up](../../../v4/ftp/2-feeder-setup/images/Recycle-component.webp)
+    * Click the `Discard` button to instruct the LumenPnP to discard the picked component.<br/><br/>
 <br/><br/>
 
 ---

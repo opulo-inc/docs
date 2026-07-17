@@ -5,27 +5,27 @@ description: Putting together the frame of the v4 LumenPnP
 
 ## Rails
 
-1. Remove the left and right leg assemblies from the second tray.
+1. Remove the left and right leg assemblies (Y1 & Y2 rails) from the second tray. They are stacked on top of each other.
 
     ![alt text](img/IMG_2737.webp)
     ![alt text](img/IMG_2738.webp)
 
-1. Remove the two aluminum rails from underneath the cable chain in the first tray.
+2. Remove the two aluminum rails from underneath the cable chain in the first tray.
 
     ![alt text](img/IMG_2739.webp)
     ![alt text](img/IMG_2740.webp)
     ![alt text](img/IMG_2741.webp)
 
-1. Stand the left and right leg assemblies upright on the tabletop as shown below. The left leg assembly has a cable harness labeled `Y1`, and the tensioner arm pivot is on the left. The right leg assembly has a cable harness labeled `Y2` and the tensioner arm pivot is on the right. Check the photos below for reference.
+3. Stand the left and right leg assemblies upright on the tabletop as shown below. The left leg assembly has a cable harness labeled `Y1`, and the tensioner arm pivot is on the left. The right leg assembly has a cable harness labeled `Y2` and the tensioner arm pivot is on the right. Check the photos below for reference.
 
     ![alt text](img/IMG_2745.webp)
     ![alt text](img/IMG_2746.webp)
 
-1. Tilt the left Y gantry on its side as shown.
+4. Tilt the left Y gantry on its side as shown.
 
     ![alt text](img/IMG_2748.webp)
 
-1. Remove `2x` M5x10mm socket head screws and `2x` T-slot nuts from your hardware bag.
+5. Remove `2x` M5x10mm socket head screws and `2x` T-slot nuts from your hardware bag.
 
     ![alt text](img/IMG_2749.webp)
 
@@ -34,76 +34,76 @@ description: Putting together the frame of the v4 LumenPnP
 
     ![alt text](img/IMG_2752.webp)
 
-1. Insert one of the M5x10mm screws into the front left leg as shown.
+6. Insert one of the M5x10mm screws into the front left leg as shown.
 
     ![alt text](img/IMG_2754.webp)
     ![alt text](img/IMG_2755.webp)
 
-1. Attach a T-slot nut onto the screw.
+7. Attach a T-slot nut onto the screw.
 
     ![alt text](img/IMG_2760.webp)
     ![alt text](img/IMG_2761.webp)
 
-1. Orient the nuts vertically as shown.
+8. Orient the nuts vertically as shown.
 
     ![alt text](img/IMG_2762.webp)
     ![alt text](img/IMG_2763.webp)
 
-1. Grab the front rail. It only has one right-angle bracket attached to each side, and has slots labeled 1-25.
+9. Grab the front rail. It only has one right-angle bracket attached to each side, and has slots labeled 1-25.
 
     ![alt text](img/IMG_2764.webp)
     ![alt text](img/IMG_2766.webp)
     ![alt text](img/IMG_2765.webp)
 
-1. Grab `2x` M5x8mm button head bolts and `2x` T-slot nuts from the hardware kit bag. Drop the bolts into the open holes in the right angle brackets and loosely thread the T-slot nuts onto them.
+10. Grab `2x` M5x8mm button head bolts and `2x` T-slot nuts from the hardware kit bag. Drop the bolts into the open holes in the right angle brackets and loosely thread the T-slot nuts onto them.
 
     ![alt text](img/IMG_2768.webp)
     ![alt text](img/IMG_2769.webp)
     ![alt text](img/IMG_2770.webp)
     ![alt text](img/IMG_2778.webp)
 
-1. Align the nuts perpendicular to the rail as shown.
+11. Align the nuts perpendicular to the rail as shown.
 
     ![alt text](img/IMG_2779.webp)
     ![alt text](img/IMG_2780.webp)
 
-1. Align the front rail and left leg subassembly as shown in the image below. Make sure that the rotation of the t-slot nuts match the image.
+12. Align the front rail and left leg subassembly as shown in the image below. Make sure that the rotation of the t-slot nuts match the image.
 
     ![alt text](img/IMG_2783.webp)
 
-1. Rotate the front rail upward as shown in the pictures below. Make sure the t-slot nut in the bracket on the front rail fits inside the bottom extrusion of the left leg subassembly. The front rail and right angle bracket should sit flush against the extrusion.
+13. Rotate the front rail upward as shown in the pictures below. Make sure the t-slot nut in the bracket on the front rail fits inside the bottom extrusion of the left leg subassembly. The front rail and right angle bracket should sit flush against the extrusion.
 
     ![alt text](img/IMG_2784.webp)
     ![alt text](img/IMG_2785.webp)
 
-1. Slide the front rail into the front left leg. Make sure it's completely pushed into the leg with no gaps. Tighten the two screws to hold the front rail in place as shown below.
+14. Slide the front rail into the front left leg. Make sure it's completely pushed into the leg with no gaps. Tighten the two screws to hold the front rail in place as shown below.
 
     ![alt text](img/IMG_2786.webp)
     ![alt text](img/IMG_2787.webp)
     ![alt text](img/IMG_2788.webp)
 
-1. Rotate the assembly down flat on the table.
+15. Rotate the assembly down flat on the table.
 
     ![alt text](img/IMG_2789.webp)
     ![alt text](img/IMG_2790.webp)
 
-1. Attach the remaining M5x10mm socket head and t-slot nut into the front right leg in the same way as you did for the front left leg.
+16. Attach the remaining M5x10mm socket head and t-slot nut into the front right leg in the same way as you did for the front left leg.
 
     ![alt text](img/IMG_2791.webp) ![alt text](img/IMG_2792.webp) ![alt text](img/IMG_2793.webp) ![alt text](img/IMG_2794.webp)
 
-1. Orient the nut as shown.
+17. Orient the nut as shown.
 
     ![alt text](img/IMG_2795.webp) ![alt text](img/IMG_2796.webp)
 
-1. Lift the front rail up into the bottom extrusion of the right leg subassembly, and slide it towards you into the front right leg as shown. Tighten the front screw in place.
+18. Lift the front rail up into the bottom extrusion of the right leg subassembly, and slide it towards you into the front right leg as shown. Tighten the front screw in place.
 
     ![alt text](img/IMG_2797.webp) ![alt text](img/IMG_2798.webp) ![alt text](img/IMG_2799.webp) ![alt text](img/IMG_2800.webp) ![alt text](img/IMG_2801.webp) ![alt text](img/IMG_2802.webp)
 
-1. Lift up the machine onto its back legs, and tighten in the final loose screw on the front right leg.
+19. Lift up the machine onto its back legs, and tighten in the final loose screw on the front right leg.
 
     ![alt text](img/IMG_2803.webp) ![alt text](img/IMG_2804.webp) ![alt text](img/IMG_2805.webp)
 
-1. Get the back rail. It has two right angle brackets on each side, and slots numbered 26-50. Get `4x` M5x8mm button heads and `4x` T-slot nuts and mount them into the open holes in the right angle brackets as shown below. Do this for all four brackets.
+20. Get the back rail. It has two right angle brackets on each side, and slots numbered 26-50. Get `4x` M5x8mm button heads and `4x` T-slot nuts and mount them into the open holes in the right angle brackets as shown below. Do this for all four brackets.
 
     ![alt text](img/IMG_2808.webp)
     ![alt text](img/IMG_2809.webp)
@@ -114,31 +114,31 @@ description: Putting together the frame of the v4 LumenPnP
     ![alt text](img/IMG_2813.webp)
     ![alt text](img/IMG_2814.webp)
 
-1. Align the t-slot nuts perpendicular to the rail as shown.
+21. Align the t-slot nuts perpendicular to the rail as shown.
 
     ![alt text](img/IMG_2818.webp)
 
-1. Place the back rail across the back legs as shown. Rotate it upwards into the bottom extrusion of the left leg subassembly, ensuring that both t-slot nuts fit into the v-slot. It should be flush against the rail.
+22. Place the back rail across the back legs as shown. Rotate it upwards into the bottom extrusion of the left leg subassembly, ensuring that both t-slot nuts fit into the v-slot. It should be flush against the rail.
 
     ![alt text](img/IMG_2819.webp) ![alt text](img/IMG_2820.webp) ![alt text](img/IMG_2821.webp)
 
-1. Make sure that the right side of the back rail has fit into the right leg extrusion. You might find that the back legs need to be pulled together or apart a little in order to get them to fit; **this is ok**. The back rail should be flush with the extrusion if the t-slot nuts have been inserted into the extrusion correctly.
+23. Make sure that the right side of the back rail has fit into the right leg extrusion. You might find that the back legs need to be pulled together or apart a little in order to get them to fit; **this is ok**. The back rail should be flush with the extrusion if the t-slot nuts have been inserted into the extrusion correctly.
 
     ![alt text](img/back-rail-offset.webp)
 
-1. Slide the back rail up and let the left side of it rest on the spacing bracket included in your tool kit. Make sure it's resting on the short side (50mm). Lightly tighten the top screw on the left side, making sure to keep the end of the extrusion and right angle brackets perfectly flush with the side of the extrusion.
+24. Slide the back rail up and let the left side of it rest on the spacing bracket included in your tool kit. Make sure it's resting on the short side (50mm). Lightly tighten the top screw on the left side, making sure to keep the end of the extrusion and right angle brackets perfectly flush with the side of the extrusion.
 
     ![alt text](img/IMG_2830.webp)
     ![alt text](img/bracket-flush-left.webp)
     ![alt text](img/IMG_2833.webp)
 
-1. Use the bracket to set the spacing on the right side, and make sure the right angle brackets are perfectly flush with the right side extrusion. Tighten both screws into place.  Go back to the left side and tighten the bottom screw.
+25. Use the bracket to set the spacing on the right side, and make sure the right angle brackets are perfectly flush with the right side extrusion. Tighten both screws into place.  Go back to the left side and tighten the bottom screw.
 
     ![alt text](img/bracket-flush-right.webp)
     ![alt text](img/IMG_2834.webp)
     ![alt text](img/IMG_2835.webp)
 
-1. Bring the machine back down onto four legs.
+26. Bring the machine back down onto four legs.
 
     ![alt text](img/IMG_2837.webp) ![alt text](img/IMG_2838.webp)
 
@@ -153,27 +153,27 @@ description: Putting together the frame of the v4 LumenPnP
 
         ![](img/IMG_2916.webp)
 
-1. Slide both Y gantries to the back of the machine (opposite the tension arms).
+27. Slide both Y gantries to the back of the machine (opposite the tension arms).
 
     ![alt text](img/IMG_2839.webp) ![alt text](img/IMG_2840.webp)
 
-1. Grab the X gantry from the packaging and fit it onto the Y gantries as shown. Make sure the toolhead motors are facing you like the image below.
+28. Grab the X gantry from the packaging and fit it onto the Y gantries as shown. Make sure the toolhead motors are facing you like the image below.
 
     ![alt text](img/IMG_2842.webp) ![alt text](img/IMG_2843.webp) ![alt text](img/IMG_2844.webp)
 
-1. Attach the X gantry to the Y gantries by installing a M5x25 socket head screw and M5x16mm socket head screw into the two holes on each side of the X gantry assembly.
+29. Attach the X gantry to the Y gantries by installing a M5x25 socket head screw and M5x16mm socket head screw into the two holes on each side of the X gantry assembly.
 
     ![alt text](img/IMG_2846.webp) ![alt text](img/IMG_2847.webp) ![alt text](img/IMG_2848.webp) ![alt text](img/IMG_2849.webp) ![alt text](img/IMG_2850.webp) ![alt text](img/IMG_2851.webp)
 
-1. Tip the machine back up onto its back legs, and install front leg extensions onto the front legs with `2x` M5x16mm socket head screws for each leg.
+30. Tip the machine back up onto its back legs, and install front leg extensions onto the front legs with `2x` M5x16mm socket head screws for each leg.
 
     ![alt text](img/IMG_2853.webp) ![alt text](img/IMG_2854.webp) ![alt text](img/IMG_2856.webp) ![alt text](img/IMG_2857.webp) ![alt text](img/IMG_2858.webp)
 
-1. Install a back leg extension onto each of the back legs with an M5x16mm socket head screw for each leg.
+31. Install a back leg extension onto each of the back legs with an M5x16mm socket head screw for each leg.
 
     ![alt text](img/IMG_2859.webp) ![alt text](img/IMG_2860.webp) ![alt text](img/IMG_2861.webp) ![alt text](img/IMG_2862.webp)
 
-1. Bring the machine back down onto four legs.
+32. Bring the machine back down onto four legs.
 
     ![alt text](img/IMG_2863.webp) ![alt text](img/IMG_2864.webp)
 
