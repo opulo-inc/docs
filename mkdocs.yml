@@ -65,7 +65,6 @@ plugins:
     - glightbox:
         draggable: false
     - search
-    - zoduki
     - social:
         cards_layout_options:
             background_color: "#111111"
