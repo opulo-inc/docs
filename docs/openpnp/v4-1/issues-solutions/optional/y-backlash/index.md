@@ -79,24 +79,8 @@ Be aware that this can take a long time to complete.
 
 ## Complete the Calibration
 
-Once the process finishes and the issue is marked as **Solved**, click:
+Once the process finishes and the issue is marked as **Solved**, click Find Issues & Solutions button:
 
 <img src="../../fundamental/primary-cal-fid-pos/images/find-issues-and-solutions-button.webp" width="20%">
 
-This will move to the next calibration step.
-
----
-
-<div class="next-step-container">
-
-<div class="next-step-title">
-Next Step
-</div>
-
-<div class="next-step-description">
-Backlash Compensation has been calibrated and we can move on to Precise top camera to nozzle tip offset calibration.
-</div>
-
-<a href="../n1-offset-precise/" class="next-step">Precise N1 Offset →</a>
-
-</div>
+The optional backlash compensation has now been calibrated for both the X and Y. If you have not finished the fundamental steps in Issues and Solutions, please continue back to where you left off in our calibration guide.

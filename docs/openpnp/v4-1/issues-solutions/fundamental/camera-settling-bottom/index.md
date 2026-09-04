@@ -84,6 +84,6 @@ Next Step
 You have completed the fundamental calibration steps! Next, we'll verify and fine tune the homing process to ensure it performs correctly whenever the machine is homed. After that, we'll use the FTP Board to validate that the machine is properly calibrated and can accurately place components in a controlled environment.
 </div>
 
-<a href="../../../prepare-for-homing" class="next-step">Prepare for Homing →</a>
+<a href="../../../prepare-for-homing/" class="next-step">Prepare for Homing →</a>
 
 </div>

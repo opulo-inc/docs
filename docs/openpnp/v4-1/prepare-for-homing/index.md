@@ -4,13 +4,19 @@
 
 ## What homing should look like
 
-Now that `ResetToFiducialLocation` is set, when the homing button is pressed, you will see that the head does not stay in the front left corner, but instead it moves to the primary fiducial where it scans and centers itself on the fiducial's exact center. After the fiducial homing process is complete, it is followed up by scanning each nozzle tip for runout compensation. OpenPnP will automatically calibrate any installed nozzle tips that are configured for `NozzleTipChange` recalibration. scanning the nozzle tips during homing will be activates in the steps below.
+Before continuing, confirm that `ResetToFiducialLocation` is configured as part of your homing method. This should have been configured when setting up the bottom camera position. If it was not, follow the instructions below to configure it. Confirm this is set before continuing.
+
+When you press the Home button, the head will not remain in the front-left corner like before. Instead, the top camera will move to the primary fiducial to locate and center itself on the exact center of the fiducial.
+
+After the fiducial homing process is complete, OpenPnP will automatically continue to calibrate any installed nozzle tips that are configured for `NozzleTipChange` calibration, which we will set up next. Any nozzle tips configured for NozzleTipChange recalibration will be automatically calibrated during this process. In the following steps, I would recommend turning this on for all nozzle tips, even if you don't plan to use one right away.
+
+The following steps will enable nozzle tip scanning during the homing sequence.
 
 ## What this step does
 
 Homing requires a precise, consistent location to call upon and center itself on after homing is initiated. The end stops provide a repeatable starting point, but small amounts of mechanical variation can still exist after each homing cycle. The Homing Method `ResetToFiducialLocation` uses a known fiducial location to perfect the machine's position after homing, which improves the repeatability and placement accuracy.
 
-Runout calibration measures how the center of a nozzle tip appears to shift as it rotates under the bottom vision camera. This shift can be caused by manufacturing tolerances, mounting variation, or slight misalignment between the nozzle and rotation axis. OpenPnP calculates this offset and compensates for it during placement. This ensures the center of the component remains accurately aligned regardless of nozzle rotation.
+Turning on `NozzleTipChange` allows the homing sequence to perform a nozzle runout calibration, which measures how the center of a nozzle tip appears to shift in X or Y as it rotates under the bottom vision camera. This shift can be caused by manufacturing tolerances, mounting variation, or slight misalignment between the nozzle and rotation axis. OpenPnP calculates this offset and compensates for it during placement. This ensures the center of the component remains accurately aligned regardless of nozzle rotation.
 
 ---
 

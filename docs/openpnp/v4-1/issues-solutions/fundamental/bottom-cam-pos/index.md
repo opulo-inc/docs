@@ -205,16 +205,6 @@ If you accidentally chose Auto-Focus for this calibration, even after reopening 
 
 ---
 
-## Complete the Calibration
-
-Once the process finishes and the issue is marked as **Solved**, click:
-
-<img src="../primary-cal-fid-pos/images/find-issues-and-solutions-button.webp" width="20%">
-
-This will move to the next calibration step.
-
----
-
 <div class="stop-if"><div class="stop-if-title">
 Very Important! - Set Homing Method -
 </div>
@@ -262,6 +252,16 @@ Click the Apply button in the bottom right, and go back to the Issues & Solution
 <img src="../../../../v4/calibration/2-connect-to-machine/images/apply-button.webp" width="25%">
 
 </div>
+
+---
+
+## Complete the Calibration
+
+Once the process finishes and the issue is marked as **Solved**, click:
+
+<img src="../primary-cal-fid-pos/images/find-issues-and-solutions-button.webp" width="20%">
+
+This will move to the next calibration step.
 
 ---
 
