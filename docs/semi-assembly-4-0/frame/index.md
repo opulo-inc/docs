@@ -147,7 +147,7 @@ description: Putting together the frame of the v4 LumenPnP
 
         Take the build plate from your packaging and drop it onto the rails.
 
-        ![](img/IMG_2871.webp)
+        ![](img/DSC03513.webp)
 
         Pull the staging plate completely forward in the machine, and make sure the edge is flush with the extrusion on both sides of the machine. Then slide to the back of the machine and do the same. Loosen any frame bolts you just mounted to adjust until both sides of the staging plate are flush with the extrusion both at the front and back of the machine.
 
@@ -179,67 +179,29 @@ description: Putting together the frame of the v4 LumenPnP
 
 ## Plates
 
-1. Remove the staging plate and build plate from the first tray. The staging plate is packed under the control box.
+1. Remove the staging plate and two smaller build plates from the first tray. The staging plate is packed under the control box.
 
-    ![alt text](img/IMG_2865.webp)
-    ![alt text](img/IMG_2866.webp)
-    ![alt text](img/IMG_2867.webp)
-    ![alt text](img/IMG_2868.webp)
+    ![](img/DSC03511.webp)
+    ![](img/DSC03513.webp)
+    ![](img/DSC03513.webp)
 
 1. The staging plate has the bottom camera mounted to it. The build plate is bare.
 
-    ![alt text](img/IMG_2870.webp)
-    ![alt text](img/IMG_2871.webp)
+    ![](img/DSC03509.webp)
+    ![](img/DSC03516.webp)
 
-<dif >
-
-!!! note "Introducing: Secondary Fiducial with V4.1"
-    LumenPnP V4.1 owners will notice a secondary fiducial that is located in the small gap between the bottom camera and the edge of the staging plate<br><br/><img src="../frame/img/secondary-fid.webp" width="40%"><br><br/> If you have a V4.0 and you'd like to upgrade: [Secondary Fiducial Upgrade Kit](https://www.opulo.io/products/secondary-fiducial-upgrade-kit?_pos=1&_psq=sec&_ss=e&_v=1.0)<br> The install guide can be found here: [Secondary Fiducial Install Guide](../../guides/secondary-fid-install/index.md)<br> Note: The following assembly photos do not show the secondary fiducial.
-
-1. This is what the secondary fiducial looks like. If you own a V4.1, you should already have this preinstalled on your staging plate.
-
-
-
-1. Get the static camera foot and the gold thumb screws from the packaging.
-
-    ![alt text](img/IMG_2872.webp)
-    ![alt text](img/IMG_2873.webp)
-
-2. Line up the bottom camera cable with the cutout in the static camera foot as shown, and secure it in place using the two thumb screws.
-
-    ![alt text](img/IMG_2874.webp)
-    ![alt text](img/IMG_2875.webp)
-    ![alt text](img/IMG_2876.webp)
-    ![alt text](img/IMG_2877.webp)
-    ![alt text](img/IMG_2878.webp)
-
-3. Grab the build plate foot from the packaging, and remove the screw threaded into one end.
-
-    ![alt text](img/IMG_2879.webp)
-    ![alt text](img/IMG_2880.webp)
-
-4. Drop the screw through the very center of the build plate, making sure that it's facing upwards by looking for the "LumenPnP Staging Plate" text in the corner to confirm. Attach the build plate foot with the bolt using an allen key.
-
-    ![alt text](img/IMG_2881.webp)
-    ![alt text](img/IMG_2882.webp)
-    ![alt text](img/IMG_2884.webp)
-    ![alt text](img/IMG_2885.webp)
-    ![alt text](img/IMG_2886.webp)
-
-5. Get 8x M5x8mm button head screws and 8x t-slot nuts from your hardware bag.
+5. Get 12x M5x8mm button head screws and 8x t-slot nuts from your hardware bag.
 
     ![alt text](img/IMG_2887.webp)
 
-6. Insert the button head screws through the large holes in the four corners of each plate. Make sure you are inserting them from the side of the plate that has the "LumenPnP Staging Plate" text in the corner, and not from the side with the Opulo logo. Loosely thread a t-slot nut onto the opposite side of each screw.
+6. Insert the button head screws through the large holes in the four corners of each of the three plates. Loosely thread a t-slot nut onto the opposite side of each screw.
 
-    ![alt text](img/IMG_2881.webp)
-    ![alt text](img/IMG_2890.webp)
-    ![alt text](img/IMG_2893.webp)
-    ![alt text](img/IMG_2894.webp)
+    ![](img/DSC03514.webp)
+    ![](img/DSC03515.webp)
 
 7. The plates should look like the image below.
 
-    ![alt text](img/IMG_2896.webp)
+    ![](img/DSC03518.webp)
 
 8. Pull out any wires tucked into the Y gantries, and leave them loose in the center of the machine to clear way for the plates to be mounted.
 
@@ -248,9 +210,8 @@ description: Putting together the frame of the v4 LumenPnP
 
 9. Place the staging plate into the machine as shown below. Have it rest on the lower of the two extrusions in each leg assembly. Make sure the staging plate's orientation matches the images below.
 
-    ![alt text](img/IMG_2900.webp)
-    ![alt text](img/IMG_2901.webp)
-    ![alt text](img/IMG_2902.webp)
+    ![](img/DSC03519.webp)
+    ![](img/DSC03520.webp)
 
 10. Make sure that the staging plate is sitting flush on the extrusions. The T-slot nut should fit inside the slot in the extrusion.
 
@@ -263,8 +224,7 @@ description: Putting together the frame of the v4 LumenPnP
 
 12. Place the bracket along the front rail with the long side pointing away from you. Arrange the staging plate so that it is flat against the bracket.
 
-    ![alt text](img/IMG_2909.webp)
-    ![alt text](img/IMG_2910.webp)
+    ![](img/DSC03522.webp)
 
 13. While ensuring that the flat edge of the staging is flush against the side of the extrusion, tighten the screw closest to the front of the machine. Don't tighten the back one yet.
 
@@ -281,16 +241,26 @@ description: Putting together the frame of the v4 LumenPnP
 
     ![alt text](img/IMG_2917.webp)
 
-16. Place the build plate onto the same rail as the staging plate. Ensure the t-slot nuts are fully inserted into the extrusion.
+16. Place the build plate onto the same rail as the staging plate. Make sure that the build plate is oriented such that the holes line up with the staging plate. Slide the build plate against the staging plate.
 
-    ![alt text](img/IMG_2919.webp)
-    ![alt text](img/IMG_2920.webp)
+    ![](img/DSC03523.webp)
+    ![](img/DSC03524.webp)
+    ![](img/DSC03525.webp)
+
+1. Ensure the t-slot nuts are fully inserted into the extrusion.
+
     ![alt text](img/IMG_2906.webp)
     ![alt text](img/IMG_2907.webp)
 
-17. Slide the build plate against the staging plate.
+18. Make sure the build plate is flush with the extrusion, and tighten all four screws.
 
-    ![alt text](img/IMG_2921.webp)
+    ![alt text](img/IMG_2916.webp)
+    ![alt text](img/IMG_2918.webp)
+
+1.  Mount the second build plate, also ensuring that the holes line up with the first build plate. Confirm that the holes in your plates look like the image. 
+
+    ![](img/DSC03526.webp)
+    ![](img/DSC03527.webp)
 
 18. Make sure the build plate is flush with the extrusion, and tighten all four screws.
 

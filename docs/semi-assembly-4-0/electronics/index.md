@@ -50,23 +50,29 @@ description: Mounting the control box and installing cables on the v4 LumenPnP
 
 1. Gently move the head all the way back, and lift the machine onto its back legs as shown.
 
-    ![alt text](img/IMG_2954.webp) ![alt text](img/IMG_2955.webp) ![alt text](img/IMG_2956.webp)
+    ![](img/DSC03531.webp)
+    ![](img/DSC03532.webp)
+    ![](img/DSC03533.webp)
+    ![](img/DSC03530.webp)
 
-1. Find the Y2 cable on the right side of the machine. It has a "Y2 Motor" label near the connector.
+1. Find the Y2 cable on the right side of the machine. It has a "Y2 Motor" label near the connector. Slide the top extrusion cable clip to the bottom of the staging plate.
 
-    ![alt text](img/IMG_2957.webp)
+    ![](img/DSC03535.webp)
 
 1. Using an allen key, loosen the cable clamp on the staging plate, route the cable under the clamp, and tighten it in place.
 
-    ![alt text](img/IMG_2958.webp) ![alt text](img/IMG_2959.webp) ![alt text](img/IMG_2960.webp) ![alt text](img/IMG_2961.webp)
+    ![](img/DSC03536.webp)
+    ![](img/DSC03538.webp)
 
 1. Route the Y2 cable across the staging plate and secure in place using the other cable clamp. Make sure to pull the cable taut before securing in place. It should not hang or droop.
 
-    ![alt text](img/IMG_2962.webp) ![alt text](img/IMG_2963.webp)  ![alt text](img/IMG_2967.webp)
+    ![](img/DSC03540.webp)
+    ![](img/DSC03541.webp)
+    ![](img/DSC03542.webp)
 
-1. Route the Y2 cable up and over the control box as shown, along with the Y1 cable that's pre-routed on the left Y gantry as shown below. The Y1 cable has a "Y1 Motor" label near the connector.
+1. Clip the Y2 cable into the extrusion with an extrusion cable clip.
 
-    ![alt text](img/IMG_2965.webp)
+    ![](img/DSC03545.webp)
 
 1. Get the Feeder Blade Harness Set from the packaging, and remove the longer cable with a `FRONT BLADES` and `BACK BLADES` label on either end.
 
@@ -95,11 +101,14 @@ description: Mounting the control box and installing cables on the v4 LumenPnP
 
 1. Remove the rubber band holding the bundle of two cables on the staging plate together, and route over the control box.
 
-    ![alt text](img/IMG_2989.webp) ![alt text](img/IMG_2990.webp) ![alt text](img/IMG_2992.webp)
+    ![](img/DSC03543.webp)
+    ![](img/DSC03544.webp)
 
 1. Separate the USB cable from the rest of the cables, and route the remaining four into the cable retention feature in the control box.
 
-    ![alt text](img/IMG_2994.webp) ![alt text](img/IMG_2996.webp) ![alt text](img/IMG_2997.webp)
+    ![alt text](img/IMG_2994.webp)
+    ![](img/DSC03546.webp)
+    ![alt text](img/IMG_2997.webp)
 
 1. Bring the machine back down onto four legs with the control box facing you.
 

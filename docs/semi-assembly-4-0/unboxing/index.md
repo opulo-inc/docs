@@ -18,7 +18,7 @@ description: Unboxing the v4 LumenPnP
 
 3. This tray contains:
     * Staging plate
-    * Build plate
+    * Two Build plates
     * Feet for the build and staging plates
     * Cable chain assembly
     * Y Limit Switch Striker
