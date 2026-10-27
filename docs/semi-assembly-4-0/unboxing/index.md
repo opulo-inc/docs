@@ -65,4 +65,10 @@ description: Unboxing the v4 LumenPnP
 
 ## Next Steps
 
-Next, you'll [assemble the frame](../frame/index.md).
+<div class="openpnp-next" markdown>
+
+**Next, you'll assemble the frame**
+
+<a href="../frame/" class="next-step">Assemble Frame →</a>
+
+</div>

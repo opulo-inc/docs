@@ -6,6 +6,9 @@ edit_uri: https://github.com/opulo-inc/docs/edit/main/docs
 extra_css:
     - stylesheets/extra.css
     - stylesheets/neoteroi-cards.css
+    
+extra_javascript:
+  - stylesheets/zoduki-glightbox-bridge.js
 
 markdown_extensions:
     - admonition
@@ -16,6 +19,7 @@ markdown_extensions:
     - neoteroi.cards
     - meta
     - footnotes
+    - pymdownx.details
     - pymdownx.tabbed:
         alternate_style: true
     - pymdownx.superfences:
@@ -63,7 +67,10 @@ theme:
             name: Switch to dark mode
 plugins:
     - glightbox:
+        zoomable: true
         draggable: false
+        effect: zoom
+        touchNavigation: true
     - search
     - zoduki
     - social:
@@ -135,36 +142,29 @@ nav:
                 - Actuator Check: byop/testing/actuator-check/index.md
                 - Feedback: byop/testing/feedback/index.md
     - OpenPnP Configuration:
+        - Install OpenPnP:
+                - Download & Install: openpnp/install-openpnp/index.md
         - Choose Your LumenPnP Version:
-                - Identify Which Version You Own: openpnp/index.md
-        - LumenPnP V4 Calibration:
+                - Identify Which Version You Own: openpnp/identify-lumenpnp-setup/index.md
+        - LumenPnP V4.2 Calibration:
             - Preflight Checklist: 
-                - Introduction: openpnp/v4-1/preflight/index.md
-                - Install OpenPnP: openpnp/v4-1/preflight/install-config/install-openpnp/index.md
-                - Import Config Files: openpnp/v4-1/preflight/install-config/import-config/index.md
-                - Establish a Connection: openpnp/v4-1/preflight/connect/connect-lumen/index.md
-                - Connect cameras: openpnp/v4-1/preflight/connect/connect-cameras/index.md
-                - Prepare to Home: openpnp/v4-1/preflight/homing-prep/index.md
-                - Install Nozzle Tips: openpnp/v4-1/preflight/nozzle-prep/index.md
-                - Calibration Prep: openpnp/v4-1/preflight/calibration-philosophy/index.md
-                - OpenPnP Overview: openpnp/v4-1/preflight/interface-overview/index.md
+                - Import Config Files: openpnp/v4-2/preflight/import-config/index.md
+                - Establish a Connection: openpnp/v4-2/preflight/establish-connection/index.md
+                - Connect cameras: openpnp/v4-2/preflight/connect-cameras/index.md
+                - Home & Install Nozzle Tips: openpnp/v4-2/preflight/home-lumenpnp-install-nozzle-tips/index.md
+                - Calibration Prep: openpnp/v4-2/preflight/calibration-philosophy/index.md
             - Issues and Solutions:
                 - Fundamental Tasks: 
-                    - Primary calibration fiducial position & initial camera calibration: openpnp/v4-1/issues-solutions/fundamental/primary-cal-fid-pos/index.md
-                    - Secondary calibration fiducial position & initial camera calibration: openpnp/v4-1/issues-solutions/fundamental/secondary-cal-fid-pos/index.md
-                    - Nozzle N1 offsets for the primary fiducial: openpnp/v4-1/issues-solutions/fundamental/n1-offset/index.md
-                    - Nozzle N1 offsets for the Secondary fiducial: openpnp/v4-1/issues-solutions/fundamental/n1-offset-secondary/index.md
-                    - Nozzle N2 offsets for the primary fiducial: openpnp/v4-1/issues-solutions/fundamental/n2-offset/index.md
-                    - Determine the up-looking camera Bottom position & initial calibration: openpnp/v4-1/issues-solutions/fundamental/bottom-cam-pos/index.md
-                    - Calibrate precise camera ↔ nozzle N1 offsets: openpnp/v4-1/issues-solutions/fundamental/n1-offset-precise/index.md
-                    - Calibrate precise camera ↔ nozzle N2 offsets: openpnp/v4-1/issues-solutions/fundamental/n2-offset-precise/index.md
-                    - Use an adaptive (top) camera settling method.: openpnp/v4-1/issues-solutions/fundamental/camera-settling-top/index.md
-                    - Use an adaptive (bottom) camera settling method.: openpnp/v4-1/issues-solutions/fundamental/camera-settling-bottom/index.md
-                - Optional Tasks:
-                    - Calibrate backlash compensation for axis x: openpnp/v4-1/issues-solutions/optional/x-backlash/index.md
-                    - Calibrate backlash compensation for axis y: openpnp/v4-1/issues-solutions/optional/y-backlash/index.md
-            - Prepare for Homing:
-                    - Configure Homing Method: openpnp/v4-1/prepare-for-homing/index.md
+                    - Primary calibration fiducial position & initial camera calibration: openpnp/v4-2/issues-solutions/primary-cal-fid-pos/index.md
+                    - Secondary calibration fiducial position & initial camera calibration: openpnp/v4-2/issues-solutions/secondary-cal-fid-pos/index.md
+                    - Nozzle N1 offsets for the primary fiducial: openpnp/v4-2/issues-solutions/n1-offset-primary/index.md
+                    - Nozzle N1 offsets for the Secondary fiducial: openpnp/v4-2/issues-solutions/n1-offset-secondary/index.md
+                    - Nozzle N2 offsets for the primary fiducial: openpnp/v4-2/issues-solutions/n2-offset-primary/index.md
+                    - Determine the up-looking camera Bottom position & initial calibration: openpnp/v4-2/issues-solutions/bottom-cam-pos/index.md
+                    - Calibrate precise camera ↔ nozzle N1 offsets: openpnp/v4-2/issues-solutions/n1-offset-precise/index.md
+                    - Calibrate precise camera ↔ nozzle N2 offsets: openpnp/v4-2/issues-solutions/n2-offset-precise/index.md
+                    - Use an adaptive camera settling method: openpnp/v4-2/issues-solutions/camera-settling/index.md
+                    - Finishing Touches: openpnp/v4-2/issues-solutions/homing-method-and-runout/index.md
         - Calibration Validation:
             - Introduction: openpnp/v4-1/controlled-validation-test/introduction/index.md
             - Board Validation: openpnp/v4-1/controlled-validation-test/board-validation/index.md
@@ -216,41 +216,70 @@ nav:
         - Feeders:
             - Standalone Feeder Control: misc/standalone-feeders/index.md
             - Photon Protocol: misc/photon/index.md
-        - V4.0 Single Fiducial Calibration Method:
-            - Install and Configure OpenPnP:
-                - Install OpenPnP 2.6: openpnp/v4/install-config/install/index.md
-                - Import V4.0 Configuration Files: openpnp/v4/install-config/import-config/index.md
-            - Introduction: openpnp/v4/calibration/index.md
-            - Connect LumenPnP and Configure Bottom Camera: openpnp/v4/calibration/2-connect-to-machine/index.md
-            - Configure Top Camera and Homing Fiducial: openpnp/v4/calibration/4-homing-fiducial/index.md
-            - MM/Pixel Calibration: openpnp/v4/calibration/5-mm-per-pixel/index.md
-            - Nozzle Offset: openpnp/v4/calibration/6-nozzle-offset/index.md
-            - Bottom Camera Position: openpnp/v4/calibration/7-bottom-camera-position/index.md
-            - Nozzle Tip Calibration: openpnp/v4/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md
-            - Vacuum Part Detection: openpnp/v4/calibration/10-vacuum-sensor/index.md
-        - V3 and Older Docs:
-            - Machine Versions: misc/versions/index.md
-            - Upgrade to V4: misc/upgrade/index.md
-            - Add Feeder Support to V3.0.4 or Older: misc/v3-and-older/index/md
-            - Tune Sensorless Homing (V3 only): guides/tuning-sensorless/index.md
-            - Updating OpenPnP GCode Macros: guides/update-gcode-macros/index.md
-            - Installing the Slot Harness on v3.0.X:
-                - Introduction: feeders/2-install-harness/index.md
-                - Slot Blades: feeders/2-install-harness/feeder-blade/index.md
-                - Individual Slots: feeders/2-install-harness/feeder-slot/index.md
-            - Second Nozzle Upgrade Guide (V2 only): misc/v3-and-older/second-tool/index.md
-            - REV03 Mobo Interposer Guide (V2 only): misc/v3-and-older/rev3-vac-interposer/index.md
-            - V2/V3 Docs Guide:
-                - Import V2/V3 Config Files: misc/import-config/index.md
-                - LumenPnP V2/V3 Calibration:
-                    - Introduction: misc/calibration/index.md
-                    - Connecting to Your Machine: misc/calibration/2-connect-to-machine/index.md
-                    - Homing Fiducial: misc/calibration/4-homing-fiducial/index.md
-                    - MM/Pixel: misc/calibration/5-mm-per-pixel/index.md
-                    - Nozzle Offset: misc/calibration/6-nozzle-offset/index.md
-                    - Bottom Camera Position: misc/calibration/7-bottom-camera-position/index.md
-                    - Nozzle Tip Calibration: misc/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md
-                    - Vacuum Part Detection: misc/calibration/10-vacuum-sensor/index.md
+        - Old Calibration Guides:
+            - V4.1 Calibration:
+                - Preflight Checklist:
+                    - Introduction: openpnp/v4-1/preflight/index.md
+                    - Install OpenPnP: openpnp/v4-1/preflight/install-config/install-openpnp/index.md
+                    - Import Config Files: openpnp/v4-1/preflight/install-config/import-config/index.md
+                    - Establish a Connection: openpnp/v4-1/preflight/connect/connect-lumen/index.md
+                    - Connect cameras: openpnp/v4-1/preflight/connect/connect-cameras/index.md
+                    - Prepare to Home: openpnp/v4-1/preflight/homing-prep/index.md
+                    - Install Nozzle Tips: openpnp/v4-1/preflight/nozzle-prep/index.md
+                    - Calibration Prep: openpnp/v4-1/preflight/calibration-philosophy/index.md
+                    - OpenPnP Overview: openpnp/v4-1/preflight/interface-overview/index.md
+                - Issues and Solutions:
+                    - Fundamental Tasks:
+                        - Primary calibration fiducial position & initial camera calibration: openpnp/v4-1/issues-solutions/fundamental/primary-cal-fid-pos/index.md
+                        - Secondary calibration fiducial position & initial camera calibration: openpnp/v4-1/issues-solutions/fundamental/secondary-cal-fid-pos/index.md
+                        - Nozzle N1 offsets for the primary fiducial: openpnp/v4-1/issues-solutions/fundamental/n1-offset/index.md
+                        - Nozzle N1 offsets for the Secondary fiducial: openpnp/v4-1/issues-solutions/fundamental/n1-offset-secondary/index.md
+                        - Nozzle N2 offsets for the primary fiducial: openpnp/v4-1/issues-solutions/fundamental/n2-offset/index.md
+                        - Determine the up-looking camera Bottom position & initial calibration: openpnp/v4-1/issues-solutions/fundamental/bottom-cam-pos/index.md
+                        - Calibrate precise camera ↔ nozzle N1 offsets: openpnp/v4-1/issues-solutions/fundamental/n1-offset-precise/index.md
+                        - Calibrate precise camera ↔ nozzle N2 offsets: openpnp/v4-1/issues-solutions/fundamental/n2-offset-precise/index.md
+                        - Use an adaptive (top) camera settling method.: openpnp/v4-1/issues-solutions/fundamental/camera-settling-top/index.md
+                        - Use an adaptive (bottom) camera settling method.: openpnp/v4-1/issues-solutions/fundamental/camera-settling-bottom/index.md
+                    - Optional Tasks:
+                        - Calibrate backlash compensation for axis x: openpnp/v4-1/issues-solutions/optional/x-backlash/index.md
+                        - Calibrate backlash compensation for axis y: openpnp/v4-1/issues-solutions/optional/y-backlash/index.md
+                - Prepare for Homing:
+                        - Configure Homing Method: openpnp/v4-1/prepare-for-homing/index.md
+            - V4.0 Calibration (Single Fiducial):
+                - Install and Configure OpenPnP:
+                    - Install OpenPnP 2.6: openpnp/v4/install-config/install/index.md
+                    - Import V4.0 Configuration Files: openpnp/v4/install-config/import-config/index.md
+                - Introduction: openpnp/v4/calibration/index.md
+                - Connect LumenPnP and Configure Bottom Camera: openpnp/v4/calibration/2-connect-to-machine/index.md
+                - Configure Top Camera and Homing Fiducial: openpnp/v4/calibration/4-homing-fiducial/index.md
+                - MM/Pixel Calibration: openpnp/v4/calibration/5-mm-per-pixel/index.md
+                - Nozzle Offset: openpnp/v4/calibration/6-nozzle-offset/index.md
+                - Bottom Camera Position: openpnp/v4/calibration/7-bottom-camera-position/index.md
+                - Nozzle Tip Calibration: openpnp/v4/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md
+                - Vacuum Part Detection: openpnp/v4/calibration/10-vacuum-sensor/index.md
+            - V3.2 (and older) Calibration:
+                - Machine Versions: misc/versions/index.md
+                - Upgrade to V4: misc/upgrade/index.md
+                - Add Feeder Support to V3.0.4 or Older: misc/v3-and-older/index/md
+                - Tune Sensorless Homing (V3 only): guides/tuning-sensorless/index.md
+                - Updating OpenPnP GCode Macros: guides/update-gcode-macros/index.md
+                - Installing the Slot Harness on v3.0.X:
+                    - Introduction: feeders/2-install-harness/index.md
+                    - Slot Blades: feeders/2-install-harness/feeder-blade/index.md
+                    - Individual Slots: feeders/2-install-harness/feeder-slot/index.md
+                - Second Nozzle Upgrade Guide (V2 only): misc/v3-and-older/second-tool/index.md
+                - REV03 Mobo Interposer Guide (V2 only): misc/v3-and-older/rev3-vac-interposer/index.md
+                - V2/V3 Docs Guide:
+                    - Import V2/V3 Config Files: misc/import-config/index.md
+                    - LumenPnP V2/V3 Calibration:
+                        - Introduction: misc/calibration/index.md
+                        - Connecting to Your Machine: misc/calibration/2-connect-to-machine/index.md
+                        - Homing Fiducial: misc/calibration/4-homing-fiducial/index.md
+                        - MM/Pixel: misc/calibration/5-mm-per-pixel/index.md
+                        - Nozzle Offset: misc/calibration/6-nozzle-offset/index.md
+                        - Bottom Camera Position: misc/calibration/7-bottom-camera-position/index.md
+                        - Nozzle Tip Calibration: misc/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md
+                        - Vacuum Part Detection: misc/calibration/10-vacuum-sensor/index.md
                 
 
     - FAQ: faq/index.md

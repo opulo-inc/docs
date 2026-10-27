@@ -310,4 +310,12 @@ description: Putting together the frame of the v4 LumenPnP
     ![alt text](img/IMG_2926.webp)
     ![alt text](img/IMG_2927.webp)
 
-You've completed the LumenPnP frame assembly. Next is installing the [electronics](../electronics/index.md).
+## Next Step
+
+<div class="openpnp-next" markdown>
+
+**You've completed the LumenPnP frame assembly. Next is installing the electronics**
+
+<a href="../electronics/" class="next-step">Install Electronics →</a>
+
+</div>

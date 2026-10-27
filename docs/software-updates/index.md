@@ -18,7 +18,7 @@ If you own a LumenPnP V3, you must use the V3 config files.
 
 ### Latest Release (V4.1)
 
-<a href="https://github.com/opulo-inc/lumenpnp/releases/download/v4.1.0/LumenPnP-Config-v4-1.zip" class="download-button">Download V4.1 Config Files</a>
+<a href="https://github.com/opulo-inc/lumenpnp/releases/download/v4.2.0/LumenPnP-Config-v4-2.zip" class="download-button">Download V4.2 Configuration Files</a>
 
 <br/><br/>
 
@@ -26,11 +26,13 @@ If you own a LumenPnP V3, you must use the V3 config files.
 
 ### Older Releases
 
-<a href="https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.1/LumenPnP-Config-v4-00.zip" class="download-button">Download V4.0 Config Files</a>
+<a href="https://github.com/opulo-inc/lumenpnp/releases/download/v4.1.0/LumenPnP-Config-v4-1.zip" class="download-button">Download V4.1 Configuration Files</a>
 
-<a href="https://github.com/opulo-inc/lumenpnp/releases/download/v3.2.2/LumenPnP-Config-v3-03.zip" class="download-button">Download V3 Config Files</a>
+<a href="https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.1/LumenPnP-Config-v4-00.zip" class="download-button">Download V4.0 Configuration Files</a>
 
-<a href="https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.0/LumenPnP-Config-v2-00.zip" class="download-button">Download V2 Config Files</a>
+<a href="https://github.com/opulo-inc/lumenpnp/releases/download/v3.2.2/LumenPnP-Config-v3-03.zip" class="download-button">Download V3.0 Configuration Files</a>
+
+<a href="https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.0/LumenPnP-Config-v2-00.zip" class="download-button">Download V2.0 Configuration Files</a>
 
 <br/><br/>
 
@@ -80,11 +82,9 @@ In March of 2026, OpenPnP made a new stable release, `v2.6`, which is what we re
 
 ---
 
-## Download OpenPnP (2023-04-05)
+## Download OpenPnP
 
-In March of 2026, OpenPnP made a new stable release, `v2.6`, which is what we recommend installing now. 
-
-If you downloaded OpenPnP before then, you likely have the original recommended version, `2023-04-05`. 
+In March of 2026, OpenPnP made a new stable release, `v2.6`, which is what we recommend installing now.
 
 You can check what version you have installed by following [this guide](/docs/guides/get-openpnp-version/). Make sure to use the correct configuration based on your version.
 

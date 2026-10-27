@@ -51,11 +51,11 @@ We run the steps that are necessary for getting the LumenPnP properly calibrated
 
 <div class="stop-if"> <div class="stop-if-title"> Follow Only the Steps in This Guide </div>
 
-The Issues & Solutions tool may show additional suggestions.
+ In Issues & Solutions, there are two Essential steps for backlash calibration that we will dismiss.
 
 For the LumenPnP, follow only the steps described in this guide.
 
-Some suggestions are not required for this machine and may interrupt the calibration workflow.
+Some steps labeled as `Suggestions` can break the calibration entirely. These are not required for the LumenPnP to run properly and may interrupt the calibration workflow, or make you redo calibration.
 
 </div>
 

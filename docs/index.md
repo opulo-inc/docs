@@ -4,17 +4,13 @@ Welcome to the Opulo Docs site! Here you'll find build guides, setup instruction
 
 <img src="semi-assembly-4-0/v4-iso-hero.webp" width="80%">
 
-<div class="next-step-container">
+## **Begin Here**
 
-<div class="next-step-title">
-Start Assembling
-</div>
+<div class="openpnp-next" markdown>
 
-<div class="next-step-description">
-Your first steps are to start assembling your LumenPnP.
-</div>
+**Let's begin by assembling your new LumenPnP**
 
-<a href="../semi-assembly-4-0/" class="next-step">LumenPnP Assembly →</a>
+<a href="semi-assembly-4-0/unboxing/" class="next-step">Start with unboxing →</a>
 
 </div>
 
