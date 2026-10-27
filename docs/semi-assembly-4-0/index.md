@@ -44,6 +44,12 @@ Expect assembly to take about **90 minutes**.
 * A computer
 * The ability to plug in three high-bandwidth USB-A ports - Your computer will need to communicate with both the data stream that controls the machine, along with two webcam feeds. It might be possible to handle all of this data through one USB port on your computer with an external USB hub, but you might find you need to plug into a few different ports on your computer, depending on the hardware you have.
 
-## Next steps
+## Next Step
 
-Let's dive in! The first step is [unboxing your machine](unboxing/index.md).
+<div class="openpnp-next" markdown>
+
+**Let's dive in! The first step is unboxing your LumenPnP:**
+
+<a href="../semi-assembly-4-0/unboxing/" class="next-step">Unbox Your LumenPnP →</a>
+
+</div>

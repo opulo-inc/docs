@@ -15,7 +15,7 @@ Update your LumenPnP's motherboard using the [STM32CubeProgrammer](https://www.s
 3. Open STM32CubeProgrammer.
 4. Select `USB` from the connection type dropdown on the right.
     ![USB Connection drop down](images/usb-connection.webp)
-5. Click on the download tab in the sidebar.
+5. Click the icon seen in the image below, which will take you to the download tab in the sidebar.
     ![Switch to the download tab](images/download-tab.webp)
 
 6. Attach the LumenPnP Motherboard to your computer with the included USB cable.
