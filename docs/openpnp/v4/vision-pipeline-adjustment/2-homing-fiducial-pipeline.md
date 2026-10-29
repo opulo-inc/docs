@@ -23,7 +23,7 @@ If you receive the error message `FIDUCIAL-HOME no matches found` when homing yo
 5. Verify that your top camera is positioned exactly over the homing fiducial.<br/><br/>
     ![Center the homing fiducial in the camera view](images/Homing-fiducial-centered.webp)<br/><br/>
 
-6. Adjust the exposure of your camera image as described in the [Homing Fiducial Section](../calibration/4-homing-fiducial/index.md#double-check-camera-exposure).<br/><br/>
+6. Adjust the exposure of your camera image as described in the [Homing Fiducial Section](../calibration/4-homing-fiducial/index.md#fine-tune-camera-exposure).<br/><br/>
 
 7. Navigate to the `Vision` tab.<br/><br/>
     ![Switch to the vision tab](images/vision-tab.webp)<br/><br/>
@@ -128,5 +128,5 @@ This window allows you to modify the vision pipeline for detecting the homing fi
 1. Attempt to `home` the LumenPnP to see if it can identify the homing fiducial.<br/><br/>
   ![Home the machine](images/home-machine-from-vision.webp)<br/><br/>
 
-1. If you receive the same `FIDUCIAL-HOME no matches found` error, you'll need to keep tuning your pipeline. Go back to [checking the debug results](#check-the-debug-results).<br/><br/>
+1. If you receive the same `FIDUCIAL-HOME no matches found` error, you'll need to keep tuning your pipeline. Go back to [checking the debug results](#edit-the-pipeline).<br/><br/>
   ![Cant't find homing fiducial](images/Cant-find-homing-fiducial.webp)

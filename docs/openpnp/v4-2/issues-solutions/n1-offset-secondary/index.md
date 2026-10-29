@@ -22,7 +22,7 @@ For this task, we'll precisely align **nozzle N1** with the **secondary fiducial
     <img src="images/n1-offset-secondary-jog-controls.webp"/>
 * Use the distance slider for smaller jog distances as you approach the fiducial for precise alignment. {color=blue}
     <img src="images/n1-offset-secondary-distance-slider.webp"/>
-* Keep adjusting the jog controls for X, Y, and Z until the nozzle tip is centered on the secondary fiducial. {color=purple}
+* Keep adjusting the jog controls for X, Y, and Z until the nozzle tip is centered on the secondary fiducial and making contact with it. {color=purple}
 * Make sure to look at the nozzle tip's position on the secondary fiducial from multiple angles, like from the front and sides. {color=purple}
     <img src="images/n1-offset-secondary-nozzle-touching-fid.webp"/>
 

@@ -38,7 +38,7 @@ Now that you've loaded a component into the feeder, we'll fine-tune the feeder's
 
     ![Activate correct toolhead](img/activate-toolhead.webp)
 
-10. Position your tool over the **Part Offset** location. Your nozzle tip should be hovering above the component. If the nozzle is not aligned correctly, you should adjust your [nozzle offset](../../openpnp/calibration/6-nozzle-offset/index.md).
+10. Position your tool over the **Part Offset** location. Your nozzle tip should be hovering above the component. If the nozzle is not aligned correctly, you should adjust your [nozzle offset](../../openpnp/v4-2/issues-solutions/n1-offset-primary/index.md).
 
     ![Position Nozzle over Part Offset](img/position-nozzle-over-offset.webp)
 

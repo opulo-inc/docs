@@ -15,4 +15,4 @@ Just like the homing fiducial, fiducial markers are used to precisely identify t
 4. Click `Edit` to open the **Pipeline Editor**.<br/><br/>
     ![Edit the pipeline](images/edit-pcb-fiducial-pipeline.webp)<br/><br/>
 
-5. Follow the same procedure outlined in the [Homing Fiducial Pipeline](2-homing-fiducial-pipeline.md#check-the-debug-results) section.
+5. Follow the same procedure outlined in the [Homing Fiducial Pipeline](../vision-pipeline-adjustment/2-homing-fiducial-pipeline.md#edit-the-pipeline) section.

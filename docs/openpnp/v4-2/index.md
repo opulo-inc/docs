@@ -36,7 +36,7 @@
 * It cuts down on wasting/losing parts.
 * It has a dedicated location.
 
- 	<img src="images/
+	<img src="images/
 
 * The cup is easily removed from its cradle to empty the bin
 * It can Be Removed/Relocated to increase available space, or for personal preference.
@@ -45,6 +45,6 @@
 
 ### Continue to Preflight
 
-Let's start with importing the LumenPnP v4.2 confiuration files.
+Let's start with importing the LumenPnP v4.2 configuration files.
 
-<a href="../v4-2/preflight/import-config/" class="next-step">Calibrate Nozzle N1 Offset →</a>
+<a href="../v4-2/preflight/import-config/" class="next-step">Start Here →</a>

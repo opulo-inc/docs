@@ -98,5 +98,5 @@ Your feeder now has the ability to update firmware over UART, but now enters the
 14. Using tweezers to help align the other side, solder the other four pads to the leads of U6.
     ![](img/back-side.webp)
     ![](img/done.webp)
-15. Confirm the fix was effective by attempting to [program the board using the UART bootloader](../../feeders/3-software-update/#update-feeder-firmware-optional), and *not* by using the alternate method shown in red.
+15. Confirm the fix was effective by attempting to [program the board using the UART bootloader](../../feeders/3-software-update/index.md), and *not* by using the alternate method shown in red.
 16. If successful, reassemble the feeder in the reverse order.

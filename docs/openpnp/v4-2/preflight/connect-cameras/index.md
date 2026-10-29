@@ -44,6 +44,9 @@ zoduki: true
 * The image may initially appear dark or completely black. This is normal if the exposure settings haven't been adjusted yet. {color=purple}
     <img src="images/top-cam-initialized.webp"/>
 
+!!! info "Check for Top Camera Cover"
+    There is a plastic cover protecting the top camera that should have been removed during assembly. Check and confirm that it has been removed.
+
 ### Step 4: Enable Manual Exposure
 
 To ensure exposure settings are applied correctly, locate the camera properties

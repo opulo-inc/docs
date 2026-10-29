@@ -15,9 +15,9 @@ OpenPnP has a calibration method called `Issues and Solutions`. It tries to iden
 
 [![Import V4 config files][1]][2]
 
-[1]:  ../openpnp/v4/calibration/images/lumenpnp-v4-docs-logo-small.png
-[2]:  ../openpnp/v4/install-config/import-config/index.md "Redirect to V4 config files"
+[1]:  ../v4/calibration/images/lumenpnp-v4-docs-logo-small.png
+[2]:  ../v4/install-config/import-config/index.md "Redirect to V4 config files"
 
 ## **Next Steps**
 
-First, we'll start with our preflight checklist, which is our way to ensure we are prepared for calibration. [connect to your LumenPnP V4](calibration/2-connect-to-machine/index.md).
+First, we'll start with our preflight checklist, which is our way to ensure we are prepared for calibration. [connect to your LumenPnP V4](../v4/calibration/2-connect-to-machine/index.md).

@@ -27,7 +27,7 @@ We provide these docs, the walkthrough video, and default configuration files to
 
 Save your settings after each calibration step. OpenPnP may not remember your settings if you close the application without saving them, so save them every time you adjust your calibration.
 
-![](../calibration/2-connect-to-machine/images/07-full-screen-save-config)
+![](../../openpnp/v4/calibration/2-connect-to-machine/images/07-full-screen-save-config.webp)
 
 ---
 

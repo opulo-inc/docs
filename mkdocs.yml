@@ -219,8 +219,6 @@ nav:
         - Old Calibration Guides:
             - V4.1 Calibration:
                 - Preflight Checklist:
-                    - Introduction: openpnp/v4-1/preflight/index.md
-                    - Install OpenPnP: openpnp/v4-1/preflight/install-config/install-openpnp/index.md
                     - Import Config Files: openpnp/v4-1/preflight/install-config/import-config/index.md
                     - Establish a Connection: openpnp/v4-1/preflight/connect/connect-lumen/index.md
                     - Connect cameras: openpnp/v4-1/preflight/connect/connect-cameras/index.md
@@ -246,8 +244,7 @@ nav:
                 - Prepare for Homing:
                         - Configure Homing Method: openpnp/v4-1/prepare-for-homing/index.md
             - V4.0 Calibration (Single Fiducial):
-                - Install and Configure OpenPnP:
-                    - Install OpenPnP 2.6: openpnp/v4/install-config/install/index.md
+                - Import Configuration Files:
                     - Import V4.0 Configuration Files: openpnp/v4/install-config/import-config/index.md
                 - Introduction: openpnp/v4/calibration/index.md
                 - Connect LumenPnP and Configure Bottom Camera: openpnp/v4/calibration/2-connect-to-machine/index.md
@@ -256,11 +253,10 @@ nav:
                 - Nozzle Offset: openpnp/v4/calibration/6-nozzle-offset/index.md
                 - Bottom Camera Position: openpnp/v4/calibration/7-bottom-camera-position/index.md
                 - Nozzle Tip Calibration: openpnp/v4/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md
-                - Vacuum Part Detection: openpnp/v4/calibration/10-vacuum-sensor/index.md
             - V3.2 (and older) Calibration:
                 - Machine Versions: misc/versions/index.md
                 - Upgrade to V4: misc/upgrade/index.md
-                - Add Feeder Support to V3.0.4 or Older: misc/v3-and-older/index/md
+                - Add Feeder Support to V3.0.4 or Older: misc/v3-and-older/index.md
                 - Tune Sensorless Homing (V3 only): guides/tuning-sensorless/index.md
                 - Updating OpenPnP GCode Macros: guides/update-gcode-macros/index.md
                 - Installing the Slot Harness on v3.0.X:
@@ -279,7 +275,6 @@ nav:
                         - Nozzle Offset: misc/calibration/6-nozzle-offset/index.md
                         - Bottom Camera Position: misc/calibration/7-bottom-camera-position/index.md
                         - Nozzle Tip Calibration: misc/calibration/8-nozzle-tip-calibration/nozzle-tip-calibration.md
-                        - Vacuum Part Detection: misc/calibration/10-vacuum-sensor/index.md
                 
 
     - FAQ: faq/index.md

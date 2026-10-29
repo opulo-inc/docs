@@ -40,7 +40,7 @@ If you own a LumenPnP V3, you must use the V3 config files.
 
 ## Latest LumenPnP Firmware
 
-([Instructions](/guides/update-firmware/))
+([Instructions](../guides/update-firmware/index.md))
 
 <a href="https://github.com/opulo-inc/lumenpnp/releases/download/v4.0.0/v4-lumenpnp-firmware-01.bin" class="download-button">V4 Firmware</a>
 
@@ -86,7 +86,7 @@ In March of 2026, OpenPnP made a new stable release, `v2.6`, which is what we re
 
 In March of 2026, OpenPnP made a new stable release, `v2.6`, which is what we recommend installing now.
 
-You can check what version you have installed by following [this guide](/docs/guides/get-openpnp-version/). Make sure to use the correct configuration based on your version.
+You can check what version you have installed by following [this guide](../guides/get-openpnp-version/index.md). Make sure to use the correct configuration based on your version.
 
 #### Linux Download
 

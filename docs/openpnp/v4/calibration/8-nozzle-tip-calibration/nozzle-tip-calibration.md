@@ -138,4 +138,6 @@ Nozzle Tip Runout Compensation measures how the nozzle tip's position shifts whe
 
 ---
 
-Next is configuring the [vacuum sensor](../10-vacuum-sensor/index.md).
+## Next Steps
+
+Next is [Running Your First Job](../../ftp/index.md).

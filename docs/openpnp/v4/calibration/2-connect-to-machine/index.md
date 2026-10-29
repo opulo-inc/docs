@@ -100,7 +100,7 @@ Follow these steps in order:
 
 1. **Confirm Connection**
     * If successful, the green **power button will turn red**. This means OpenPnP has successfully connected to your machine.<br/><br/>
-    * If unsuccessful,review your [Serial Port Connection](#configuration-the-serial-port).
+    * If unsuccessful,review your [Serial Port Connection](../2-connect-to-machine/index.md).
 <br/><br/>
 
 1. **Turn On Ring Lights**

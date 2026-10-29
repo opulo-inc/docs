@@ -3,7 +3,9 @@ title: "LumenPnP v4 Assembly - Frame"
 description: Putting together the frame of the v4 LumenPnP
 ---
 
-## Rails
+## **Rails**
+
+### Y1 and Y2 Rails
 
 1. Remove the left and right leg assemblies (Y1 & Y2 rails) from the second tray. They are stacked on top of each other.
 
@@ -48,6 +50,8 @@ description: Putting together the frame of the v4 LumenPnP
 
     ![alt text](img/IMG_2762.webp)
     ![alt text](img/IMG_2763.webp)
+
+### Front Rail
 
 9. Grab the front rail. It only has one right-angle bracket attached to each side, and has slots labeled 1-25.
 
@@ -103,6 +107,8 @@ description: Putting together the frame of the v4 LumenPnP
 
     ![alt text](img/IMG_2803.webp) ![alt text](img/IMG_2804.webp) ![alt text](img/IMG_2805.webp)
 
+### Back Rail
+
 20. Get the back rail. It has two right angle brackets on each side, and slots numbered 26-50. Get `4x` M5x8mm button heads and `4x` T-slot nuts and mount them into the open holes in the right angle brackets as shown below. Do this for all four brackets.
 
     ![alt text](img/IMG_2808.webp)
@@ -153,13 +159,21 @@ description: Putting together the frame of the v4 LumenPnP
 
         ![](img/IMG_2916.webp)
 
+### X Gantry
+
 27. Slide both Y gantries to the back of the machine (opposite the tension arms).
 
     ![alt text](img/IMG_2839.webp) ![alt text](img/IMG_2840.webp)
 
 28. Grab the X gantry from the packaging and fit it onto the Y gantries as shown. Make sure the toolhead motors are facing you like the image below.
 
-    ![alt text](img/IMG_2842.webp) ![alt text](img/IMG_2843.webp) ![alt text](img/IMG_2844.webp)
+    ![alt text](img/IMG_2842.webp)
+
+    !!! info "Remove Top Camera Cover"
+        There is a plastic cover protecting the top camera. Remove it by pulling it straight down. It does not have threads. Be gentle when removing it.
+
+    ![alt text](img/IMG_2843.webp)
+    ![alt text](img/IMG_2844.webp)
 
 29. Attach the X gantry to the Y gantries by installing a M5x25 socket head screw and M5x16mm socket head screw into the two holes on each side of the X gantry assembly.
 
@@ -179,85 +193,93 @@ description: Putting together the frame of the v4 LumenPnP
 
 ## Plates
 
+### Prepare the Plates
+
 1. Remove the staging plate and two smaller build plates from the first tray. The staging plate is packed under the control box.
 
     ![](img/DSC03511.webp)
     ![](img/DSC03513.webp)
     ![](img/DSC03513.webp)
 
-1. The staging plate has the bottom camera mounted to it. The build plate is bare.
+2. The staging plate has the bottom camera mounted to it. The build plate is bare.
 
     ![](img/DSC03509.webp)
     ![](img/DSC03516.webp)
 
-5. Get 12x M5x8mm button head screws and 8x t-slot nuts from your hardware bag.
+3. Get 12x M5x8mm button head screws and 8x t-slot nuts from your hardware bag.
 
     ![alt text](img/IMG_2887.webp)
 
-6. Insert the button head screws through the large holes in the four corners of each of the three plates. Loosely thread a t-slot nut onto the opposite side of each screw.
+4. Insert the button head screws through the large holes in the four corners of each of the three plates. Loosely thread a t-slot nut onto the opposite side of each screw.
 
     ![](img/DSC03514.webp)
     ![](img/DSC03515.webp)
 
-7. The plates should look like the image below.
+5. The plates should look like the image below.
 
     ![](img/DSC03518.webp)
 
-8. Pull out any wires tucked into the Y gantries, and leave them loose in the center of the machine to clear way for the plates to be mounted.
+6. Pull out any wires tucked into the Y gantries, and leave them loose in the center of the machine to clear way for the plates to be mounted.
 
     ![alt text](img/IMG_2897.webp)
     ![alt text](img/IMG_2898.webp)
 
-9. Place the staging plate into the machine as shown below. Have it rest on the lower of the two extrusions in each leg assembly. Make sure the staging plate's orientation matches the images below.
+### Staging Plate
+
+7. Place the staging plate into the machine as shown below. Have it rest on the lower of the two extrusions in each leg assembly. Make sure the staging plate's orientation matches the images below.
 
     ![](img/DSC03519.webp)
     ![](img/DSC03520.webp)
 
-10. Make sure that the staging plate is sitting flush on the extrusions. The T-slot nut should fit inside the slot in the extrusion.
+8. Make sure that the staging plate is sitting flush on the extrusions. The T-slot nut should fit inside the slot in the extrusion.
 
     ![alt text](img/IMG_2906.webp)
     ![alt text](img/IMG_2907.webp)
 
-11. Get the alignment bracket that you used earlier.
+9. Get the alignment bracket that you used earlier.
 
     ![alt text](img/IMG_2908.webp)
 
-12. Place the bracket along the front rail with the long side pointing away from you. Arrange the staging plate so that it is flat against the bracket.
+10. Place the bracket along the front rail with the long side pointing away from you. Arrange the staging plate so that it is flat against the bracket.
 
     ![](img/DSC03522.webp)
 
-13. While ensuring that the flat edge of the staging is flush against the side of the extrusion, tighten the screw closest to the front of the machine. Don't tighten the back one yet.
+11. While ensuring that the flat edge of the staging is flush against the side of the extrusion, tighten the screw closest to the front of the machine. Don't tighten the back one yet.
 
     ![alt text](img/IMG_2916.webp)
     ![alt text](img/IMG_2911.webp)
 
-14. Move the alignment bracket to the right side. Tighten both screws on the right side while ensuring the staging plate is pushed up against the alignment bracket.
+12. Move the alignment bracket to the right side. Tighten both screws on the right side while ensuring the staging plate is pushed up against the alignment bracket.
 
     ![alt text](img/IMG_2913.webp)
     ![alt text](img/IMG_2914.webp)
     ![alt text](img/IMG_2918.webp)
 
-15. Tighten the second screw on the left side of the machine.
+13. Tighten the second screw on the left side of the machine.
 
     ![alt text](img/IMG_2917.webp)
 
-16. Place the build plate onto the same rail as the staging plate. Make sure that the build plate is oriented such that the holes line up with the staging plate. Slide the build plate against the staging plate.
+### First Build Plate
+
+14. Place the build plate onto the same rail as the staging plate. Make sure that the build plate is oriented such that the holes line up with the staging plate. Slide the build plate against the staging plate.
 
     ![](img/DSC03523.webp)
     ![](img/DSC03524.webp)
     ![](img/DSC03525.webp)
 
-1. Ensure the t-slot nuts are fully inserted into the extrusion.
+15. Ensure the t-slot nuts are fully inserted into the extrusion.
 
     ![alt text](img/IMG_2906.webp)
     ![alt text](img/IMG_2907.webp)
 
-18. Make sure the build plate is flush with the extrusion, and tighten all four screws.
+16. Make sure the build plate is flush with the extrusion, and tighten all four screws.
 
     ![alt text](img/IMG_2916.webp)
     ![alt text](img/IMG_2918.webp)
 
-1.  Mount the second build plate, also ensuring that the holes line up with the first build plate. Confirm that the holes in your plates look like the image. 
+### Second Build Plate
+
+17.  Mount the second build plate, also ensuring that the holes line up with the first build plate. Confirm that the holes in your plates look like the image. 
 
     ![](img/DSC03526.webp)
     ![](img/DSC03527.webp)
@@ -266,6 +288,8 @@ description: Putting together the frame of the v4 LumenPnP
 
     ![alt text](img/IMG_2916.webp)
     ![alt text](img/IMG_2918.webp)
+
+## Y-Striker
 
 19. Get the Y-striker from the packaging.
 

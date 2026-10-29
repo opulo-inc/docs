@@ -5,7 +5,7 @@ All motherboards come pre-flashed with firmware from Opulo and should work out o
 
 Update your LumenPnP's motherboard using the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) software by ST.
 
-1. Download the latest [precompiled firmware](/software-updates/) `.bin` file for your machine version.
+1. Download the latest [precompiled firmware](../../software-updates/index.md) `.bin` file for your machine version.
 
 2. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html).
 

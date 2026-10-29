@@ -17,7 +17,7 @@ Please update to the latest version of OpenPnP 2.6
 
 1. Connect the included programmer to your computer.
    <!-- TODO: Get photo of programmer plugged into computer -->
-2. Download the most recent firmware [here](/software-updates/), a specific version from the [Photon releases page](https://github.com/photonfirmware/photon/releases), or [compile it yourself](https://github.com/opulo-inc/feeder).
+2. Download the most recent firmware [here](../../software-updates/index.md), a specific version from the [Photon releases page](https://github.com/photonfirmware/photon/releases), or [compile it yourself](https://github.com/opulo-inc/feeder).
 3. Download and install the [STM32CubeProgrammer application](https://www.st.com/en/development-tools/stm32cubeprog.html#section-get-software-table).
 4. Open the STM32CubeProgrammer application
 5. On the Blue dropdown next to the connect button, select `UART`.
@@ -74,19 +74,19 @@ Please update to the latest version of OpenPnP 2.6
 12. Once connected, Switch to the download tab on the left.
 ![Download Tab](img/download-tab.webp)
 
-13.  Click the "Browse" button and navigate to the provided `firmware.bin` file.
+1.   Click the "Browse" button and navigate to the provided `firmware.bin` file.
 
     ![Browse Button](img/browse-button.webp)
 
-14.  Ensure that the “Start address” is `0x08000000`.
+2.   Ensure that the “Start address” is `0x08000000`.
 
     ![Start Address](img/start-address.webp)
 
-15.  Click "Start Programming".
+3.   Click "Start Programming".
 
     ![Start Programming](img/start-programming.webp)
 
-16.  Wait until the software prompts that the firmware has been downloaded successfully. You may disconnect the programmer from the feeder.
+4.   Wait until the software prompts that the firmware has been downloaded successfully. You may disconnect the programmer from the feeder.
 
     ![programming complete pop up](img/programming-complete.webp)
 

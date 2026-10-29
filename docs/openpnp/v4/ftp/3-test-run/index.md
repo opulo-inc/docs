@@ -23,9 +23,9 @@ Before running the job, you'll want to test the bottom vision pipeline, which us
 
 1. **Recycle component**.
     * Once part identification is confirmed to be working, switch to the `Special` Tab in the `Machine Controls` pane.<br/><br/>
-     ![Switch to the special tab](images/Special-tab.webp)<br/><br/>
+     ![Switch to the special tab](../2-feeder-setup/images/Special-tab.webp)<br/><br/>
     * Click the `Recycle` button to instruct the LumenPnP to recycle the picked component.<br/><br/>
-     ![Recycle the component you've picked up](images/Recycle-component.webp)
+     ![Recycle the component you've picked up](../2-feeder-setup/images/Recycle-component.webp)
 <br/><br/>
 
 ---

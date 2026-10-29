@@ -38,7 +38,7 @@ You are in the correct guide. Continue to Preflight:
 
 </div>
 
-<a href="install-config/install-openpnp/" class="next-step">✅ Continue to Preflight →</a>
+<a href="install-config/import-config/" class="next-step">✅ Continue to Preflight →</a>
 
 <br>
 

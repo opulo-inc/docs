@@ -3,7 +3,7 @@
 Welcome to the v4 LumenPnP DIY Build Guide!
 
 !!! danger "DIY BUILD ONLY"
-    This page is just for folks **building a LumenPnP from scratch or upgrading your machine!** If you bought a LumenPnP from Opulo's website, instead go to the [regular docs](/semi-assembly-4-0/).
+    This page is just for folks **building a LumenPnP from scratch or upgrading your machine!** If you bought a LumenPnP from Opulo's website, instead go to the [regular docs](../../semi-assembly-4-0/unboxing/index.md).
 
 This guide is for folks that are interested in 1) building a LumenPnP from source, or 2) bought a parts or upgrade kit from Opulo.
 
@@ -64,7 +64,7 @@ Below is a tentative list of what you'll need for the upgrade, before Opulo has 
 
 ## Where this guide ends
 
-Upon completing this guide, you'll have very close to what arrives in a box from Opulo when you purchase a LumenPnP v4. After completing this guide, move on to [the normal assembly process](/semi-assembly-4-0/) to put all the main parts of the machine together.
+Upon completing this guide, you'll have very close to what arrives in a box from Opulo when you purchase a LumenPnP v4. After completing this guide, move on to [the normal assembly process](../../semi-assembly-4-0/frame/index.md) to put all the main parts of the machine together.
 
 ## Resources
 
@@ -73,4 +73,4 @@ A lot goes into building a LumenPnP. Although it's meant to be buildable by anyo
 - [Discord](https://discordapp.com/invite/TCwy6De) - The community discord is super helpful for folks putting together a machine.
 - [Machine Source](https://github.com/opulo-inc/lumenpnp) - When in doubt, go to the source! Github has every part of the machine design source, so any question can be answered by perusing the repository. We recommend referencing the files attached to your version number's release (the source for your version number is attached to the release as well)
 
-### [Let's get printing ➡️](1-printing/)
+### [Let's get printing ➡️](../diy-v4/1-printing/index.md)

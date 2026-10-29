@@ -26,4 +26,4 @@ This varies wildly across printer, material, environment, etc. but good rules of
 - Support mostly not needed, but can be helpful
 - 0.2 mm layer height
 
-### [Let's start the build ➡️](../2-ohai/)
+### [Let's start the build ➡️](../2-ohai/index.md)

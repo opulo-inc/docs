@@ -153,7 +153,7 @@ Each nozzle has a different vacuum reading due to variations in nozzle tip size.
 **Skip this section if you are not setting up a LumenPnP V2**.
 
 !!! note "v2 Interposers"
-    If you have a v2 machine, please [check if you have interposer boards installed](../../../guides/rev3-vac-interposer/index.md).
+    If you have a v2 machine, please [check if you have interposer boards installed](../../v3-and-older/rev3-vac-interposer/index.md).
 
 1. Select your GcodeDriver, then under the Gcode tab, select the `H1 VAC1` actuator, and select the `ACTUATOR_READ_COMMAND` setting.
 

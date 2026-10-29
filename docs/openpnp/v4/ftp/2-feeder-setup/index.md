@@ -125,7 +125,7 @@ Once the feeder is physically installed, it needs to be configured in OpenPnP so
 
 1. **Select the Nozzle**.
     * In `Machine Controls`, select `Nozzle: N1` from the dropdown. To confirm, this should have the `N045` nozzle tip installed.<br/><br/>
-     ![](../../calibration/6-nozzle-offset/images/select-n1-machine-control.webp)
+     ![](../../calibration/6-nozzle-offset/images/01-seleect-nozzle-n1-from-machine-controls.webp)
 <br/><br/>
 
 1. **Position nozzle: N1 over the feeder**.

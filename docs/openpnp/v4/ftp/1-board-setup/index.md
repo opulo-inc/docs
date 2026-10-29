@@ -96,7 +96,7 @@ The first step in starting the FTP PCB is physically mounting the FTP PCB onto t
      ![Load Nozzle N045](images/Load-nozzle-n045.webp)<br/><br/>
     * **Your machine will jog the head to the front of the machine** for easy tip loading.
     * Slide the **N045 nozzle tip** onto the **left nozzle** (red tubing). Rotate the nozzle tip as you mount it to the brass nozzle to evenly distribute the lubricant around the O-rings. It should slide on and off smoothly after working it in.<br/><br/>
-     ![Install the N045 nozzle](../../calibration/2-connect-to-machine/images/16-n045-nozzle-installed-gif.gif)
+     ![Install the N045 nozzle](../../calibration/2-connect-to-machine/images/16-install-n045-nozzle-tip.gif)
 <br/><br/>
 
 1. **Assign the Nozzle Tip to Parts**.
