@@ -40,7 +40,7 @@ zoduki: true
 * Click **Test** next to the Capture FPS setting. {color=green}
 * Allow OpenPnP to initialize the camera. {color=green}
     <img src="images/top-cam-test-button.webp"/>
-* Confirm that the top camera preview begins displaying a live image and removes the **red X** from the top camera feed. {color=purple}
+* Confirm that the top camera has established a connection by checking that the **red X** has been removed from the top camera feed. {color=purple}
 * The image may initially appear dark or completely black. This is normal if the exposure settings haven't been adjusted yet. {color=purple}
     <img src="images/top-cam-initialized.webp"/>
 
@@ -51,7 +51,7 @@ zoduki: true
 
 To ensure exposure settings are applied correctly, locate the camera properties
 
-* Locate **Exposure** in the camera properties. {color=purple}
+* Locate the **Exposure** row in the camera properties below the test button. {color=purple}
 * Check the checkbox under the **Auto** column. {color=purple}
 * Uncheck the same checkbox to disable automatic exposure. {color=purple}
 * This switches the camera back to manual exposure mode and helps ensure the setting is applied correctly. {color=purple}
@@ -97,7 +97,7 @@ To ensure exposure settings are applied correctly, locate the camera properties
 * Click **Test** next to the Capture FPS setting. {color=green}
 * Allow OpenPnP to initialize the camera. {color=green}
     <img src="images/bottom-cam-test-button.webp"/>
-* Confirm that the bottom camera preview begins displaying a live image and removes the **red X** from the bottom camera feed. {color=purple}
+* Confirm that the bottom camera has established a connection by checking that the **red X** has been removed from the bottom camera feed. {color=purple}
 * The image may initially appear dark or completely black. This is normal if the exposure settings haven't been adjusted yet. {color=purple}
     <img src="images/bottom-cam-initialized.webp"/>
 
@@ -105,7 +105,7 @@ To ensure exposure settings are applied correctly, locate the camera properties
 
 To ensure exposure settings are applied correctly, locate the camera properties
 
-* Locate **Exposure** in the camera properties. {color=purple}
+* Locate the **Exposure** row in the camera properties below the test button. {color=purple}
 * Check the checkbox under the **Auto** column. {color=purple}
 * Uncheck the same checkbox to disable automatic exposure. {color=purple}
 * This switches the camera back to manual exposure mode and helps ensure the setting is applied correctly. {color=purple}
