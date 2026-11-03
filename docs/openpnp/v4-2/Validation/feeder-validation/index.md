@@ -26,21 +26,19 @@ The FTP PCB uses two main types of components: resistors and LEDs. For this guid
 
 1. **Gather the necessary materials**.
     * Locate the 8mm strip feeder and mounting hardware from your Getting Started Kit.<br/><br/>
-     ![](../../../v4/ftp/2-feeder-setup/images/8mm-strip-feeder.webp)
+     ![](images/strip-feeder-locate-in-tool-kit.webp)
 <br/><br/>
 
 2. **Position the feeder correctly**.
-    * Place the strip feeder onto the staging plate to the right of the FTP validation board. You can ignore the 14, 15, and 16 in the photo.<br/><br/>
-     ![Install the feeder to the staging plate](../../../v4/ftp/2-feeder-setup/images/strip-placement-location.webp)
+    * Place the strip feeder onto the staging plate to the right of the FTP validation board.<br/><br/>
+     ![Install the feeder to the staging plate](images/strip-feeder-mounting.webp)
 <br/><br/>
 
 1. **Secure the feeder**.
-    * Use the 2x M4 x 10mm screws to mount the strip feeder to your staging plate. You can ignore the G15 and A15 in this photo.<br/><br/>
-     ![](../../../v4/ftp/2-feeder-setup/images/strip-mounting-location.webp)
-<br/><br/>
+    * Use the 2x M4 x 10mm screws to mount the strip feeder to your staging plate. You can ignore the G15 and A15 in this photo.
 
-1. **Load the resistors**.
-    * Insert the provided resistors into the left-most track, ensuring that the tape holes are on the left. Do not remove the clear covering tape yet; it will ensure the components stay in place.<br/><br/>
+2. **Load the resistors**.
+    * Grab the resistors that were provided in small strips of tape from a reel and insert that strip into one of the tracks, ensuring that the holes on the strip of tape are on the left side. Do not remove the clear covering tape yet; it will ensure the components stay in place.<br/><br/>
      ![](../../../v4/ftp/2-feeder-setup/images/loading-tape.webp)
      ![](../../../v4/ftp/2-feeder-setup/images/tape-mounted.webp)
 <br/><br/>
