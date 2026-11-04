@@ -209,6 +209,6 @@ With the hardware set up, we need to tell OpenPnP about the newly installed tool
 1. Attach a nozzle to your new second tool head
 2. Set [your new nozzle's offset](../../../openpnp/v4-2/issues-solutions/n2-offset-primary/index.md).
 3. Try homing your machine again. If you get the `Nozzle tip calibration: not enough results from vision. Check pipeline and threshold` error, you will need to tune your [Bottom Camera Vision Pipeline](../../../openpnp/v4-2/issues-solutions/bottom-cam-pos/index.md).
-4. Test picking components out of your feeders. Follow the instructions in the [FTP](../../../openpnp/v4-2/validation/index.md) guide. Make sure to activate your newly created tool head, and assign a nozzle tip to it.
+4. Test picking components out of your feeders. Follow the instructions in the [FTP](../../../openpnp/v4-2/ftp-validation/index.md) guide. Make sure to activate your newly created tool head, and assign a nozzle tip to it.
 
 [step]: https://wiki.fysetc.com/Silent2209/

@@ -166,10 +166,10 @@ nav:
                     - Use an adaptive camera settling method: openpnp/v4-2/issues-solutions/camera-settling/index.md
                     - Finishing Touches: openpnp/v4-2/issues-solutions/homing-method-and-runout/index.md
         - Calibration Validation:
-            - Introduction: openpnp/v4-2/validation/index.md
-            - Board Validation: openpnp/v4-2/validation/board-validation/index.md
-            - Feeder Validation: openpnp/v4-2/validation/feeder-validation/index.md
-            - Job Validation: openpnp/v4-2/validation/job-validation/index.md
+            - Introduction: openpnp/v4-2/ftp-validation/index.md
+            - Board Validation: openpnp/v4-2/ftp-validation/board-validation/index.md
+            - Feeder Validation: openpnp/v4-2/ftp-validation/feeder-validation/index.md
+            - Job Validation: openpnp/v4-2/ftp-validation/job-validation/index.md
         - Debugging: 
             - Errors: openpnp/v4/debugging/index.md
             - Vision Pipeline Adjustment:
