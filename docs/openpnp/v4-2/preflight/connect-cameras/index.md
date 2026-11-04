@@ -9,6 +9,7 @@ zoduki: true
 ### Top and Bottom Camera
 
 * Your LumenPnP has two cameras used throughout calibration and operation. {color=blue}
+* Ensure the top cameras lens cover has already been removed. If it has not been yet, use a gentle downward force, it pulls straight off. {color=blue}
 * **Top Camera:** Looks downward at the machine's work area and is used for locating fiducials and identifying positions. {color=blue}
 * **Bottom Camera:** Looks upward at the nozzle tips and components for accurate alignment. {color=blue}
     <img src="images/top-and-bottom-cam.webp"/>
@@ -41,10 +42,10 @@ zoduki: true
 * Allow OpenPnP to initialize the camera. {color=green}
     <img src="images/top-cam-test-button.webp"/>
 * Confirm that the top camera has established a connection by checking that the **red X** has been removed from the top camera feed. {color=purple}
-* The image may initially appear dark or completely black. This is normal if the exposure settings haven't been adjusted yet. {color=purple}
+* The image may initially appear dark or completely black. This is expected because the exposure settings haven't been adjusted yet. {color=purple}
     <img src="images/top-cam-initialized.webp"/>
 
-!!! info "Check for Top Camera Cover"
+!!! info "Check for Top Camera Lens Cover"
     There is a plastic cover protecting the top camera that should have been removed during assembly. Check and confirm that it has been removed.
 
 ### Step 4: Enable Manual Exposure

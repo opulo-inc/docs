@@ -112,4 +112,4 @@ Now that the homing method and nozzle tip calibration settings are configured, w
 * Calibration is complete! Next, we'll run a controlled validation test to confirm your LumenPnP is accurately picking and placing components.
    <img src="../../preflight/connect-cameras/images/step-complete.webp"/>
 
-<a href="../../ftp-validation/" class="next-step">Begin Validation Test →</a>
+<a href="../../validation/" class="next-step">Begin Validation Test →</a>

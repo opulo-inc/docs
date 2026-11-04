@@ -169,8 +169,8 @@ description: Putting together the frame of the v4 LumenPnP
 
     ![alt text](img/IMG_2842.webp)
 
-    !!! info "Remove Top Camera Cover"
-        There is a plastic cover protecting the top camera. Remove it by pulling it straight down. It does not have threads. Be gentle when removing it.
+    !!! info "Remove Top Camera Lens Cover"
+        There is a plastic lens cover protecting the top camera lens. Remove it by pulling it straight down. It does not have threads. Be gentle when removing it.
 
     ![alt text](img/IMG_2843.webp)
     ![alt text](img/IMG_2844.webp)
