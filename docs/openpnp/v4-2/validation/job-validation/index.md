@@ -18,18 +18,18 @@ Before running the job, you'll want to test the bottom vision pipeline, which us
 
 1. **Test alignment**.
     * Switch to the `Parts` tab, select the part you just picked and click the "Test Alignment" button.<br/><br/>
-     ![test bottom vision](../../../v4/ftp/3-test-run/images/test-bottom-vision.webp)
+     ![test bottom vision](images/test-bottom-vision.webp)
 <br/><br/>
 
 1. **Verify the bottom vision output**.
     * Watch the bottom camera feed. A red rectangle should outline the component perfectly before disappearing once the part has been checked. 
     * If the rectangle is misaligned on the part, adjust your [part identification pipeline](../../../v4/vision-pipeline-adjustment/5-part-identification-pipeline.md) before proceeding.<br/><br/>
-     ![bottom vision output](../../../v4/ftp/3-test-run/images/bottom-vision-detection.webp)
+     ![bottom vision output](images/bottom-vision-detection.webp)
 <br/><br/>
 
 1. **Discard component**.
     * Once part identification is confirmed to be working, switch to the `Special` Tab in the `Machine Controls` pane.<br/><br/>
-     ![Switch to the special tab](../../../v4/ftp/2-feeder-setup/images/Special-tab.webp)<br/><br/>
+     ![Switch to the special tab](../../preflight/establish-connection/images/machine-controls-special-tab.webp)<br/><br/>
     * Click the `Discard` button to instruct the LumenPnP to discard the picked component.<br/><br/>
 <br/><br/>
 
@@ -47,7 +47,7 @@ Before running the job, you'll want to test the bottom vision pipeline, which us
     * You can now use the yellow `Single job step` button, located beside the `Play` button, to proceed through the job one step at a time to ensure everything is going smoothly.
     * The LumenPnP will step through picking a component, align it using the bottom camera, and place it on the board.
     * Step through until a few parts are populated.<br/><br/>
-     ![Start placing components](../../../v4/ftp/3-test-run/images/One-step-placement.webp)<br/><br/>
+     ![Start placing components](images/One-step-placement.webp)<br/><br/>
 
 ---
 

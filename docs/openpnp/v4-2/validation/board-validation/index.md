@@ -79,7 +79,7 @@ With your new board selected:
 
 1. Navigate to `File > Import Placements > KiCAD .pos`.
 
-![Import the KiCad position file](../../../v4/ftp/1-board-setup/images/import-from-boards-tab.webp)
+![Import the KiCad position file](images/import-kicad-placements.webp)
 
 2. Select your downloaded `ftp-top.pos` as the **Top File (.pos)**.
 3. Enable `Assign Parts`.
@@ -272,16 +272,5 @@ Before continuing, let's confirm that the camera moves to the correct fiducial l
 
 ---
 
-<div class="next-step-container">
 
-<div class="next-step-title">
-Next Step
-</div>
-
-<div class="next-step-description">
-Your FTP PCB is ready! Next, we'll configure a feeder so the LumenPnP can begin picking components for the test job.
-</div>
-
-<a href="../feeder-validation" class="next-step">Feeder Setup →</a>
-
-</div>
+<a href="../feeder-validation/" class="next-step">Feeder Setup →</a>
