@@ -1,0 +1,830 @@
+:root {
+  --md-primary-fg-color:        #1a1a1a;
+  --md-primary-fg-color--light: #DAA520;
+  --md-primary-fg-color--dark:  #34164A;
+
+  --md-accent-fg-color: #DAA520;
+}
+
+a {
+  color: #daa520;
+}
+
+/* a:hover {
+  color: white;
+} */
+
+h1 {
+  color: #daa520;
+}
+
+.md-content {
+  --md-typeset-a-color: #31a1f0;
+}
+
+/* a.md-nav__link {
+  color: black;
+} */
+
+a.md-nav__link--active {
+  --md-typeset-a-color: #DAA520;
+}
+
+.md-nav__link {
+  color: var(--md-typeset-color);
+}
+
+.md-nav__link--passed {
+  color: var(--md-default-fg-color--light);
+}
+
+a.md-nav__link:hover {
+  color: #daa520;
+}
+
+/* label.md-nav__title {
+  color: #daa520;
+} */
+
+.video-wrapper {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+.video-wrapper > iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.mermaid {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 24px 0;
+}
+
+.progress-step2 {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #888;
+  transition: all 0.5s ease-in-out;
+}
+
+.progress-step {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #888;
+  opacity: 0.65;
+  transition: all 0.5s ease-in-out;
+}
+
+.progress-complete {
+  background-color: #1b5e20;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.progress-current {
+  background-color: #daa520;
+  color: white;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.progress-current {
+  animation: glow 0.6s ease-out;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 0px rgba(246, 230, 2, 0.7); }
+  50% { box-shadow: 0 0 10px rgba(246, 230, 2, 0.6); }
+  100% { box-shadow: 0 0 0px rgba(173, 175, 76, 0); }
+}
+
+/* Respects reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .progress-current {
+    animation: none;
+  }
+}
+
+.success-box {
+  border-left: 4px solid #1b5e20;
+  background-color: #1b5e20;
+  padding: 12px 16px;
+  margin: 16px 0;
+}
+
+.failed-box {
+  border-left: 4px solid #5e1b1b;
+  background-color: #5e1b1b;
+  padding: 12px 16px;
+  margin: 16px 0;
+}
+
+.next-step-container {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.next-step-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.next-step-description {
+  margin-bottom: 12px;
+  color: #666;
+}
+
+.next-step {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 18px;
+  background-color: #38466b;
+  color: white !important;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.next-step:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  background-color: #50648f;
+}
+
+/* STOP IF - Prevent errors */
+
+.stop-if {
+  border-left: 4px solid #b00020;
+  background-color: #ca5252;
+  padding: 14px 16px;
+  margin: 24px 0;
+  border-radius: 6px;
+}
+
+.stop-if-title {
+  font-weight: 600;
+  color: #43010d;
+  margin-bottom: 6px;
+}
+
+
+/* GOOD TO KNOW - Helpful context */
+
+.good-to-know {
+  border-left: 4px solid #203aca;
+  background-color: #5f6dac;
+  padding: 14px 16px;
+  margin: 24px 0;
+  border-radius: 6px;
+}
+
+.good-to-know-title {
+  font-weight: 600;
+  color: #1f30a2;
+  margin-bottom: 6px;
+}
+
+
+/* PRO TIP - Best practices */
+
+.pro-tip {
+  border-left: 4px solid #1b5e20;
+  background-color: #4e8c4e;
+  padding: 14px 16px;
+  margin: 24px 0;
+  border-radius: 6px;
+}
+
+.pro-tip-title {
+  font-weight: 600;
+  color: #1b5e20;
+  margin-bottom: 6px;
+}
+
+/* Icons to be added to the beginning of the alerts */
+
+.stop-if-title::before {
+  content: "⛔ ";
+}
+
+.good-to-know-title::before {
+  content: "ℹ️ ";
+}
+
+.pro-tip-title::before {
+  content: "✔ ";
+}
+
+.download-button::before {
+  content: "⬇ ";
+}
+
+/* download button */
+
+.download-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #1b5e20;
+  color: white !important;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.download-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  background-color: #154a19;
+}
+
+/* for I&S identifying on docs pages in a nice format */
+
+.issue-solution {
+  border-left: 4px solid #daa520;
+  background-color: #38466b;
+  color: #f2f4f8;
+  padding: 16px 18px;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+.issue-label {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.solution-label {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* ==========================================
+   OPENPNP INSTALLATION PAGE
+   ========================================== */
+
+/* Intro and logo */
+.md-typeset .openpnp-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 1.5rem auto 2.5rem;
+}
+
+.md-typeset .openpnp-logo {
+    display: block;
+    max-width: 1200px;
+    width: 65%;
+    height: auto;
+    margin: 0 auto 1.5rem;
+}
+
+/* Download card layout */
+.md-typeset .grid.cards.openpnp-download-cards > ul > li {
+    background-color: var(--md-code-bg-color);
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 10px;
+    padding: 1.4rem;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.md-typeset .grid.cards.openpnp-download-cards > ul > li:hover {
+    border-color: #DAA520;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Highlight recommended Linux option */
+.md-typeset .grid.cards.openpnp-download-cards > ul > li:first-child {
+    border-top: 3px solid #DAA520;
+}
+
+.md-typeset .openpnp-platform-title {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+
+/* Platform status labels */
+.md-typeset .openpnp-status {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+    margin-bottom: 0.7rem;
+}
+
+.md-typeset .openpnp-status.recommended {
+    background-color: rgba(218, 165, 32, 0.15);
+    color: #DAA520;
+}
+
+.md-typeset .openpnp-status.supported {
+    background-color: var(--md-default-fg-color--lightest);
+    color: var(--md-default-fg-color);
+}
+
+/* Main download button */
+.md-typeset a.openpnp-download-primary {
+    display: block;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    margin: 0.8rem 0;
+    border-radius: 6px;
+    background-color: #38466b;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.md-typeset a.openpnp-download-primary:hover {
+    background-color: #50648f;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Alternative download button */
+.md-typeset a.openpnp-download-secondary {
+    display: block;
+    text-align: center;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 6px;
+    color: var(--md-default-fg-color);
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.md-typeset a.openpnp-download-secondary:hover {
+    border-color: #DAA520;
+    color: var(--md-default-fg-color);
+}
+
+.md-typeset .openpnp-card-footnote {
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin-top: 0.75rem;
+}
+
+/* First launch instructions */
+.md-typeset .openpnp-first-launch {
+    background-color: var(--md-code-bg-color);
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-left: 4px solid #DAA520;
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.md-typeset .openpnp-first-launch > :first-child,
+.md-typeset .openpnp-complete > :first-child,
+.md-typeset .openpnp-next > :first-child {
+    margin-top: 0;
+}
+
+.md-typeset .openpnp-first-launch > :last-child,
+.md-typeset .openpnp-complete > :last-child,
+.md-typeset .openpnp-next > :last-child {
+    margin-bottom: 0;
+}
+
+/* Completion message */
+.md-typeset .openpnp-complete {
+    background-color: rgba(76, 175, 80, 0.08);
+    border-left: 4px solid #4caf50;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+}
+
+/* Next step area */
+.md-typeset .openpnp-next {
+    text-align: center;
+    background-color: var(--md-code-bg-color);
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.md-typeset .openpnp-next .next-step {
+    display: inline-block;
+    margin-top: 0.8rem;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 600px) {
+    .md-typeset .grid.cards.openpnp-download-cards > ul > li {
+        padding: 1rem;
+    }
+
+    .md-typeset .openpnp-first-launch,
+    .md-typeset .openpnp-next {
+        padding: 1rem;
+    }
+}
+
+
+/* ==========================================
+   LUMENPNP SETUP SELECTION
+   ========================================== */
+
+/* Default card appearance */
+.md-typeset .grid.cards.lumenpnp-selection-cards > ul > li {
+    background-color: var(--card-bg, var(--md-code-bg-color));
+    border: 1px solid var(--card-border, #38466b);
+    border-radius: 10px;
+    padding: 1.2rem;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Card hover effects */
+.md-typeset .grid.cards.lumenpnp-selection-cards > ul > li:hover {
+    background-color: var(--card-hover-bg, var(--md-code-bg-color));
+    border-color: var(--card-hover-border, #DAA520);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ==========================================
+   INDIVIDUAL CARD COLORS
+   ========================================== */
+
+/* CARD 1: V4.2 */
+.md-typeset .grid.cards.lumenpnp-selection-cards > ul > li:nth-child(1) {
+    --card-bg: #1f2633;
+    --card-border: #38466b;
+    --card-hover-bg: #38466b;
+    --card-hover-border: #DAA520;
+}
+
+/* CARD 2: V4.1 */
+.md-typeset .grid.cards.lumenpnp-selection-cards > ul > li:nth-child(2) {
+    --card-bg: #1f2633;
+    --card-border: #38466b;
+    --card-hover-bg: #38466b;
+    --card-hover-border: #DAA520;
+}
+
+/* CARD 3: V4.0 */
+.md-typeset .grid.cards.lumenpnp-selection-cards > ul > li:nth-child(3) {
+    --card-bg: #1f2633;
+    --card-border: #38466b;
+    --card-hover-bg: #38466b;
+    --card-hover-border: #DAA520;
+}
+
+/* CARD 4: V3.2 and Earlier */
+.md-typeset .grid.cards.lumenpnp-selection-cards > ul > li:nth-child(4) {
+    --card-bg: #1f2633;
+    --card-border: #38466b;
+    --card-hover-bg: #38466b;
+    --card-hover-border: #DAA520;
+}
+
+/* ==========================================
+   CARD CONTENT
+   ========================================== */
+
+/* Version labels */
+.md-typeset .lumenpnp-version {
+    display: inline-block;
+    color: #DAA520;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0.3rem 0 0.7rem;
+}
+
+/* Consistent image sizing */
+.md-typeset .lumenpnp-selection-cards img {
+    display: block;
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    margin: 0.2rem auto;
+}
+
+/* Space for card buttons */
+.md-typeset .grid.cards.lumenpnp-selection-cards > ul > li {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Keep the button at the bottom of each card */
+.md-typeset .grid.cards.lumenpnp-selection-cards > ul > li > p:last-child {
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+/* Selection buttons */
+.md-typeset a.lumenpnp-select-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #526FA3;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.md-typeset a.lumenpnp-select-button:hover {
+    background-color: #50648f;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 600px) {
+    .md-typeset .lumenpnp-selection-cards img {
+        height: auto;
+        max-height: 220px;
+    }
+
+    .md-typeset .grid.cards.lumenpnp-selection-cards > ul > li {
+        padding: 1rem;
+    }
+}
+
+
+
+/* ==========================================
+   LUMENPNP CONFIGURATION IMPORT PAGES
+   ========================================== */
+
+/* Download panel */
+.md-typeset .config-download-panel {
+    background-color: var(--md-code-bg-color);
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-top: 3px solid #DAA520;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0 1.5rem;
+}
+
+.md-typeset .config-download-panel > :first-child {
+    margin-top: 0;
+}
+
+.md-typeset .config-download-panel > :last-child {
+    margin-bottom: 0;
+}
+
+/* Main download button */
+.md-typeset a.config-download-button {
+    display: block;
+    text-align: center;
+    padding: 0.85rem 1.2rem;
+    margin: 1rem 0;
+    background-color: #526FA3;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.md-typeset a.config-download-button:hover {
+    background-color: #6685BC;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* File names within download panel */
+.md-typeset .config-file-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding: 0;
+    margin: 0.7rem 0;
+    list-style: none;
+}
+
+.md-typeset .config-file-list li {
+    background-color: var(--md-default-bg-color);
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    margin: 0;
+}
+
+.md-typeset .config-file-list li code {
+    background: transparent;
+}
+
+/* Instruction screenshots */
+.md-typeset .config-guide-image {
+    display: block;
+    max-width: 650px;
+    width: 85%;
+    height: auto;
+    margin: 0.8rem auto;
+    border-radius: 6px;
+}
+
+/* Explanation panel */
+.md-typeset .config-info {
+    background-color: var(--md-code-bg-color);
+    border-left: 4px solid #526FA3;
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.md-typeset .config-info > :first-child {
+    margin-top: 0;
+}
+
+.md-typeset .config-info > :last-child {
+    margin-bottom: 0;
+}
+
+/* Next step panel */
+.md-typeset .config-next-panel {
+    background-color: var(--md-code-bg-color);
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1.5rem 0 2rem;
+    text-align: center;
+}
+
+.md-typeset .config-next-panel > :first-child {
+    margin-top: 0;
+}
+
+.md-typeset .config-next-panel > :last-child {
+    margin-bottom: 0;
+}
+
+.md-typeset .config-next-panel .next-step {
+    display: inline-block;
+    margin-top: 0.8rem;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .md-typeset .config-download-panel,
+    .md-typeset .config-info,
+    .md-typeset .config-next-panel {
+        padding: 1rem;
+    }
+
+    .md-typeset .config-guide-image {
+        width: 100%;
+    }
+}
+
+
+/* ==========================================
+   OPENPNP OVERVIEW AND CONNECTION PAGE
+   ========================================== */
+
+/* Main annotated OpenPnP interface image */
+.md-typeset .openpnp-overview-image {
+    display: block;
+    width: 100%;
+    max-width: 950px;
+    height: auto;
+    margin: 0.8rem auto;
+    border-radius: 8px;
+}
+
+/* Annotated Machine Controls image */
+.md-typeset .machine-controls-image {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 0.5rem 0;
+    border-radius: 6px;
+}
+
+/* Screenshots and GIFs for connecting */
+.md-typeset .connection-guide-image {
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+    margin: 0.8rem auto;
+    border-radius: 6px;
+}
+
+/* Reduce spacing around image paragraphs */
+.md-typeset p:has(> .openpnp-overview-image),
+.md-typeset p:has(> .machine-controls-image),
+.md-typeset p:has(> .connection-guide-image) {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+/* ==========================================
+   MACHINE CONTROLS TABLE
+   ========================================== */
+
+.md-typeset .tabbed-content table {
+    width: 100%;
+}
+
+.md-typeset .tabbed-content table td,
+.md-typeset .tabbed-content table th {
+    padding: 0.5rem 0.7rem;
+}
+
+/* ==========================================
+   CONNECTION PAGE NEXT STEP
+   ========================================== */
+
+/* Reuses the styling from configuration pages.
+   This fallback is only needed if you have not
+   already added the .config-next-panel CSS. */
+
+.md-typeset .config-next-panel {
+    background-color: var(--md-code-bg-color);
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1.5rem 0 2rem;
+    text-align: center;
+}
+
+.md-typeset .config-next-panel > :first-child {
+    margin-top: 0;
+}
+
+.md-typeset .config-next-panel > :last-child {
+    margin-bottom: 0;
+}
+
+.md-typeset .config-next-panel .next-step {
+    display: inline-block;
+    margin-top: 0.8rem;
+}
+
+
+
+/* Nozzle pairing table */
+.md-typeset table.nozzle-pairing-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+/* Green row: N1 and N08 */
+.md-typeset table.nozzle-pairing-table tbody tr.nozzle-n1 td {
+    background-color: #263e32 !important;
+    color: #B0E7BC !important;
+}
+
+/* Blue row: N2 and N045 */
+.md-typeset table.nozzle-pairing-table tbody tr.nozzle-n2 td {
+    background-color: #243c52 !important;
+    color: #A9D9FF !important;
+}
+
+/* Table cell spacing */
+.md-typeset table.nozzle-pairing-table td {
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+}
