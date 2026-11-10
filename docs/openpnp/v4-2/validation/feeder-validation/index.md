@@ -31,9 +31,17 @@ The FTP PCB uses two main types of components: resistors and LEDs. For this guid
 <br/><br/>
 
 1. **Secure the feeder**
-    * Use the 2x M4 x 10mm screws to mount the strip feeder to your staging plate. You can ignore the G15 and A15 in this photo.
+    * Using the 1.5mm hex key from the tool kit, secure the strip feeder into place.<br></br>
+     ![](images/strip-feeder-allen-wrench.webp)<br></br>
+    * Grab one of the two sets of M3 x 10mm super-flat-head screws and M3 wingnuts supplied with the strip feeder.<br></br>
+     ![](images/strip-feeder-screw-and-nut.webp)<br></br>
+    * Use the mounting holes in the strip feeder to insert the M3x10 super-flat-head screw through the strip feeder and staging plate.<br></br>
+     ![](images/strip-feeder-install-strip-screw.webp)<br></br>
+    * from the underside the staging plate, thread the wingnut onto the M3x10 super-flat-head screw to secure the strip feeder to the staging plate.<br></br>
+     ![](images/strip-feeder-install-strip-wing-nut.webp)<br></br>
+    * Use the second set of screw and wingnut and repeat these steps on the right side, toward the back of the strip feeder.<br></br>
 
-1. **Load the resistors**
+2. **Load the resistors**
     * Grab the resistors that were provided in a small roll of tape from a reel and insert that strip into one of the tracks, ensuring that the holes on the strip of tape are on the left side. Do not remove the clear covering tape yet; it will ensure the components stay in place.<br/><br/>
      ![](images/strip-feeder-insert-strip.webp)
      ![](images/strip-feeder-cut-excess-tape.webp)
